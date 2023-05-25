@@ -758,3 +758,72 @@
 [2023-05-26 01:14:06] INFO root fetch - main [MainThread]: End processing [pulumi-spotinst]: success
 [2023-05-26 01:14:15] INFO root fetch - main [MainThread]: End processing [anyscale]: success
 [2023-05-26 01:14:15] INFO root fetch - main [MainThread]: Store serial: [18254021]
+[2023-05-26 01:19:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18254021]
+[2023-05-26 01:19:23] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-26 01:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openpolicedata
+[2023-05-26 01:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pepperize.cdk-ses-smtp-credentials
+[2023-05-26 01:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: finlogic
+[2023-05-26 01:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sphinxcontrib-specs
+[2023-05-26 01:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: orjson
+[2023-05-26 01:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: clonalEvolution
+[2023-05-26 01:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ana-sdk
+[2023-05-26 01:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: playgroundrl
+[2023-05-26 01:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pulp-ansible
+[2023-05-26 01:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pulp-ansible-client
+[2023-05-26 01:19:23] INFO root fetch - processPackages [sphinxcontrib-specs]: New version: [2.0.2] Old Version: [2.0.0]
+[2023-05-26 01:19:23] INFO root fetch - processPackages [openpolicedata]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-05-26 01:19:23] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: New version: [0.3.336] Old Version: [0.3.335]
+[2023-05-26 01:19:23] INFO root fetch - processPackages [ana-sdk]: New version: [0.3.0] Old Version: [0.2.6]
+[2023-05-26 01:19:23] INFO root fetch - processPackages [finlogic]: New version: [0.5.0] Old Version: [0.4.8]
+[2023-05-26 01:19:23] INFO root fetch - processPackages [clonalEvolution]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-26 01:19:23] INFO root fetch - processPackages [playgroundrl]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-26 01:19:23] INFO root fetch - processPackages [pulp-ansible]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-26 01:19:23] INFO root fetch - processPackages [orjson]: New version: [3.8.9] Old Version: [3.8.8]
+[2023-05-26 01:19:23] INFO root fetch - processPackages [playgroundrl]: executing diffoscope
+[2023-05-26 01:19:23] INFO root fetch - processPackages [playgroundrl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/playgroundrl-0.0.7.tar.gz tmp/playgroundrl-0.0.8.tar.gz --markdown 20230526/p/playgroundrl/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-26 01:19:23] INFO root fetch - processPackages [sphinxcontrib-specs]: Downloading https://files.pythonhosted.org/packages/bd/57/d1c2b40416d275ca46ed03c4a3a0022a5f109357abd1de0f50ec073d144b/sphinxcontrib_specs-2.0.0.tar.gz
+[2023-05-26 01:19:23] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Downloading https://files.pythonhosted.org/packages/20/4d/18c758c3a0c2edfff2e81c618002907fa00d6dd0e490dcf828de792763c6/pepperize.cdk-ses-smtp-credentials-0.3.336.tar.gz
+[2023-05-26 01:19:23] INFO root fetch - processPackages [pulp-ansible]: Downloading https://files.pythonhosted.org/packages/62/2c/e1b7d3b2bf694e5b527aece5c0ff297ce5b7a35e0a1288e77cdf9e9288b6/pulp-ansible-0.9.1.tar.gz
+[2023-05-26 01:19:23] INFO root fetch - processPackages [ana-sdk]: Downloading https://files.pythonhosted.org/packages/b7/78/866e0ae229b341e8b0b9a87ea389b9183611e5088fdd1eed1bb636901f74/ana_sdk-0.3.0.tar.gz
+[2023-05-26 01:19:23] INFO root fetch - processPackages [clonalEvolution]: Downloading https://files.pythonhosted.org/packages/bb/52/9e2531b8014de50eceb7ed2e99e3bbf73aba1696f76bbfab263f9bbcbf3c/clonalEvolution-2.0.9.tar.gz
+[2023-05-26 01:19:23] INFO root fetch - processPackages [ana-sdk]: executing diffoscope
+[2023-05-26 01:19:23] INFO root fetch - processPackages [ana-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ana_sdk-0.2.6.tar.gz tmp/ana_sdk-0.3.0.tar.gz --markdown 20230526/a/ana-sdk/0.2.6-0.3.0/diff.md --exclude *.pyd
+[2023-05-26 01:19:23] INFO root fetch - processPackages [pulp-ansible-client]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-26 01:19:23] INFO root fetch - processPackages [openpolicedata]: Downloading https://files.pythonhosted.org/packages/c5/09/f95cbd334ff158f48a38ed585ea7bf99f48a4a103a71a57409ee1a0d7d61/openpolicedata-0.5.4.tar.gz
+[2023-05-26 01:19:23] INFO root fetch - processPackages [clonalEvolution]: executing diffoscope
+[2023-05-26 01:19:23] INFO root fetch - processPackages [clonalEvolution]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clonalEvolution-2.0.8.tar.gz tmp/clonalEvolution-2.0.9.tar.gz --markdown 20230526/c/clonalEvolution/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-26 01:19:23] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: executing diffoscope
+[2023-05-26 01:19:23] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ses-smtp-credentials-0.3.335.tar.gz tmp/pepperize.cdk-ses-smtp-credentials-0.3.336.tar.gz --markdown 20230526/p/pepperize.cdk-ses-smtp-credentials/0.3.335-0.3.336/diff.md --exclude *.pyd
+[2023-05-26 01:19:23] INFO root fetch - processPackages [openpolicedata]: executing diffoscope
+[2023-05-26 01:19:23] INFO root fetch - processPackages [openpolicedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openpolicedata-0.5.3.tar.gz tmp/openpolicedata-0.5.4.tar.gz --markdown 20230526/o/openpolicedata/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-05-26 01:19:23] INFO root fetch - processPackages [finlogic]: Downloading https://files.pythonhosted.org/packages/01/10/87f66ea22882f2912a3565195aad41f24d5afa8e511393fff24ec5a34cab/finlogic-0.5.0.tar.gz
+[2023-05-26 01:19:23] INFO root fetch - processPackages [orjson]: executing diffoscope
+[2023-05-26 01:19:23] INFO root fetch - processPackages [orjson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orjson-3.8.8.tar.gz tmp/orjson-3.8.9.tar.gz --markdown 20230526/o/orjson/3.8.8-3.8.9/diff.md --exclude *.pyd
+[2023-05-26 01:19:23] INFO root fetch - processPackages [finlogic]: executing diffoscope
+[2023-05-26 01:19:23] INFO root fetch - processPackages [finlogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finlogic-0.4.8.tar.gz tmp/finlogic-0.5.0.tar.gz --markdown 20230526/f/finlogic/0.4.8-0.5.0/diff.md --exclude *.pyd
+[2023-05-26 01:19:23] INFO root fetch - processPackages [sphinxcontrib-specs]: Downloading https://files.pythonhosted.org/packages/bc/71/05899de09ce49fc4bd5e494d639fd259d2bb66d0966da74ab83c9d54f080/sphinxcontrib_specs-2.0.2.tar.gz
+[2023-05-26 01:19:23] INFO root fetch - processPackages [pulp-ansible-client]: Downloading https://files.pythonhosted.org/packages/f9/b1/73071a21ca569d00218daa10feb86f7c77a90bcf326d67ec0d3bce2f26a2/pulp_ansible-client-0.9.1.tar.gz
+[2023-05-26 01:19:24] INFO root fetch - processPackages [pulp-ansible]: Downloading https://files.pythonhosted.org/packages/b8/7c/698a44eb6120b3c5dbf2a80023bfeda1f9bf6400d2a563351bd9093e44f3/pulp-ansible-0.9.2.tar.gz
+[2023-05-26 01:19:24] INFO root fetch - processPackages [sphinxcontrib-specs]: executing diffoscope
+[2023-05-26 01:19:24] INFO root fetch - processPackages [sphinxcontrib-specs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib_specs-2.0.0.tar.gz tmp/sphinxcontrib_specs-2.0.2.tar.gz --markdown 20230526/s/sphinxcontrib-specs/2.0.0-2.0.2/diff.md --exclude *.pyd
+[2023-05-26 01:19:24] INFO root fetch - processPackages [pulp-ansible]: executing diffoscope
+[2023-05-26 01:19:24] INFO root fetch - processPackages [pulp-ansible]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulp-ansible-0.9.1.tar.gz tmp/pulp-ansible-0.9.2.tar.gz --markdown 20230526/p/pulp-ansible/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-26 01:19:24] INFO root fetch - processPackages [pulp-ansible-client]: Downloading https://files.pythonhosted.org/packages/0f/9f/cbcaea9dbbc573d1e5619eeedcc30accc9083b017ae0f26afd6e9a170cca/pulp_ansible-client-0.9.2.tar.gz
+[2023-05-26 01:19:24] INFO root fetch - processPackages [pulp-ansible-client]: executing diffoscope
+[2023-05-26 01:19:24] INFO root fetch - processPackages [pulp-ansible-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulp_ansible-client-0.9.1.tar.gz tmp/pulp_ansible-client-0.9.2.tar.gz --markdown 20230526/p/pulp-ansible-client/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-26 01:19:25] INFO root fetch - processPackages [playgroundrl]: Start processing: disfluency-constituency-parser
+[2023-05-26 01:19:25] INFO root fetch - main [MainThread]: End processing [playgroundrl]: success
+[2023-05-26 01:19:25] INFO root fetch - processPackages [disfluency-constituency-parser]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-26 01:19:25] INFO root fetch - processPackages [disfluency-constituency-parser]: executing diffoscope
+[2023-05-26 01:19:25] INFO root fetch - processPackages [disfluency-constituency-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/disfluency_constituency_parser-0.0.7-py3-none-any.whl.zip tmp/disfluency_constituency_parser-0.0.8-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230526/d/disfluency-constituency-parser/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-26 01:19:25] INFO root fetch - main [MainThread]: End processing [clonalEvolution]: success
+[2023-05-26 01:19:25] INFO root fetch - main [MainThread]: End processing [ana-sdk]: success
+[2023-05-26 01:19:25] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-ses-smtp-credentials]: success
+[2023-05-26 01:19:25] INFO root fetch - main [MainThread]: End processing [openpolicedata]: success
+[2023-05-26 01:19:26] INFO root fetch - main [MainThread]: End processing [finlogic]: success
+[2023-05-26 01:19:26] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-specs]: success
+[2023-05-26 01:19:26] INFO root fetch - main [MainThread]: End processing [pulp-ansible]: success
+[2023-05-26 01:19:27] INFO root fetch - main [MainThread]: End processing [disfluency-constituency-parser]: success
+[2023-05-26 01:19:27] INFO root fetch - main [MainThread]: End processing [pulp-ansible-client]: success
+[2023-05-26 01:19:29] INFO root fetch - main [MainThread]: End processing [orjson]: success
+[2023-05-26 01:19:29] INFO root fetch - main [MainThread]: Store serial: [18254061]
