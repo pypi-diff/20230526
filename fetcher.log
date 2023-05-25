@@ -827,3 +827,38 @@
 [2023-05-26 01:19:27] INFO root fetch - main [MainThread]: End processing [pulp-ansible-client]: success
 [2023-05-26 01:19:29] INFO root fetch - main [MainThread]: End processing [orjson]: success
 [2023-05-26 01:19:29] INFO root fetch - main [MainThread]: Store serial: [18254061]
+[2023-05-26 01:24:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18254061]
+[2023-05-26 01:24:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-26 01:24:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edpm
+[2023-05-26 01:24:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: whylogs
+[2023-05-26 01:24:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hades-cli
+[2023-05-26 01:24:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hades-cli
+[2023-05-26 01:24:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ygModeBus
+[2023-05-26 01:24:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mxmapi
+[2023-05-26 01:24:38] INFO root fetch - processPackages [whylogs]: New version: [1.1.9.dev0] Old Version: [1.1.9]
+[2023-05-26 01:24:38] INFO root fetch - processPackages [hades-cli]: New version: [0.0.6] Old Version: [0.0.5.2]
+[2023-05-26 01:24:38] WARNING root fetch - processPackages [ygModeBus]: Skipping, unable to determine old version
+[2023-05-26 01:24:38] INFO root fetch - main [MainThread]: End processing [ygModeBus] error
+[2023-05-26 01:24:38] INFO root fetch - processPackages [edpm]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-26 01:24:38] INFO root fetch - processPackages [hades-cli]: New version: [0.0.6] Old Version: [0.0.5.2]
+[2023-05-26 01:24:38] WARNING root fetch - processPackages [mxmapi]: Skipping, unable to determine old version
+[2023-05-26 01:24:38] INFO root fetch - main [MainThread]: End processing [mxmapi] error
+[2023-05-26 01:24:38] INFO root fetch - processPackages [hades-cli]: Downloading https://files.pythonhosted.org/packages/d3/44/bc9606ad3b335b8986c4fa548dfc8c0f40da85a5ba74dc463c2bd9a74714/hades-cli-0.0.5.2.tar.gz
+[2023-05-26 01:24:38] INFO root fetch - processPackages [hades-cli]: Downloading https://files.pythonhosted.org/packages/d3/44/bc9606ad3b335b8986c4fa548dfc8c0f40da85a5ba74dc463c2bd9a74714/hades-cli-0.0.5.2.tar.gz
+[2023-05-26 01:24:38] INFO root fetch - processPackages [edpm]: Downloading https://files.pythonhosted.org/packages/c7/1a/1885919e328aae0f014eff7fe357961933ec5b07a631a389ba623a7f1eba/edpm-1.0.8.tar.gz
+[2023-05-26 01:24:38] INFO root fetch - processPackages [hades-cli]: Downloading https://files.pythonhosted.org/packages/df/8b/e538ff981e858fefda4c3bd5690b862785afb3094da7c09c1fdec0e42c3e/hades-cli-0.0.6.tar.gz
+[2023-05-26 01:24:38] INFO root fetch - processPackages [hades-cli]: Downloading https://files.pythonhosted.org/packages/df/8b/e538ff981e858fefda4c3bd5690b862785afb3094da7c09c1fdec0e42c3e/hades-cli-0.0.6.tar.gz
+[2023-05-26 01:24:38] INFO root fetch - processPackages [hades-cli]: executing diffoscope
+[2023-05-26 01:24:38] INFO root fetch - processPackages [hades-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hades-cli-0.0.5.2.tar.gz tmp/hades-cli-0.0.6.tar.gz --markdown 20230526/h/hades-cli/0.0.5.2-0.0.6/diff.md --exclude *.pyd
+[2023-05-26 01:24:38] INFO root fetch - processPackages [hades-cli]: executing diffoscope
+[2023-05-26 01:24:38] INFO root fetch - processPackages [hades-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hades-cli-0.0.5.2.tar.gz tmp/hades-cli-0.0.6.tar.gz --markdown 20230526/h/hades-cli/0.0.5.2-0.0.6/diff.md --exclude *.pyd
+[2023-05-26 01:24:38] INFO root fetch - processPackages [whylogs]: executing diffoscope
+[2023-05-26 01:24:38] INFO root fetch - processPackages [whylogs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whylogs-1.1.9.tar.gz tmp/whylogs-1.1.9.dev0.tar.gz --markdown 20230526/w/whylogs/1.1.9-1.1.9.dev0/diff.md --exclude *.pyd
+[2023-05-26 01:24:38] INFO root fetch - processPackages [edpm]: Downloading https://files.pythonhosted.org/packages/55/aa/92a806a7eab7f06a2c10b02d10ceab5cfa1276993a4a8f9aeb5a6a7bd281/edpm-1.0.9.tar.gz
+[2023-05-26 01:24:39] INFO root fetch - processPackages [edpm]: executing diffoscope
+[2023-05-26 01:24:39] INFO root fetch - processPackages [edpm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edpm-1.0.8.tar.gz tmp/edpm-1.0.9.tar.gz --markdown 20230526/e/edpm/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-26 01:24:39] INFO root fetch - main [MainThread]: End processing [hades-cli]: success
+[2023-05-26 01:24:40] INFO root fetch - main [MainThread]: End processing [hades-cli]: success
+[2023-05-26 01:24:40] INFO root fetch - main [MainThread]: End processing [edpm]: success
+[2023-05-26 01:24:41] INFO root fetch - main [MainThread]: End processing [whylogs]: success
+[2023-05-26 01:24:41] INFO root fetch - main [MainThread]: Store serial: [18254084]
