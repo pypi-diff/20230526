@@ -316,3 +316,42 @@
 [2023-05-26 00:26:17] INFO root fetch - main [MainThread]: End processing [starlette-admin]: success
 [2023-05-26 00:26:37] INFO root fetch - main [MainThread]: End processing [pulumi-aws-native]: success
 [2023-05-26 00:26:37] INFO root fetch - main [MainThread]: Store serial: [18253765]
+[2023-05-26 00:31:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18253765]
+[2023-05-26 00:31:52] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-26 00:31:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nvidia-dali-cuda110
+[2023-05-26 00:31:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vector-quantize-pytorch
+[2023-05-26 00:31:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nvidia-dali-tf-plugin-cuda120
+[2023-05-26 00:31:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nvidia-dali-cuda120
+[2023-05-26 00:31:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: potassium
+[2023-05-26 00:31:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mdforest
+[2023-05-26 00:31:52] INFO root fetch - processPackages [potassium]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 00:31:52] INFO root fetch - processPackages [nvidia-dali-cuda120]: New version: [1.26.0] Old Version: [1.25.0]
+[2023-05-26 00:31:52] INFO root fetch - processPackages [vector-quantize-pytorch]: New version: [1.5.9] Old Version: [1.5.8]
+[2023-05-26 00:31:52] INFO root fetch - processPackages [nvidia-dali-cuda110]: New version: [1.26.0] Old Version: [1.25.0]
+[2023-05-26 00:31:52] INFO root fetch - processPackages [nvidia-dali-tf-plugin-cuda120]: New version: [1.26.0] Old Version: [1.25.0]
+[2023-05-26 00:31:52] INFO root fetch - processPackages [mdforest]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-05-26 00:31:52] INFO root fetch - processPackages [mdforest]: Downloading https://files.pythonhosted.org/packages/86/e8/a0f1d74aa540484932dcbae6cd7a01c93b7ccd7d6e0320282207e84c278d/mdforest-1.5.1.tar.gz
+[2023-05-26 00:31:52] INFO root fetch - processPackages [nvidia-dali-cuda120]: Downloading https://files.pythonhosted.org/packages/ad/a8/f69e7350025bd328e86fc91d8ebf3d991d37668f88ce6c1f1cc9cf8d690e/nvidia_dali_cuda120-1.25.0-7922358-py3-none-manylinux2014_x86_64.whl
+[2023-05-26 00:31:52] INFO root fetch - processPackages [potassium]: Downloading https://files.pythonhosted.org/packages/fb/91/fb1f38d1feae9b0877de75d79c7760ae66854aa7c00521c5f8f1bbba6a4e/potassium-0.0.8.tar.gz
+[2023-05-26 00:31:52] INFO root fetch - processPackages [nvidia-dali-tf-plugin-cuda120]: Downloading https://files.pythonhosted.org/packages/b4/ee/f24133637e154c8dfae3248bff8d448054a844c92185d9bae00ef0530e78/nvidia-dali-tf-plugin-cuda120-1.25.0.tar.gz
+[2023-05-26 00:31:52] INFO root fetch - processPackages [nvidia-dali-cuda110]: Downloading https://files.pythonhosted.org/packages/90/2c/e9cfae98e70c9f0621777bcc4417df4cc8779f4fb106f01d493e7c8743b0/nvidia_dali_cuda110-1.25.0-7922357-py3-none-manylinux2014_aarch64.whl
+[2023-05-26 00:31:53] INFO root fetch - processPackages [mdforest]: Downloading https://files.pythonhosted.org/packages/0b/e9/7fe24b6175e4850edd92d532f4a00006cefff4d7786f58c92f2e54c8f950/mdforest-1.5.2.tar.gz
+[2023-05-26 00:31:53] INFO root fetch - processPackages [vector-quantize-pytorch]: executing diffoscope
+[2023-05-26 00:31:53] INFO root fetch - processPackages [vector-quantize-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_quantize_pytorch-1.5.8.tar.gz tmp/vector_quantize_pytorch-1.5.9.tar.gz --markdown 20230526/v/vector-quantize-pytorch/1.5.8-1.5.9/diff.md --exclude *.pyd
+[2023-05-26 00:31:53] INFO root fetch - processPackages [potassium]: Downloading https://files.pythonhosted.org/packages/9e/35/97d4a4c2c93b5869593cc01814e4e4d8b2e509aba6c65bd64e9e079c88c8/potassium-0.0.9.tar.gz
+[2023-05-26 00:31:53] INFO root fetch - processPackages [nvidia-dali-tf-plugin-cuda120]: Downloading https://files.pythonhosted.org/packages/f3/a8/dce355715bdfa3a235befd3430215568c9abf5866adc5ac6821f4bc17dd6/nvidia-dali-tf-plugin-cuda120-1.26.0.tar.gz
+[2023-05-26 00:31:53] WARNING root fetch - processPackages [nvidia-dali-cuda110]: Skipping package: exceeds size limit 297597260>=10485760
+[2023-05-26 00:31:53] INFO root fetch - main [MainThread]: End processing [nvidia-dali-cuda110] error
+[2023-05-26 00:31:53] INFO root fetch - processPackages [mdforest]: executing diffoscope
+[2023-05-26 00:31:53] INFO root fetch - processPackages [mdforest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdforest-1.5.1.tar.gz tmp/mdforest-1.5.2.tar.gz --markdown 20230526/m/mdforest/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-05-26 00:31:53] INFO root fetch - processPackages [potassium]: executing diffoscope
+[2023-05-26 00:31:53] INFO root fetch - processPackages [potassium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/potassium-0.0.8.tar.gz tmp/potassium-0.0.9.tar.gz --markdown 20230526/p/potassium/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 00:31:53] WARNING root fetch - processPackages [nvidia-dali-cuda120]: Skipping package: exceeds size limit 291256619>=10485760
+[2023-05-26 00:31:53] INFO root fetch - main [MainThread]: End processing [nvidia-dali-cuda120] error
+[2023-05-26 00:31:53] INFO root fetch - processPackages [nvidia-dali-tf-plugin-cuda120]: executing diffoscope
+[2023-05-26 00:31:53] INFO root fetch - processPackages [nvidia-dali-tf-plugin-cuda120]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvidia-dali-tf-plugin-cuda120-1.25.0.tar.gz tmp/nvidia-dali-tf-plugin-cuda120-1.26.0.tar.gz --markdown 20230526/n/nvidia-dali-tf-plugin-cuda120/1.25.0-1.26.0/diff.md --exclude *.pyd
+[2023-05-26 00:31:54] INFO root fetch - main [MainThread]: End processing [vector-quantize-pytorch]: success
+[2023-05-26 00:31:54] INFO root fetch - main [MainThread]: End processing [mdforest]: success
+[2023-05-26 00:31:54] INFO root fetch - main [MainThread]: End processing [potassium]: success
+[2023-05-26 00:31:55] INFO root fetch - main [MainThread]: End processing [nvidia-dali-tf-plugin-cuda120]: success
+[2023-05-26 00:31:55] INFO root fetch - main [MainThread]: Store serial: [18253783]
