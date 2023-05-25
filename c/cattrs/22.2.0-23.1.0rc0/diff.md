@@ -1,0 +1,4285 @@
+# Comparing `tmp/cattrs-22.2.0.tar.gz` & `tmp/cattrs-23.1.0rc0.tar.gz`
+
+## filetype from file(1)
+
+```diff
+@@ -1 +1 @@
+-gzip compressed data, was "cattrs-22.2.0.tar", max compression
++gzip compressed data, was "cattrs-23.1.0rc0.tar", max compression
+```
+
+## Comparing `cattrs-22.2.0.tar` & `cattrs-23.1.0rc0.tar`
+
+### file list
+
+```diff
+@@ -1,37 +1,46 @@
+--rw-r--r--   0        0        0     1074 2020-11-10 12:30:46.808022 cattrs-22.2.0/LICENSE
+--rw-r--r--   0        0        0     7980 2022-09-17 16:14:27.521741 cattrs-22.2.0/README.rst
+--rw-r--r--   0        0        0     1961 2022-10-03 10:58:21.006142 cattrs-22.2.0/pyproject.toml
+--rw-r--r--   0        0        0      906 2022-09-17 16:14:27.544278 cattrs-22.2.0/src/cattr/__init__.py
+--rw-r--r--   0        0        0      192 2022-09-17 16:14:27.545169 cattrs-22.2.0/src/cattr/converters.py
+--rw-r--r--   0        0        0      103 2022-09-17 16:14:27.546226 cattrs-22.2.0/src/cattr/disambiguators.py
+--rw-r--r--   0        0        0      125 2022-09-17 16:14:27.548045 cattrs-22.2.0/src/cattr/dispatch.py
+--rw-r--r--   0        0        0      343 2022-09-17 16:14:27.549123 cattrs-22.2.0/src/cattr/errors.py
+--rw-r--r--   0        0        0      520 2022-09-17 16:14:27.550587 cattrs-22.2.0/src/cattr/gen.py
+--rw-r--r--   0        0        0       78 2022-09-17 16:14:27.552412 cattrs-22.2.0/src/cattr/preconf/__init__.py
+--rw-r--r--   0        0        0      194 2022-10-02 17:24:46.987357 cattrs-22.2.0/src/cattr/preconf/bson.py
+--rw-r--r--   0        0        0      205 2022-10-02 17:24:46.988023 cattrs-22.2.0/src/cattr/preconf/json.py
+--rw-r--r--   0        0        0      206 2022-10-02 17:24:46.988510 cattrs-22.2.0/src/cattr/preconf/msgpack.py
+--rw-r--r--   0        0        0      202 2022-10-02 17:24:46.989428 cattrs-22.2.0/src/cattr/preconf/orjson.py
+--rw-r--r--   0        0        0      202 2022-10-02 17:24:46.989849 cattrs-22.2.0/src/cattr/preconf/pyyaml.py
+--rw-r--r--   0        0        0      206 2022-10-02 17:24:46.990604 cattrs-22.2.0/src/cattr/preconf/tomlkit.py
+--rw-r--r--   0        0        0      196 2022-10-02 17:24:46.991014 cattrs-22.2.0/src/cattr/preconf/ujson.py
+--rw-r--r--   0        0        0        0 2020-11-10 12:31:08.111795 cattrs-22.2.0/src/cattr/py.typed
+--rw-r--r--   0        0        0     1459 2022-09-17 17:06:08.178128 cattrs-22.2.0/src/cattrs/__init__.py
+--rw-r--r--   0        0        0    11903 2022-09-17 17:10:08.831979 cattrs-22.2.0/src/cattrs/_compat.py
+--rw-r--r--   0        0        0      678 2022-09-17 16:14:27.561385 cattrs-22.2.0/src/cattrs/_generics.py
+--rw-r--r--   0        0        0    37591 2022-10-03 10:58:04.122190 cattrs-22.2.0/src/cattrs/converters.py
+--rw-r--r--   0        0        0     2243 2022-09-18 21:57:32.871356 cattrs-22.2.0/src/cattrs/disambiguators.py
+--rw-r--r--   0        0        0     4543 2022-10-02 17:24:51.044688 cattrs-22.2.0/src/cattrs/dispatch.py
+--rw-r--r--   0        0        0     1583 2022-09-17 16:14:27.565213 cattrs-22.2.0/src/cattrs/errors.py
+--rw-r--r--   0        0        0    27240 2022-10-02 22:32:00.388226 cattrs-22.2.0/src/cattrs/gen.py
+--rw-r--r--   0        0        0      165 2022-09-17 16:14:27.566653 cattrs-22.2.0/src/cattrs/preconf/__init__.py
+--rw-r--r--   0        0        0     3070 2022-09-17 16:14:27.567540 cattrs-22.2.0/src/cattrs/preconf/bson.py
+--rw-r--r--   0        0        0     1588 2022-09-17 16:14:27.568381 cattrs-22.2.0/src/cattrs/preconf/json.py
+--rw-r--r--   0        0        0     1275 2022-09-17 16:14:27.569375 cattrs-22.2.0/src/cattrs/preconf/msgpack.py
+--rw-r--r--   0        0        0     2551 2022-09-17 16:14:27.570341 cattrs-22.2.0/src/cattrs/preconf/orjson.py
+--rw-r--r--   0        0        0     1298 2022-09-17 16:14:27.571762 cattrs-22.2.0/src/cattrs/preconf/pyyaml.py
+--rw-r--r--   0        0        0     2512 2022-09-19 01:50:49.331972 cattrs-22.2.0/src/cattrs/preconf/tomlkit.py
+--rw-r--r--   0        0        0     1498 2022-09-17 16:14:27.573319 cattrs-22.2.0/src/cattrs/preconf/ujson.py
+--rw-r--r--   0        0        0        0 2022-09-17 16:14:27.573457 cattrs-22.2.0/src/cattrs/py.typed
+--rw-r--r--   0        0        0     9208 1970-01-01 00:00:00.000000 cattrs-22.2.0/setup.py
+--rw-r--r--   0        0        0     9046 1970-01-01 00:00:00.000000 cattrs-22.2.0/PKG-INFO
++-rw-r--r--   0        0        0     1074 2022-02-11 01:34:09.478875 cattrs-23.1.0rc0/LICENSE
++-rw-r--r--   0        0        0     7516 2023-04-15 23:55:47.832298 cattrs-23.1.0rc0/README.md
++-rw-r--r--   0        0        0     2453 2023-05-25 23:51:12.412451 cattrs-23.1.0rc0/pyproject.toml
++-rw-r--r--   0        0        0      906 2022-04-16 01:20:23.203198 cattrs-23.1.0rc0/src/cattr/__init__.py
++-rw-r--r--   0        0        0      192 2022-04-16 01:20:23.203198 cattrs-23.1.0rc0/src/cattr/converters.py
++-rw-r--r--   0        0        0      103 2022-04-16 01:20:23.203198 cattrs-23.1.0rc0/src/cattr/disambiguators.py
++-rw-r--r--   0        0        0      125 2022-04-16 01:20:23.203198 cattrs-23.1.0rc0/src/cattr/dispatch.py
++-rw-r--r--   0        0        0      343 2022-07-06 00:23:52.229650 cattrs-23.1.0rc0/src/cattr/errors.py
++-rw-r--r--   0        0        0      520 2022-02-11 01:34:09.486876 cattrs-23.1.0rc0/src/cattr/gen.py
++-rw-r--r--   0        0        0       78 2022-04-16 01:20:23.203198 cattrs-23.1.0rc0/src/cattr/preconf/__init__.py
++-rw-r--r--   0        0        0      194 2023-03-02 01:10:10.360770 cattrs-23.1.0rc0/src/cattr/preconf/bson.py
++-rw-r--r--   0        0        0      205 2023-03-02 01:10:10.360770 cattrs-23.1.0rc0/src/cattr/preconf/json.py
++-rw-r--r--   0        0        0      206 2023-03-02 01:10:10.360770 cattrs-23.1.0rc0/src/cattr/preconf/msgpack.py
++-rw-r--r--   0        0        0      202 2023-03-02 01:10:10.360770 cattrs-23.1.0rc0/src/cattr/preconf/orjson.py
++-rw-r--r--   0        0        0      202 2023-03-02 01:10:10.360770 cattrs-23.1.0rc0/src/cattr/preconf/pyyaml.py
++-rw-r--r--   0        0        0      206 2023-03-02 01:10:10.360770 cattrs-23.1.0rc0/src/cattr/preconf/tomlkit.py
++-rw-r--r--   0        0        0      198 2023-03-02 01:10:10.360770 cattrs-23.1.0rc0/src/cattr/preconf/ujson.py
++-rw-r--r--   0        0        0        0 2022-02-11 01:34:09.486876 cattrs-23.1.0rc0/src/cattr/py.typed
++-rw-r--r--   0        0        0     1631 2023-04-15 23:55:47.836298 cattrs-23.1.0rc0/src/cattrs/__init__.py
++-rw-r--r--   0        0        0    15501 2023-05-23 23:14:04.606233 cattrs-23.1.0rc0/src/cattrs/_compat.py
++-rw-r--r--   0        0        0      678 2022-04-10 01:46:50.855243 cattrs-23.1.0rc0/src/cattrs/_generics.py
++-rw-r--r--   0        0        0    41450 2023-05-22 17:11:08.762741 cattrs-23.1.0rc0/src/cattrs/converters.py
++-rw-r--r--   0        0        0     2243 2023-03-02 01:10:10.360770 cattrs-23.1.0rc0/src/cattrs/disambiguators.py
++-rw-r--r--   0        0        0     4654 2023-03-02 01:10:10.360770 cattrs-23.1.0rc0/src/cattrs/dispatch.py
++-rw-r--r--   0        0        0     3850 2023-04-15 23:55:47.836298 cattrs-23.1.0rc0/src/cattrs/errors.py
++-rw-r--r--   0        0        0    26575 2023-05-22 17:11:08.766741 cattrs-23.1.0rc0/src/cattrs/gen/__init__.py
++-rw-r--r--   0        0        0      490 2023-05-22 17:11:08.766741 cattrs-23.1.0rc0/src/cattrs/gen/_consts.py
++-rw-r--r--   0        0        0     1503 2023-05-22 17:11:08.766741 cattrs-23.1.0rc0/src/cattrs/gen/_generics.py
++-rw-r--r--   0        0        0     1017 2023-05-22 17:11:08.766741 cattrs-23.1.0rc0/src/cattrs/gen/_lc.py
++-rw-r--r--   0        0        0     1737 2023-05-22 17:11:08.770741 cattrs-23.1.0rc0/src/cattrs/gen/_shared.py
++-rw-r--r--   0        0        0    22059 2023-05-22 17:11:08.774741 cattrs-23.1.0rc0/src/cattrs/gen/typeddicts.py
++-rw-r--r--   0        0        0      165 2022-04-16 01:20:23.203198 cattrs-23.1.0rc0/src/cattrs/preconf/__init__.py
++-rw-r--r--   0        0        0     3087 2023-05-22 17:11:08.782741 cattrs-23.1.0rc0/src/cattrs/preconf/bson.py
++-rw-r--r--   0        0        0     1290 2023-05-22 17:11:08.786741 cattrs-23.1.0rc0/src/cattrs/preconf/cbor2.py
++-rw-r--r--   0        0        0     1615 2023-05-22 17:11:08.786741 cattrs-23.1.0rc0/src/cattrs/preconf/json.py
++-rw-r--r--   0        0        0     1302 2023-05-22 17:11:08.790742 cattrs-23.1.0rc0/src/cattrs/preconf/msgpack.py
++-rw-r--r--   0        0        0     2573 2023-05-22 17:11:08.798742 cattrs-23.1.0rc0/src/cattrs/preconf/orjson.py
++-rw-r--r--   0        0        0     1320 2023-05-22 17:11:08.798742 cattrs-23.1.0rc0/src/cattrs/preconf/pyyaml.py
++-rw-r--r--   0        0        0     2534 2023-05-22 17:11:08.802742 cattrs-23.1.0rc0/src/cattrs/preconf/tomlkit.py
++-rw-r--r--   0        0        0     1525 2023-05-22 17:11:08.806742 cattrs-23.1.0rc0/src/cattrs/preconf/ujson.py
++-rw-r--r--   0        0        0        0 2022-02-11 01:34:09.486876 cattrs-23.1.0rc0/src/cattrs/py.typed
++-rw-r--r--   0        0        0      192 2023-05-22 17:11:08.810742 cattrs-23.1.0rc0/src/cattrs/strategies/__init__.py
++-rw-r--r--   0        0        0     8677 2023-05-22 17:16:50.127698 cattrs-23.1.0rc0/src/cattrs/strategies/_subclasses.py
++-rw-r--r--   0        0        0     3440 2023-05-22 17:11:08.814742 cattrs-23.1.0rc0/src/cattrs/strategies/_unions.py
++-rw-r--r--   0        0        0     4360 2023-05-22 17:11:08.814742 cattrs-23.1.0rc0/src/cattrs/v.py
++-rw-r--r--   0        0        0     9253 1970-01-01 00:00:00.000000 cattrs-23.1.0rc0/PKG-INFO
+```
+
+### Comparing `cattrs-22.2.0/LICENSE` & `cattrs-23.1.0rc0/LICENSE`
+
+ * *Files identical despite different names*
+
+### Comparing `cattrs-22.2.0/README.rst` & `cattrs-23.1.0rc0/README.md`
+
+ * *Files 15% similar despite different names*
+
+```diff
+@@ -1,499 +1,470 @@
+-00000000: 3d3d 3d3d 3d3d 0a63 6174 7472 730a 3d3d  ======.cattrs.==
+-00000010: 3d3d 3d3d 0a0a 0a2e 2e20 696d 6167 653a  ====..... image:
+-00000020: 3a20 6874 7470 733a 2f2f 696d 672e 7368  : https://img.sh
+-00000030: 6965 6c64 732e 696f 2f70 7970 692f 762f  ields.io/pypi/v/
+-00000040: 6361 7474 7273 2e73 7667 0a20 2020 2020  cattrs.svg.     
+-00000050: 2020 203a 7461 7267 6574 3a20 6874 7470     :target: http
+-00000060: 733a 2f2f 7079 7069 2e70 7974 686f 6e2e  s://pypi.python.
+-00000070: 6f72 672f 7079 7069 2f63 6174 7472 730a  org/pypi/cattrs.
+-00000080: 0a2e 2e20 696d 6167 653a 3a20 6874 7470  ... image:: http
+-00000090: 733a 2f2f 6769 7468 7562 2e63 6f6d 2f70  s://github.com/p
+-000000a0: 7974 686f 6e2d 6174 7472 732f 6361 7474  ython-attrs/catt
+-000000b0: 7273 2f77 6f72 6b66 6c6f 7773 2f43 492f  rs/workflows/CI/
+-000000c0: 6261 6467 652e 7376 670a 2020 2020 2020  badge.svg.      
+-000000d0: 2020 3a74 6172 6765 743a 2068 7474 7073    :target: https
+-000000e0: 3a2f 2f67 6974 6875 622e 636f 6d2f 7079  ://github.com/py
+-000000f0: 7468 6f6e 2d61 7474 7273 2f63 6174 7472  thon-attrs/cattr
+-00000100: 732f 6163 7469 6f6e 733f 776f 726b 666c  s/actions?workfl
+-00000110: 6f77 3d43 490a 0a2e 2e20 696d 6167 653a  ow=CI.... image:
+-00000120: 3a20 6874 7470 733a 2f2f 7265 6164 7468  : https://readth
+-00000130: 6564 6f63 732e 6f72 672f 7072 6f6a 6563  edocs.org/projec
+-00000140: 7473 2f63 6174 7472 732f 6261 6467 652f  ts/cattrs/badge/
+-00000150: 3f76 6572 7369 6f6e 3d6c 6174 6573 740a  ?version=latest.
+-00000160: 2020 2020 2020 2020 3a74 6172 6765 743a          :target:
+-00000170: 2068 7474 7073 3a2f 2f63 6174 7472 732e   https://cattrs.
+-00000180: 7265 6164 7468 6564 6f63 732e 696f 2f65  readthedocs.io/e
+-00000190: 6e2f 6c61 7465 7374 2f3f 6261 6467 653d  n/latest/?badge=
+-000001a0: 6c61 7465 7374 0a20 2020 2020 2020 203a  latest.        :
+-000001b0: 616c 743a 2044 6f63 756d 656e 7461 7469  alt: Documentati
+-000001c0: 6f6e 2053 7461 7475 730a 0a2e 2e20 696d  on Status.... im
+-000001d0: 6167 653a 3a20 6874 7470 733a 2f2f 696d  age:: https://im
+-000001e0: 672e 7368 6965 6c64 732e 696f 2f70 7970  g.shields.io/pyp
+-000001f0: 692f 7079 7665 7273 696f 6e73 2f63 6174  i/pyversions/cat
+-00000200: 7472 732e 7376 670a 2020 2020 2020 2020  trs.svg.        
+-00000210: 3a74 6172 6765 743a 2068 7474 7073 3a2f  :target: https:/
+-00000220: 2f67 6974 6875 622e 636f 6d2f 7079 7468  /github.com/pyth
+-00000230: 6f6e 2d61 7474 7273 2f63 6174 7472 730a  on-attrs/cattrs.
+-00000240: 2020 2020 2020 2020 3a61 6c74 3a20 5375          :alt: Su
+-00000250: 7070 6f72 7465 6420 5079 7468 6f6e 2076  pported Python v
+-00000260: 6572 7369 6f6e 730a 0a2e 2e20 696d 6167  ersions.... imag
+-00000270: 653a 3a20 6874 7470 733a 2f2f 636f 6465  e:: https://code
+-00000280: 636f 762e 696f 2f67 682f 7079 7468 6f6e  cov.io/gh/python
+-00000290: 2d61 7474 7273 2f63 6174 7472 732f 6272  -attrs/cattrs/br
+-000002a0: 616e 6368 2f6d 6173 7465 722f 6772 6170  anch/master/grap
+-000002b0: 682f 6261 6467 652e 7376 670a 2020 2020  h/badge.svg.    
+-000002c0: 2020 2020 3a74 6172 6765 743a 2068 7474      :target: htt
+-000002d0: 7073 3a2f 2f63 6f64 6563 6f76 2e69 6f2f  ps://codecov.io/
+-000002e0: 6768 2f70 7974 686f 6e2d 6174 7472 732f  gh/python-attrs/
+-000002f0: 6361 7474 7273 2f0a 0a2e 2e20 696d 6167  cattrs/.... imag
+-00000300: 653a 3a20 6874 7470 733a 2f2f 696d 672e  e:: https://img.
+-00000310: 7368 6965 6c64 732e 696f 2f62 6164 6765  shields.io/badge
+-00000320: 2f63 6f64 6525 3230 7374 796c 652d 626c  /code%20style-bl
+-00000330: 6163 6b2d 3030 3030 3030 2e73 7667 0a20  ack-000000.svg. 
+-00000340: 2020 203a 7461 7267 6574 3a20 6874 7470     :target: http
+-00000350: 733a 2f2f 6769 7468 7562 2e63 6f6d 2f61  s://github.com/a
+-00000360: 6d62 762f 626c 6163 6b0a 0a0a 2d2d 2d2d  mbv/black...----
+-00000370: 0a0a 6060 6361 7474 7273 6060 2069 7320  ..``cattrs`` is 
+-00000380: 616e 206f 7065 6e20 736f 7572 6365 2050  an open source P
+-00000390: 7974 686f 6e20 6c69 6272 6172 7920 666f  ython library fo
+-000003a0: 7220 7374 7275 6374 7572 696e 6720 616e  r structuring an
+-000003b0: 6420 756e 7374 7275 6374 7572 696e 670a  d unstructuring.
+-000003c0: 6461 7461 2e20 6060 6361 7474 7273 6060  data. ``cattrs``
+-000003d0: 2077 6f72 6b73 2062 6573 7420 7769 7468   works best with
+-000003e0: 2060 6061 7474 7273 6060 2063 6c61 7373   ``attrs`` class
+-000003f0: 6573 2c20 6461 7461 636c 6173 7365 7320  es, dataclasses 
+-00000400: 616e 6420 7468 6520 7573 7561 6c0a 5079  and the usual.Py
+-00000410: 7468 6f6e 2063 6f6c 6c65 6374 696f 6e73  thon collections
+-00000420: 2c20 6275 7420 6f74 6865 7220 6b69 6e64  , but other kind
+-00000430: 7320 6f66 2063 6c61 7373 6573 2061 7265  s of classes are
+-00000440: 2073 7570 706f 7274 6564 2062 7920 6d61   supported by ma
+-00000450: 6e75 616c 6c79 0a72 6567 6973 7465 7269  nually.registeri
+-00000460: 6e67 2063 6f6e 7665 7274 6572 732e 0a0a  ng converters...
+-00000470: 5079 7468 6f6e 2068 6173 2061 2072 6963  Python has a ric
+-00000480: 6820 7365 7420 6f66 2070 6f77 6572 6675  h set of powerfu
+-00000490: 6c2c 2065 6173 7920 746f 2075 7365 2c20  l, easy to use, 
+-000004a0: 6275 696c 742d 696e 2064 6174 6120 7479  built-in data ty
+-000004b0: 7065 7320 6c69 6b65 0a64 6963 7469 6f6e  pes like.diction
+-000004c0: 6172 6965 732c 206c 6973 7473 2061 6e64  aries, lists and
+-000004d0: 2074 7570 6c65 732e 2054 6865 7365 2064   tuples. These d
+-000004e0: 6174 6120 7479 7065 7320 6172 6520 616c  ata types are al
+-000004f0: 736f 2074 6865 206c 696e 6775 6120 6672  so the lingua fr
+-00000500: 616e 6361 0a6f 6620 6d6f 7374 2064 6174  anca.of most dat
+-00000510: 6120 7365 7269 616c 697a 6174 696f 6e20  a serialization 
+-00000520: 6c69 6272 6172 6965 732c 2066 6f72 2066  libraries, for f
+-00000530: 6f72 6d61 7473 206c 696b 6520 6a73 6f6e  ormats like json
+-00000540: 2c20 6d73 6770 6163 6b2c 2079 616d 6c20  , msgpack, yaml 
+-00000550: 6f72 0a74 6f6d 6c2e 0a0a 4461 7461 2074  or.toml...Data t
+-00000560: 7970 6573 206c 696b 6520 7468 6973 2c20  ypes like this, 
+-00000570: 616e 6420 6d61 7070 696e 6773 206c 696b  and mappings lik
+-00000580: 6520 6060 6469 6374 6060 2073 2069 6e20  e ``dict`` s in 
+-00000590: 7061 7274 6963 756c 6172 2c20 7265 7072  particular, repr
+-000005a0: 6573 656e 740a 756e 7374 7275 6374 7572  esent.unstructur
+-000005b0: 6564 2064 6174 612e 2059 6f75 7220 6461  ed data. Your da
+-000005c0: 7461 2069 732c 2069 6e20 616c 6c20 6c69  ta is, in all li
+-000005d0: 6b65 6c69 686f 6f64 2c20 7374 7275 6374  kelihood, struct
+-000005e0: 7572 6564 3a20 6e6f 7420 616c 6c0a 636f  ured: not all.co
+-000005f0: 6d62 696e 6174 696f 6e73 206f 6620 6669  mbinations of fi
+-00000600: 656c 6420 6e61 6d65 7320 6f72 2076 616c  eld names or val
+-00000610: 7565 7320 6172 6520 7661 6c69 6420 696e  ues are valid in
+-00000620: 7075 7473 2074 6f20 796f 7572 2070 726f  puts to your pro
+-00000630: 6772 616d 732e 2049 6e0a 5079 7468 6f6e  grams. In.Python
+-00000640: 2c20 7374 7275 6374 7572 6564 2064 6174  , structured dat
+-00000650: 6120 6973 2062 6574 7465 7220 7265 7072  a is better repr
+-00000660: 6573 656e 7465 6420 7769 7468 2063 6c61  esented with cla
+-00000670: 7373 6573 2061 6e64 2065 6e75 6d65 7261  sses and enumera
+-00000680: 7469 6f6e 732e 0a60 6061 7474 7273 6060  tions..``attrs``
+-00000690: 2069 7320 616e 2065 7863 656c 6c65 6e74   is an excellent
+-000006a0: 206c 6962 7261 7279 2066 6f72 2064 6563   library for dec
+-000006b0: 6c61 7261 7469 7665 6c79 2064 6573 6372  laratively descr
+-000006c0: 6962 696e 6720 7468 6520 7374 7275 6374  ibing the struct
+-000006d0: 7572 6520 6f66 0a79 6f75 7220 6461 7461  ure of.your data
+-000006e0: 2c20 616e 6420 7661 6c69 6461 7469 6e67  , and validating
+-000006f0: 2069 742e 0a0a 5768 656e 2079 6f75 2772   it...When you'r
+-00000700: 6520 6861 6e64 6564 2075 6e73 7472 7563  e handed unstruc
+-00000710: 7475 7265 6420 6461 7461 2028 6279 2079  tured data (by y
+-00000720: 6f75 7220 6e65 7477 6f72 6b2c 2066 696c  our network, fil
+-00000730: 6520 7379 7374 656d 2c20 6461 7461 6261  e system, databa
+-00000740: 7365 2e2e 2e29 2c0a 6060 6361 7474 7273  se...),.``cattrs
+-00000750: 6060 2068 656c 7073 2074 6f20 636f 6e76  `` helps to conv
+-00000760: 6572 7420 7468 6973 2064 6174 6120 696e  ert this data in
+-00000770: 746f 2073 7472 7563 7475 7265 6420 6461  to structured da
+-00000780: 7461 2e20 5768 656e 2079 6f75 2068 6176  ta. When you hav
+-00000790: 6520 746f 0a63 6f6e 7665 7274 2079 6f75  e to.convert you
+-000007a0: 7220 7374 7275 6374 7572 6564 2064 6174  r structured dat
+-000007b0: 6120 696e 746f 2064 6174 6120 7479 7065  a into data type
+-000007c0: 7320 6f74 6865 7220 6c69 6272 6172 6965  s other librarie
+-000007d0: 7320 6361 6e20 6861 6e64 6c65 2c0a 6060  s can handle,.``
+-000007e0: 6361 7474 7273 6060 2074 7572 6e73 2079  cattrs`` turns y
+-000007f0: 6f75 7220 636c 6173 7365 7320 616e 6420  our classes and 
+-00000800: 656e 756d 6572 6174 696f 6e73 2069 6e74  enumerations int
+-00000810: 6f20 6469 6374 696f 6e61 7269 6573 2c20  o dictionaries, 
+-00000820: 696e 7465 6765 7273 2061 6e64 0a73 7472  integers and.str
+-00000830: 696e 6773 2e0a 0a48 6572 6527 7320 6120  ings...Here's a 
+-00000840: 7369 6d70 6c65 2074 6173 7465 2e20 5468  simple taste. Th
+-00000850: 6520 6c69 7374 2063 6f6e 7461 696e 696e  e list containin
+-00000860: 6720 6120 666c 6f61 742c 2061 6e20 696e  g a float, an in
+-00000870: 7420 616e 6420 6120 7374 7269 6e67 0a67  t and a string.g
+-00000880: 6574 7320 636f 6e76 6572 7465 6420 696e  ets converted in
+-00000890: 746f 2061 2074 7570 6c65 206f 6620 7468  to a tuple of th
+-000008a0: 7265 6520 696e 7473 2e0a 0a2e 2e20 636f  ree ints..... co
+-000008b0: 6465 2d62 6c6f 636b 3a3a 2070 7963 6f6e  de-block:: pycon
+-000008c0: 0a0a 2020 2020 3e3e 3e20 696d 706f 7274  ..    >>> import
+-000008d0: 2063 6174 7472 730a 2020 2020 3e3e 3e0a   cattrs.    >>>.
+-000008e0: 2020 2020 3e3e 3e20 6361 7474 7273 2e73      >>> cattrs.s
+-000008f0: 7472 7563 7475 7265 285b 312e 302c 2032  tructure([1.0, 2
+-00000900: 2c20 2233 225d 2c20 7475 706c 655b 696e  , "3"], tuple[in
+-00000910: 742c 2069 6e74 2c20 696e 745d 290a 2020  t, int, int]).  
+-00000920: 2020 2831 2c20 322c 2033 290a 0a60 6063    (1, 2, 3)..``c
+-00000930: 6174 7472 7360 6020 776f 726b 7320 7765  attrs`` works we
+-00000940: 6c6c 2077 6974 6820 6060 6174 7472 7360  ll with ``attrs`
+-00000950: 6020 636c 6173 7365 7320 6f75 7420 6f66  ` classes out of
+-00000960: 2074 6865 2062 6f78 2e0a 0a2e 2e20 636f   the box..... co
+-00000970: 6465 2d62 6c6f 636b 3a3a 2070 7963 6f6e  de-block:: pycon
+-00000980: 0a0a 2020 2020 3e3e 3e20 6672 6f6d 2061  ..    >>> from a
+-00000990: 7474 7273 2069 6d70 6f72 7420 6672 6f7a  ttrs import froz
+-000009a0: 656e 0a20 2020 203e 3e3e 2069 6d70 6f72  en.    >>> impor
+-000009b0: 7420 6361 7474 7273 0a20 2020 203e 3e3e  t cattrs.    >>>
+-000009c0: 0a20 2020 203e 3e3e 2040 6672 6f7a 656e  .    >>> @frozen
+-000009d0: 2020 2320 4974 2077 6f72 6b73 2077 6974    # It works wit
+-000009e0: 6820 6e6f 6e2d 6672 6f7a 656e 2063 6c61  h non-frozen cla
+-000009f0: 7373 6573 2074 6f6f 2e0a 2020 2020 2e2e  sses too..    ..
+-00000a00: 2e20 636c 6173 7320 433a 0a20 2020 202e  . class C:.    .
+-00000a10: 2e2e 2020 2020 2061 3a20 696e 740a 2020  ..     a: int.  
+-00000a20: 2020 2e2e 2e20 2020 2020 623a 2073 7472    ...     b: str
+-00000a30: 0a20 2020 202e 2e2e 0a20 2020 203e 3e3e  .    ....    >>>
+-00000a40: 2069 6e73 7461 6e63 6520 3d20 4328 312c   instance = C(1,
+-00000a50: 2027 6127 290a 2020 2020 3e3e 3e20 6361   'a').    >>> ca
+-00000a60: 7474 7273 2e75 6e73 7472 7563 7475 7265  ttrs.unstructure
+-00000a70: 2869 6e73 7461 6e63 6529 0a20 2020 207b  (instance).    {
+-00000a80: 2761 273a 2031 2c20 2762 273a 2027 6127  'a': 1, 'b': 'a'
+-00000a90: 7d0a 2020 2020 3e3e 3e20 6361 7474 7273  }.    >>> cattrs
+-00000aa0: 2e73 7472 7563 7475 7265 287b 2761 273a  .structure({'a':
+-00000ab0: 2031 2c20 2762 273a 2027 6127 7d2c 2043   1, 'b': 'a'}, C
+-00000ac0: 290a 2020 2020 4328 613d 312c 2062 3d27  ).    C(a=1, b='
+-00000ad0: 6127 290a 0a48 6572 6527 7320 6120 6d75  a')..Here's a mu
+-00000ae0: 6368 206d 6f72 6520 636f 6d70 6c65 7820  ch more complex 
+-00000af0: 6578 616d 706c 652c 2069 6e76 6f6c 7669  example, involvi
+-00000b00: 6e67 2060 6061 7474 7273 6060 2063 6c61  ng ``attrs`` cla
+-00000b10: 7373 6573 2077 6974 6820 7479 7065 0a6d  sses with type.m
+-00000b20: 6574 6164 6174 612e 0a0a 2e2e 2063 6f64  etadata..... cod
+-00000b30: 652d 626c 6f63 6b3a 3a20 7079 636f 6e0a  e-block:: pycon.
+-00000b40: 0a20 2020 203e 3e3e 2066 726f 6d20 656e  .    >>> from en
+-00000b50: 756d 2069 6d70 6f72 7420 756e 6971 7565  um import unique
+-00000b60: 2c20 456e 756d 0a20 2020 203e 3e3e 2066  , Enum.    >>> f
+-00000b70: 726f 6d20 7479 7069 6e67 2069 6d70 6f72  rom typing impor
+-00000b80: 7420 4f70 7469 6f6e 616c 2c20 5365 7175  t Optional, Sequ
+-00000b90: 656e 6365 2c20 556e 696f 6e0a 2020 2020  ence, Union.    
+-00000ba0: 3e3e 3e20 6672 6f6d 2063 6174 7472 7320  >>> from cattrs 
+-00000bb0: 696d 706f 7274 2073 7472 7563 7475 7265  import structure
+-00000bc0: 2c20 756e 7374 7275 6374 7572 650a 2020  , unstructure.  
+-00000bd0: 2020 3e3e 3e20 6672 6f6d 2061 7474 7273    >>> from attrs
+-00000be0: 2069 6d70 6f72 7420 6465 6669 6e65 2c20   import define, 
+-00000bf0: 6669 656c 640a 2020 2020 3e3e 3e0a 2020  field.    >>>.  
+-00000c00: 2020 3e3e 3e20 4075 6e69 7175 650a 2020    >>> @unique.  
+-00000c10: 2020 2e2e 2e20 636c 6173 7320 4361 7442    ... class CatB
+-00000c20: 7265 6564 2845 6e75 6d29 3a0a 2020 2020  reed(Enum):.    
+-00000c30: 2e2e 2e20 2020 2020 5349 414d 4553 4520  ...     SIAMESE 
+-00000c40: 3d20 2273 6961 6d65 7365 220a 2020 2020  = "siamese".    
+-00000c50: 2e2e 2e20 2020 2020 4d41 494e 455f 434f  ...     MAINE_CO
+-00000c60: 4f4e 203d 2022 6d61 696e 655f 636f 6f6e  ON = "maine_coon
+-00000c70: 220a 2020 2020 2e2e 2e20 2020 2020 5341  ".    ...     SA
+-00000c80: 4352 4544 5f42 4952 4d41 4e20 3d20 2262  CRED_BIRMAN = "b
+-00000c90: 6972 6d61 6e22 0a20 2020 202e 2e2e 0a20  irman".    .... 
+-00000ca0: 2020 203e 3e3e 2040 6465 6669 6e65 0a20     >>> @define. 
+-00000cb0: 2020 202e 2e2e 2063 6c61 7373 2043 6174     ... class Cat
+-00000cc0: 3a0a 2020 2020 2e2e 2e20 2020 2020 6272  :.    ...     br
+-00000cd0: 6565 643a 2043 6174 4272 6565 640a 2020  eed: CatBreed.  
+-00000ce0: 2020 2e2e 2e20 2020 2020 6e61 6d65 733a    ...     names:
+-00000cf0: 2053 6571 7565 6e63 655b 7374 725d 0a20   Sequence[str]. 
+-00000d00: 2020 202e 2e2e 0a20 2020 203e 3e3e 2040     ....    >>> @
+-00000d10: 6465 6669 6e65 0a20 2020 202e 2e2e 2063  define.    ... c
+-00000d20: 6c61 7373 2044 6f67 4d69 6372 6f63 6869  lass DogMicrochi
+-00000d30: 703a 0a20 2020 202e 2e2e 2020 2020 2063  p:.    ...     c
+-00000d40: 6869 705f 6964 203d 2066 6965 6c64 2829  hip_id = field()
+-00000d50: 2020 2320 5479 7065 2061 6e6e 6f74 6174    # Type annotat
+-00000d60: 696f 6e73 2061 7265 206f 7074 696f 6e61  ions are optiona
+-00000d70: 6c2c 2062 7574 2072 6563 6f6d 6d65 6e64  l, but recommend
+-00000d80: 6564 0a20 2020 202e 2e2e 2020 2020 2074  ed.    ...     t
+-00000d90: 696d 655f 6368 6970 7065 643a 2066 6c6f  ime_chipped: flo
+-00000da0: 6174 203d 2066 6965 6c64 2829 0a20 2020  at = field().   
+-00000db0: 202e 2e2e 0a20 2020 203e 3e3e 2040 6465   ....    >>> @de
+-00000dc0: 6669 6e65 0a20 2020 202e 2e2e 2063 6c61  fine.    ... cla
+-00000dd0: 7373 2044 6f67 3a0a 2020 2020 2e2e 2e20  ss Dog:.    ... 
+-00000de0: 2020 2020 6375 7465 6e65 7373 3a20 696e      cuteness: in
+-00000df0: 740a 2020 2020 2e2e 2e20 2020 2020 6368  t.    ...     ch
+-00000e00: 6970 3a20 4f70 7469 6f6e 616c 5b44 6f67  ip: Optional[Dog
+-00000e10: 4d69 6372 6f63 6869 705d 203d 204e 6f6e  Microchip] = Non
+-00000e20: 650a 2020 2020 2e2e 2e0a 2020 2020 3e3e  e.    ....    >>
+-00000e30: 3e20 7020 3d20 756e 7374 7275 6374 7572  > p = unstructur
+-00000e40: 6528 5b44 6f67 2863 7574 656e 6573 733d  e([Dog(cuteness=
+-00000e50: 312c 2063 6869 703d 446f 674d 6963 726f  1, chip=DogMicro
+-00000e60: 6368 6970 2863 6869 705f 6964 3d31 2c20  chip(chip_id=1, 
+-00000e70: 7469 6d65 5f63 6869 7070 6564 3d31 302e  time_chipped=10.
+-00000e80: 3029 292c 0a20 2020 202e 2e2e 2020 2020  0)),.    ...    
+-00000e90: 2020 2020 2020 2020 2020 2020 2020 4361                Ca
+-00000ea0: 7428 6272 6565 643d 4361 7442 7265 6564  t(breed=CatBreed
+-00000eb0: 2e4d 4149 4e45 5f43 4f4f 4e2c 206e 616d  .MAINE_COON, nam
+-00000ec0: 6573 3d28 2746 6c75 6666 6c79 272c 2027  es=('Fluffly', '
+-00000ed0: 466c 7566 6665 7227 2929 5d29 0a20 2020  Fluffer'))]).   
+-00000ee0: 202e 2e2e 0a20 2020 203e 3e3e 2070 7269   ....    >>> pri
+-00000ef0: 6e74 2870 290a 2020 2020 5b7b 2763 7574  nt(p).    [{'cut
+-00000f00: 656e 6573 7327 3a20 312c 2027 6368 6970  eness': 1, 'chip
+-00000f10: 273a 207b 2763 6869 705f 6964 273a 2031  ': {'chip_id': 1
+-00000f20: 2c20 2774 696d 655f 6368 6970 7065 6427  , 'time_chipped'
+-00000f30: 3a20 3130 2e30 7d7d 2c20 7b27 6272 6565  : 10.0}}, {'bree
+-00000f40: 6427 3a20 276d 6169 6e65 5f63 6f6f 6e27  d': 'maine_coon'
+-00000f50: 2c20 276e 616d 6573 273a 2028 2746 6c75  , 'names': ('Flu
+-00000f60: 6666 6c79 272c 2027 466c 7566 6665 7227  ffly', 'Fluffer'
+-00000f70: 297d 5d0a 2020 2020 3e3e 3e20 7072 696e  )}].    >>> prin
+-00000f80: 7428 7374 7275 6374 7572 6528 702c 206c  t(structure(p, l
+-00000f90: 6973 745b 556e 696f 6e5b 446f 672c 2043  ist[Union[Dog, C
+-00000fa0: 6174 5d5d 2929 0a20 2020 205b 446f 6728  at]])).    [Dog(
+-00000fb0: 6375 7465 6e65 7373 3d31 2c20 6368 6970  cuteness=1, chip
+-00000fc0: 3d44 6f67 4d69 6372 6f63 6869 7028 6368  =DogMicrochip(ch
+-00000fd0: 6970 5f69 643d 312c 2074 696d 655f 6368  ip_id=1, time_ch
+-00000fe0: 6970 7065 643d 3130 2e30 2929 2c20 4361  ipped=10.0)), Ca
+-00000ff0: 7428 6272 6565 643d 3c43 6174 4272 6565  t(breed=<CatBree
+-00001000: 642e 4d41 494e 455f 434f 4f4e 3a20 276d  d.MAINE_COON: 'm
+-00001010: 6169 6e65 5f63 6f6f 6e27 3e2c 206e 616d  aine_coon'>, nam
+-00001020: 6573 3d5b 2746 6c75 6666 6c79 272c 2027  es=['Fluffly', '
+-00001030: 466c 7566 6665 7227 5d29 5d0a 0a43 6f6e  Fluffer'])]..Con
+-00001040: 7369 6465 7220 756e 7374 7275 6374 7572  sider unstructur
+-00001050: 6564 2064 6174 6120 6120 6c6f 772d 6c65  ed data a low-le
+-00001060: 7665 6c20 7265 7072 6573 656e 7461 7469  vel representati
+-00001070: 6f6e 2074 6861 7420 6e65 6564 7320 746f  on that needs to
+-00001080: 2062 6520 636f 6e76 6572 7465 640a 746f   be converted.to
+-00001090: 2073 7472 7563 7475 7265 6420 6461 7461   structured data
+-000010a0: 2074 6f20 6265 2068 616e 646c 6564 2c20   to be handled, 
+-000010b0: 616e 6420 7573 6520 6060 7374 7275 6374  and use ``struct
+-000010c0: 7572 6560 602e 2057 6865 6e20 796f 7527  ure``. When you'
+-000010d0: 7265 2064 6f6e 652c 0a60 6075 6e73 7472  re done,.``unstr
+-000010e0: 7563 7475 7265 6060 2074 6865 2064 6174  ucture`` the dat
+-000010f0: 6120 746f 2069 7473 2075 6e73 7472 7563  a to its unstruc
+-00001100: 7475 7265 6420 666f 726d 2061 6e64 2070  tured form and p
+-00001110: 6173 7320 6974 2061 6c6f 6e67 2074 6f20  ass it along to 
+-00001120: 616e 6f74 6865 720a 6c69 6272 6172 7920  another.library 
+-00001130: 6f72 206d 6f64 756c 652e 2055 7365 2060  or module. Use `
+-00001140: 6174 7472 7320 7479 7065 206d 6574 6164  attrs type metad
+-00001150: 6174 6120 3c68 7474 703a 2f2f 6174 7472  ata <http://attr
+-00001160: 732e 7265 6164 7468 6564 6f63 732e 696f  s.readthedocs.io
+-00001170: 2f65 6e2f 7374 6162 6c65 2f65 7861 6d70  /en/stable/examp
+-00001180: 6c65 732e 6874 6d6c 2374 7970 6573 3e60  les.html#types>`
+-00001190: 5f0a 746f 2061 6464 2074 7970 6520 6d65  _.to add type me
+-000011a0: 7461 6461 7461 2074 6f20 6174 7472 6962  tadata to attrib
+-000011b0: 7574 6573 2c20 736f 2060 6063 6174 7472  utes, so ``cattr
+-000011c0: 7360 6020 7769 6c6c 206b 6e6f 7720 686f  s`` will know ho
+-000011d0: 7720 746f 2073 7472 7563 7475 7265 2061  w to structure a
+-000011e0: 6e64 0a64 6573 7472 7563 7475 7265 2074  nd.destructure t
+-000011f0: 6865 6d2e 0a0a 2a20 4672 6565 2073 6f66  hem...* Free sof
+-00001200: 7477 6172 653a 204d 4954 206c 6963 656e  tware: MIT licen
+-00001210: 7365 0a2a 2044 6f63 756d 656e 7461 7469  se.* Documentati
+-00001220: 6f6e 3a20 6874 7470 733a 2f2f 6361 7474  on: https://catt
+-00001230: 7273 2e72 6561 6474 6865 646f 6373 2e69  rs.readthedocs.i
+-00001240: 6f2e 0a2a 2050 7974 686f 6e20 7665 7273  o..* Python vers
+-00001250: 696f 6e73 2073 7570 706f 7274 6564 3a20  ions supported: 
+-00001260: 332e 3720 616e 6420 7570 2e20 284f 6c64  3.7 and up. (Old
+-00001270: 6572 2050 7974 686f 6e20 7665 7273 696f  er Python versio
+-00001280: 6e73 2c20 6c69 6b65 2032 2e37 2c20 332e  ns, like 2.7, 3.
+-00001290: 3520 616e 6420 332e 3620 6172 6520 7375  5 and 3.6 are su
+-000012a0: 7070 6f72 7465 6420 6279 206f 6c64 6572  pported by older
+-000012b0: 2076 6572 7369 6f6e 733b 2073 6565 2074   versions; see t
+-000012c0: 6865 2063 6861 6e67 656c 6f67 2e29 0a0a  he changelog.)..
+-000012d0: 0a46 6561 7475 7265 730a 2d2d 2d2d 2d2d  .Features.------
+-000012e0: 2d2d 0a0a 2a20 436f 6e76 6572 7473 2073  --..* Converts s
+-000012f0: 7472 7563 7475 7265 6420 6461 7461 2069  tructured data i
+-00001300: 6e74 6f20 756e 7374 7275 6374 7572 6564  nto unstructured
+-00001310: 2064 6174 612c 2072 6563 7572 7369 7665   data, recursive
+-00001320: 6c79 3a0a 0a20 202a 2060 6061 7474 7273  ly:..  * ``attrs
+-00001330: 6060 2063 6c61 7373 6573 2061 6e64 2064  `` classes and d
+-00001340: 6174 6163 6c61 7373 6573 2061 7265 2063  ataclasses are c
+-00001350: 6f6e 7665 7274 6564 2069 6e74 6f20 6469  onverted into di
+-00001360: 6374 696f 6e61 7269 6573 2069 6e20 6120  ctionaries in a 
+-00001370: 7761 7920 7369 6d69 6c61 7220 746f 2060  way similar to `
+-00001380: 6061 7474 7273 2e61 7364 6963 7460 602c  `attrs.asdict``,
+-00001390: 206f 7220 696e 746f 2074 7570 6c65 7320   or into tuples 
+-000013a0: 696e 2061 2077 6179 2073 696d 696c 6172  in a way similar
+-000013b0: 2074 6f20 6060 6174 7472 732e 6173 7475   to ``attrs.astu
+-000013c0: 706c 6560 602e 0a20 202a 2045 6e75 6d65  ple``..  * Enume
+-000013d0: 7261 7469 6f6e 2069 6e73 7461 6e63 6573  ration instances
+-000013e0: 2061 7265 2063 6f6e 7665 7274 6564 2074   are converted t
+-000013f0: 6f20 7468 6569 7220 7661 6c75 6573 2e0a  o their values..
+-00001400: 2020 2a20 4f74 6865 7220 7479 7065 7320    * Other types 
+-00001410: 6172 6520 6c65 7420 7468 726f 7567 6820  are let through 
+-00001420: 7769 7468 6f75 7420 636f 6e76 6572 7369  without conversi
+-00001430: 6f6e 2e20 5468 6973 2069 6e63 6c75 6465  on. This include
+-00001440: 7320 7479 7065 7320 7375 6368 2061 730a  s types such as.
+-00001450: 2020 2020 696e 7465 6765 7273 2c20 6469      integers, di
+-00001460: 6374 696f 6e61 7269 6573 2c20 6c69 7374  ctionaries, list
+-00001470: 7320 616e 6420 696e 7374 616e 6365 7320  s and instances 
+-00001480: 6f66 206e 6f6e 2d60 6061 7474 7273 6060  of non-``attrs``
+-00001490: 2063 6c61 7373 6573 2e0a 2020 2a20 4375   classes..  * Cu
+-000014a0: 7374 6f6d 2063 6f6e 7665 7274 6572 7320  stom converters 
+-000014b0: 666f 7220 616e 7920 7479 7065 2063 616e  for any type can
+-000014c0: 2062 6520 7265 6769 7374 6572 6564 2075   be registered u
+-000014d0: 7369 6e67 2060 6072 6567 6973 7465 725f  sing ``register_
+-000014e0: 756e 7374 7275 6374 7572 655f 686f 6f6b  unstructure_hook
+-000014f0: 6060 2e0a 0a2a 2043 6f6e 7665 7274 7320  ``...* Converts 
+-00001500: 756e 7374 7275 6374 7572 6564 2064 6174  unstructured dat
+-00001510: 6120 696e 746f 2073 7472 7563 7475 7265  a into structure
+-00001520: 6420 6461 7461 2c20 7265 6375 7273 6976  d data, recursiv
+-00001530: 656c 792c 2061 6363 6f72 6469 6e67 2074  ely, according t
+-00001540: 6f0a 2020 796f 7572 2073 7065 6369 6669  o.  your specifi
+-00001550: 6361 7469 6f6e 2067 6976 656e 2061 7320  cation given as 
+-00001560: 6120 7479 7065 2e20 5468 6520 666f 6c6c  a type. The foll
+-00001570: 6f77 696e 6720 7479 7065 7320 6172 6520  owing types are 
+-00001580: 7375 7070 6f72 7465 643a 0a0a 2020 2a20  supported:..  * 
+-00001590: 6060 7479 7069 6e67 2e4f 7074 696f 6e61  ``typing.Optiona
+-000015a0: 6c5b 545d 6060 2e0a 2020 2a20 6060 7479  l[T]``..  * ``ty
+-000015b0: 7069 6e67 2e4c 6973 745b 545d 6060 2c20  ping.List[T]``, 
+-000015c0: 6060 7479 7069 6e67 2e4d 7574 6162 6c65  ``typing.Mutable
+-000015d0: 5365 7175 656e 6365 5b54 5d60 602c 2060  Sequence[T]``, `
+-000015e0: 6074 7970 696e 672e 5365 7175 656e 6365  `typing.Sequence
+-000015f0: 5b54 5d60 6020 2863 6f6e 7665 7274 7320  [T]`` (converts 
+-00001600: 746f 2061 206c 6973 7429 2e0a 2020 2a20  to a list)..  * 
+-00001610: 6060 7479 7069 6e67 2e54 7570 6c65 6060  ``typing.Tuple``
+-00001620: 2028 626f 7468 2076 6172 6961 6e74 732c   (both variants,
+-00001630: 2060 6054 7570 6c65 5b54 2c20 2e2e 2e5d   ``Tuple[T, ...]
+-00001640: 6060 2061 6e64 2060 6054 7570 6c65 5b58  `` and ``Tuple[X
+-00001650: 2c20 592c 205a 5d60 6029 2e0a 2020 2a20  , Y, Z]``)..  * 
+-00001660: 6060 7479 7069 6e67 2e4d 7574 6162 6c65  ``typing.Mutable
+-00001670: 5365 745b 545d 6060 2c20 6060 7479 7069  Set[T]``, ``typi
+-00001680: 6e67 2e53 6574 5b54 5d60 6020 2863 6f6e  ng.Set[T]`` (con
+-00001690: 7665 7274 7320 746f 2061 2073 6574 292e  verts to a set).
+-000016a0: 0a20 202a 2060 6074 7970 696e 672e 4672  .  * ``typing.Fr
+-000016b0: 6f7a 656e 5365 745b 545d 6060 2028 636f  ozenSet[T]`` (co
+-000016c0: 6e76 6572 7473 2074 6f20 6120 6672 6f7a  nverts to a froz
+-000016d0: 656e 7365 7429 2e0a 2020 2a20 6060 7479  enset)..  * ``ty
+-000016e0: 7069 6e67 2e44 6963 745b 4b2c 2056 5d60  ping.Dict[K, V]`
+-000016f0: 602c 2060 6074 7970 696e 672e 4d75 7461  `, ``typing.Muta
+-00001700: 626c 654d 6170 7069 6e67 5b4b 2c20 565d  bleMapping[K, V]
+-00001710: 6060 2c20 6060 7479 7069 6e67 2e4d 6170  ``, ``typing.Map
+-00001720: 7069 6e67 5b4b 2c20 565d 6060 2028 636f  ping[K, V]`` (co
+-00001730: 6e76 6572 7473 2074 6f20 6120 6469 6374  nverts to a dict
+-00001740: 292e 0a20 202a 2060 6061 7474 7273 6060  )..  * ``attrs``
+-00001750: 2063 6c61 7373 6573 2077 6974 6820 7369   classes with si
+-00001760: 6d70 6c65 2061 7474 7269 6275 7465 7320  mple attributes 
+-00001770: 616e 6420 7468 6520 7573 7561 6c20 6060  and the usual ``
+-00001780: 5f5f 696e 6974 5f5f 6060 2e0a 0a20 2020  __init__``...   
+-00001790: 202a 2053 696d 706c 6520 6174 7472 6962   * Simple attrib
+-000017a0: 7574 6573 2061 7265 2061 7474 7269 6275  utes are attribu
+-000017b0: 7465 7320 7468 6174 2063 616e 2062 6520  tes that can be 
+-000017c0: 6173 7369 676e 6564 2075 6e73 7472 7563  assigned unstruc
+-000017d0: 7475 7265 6420 6461 7461 2c0a 2020 2020  tured data,.    
+-000017e0: 2020 6c69 6b65 206e 756d 6265 7273 2c20    like numbers, 
+-000017f0: 7374 7269 6e67 732c 2061 6e64 2063 6f6c  strings, and col
+-00001800: 6c65 6374 696f 6e73 206f 6620 756e 7374  lections of unst
+-00001810: 7275 6374 7572 6564 2064 6174 612e 0a0a  ructured data...
+-00001820: 2020 2a20 416c 6c20 6061 7474 7273 6020    * All `attrs` 
+-00001830: 636c 6173 7365 7320 616e 6420 6461 7461  classes and data
+-00001840: 636c 6173 7365 7320 7769 7468 2074 6865  classes with the
+-00001850: 2075 7375 616c 2060 605f 5f69 6e69 745f   usual ``__init_
+-00001860: 5f60 602c 2069 6620 7468 6569 7220 636f  _``, if their co
+-00001870: 6d70 6c65 7820 6174 7472 6962 7574 6573  mplex attributes
+-00001880: 2068 6176 6520 7479 7065 206d 6574 6164   have type metad
+-00001890: 6174 612e 0a20 202a 2060 6074 7970 696e  ata..  * ``typin
+-000018a0: 672e 556e 696f 6e60 6020 7320 6f66 2073  g.Union`` s of s
+-000018b0: 7570 706f 7274 6564 2060 6061 7474 7273  upported ``attrs
+-000018c0: 6060 2063 6c61 7373 6573 2c20 6769 7665  `` classes, give
+-000018d0: 6e20 7468 6174 2061 6c6c 206f 6620 7468  n that all of th
+-000018e0: 6520 636c 6173 7365 7320 6861 7665 2061  e classes have a
+-000018f0: 2075 6e69 7175 6520 6669 656c 642e 0a20   unique field.. 
+-00001900: 202a 2060 6074 7970 696e 672e 556e 696f   * ``typing.Unio
+-00001910: 6e60 6020 7320 6f66 2061 6e79 7468 696e  n`` s of anythin
+-00001920: 672c 2067 6976 656e 2074 6861 7420 796f  g, given that yo
+-00001930: 7520 7072 6f76 6964 6520 6120 6469 7361  u provide a disa
+-00001940: 6d62 6967 7561 7469 6f6e 2066 756e 6374  mbiguation funct
+-00001950: 696f 6e20 666f 7220 6974 2e0a 2020 2a20  ion for it..  * 
+-00001960: 4375 7374 6f6d 2063 6f6e 7665 7274 6572  Custom converter
+-00001970: 7320 666f 7220 616e 7920 7479 7065 2063  s for any type c
+-00001980: 616e 2062 6520 7265 6769 7374 6572 6564  an be registered
+-00001990: 2075 7369 6e67 2060 6072 6567 6973 7465   using ``registe
+-000019a0: 725f 7374 7275 6374 7572 655f 686f 6f6b  r_structure_hook
+-000019b0: 6060 2e0a 0a60 6063 6174 7472 7360 6020  ``...``cattrs`` 
+-000019c0: 636f 6d65 7320 7769 7468 2070 7265 636f  comes with preco
+-000019d0: 6e66 6967 7572 6564 2063 6f6e 7665 7274  nfigured convert
+-000019e0: 6572 7320 666f 7220 6120 6e75 6d62 6572  ers for a number
+-000019f0: 206f 6620 7365 7269 616c 697a 6174 696f   of serializatio
+-00001a00: 6e20 6c69 6272 6172 6965 732c 2069 6e63  n libraries, inc
+-00001a10: 6c75 6469 6e67 206a 736f 6e2c 206d 7367  luding json, msg
+-00001a20: 7061 636b 2c20 6273 6f6e 2c20 7961 6d6c  pack, bson, yaml
+-00001a30: 2061 6e64 2074 6f6d 6c2e 0a46 6f72 2064   and toml..For d
+-00001a40: 6574 6169 6c73 2c20 7365 6520 7468 6520  etails, see the 
+-00001a50: 6063 6174 7472 2e70 7265 636f 6e66 2070  `cattr.preconf p
+-00001a60: 6163 6b61 6765 203c 6874 7470 733a 2f2f  ackage <https://
+-00001a70: 6361 7474 7273 2e72 6561 6474 6865 646f  cattrs.readthedo
+-00001a80: 6373 2e69 6f2f 656e 2f6c 6174 6573 742f  cs.io/en/latest/
+-00001a90: 7072 6563 6f6e 662e 6874 6d6c 3e60 5f2e  preconf.html>`_.
+-00001aa0: 0a0a 4164 6469 7469 6f6e 616c 2064 6f63  ..Additional doc
+-00001ab0: 756d 656e 7461 7469 6f6e 0a2d 2d2d 2d2d  umentation.-----
+-00001ac0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ----------------
+-00001ad0: 2d2d 2d0a 2a20 604f 6e20 7374 7275 6374  ---.* `On struct
+-00001ae0: 7572 6564 2061 6e64 2075 6e73 7472 7563  ured and unstruc
+-00001af0: 7475 7265 6420 6461 7461 2c20 6f72 2074  tured data, or t
+-00001b00: 6865 2063 6173 6520 666f 7220 6361 7474  he case for catt
+-00001b10: 7273 203c 6874 7470 733a 2f2f 7468 7265  rs <https://thre
+-00001b20: 656f 6677 616e 6473 2e63 6f6d 2f6f 6e2d  eofwands.com/on-
+-00001b30: 7374 7275 6374 7572 6564 2d61 6e64 2d75  structured-and-u
+-00001b40: 6e73 7472 7563 7475 7265 642d 6461 7461  nstructured-data
+-00001b50: 2d6f 722d 7468 652d 6361 7365 2d66 6f72  -or-the-case-for
+-00001b60: 2d63 6174 7472 732f 3e60 5f0a 2a20 6057  -cattrs/>`_.* `W
+-00001b70: 6879 2049 2075 7365 2061 7474 7273 2069  hy I use attrs i
+-00001b80: 6e73 7465 6164 206f 6620 7079 6461 6e74  nstead of pydant
+-00001b90: 6963 203c 6874 7470 733a 2f2f 7468 7265  ic <https://thre
+-00001ba0: 656f 6677 616e 6473 2e63 6f6d 2f77 6879  eofwands.com/why
+-00001bb0: 2d69 2d75 7365 2d61 7474 7273 2d69 6e73  -i-use-attrs-ins
+-00001bc0: 7465 6164 2d6f 662d 7079 6461 6e74 6963  tead-of-pydantic
+-00001bd0: 2f3e 605f 0a2a 2060 6361 7474 7273 2049  />`_.* `cattrs I
+-00001be0: 3a20 756e 2f73 7472 7563 7475 7269 6e67  : un/structuring
+-00001bf0: 2073 7065 6564 203c 6874 7470 733a 2f2f   speed <https://
+-00001c00: 7468 7265 656f 6677 616e 6473 2e63 6f6d  threeofwands.com
+-00001c10: 2f77 6879 2d63 6174 7472 732d 6973 2d73  /why-cattrs-is-s
+-00001c20: 6f2d 6661 7374 2f3e 605f 0a0a 4372 6564  o-fast/>`_..Cred
+-00001c30: 6974 730a 2d2d 2d2d 2d2d 2d0a 0a4d 616a  its.-------..Maj
+-00001c40: 6f72 2063 7265 6469 7473 2074 6f20 4879  or credits to Hy
+-00001c50: 6e65 6b20 5363 686c 6177 6163 6b20 666f  nek Schlawack fo
+-00001c60: 7220 6372 6561 7469 6e67 2061 7474 7273  r creating attrs
+-00001c70: 5f20 616e 6420 6974 7320 7072 6564 6563  _ and its predec
+-00001c80: 6573 736f 722c 0a63 6861 7261 6374 6572  essor,.character
+-00001c90: 6973 7469 635f 2e0a 0a60 6063 6174 7472  istic_...``cattr
+-00001ca0: 7360 6020 6973 2074 6573 7465 6420 7769  s`` is tested wi
+-00001cb0: 7468 2048 7970 6f74 6865 7369 735f 2c20  th Hypothesis_, 
+-00001cc0: 6279 2044 6176 6964 2052 2e20 4d61 6349  by David R. MacI
+-00001cd0: 7665 722e 0a0a 6060 6361 7474 7273 6060  ver...``cattrs``
+-00001ce0: 2069 7320 6265 6e63 686d 6172 6b65 6420   is benchmarked 
+-00001cf0: 7573 696e 6720 7065 7266 5f20 616e 6420  using perf_ and 
+-00001d00: 7079 7465 7374 2d62 656e 6368 6d61 726b  pytest-benchmark
+-00001d10: 5f2e 0a0a 5468 6973 2070 6163 6b61 6765  _...This package
+-00001d20: 2077 6173 2063 7265 6174 6564 2077 6974   was created wit
+-00001d30: 6820 436f 6f6b 6965 6375 7474 6572 5f20  h Cookiecutter_ 
+-00001d40: 616e 6420 7468 6520 6061 7564 7265 7972  and the `audreyr
+-00001d50: 2f63 6f6f 6b69 6563 7574 7465 722d 7079  /cookiecutter-py
+-00001d60: 7061 636b 6167 6560 5f20 7072 6f6a 6563  package`_ projec
+-00001d70: 7420 7465 6d70 6c61 7465 2e0a 0a2e 2e20  t template..... 
+-00001d80: 5f61 7474 7273 3a20 6874 7470 733a 2f2f  _attrs: https://
+-00001d90: 6769 7468 7562 2e63 6f6d 2f68 796e 656b  github.com/hynek
+-00001da0: 2f61 7474 7273 0a2e 2e20 5f63 6861 7261  /attrs... _chara
+-00001db0: 6374 6572 6973 7469 633a 2068 7474 7073  cteristic: https
+-00001dc0: 3a2f 2f67 6974 6875 622e 636f 6d2f 6879  ://github.com/hy
+-00001dd0: 6e65 6b2f 6368 6172 6163 7465 7269 7374  nek/characterist
+-00001de0: 6963 0a2e 2e20 5f48 7970 6f74 6865 7369  ic... _Hypothesi
+-00001df0: 733a 2068 7474 703a 2f2f 6879 706f 7468  s: http://hypoth
+-00001e00: 6573 6973 2e72 6561 6474 6865 646f 6373  esis.readthedocs
+-00001e10: 2e69 6f2f 656e 2f6c 6174 6573 742f 0a2e  .io/en/latest/..
+-00001e20: 2e20 5f70 6572 663a 2068 7474 7073 3a2f  . _perf: https:/
+-00001e30: 2f67 6974 6875 622e 636f 6d2f 6861 7970  /github.com/hayp
+-00001e40: 6f2f 7065 7266 0a2e 2e20 5f70 7974 6573  o/perf... _pytes
+-00001e50: 742d 6265 6e63 686d 6172 6b3a 2068 7474  t-benchmark: htt
+-00001e60: 7073 3a2f 2f70 7974 6573 742d 6265 6e63  ps://pytest-benc
+-00001e70: 686d 6172 6b2e 7265 6164 7468 6564 6f63  hmark.readthedoc
+-00001e80: 732e 696f 2f65 6e2f 6c61 7465 7374 2f69  s.io/en/latest/i
+-00001e90: 6e64 6578 2e68 746d 6c0a 2e2e 205f 436f  ndex.html... _Co
+-00001ea0: 6f6b 6965 6375 7474 6572 3a20 6874 7470  okiecutter: http
+-00001eb0: 733a 2f2f 6769 7468 7562 2e63 6f6d 2f61  s://github.com/a
+-00001ec0: 7564 7265 7972 2f63 6f6f 6b69 6563 7574  udreyr/cookiecut
+-00001ed0: 7465 720a 2e2e 205f 6061 7564 7265 7972  ter... _`audreyr
+-00001ee0: 2f63 6f6f 6b69 6563 7574 7465 722d 7079  /cookiecutter-py
+-00001ef0: 7061 636b 6167 6560 3a20 6874 7470 733a  package`: https:
+-00001f00: 2f2f 6769 7468 7562 2e63 6f6d 2f61 7564  //github.com/aud
+-00001f10: 7265 7972 2f63 6f6f 6b69 6563 7574 7465  reyr/cookiecutte
+-00001f20: 722d 7079 7061 636b 6167 650a            r-pypackage.
++00000000: 2320 6361 7474 7273 0a0a 3c61 2068 7265  # cattrs..<a hre
++00000010: 663d 2268 7474 7073 3a2f 2f70 7970 692e  f="https://pypi.
++00000020: 7079 7468 6f6e 2e6f 7267 2f70 7970 692f  python.org/pypi/
++00000030: 6361 7474 7273 223e 3c69 6d67 2073 7263  cattrs"><img src
++00000040: 3d22 6874 7470 733a 2f2f 696d 672e 7368  ="https://img.sh
++00000050: 6965 6c64 732e 696f 2f70 7970 692f 762f  ields.io/pypi/v/
++00000060: 6361 7474 7273 2e73 7667 222f 3e3c 2f61  cattrs.svg"/></a
++00000070: 3e0a 3c61 2068 7265 663d 2268 7474 7073  >.<a href="https
++00000080: 3a2f 2f67 6974 6875 622e 636f 6d2f 7079  ://github.com/py
++00000090: 7468 6f6e 2d61 7474 7273 2f63 6174 7472  thon-attrs/cattr
++000000a0: 732f 6163 7469 6f6e 733f 776f 726b 666c  s/actions?workfl
++000000b0: 6f77 3d43 4922 3e3c 696d 6720 7372 633d  ow=CI"><img src=
++000000c0: 2268 7474 7073 3a2f 2f67 6974 6875 622e  "https://github.
++000000d0: 636f 6d2f 7079 7468 6f6e 2d61 7474 7273  com/python-attrs
++000000e0: 2f63 6174 7472 732f 776f 726b 666c 6f77  /cattrs/workflow
++000000f0: 732f 4349 2f62 6164 6765 2e73 7667 222f  s/CI/badge.svg"/
++00000100: 3e3c 2f61 3e0a 3c61 2068 7265 663d 2268  ></a>.<a href="h
++00000110: 7474 7073 3a2f 2f63 6174 742e 7273 2f65  ttps://catt.rs/e
++00000120: 6e2f 6c61 7465 7374 2f3f 6261 6467 653d  n/latest/?badge=
++00000130: 6c61 7465 7374 223e 3c69 6d67 2073 7263  latest"><img src
++00000140: 3d22 6874 7470 733a 2f2f 7265 6164 7468  ="https://readth
++00000150: 6564 6f63 732e 6f72 672f 7072 6f6a 6563  edocs.org/projec
++00000160: 7473 2f63 6174 7472 732f 6261 6467 652f  ts/cattrs/badge/
++00000170: 3f76 6572 7369 6f6e 3d6c 6174 6573 7422  ?version=latest"
++00000180: 2061 6c74 3d22 446f 6375 6d65 6e74 6174   alt="Documentat
++00000190: 696f 6e20 5374 6174 7573 222f 3e3c 2f61  ion Status"/></a
++000001a0: 3e0a 3c61 2068 7265 663d 2268 7474 7073  >.<a href="https
++000001b0: 3a2f 2f67 6974 6875 622e 636f 6d2f 7079  ://github.com/py
++000001c0: 7468 6f6e 2d61 7474 7273 2f63 6174 7472  thon-attrs/cattr
++000001d0: 7322 3e3c 696d 6720 7372 633d 2268 7474  s"><img src="htt
++000001e0: 7073 3a2f 2f69 6d67 2e73 6869 656c 6473  ps://img.shields
++000001f0: 2e69 6f2f 7079 7069 2f70 7976 6572 7369  .io/pypi/pyversi
++00000200: 6f6e 732f 6361 7474 7273 2e73 7667 2220  ons/cattrs.svg" 
++00000210: 616c 743d 2253 7570 706f 7274 6564 2050  alt="Supported P
++00000220: 7974 686f 6e20 7665 7273 696f 6e73 222f  ython versions"/
++00000230: 3e3c 2f61 3e0a 3c61 2068 7265 663d 2268  ></a>.<a href="h
++00000240: 7474 7073 3a2f 2f63 6f64 6563 6f76 2e69  ttps://codecov.i
++00000250: 6f2f 6768 2f70 7974 686f 6e2d 6174 7472  o/gh/python-attr
++00000260: 732f 6361 7474 7273 2f22 3e3c 696d 6720  s/cattrs/"><img 
++00000270: 7372 633d 2268 7474 7073 3a2f 2f63 6f64  src="https://cod
++00000280: 6563 6f76 2e69 6f2f 6768 2f70 7974 686f  ecov.io/gh/pytho
++00000290: 6e2d 6174 7472 732f 6361 7474 7273 2f62  n-attrs/cattrs/b
++000002a0: 7261 6e63 682f 6d61 7374 6572 2f67 7261  ranch/master/gra
++000002b0: 7068 2f62 6164 6765 2e73 7667 222f 3e3c  ph/badge.svg"/><
++000002c0: 2f61 3e0a 3c61 2068 7265 663d 2268 7474  /a>.<a href="htt
++000002d0: 7073 3a2f 2f67 6974 6875 622e 636f 6d2f  ps://github.com/
++000002e0: 7073 662f 626c 6163 6b22 3e3c 696d 6720  psf/black"><img 
++000002f0: 7372 633d 2268 7474 7073 3a2f 2f69 6d67  src="https://img
++00000300: 2e73 6869 656c 6473 2e69 6f2f 6261 6467  .shields.io/badg
++00000310: 652f 636f 6465 2532 3073 7479 6c65 2d62  e/code%20style-b
++00000320: 6c61 636b 2d30 3030 3030 302e 7376 6722  lack-000000.svg"
++00000330: 2f3e 3c2f 613e 0a0a 2d2d 2d0a 0a2a 2a63  /></a>..---..**c
++00000340: 6174 7472 732a 2a20 6973 2061 6e20 6f70  attrs** is an op
++00000350: 656e 2073 6f75 7263 6520 5079 7468 6f6e  en source Python
++00000360: 206c 6962 7261 7279 2066 6f72 2073 7472   library for str
++00000370: 7563 7475 7269 6e67 2061 6e64 2075 6e73  ucturing and uns
++00000380: 7472 7563 7475 7269 6e67 0a64 6174 612e  tructuring.data.
++00000390: 205f 6361 7474 7273 5f20 776f 726b 7320   _cattrs_ works 
++000003a0: 6265 7374 2077 6974 6820 5f61 7474 7273  best with _attrs
++000003b0: 5f20 636c 6173 7365 732c 2064 6174 6163  _ classes, datac
++000003c0: 6c61 7373 6573 2061 6e64 2074 6865 2075  lasses and the u
++000003d0: 7375 616c 0a50 7974 686f 6e20 636f 6c6c  sual.Python coll
++000003e0: 6563 7469 6f6e 732c 2062 7574 206f 7468  ections, but oth
++000003f0: 6572 206b 696e 6473 206f 6620 636c 6173  er kinds of clas
++00000400: 7365 7320 6172 6520 7375 7070 6f72 7465  ses are supporte
++00000410: 6420 6279 206d 616e 7561 6c6c 790a 7265  d by manually.re
++00000420: 6769 7374 6572 696e 6720 636f 6e76 6572  gistering conver
++00000430: 7465 7273 2e0a 0a50 7974 686f 6e20 6861  ters...Python ha
++00000440: 7320 6120 7269 6368 2073 6574 206f 6620  s a rich set of 
++00000450: 706f 7765 7266 756c 2c20 6561 7379 2074  powerful, easy t
++00000460: 6f20 7573 652c 2062 7569 6c74 2d69 6e20  o use, built-in 
++00000470: 6461 7461 2074 7970 6573 206c 696b 650a  data types like.
++00000480: 6469 6374 696f 6e61 7269 6573 2c20 6c69  dictionaries, li
++00000490: 7374 7320 616e 6420 7475 706c 6573 2e20  sts and tuples. 
++000004a0: 5468 6573 6520 6461 7461 2074 7970 6573  These data types
++000004b0: 2061 7265 2061 6c73 6f20 7468 6520 6c69   are also the li
++000004c0: 6e67 7561 2066 7261 6e63 610a 6f66 206d  ngua franca.of m
++000004d0: 6f73 7420 6461 7461 2073 6572 6961 6c69  ost data seriali
++000004e0: 7a61 7469 6f6e 206c 6962 7261 7269 6573  zation libraries
++000004f0: 2c20 666f 7220 666f 726d 6174 7320 6c69  , for formats li
++00000500: 6b65 206a 736f 6e2c 206d 7367 7061 636b  ke json, msgpack
++00000510: 2c20 6362 6f72 2c0a 7961 6d6c 206f 7220  , cbor,.yaml or 
++00000520: 746f 6d6c 2e0a 0a44 6174 6120 7479 7065  toml...Data type
++00000530: 7320 6c69 6b65 2074 6869 732c 2061 6e64  s like this, and
++00000540: 206d 6170 7069 6e67 7320 6c69 6b65 2060   mappings like `
++00000550: 6469 6374 6020 7320 696e 2070 6172 7469  dict` s in parti
++00000560: 6375 6c61 722c 2072 6570 7265 7365 6e74  cular, represent
++00000570: 0a75 6e73 7472 7563 7475 7265 6420 6461  .unstructured da
++00000580: 7461 2e20 596f 7572 2064 6174 6120 6973  ta. Your data is
++00000590: 2c20 696e 2061 6c6c 206c 696b 656c 6968  , in all likelih
++000005a0: 6f6f 642c 2073 7472 7563 7475 7265 643a  ood, structured:
++000005b0: 206e 6f74 2061 6c6c 0a63 6f6d 6269 6e61   not all.combina
++000005c0: 7469 6f6e 7320 6f66 2066 6965 6c64 206e  tions of field n
++000005d0: 616d 6573 206f 7220 7661 6c75 6573 2061  ames or values a
++000005e0: 7265 2076 616c 6964 2069 6e70 7574 7320  re valid inputs 
++000005f0: 746f 2079 6f75 7220 7072 6f67 7261 6d73  to your programs
++00000600: 2e20 496e 0a50 7974 686f 6e2c 2073 7472  . In.Python, str
++00000610: 7563 7475 7265 6420 6461 7461 2069 7320  uctured data is 
++00000620: 6265 7474 6572 2072 6570 7265 7365 6e74  better represent
++00000630: 6564 2077 6974 6820 636c 6173 7365 7320  ed with classes 
++00000640: 616e 6420 656e 756d 6572 6174 696f 6e73  and enumerations
++00000650: 2e0a 5f61 7474 7273 5f20 6973 2061 6e20  .._attrs_ is an 
++00000660: 6578 6365 6c6c 656e 7420 6c69 6272 6172  excellent librar
++00000670: 7920 666f 7220 6465 636c 6172 6174 6976  y for declarativ
++00000680: 656c 7920 6465 7363 7269 6269 6e67 2074  ely describing t
++00000690: 6865 2073 7472 7563 7475 7265 206f 660a  he structure of.
++000006a0: 796f 7572 2064 6174 612c 2061 6e64 2076  your data, and v
++000006b0: 616c 6964 6174 696e 6720 6974 2e0a 0a57  alidating it...W
++000006c0: 6865 6e20 796f 7527 7265 2068 616e 6465  hen you're hande
++000006d0: 6420 756e 7374 7275 6374 7572 6564 2064  d unstructured d
++000006e0: 6174 6120 2862 7920 796f 7572 206e 6574  ata (by your net
++000006f0: 776f 726b 2c20 6669 6c65 2073 7973 7465  work, file syste
++00000700: 6d2c 2064 6174 6162 6173 652e 2e2e 292c  m, database...),
++00000710: 0a5f 6361 7474 7273 5f20 6865 6c70 7320  ._cattrs_ helps 
++00000720: 746f 2063 6f6e 7665 7274 2074 6869 7320  to convert this 
++00000730: 6461 7461 2069 6e74 6f20 7374 7275 6374  data into struct
++00000740: 7572 6564 2064 6174 612e 2057 6865 6e20  ured data. When 
++00000750: 796f 7520 6861 7665 2074 6f0a 636f 6e76  you have to.conv
++00000760: 6572 7420 796f 7572 2073 7472 7563 7475  ert your structu
++00000770: 7265 6420 6461 7461 2069 6e74 6f20 6461  red data into da
++00000780: 7461 2074 7970 6573 206f 7468 6572 206c  ta types other l
++00000790: 6962 7261 7269 6573 2063 616e 2068 616e  ibraries can han
++000007a0: 646c 652c 0a5f 6361 7474 7273 5f20 7475  dle,._cattrs_ tu
++000007b0: 726e 7320 796f 7572 2063 6c61 7373 6573  rns your classes
++000007c0: 2061 6e64 2065 6e75 6d65 7261 7469 6f6e   and enumeration
++000007d0: 7320 696e 746f 2064 6963 7469 6f6e 6172  s into dictionar
++000007e0: 6965 732c 2069 6e74 6567 6572 7320 616e  ies, integers an
++000007f0: 640a 7374 7269 6e67 732e 0a0a 4865 7265  d.strings...Here
++00000800: 2773 2061 2073 696d 706c 6520 7461 7374  's a simple tast
++00000810: 652e 2054 6865 206c 6973 7420 636f 6e74  e. The list cont
++00000820: 6169 6e69 6e67 2061 2066 6c6f 6174 2c20  aining a float, 
++00000830: 616e 2069 6e74 2061 6e64 2061 2073 7472  an int and a str
++00000840: 696e 670a 6765 7473 2063 6f6e 7665 7274  ing.gets convert
++00000850: 6564 2069 6e74 6f20 6120 7475 706c 6520  ed into a tuple 
++00000860: 6f66 2074 6872 6565 2069 6e74 732e 0a0a  of three ints...
++00000870: 6060 6070 7974 686f 6e0a 3e3e 3e20 696d  ```python.>>> im
++00000880: 706f 7274 2063 6174 7472 730a 0a3e 3e3e  port cattrs..>>>
++00000890: 2063 6174 7472 732e 7374 7275 6374 7572   cattrs.structur
++000008a0: 6528 5b31 2e30 2c20 322c 2022 3322 5d2c  e([1.0, 2, "3"],
++000008b0: 2074 7570 6c65 5b69 6e74 2c20 696e 742c   tuple[int, int,
++000008c0: 2069 6e74 5d29 0a28 312c 2032 2c20 3329   int]).(1, 2, 3)
++000008d0: 0a60 6060 0a0a 5f63 6174 7472 735f 2077  .```.._cattrs_ w
++000008e0: 6f72 6b73 2077 656c 6c20 7769 7468 205f  orks well with _
++000008f0: 6174 7472 735f 2063 6c61 7373 6573 206f  attrs_ classes o
++00000900: 7574 206f 6620 7468 6520 626f 782e 0a0a  ut of the box...
++00000910: 6060 6070 7974 686f 6e0a 3e3e 3e20 6672  ```python.>>> fr
++00000920: 6f6d 2061 7474 7273 2069 6d70 6f72 7420  om attrs import 
++00000930: 6672 6f7a 656e 0a3e 3e3e 2069 6d70 6f72  frozen.>>> impor
++00000940: 7420 6361 7474 7273 0a0a 3e3e 3e20 4066  t cattrs..>>> @f
++00000950: 726f 7a65 6e20 2023 2049 7420 776f 726b  rozen  # It work
++00000960: 7320 7769 7468 206e 6f6e 2d66 726f 7a65  s with non-froze
++00000970: 6e20 636c 6173 7365 7320 746f 6f2e 0a2e  n classes too...
++00000980: 2e2e 2063 6c61 7373 2043 3a0a 2e2e 2e20  .. class C:.... 
++00000990: 2020 2020 613a 2069 6e74 0a2e 2e2e 2020      a: int....  
++000009a0: 2020 2062 3a20 7374 720a 0a3e 3e3e 2069     b: str..>>> i
++000009b0: 6e73 7461 6e63 6520 3d20 4328 312c 2027  nstance = C(1, '
++000009c0: 6127 290a 3e3e 3e20 6361 7474 7273 2e75  a').>>> cattrs.u
++000009d0: 6e73 7472 7563 7475 7265 2869 6e73 7461  nstructure(insta
++000009e0: 6e63 6529 0a7b 2761 273a 2031 2c20 2762  nce).{'a': 1, 'b
++000009f0: 273a 2027 6127 7d0a 3e3e 3e20 6361 7474  ': 'a'}.>>> catt
++00000a00: 7273 2e73 7472 7563 7475 7265 287b 2761  rs.structure({'a
++00000a10: 273a 2031 2c20 2762 273a 2027 6127 7d2c  ': 1, 'b': 'a'},
++00000a20: 2043 290a 4328 613d 312c 2062 3d27 6127   C).C(a=1, b='a'
++00000a30: 290a 6060 600a 0a48 6572 6527 7320 6120  ).```..Here's a 
++00000a40: 6d75 6368 206d 6f72 6520 636f 6d70 6c65  much more comple
++00000a50: 7820 6578 616d 706c 652c 2069 6e76 6f6c  x example, invol
++00000a60: 7669 6e67 2060 6174 7472 7360 2063 6c61  ving `attrs` cla
++00000a70: 7373 6573 2077 6974 6820 7479 7065 0a6d  sses with type.m
++00000a80: 6574 6164 6174 612e 0a0a 6060 6070 7974  etadata...```pyt
++00000a90: 686f 6e0a 3e3e 3e20 6672 6f6d 2065 6e75  hon.>>> from enu
++00000aa0: 6d20 696d 706f 7274 2075 6e69 7175 652c  m import unique,
++00000ab0: 2045 6e75 6d0a 3e3e 3e20 6672 6f6d 2074   Enum.>>> from t
++00000ac0: 7970 696e 6720 696d 706f 7274 204f 7074  yping import Opt
++00000ad0: 696f 6e61 6c2c 2053 6571 7565 6e63 652c  ional, Sequence,
++00000ae0: 2055 6e69 6f6e 0a3e 3e3e 2066 726f 6d20   Union.>>> from 
++00000af0: 6361 7474 7273 2069 6d70 6f72 7420 7374  cattrs import st
++00000b00: 7275 6374 7572 652c 2075 6e73 7472 7563  ructure, unstruc
++00000b10: 7475 7265 0a3e 3e3e 2066 726f 6d20 6174  ture.>>> from at
++00000b20: 7472 7320 696d 706f 7274 2064 6566 696e  trs import defin
++00000b30: 652c 2066 6965 6c64 0a0a 3e3e 3e20 4075  e, field..>>> @u
++00000b40: 6e69 7175 650a 2e2e 2e20 636c 6173 7320  nique.... class 
++00000b50: 4361 7442 7265 6564 2845 6e75 6d29 3a0a  CatBreed(Enum):.
++00000b60: 2e2e 2e20 2020 2020 5349 414d 4553 4520  ...     SIAMESE 
++00000b70: 3d20 2273 6961 6d65 7365 220a 2e2e 2e20  = "siamese".... 
++00000b80: 2020 2020 4d41 494e 455f 434f 4f4e 203d      MAINE_COON =
++00000b90: 2022 6d61 696e 655f 636f 6f6e 220a 2e2e   "maine_coon"...
++00000ba0: 2e20 2020 2020 5341 4352 4544 5f42 4952  .     SACRED_BIR
++00000bb0: 4d41 4e20 3d20 2262 6972 6d61 6e22 0a0a  MAN = "birman"..
++00000bc0: 3e3e 3e20 4064 6566 696e 650a 2e2e 2e20  >>> @define.... 
++00000bd0: 636c 6173 7320 4361 743a 0a2e 2e2e 2020  class Cat:....  
++00000be0: 2020 2062 7265 6564 3a20 4361 7442 7265     breed: CatBre
++00000bf0: 6564 0a2e 2e2e 2020 2020 206e 616d 6573  ed....     names
++00000c00: 3a20 5365 7175 656e 6365 5b73 7472 5d0a  : Sequence[str].
++00000c10: 0a3e 3e3e 2040 6465 6669 6e65 0a2e 2e2e  .>>> @define....
++00000c20: 2063 6c61 7373 2044 6f67 4d69 6372 6f63   class DogMicroc
++00000c30: 6869 703a 0a2e 2e2e 2020 2020 2063 6869  hip:....     chi
++00000c40: 705f 6964 203d 2066 6965 6c64 2829 2020  p_id = field()  
++00000c50: 2320 5479 7065 2061 6e6e 6f74 6174 696f  # Type annotatio
++00000c60: 6e73 2061 7265 206f 7074 696f 6e61 6c2c  ns are optional,
++00000c70: 2062 7574 2072 6563 6f6d 6d65 6e64 6564   but recommended
++00000c80: 0a2e 2e2e 2020 2020 2074 696d 655f 6368  ....     time_ch
++00000c90: 6970 7065 643a 2066 6c6f 6174 203d 2066  ipped: float = f
++00000ca0: 6965 6c64 2829 0a0a 3e3e 3e20 4064 6566  ield()..>>> @def
++00000cb0: 696e 650a 2e2e 2e20 636c 6173 7320 446f  ine.... class Do
++00000cc0: 673a 0a2e 2e2e 2020 2020 2063 7574 656e  g:....     cuten
++00000cd0: 6573 733a 2069 6e74 0a2e 2e2e 2020 2020  ess: int....    
++00000ce0: 2063 6869 703a 204f 7074 696f 6e61 6c5b   chip: Optional[
++00000cf0: 446f 674d 6963 726f 6368 6970 5d20 3d20  DogMicrochip] = 
++00000d00: 4e6f 6e65 0a0a 3e3e 3e20 7020 3d20 756e  None..>>> p = un
++00000d10: 7374 7275 6374 7572 6528 5b44 6f67 2863  structure([Dog(c
++00000d20: 7574 656e 6573 733d 312c 2063 6869 703d  uteness=1, chip=
++00000d30: 446f 674d 6963 726f 6368 6970 2863 6869  DogMicrochip(chi
++00000d40: 705f 6964 3d31 2c20 7469 6d65 5f63 6869  p_id=1, time_chi
++00000d50: 7070 6564 3d31 302e 3029 292c 0a2e 2e2e  pped=10.0)),....
++00000d60: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00000d70: 2020 4361 7428 6272 6565 643d 4361 7442    Cat(breed=CatB
++00000d80: 7265 6564 2e4d 4149 4e45 5f43 4f4f 4e2c  reed.MAINE_COON,
++00000d90: 206e 616d 6573 3d28 2746 6c75 6666 6c79   names=('Fluffly
++00000da0: 272c 2027 466c 7566 6665 7227 2929 5d29  ', 'Fluffer'))])
++00000db0: 0a0a 3e3e 3e20 7072 696e 7428 7029 0a5b  ..>>> print(p).[
++00000dc0: 7b27 6375 7465 6e65 7373 273a 2031 2c20  {'cuteness': 1, 
++00000dd0: 2763 6869 7027 3a20 7b27 6368 6970 5f69  'chip': {'chip_i
++00000de0: 6427 3a20 312c 2027 7469 6d65 5f63 6869  d': 1, 'time_chi
++00000df0: 7070 6564 273a 2031 302e 307d 7d2c 207b  pped': 10.0}}, {
++00000e00: 2762 7265 6564 273a 2027 6d61 696e 655f  'breed': 'maine_
++00000e10: 636f 6f6e 272c 2027 6e61 6d65 7327 3a20  coon', 'names': 
++00000e20: 2827 466c 7566 666c 7927 2c20 2746 6c75  ('Fluffly', 'Flu
++00000e30: 6666 6572 2729 7d5d 0a3e 3e3e 2070 7269  ffer')}].>>> pri
++00000e40: 6e74 2873 7472 7563 7475 7265 2870 2c20  nt(structure(p, 
++00000e50: 6c69 7374 5b55 6e69 6f6e 5b44 6f67 2c20  list[Union[Dog, 
++00000e60: 4361 745d 5d29 290a 5b44 6f67 2863 7574  Cat]])).[Dog(cut
++00000e70: 656e 6573 733d 312c 2063 6869 703d 446f  eness=1, chip=Do
++00000e80: 674d 6963 726f 6368 6970 2863 6869 705f  gMicrochip(chip_
++00000e90: 6964 3d31 2c20 7469 6d65 5f63 6869 7070  id=1, time_chipp
++00000ea0: 6564 3d31 302e 3029 292c 2043 6174 2862  ed=10.0)), Cat(b
++00000eb0: 7265 6564 3d3c 4361 7442 7265 6564 2e4d  reed=<CatBreed.M
++00000ec0: 4149 4e45 5f43 4f4f 4e3a 2027 6d61 696e  AINE_COON: 'main
++00000ed0: 655f 636f 6f6e 273e 2c20 6e61 6d65 733d  e_coon'>, names=
++00000ee0: 5b27 466c 7566 666c 7927 2c20 2746 6c75  ['Fluffly', 'Flu
++00000ef0: 6666 6572 275d 295d 0a60 6060 0a0a 436f  ffer'])].```..Co
++00000f00: 6e73 6964 6572 2075 6e73 7472 7563 7475  nsider unstructu
++00000f10: 7265 6420 6461 7461 2061 206c 6f77 2d6c  red data a low-l
++00000f20: 6576 656c 2072 6570 7265 7365 6e74 6174  evel representat
++00000f30: 696f 6e20 7468 6174 206e 6565 6473 2074  ion that needs t
++00000f40: 6f20 6265 2063 6f6e 7665 7274 6564 0a74  o be converted.t
++00000f50: 6f20 7374 7275 6374 7572 6564 2064 6174  o structured dat
++00000f60: 6120 746f 2062 6520 6861 6e64 6c65 642c  a to be handled,
++00000f70: 2061 6e64 2075 7365 2060 7374 7275 6374   and use `struct
++00000f80: 7572 6560 2e20 5768 656e 2079 6f75 2772  ure`. When you'r
++00000f90: 6520 646f 6e65 2c0a 6075 6e73 7472 7563  e done,.`unstruc
++00000fa0: 7475 7265 6020 7468 6520 6461 7461 2074  ture` the data t
++00000fb0: 6f20 6974 7320 756e 7374 7275 6374 7572  o its unstructur
++00000fc0: 6564 2066 6f72 6d20 616e 6420 7061 7373  ed form and pass
++00000fd0: 2069 7420 616c 6f6e 6720 746f 2061 6e6f   it along to ano
++00000fe0: 7468 6572 0a6c 6962 7261 7279 206f 7220  ther.library or 
++00000ff0: 6d6f 6475 6c65 2e20 5573 6520 5b61 7474  module. Use [att
++00001000: 7273 2074 7970 6520 6d65 7461 6461 7461  rs type metadata
++00001010: 5d28 6874 7470 3a2f 2f61 7474 7273 2e72  ](http://attrs.r
++00001020: 6561 6474 6865 646f 6373 2e69 6f2f 656e  eadthedocs.io/en
++00001030: 2f73 7461 626c 652f 6578 616d 706c 6573  /stable/examples
++00001040: 2e68 746d 6c23 7479 7065 7329 0a74 6f20  .html#types).to 
++00001050: 6164 6420 7479 7065 206d 6574 6164 6174  add type metadat
++00001060: 6120 746f 2061 7474 7269 6275 7465 732c  a to attributes,
++00001070: 2073 6f20 5f63 6174 7472 735f 2077 696c   so _cattrs_ wil
++00001080: 6c20 6b6e 6f77 2068 6f77 2074 6f20 7374  l know how to st
++00001090: 7275 6374 7572 6520 616e 640a 6465 7374  ructure and.dest
++000010a0: 7275 6374 7572 6520 7468 656d 2e0a 0a2d  ructure them...-
++000010b0: 2046 7265 6520 736f 6674 7761 7265 3a20   Free software: 
++000010c0: 4d49 5420 6c69 6365 6e73 650a 2d20 446f  MIT license.- Do
++000010d0: 6375 6d65 6e74 6174 696f 6e3a 2068 7474  cumentation: htt
++000010e0: 7073 3a2f 2f63 6174 742e 7273 0a2d 2050  ps://catt.rs.- P
++000010f0: 7974 686f 6e20 7665 7273 696f 6e73 2073  ython versions s
++00001100: 7570 706f 7274 6564 3a20 332e 3720 616e  upported: 3.7 an
++00001110: 6420 7570 2e20 284f 6c64 6572 2050 7974  d up. (Older Pyt
++00001120: 686f 6e20 7665 7273 696f 6e73 2c20 6c69  hon versions, li
++00001130: 6b65 2032 2e37 2c20 332e 3520 616e 6420  ke 2.7, 3.5 and 
++00001140: 332e 3620 6172 6520 7375 7070 6f72 7465  3.6 are supporte
++00001150: 6420 6279 206f 6c64 6572 2076 6572 7369  d by older versi
++00001160: 6f6e 733b 2073 6565 2074 6865 2063 6861  ons; see the cha
++00001170: 6e67 656c 6f67 2e29 0a0a 2323 2046 6561  ngelog.)..## Fea
++00001180: 7475 7265 730a 0a2d 2043 6f6e 7665 7274  tures..- Convert
++00001190: 7320 7374 7275 6374 7572 6564 2064 6174  s structured dat
++000011a0: 6120 696e 746f 2075 6e73 7472 7563 7475  a into unstructu
++000011b0: 7265 6420 6461 7461 2c20 7265 6375 7273  red data, recurs
++000011c0: 6976 656c 793a 0a0a 2020 2d20 5f61 7474  ively:..  - _att
++000011d0: 7273 5f20 636c 6173 7365 7320 616e 6420  rs_ classes and 
++000011e0: 6461 7461 636c 6173 7365 7320 6172 6520  dataclasses are 
++000011f0: 636f 6e76 6572 7465 6420 696e 746f 2064  converted into d
++00001200: 6963 7469 6f6e 6172 6965 7320 696e 2061  ictionaries in a
++00001210: 2077 6179 2073 696d 696c 6172 2074 6f20   way similar to 
++00001220: 6061 7474 7273 2e61 7364 6963 7460 2c20  `attrs.asdict`, 
++00001230: 6f72 2069 6e74 6f20 7475 706c 6573 2069  or into tuples i
++00001240: 6e20 6120 7761 7920 7369 6d69 6c61 7220  n a way similar 
++00001250: 746f 2060 6174 7472 732e 6173 7475 706c  to `attrs.astupl
++00001260: 6560 2e0a 2020 2d20 456e 756d 6572 6174  e`..  - Enumerat
++00001270: 696f 6e20 696e 7374 616e 6365 7320 6172  ion instances ar
++00001280: 6520 636f 6e76 6572 7465 6420 746f 2074  e converted to t
++00001290: 6865 6972 2076 616c 7565 732e 0a20 202d  heir values..  -
++000012a0: 204f 7468 6572 2074 7970 6573 2061 7265   Other types are
++000012b0: 206c 6574 2074 6872 6f75 6768 2077 6974   let through wit
++000012c0: 686f 7574 2063 6f6e 7665 7273 696f 6e2e  hout conversion.
++000012d0: 2054 6869 7320 696e 636c 7564 6573 2074   This includes t
++000012e0: 7970 6573 2073 7563 6820 6173 0a20 2020  ypes such as.   
++000012f0: 2069 6e74 6567 6572 732c 2064 6963 7469   integers, dicti
++00001300: 6f6e 6172 6965 732c 206c 6973 7473 2061  onaries, lists a
++00001310: 6e64 2069 6e73 7461 6e63 6573 206f 6620  nd instances of 
++00001320: 6e6f 6e2d 5f61 7474 7273 5f20 636c 6173  non-_attrs_ clas
++00001330: 7365 732e 0a20 202d 2043 7573 746f 6d20  ses..  - Custom 
++00001340: 636f 6e76 6572 7465 7273 2066 6f72 2061  converters for a
++00001350: 6e79 2074 7970 6520 6361 6e20 6265 2072  ny type can be r
++00001360: 6567 6973 7465 7265 6420 7573 696e 6720  egistered using 
++00001370: 6072 6567 6973 7465 725f 756e 7374 7275  `register_unstru
++00001380: 6374 7572 655f 686f 6f6b 602e 0a0a 2d20  cture_hook`...- 
++00001390: 436f 6e76 6572 7473 2075 6e73 7472 7563  Converts unstruc
++000013a0: 7475 7265 6420 6461 7461 2069 6e74 6f20  tured data into 
++000013b0: 7374 7275 6374 7572 6564 2064 6174 612c  structured data,
++000013c0: 2072 6563 7572 7369 7665 6c79 2c20 6163   recursively, ac
++000013d0: 636f 7264 696e 6720 746f 0a20 2079 6f75  cording to.  you
++000013e0: 7220 7370 6563 6966 6963 6174 696f 6e20  r specification 
++000013f0: 6769 7665 6e20 6173 2061 2074 7970 652e  given as a type.
++00001400: 2054 6865 2066 6f6c 6c6f 7769 6e67 2074   The following t
++00001410: 7970 6573 2061 7265 2073 7570 706f 7274  ypes are support
++00001420: 6564 3a0a 0a20 202d 2060 7479 7069 6e67  ed:..  - `typing
++00001430: 2e4f 7074 696f 6e61 6c5b 545d 602e 0a20  .Optional[T]`.. 
++00001440: 202d 2060 7479 7069 6e67 2e4c 6973 745b   - `typing.List[
++00001450: 545d 602c 2060 7479 7069 6e67 2e4d 7574  T]`, `typing.Mut
++00001460: 6162 6c65 5365 7175 656e 6365 5b54 5d60  ableSequence[T]`
++00001470: 2c20 6074 7970 696e 672e 5365 7175 656e  , `typing.Sequen
++00001480: 6365 5b54 5d60 2028 636f 6e76 6572 7473  ce[T]` (converts
++00001490: 2074 6f20 6120 6c69 7374 292e 0a20 202d   to a list)..  -
++000014a0: 2060 7479 7069 6e67 2e54 7570 6c65 6020   `typing.Tuple` 
++000014b0: 2862 6f74 6820 7661 7269 616e 7473 2c20  (both variants, 
++000014c0: 6054 7570 6c65 5b54 2c20 2e2e 2e5d 6020  `Tuple[T, ...]` 
++000014d0: 616e 6420 6054 7570 6c65 5b58 2c20 592c  and `Tuple[X, Y,
++000014e0: 205a 5d60 292e 0a20 202d 2060 7479 7069   Z]`)..  - `typi
++000014f0: 6e67 2e4d 7574 6162 6c65 5365 745b 545d  ng.MutableSet[T]
++00001500: 602c 2060 7479 7069 6e67 2e53 6574 5b54  `, `typing.Set[T
++00001510: 5d60 2028 636f 6e76 6572 7473 2074 6f20  ]` (converts to 
++00001520: 6120 7365 7429 2e0a 2020 2d20 6074 7970  a set)..  - `typ
++00001530: 696e 672e 4672 6f7a 656e 5365 745b 545d  ing.FrozenSet[T]
++00001540: 6020 2863 6f6e 7665 7274 7320 746f 2061  ` (converts to a
++00001550: 2066 726f 7a65 6e73 6574 292e 0a20 202d   frozenset)..  -
++00001560: 2060 7479 7069 6e67 2e44 6963 745b 4b2c   `typing.Dict[K,
++00001570: 2056 5d60 2c20 6074 7970 696e 672e 4d75   V]`, `typing.Mu
++00001580: 7461 626c 654d 6170 7069 6e67 5b4b 2c20  tableMapping[K, 
++00001590: 565d 602c 2060 7479 7069 6e67 2e4d 6170  V]`, `typing.Map
++000015a0: 7069 6e67 5b4b 2c20 565d 6020 2863 6f6e  ping[K, V]` (con
++000015b0: 7665 7274 7320 746f 2061 2064 6963 7429  verts to a dict)
++000015c0: 2e0a 2020 2d20 5f61 7474 7273 5f20 636c  ..  - _attrs_ cl
++000015d0: 6173 7365 7320 7769 7468 2073 696d 706c  asses with simpl
++000015e0: 6520 6174 7472 6962 7574 6573 2061 6e64  e attributes and
++000015f0: 2074 6865 2075 7375 616c 2060 5f5f 696e   the usual `__in
++00001600: 6974 5f5f 602e 0a0a 2020 2020 2d20 5369  it__`...    - Si
++00001610: 6d70 6c65 2061 7474 7269 6275 7465 7320  mple attributes 
++00001620: 6172 6520 6174 7472 6962 7574 6573 2074  are attributes t
++00001630: 6861 7420 6361 6e20 6265 2061 7373 6967  hat can be assig
++00001640: 6e65 6420 756e 7374 7275 6374 7572 6564  ned unstructured
++00001650: 2064 6174 612c 0a20 2020 2020 206c 696b   data,.      lik
++00001660: 6520 6e75 6d62 6572 732c 2073 7472 696e  e numbers, strin
++00001670: 6773 2c20 616e 6420 636f 6c6c 6563 7469  gs, and collecti
++00001680: 6f6e 7320 6f66 2075 6e73 7472 7563 7475  ons of unstructu
++00001690: 7265 6420 6461 7461 2e0a 0a20 202d 2041  red data...  - A
++000016a0: 6c6c 205f 6174 7472 735f 2063 6c61 7373  ll _attrs_ class
++000016b0: 6573 2061 6e64 2064 6174 6163 6c61 7373  es and dataclass
++000016c0: 6573 2077 6974 6820 7468 6520 7573 7561  es with the usua
++000016d0: 6c20 605f 5f69 6e69 745f 5f60 2c20 6966  l `__init__`, if
++000016e0: 2074 6865 6972 2063 6f6d 706c 6578 2061   their complex a
++000016f0: 7474 7269 6275 7465 7320 6861 7665 2074  ttributes have t
++00001700: 7970 6520 6d65 7461 6461 7461 2e0a 2020  ype metadata..  
++00001710: 2d20 6074 7970 696e 672e 556e 696f 6e60  - `typing.Union`
++00001720: 2073 206f 6620 7375 7070 6f72 7465 6420   s of supported 
++00001730: 5f61 7474 7273 5f20 636c 6173 7365 732c  _attrs_ classes,
++00001740: 2067 6976 656e 2074 6861 7420 616c 6c20   given that all 
++00001750: 6f66 2074 6865 2063 6c61 7373 6573 2068  of the classes h
++00001760: 6176 6520 6120 756e 6971 7565 2066 6965  ave a unique fie
++00001770: 6c64 2e0a 2020 2d20 6074 7970 696e 672e  ld..  - `typing.
++00001780: 556e 696f 6e60 2073 206f 6620 616e 7974  Union` s of anyt
++00001790: 6869 6e67 2c20 6769 7665 6e20 7468 6174  hing, given that
++000017a0: 2079 6f75 2070 726f 7669 6465 2061 2064   you provide a d
++000017b0: 6973 616d 6269 6775 6174 696f 6e20 6675  isambiguation fu
++000017c0: 6e63 7469 6f6e 2066 6f72 2069 742e 0a20  nction for it.. 
++000017d0: 202d 2043 7573 746f 6d20 636f 6e76 6572   - Custom conver
++000017e0: 7465 7273 2066 6f72 2061 6e79 2074 7970  ters for any typ
++000017f0: 6520 6361 6e20 6265 2072 6567 6973 7465  e can be registe
++00001800: 7265 6420 7573 696e 6720 6072 6567 6973  red using `regis
++00001810: 7465 725f 7374 7275 6374 7572 655f 686f  ter_structure_ho
++00001820: 6f6b 602e 0a0a 5f63 6174 7472 735f 2063  ok`..._cattrs_ c
++00001830: 6f6d 6573 2077 6974 6820 7072 6563 6f6e  omes with precon
++00001840: 6669 6775 7265 6420 636f 6e76 6572 7465  figured converte
++00001850: 7273 2066 6f72 2061 206e 756d 6265 7220  rs for a number 
++00001860: 6f66 2073 6572 6961 6c69 7a61 7469 6f6e  of serialization
++00001870: 206c 6962 7261 7269 6573 2c20 696e 636c   libraries, incl
++00001880: 7564 696e 6720 6a73 6f6e 2c20 6d73 6770  uding json, msgp
++00001890: 6163 6b2c 2063 626f 7232 2c20 6273 6f6e  ack, cbor2, bson
++000018a0: 2c20 7961 6d6c 2061 6e64 2074 6f6d 6c2e  , yaml and toml.
++000018b0: 0a46 6f72 2064 6574 6169 6c73 2c20 7365  .For details, se
++000018c0: 6520 7468 6520 5b63 6174 7472 2e70 7265  e the [cattr.pre
++000018d0: 636f 6e66 2070 6163 6b61 6765 5d28 6874  conf package](ht
++000018e0: 7470 733a 2f2f 6361 7474 2e72 732f 656e  tps://catt.rs/en
++000018f0: 2f73 7461 626c 652f 7072 6563 6f6e 662e  /stable/preconf.
++00001900: 6874 6d6c 292e 0a0a 2323 2041 6464 6974  html)...## Addit
++00001910: 696f 6e61 6c20 646f 6375 6d65 6e74 6174  ional documentat
++00001920: 696f 6e20 616e 6420 7461 6c6b 730a 0a2d  ion and talks..-
++00001930: 205b 4f6e 2073 7472 7563 7475 7265 6420   [On structured 
++00001940: 616e 6420 756e 7374 7275 6374 7572 6564  and unstructured
++00001950: 2064 6174 612c 206f 7220 7468 6520 6361   data, or the ca
++00001960: 7365 2066 6f72 2063 6174 7472 735d 2868  se for cattrs](h
++00001970: 7474 7073 3a2f 2f74 6872 6565 6f66 7761  ttps://threeofwa
++00001980: 6e64 732e 636f 6d2f 6f6e 2d73 7472 7563  nds.com/on-struc
++00001990: 7475 7265 642d 616e 642d 756e 7374 7275  tured-and-unstru
++000019a0: 6374 7572 6564 2d64 6174 612d 6f72 2d74  ctured-data-or-t
++000019b0: 6865 2d63 6173 652d 666f 722d 6361 7474  he-case-for-catt
++000019c0: 7273 2f29 0a2d 205b 5768 7920 4920 7573  rs/).- [Why I us
++000019d0: 6520 6174 7472 7320 696e 7374 6561 6420  e attrs instead 
++000019e0: 6f66 2070 7964 616e 7469 635d 2868 7474  of pydantic](htt
++000019f0: 7073 3a2f 2f74 6872 6565 6f66 7761 6e64  ps://threeofwand
++00001a00: 732e 636f 6d2f 7768 792d 692d 7573 652d  s.com/why-i-use-
++00001a10: 6174 7472 732d 696e 7374 6561 642d 6f66  attrs-instead-of
++00001a20: 2d70 7964 616e 7469 632f 290a 2d20 5b63  -pydantic/).- [c
++00001a30: 6174 7472 7320 493a 2075 6e2f 7374 7275  attrs I: un/stru
++00001a40: 6374 7572 696e 6720 7370 6565 645d 2868  cturing speed](h
++00001a50: 7474 7073 3a2f 2f74 6872 6565 6f66 7761  ttps://threeofwa
++00001a60: 6e64 732e 636f 6d2f 7768 792d 6361 7474  nds.com/why-catt
++00001a70: 7273 2d69 732d 736f 2d66 6173 742f 290a  rs-is-so-fast/).
++00001a80: 2d20 5b50 7974 686f 6e20 6861 7320 6120  - [Python has a 
++00001a90: 6d61 6372 6f20 6c61 6e67 7561 6765 202d  macro language -
++00001aa0: 2069 7427 7320 5079 7468 6f6e 2028 5079   it's Python (Py
++00001ab0: 436f 6e20 4954 2032 3032 3229 5d28 6874  Con IT 2022)](ht
++00001ac0: 7470 733a 2f2f 7777 772e 796f 7574 7562  tps://www.youtub
++00001ad0: 652e 636f 6d2f 7761 7463 683f 763d 5559  e.com/watch?v=UY
++00001ae0: 5253 6978 696b 5554 6f29 0a0a 2323 2043  RSixikUTo)..## C
++00001af0: 7265 6469 7473 0a0a 4d61 6a6f 7220 6372  redits..Major cr
++00001b00: 6564 6974 7320 746f 2048 796e 656b 2053  edits to Hynek S
++00001b10: 6368 6c61 7761 636b 2066 6f72 2063 7265  chlawack for cre
++00001b20: 6174 696e 6720 5b61 7474 7273 5d28 6874  ating [attrs](ht
++00001b30: 7470 733a 2f2f 6174 7472 732e 6f72 6729  tps://attrs.org)
++00001b40: 2061 6e64 2069 7473 2070 7265 6465 6365   and its predece
++00001b50: 7373 6f72 2c0a 5b63 6861 7261 6374 6572  ssor,.[character
++00001b60: 6973 7469 635d 2868 7474 7073 3a2f 2f67  istic](https://g
++00001b70: 6974 6875 622e 636f 6d2f 6879 6e65 6b2f  ithub.com/hynek/
++00001b80: 6368 6172 6163 7465 7269 7374 6963 292e  characteristic).
++00001b90: 0a0a 5f63 6174 7472 735f 2069 7320 7465  .._cattrs_ is te
++00001ba0: 7374 6564 2077 6974 6820 5b48 7970 6f74  sted with [Hypot
++00001bb0: 6865 7369 735d 2868 7474 703a 2f2f 6879  hesis](http://hy
++00001bc0: 706f 7468 6573 6973 2e72 6561 6474 6865  pothesis.readthe
++00001bd0: 646f 6373 2e69 6f2f 656e 2f6c 6174 6573  docs.io/en/lates
++00001be0: 742f 292c 2062 7920 4461 7669 6420 522e  t/), by David R.
++00001bf0: 204d 6163 4976 6572 2e0a 0a5f 6361 7474   MacIver..._catt
++00001c00: 7273 5f20 6973 2062 656e 6368 6d61 726b  rs_ is benchmark
++00001c10: 6564 2075 7369 6e67 205b 7065 7266 5d28  ed using [perf](
++00001c20: 6874 7470 733a 2f2f 6769 7468 7562 2e63  https://github.c
++00001c30: 6f6d 2f68 6179 706f 2f70 6572 6629 2061  om/haypo/perf) a
++00001c40: 6e64 205b 7079 7465 7374 2d62 656e 6368  nd [pytest-bench
++00001c50: 6d61 726b 5d28 6874 7470 733a 2f2f 7079  mark](https://py
++00001c60: 7465 7374 2d62 656e 6368 6d61 726b 2e72  test-benchmark.r
++00001c70: 6561 6474 6865 646f 6373 2e69 6f2f 656e  eadthedocs.io/en
++00001c80: 2f6c 6174 6573 742f 696e 6465 782e 6874  /latest/index.ht
++00001c90: 6d6c 292e 0a0a 5468 6973 2070 6163 6b61  ml)...This packa
++00001ca0: 6765 2077 6173 2063 7265 6174 6564 2077  ge was created w
++00001cb0: 6974 6820 5b43 6f6f 6b69 6563 7574 7465  ith [Cookiecutte
++00001cc0: 725d 2868 7474 7073 3a2f 2f67 6974 6875  r](https://githu
++00001cd0: 622e 636f 6d2f 6175 6472 6579 722f 636f  b.com/audreyr/co
++00001ce0: 6f6b 6965 6375 7474 6572 2920 616e 6420  okiecutter) and 
++00001cf0: 7468 6520 5b60 6175 6472 6579 722f 636f  the [`audreyr/co
++00001d00: 6f6b 6965 6375 7474 6572 2d70 7970 6163  okiecutter-pypac
++00001d10: 6b61 6765 605d 2868 7474 7073 3a2f 2f67  kage`](https://g
++00001d20: 6974 6875 622e 636f 6d2f 6175 6472 6579  ithub.com/audrey
++00001d30: 722f 636f 6f6b 6965 6375 7474 6572 2d70  r/cookiecutter-p
++00001d40: 7970 6163 6b61 6765 2920 7072 6f6a 6563  ypackage) projec
++00001d50: 7420 7465 6d70 6c61 7465 2e0a            t template..
+```
+
+### Comparing `cattrs-22.2.0/pyproject.toml` & `cattrs-23.1.0rc0/pyproject.toml`
+
+ * *Files 11% similar despite different names*
+
+```diff
+@@ -3,56 +3,70 @@
+ 
+ [tool.isort]
+ profile = "black"
+ known_first_party = ["cattr"]
+ 
+ [tool.poetry]
+ name = "cattrs"
+-version = "22.2.0"
++version = "23.1.0rc0"
+ description = "Composable complex class support for attrs and dataclasses."
+ authors = ["Tin Tvrtkovic <tinchester@gmail.com>"]
+ license = "MIT"
+ repository = "https://github.com/python-attrs/cattrs"
+-documentation = "https://cattrs.readthedocs.io/en/latest/"
++documentation = "https://catt.rs/en/stable/"
+ keywords = ["attrs", "serialization", "dataclasses"]
+ packages = [
+     { include = "cattr", from = "src" },
+     { include = "cattrs", from = "src" },
+ ]
+-readme = "README.rst"
++readme = "README.md"
+ 
+ [tool.poetry.dependencies]
+ python = ">= 3.7"
+ attrs = ">= 20"
+-typing_extensions = { version = "*", python = "< 3.8" }
++typing_extensions = { version = "*", python = "< 3.10" }
+ exceptiongroup = { version = "*", python = "< 3.11" }
++ujson = { version = "^5.4.0", optional = true }
++orjson = { version = "^3.5.2", markers = "implementation_name == 'cpython'", optional = true }
++msgpack = { version = "^1.0.2", optional = true }
++PyYAML = { version = "^6.0", optional = true }
++tomlkit = { version = "^0.11.4", python = "<4", optional = true }
++cbor2 = { version = "^5.4.6", optional = true }
++pymongo = { version = "^4.2.0", optional = true }
++
++[tool.poetry.extras]
++ujson = ["ujson"]
++orjson = ["orjson"]
++msgpack = ["msgpack"]
++pyyaml = ["PyYAML"]
++tomlkit = ["tomlkit"]
++cbor2 = ["cbor2"]
++bson = ["pymongo"]
+ 
+-[tool.poetry.dev-dependencies]
+-pymongo = "^4.2.0"
+-flake8 = "^5.0.4"
++[tool.poetry.group.dev.dependencies]
++flake8 = {version = "^5.0.4", python = "^3.8"}
+ tox = "^3.26.0"
+-Sphinx = "^4.3.2"
++Sphinx = "^5.3.0"
+ pytest = "^7.1.3"
+ pytest-benchmark = "^3.2.3"
+ hypothesis = "^6.54.5"
+ pendulum = "^2.1.2"
+ isort = { version = "5.10.1", python = "<4" }
+-black = "^22.8.0"
++black = "^23.3.0"
+ immutables = "^0.18"
+-ujson = "^5.4.0"
+-orjson = { version = "^3.5.2", markers = "implementation_name == 'cpython'" }
+-msgpack = "^1.0.2"
+-PyYAML = "^6.0"
+-tomlkit = { version = "^0.11.4", python = "<4" }
+-furo = "^2022.6.21"
++furo = "^2023.3.27"
+ coverage = "^6.2"
+ urllib3 = { version = "^1.26.12", python = "<4" }
++sphinx-copybutton = "^0.5.0"
++myst-parser = "^0.18.1"
++cbor2 = "^5.4.6"
++pyperf = "^2.6.0"
+ 
+ [tool.poetry.urls]
+-"Changelog" = "https://cattrs.readthedocs.io/en/latest/history.html"
++"Changelog" = "https://catt.rs/en/latest/history.html"
+ "Bug Tracker" = "https://github.com/python-attrs/cattrs/issues"
+ 
+ [tool.pytest.ini_options]
+ addopts = "-l --benchmark-sort=fullname --benchmark-warmup=true --benchmark-warmup-iterations=5  --benchmark-group-by=fullname"
+ 
+ [tool.coverage.run]
+ omit = [
+@@ -67,7 +81,10 @@
+    ".tox/*/lib/python*/site-packages/cattr",
+    ".tox/pypy*/site-packages/cattr",
+ ]
+ 
+ [build-system]
+ requires = ["poetry-core>=1.1.0"]
+ build-backend = "poetry.core.masonry.api"
++
++[tool.mypy]
++strict = true
+```
+
+### Comparing `cattrs-22.2.0/src/cattr/__init__.py` & `cattrs-23.1.0rc0/src/cattr/__init__.py`
+
+ * *Files identical despite different names*
+
+### Comparing `cattrs-22.2.0/src/cattr/gen.py` & `cattrs-23.1.0rc0/src/cattr/gen.py`
+
+ * *Files identical despite different names*
+
+### Comparing `cattrs-22.2.0/src/cattrs/__init__.py` & `cattrs-23.1.0rc0/src/cattrs/__init__.py`
+
+ * *Files 7% similar despite different names*
+
+```diff
+@@ -1,41 +1,47 @@
+ from .converters import BaseConverter, Converter, GenConverter, UnstructureStrategy
+ from .errors import (
++    AttributeValidationNote,
+     BaseValidationError,
+     ClassValidationError,
+     ForbiddenExtraKeysError,
+     IterableValidationError,
++    IterableValidationNote,
+     StructureHandlerNotFoundError,
+ )
+ from .gen import override
++from .v import transform_error
+ 
+ __all__ = (
++    "AttributeValidationNote",
+     "BaseConverter",
+     "BaseValidationError",
+     "ClassValidationError",
+     "Converter",
+     "converters",
+     "disambiguators",
+     "dispatch",
+     "errors",
+     "ForbiddenExtraKeysError",
+     "gen",
+     "GenConverter",
+     "global_converter",
+     "IterableValidationError",
++    "IterableValidationNote",
+     "override",
+     "preconf",
+-    "register_structure_hook",
+     "register_structure_hook_func",
+-    "register_unstructure_hook",
++    "register_structure_hook",
+     "register_unstructure_hook_func",
+-    "structure",
++    "register_unstructure_hook",
+     "structure_attrs_fromdict",
+     "structure_attrs_fromtuple",
++    "structure",
+     "StructureHandlerNotFoundError",
++    "transform_error",
+     "unstructure",
+     "UnstructureStrategy",
+ )
+ 
+ 
+ global_converter = Converter()
+```
+
+### Comparing `cattrs-22.2.0/src/cattrs/_compat.py` & `cattrs-23.1.0rc0/src/cattrs/_compat.py`
+
+ * *Files 19% similar despite different names*
+
+```diff
+@@ -1,47 +1,70 @@
+ import builtins
+ import sys
++from collections import deque
+ from collections.abc import MutableSet as AbcMutableSet
+ from collections.abc import Set as AbcSet
+ from dataclasses import MISSING
+ from dataclasses import fields as dataclass_fields
+ from dataclasses import is_dataclass
+ from typing import AbstractSet as TypingAbstractSet
+-from typing import Any, Dict, FrozenSet, List
++from typing import Any, Deque, Dict, FrozenSet, List
+ from typing import Mapping as TypingMapping
+ from typing import MutableMapping as TypingMutableMapping
+ from typing import MutableSequence as TypingMutableSequence
+ from typing import MutableSet as TypingMutableSet
+ from typing import NewType, Optional
+ from typing import Sequence as TypingSequence
+ from typing import Set as TypingSet
+ from typing import Tuple, get_type_hints
+ 
+ from attr import NOTHING, Attribute, Factory
+ from attr import fields as attrs_fields
+ from attr import resolve_types
+ 
++try:
++    from typing_extensions import TypedDict as ExtensionsTypedDict
++except ImportError:
++    ExtensionsTypedDict = None
++
++try:
++    from typing_extensions import _TypedDictMeta as ExtensionsTypedDictMeta
++except ImportError:
++    ExtensionsTypedDictMeta = None
++
++__all__ = [
++    "ExtensionsTypedDict",
++    "is_py37",
++    "is_py38",
++    "is_py39_plus",
++    "is_py310_plus",
++    "is_py311_plus",
++    "is_typeddict",
++    "TypedDict",
++]
++
+ version_info = sys.version_info[0:3]
+ is_py37 = version_info[:2] == (3, 7)
+ is_py38 = version_info[:2] == (3, 8)
+ is_py39_plus = version_info[:2] >= (3, 9)
+ is_py310_plus = version_info[:2] >= (3, 10)
++is_py311_plus = version_info[:2] >= (3, 11)
+ 
+ if is_py37:
+ 
+     def get_args(cl):
+         return cl.__args__
+ 
+     def get_origin(cl):
+         return getattr(cl, "__origin__", None)
+ 
+-    from typing_extensions import Protocol
++    from typing_extensions import Final, Protocol
+ 
+ else:
+-    from typing import Protocol, get_args, get_origin  # NOQA
++    from typing import Final, Protocol, get_args, get_origin
+ 
+ if "ExceptionGroup" not in dir(builtins):
+     from exceptiongroup import ExceptionGroup
+ else:
+     ExceptionGroup = ExceptionGroup
+ 
+ 
+@@ -60,15 +83,15 @@
+     except AttributeError:
+         try:
+             return dataclass_fields(type)
+         except AttributeError:
+             raise Exception("Not an attrs or dataclass class.")
+ 
+ 
+-def adapted_fields(cl) -> List[Attribute]:
++def _adapted_fields(cl) -> List[Attribute]:
+     """Return the attrs format of `fields()` for attrs and dataclasses."""
+     if is_dataclass(cl):
+         attrs = dataclass_fields(cl)
+         if any(isinstance(a.type, str) for a in attrs):
+             # Do this conditionally in case `get_type_hints` fails, so
+             # users can resolve on their own first.
+             type_hints = get_type_hints(cl)
+@@ -99,23 +122,45 @@
+         if any(isinstance(a.type, str) for a in attribs):
+             # PEP 563 annotations - need to be resolved.
+             resolve_types(cl)
+             attribs = attrs_fields(cl)
+         return attribs
+ 
+ 
++def is_subclass(obj: type, bases) -> bool:
++    """A safe version of issubclass (won't raise)."""
++    try:
++        return issubclass(obj, bases)
++    except TypeError:
++        return False
++
++
+ def is_hetero_tuple(type: Any) -> bool:
+     origin = getattr(type, "__origin__", None)
+     return origin is tuple and ... not in type.__args__
+ 
+ 
+ def is_protocol(type: Any) -> bool:
+     return issubclass(type, Protocol) and getattr(type, "_is_protocol", False)
+ 
+ 
++def is_bare_final(type) -> bool:
++    return type is Final
++
++
++def get_final_base(type) -> Optional[type]:
++    """Return the base of the Final annotation, if it is Final."""
++    if type is Final:
++        return Any
++    elif type.__class__ is _GenericAlias and type.__origin__ is Final:
++        return type.__args__[0]
++    else:
++        return None
++
++
+ OriginAbstractSet = AbcSet
+ OriginMutableSet = AbcMutableSet
+ 
+ if is_py37 or is_py38:
+     Set = TypingSet
+     AbstractSet = TypingAbstractSet
+     MutableSet = TypingMutableSet
+@@ -125,17 +170,25 @@
+     MutableMapping = TypingMutableMapping
+     Mapping = TypingMapping
+     FrozenSetSubscriptable = FrozenSet
+     TupleSubscriptable = Tuple
+ 
+     from collections import Counter as ColCounter
+     from typing import Counter, Union, _GenericAlias
++    from typing_extensions import Annotated, NotRequired, Required
++    from typing_extensions import get_origin as te_get_origin
+ 
+-    def is_annotated(_):
+-        return False
++    if is_py38:
++        from typing import TypedDict, _TypedDictMeta
++    else:
++        _TypedDictMeta = None
++        TypedDict = ExtensionsTypedDict
++
++    def is_annotated(type) -> bool:
++        return te_get_origin(type) is Annotated
+ 
+     def is_tuple(type):
+         return type in (Tuple, tuple) or (
+             type.__class__ is _GenericAlias and issubclass(type.__origin__, Tuple)
+         )
+ 
+     def is_union_type(obj):
+@@ -159,14 +212,21 @@
+             and (
+                 type.__origin__ not in (Union, Tuple, tuple)
+                 and issubclass(type.__origin__, TypingSequence)
+             )
+             or (type.__origin__ in (Tuple, tuple) and type.__args__[1] is ...)
+         )
+ 
++    def is_deque(type: Any) -> bool:
++        return (
++            type in (deque, Deque)
++            or (type.__class__ is _GenericAlias and issubclass(type.__origin__, deque))
++            or type.__origin__ is deque
++        )
++
+     def is_mutable_set(type):
+         return type is set or (
+             type.__class__ is _GenericAlias and issubclass(type.__origin__, MutableSet)
+         )
+ 
+     def is_frozenset(type):
+         return type is frozenset or (
+@@ -212,31 +272,53 @@
+     def is_generic(obj):
+         return isinstance(obj, _GenericAlias)
+ 
+     def copy_with(type, args):
+         """Replace a generic type's arguments."""
+         return type.copy_with(args)
+ 
++    def is_typeddict(cls) -> bool:
++        return (
++            cls.__class__ is _TypedDictMeta
++            or (is_generic(cls) and (cls.__origin__.__class__ is _TypedDictMeta))
++            or (
++                ExtensionsTypedDictMeta is not None
++                and cls.__class__ is ExtensionsTypedDictMeta
++                or (
++                    is_generic(cls)
++                    and (cls.__origin__.__class__ is ExtensionsTypedDictMeta)
++                )
++            )
++        )
++
++    def get_notrequired_base(type) -> "Union[Any, Literal[NOTHING]]":
++        if get_origin(type) in (NotRequired, Required):
++            return get_args(type)[0]
++        return NOTHING
++
+ else:
+     # 3.9+
+     from collections import Counter
+     from collections.abc import Mapping as AbcMapping
+     from collections.abc import MutableMapping as AbcMutableMapping
+     from collections.abc import MutableSequence as AbcMutableSequence
+     from collections.abc import MutableSet as AbcMutableSet
+     from collections.abc import Sequence as AbcSequence
+     from collections.abc import Set as AbcSet
+     from types import GenericAlias
+     from typing import Annotated
+     from typing import Counter as TypingCounter
+     from typing import (
++        Generic,
++        TypedDict,
+         Union,
+         _AnnotatedAlias,
+         _GenericAlias,
+         _SpecialGenericAlias,
++        _TypedDictMeta,
+         _UnionGenericAlias,
+     )
+ 
+     try:
+         # Not present on 3.9.0, so we try carefully.
+         from typing import _LiteralGenericAlias
+ 
+@@ -280,15 +362,21 @@
+             )
+ 
+         def get_newtype_base(typ: Any) -> Optional[type]:
+             if typ is NewType or isinstance(typ, NewType):
+                 return typ.__supertype__
+             return None
+ 
++        if is_py311_plus:
++            from typing import NotRequired, Required
++        else:
++            from typing_extensions import NotRequired, Required
++
+     else:
++        from typing_extensions import NotRequired, Required
+ 
+         def is_union_type(obj):
+             return (
+                 obj is Union
+                 or isinstance(obj, _UnionGenericAlias)
+                 and obj.__origin__ is Union
+             )
+@@ -299,40 +387,68 @@
+                 supertype is not None
+                 and getattr(typ, "__qualname__", "") == "NewType.<locals>.new_type"
+                 and typ.__module__ in ("typing", "typing_extensions")
+             ):
+                 return supertype
+             return None
+ 
++    def is_typeddict(cls) -> bool:
++        return (
++            cls.__class__ is _TypedDictMeta
++            or (is_generic(cls) and (cls.__origin__.__class__ is _TypedDictMeta))
++            or (
++                ExtensionsTypedDictMeta is not None
++                and cls.__class__ is ExtensionsTypedDictMeta
++                or (
++                    is_generic(cls)
++                    and (cls.__origin__.__class__ is ExtensionsTypedDictMeta)
++                )
++            )
++        )
++
++    def get_notrequired_base(type) -> "Union[Any, Literal[NOTHING]]":
++        if get_origin(type) in (NotRequired, Required):
++            return get_args(type)[0]
++        return NOTHING
++
+     def is_sequence(type: Any) -> bool:
+         origin = getattr(type, "__origin__", None)
+         return (
+             type
+             in (
+                 List,
+                 list,
+                 TypingSequence,
+                 TypingMutableSequence,
+                 AbcMutableSequence,
+-                Tuple,
+                 tuple,
++                Tuple,
++                deque,
++                Deque,
+             )
+             or (
+                 type.__class__ is _GenericAlias
+                 and (
+                     (origin is not tuple)
+                     and issubclass(origin, TypingSequence)
+                     or origin is tuple
+                     and type.__args__[1] is ...
+                 )
+             )
+-            or (origin in (list, AbcMutableSequence, AbcSequence))
++            or (origin in (list, deque, AbcMutableSequence, AbcSequence))
+             or (origin is tuple and type.__args__[1] is ...)
+         )
+ 
++    def is_deque(type):
++        return (
++            type in (deque, Deque)
++            or (type.__class__ is _GenericAlias and issubclass(type.__origin__, deque))
++            or (getattr(type, "__origin__", None) is deque)
++        )
++
+     def is_mutable_set(type):
+         return (
+             type in (TypingSet, TypingMutableSet, set)
+             or (
+                 type.__class__ is _GenericAlias
+                 and issubclass(type.__origin__, TypingMutableSet)
+             )
+@@ -352,15 +468,15 @@
+     def is_bare(type):
+         return isinstance(type, _SpecialGenericAlias) or (
+             not hasattr(type, "__origin__") and not hasattr(type, "__args__")
+         )
+ 
+     def is_mapping(type):
+         return (
+-            type in (TypingMapping, Dict, TypingMutableMapping, dict, AbcMutableMapping)
++            type in (dict, Dict, TypingMapping, TypingMutableMapping, AbcMutableMapping)
+             or (
+                 type.__class__ is _GenericAlias
+                 and issubclass(type.__origin__, TypingMapping)
+             )
+             or (
+                 getattr(type, "__origin__", None)
+                 in (dict, AbcMutableMapping, AbcMapping)
+@@ -370,16 +486,20 @@
+ 
+     def is_counter(type):
+         return (
+             type in (Counter, TypingCounter)
+             or getattr(type, "__origin__", None) is Counter
+         )
+ 
+-    def is_generic(obj):
+-        return isinstance(obj, _GenericAlias) or isinstance(obj, GenericAlias)
++    def is_generic(obj) -> bool:
++        return (
++            isinstance(obj, _GenericAlias)
++            or isinstance(obj, GenericAlias)
++            or is_subclass(obj, Generic)
++        )
+ 
+     def copy_with(type, args):
+         """Replace a generic type's arguments."""
+         if is_annotated(type):
+             # typing.Annotated requires a special case.
+             return Annotated[args]  # type: ignore
+         return type.__origin__[args]
+```
+
+### Comparing `cattrs-22.2.0/src/cattrs/_generics.py` & `cattrs-23.1.0rc0/src/cattrs/_generics.py`
+
+ * *Files identical despite different names*
+
+### Comparing `cattrs-22.2.0/src/cattrs/converters.py` & `cattrs-23.1.0rc0/src/cattrs/converters.py`
+
+ * *Files 12% similar despite different names*
+
+```diff
+@@ -1,15 +1,17 @@
+-from collections import Counter
++from collections import Counter, deque
+ from collections.abc import MutableSet as AbcMutableSet
+ from dataclasses import Field
+ from enum import Enum
+ from functools import lru_cache
++from pathlib import Path
+ from typing import (
+     Any,
+     Callable,
++    Deque,
+     Dict,
+     Iterable,
+     List,
+     NoReturn,
+     Optional,
+     Tuple,
+     Type,
+@@ -17,61 +19,69 @@
+     Union,
+ )
+ 
+ from attr import Attribute
+ from attr import has as attrs_has
+ from attr import resolve_types
+ 
+-from cattrs.errors import IterableValidationError, StructureHandlerNotFoundError
+-
+ from ._compat import (
+     FrozenSetSubscriptable,
+     Mapping,
+     MutableMapping,
+     MutableSequence,
+     OriginAbstractSet,
+     OriginMutableSet,
+     Sequence,
+     Set,
+     fields,
++    get_final_base,
+     get_newtype_base,
+     get_origin,
+     has,
+     has_with_generic,
+     is_annotated,
+     is_bare,
+     is_counter,
++    is_deque,
+     is_frozenset,
+     is_generic,
+     is_generic_attrs,
+     is_hetero_tuple,
+     is_literal,
+     is_mapping,
+     is_mutable_set,
+     is_protocol,
+     is_sequence,
+     is_tuple,
++    is_typeddict,
+     is_union_type,
+ )
+ from .disambiguators import create_uniq_field_dis_func
+ from .dispatch import MultiStrategyDispatch
++from .errors import (
++    IterableValidationError,
++    IterableValidationNote,
++    StructureHandlerNotFoundError,
++)
+ from .gen import (
+     AttributeOverride,
+     DictStructureFn,
+     HeteroTupleUnstructureFn,
+     IterableUnstructureFn,
+     MappingStructureFn,
+     MappingUnstructureFn,
+     make_dict_structure_fn,
+     make_dict_unstructure_fn,
+     make_hetero_tuple_unstructure_fn,
+     make_iterable_unstructure_fn,
+     make_mapping_structure_fn,
+     make_mapping_unstructure_fn,
+ )
++from .gen.typeddicts import make_dict_structure_fn as make_typeddict_dict_struct_fn
++from .gen.typeddicts import make_dict_unstructure_fn as make_typeddict_dict_unstruct_fn
+ 
+ NoneType = type(None)
+ T = TypeVar("T")
+ V = TypeVar("V")
+ 
+ 
+ class UnstructureStrategy(Enum):
+@@ -139,22 +149,31 @@
+             self._unstructure_attrs = self.unstructure_attrs_astuple
+             self._structure_attrs = self.structure_attrs_fromtuple
+ 
+         self._dis_func_cache = lru_cache()(self._get_dis_func)
+ 
+         self._unstructure_func = MultiStrategyDispatch(self._unstructure_identity)
+         self._unstructure_func.register_cls_list(
+-            [(bytes, self._unstructure_identity), (str, self._unstructure_identity)]
++            [
++                (bytes, self._unstructure_identity),
++                (str, self._unstructure_identity),
++                (Path, str),
++            ]
+         )
+         self._unstructure_func.register_func_list(
+             [
+                 (
+                     is_protocol,
+                     lambda o: self.unstructure(o, unstructure_as=o.__class__),
+                 ),
++                (
++                    lambda t: get_final_base(t) is not None,
++                    lambda t: self._unstructure_func.dispatch(get_final_base(t)),
++                    True,
++                ),
+                 (is_mapping, self._unstructure_mapping),
+                 (is_sequence, self._unstructure_seq),
+                 (is_mutable_set, self._unstructure_seq),
+                 (is_frozenset, self._unstructure_seq),
+                 (_subclass(Enum), self._unstructure_enum),
+                 (has, self._unstructure_attrs),
+                 (is_union_type, self._unstructure_union),
+@@ -166,17 +185,23 @@
+         # store the function and switch the arguments in self.loads.
+         self._structure_func = MultiStrategyDispatch(BaseConverter._structure_error)
+         self._structure_func.register_func_list(
+             [
+                 (lambda cl: cl is Any or cl is Optional or cl is None, lambda v, _: v),
+                 (is_generic_attrs, self._gen_structure_generic, True),
+                 (lambda t: get_newtype_base(t) is not None, self._structure_newtype),
++                (
++                    lambda t: get_final_base(t) is not None,
++                    self._structure_final_factory,
++                    True,
++                ),
+                 (is_literal, self._structure_simple_literal),
+                 (is_literal_containing_enums, self._structure_enum_literal),
+                 (is_sequence, self._structure_list),
++                (is_deque, self._structure_deque),
+                 (is_mutable_set, self._structure_set),
+                 (is_frozenset, self._structure_frozenset),
+                 (is_tuple, self._structure_tuple),
+                 (is_mapping, self._structure_dict),
+                 (is_attrs_union_or_none, self._gen_attrs_union_structure, True),
+                 (
+                     lambda t: is_union_type(t) and t in self._union_struct_registry,
+@@ -190,14 +215,15 @@
+         self._structure_func.register_cls_list(
+             [
+                 (str, self._structure_call),
+                 (bytes, self._structure_call),
+                 (int, self._structure_call),
+                 (float, self._structure_call),
+                 (Enum, self._structure_call),
++                (Path, self._structure_call),
+             ]
+         )
+ 
+         self._dict_factory = dict_factory
+ 
+         # Unions are instances now, not classes. We use different registries.
+         self._union_struct_registry: Dict[Any, Callable[[Any, Type[T]], T]] = {}
+@@ -301,15 +327,14 @@
+         A factory is a callable that, given a type, produces a structuring
+         hook for that type. This structuring hook will be cached.
+         """
+         self._structure_func.register_func_list([(predicate, factory, True)])
+ 
+     def structure(self, obj: Any, cl: Type[T]) -> T:
+         """Convert unstructured Python data structures to structured data."""
+-
+         return self._structure_func.dispatch(cl)(obj, cl)
+ 
+     # Classes to Python primitives.
+     def unstructure_attrs_asdict(self, obj: Any) -> Dict[str, Any]:
+         """Our version of `attrs.asdict`, so we can call back to us."""
+         attrs = fields(obj.__class__)
+         dispatch = self._unstructure_func.dispatch
+@@ -428,14 +453,22 @@
+         except KeyError:
+             raise Exception(f"{val} not in literal {type}") from None
+ 
+     def _structure_newtype(self, val, type):
+         base = get_newtype_base(type)
+         return self._structure_func.dispatch(base)(val, base)
+ 
++    def _structure_final_factory(self, type):
++        base = get_final_base(type)
++        res = self._structure_func.dispatch(base)
++        if res == self._structure_call:
++            # It's not really `structure_call` for Finals (can't call Final())
++            return lambda v, _: self._structure_call(v, base)
++        return res
++
+     # Attrs classes.
+ 
+     def structure_attrs_fromtuple(self, obj: Tuple[Any, ...], cl: Type[T]) -> T:
+         """Load an attrs class from a sequence (tuple)."""
+         conv_obj = []  # A list of converter parameters.
+         for a, value in zip(fields(cl), obj):
+             # We detect the type by the metadata.
+@@ -497,45 +530,84 @@
+                 errors = []
+                 res = []
+                 ix = 0  # Avoid `enumerate` for performance.
+                 for e in obj:
+                     try:
+                         res.append(handler(e, elem_type))
+                     except Exception as e:
+-                        msg = f"Structuring {cl} @ index {ix}"
++                        msg = IterableValidationNote(
++                            f"Structuring {cl} @ index {ix}", ix, elem_type
++                        )
+                         e.__notes__ = getattr(e, "__notes__", []) + [msg]
+                         errors.append(e)
+                     finally:
+                         ix += 1
+                 if errors:
+                     raise IterableValidationError(
+                         f"While structuring {cl!r}", errors, cl
+                     )
+             else:
+                 res = [handler(e, elem_type) for e in obj]
+         return res
+ 
++    def _structure_deque(self, obj: Iterable[T], cl: Any) -> Deque[T]:
++        """Convert an iterable to a potentially generic deque."""
++        if is_bare(cl) or cl.__args__[0] is Any:
++            res = deque(e for e in obj)
++        else:
++            elem_type = cl.__args__[0]
++            handler = self._structure_func.dispatch(elem_type)
++            if self.detailed_validation:
++                errors = []
++                res = deque()
++                ix = 0  # Avoid `enumerate` for performance.
++                for e in obj:
++                    try:
++                        res.append(handler(e, elem_type))
++                    except Exception as e:
++                        msg = IterableValidationNote(
++                            f"Structuring {cl} @ index {ix}", ix, elem_type
++                        )
++                        e.__notes__ = getattr(e, "__notes__", []) + [msg]
++                        errors.append(e)
++                    finally:
++                        ix += 1
++                if errors:
++                    raise IterableValidationError(
++                        f"While structuring {cl!r}", errors, cl
++                    )
++            else:
++                res = deque(handler(e, elem_type) for e in obj)
++        return res
++
+     def _structure_set(
+         self, obj: Iterable[T], cl: Any, structure_to: type = set
+     ) -> Set[T]:
+         """Convert an iterable into a potentially generic set."""
+         if is_bare(cl) or cl.__args__[0] is Any:
+             return structure_to(obj)
+         elem_type = cl.__args__[0]
+         handler = self._structure_func.dispatch(elem_type)
+         if self.detailed_validation:
+             errors = []
+             res = set()
++            ix = 0
+             for e in obj:
+                 try:
+                     res.add(handler(e, elem_type))
+                 except Exception as exc:
+-                    msg = f"Structuring {structure_to.__name__} @ element {e!r}"
++                    msg = IterableValidationNote(
++                        f"Structuring {structure_to.__name__} @ element {e!r}",
++                        ix,
++                        elem_type,
++                    )
+                     exc.__notes__ = getattr(e, "__notes__", []) + [msg]
+                     errors.append(exc)
++                finally:
++                    ix += 1
+             if errors:
+                 raise IterableValidationError(f"While structuring {cl!r}", errors, cl)
+             return res if structure_to is set else structure_to(res)
+         elif structure_to is set:
+             return {handler(e, elem_type) for e in obj}
+         else:
+             return structure_to([handler(e, elem_type) for e in obj])
+@@ -591,21 +663,26 @@
+         if has_ellipsis:
+             # We're dealing with a homogenous tuple, Tuple[int, ...]
+             tup_type = tup_params[0]
+             conv = self._structure_func.dispatch(tup_type)
+             if self.detailed_validation:
+                 errors = []
+                 res = []
+-                for ix, e in enumerate(obj):
++                ix = 0
++                for e in obj:
+                     try:
+                         res.append(conv(e, tup_type))
+                     except Exception as exc:
+-                        msg = f"Structuring {tup} @ index {ix}"
++                        msg = IterableValidationNote(
++                            f"Structuring {tup} @ index {ix}", ix, tup_type
++                        )
+                         exc.__notes__ = getattr(e, "__notes__", []) + [msg]
+                         errors.append(exc)
++                    finally:
++                        ix += 1
+                 if errors:
+                     raise IterableValidationError(
+                         f"While structuring {tup!r}", errors, tup
+                     )
+                 return tuple(res)
+             else:
+                 return tuple(conv(e, tup_type) for e in obj)
+@@ -623,15 +700,17 @@
+                 errors = []
+                 res = []
+                 for ix, (t, e) in enumerate(zip(tup_params, obj)):
+                     try:
+                         conv = self._structure_func.dispatch(t)
+                         res.append(conv(e, t))
+                     except Exception as exc:
+-                        msg = f"Structuring {tup} @ index {ix}"
++                        msg = IterableValidationNote(
++                            f"Structuring {tup} @ index {ix}", ix, t
++                        )
+                         exc.__notes__ = getattr(e, "__notes__", []) + [msg]
+                         errors.append(exc)
+                 if len(res) < exp_len:
+                     problem = "Not enough" if len(res) < len(tup_params) else "Too many"
+                     exc = ValueError(
+                         f"{problem} values in {obj!r} to structure as {tup!r}"
+                     )
+@@ -654,15 +733,15 @@
+                     problem = "Not enough" if len(res) < len(tup_params) else "Too many"
+                     raise ValueError(
+                         f"{problem} values in {obj!r} to structure as {tup!r}"
+                     )
+                 return res
+ 
+     @staticmethod
+-    def _get_dis_func(union) -> Callable[..., Type]:
++    def _get_dis_func(union: Any) -> Callable[[Any], Type]:
+         """Fetch or try creating a disambiguation function for a union."""
+         union_types = union.__args__
+         if NoneType in union_types:  # type: ignore
+             # We support unions of attrs classes and NoneType higher in the
+             # logic.
+             union_types = tuple(
+                 e for e in union_types if e is not NoneType  # type: ignore
+@@ -774,14 +853,16 @@
+             if tuple not in co:
+                 co[tuple] = co[Sequence]
+ 
+         # abc.MutableSequence overrides, if defined, can apply to lists
+         if MutableSequence in co:
+             if list not in co:
+                 co[list] = co[MutableSequence]
++            if deque not in co:
++                co[deque] = co[MutableSequence]
+ 
+         # abc.Mapping overrides, if defined, can apply to MutableMappings
+         if Mapping in co:
+             if MutableMapping not in co:
+                 co[MutableMapping] = co[Mapping]
+ 
+         # abc.MutableMapping overrides, if defined, can apply to dicts
+@@ -817,20 +898,24 @@
+             lambda cl: self.gen_unstructure_iterable(cl, unstructure_to=set),
+         )
+         self.register_unstructure_hook_factory(
+             is_frozenset,
+             lambda cl: self.gen_unstructure_iterable(cl, unstructure_to=frozenset),
+         )
+         self.register_unstructure_hook_factory(
++            is_typeddict, self.gen_unstructure_typeddict
++        )
++        self.register_unstructure_hook_factory(
+             lambda t: get_newtype_base(t) is not None,
+             lambda t: self._unstructure_func.dispatch(get_newtype_base(t)),
+         )
+         self.register_structure_hook_factory(is_annotated, self.gen_structure_annotated)
+         self.register_structure_hook_factory(is_mapping, self.gen_structure_mapping)
+         self.register_structure_hook_factory(is_counter, self.gen_structure_counter)
++        self.register_structure_hook_factory(is_typeddict, self.gen_structure_typeddict)
+         self.register_structure_hook_factory(
+             lambda t: get_newtype_base(t) is not None, self.get_structure_newtype
+         )
+ 
+         # We keep these so we can more correctly copy the hooks.
+         self._struct_copy_skip = self._structure_func.get_num_fns()
+         self._unstruct_copy_skip = self._unstructure_func.get_num_fns()
+@@ -846,14 +931,21 @@
+         return h
+ 
+     def gen_structure_annotated(self, type):
+         origin = type.__origin__
+         h = self._structure_func.dispatch(origin)
+         return h
+ 
++    def gen_unstructure_typeddict(self, cl: Any) -> Callable[[Dict], Dict]:
++        """Generate a TypedDict unstructure function.
++
++        Also apply converter-scored modifications.
++        """
++        return make_typeddict_dict_unstruct_fn(cl, self)
++
+     def gen_unstructure_attrs_fromdict(
+         self, cl: Type[T]
+     ) -> Callable[[T], Dict[str, Any]]:
+         origin = get_origin(cl)
+         attribs = fields(origin or cl)
+         if attrs_has(cl) and any(isinstance(a.type, str) for a in attribs):
+             # PEP 563 annotations - need to be resolved.
+@@ -865,18 +957,27 @@
+         }
+ 
+         h = make_dict_unstructure_fn(
+             cl, self, _cattrs_omit_if_default=self.omit_if_default, **attrib_overrides
+         )
+         return h
+ 
++    def gen_structure_typeddict(self, cl: Any) -> Callable[[Dict], Dict]:
++        """Generate a TypedDict structure function.
++
++        Also apply converter-scored modifications.
++        """
++        return make_typeddict_dict_struct_fn(
++            cl, self, _cattrs_detailed_validation=self.detailed_validation
++        )
++
+     def gen_structure_attrs_fromdict(
+         self, cl: Type[T]
+     ) -> Callable[[Mapping[str, Any], Any], T]:
+-        attribs = fields(get_origin(cl) if is_generic(cl) else cl)
++        attribs = fields(get_origin(cl) or cl if is_generic(cl) else cl)
+         if attrs_has(cl) and any(isinstance(a.type, str) for a in attribs):
+             # PEP 563 annotations - need to be resolved.
+             resolve_types(cl)
+         attrib_overrides = {
+             a.name: self.type_overrides[a.type]
+             for a in attribs
+             if a.type in self.type_overrides
+```
+
+### Comparing `cattrs-22.2.0/src/cattrs/disambiguators.py` & `cattrs-23.1.0rc0/src/cattrs/disambiguators.py`
+
+ * *Files identical despite different names*
+
+### Comparing `cattrs-22.2.0/src/cattrs/dispatch.py` & `cattrs-23.1.0rc0/src/cattrs/dispatch.py`
+
+ * *Files 5% similar despite different names*
+
+```diff
+@@ -1,14 +1,12 @@
+ from functools import lru_cache, singledispatch
+-from typing import Any, Callable, List, Tuple, Union
++from typing import Any, Callable, List, Optional, Tuple, Union
+ 
+ import attr
+ 
+-from .errors import StructureHandlerNotFoundError
+-
+ 
+ @attr.s
+ class _DispatchNotFound:
+     """A dummy object to help signify a dispatch not found."""
+ 
+     pass
+ 
+@@ -20,37 +18,39 @@
+     """
+ 
+     __slots__ = (
+         "_direct_dispatch",
+         "_function_dispatch",
+         "_single_dispatch",
+         "_generators",
++        "_fallback_func",
+         "dispatch",
+     )
+ 
+-    def __init__(self, fallback_func):
++    def __init__(self, fallback_func: Callable[[Any, Any], Any]):
+         self._direct_dispatch = {}
+         self._function_dispatch = FunctionDispatch()
+-        self._function_dispatch.register(lambda _: True, fallback_func)
+         self._single_dispatch = singledispatch(_DispatchNotFound)
+         self.dispatch = lru_cache(maxsize=None)(self._dispatch)
++        self._fallback_func = fallback_func
+ 
+-    def _dispatch(self, cl):
++    def _dispatch(self, typ: Any) -> Callable[[Any, Any], Any]:
+         try:
+-            dispatch = self._single_dispatch.dispatch(cl)
++            dispatch = self._single_dispatch.dispatch(typ)
+             if dispatch is not _DispatchNotFound:
+                 return dispatch
+         except Exception:
+             pass
+ 
+-        direct_dispatch = self._direct_dispatch.get(cl)
++        direct_dispatch = self._direct_dispatch.get(typ)
+         if direct_dispatch is not None:
+             return direct_dispatch
+ 
+-        return self._function_dispatch.dispatch(cl)
++        res = self._function_dispatch.dispatch(typ)
++        return res if res is not None else self._fallback_func
+ 
+     def register_cls_list(self, cls_and_handler, direct: bool = False) -> None:
+         """Register a class to direct or singledispatch."""
+         for cls, handler in cls_and_handler:
+             if direct:
+                 self._direct_dispatch[cls] = handler
+             else:
+@@ -105,20 +105,22 @@
+     FunctionDispatch is similar to functools.singledispatch, but
+     instead dispatches based on functions that take the type of the
+     first argument in the method, and return True or False.
+ 
+     objects that help determine dispatch should be instantiated objects.
+     """
+ 
+-    _handler_pairs: list = attr.ib(factory=list)
++    _handler_pairs: List[
++        Tuple[Callable[[Any], bool], Callable[[Any, Any], Any], bool]
++    ] = attr.ib(factory=list)
+ 
+     def register(self, can_handle: Callable[[Any], bool], func, is_generator=False):
+         self._handler_pairs.insert(0, (can_handle, func, is_generator))
+ 
+-    def dispatch(self, typ):
++    def dispatch(self, typ: Any) -> Optional[Callable[[Any, Any], Any]]:
+         """
+         returns the appropriate handler, for the object passed.
+         """
+         for can_handle, handler, is_generator in self._handler_pairs:
+             # can handle could raise an exception here
+             # such as issubclass being called on an instance.
+             # it's easier to just ignore that case.
+@@ -127,16 +129,14 @@
+             except Exception:
+                 continue
+             if ch:
+                 if is_generator:
+                     return handler(typ)
+                 else:
+                     return handler
+-        raise StructureHandlerNotFoundError(
+-            f"unable to find handler for {typ}", type_=typ
+-        )
++        return None
+ 
+     def get_num_fns(self) -> int:
+         return len(self._handler_pairs)
+ 
+     def copy_to(self, other: "FunctionDispatch", skip: int = 0):
+         other._handler_pairs.extend(self._handler_pairs[skip:])
+```
+
+### Comparing `cattrs-22.2.0/src/cattrs/gen.py` & `cattrs-23.1.0rc0/src/cattrs/gen/__init__.py`
+
+ * *Files 5% similar despite different names*
+
+```diff
+@@ -1,66 +1,65 @@
++from __future__ import annotations
++
+ import linecache
+ import re
+-import uuid
+ from dataclasses import is_dataclass
+-from threading import local
+ from typing import (
+     TYPE_CHECKING,
+     Any,
+     Callable,
+     Dict,
+     Iterable,
+     Mapping,
+     Optional,
+     Tuple,
+     Type,
+     TypeVar,
+ )
+ 
+ import attr
+-from attr import NOTHING, frozen, resolve_types
++from attr import NOTHING, resolve_types
+ 
+-from cattrs.errors import (
+-    ClassValidationError,
+-    ForbiddenExtraKeysError,
+-    IterableValidationError,
+-    StructureHandlerNotFoundError,
+-)
+-
+-from ._compat import (
+-    adapted_fields,
++from .._compat import (
++    _adapted_fields,
+     get_args,
+     get_origin,
+     is_annotated,
+     is_bare,
++    is_bare_final,
+     is_generic,
+ )
+-from ._generics import deep_copy_with
++from .._generics import deep_copy_with
++from ..errors import (
++    AttributeValidationNote,
++    ClassValidationError,
++    ForbiddenExtraKeysError,
++    IterableValidationError,
++    IterableValidationNote,
++    StructureHandlerNotFoundError,
++)
++from ._consts import AttributeOverride, already_generating, neutral
++from ._generics import generate_mapping
++from ._lc import generate_unique_filename
++from ._shared import find_structure_handler
+ 
+ if TYPE_CHECKING:  # pragma: no cover
+     from cattr.converters import BaseConverter
+ 
+ 
+-@frozen
+-class AttributeOverride:
+-    omit_if_default: Optional[bool] = None
+-    rename: Optional[str] = None
+-    omit: bool = False  # Omit the field completely.
+-
+-
+ def override(
+     omit_if_default: Optional[bool] = None,
+     rename: Optional[str] = None,
+     omit: bool = False,
++    struct_hook: Optional[Callable[[Any, Any], Any]] = None,
++    unstruct_hook: Optional[Callable[[Any], Any]] = None,
+ ):
+-    return AttributeOverride(omit_if_default=omit_if_default, rename=rename, omit=omit)
++    return AttributeOverride(omit_if_default, rename, omit, struct_hook, unstruct_hook)
+ 
+ 
+-_neutral = AttributeOverride()
+-_already_generating = local()
+ T = TypeVar("T")
+ 
+ 
+ def make_dict_unstructure_fn(
+     cl: Type[T],
+     converter: "BaseConverter",
+     _cattrs_omit_if_default: bool = False,
+@@ -68,80 +67,92 @@
+     **kwargs: AttributeOverride,
+ ) -> Callable[[T], Dict[str, Any]]:
+     """
+     Generate a specialized dict unstructuring function for an attrs class or a
+     dataclass.
+     """
+     origin = get_origin(cl)
+-    attrs = adapted_fields(origin or cl)  # type: ignore
++    attrs = _adapted_fields(origin or cl)  # type: ignore
+ 
+     if any(isinstance(a.type, str) for a in attrs):
+         # PEP 563 annotations - need to be resolved.
+         resolve_types(cl)
+ 
+     mapping = {}
+     if is_generic(cl):
+-        mapping = _generate_mapping(cl, mapping)
++        mapping = generate_mapping(cl, mapping)
+ 
+         for base in getattr(origin, "__orig_bases__", ()):
+             if is_generic(base) and not str(base).startswith("typing.Generic"):
+-                mapping = _generate_mapping(base, mapping)
++                mapping = generate_mapping(base, mapping)
+                 break
+-        cl = origin
++        if origin is not None:
++            cl = origin
+ 
+     cl_name = cl.__name__
+     fn_name = "unstructure_" + cl_name
+     globs = {}
+     lines = []
+     invocation_lines = []
+     internal_arg_parts = {}
+ 
+     # We keep track of what we're generating to help with recursive
+     # class graphs.
+     try:
+-        working_set = _already_generating.working_set
++        working_set = already_generating.working_set
+     except AttributeError:
+         working_set = set()
+-        _already_generating.working_set = working_set
++        already_generating.working_set = working_set
+     if cl in working_set:
+         raise RecursionError()
+     else:
+         working_set.add(cl)
+ 
+     try:
+         for a in attrs:
+             attr_name = a.name
+-            override = kwargs.pop(attr_name, _neutral)
++            override = kwargs.pop(attr_name, neutral)
+             if override.omit:
+                 continue
+             kn = attr_name if override.rename is None else override.rename
+             d = a.default
+ 
+             # For each attribute, we try resolving the type here and now.
+             # If a type is manually overwritten, this function should be
+             # regenerated.
+             handler = None
+-            if a.type is not None:
+-                t = a.type
+-                if isinstance(t, TypeVar):
+-                    if t.__name__ in mapping:
+-                        t = mapping[t.__name__]
+-                    else:
+-                        handler = converter.unstructure
+-                elif is_generic(t) and not is_bare(t) and not is_annotated(t):
+-                    t = deep_copy_with(t, mapping)
+-
+-                if handler is None:
+-                    try:
+-                        handler = converter._unstructure_func.dispatch(t)
+-                    except RecursionError:
+-                        # There's a circular reference somewhere down the line
+-                        handler = converter.unstructure
++            if override.unstruct_hook is not None:
++                handler = override.unstruct_hook
+             else:
+-                handler = converter.unstructure
++                if a.type is not None:
++                    t = a.type
++                    if isinstance(t, TypeVar):
++                        if t.__name__ in mapping:
++                            t = mapping[t.__name__]
++                        else:
++                            handler = converter.unstructure
++                    elif is_generic(t) and not is_bare(t) and not is_annotated(t):
++                        t = deep_copy_with(t, mapping)
++
++                    if handler is None:
++                        if (
++                            is_bare_final(t)
++                            and a.default is not NOTHING
++                            and not isinstance(a.default, attr.Factory)
++                        ):
++                            # This is a special case where we can use the
++                            # type of the default to dispatch on.
++                            t = a.default.__class__
++                        try:
++                            handler = converter._unstructure_func.dispatch(t)
++                        except RecursionError:
++                            # There's a circular reference somewhere down the line
++                            handler = converter.unstructure
++                else:
++                    handler = converter.unstructure
+ 
+             is_identity = handler == converter._unstructure_identity
+ 
+             if not is_identity:
+                 unstruct_handler_name = f"__c_unstr_{attr_name}"
+                 globs[unstruct_handler_name] = handler
+                 internal_arg_parts[unstruct_handler_name] = handler
+@@ -187,52 +198,29 @@
+             + [f"    {line}" for line in invocation_lines]
+             + ["  }"]
+             + lines
+             + ["  return res"]
+         )
+         script = "\n".join(total_lines)
+ 
+-        fname = _generate_unique_filename(
++        fname = generate_unique_filename(
+             cl, "unstructure", reserve=_cattrs_use_linecache
+         )
+ 
+         eval(compile(script, fname, "exec"), globs)
+ 
+         fn = globs[fn_name]
+         if _cattrs_use_linecache:
+             linecache.cache[fname] = len(script), None, total_lines, fname
+     finally:
+         working_set.remove(cl)
+ 
+     return fn
+ 
+ 
+-def _generate_mapping(cl: Type, old_mapping: Dict[str, type]) -> Dict[str, type]:
+-    mapping = {}
+-
+-    # To handle the cases where classes in the typing module are using
+-    # the GenericAlias structure but aren’t a Generic and hence
+-    # end up in this function but do not have an `__parameters__`
+-    # attribute. These classes are interface types, for example
+-    # `typing.Hashable`.
+-    parameters = getattr(get_origin(cl), "__parameters__", None)
+-    if parameters is None:
+-        return old_mapping
+-
+-    for p, t in zip(parameters, get_args(cl)):
+-        if isinstance(t, TypeVar):
+-            continue
+-        mapping[p.__name__] = t
+-
+-    if not mapping:
+-        return old_mapping
+-
+-    return mapping
+-
+-
+ DictStructureFn = Callable[[Mapping[str, Any], Any], T]
+ 
+ 
+ def make_dict_structure_fn(
+     cl: Type[T],
+     converter: "BaseConverter",
+     _cattrs_forbid_extra_keys: bool = False,
+@@ -242,20 +230,21 @@
+     **kwargs: AttributeOverride,
+ ) -> DictStructureFn[T]:
+     """Generate a specialized dict structuring function for an attrs class."""
+ 
+     mapping = {}
+     if is_generic(cl):
+         base = get_origin(cl)
+-        mapping = _generate_mapping(cl, mapping)
+-        cl = base
++        mapping = generate_mapping(cl, mapping)
++        if base is not None:
++            cl = base
+ 
+     for base in getattr(cl, "__orig_bases__", ()):
+         if is_generic(base) and not str(base).startswith("typing.Generic"):
+-            mapping = _generate_mapping(base, mapping)
++            mapping = generate_mapping(base, mapping)
+             break
+ 
+     if isinstance(cl, TypeVar):
+         cl = mapping.get(cl.__name__, cl)
+ 
+     cl_name = cl.__name__
+     fn_name = "structure_" + cl_name
+@@ -267,24 +256,27 @@
+             name_base = mapping[p.__name__]
+         except KeyError:
+             raise StructureHandlerNotFoundError(
+                 f"Missing type for generic argument {p.__name__}, specify it when structuring.",
+                 p,
+             ) from None
+         name = getattr(name_base, "__name__", None) or str(name_base)
+-        name = re.sub(r"[\[\.\] ,]", "_", name)
++        # `<>` can be present in lambdas
++        # `|` can be present in unions
++        name = re.sub(r"[\[\.\] ,<>]", "_", name)
++        name = re.sub(r"\|", "u", name)
+         fn_name += f"_{name}"
+ 
+     internal_arg_parts = {"__cl": cl}
+     globs = {}
+     lines = []
+     post_lines = []
+     invocation_lines = []
+ 
+-    attrs = adapted_fields(cl)
++    attrs = _adapted_fields(cl)
+     is_dc = is_dataclass(cl)
+ 
+     if any(isinstance(a.type, str) for a in attrs):
+         # PEP 563 annotations - need to be resolved.
+         resolve_types(cl)
+ 
+     allowed_fields = set()
+@@ -293,55 +285,51 @@
+         globs["__c_feke"] = ForbiddenExtraKeysError
+ 
+     if _cattrs_detailed_validation:
+         lines.append("  res = {}")
+         lines.append("  errors = []")
+         invocation_lines.append("**res,")
+         internal_arg_parts["__c_cve"] = ClassValidationError
++        internal_arg_parts["__c_avn"] = AttributeValidationNote
+         for a in attrs:
+             an = a.name
+-            override = kwargs.get(an, _neutral)
++            override = kwargs.get(an, neutral)
+             if override.omit:
+                 continue
+             t = a.type
+             if isinstance(t, TypeVar):
+                 t = mapping.get(t.__name__, t)
+             elif is_generic(t) and not is_bare(t) and not is_annotated(t):
+                 t = deep_copy_with(t, mapping)
+ 
+             # For each attribute, we try resolving the type here and now.
+             # If a type is manually overwritten, this function should be
+             # regenerated.
+-            if a.converter is not None and _cattrs_prefer_attrib_converters:
+-                handler = None
+-            elif (
+-                a.converter is not None
+-                and not _cattrs_prefer_attrib_converters
+-                and t is not None
+-            ):
+-                handler = converter._structure_func.dispatch(t)
+-                if handler == converter._structure_error:
+-                    handler = None
+-            elif t is not None:
+-                handler = converter._structure_func.dispatch(t)
++            if override.struct_hook is not None:
++                # If the user has requested an override, just use that.
++                handler = override.struct_hook
+             else:
+-                handler = converter.structure
++                handler = find_structure_handler(
++                    a, t, converter, _cattrs_prefer_attrib_converters
++                )
+ 
+             struct_handler_name = f"__c_structure_{an}"
+             internal_arg_parts[struct_handler_name] = handler
+ 
+             ian = an if (is_dc or an[0] != "_") else an[1:]
+             kn = an if override.rename is None else override.rename
+             allowed_fields.add(kn)
+             i = "  "
+             if a.default is not NOTHING:
+                 lines.append(f"{i}if '{kn}' in o:")
+                 i = f"{i}  "
+             lines.append(f"{i}try:")
+             i = f"{i}  "
++            type_name = f"__c_type_{an}"
++            internal_arg_parts[type_name] = t
+             if handler:
+                 if handler == converter._structure_call:
+                     internal_arg_parts[struct_handler_name] = t
+                     lines.append(f"{i}res['{ian}'] = {struct_handler_name}(o['{kn}'])")
+                 else:
+                     type_name = f"__c_type_{an}"
+                     internal_arg_parts[type_name] = t
+@@ -350,15 +338,15 @@
+                     )
+             else:
+                 lines.append(f"{i}res['{ian}'] = o['{kn}']")
+             i = i[:-2]
+             lines.append(f"{i}except Exception as e:")
+             i = f"{i}  "
+             lines.append(
+-                f"{i}e.__notes__ = getattr(e, '__notes__', []) + [\"Structuring class {cl.__qualname__} @ attribute {an}\"]"
++                f'{i}e.__notes__ = getattr(e, \'__notes__\', []) + [__c_avn("Structuring class {cl.__qualname__} @ attribute {an}", "{an}", __c_type_{an})]'
+             )
+             lines.append(f"{i}errors.append(e)")
+ 
+         if _cattrs_forbid_extra_keys:
+             post_lines += [
+                 "  unknown_fields = set(o.keys()) - __c_a",
+                 "  if unknown_fields:",
+@@ -378,43 +366,36 @@
+             ]
+         )
+     else:
+         non_required = []
+         # The first loop deals with required args.
+         for a in attrs:
+             an = a.name
+-            override = kwargs.get(an, _neutral)
++            override = kwargs.get(an, neutral)
+             if override.omit:
+                 continue
+             if a.default is not NOTHING:
+                 non_required.append(a)
+                 continue
+             t = a.type
+             if isinstance(t, TypeVar):
+                 t = mapping.get(t.__name__, t)
+             elif is_generic(t) and not is_bare(t) and not is_annotated(t):
+                 t = deep_copy_with(t, mapping)
+ 
+             # For each attribute, we try resolving the type here and now.
+             # If a type is manually overwritten, this function should be
+             # regenerated.
+-            if a.converter is not None and _cattrs_prefer_attrib_converters:
+-                handler = None
+-            elif (
+-                a.converter is not None
+-                and not _cattrs_prefer_attrib_converters
+-                and t is not None
+-            ):
+-                handler = converter._structure_func.dispatch(t)
+-                if handler == converter._structure_error:
+-                    handler = None
+-            elif t is not None:
+-                handler = converter._structure_func.dispatch(t)
++            if override.struct_hook is not None:
++                # If the user has requested an override, just use that.
++                handler = override.struct_hook
+             else:
+-                handler = converter.structure
++                handler = find_structure_handler(
++                    a, t, converter, _cattrs_prefer_attrib_converters
++                )
+ 
+             kn = an if override.rename is None else override.rename
+             allowed_fields.add(kn)
+ 
+             if handler:
+                 struct_handler_name = f"__c_structure_{an}"
+                 internal_arg_parts[struct_handler_name] = handler
+@@ -436,38 +417,31 @@
+         # The second loop is for optional args.
+         if non_required:
+             invocation_lines.append("**res,")
+             lines.append("  res = {}")
+ 
+             for a in non_required:
+                 an = a.name
+-                override = kwargs.get(an, _neutral)
++                override = kwargs.get(an, neutral)
+                 t = a.type
+                 if isinstance(t, TypeVar):
+                     t = mapping.get(t.__name__, t)
+                 elif is_generic(t) and not is_bare(t) and not is_annotated(t):
+                     t = deep_copy_with(t, mapping)
+ 
+                 # For each attribute, we try resolving the type here and now.
+                 # If a type is manually overwritten, this function should be
+                 # regenerated.
+-                if a.converter is not None and _cattrs_prefer_attrib_converters:
+-                    handler = None
+-                elif (
+-                    a.converter is not None
+-                    and not _cattrs_prefer_attrib_converters
+-                    and t is not None
+-                ):
+-                    handler = converter._structure_func.dispatch(t)
+-                    if handler == converter._structure_error:
+-                        handler = None
+-                elif t is not None:
+-                    handler = converter._structure_func.dispatch(t)
++                if override.struct_hook is not None:
++                    # If the user has requested an override, just use that.
++                    handler = override.struct_hook
+                 else:
+-                    handler = converter.structure
++                    handler = find_structure_handler(
++                        a, t, converter, _cattrs_prefer_attrib_converters
++                    )
+ 
+                 struct_handler_name = f"__c_structure_{an}"
+                 internal_arg_parts[struct_handler_name] = handler
+ 
+                 ian = an if (is_dc or an[0] != "_") else an[1:]
+                 kn = an if override.rename is None else override.rename
+                 allowed_fields.add(kn)
+@@ -505,15 +479,15 @@
+     total_lines = (
+         [f"def {fn_name}(o, _, *, {internal_arg_line}):"]
+         + lines
+         + post_lines
+         + instantiation_lines
+     )
+ 
+-    fname = _generate_unique_filename(cl, "structure", reserve=_cattrs_use_linecache)
++    fname = generate_unique_filename(cl, "structure", reserve=_cattrs_use_linecache)
+     script = "\n".join(total_lines)
+     eval(compile(script, fname, "exec"), globs)
+     if _cattrs_use_linecache:
+         linecache.cache[fname] = len(script), None, total_lines, fname
+ 
+     return globs[fn_name]
+ 
+@@ -670,15 +644,15 @@
+ ) -> MappingStructureFn[T]:
+     """Generate a specialized unstructure function for a mapping."""
+     fn_name = "structure_mapping"
+ 
+     globs: Dict[str, Type] = {"__cattr_mapping_cl": structure_to}
+ 
+     lines = []
+-    lines.append(f"def {fn_name}(mapping, _):")
++    internal_arg_parts = {}
+ 
+     # Let's try fishing out the type args.
+     if not is_bare(cl):
+         args = get_args(cl)
+         if len(args) == 2:
+             key_arg_cand, val_arg_cand = args
+             if key_type is NOTHING:
+@@ -724,70 +698,59 @@
+         is_bare_dict = True
+ 
+     if is_bare_dict:
+         # No args, it's a bare dict.
+         lines.append("  res = dict(mapping)")
+     else:
+         if detailed_validation:
++            internal_arg_parts["IterableValidationError"] = IterableValidationError
++            internal_arg_parts["IterableValidationNote"] = IterableValidationNote
++            internal_arg_parts["val_type"] = (
++                val_type if val_type is not NOTHING else Any
++            )
++            internal_arg_parts["key_type"] = (
++                key_type if key_type is not NOTHING else Any
++            )
+             globs["enumerate"] = enumerate
+-            globs["IterableValidationError"] = IterableValidationError
++
+             lines.append("  res = {}; errors = []")
+             lines.append("  for ix, (k, v) in enumerate(mapping.items()):")
+             lines.append("    try:")
+             lines.append(f"      value = {v_s}")
+             lines.append("    except Exception as e:")
+             lines.append(
+-                "      e.__notes__ = getattr(e, '__notes__', []) + ['Structuring mapping value @ key ' + repr(k)]"
++                "      e.__notes__ = getattr(e, '__notes__', []) + [IterableValidationNote('Structuring mapping value @ key ' + repr(k), k, val_type)]"
+             )
+             lines.append("      errors.append(e)")
+             lines.append("      continue")
+             lines.append("    try:")
+             lines.append(f"      key = {k_s}")
+             lines.append("      res[key] = value")
+             lines.append("    except Exception as e:")
+             lines.append(
+-                "      e.__notes__ = getattr(e, '__notes__', []) + ['Structuring mapping key @ key ' + repr(k)]"
++                "      e.__notes__ = getattr(e, '__notes__', []) + [IterableValidationNote('Structuring mapping key @ key ' + repr(k), k, key_type)]"
+             )
+             lines.append("      errors.append(e)")
+             lines.append("  if errors:")
+             lines.append(
+                 f"    raise IterableValidationError('While structuring ' + {repr(cl)!r}, errors, __cattr_mapping_cl)"
+             )
+         else:
+             lines.append(f"  res = {{{k_s}: {v_s} for k, v in mapping.items()}}")
+     if structure_to is not dict:
+         lines.append("  res = __cattr_mapping_cl(res)")
+ 
+-    total_lines = lines + ["  return res"]
++    internal_arg_line = ", ".join([f"{i}={i}" for i in internal_arg_parts])
++    if internal_arg_line:
++        internal_arg_line = f", {internal_arg_line}"
++    for k, v in internal_arg_parts.items():
++        globs[k] = v
++
++    def_line = f"def {fn_name}(mapping, _{internal_arg_line}):"
++    total_lines = [def_line] + lines + ["  return res"]
+     script = "\n".join(total_lines)
+ 
+     eval(compile(script, "", "exec"), globs)
+ 
+     fn = globs[fn_name]
+ 
+     return fn
+-
+-
+-def _generate_unique_filename(cls: Any, func_name: str, reserve: bool = True) -> str:
+-    """
+-    Create a "filename" suitable for a function being generated.
+-    """
+-    unique_id = uuid.uuid4()
+-    extra = ""
+-    count = 1
+-
+-    while True:
+-        unique_filename = "<cattrs generated {0} {1}.{2}{3}>".format(
+-            func_name, cls.__module__, getattr(cls, "__qualname__", cls.__name__), extra
+-        )
+-        if not reserve:
+-            return unique_filename
+-        # To handle concurrency we essentially "reserve" our spot in
+-        # the linecache with a dummy line.  The caller can then
+-        # set this value correctly.
+-        cache_line = (1, None, (str(unique_id),), unique_filename)
+-        if linecache.cache.setdefault(unique_filename, cache_line) == cache_line:
+-            return unique_filename
+-
+-        # Looks like this spot is taken. Try again.
+-        count += 1
+-        extra = "-{0}".format(count)
+```
+
+#### encoding
+
+```diff
+@@ -1 +1 @@
+-utf-8
++us-ascii
+```
+
+### Comparing `cattrs-22.2.0/src/cattrs/preconf/bson.py` & `cattrs-23.1.0rc0/src/cattrs/preconf/bson.py`
+
+ * *Files 1% similar despite different names*
+
+```diff
+@@ -18,15 +18,15 @@
+     """A subclass to help with binary key encoding/decoding."""
+ 
+ 
+ class BsonConverter(Converter):
+     def dumps(
+         self,
+         obj: Any,
+-        unstructure_as=None,
++        unstructure_as: Any = None,
+         check_keys: bool = False,
+         codec_options: CodecOptions = DEFAULT_CODEC_OPTIONS,
+     ) -> bytes:
+         return encode(
+             self.unstructure(obj, unstructure_as=unstructure_as),
+             check_keys=check_keys,
+             codec_options=codec_options,
+@@ -82,16 +82,16 @@
+         [(is_mapping, gen_structure_mapping, True)]
+     )
+ 
+     converter.register_structure_hook(datetime, validate_datetime)
+     converter.register_structure_hook(ObjectId, lambda v, _: ObjectId(v))
+ 
+ 
+-def make_converter(*args, **kwargs) -> BsonConverter:
++def make_converter(*args: Any, **kwargs: Any) -> BsonConverter:
+     kwargs["unstruct_collection_overrides"] = {
+-        **kwargs.get("unstruct_collection_overrides", {}),
+         AbstractSet: list,
++        **kwargs.get("unstruct_collection_overrides", {}),
+     }
+     res = BsonConverter(*args, **kwargs)
+     configure_converter(res)
+ 
+     return res
+```
+
+### Comparing `cattrs-22.2.0/src/cattrs/preconf/json.py` & `cattrs-23.1.0rc0/src/cattrs/preconf/json.py`
+
+ * *Files 4% similar despite different names*
+
+```diff
+@@ -8,18 +8,18 @@
+ 
+ from ..converters import BaseConverter, Converter
+ 
+ T = TypeVar("T")
+ 
+ 
+ class JsonConverter(Converter):
+-    def dumps(self, obj: Any, unstructure_as=None, **kwargs) -> str:
++    def dumps(self, obj: Any, unstructure_as: Any = None, **kwargs: Any) -> str:
+         return dumps(self.unstructure(obj, unstructure_as=unstructure_as), **kwargs)
+ 
+-    def loads(self, data: Union[bytes, str], cl: Type[T], **kwargs) -> T:
++    def loads(self, data: Union[bytes, str], cl: Type[T], **kwargs: Any) -> T:
+         return self.structure(loads(data, **kwargs), cl)
+ 
+ 
+ def configure_converter(converter: BaseConverter):
+     """
+     Configure the converter for use with the stdlib json module.
+ 
+@@ -32,17 +32,17 @@
+         bytes, lambda v: (b85encode(v) if v else b"").decode("utf8")
+     )
+     converter.register_structure_hook(bytes, lambda v, _: b85decode(v))
+     converter.register_unstructure_hook(datetime, lambda v: v.isoformat())
+     converter.register_structure_hook(datetime, lambda v, _: datetime.fromisoformat(v))
+ 
+ 
+-def make_converter(*args, **kwargs) -> JsonConverter:
++def make_converter(*args: Any, **kwargs: Any) -> JsonConverter:
+     kwargs["unstruct_collection_overrides"] = {
+-        **kwargs.get("unstruct_collection_overrides", {}),
+         AbstractSet: list,
+         Counter: dict,
++        **kwargs.get("unstruct_collection_overrides", {}),
+     }
+     res = JsonConverter(*args, **kwargs)
+     configure_converter(res)
+ 
+     return res
+```
+
+### Comparing `cattrs-22.2.0/src/cattrs/preconf/msgpack.py` & `cattrs-23.1.0rc0/src/cattrs/preconf/ujson.py`
+
+ * *Files 12% similar despite different names*
+
+```diff
+@@ -1,43 +1,48 @@
+-"""Preconfigured converters for msgpack."""
+-from datetime import datetime, timezone
+-from typing import Any, Type, TypeVar
++"""Preconfigured converters for ujson."""
++from base64 import b85decode, b85encode
++from datetime import datetime
++from typing import Any, AnyStr, Type, TypeVar
+ 
+-from msgpack import dumps, loads
++from ujson import dumps, loads
+ 
+ from cattrs._compat import AbstractSet
+ 
+ from ..converters import BaseConverter, Converter
+ 
+ T = TypeVar("T")
+ 
+ 
+-class MsgpackConverter(Converter):
+-    def dumps(self, obj: Any, unstructure_as=None, **kwargs) -> bytes:
++class UjsonConverter(Converter):
++    def dumps(self, obj: Any, unstructure_as: Any = None, **kwargs: Any) -> str:
+         return dumps(self.unstructure(obj, unstructure_as=unstructure_as), **kwargs)
+ 
+-    def loads(self, data: bytes, cl: Type[T], **kwargs) -> T:
++    def loads(self, data: AnyStr, cl: Type[T], **kwargs: Any) -> T:
+         return self.structure(loads(data, **kwargs), cl)
+ 
+ 
+ def configure_converter(converter: BaseConverter):
+     """
+-    Configure the converter for use with the msgpack library.
++    Configure the converter for use with the ujson library.
+ 
+-    * datetimes are serialized as timestamp floats
++    * bytes are serialized as base64 strings
++    * datetimes are serialized as ISO 8601
+     * sets are serialized as lists
+     """
+-    converter.register_unstructure_hook(datetime, lambda v: v.timestamp())
+-    converter.register_structure_hook(
+-        datetime, lambda v, _: datetime.fromtimestamp(v, timezone.utc)
++    converter.register_unstructure_hook(
++        bytes, lambda v: (b85encode(v) if v else b"").decode("utf8")
+     )
++    converter.register_structure_hook(bytes, lambda v, _: b85decode(v))
+ 
++    converter.register_unstructure_hook(datetime, lambda v: v.isoformat())
++    converter.register_structure_hook(datetime, lambda v, _: datetime.fromisoformat(v))
+ 
+-def make_converter(*args, **kwargs) -> MsgpackConverter:
++
++def make_converter(*args: Any, **kwargs: Any) -> UjsonConverter:
+     kwargs["unstruct_collection_overrides"] = {
+-        **kwargs.get("unstruct_collection_overrides", {}),
+         AbstractSet: list,
++        **kwargs.get("unstruct_collection_overrides", {}),
+     }
+-    res = MsgpackConverter(*args, **kwargs)
++    res = UjsonConverter(*args, **kwargs)
+     configure_converter(res)
+ 
+     return res
+```
+
+### Comparing `cattrs-22.2.0/src/cattrs/preconf/orjson.py` & `cattrs-23.1.0rc0/src/cattrs/preconf/orjson.py`
+
+ * *Files 5% similar despite different names*
+
+```diff
+@@ -10,15 +10,15 @@
+ 
+ from ..converters import BaseConverter, Converter
+ 
+ T = TypeVar("T")
+ 
+ 
+ class OrjsonConverter(Converter):
+-    def dumps(self, obj: Any, unstructure_as=None, **kwargs) -> bytes:
++    def dumps(self, obj: Any, unstructure_as: Any = None, **kwargs: Any) -> bytes:
+         return dumps(self.unstructure(obj, unstructure_as=unstructure_as), **kwargs)
+ 
+     def loads(self, data: bytes, cl: Type[T]) -> T:
+         return self.structure(loads(data), cl)
+ 
+ 
+ def configure_converter(converter: BaseConverter):
+@@ -62,16 +62,16 @@
+         )
+ 
+     converter._unstructure_func.register_func_list(
+         [(is_mapping, gen_unstructure_mapping, True)]
+     )
+ 
+ 
+-def make_converter(*args, **kwargs) -> OrjsonConverter:
++def make_converter(*args: Any, **kwargs: Any) -> OrjsonConverter:
+     kwargs["unstruct_collection_overrides"] = {
+-        **kwargs.get("unstruct_collection_overrides", {}),
+         AbstractSet: list,
++        **kwargs.get("unstruct_collection_overrides", {}),
+     }
+     res = OrjsonConverter(*args, **kwargs)
+     configure_converter(res)
+ 
+     return res
+```
+
+### Comparing `cattrs-22.2.0/src/cattrs/preconf/pyyaml.py` & `cattrs-23.1.0rc0/src/cattrs/preconf/pyyaml.py`
+
+ * *Files 9% similar despite different names*
+
+```diff
+@@ -9,15 +9,15 @@
+ from ..converters import BaseConverter, Converter
+ from . import validate_datetime
+ 
+ T = TypeVar("T")
+ 
+ 
+ class PyyamlConverter(Converter):
+-    def dumps(self, obj: Any, unstructure_as=None, **kwargs) -> str:
++    def dumps(self, obj: Any, unstructure_as: Any = None, **kwargs: Any) -> str:
+         return safe_dump(self.unstructure(obj, unstructure_as=unstructure_as), **kwargs)
+ 
+     def loads(self, data: str, cl: Type[T]) -> T:
+         return self.structure(safe_load(data), cl)
+ 
+ 
+ def configure_converter(converter: BaseConverter):
+@@ -29,16 +29,16 @@
+     """
+     converter.register_unstructure_hook(
+         str, lambda v: v if v.__class__ is str else v.value
+     )
+     converter.register_structure_hook(datetime, validate_datetime)
+ 
+ 
+-def make_converter(*args, **kwargs) -> PyyamlConverter:
++def make_converter(*args: Any, **kwargs: Any) -> PyyamlConverter:
+     kwargs["unstruct_collection_overrides"] = {
+-        **kwargs.get("unstruct_collection_overrides", {}),
+         FrozenSetSubscriptable: list,
++        **kwargs.get("unstruct_collection_overrides", {}),
+     }
+     res = PyyamlConverter(*args, **kwargs)
+     configure_converter(res)
+ 
+     return res
+```
+
+### Comparing `cattrs-22.2.0/src/cattrs/preconf/tomlkit.py` & `cattrs-23.1.0rc0/src/cattrs/preconf/tomlkit.py`
+
+ * *Files 2% similar despite different names*
+
+```diff
+@@ -13,15 +13,15 @@
+ from . import validate_datetime
+ 
+ T = TypeVar("T")
+ _enum_value_getter = attrgetter("_value_")
+ 
+ 
+ class TomlkitConverter(Converter):
+-    def dumps(self, obj: Any, unstructure_as=None, **kwargs) -> str:
++    def dumps(self, obj: Any, unstructure_as: Any = None, **kwargs: Any) -> str:
+         return dumps(self.unstructure(obj, unstructure_as=unstructure_as), **kwargs)
+ 
+     def loads(self, data: str, cl: Type[T]) -> T:
+         return self.structure(loads(data), cl)
+ 
+ 
+ def configure_converter(converter: BaseConverter):
+@@ -61,17 +61,17 @@
+ 
+     converter._unstructure_func.register_func_list(
+         [(is_mapping, gen_unstructure_mapping, True)]
+     )
+     converter.register_structure_hook(datetime, validate_datetime)
+ 
+ 
+-def make_converter(*args, **kwargs) -> TomlkitConverter:
++def make_converter(*args: Any, **kwargs: Any) -> TomlkitConverter:
+     kwargs["unstruct_collection_overrides"] = {
+-        **kwargs.get("unstruct_collection_overrides", {}),
+         AbstractSet: list,
+         tuple: list,
++        **kwargs.get("unstruct_collection_overrides", {}),
+     }
+     res = TomlkitConverter(*args, **kwargs)
+     configure_converter(res)
+ 
+     return res
+```
+
+### Comparing `cattrs-22.2.0/PKG-INFO` & `cattrs-23.1.0rc0/PKG-INFO`
+
+ * *Files 25% similar despite different names*
+
+```diff
+@@ -1,566 +1,579 @@
+ 00000000: 4d65 7461 6461 7461 2d56 6572 7369 6f6e  Metadata-Version
+ 00000010: 3a20 322e 310a 4e61 6d65 3a20 6361 7474  : 2.1.Name: catt
+-00000020: 7273 0a56 6572 7369 6f6e 3a20 3232 2e32  rs.Version: 22.2
+-00000030: 2e30 0a53 756d 6d61 7279 3a20 436f 6d70  .0.Summary: Comp
+-00000040: 6f73 6162 6c65 2063 6f6d 706c 6578 2063  osable complex c
+-00000050: 6c61 7373 2073 7570 706f 7274 2066 6f72  lass support for
+-00000060: 2061 7474 7273 2061 6e64 2064 6174 6163   attrs and datac
+-00000070: 6c61 7373 6573 2e0a 486f 6d65 2d70 6167  lasses..Home-pag
+-00000080: 653a 2068 7474 7073 3a2f 2f67 6974 6875  e: https://githu
+-00000090: 622e 636f 6d2f 7079 7468 6f6e 2d61 7474  b.com/python-att
+-000000a0: 7273 2f63 6174 7472 730a 4c69 6365 6e73  rs/cattrs.Licens
+-000000b0: 653a 204d 4954 0a4b 6579 776f 7264 733a  e: MIT.Keywords:
+-000000c0: 2061 7474 7273 2c73 6572 6961 6c69 7a61   attrs,serializa
+-000000d0: 7469 6f6e 2c64 6174 6163 6c61 7373 6573  tion,dataclasses
+-000000e0: 0a41 7574 686f 723a 2054 696e 2054 7672  .Author: Tin Tvr
+-000000f0: 746b 6f76 6963 0a41 7574 686f 722d 656d  tkovic.Author-em
+-00000100: 6169 6c3a 2074 696e 6368 6573 7465 7240  ail: tinchester@
+-00000110: 676d 6169 6c2e 636f 6d0a 5265 7175 6972  gmail.com.Requir
+-00000120: 6573 2d50 7974 686f 6e3a 203e 3d33 2e37  es-Python: >=3.7
+-00000130: 0a43 6c61 7373 6966 6965 723a 204c 6963  .Classifier: Lic
+-00000140: 656e 7365 203a 3a20 4f53 4920 4170 7072  ense :: OSI Appr
+-00000150: 6f76 6564 203a 3a20 4d49 5420 4c69 6365  oved :: MIT Lice
+-00000160: 6e73 650a 436c 6173 7369 6669 6572 3a20  nse.Classifier: 
+-00000170: 5072 6f67 7261 6d6d 696e 6720 4c61 6e67  Programming Lang
+-00000180: 7561 6765 203a 3a20 5079 7468 6f6e 203a  uage :: Python :
+-00000190: 3a20 330a 436c 6173 7369 6669 6572 3a20  : 3.Classifier: 
+-000001a0: 5072 6f67 7261 6d6d 696e 6720 4c61 6e67  Programming Lang
+-000001b0: 7561 6765 203a 3a20 5079 7468 6f6e 203a  uage :: Python :
+-000001c0: 3a20 332e 370a 436c 6173 7369 6669 6572  : 3.7.Classifier
+-000001d0: 3a20 5072 6f67 7261 6d6d 696e 6720 4c61  : Programming La
+-000001e0: 6e67 7561 6765 203a 3a20 5079 7468 6f6e  nguage :: Python
+-000001f0: 203a 3a20 332e 380a 436c 6173 7369 6669   :: 3.8.Classifi
+-00000200: 6572 3a20 5072 6f67 7261 6d6d 696e 6720  er: Programming 
+-00000210: 4c61 6e67 7561 6765 203a 3a20 5079 7468  Language :: Pyth
+-00000220: 6f6e 203a 3a20 332e 390a 436c 6173 7369  on :: 3.9.Classi
+-00000230: 6669 6572 3a20 5072 6f67 7261 6d6d 696e  fier: Programmin
+-00000240: 6720 4c61 6e67 7561 6765 203a 3a20 5079  g Language :: Py
+-00000250: 7468 6f6e 203a 3a20 332e 3130 0a52 6571  thon :: 3.10.Req
+-00000260: 7569 7265 732d 4469 7374 3a20 6174 7472  uires-Dist: attr
+-00000270: 7320 283e 3d32 3029 0a52 6571 7569 7265  s (>=20).Require
+-00000280: 732d 4469 7374 3a20 6578 6365 7074 696f  s-Dist: exceptio
+-00000290: 6e67 726f 7570 3b20 7079 7468 6f6e 5f76  ngroup; python_v
+-000002a0: 6572 7369 6f6e 203c 2022 332e 3131 220a  ersion < "3.11".
+-000002b0: 5265 7175 6972 6573 2d44 6973 743a 2074  Requires-Dist: t
+-000002c0: 7970 696e 675f 6578 7465 6e73 696f 6e73  yping_extensions
+-000002d0: 3b20 7079 7468 6f6e 5f76 6572 7369 6f6e  ; python_version
+-000002e0: 203c 2022 332e 3822 0a50 726f 6a65 6374   < "3.8".Project
+-000002f0: 2d55 524c 3a20 4275 6720 5472 6163 6b65  -URL: Bug Tracke
+-00000300: 722c 2068 7474 7073 3a2f 2f67 6974 6875  r, https://githu
+-00000310: 622e 636f 6d2f 7079 7468 6f6e 2d61 7474  b.com/python-att
+-00000320: 7273 2f63 6174 7472 732f 6973 7375 6573  rs/cattrs/issues
+-00000330: 0a50 726f 6a65 6374 2d55 524c 3a20 4368  .Project-URL: Ch
+-00000340: 616e 6765 6c6f 672c 2068 7474 7073 3a2f  angelog, https:/
+-00000350: 2f63 6174 7472 732e 7265 6164 7468 6564  /cattrs.readthed
+-00000360: 6f63 732e 696f 2f65 6e2f 6c61 7465 7374  ocs.io/en/latest
+-00000370: 2f68 6973 746f 7279 2e68 746d 6c0a 5072  /history.html.Pr
+-00000380: 6f6a 6563 742d 5552 4c3a 2044 6f63 756d  oject-URL: Docum
+-00000390: 656e 7461 7469 6f6e 2c20 6874 7470 733a  entation, https:
+-000003a0: 2f2f 6361 7474 7273 2e72 6561 6474 6865  //cattrs.readthe
+-000003b0: 646f 6373 2e69 6f2f 656e 2f6c 6174 6573  docs.io/en/lates
+-000003c0: 742f 0a50 726f 6a65 6374 2d55 524c 3a20  t/.Project-URL: 
+-000003d0: 5265 706f 7369 746f 7279 2c20 6874 7470  Repository, http
+-000003e0: 733a 2f2f 6769 7468 7562 2e63 6f6d 2f70  s://github.com/p
+-000003f0: 7974 686f 6e2d 6174 7472 732f 6361 7474  ython-attrs/catt
+-00000400: 7273 0a44 6573 6372 6970 7469 6f6e 2d43  rs.Description-C
+-00000410: 6f6e 7465 6e74 2d54 7970 653a 2074 6578  ontent-Type: tex
+-00000420: 742f 782d 7273 740a 0a3d 3d3d 3d3d 3d0a  t/x-rst..======.
+-00000430: 6361 7474 7273 0a3d 3d3d 3d3d 3d0a 0a0a  cattrs.======...
+-00000440: 2e2e 2069 6d61 6765 3a3a 2068 7474 7073  .. image:: https
+-00000450: 3a2f 2f69 6d67 2e73 6869 656c 6473 2e69  ://img.shields.i
+-00000460: 6f2f 7079 7069 2f76 2f63 6174 7472 732e  o/pypi/v/cattrs.
+-00000470: 7376 670a 2020 2020 2020 2020 3a74 6172  svg.        :tar
+-00000480: 6765 743a 2068 7474 7073 3a2f 2f70 7970  get: https://pyp
+-00000490: 692e 7079 7468 6f6e 2e6f 7267 2f70 7970  i.python.org/pyp
+-000004a0: 692f 6361 7474 7273 0a0a 2e2e 2069 6d61  i/cattrs.... ima
+-000004b0: 6765 3a3a 2068 7474 7073 3a2f 2f67 6974  ge:: https://git
+-000004c0: 6875 622e 636f 6d2f 7079 7468 6f6e 2d61  hub.com/python-a
+-000004d0: 7474 7273 2f63 6174 7472 732f 776f 726b  ttrs/cattrs/work
+-000004e0: 666c 6f77 732f 4349 2f62 6164 6765 2e73  flows/CI/badge.s
+-000004f0: 7667 0a20 2020 2020 2020 203a 7461 7267  vg.        :targ
+-00000500: 6574 3a20 6874 7470 733a 2f2f 6769 7468  et: https://gith
+-00000510: 7562 2e63 6f6d 2f70 7974 686f 6e2d 6174  ub.com/python-at
+-00000520: 7472 732f 6361 7474 7273 2f61 6374 696f  trs/cattrs/actio
+-00000530: 6e73 3f77 6f72 6b66 6c6f 773d 4349 0a0a  ns?workflow=CI..
+-00000540: 2e2e 2069 6d61 6765 3a3a 2068 7474 7073  .. image:: https
+-00000550: 3a2f 2f72 6561 6474 6865 646f 6373 2e6f  ://readthedocs.o
+-00000560: 7267 2f70 726f 6a65 6374 732f 6361 7474  rg/projects/catt
+-00000570: 7273 2f62 6164 6765 2f3f 7665 7273 696f  rs/badge/?versio
+-00000580: 6e3d 6c61 7465 7374 0a20 2020 2020 2020  n=latest.       
+-00000590: 203a 7461 7267 6574 3a20 6874 7470 733a   :target: https:
+-000005a0: 2f2f 6361 7474 7273 2e72 6561 6474 6865  //cattrs.readthe
+-000005b0: 646f 6373 2e69 6f2f 656e 2f6c 6174 6573  docs.io/en/lates
+-000005c0: 742f 3f62 6164 6765 3d6c 6174 6573 740a  t/?badge=latest.
+-000005d0: 2020 2020 2020 2020 3a61 6c74 3a20 446f          :alt: Do
+-000005e0: 6375 6d65 6e74 6174 696f 6e20 5374 6174  cumentation Stat
+-000005f0: 7573 0a0a 2e2e 2069 6d61 6765 3a3a 2068  us.... image:: h
+-00000600: 7474 7073 3a2f 2f69 6d67 2e73 6869 656c  ttps://img.shiel
+-00000610: 6473 2e69 6f2f 7079 7069 2f70 7976 6572  ds.io/pypi/pyver
+-00000620: 7369 6f6e 732f 6361 7474 7273 2e73 7667  sions/cattrs.svg
+-00000630: 0a20 2020 2020 2020 203a 7461 7267 6574  .        :target
+-00000640: 3a20 6874 7470 733a 2f2f 6769 7468 7562  : https://github
+-00000650: 2e63 6f6d 2f70 7974 686f 6e2d 6174 7472  .com/python-attr
+-00000660: 732f 6361 7474 7273 0a20 2020 2020 2020  s/cattrs.       
+-00000670: 203a 616c 743a 2053 7570 706f 7274 6564   :alt: Supported
+-00000680: 2050 7974 686f 6e20 7665 7273 696f 6e73   Python versions
+-00000690: 0a0a 2e2e 2069 6d61 6765 3a3a 2068 7474  .... image:: htt
+-000006a0: 7073 3a2f 2f63 6f64 6563 6f76 2e69 6f2f  ps://codecov.io/
+-000006b0: 6768 2f70 7974 686f 6e2d 6174 7472 732f  gh/python-attrs/
+-000006c0: 6361 7474 7273 2f62 7261 6e63 682f 6d61  cattrs/branch/ma
+-000006d0: 7374 6572 2f67 7261 7068 2f62 6164 6765  ster/graph/badge
+-000006e0: 2e73 7667 0a20 2020 2020 2020 203a 7461  .svg.        :ta
+-000006f0: 7267 6574 3a20 6874 7470 733a 2f2f 636f  rget: https://co
+-00000700: 6465 636f 762e 696f 2f67 682f 7079 7468  decov.io/gh/pyth
+-00000710: 6f6e 2d61 7474 7273 2f63 6174 7472 732f  on-attrs/cattrs/
+-00000720: 0a0a 2e2e 2069 6d61 6765 3a3a 2068 7474  .... image:: htt
+-00000730: 7073 3a2f 2f69 6d67 2e73 6869 656c 6473  ps://img.shields
+-00000740: 2e69 6f2f 6261 6467 652f 636f 6465 2532  .io/badge/code%2
+-00000750: 3073 7479 6c65 2d62 6c61 636b 2d30 3030  0style-black-000
+-00000760: 3030 302e 7376 670a 2020 2020 3a74 6172  000.svg.    :tar
+-00000770: 6765 743a 2068 7474 7073 3a2f 2f67 6974  get: https://git
+-00000780: 6875 622e 636f 6d2f 616d 6276 2f62 6c61  hub.com/ambv/bla
+-00000790: 636b 0a0a 0a2d 2d2d 2d0a 0a60 6063 6174  ck...----..``cat
+-000007a0: 7472 7360 6020 6973 2061 6e20 6f70 656e  trs`` is an open
+-000007b0: 2073 6f75 7263 6520 5079 7468 6f6e 206c   source Python l
+-000007c0: 6962 7261 7279 2066 6f72 2073 7472 7563  ibrary for struc
+-000007d0: 7475 7269 6e67 2061 6e64 2075 6e73 7472  turing and unstr
+-000007e0: 7563 7475 7269 6e67 0a64 6174 612e 2060  ucturing.data. `
+-000007f0: 6063 6174 7472 7360 6020 776f 726b 7320  `cattrs`` works 
+-00000800: 6265 7374 2077 6974 6820 6060 6174 7472  best with ``attr
+-00000810: 7360 6020 636c 6173 7365 732c 2064 6174  s`` classes, dat
+-00000820: 6163 6c61 7373 6573 2061 6e64 2074 6865  aclasses and the
+-00000830: 2075 7375 616c 0a50 7974 686f 6e20 636f   usual.Python co
+-00000840: 6c6c 6563 7469 6f6e 732c 2062 7574 206f  llections, but o
+-00000850: 7468 6572 206b 696e 6473 206f 6620 636c  ther kinds of cl
+-00000860: 6173 7365 7320 6172 6520 7375 7070 6f72  asses are suppor
+-00000870: 7465 6420 6279 206d 616e 7561 6c6c 790a  ted by manually.
+-00000880: 7265 6769 7374 6572 696e 6720 636f 6e76  registering conv
+-00000890: 6572 7465 7273 2e0a 0a50 7974 686f 6e20  erters...Python 
+-000008a0: 6861 7320 6120 7269 6368 2073 6574 206f  has a rich set o
+-000008b0: 6620 706f 7765 7266 756c 2c20 6561 7379  f powerful, easy
+-000008c0: 2074 6f20 7573 652c 2062 7569 6c74 2d69   to use, built-i
+-000008d0: 6e20 6461 7461 2074 7970 6573 206c 696b  n data types lik
+-000008e0: 650a 6469 6374 696f 6e61 7269 6573 2c20  e.dictionaries, 
+-000008f0: 6c69 7374 7320 616e 6420 7475 706c 6573  lists and tuples
+-00000900: 2e20 5468 6573 6520 6461 7461 2074 7970  . These data typ
+-00000910: 6573 2061 7265 2061 6c73 6f20 7468 6520  es are also the 
+-00000920: 6c69 6e67 7561 2066 7261 6e63 610a 6f66  lingua franca.of
+-00000930: 206d 6f73 7420 6461 7461 2073 6572 6961   most data seria
+-00000940: 6c69 7a61 7469 6f6e 206c 6962 7261 7269  lization librari
+-00000950: 6573 2c20 666f 7220 666f 726d 6174 7320  es, for formats 
+-00000960: 6c69 6b65 206a 736f 6e2c 206d 7367 7061  like json, msgpa
+-00000970: 636b 2c20 7961 6d6c 206f 720a 746f 6d6c  ck, yaml or.toml
+-00000980: 2e0a 0a44 6174 6120 7479 7065 7320 6c69  ...Data types li
+-00000990: 6b65 2074 6869 732c 2061 6e64 206d 6170  ke this, and map
+-000009a0: 7069 6e67 7320 6c69 6b65 2060 6064 6963  pings like ``dic
+-000009b0: 7460 6020 7320 696e 2070 6172 7469 6375  t`` s in particu
+-000009c0: 6c61 722c 2072 6570 7265 7365 6e74 0a75  lar, represent.u
+-000009d0: 6e73 7472 7563 7475 7265 6420 6461 7461  nstructured data
+-000009e0: 2e20 596f 7572 2064 6174 6120 6973 2c20  . Your data is, 
+-000009f0: 696e 2061 6c6c 206c 696b 656c 6968 6f6f  in all likelihoo
+-00000a00: 642c 2073 7472 7563 7475 7265 643a 206e  d, structured: n
+-00000a10: 6f74 2061 6c6c 0a63 6f6d 6269 6e61 7469  ot all.combinati
+-00000a20: 6f6e 7320 6f66 2066 6965 6c64 206e 616d  ons of field nam
+-00000a30: 6573 206f 7220 7661 6c75 6573 2061 7265  es or values are
+-00000a40: 2076 616c 6964 2069 6e70 7574 7320 746f   valid inputs to
+-00000a50: 2079 6f75 7220 7072 6f67 7261 6d73 2e20   your programs. 
+-00000a60: 496e 0a50 7974 686f 6e2c 2073 7472 7563  In.Python, struc
+-00000a70: 7475 7265 6420 6461 7461 2069 7320 6265  tured data is be
+-00000a80: 7474 6572 2072 6570 7265 7365 6e74 6564  tter represented
+-00000a90: 2077 6974 6820 636c 6173 7365 7320 616e   with classes an
+-00000aa0: 6420 656e 756d 6572 6174 696f 6e73 2e0a  d enumerations..
+-00000ab0: 6060 6174 7472 7360 6020 6973 2061 6e20  ``attrs`` is an 
+-00000ac0: 6578 6365 6c6c 656e 7420 6c69 6272 6172  excellent librar
+-00000ad0: 7920 666f 7220 6465 636c 6172 6174 6976  y for declarativ
+-00000ae0: 656c 7920 6465 7363 7269 6269 6e67 2074  ely describing t
+-00000af0: 6865 2073 7472 7563 7475 7265 206f 660a  he structure of.
+-00000b00: 796f 7572 2064 6174 612c 2061 6e64 2076  your data, and v
+-00000b10: 616c 6964 6174 696e 6720 6974 2e0a 0a57  alidating it...W
+-00000b20: 6865 6e20 796f 7527 7265 2068 616e 6465  hen you're hande
+-00000b30: 6420 756e 7374 7275 6374 7572 6564 2064  d unstructured d
+-00000b40: 6174 6120 2862 7920 796f 7572 206e 6574  ata (by your net
+-00000b50: 776f 726b 2c20 6669 6c65 2073 7973 7465  work, file syste
+-00000b60: 6d2c 2064 6174 6162 6173 652e 2e2e 292c  m, database...),
+-00000b70: 0a60 6063 6174 7472 7360 6020 6865 6c70  .``cattrs`` help
+-00000b80: 7320 746f 2063 6f6e 7665 7274 2074 6869  s to convert thi
+-00000b90: 7320 6461 7461 2069 6e74 6f20 7374 7275  s data into stru
+-00000ba0: 6374 7572 6564 2064 6174 612e 2057 6865  ctured data. Whe
+-00000bb0: 6e20 796f 7520 6861 7665 2074 6f0a 636f  n you have to.co
+-00000bc0: 6e76 6572 7420 796f 7572 2073 7472 7563  nvert your struc
+-00000bd0: 7475 7265 6420 6461 7461 2069 6e74 6f20  tured data into 
+-00000be0: 6461 7461 2074 7970 6573 206f 7468 6572  data types other
+-00000bf0: 206c 6962 7261 7269 6573 2063 616e 2068   libraries can h
+-00000c00: 616e 646c 652c 0a60 6063 6174 7472 7360  andle,.``cattrs`
+-00000c10: 6020 7475 726e 7320 796f 7572 2063 6c61  ` turns your cla
+-00000c20: 7373 6573 2061 6e64 2065 6e75 6d65 7261  sses and enumera
+-00000c30: 7469 6f6e 7320 696e 746f 2064 6963 7469  tions into dicti
+-00000c40: 6f6e 6172 6965 732c 2069 6e74 6567 6572  onaries, integer
+-00000c50: 7320 616e 640a 7374 7269 6e67 732e 0a0a  s and.strings...
+-00000c60: 4865 7265 2773 2061 2073 696d 706c 6520  Here's a simple 
+-00000c70: 7461 7374 652e 2054 6865 206c 6973 7420  taste. The list 
+-00000c80: 636f 6e74 6169 6e69 6e67 2061 2066 6c6f  containing a flo
+-00000c90: 6174 2c20 616e 2069 6e74 2061 6e64 2061  at, an int and a
+-00000ca0: 2073 7472 696e 670a 6765 7473 2063 6f6e   string.gets con
+-00000cb0: 7665 7274 6564 2069 6e74 6f20 6120 7475  verted into a tu
+-00000cc0: 706c 6520 6f66 2074 6872 6565 2069 6e74  ple of three int
+-00000cd0: 732e 0a0a 2e2e 2063 6f64 652d 626c 6f63  s..... code-bloc
+-00000ce0: 6b3a 3a20 7079 636f 6e0a 0a20 2020 203e  k:: pycon..    >
+-00000cf0: 3e3e 2069 6d70 6f72 7420 6361 7474 7273  >> import cattrs
+-00000d00: 0a20 2020 203e 3e3e 0a20 2020 203e 3e3e  .    >>>.    >>>
+-00000d10: 2063 6174 7472 732e 7374 7275 6374 7572   cattrs.structur
+-00000d20: 6528 5b31 2e30 2c20 322c 2022 3322 5d2c  e([1.0, 2, "3"],
+-00000d30: 2074 7570 6c65 5b69 6e74 2c20 696e 742c   tuple[int, int,
+-00000d40: 2069 6e74 5d29 0a20 2020 2028 312c 2032   int]).    (1, 2
+-00000d50: 2c20 3329 0a0a 6060 6361 7474 7273 6060  , 3)..``cattrs``
+-00000d60: 2077 6f72 6b73 2077 656c 6c20 7769 7468   works well with
+-00000d70: 2060 6061 7474 7273 6060 2063 6c61 7373   ``attrs`` class
+-00000d80: 6573 206f 7574 206f 6620 7468 6520 626f  es out of the bo
+-00000d90: 782e 0a0a 2e2e 2063 6f64 652d 626c 6f63  x..... code-bloc
+-00000da0: 6b3a 3a20 7079 636f 6e0a 0a20 2020 203e  k:: pycon..    >
+-00000db0: 3e3e 2066 726f 6d20 6174 7472 7320 696d  >> from attrs im
+-00000dc0: 706f 7274 2066 726f 7a65 6e0a 2020 2020  port frozen.    
+-00000dd0: 3e3e 3e20 696d 706f 7274 2063 6174 7472  >>> import cattr
+-00000de0: 730a 2020 2020 3e3e 3e0a 2020 2020 3e3e  s.    >>>.    >>
+-00000df0: 3e20 4066 726f 7a65 6e20 2023 2049 7420  > @frozen  # It 
+-00000e00: 776f 726b 7320 7769 7468 206e 6f6e 2d66  works with non-f
+-00000e10: 726f 7a65 6e20 636c 6173 7365 7320 746f  rozen classes to
+-00000e20: 6f2e 0a20 2020 202e 2e2e 2063 6c61 7373  o..    ... class
+-00000e30: 2043 3a0a 2020 2020 2e2e 2e20 2020 2020   C:.    ...     
+-00000e40: 613a 2069 6e74 0a20 2020 202e 2e2e 2020  a: int.    ...  
+-00000e50: 2020 2062 3a20 7374 720a 2020 2020 2e2e     b: str.    ..
+-00000e60: 2e0a 2020 2020 3e3e 3e20 696e 7374 616e  ..    >>> instan
+-00000e70: 6365 203d 2043 2831 2c20 2761 2729 0a20  ce = C(1, 'a'). 
+-00000e80: 2020 203e 3e3e 2063 6174 7472 732e 756e     >>> cattrs.un
+-00000e90: 7374 7275 6374 7572 6528 696e 7374 616e  structure(instan
+-00000ea0: 6365 290a 2020 2020 7b27 6127 3a20 312c  ce).    {'a': 1,
+-00000eb0: 2027 6227 3a20 2761 277d 0a20 2020 203e   'b': 'a'}.    >
+-00000ec0: 3e3e 2063 6174 7472 732e 7374 7275 6374  >> cattrs.struct
+-00000ed0: 7572 6528 7b27 6127 3a20 312c 2027 6227  ure({'a': 1, 'b'
+-00000ee0: 3a20 2761 277d 2c20 4329 0a20 2020 2043  : 'a'}, C).    C
+-00000ef0: 2861 3d31 2c20 623d 2761 2729 0a0a 4865  (a=1, b='a')..He
+-00000f00: 7265 2773 2061 206d 7563 6820 6d6f 7265  re's a much more
+-00000f10: 2063 6f6d 706c 6578 2065 7861 6d70 6c65   complex example
+-00000f20: 2c20 696e 766f 6c76 696e 6720 6060 6174  , involving ``at
+-00000f30: 7472 7360 6020 636c 6173 7365 7320 7769  trs`` classes wi
+-00000f40: 7468 2074 7970 650a 6d65 7461 6461 7461  th type.metadata
+-00000f50: 2e0a 0a2e 2e20 636f 6465 2d62 6c6f 636b  ..... code-block
+-00000f60: 3a3a 2070 7963 6f6e 0a0a 2020 2020 3e3e  :: pycon..    >>
+-00000f70: 3e20 6672 6f6d 2065 6e75 6d20 696d 706f  > from enum impo
+-00000f80: 7274 2075 6e69 7175 652c 2045 6e75 6d0a  rt unique, Enum.
+-00000f90: 2020 2020 3e3e 3e20 6672 6f6d 2074 7970      >>> from typ
+-00000fa0: 696e 6720 696d 706f 7274 204f 7074 696f  ing import Optio
+-00000fb0: 6e61 6c2c 2053 6571 7565 6e63 652c 2055  nal, Sequence, U
+-00000fc0: 6e69 6f6e 0a20 2020 203e 3e3e 2066 726f  nion.    >>> fro
+-00000fd0: 6d20 6361 7474 7273 2069 6d70 6f72 7420  m cattrs import 
+-00000fe0: 7374 7275 6374 7572 652c 2075 6e73 7472  structure, unstr
+-00000ff0: 7563 7475 7265 0a20 2020 203e 3e3e 2066  ucture.    >>> f
+-00001000: 726f 6d20 6174 7472 7320 696d 706f 7274  rom attrs import
+-00001010: 2064 6566 696e 652c 2066 6965 6c64 0a20   define, field. 
+-00001020: 2020 203e 3e3e 0a20 2020 203e 3e3e 2040     >>>.    >>> @
+-00001030: 756e 6971 7565 0a20 2020 202e 2e2e 2063  unique.    ... c
+-00001040: 6c61 7373 2043 6174 4272 6565 6428 456e  lass CatBreed(En
+-00001050: 756d 293a 0a20 2020 202e 2e2e 2020 2020  um):.    ...    
+-00001060: 2053 4941 4d45 5345 203d 2022 7369 616d   SIAMESE = "siam
+-00001070: 6573 6522 0a20 2020 202e 2e2e 2020 2020  ese".    ...    
+-00001080: 204d 4149 4e45 5f43 4f4f 4e20 3d20 226d   MAINE_COON = "m
+-00001090: 6169 6e65 5f63 6f6f 6e22 0a20 2020 202e  aine_coon".    .
+-000010a0: 2e2e 2020 2020 2053 4143 5245 445f 4249  ..     SACRED_BI
+-000010b0: 524d 414e 203d 2022 6269 726d 616e 220a  RMAN = "birman".
+-000010c0: 2020 2020 2e2e 2e0a 2020 2020 3e3e 3e20      ....    >>> 
+-000010d0: 4064 6566 696e 650a 2020 2020 2e2e 2e20  @define.    ... 
+-000010e0: 636c 6173 7320 4361 743a 0a20 2020 202e  class Cat:.    .
+-000010f0: 2e2e 2020 2020 2062 7265 6564 3a20 4361  ..     breed: Ca
+-00001100: 7442 7265 6564 0a20 2020 202e 2e2e 2020  tBreed.    ...  
+-00001110: 2020 206e 616d 6573 3a20 5365 7175 656e     names: Sequen
+-00001120: 6365 5b73 7472 5d0a 2020 2020 2e2e 2e0a  ce[str].    ....
+-00001130: 2020 2020 3e3e 3e20 4064 6566 696e 650a      >>> @define.
+-00001140: 2020 2020 2e2e 2e20 636c 6173 7320 446f      ... class Do
+-00001150: 674d 6963 726f 6368 6970 3a0a 2020 2020  gMicrochip:.    
+-00001160: 2e2e 2e20 2020 2020 6368 6970 5f69 6420  ...     chip_id 
+-00001170: 3d20 6669 656c 6428 2920 2023 2054 7970  = field()  # Typ
+-00001180: 6520 616e 6e6f 7461 7469 6f6e 7320 6172  e annotations ar
+-00001190: 6520 6f70 7469 6f6e 616c 2c20 6275 7420  e optional, but 
+-000011a0: 7265 636f 6d6d 656e 6465 640a 2020 2020  recommended.    
+-000011b0: 2e2e 2e20 2020 2020 7469 6d65 5f63 6869  ...     time_chi
+-000011c0: 7070 6564 3a20 666c 6f61 7420 3d20 6669  pped: float = fi
+-000011d0: 656c 6428 290a 2020 2020 2e2e 2e0a 2020  eld().    ....  
+-000011e0: 2020 3e3e 3e20 4064 6566 696e 650a 2020    >>> @define.  
+-000011f0: 2020 2e2e 2e20 636c 6173 7320 446f 673a    ... class Dog:
+-00001200: 0a20 2020 202e 2e2e 2020 2020 2063 7574  .    ...     cut
+-00001210: 656e 6573 733a 2069 6e74 0a20 2020 202e  eness: int.    .
+-00001220: 2e2e 2020 2020 2063 6869 703a 204f 7074  ..     chip: Opt
+-00001230: 696f 6e61 6c5b 446f 674d 6963 726f 6368  ional[DogMicroch
+-00001240: 6970 5d20 3d20 4e6f 6e65 0a20 2020 202e  ip] = None.    .
+-00001250: 2e2e 0a20 2020 203e 3e3e 2070 203d 2075  ...    >>> p = u
+-00001260: 6e73 7472 7563 7475 7265 285b 446f 6728  nstructure([Dog(
+-00001270: 6375 7465 6e65 7373 3d31 2c20 6368 6970  cuteness=1, chip
+-00001280: 3d44 6f67 4d69 6372 6f63 6869 7028 6368  =DogMicrochip(ch
+-00001290: 6970 5f69 643d 312c 2074 696d 655f 6368  ip_id=1, time_ch
+-000012a0: 6970 7065 643d 3130 2e30 2929 2c0a 2020  ipped=10.0)),.  
+-000012b0: 2020 2e2e 2e20 2020 2020 2020 2020 2020    ...           
+-000012c0: 2020 2020 2020 2043 6174 2862 7265 6564         Cat(breed
+-000012d0: 3d43 6174 4272 6565 642e 4d41 494e 455f  =CatBreed.MAINE_
+-000012e0: 434f 4f4e 2c20 6e61 6d65 733d 2827 466c  COON, names=('Fl
+-000012f0: 7566 666c 7927 2c20 2746 6c75 6666 6572  uffly', 'Fluffer
+-00001300: 2729 295d 290a 2020 2020 2e2e 2e0a 2020  '))]).    ....  
+-00001310: 2020 3e3e 3e20 7072 696e 7428 7029 0a20    >>> print(p). 
+-00001320: 2020 205b 7b27 6375 7465 6e65 7373 273a     [{'cuteness':
+-00001330: 2031 2c20 2763 6869 7027 3a20 7b27 6368   1, 'chip': {'ch
+-00001340: 6970 5f69 6427 3a20 312c 2027 7469 6d65  ip_id': 1, 'time
+-00001350: 5f63 6869 7070 6564 273a 2031 302e 307d  _chipped': 10.0}
+-00001360: 7d2c 207b 2762 7265 6564 273a 2027 6d61  }, {'breed': 'ma
+-00001370: 696e 655f 636f 6f6e 272c 2027 6e61 6d65  ine_coon', 'name
+-00001380: 7327 3a20 2827 466c 7566 666c 7927 2c20  s': ('Fluffly', 
+-00001390: 2746 6c75 6666 6572 2729 7d5d 0a20 2020  'Fluffer')}].   
+-000013a0: 203e 3e3e 2070 7269 6e74 2873 7472 7563   >>> print(struc
+-000013b0: 7475 7265 2870 2c20 6c69 7374 5b55 6e69  ture(p, list[Uni
+-000013c0: 6f6e 5b44 6f67 2c20 4361 745d 5d29 290a  on[Dog, Cat]])).
+-000013d0: 2020 2020 5b44 6f67 2863 7574 656e 6573      [Dog(cutenes
+-000013e0: 733d 312c 2063 6869 703d 446f 674d 6963  s=1, chip=DogMic
+-000013f0: 726f 6368 6970 2863 6869 705f 6964 3d31  rochip(chip_id=1
+-00001400: 2c20 7469 6d65 5f63 6869 7070 6564 3d31  , time_chipped=1
+-00001410: 302e 3029 292c 2043 6174 2862 7265 6564  0.0)), Cat(breed
+-00001420: 3d3c 4361 7442 7265 6564 2e4d 4149 4e45  =<CatBreed.MAINE
+-00001430: 5f43 4f4f 4e3a 2027 6d61 696e 655f 636f  _COON: 'maine_co
+-00001440: 6f6e 273e 2c20 6e61 6d65 733d 5b27 466c  on'>, names=['Fl
+-00001450: 7566 666c 7927 2c20 2746 6c75 6666 6572  uffly', 'Fluffer
+-00001460: 275d 295d 0a0a 436f 6e73 6964 6572 2075  '])]..Consider u
+-00001470: 6e73 7472 7563 7475 7265 6420 6461 7461  nstructured data
+-00001480: 2061 206c 6f77 2d6c 6576 656c 2072 6570   a low-level rep
+-00001490: 7265 7365 6e74 6174 696f 6e20 7468 6174  resentation that
+-000014a0: 206e 6565 6473 2074 6f20 6265 2063 6f6e   needs to be con
+-000014b0: 7665 7274 6564 0a74 6f20 7374 7275 6374  verted.to struct
+-000014c0: 7572 6564 2064 6174 6120 746f 2062 6520  ured data to be 
+-000014d0: 6861 6e64 6c65 642c 2061 6e64 2075 7365  handled, and use
+-000014e0: 2060 6073 7472 7563 7475 7265 6060 2e20   ``structure``. 
+-000014f0: 5768 656e 2079 6f75 2772 6520 646f 6e65  When you're done
+-00001500: 2c0a 6060 756e 7374 7275 6374 7572 6560  ,.``unstructure`
+-00001510: 6020 7468 6520 6461 7461 2074 6f20 6974  ` the data to it
+-00001520: 7320 756e 7374 7275 6374 7572 6564 2066  s unstructured f
+-00001530: 6f72 6d20 616e 6420 7061 7373 2069 7420  orm and pass it 
+-00001540: 616c 6f6e 6720 746f 2061 6e6f 7468 6572  along to another
+-00001550: 0a6c 6962 7261 7279 206f 7220 6d6f 6475  .library or modu
+-00001560: 6c65 2e20 5573 6520 6061 7474 7273 2074  le. Use `attrs t
+-00001570: 7970 6520 6d65 7461 6461 7461 203c 6874  ype metadata <ht
+-00001580: 7470 3a2f 2f61 7474 7273 2e72 6561 6474  tp://attrs.readt
+-00001590: 6865 646f 6373 2e69 6f2f 656e 2f73 7461  hedocs.io/en/sta
+-000015a0: 626c 652f 6578 616d 706c 6573 2e68 746d  ble/examples.htm
+-000015b0: 6c23 7479 7065 733e 605f 0a74 6f20 6164  l#types>`_.to ad
+-000015c0: 6420 7479 7065 206d 6574 6164 6174 6120  d type metadata 
+-000015d0: 746f 2061 7474 7269 6275 7465 732c 2073  to attributes, s
+-000015e0: 6f20 6060 6361 7474 7273 6060 2077 696c  o ``cattrs`` wil
+-000015f0: 6c20 6b6e 6f77 2068 6f77 2074 6f20 7374  l know how to st
+-00001600: 7275 6374 7572 6520 616e 640a 6465 7374  ructure and.dest
+-00001610: 7275 6374 7572 6520 7468 656d 2e0a 0a2a  ructure them...*
+-00001620: 2046 7265 6520 736f 6674 7761 7265 3a20   Free software: 
+-00001630: 4d49 5420 6c69 6365 6e73 650a 2a20 446f  MIT license.* Do
+-00001640: 6375 6d65 6e74 6174 696f 6e3a 2068 7474  cumentation: htt
+-00001650: 7073 3a2f 2f63 6174 7472 732e 7265 6164  ps://cattrs.read
+-00001660: 7468 6564 6f63 732e 696f 2e0a 2a20 5079  thedocs.io..* Py
+-00001670: 7468 6f6e 2076 6572 7369 6f6e 7320 7375  thon versions su
+-00001680: 7070 6f72 7465 643a 2033 2e37 2061 6e64  pported: 3.7 and
+-00001690: 2075 702e 2028 4f6c 6465 7220 5079 7468   up. (Older Pyth
+-000016a0: 6f6e 2076 6572 7369 6f6e 732c 206c 696b  on versions, lik
+-000016b0: 6520 322e 372c 2033 2e35 2061 6e64 2033  e 2.7, 3.5 and 3
+-000016c0: 2e36 2061 7265 2073 7570 706f 7274 6564  .6 are supported
+-000016d0: 2062 7920 6f6c 6465 7220 7665 7273 696f   by older versio
+-000016e0: 6e73 3b20 7365 6520 7468 6520 6368 616e  ns; see the chan
+-000016f0: 6765 6c6f 672e 290a 0a0a 4665 6174 7572  gelog.)...Featur
+-00001700: 6573 0a2d 2d2d 2d2d 2d2d 2d0a 0a2a 2043  es.--------..* C
+-00001710: 6f6e 7665 7274 7320 7374 7275 6374 7572  onverts structur
+-00001720: 6564 2064 6174 6120 696e 746f 2075 6e73  ed data into uns
+-00001730: 7472 7563 7475 7265 6420 6461 7461 2c20  tructured data, 
+-00001740: 7265 6375 7273 6976 656c 793a 0a0a 2020  recursively:..  
+-00001750: 2a20 6060 6174 7472 7360 6020 636c 6173  * ``attrs`` clas
+-00001760: 7365 7320 616e 6420 6461 7461 636c 6173  ses and dataclas
+-00001770: 7365 7320 6172 6520 636f 6e76 6572 7465  ses are converte
+-00001780: 6420 696e 746f 2064 6963 7469 6f6e 6172  d into dictionar
+-00001790: 6965 7320 696e 2061 2077 6179 2073 696d  ies in a way sim
+-000017a0: 696c 6172 2074 6f20 6060 6174 7472 732e  ilar to ``attrs.
+-000017b0: 6173 6469 6374 6060 2c20 6f72 2069 6e74  asdict``, or int
+-000017c0: 6f20 7475 706c 6573 2069 6e20 6120 7761  o tuples in a wa
+-000017d0: 7920 7369 6d69 6c61 7220 746f 2060 6061  y similar to ``a
+-000017e0: 7474 7273 2e61 7374 7570 6c65 6060 2e0a  ttrs.astuple``..
+-000017f0: 2020 2a20 456e 756d 6572 6174 696f 6e20    * Enumeration 
+-00001800: 696e 7374 616e 6365 7320 6172 6520 636f  instances are co
+-00001810: 6e76 6572 7465 6420 746f 2074 6865 6972  nverted to their
+-00001820: 2076 616c 7565 732e 0a20 202a 204f 7468   values..  * Oth
+-00001830: 6572 2074 7970 6573 2061 7265 206c 6574  er types are let
+-00001840: 2074 6872 6f75 6768 2077 6974 686f 7574   through without
+-00001850: 2063 6f6e 7665 7273 696f 6e2e 2054 6869   conversion. Thi
+-00001860: 7320 696e 636c 7564 6573 2074 7970 6573  s includes types
+-00001870: 2073 7563 6820 6173 0a20 2020 2069 6e74   such as.    int
+-00001880: 6567 6572 732c 2064 6963 7469 6f6e 6172  egers, dictionar
+-00001890: 6965 732c 206c 6973 7473 2061 6e64 2069  ies, lists and i
+-000018a0: 6e73 7461 6e63 6573 206f 6620 6e6f 6e2d  nstances of non-
+-000018b0: 6060 6174 7472 7360 6020 636c 6173 7365  ``attrs`` classe
+-000018c0: 732e 0a20 202a 2043 7573 746f 6d20 636f  s..  * Custom co
+-000018d0: 6e76 6572 7465 7273 2066 6f72 2061 6e79  nverters for any
+-000018e0: 2074 7970 6520 6361 6e20 6265 2072 6567   type can be reg
+-000018f0: 6973 7465 7265 6420 7573 696e 6720 6060  istered using ``
+-00001900: 7265 6769 7374 6572 5f75 6e73 7472 7563  register_unstruc
+-00001910: 7475 7265 5f68 6f6f 6b60 602e 0a0a 2a20  ture_hook``...* 
+-00001920: 436f 6e76 6572 7473 2075 6e73 7472 7563  Converts unstruc
+-00001930: 7475 7265 6420 6461 7461 2069 6e74 6f20  tured data into 
+-00001940: 7374 7275 6374 7572 6564 2064 6174 612c  structured data,
+-00001950: 2072 6563 7572 7369 7665 6c79 2c20 6163   recursively, ac
+-00001960: 636f 7264 696e 6720 746f 0a20 2079 6f75  cording to.  you
+-00001970: 7220 7370 6563 6966 6963 6174 696f 6e20  r specification 
+-00001980: 6769 7665 6e20 6173 2061 2074 7970 652e  given as a type.
+-00001990: 2054 6865 2066 6f6c 6c6f 7769 6e67 2074   The following t
+-000019a0: 7970 6573 2061 7265 2073 7570 706f 7274  ypes are support
+-000019b0: 6564 3a0a 0a20 202a 2060 6074 7970 696e  ed:..  * ``typin
+-000019c0: 672e 4f70 7469 6f6e 616c 5b54 5d60 602e  g.Optional[T]``.
+-000019d0: 0a20 202a 2060 6074 7970 696e 672e 4c69  .  * ``typing.Li
+-000019e0: 7374 5b54 5d60 602c 2060 6074 7970 696e  st[T]``, ``typin
+-000019f0: 672e 4d75 7461 626c 6553 6571 7565 6e63  g.MutableSequenc
+-00001a00: 655b 545d 6060 2c20 6060 7479 7069 6e67  e[T]``, ``typing
+-00001a10: 2e53 6571 7565 6e63 655b 545d 6060 2028  .Sequence[T]`` (
+-00001a20: 636f 6e76 6572 7473 2074 6f20 6120 6c69  converts to a li
+-00001a30: 7374 292e 0a20 202a 2060 6074 7970 696e  st)..  * ``typin
+-00001a40: 672e 5475 706c 6560 6020 2862 6f74 6820  g.Tuple`` (both 
+-00001a50: 7661 7269 616e 7473 2c20 6060 5475 706c  variants, ``Tupl
+-00001a60: 655b 542c 202e 2e2e 5d60 6020 616e 6420  e[T, ...]`` and 
+-00001a70: 6060 5475 706c 655b 582c 2059 2c20 5a5d  ``Tuple[X, Y, Z]
+-00001a80: 6060 292e 0a20 202a 2060 6074 7970 696e  ``)..  * ``typin
+-00001a90: 672e 4d75 7461 626c 6553 6574 5b54 5d60  g.MutableSet[T]`
+-00001aa0: 602c 2060 6074 7970 696e 672e 5365 745b  `, ``typing.Set[
+-00001ab0: 545d 6060 2028 636f 6e76 6572 7473 2074  T]`` (converts t
+-00001ac0: 6f20 6120 7365 7429 2e0a 2020 2a20 6060  o a set)..  * ``
+-00001ad0: 7479 7069 6e67 2e46 726f 7a65 6e53 6574  typing.FrozenSet
+-00001ae0: 5b54 5d60 6020 2863 6f6e 7665 7274 7320  [T]`` (converts 
+-00001af0: 746f 2061 2066 726f 7a65 6e73 6574 292e  to a frozenset).
+-00001b00: 0a20 202a 2060 6074 7970 696e 672e 4469  .  * ``typing.Di
+-00001b10: 6374 5b4b 2c20 565d 6060 2c20 6060 7479  ct[K, V]``, ``ty
+-00001b20: 7069 6e67 2e4d 7574 6162 6c65 4d61 7070  ping.MutableMapp
+-00001b30: 696e 675b 4b2c 2056 5d60 602c 2060 6074  ing[K, V]``, ``t
+-00001b40: 7970 696e 672e 4d61 7070 696e 675b 4b2c  yping.Mapping[K,
+-00001b50: 2056 5d60 6020 2863 6f6e 7665 7274 7320   V]`` (converts 
+-00001b60: 746f 2061 2064 6963 7429 2e0a 2020 2a20  to a dict)..  * 
+-00001b70: 6060 6174 7472 7360 6020 636c 6173 7365  ``attrs`` classe
+-00001b80: 7320 7769 7468 2073 696d 706c 6520 6174  s with simple at
+-00001b90: 7472 6962 7574 6573 2061 6e64 2074 6865  tributes and the
+-00001ba0: 2075 7375 616c 2060 605f 5f69 6e69 745f   usual ``__init_
+-00001bb0: 5f60 602e 0a0a 2020 2020 2a20 5369 6d70  _``...    * Simp
+-00001bc0: 6c65 2061 7474 7269 6275 7465 7320 6172  le attributes ar
+-00001bd0: 6520 6174 7472 6962 7574 6573 2074 6861  e attributes tha
+-00001be0: 7420 6361 6e20 6265 2061 7373 6967 6e65  t can be assigne
+-00001bf0: 6420 756e 7374 7275 6374 7572 6564 2064  d unstructured d
+-00001c00: 6174 612c 0a20 2020 2020 206c 696b 6520  ata,.      like 
+-00001c10: 6e75 6d62 6572 732c 2073 7472 696e 6773  numbers, strings
+-00001c20: 2c20 616e 6420 636f 6c6c 6563 7469 6f6e  , and collection
+-00001c30: 7320 6f66 2075 6e73 7472 7563 7475 7265  s of unstructure
+-00001c40: 6420 6461 7461 2e0a 0a20 202a 2041 6c6c  d data...  * All
+-00001c50: 2060 6174 7472 7360 2063 6c61 7373 6573   `attrs` classes
+-00001c60: 2061 6e64 2064 6174 6163 6c61 7373 6573   and dataclasses
+-00001c70: 2077 6974 6820 7468 6520 7573 7561 6c20   with the usual 
+-00001c80: 6060 5f5f 696e 6974 5f5f 6060 2c20 6966  ``__init__``, if
+-00001c90: 2074 6865 6972 2063 6f6d 706c 6578 2061   their complex a
+-00001ca0: 7474 7269 6275 7465 7320 6861 7665 2074  ttributes have t
+-00001cb0: 7970 6520 6d65 7461 6461 7461 2e0a 2020  ype metadata..  
+-00001cc0: 2a20 6060 7479 7069 6e67 2e55 6e69 6f6e  * ``typing.Union
+-00001cd0: 6060 2073 206f 6620 7375 7070 6f72 7465  `` s of supporte
+-00001ce0: 6420 6060 6174 7472 7360 6020 636c 6173  d ``attrs`` clas
+-00001cf0: 7365 732c 2067 6976 656e 2074 6861 7420  ses, given that 
+-00001d00: 616c 6c20 6f66 2074 6865 2063 6c61 7373  all of the class
+-00001d10: 6573 2068 6176 6520 6120 756e 6971 7565  es have a unique
+-00001d20: 2066 6965 6c64 2e0a 2020 2a20 6060 7479   field..  * ``ty
+-00001d30: 7069 6e67 2e55 6e69 6f6e 6060 2073 206f  ping.Union`` s o
+-00001d40: 6620 616e 7974 6869 6e67 2c20 6769 7665  f anything, give
+-00001d50: 6e20 7468 6174 2079 6f75 2070 726f 7669  n that you provi
+-00001d60: 6465 2061 2064 6973 616d 6269 6775 6174  de a disambiguat
+-00001d70: 696f 6e20 6675 6e63 7469 6f6e 2066 6f72  ion function for
+-00001d80: 2069 742e 0a20 202a 2043 7573 746f 6d20   it..  * Custom 
+-00001d90: 636f 6e76 6572 7465 7273 2066 6f72 2061  converters for a
+-00001da0: 6e79 2074 7970 6520 6361 6e20 6265 2072  ny type can be r
+-00001db0: 6567 6973 7465 7265 6420 7573 696e 6720  egistered using 
+-00001dc0: 6060 7265 6769 7374 6572 5f73 7472 7563  ``register_struc
+-00001dd0: 7475 7265 5f68 6f6f 6b60 602e 0a0a 6060  ture_hook``...``
+-00001de0: 6361 7474 7273 6060 2063 6f6d 6573 2077  cattrs`` comes w
+-00001df0: 6974 6820 7072 6563 6f6e 6669 6775 7265  ith preconfigure
+-00001e00: 6420 636f 6e76 6572 7465 7273 2066 6f72  d converters for
+-00001e10: 2061 206e 756d 6265 7220 6f66 2073 6572   a number of ser
+-00001e20: 6961 6c69 7a61 7469 6f6e 206c 6962 7261  ialization libra
+-00001e30: 7269 6573 2c20 696e 636c 7564 696e 6720  ries, including 
+-00001e40: 6a73 6f6e 2c20 6d73 6770 6163 6b2c 2062  json, msgpack, b
+-00001e50: 736f 6e2c 2079 616d 6c20 616e 6420 746f  son, yaml and to
+-00001e60: 6d6c 2e0a 466f 7220 6465 7461 696c 732c  ml..For details,
+-00001e70: 2073 6565 2074 6865 2060 6361 7474 722e   see the `cattr.
+-00001e80: 7072 6563 6f6e 6620 7061 636b 6167 6520  preconf package 
+-00001e90: 3c68 7474 7073 3a2f 2f63 6174 7472 732e  <https://cattrs.
+-00001ea0: 7265 6164 7468 6564 6f63 732e 696f 2f65  readthedocs.io/e
+-00001eb0: 6e2f 6c61 7465 7374 2f70 7265 636f 6e66  n/latest/preconf
+-00001ec0: 2e68 746d 6c3e 605f 2e0a 0a41 6464 6974  .html>`_...Addit
+-00001ed0: 696f 6e61 6c20 646f 6375 6d65 6e74 6174  ional documentat
+-00001ee0: 696f 6e0a 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d  ion.------------
+-00001ef0: 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 0a2a 2060  ------------.* `
+-00001f00: 4f6e 2073 7472 7563 7475 7265 6420 616e  On structured an
+-00001f10: 6420 756e 7374 7275 6374 7572 6564 2064  d unstructured d
+-00001f20: 6174 612c 206f 7220 7468 6520 6361 7365  ata, or the case
+-00001f30: 2066 6f72 2063 6174 7472 7320 3c68 7474   for cattrs <htt
+-00001f40: 7073 3a2f 2f74 6872 6565 6f66 7761 6e64  ps://threeofwand
+-00001f50: 732e 636f 6d2f 6f6e 2d73 7472 7563 7475  s.com/on-structu
+-00001f60: 7265 642d 616e 642d 756e 7374 7275 6374  red-and-unstruct
+-00001f70: 7572 6564 2d64 6174 612d 6f72 2d74 6865  ured-data-or-the
+-00001f80: 2d63 6173 652d 666f 722d 6361 7474 7273  -case-for-cattrs
+-00001f90: 2f3e 605f 0a2a 2060 5768 7920 4920 7573  />`_.* `Why I us
+-00001fa0: 6520 6174 7472 7320 696e 7374 6561 6420  e attrs instead 
+-00001fb0: 6f66 2070 7964 616e 7469 6320 3c68 7474  of pydantic <htt
+-00001fc0: 7073 3a2f 2f74 6872 6565 6f66 7761 6e64  ps://threeofwand
+-00001fd0: 732e 636f 6d2f 7768 792d 692d 7573 652d  s.com/why-i-use-
+-00001fe0: 6174 7472 732d 696e 7374 6561 642d 6f66  attrs-instead-of
+-00001ff0: 2d70 7964 616e 7469 632f 3e60 5f0a 2a20  -pydantic/>`_.* 
+-00002000: 6063 6174 7472 7320 493a 2075 6e2f 7374  `cattrs I: un/st
+-00002010: 7275 6374 7572 696e 6720 7370 6565 6420  ructuring speed 
+-00002020: 3c68 7474 7073 3a2f 2f74 6872 6565 6f66  <https://threeof
+-00002030: 7761 6e64 732e 636f 6d2f 7768 792d 6361  wands.com/why-ca
+-00002040: 7474 7273 2d69 732d 736f 2d66 6173 742f  ttrs-is-so-fast/
+-00002050: 3e60 5f0a 0a43 7265 6469 7473 0a2d 2d2d  >`_..Credits.---
+-00002060: 2d2d 2d2d 0a0a 4d61 6a6f 7220 6372 6564  ----..Major cred
+-00002070: 6974 7320 746f 2048 796e 656b 2053 6368  its to Hynek Sch
+-00002080: 6c61 7761 636b 2066 6f72 2063 7265 6174  lawack for creat
+-00002090: 696e 6720 6174 7472 735f 2061 6e64 2069  ing attrs_ and i
+-000020a0: 7473 2070 7265 6465 6365 7373 6f72 2c0a  ts predecessor,.
+-000020b0: 6368 6172 6163 7465 7269 7374 6963 5f2e  characteristic_.
+-000020c0: 0a0a 6060 6361 7474 7273 6060 2069 7320  ..``cattrs`` is 
+-000020d0: 7465 7374 6564 2077 6974 6820 4879 706f  tested with Hypo
+-000020e0: 7468 6573 6973 5f2c 2062 7920 4461 7669  thesis_, by Davi
+-000020f0: 6420 522e 204d 6163 4976 6572 2e0a 0a60  d R. MacIver...`
+-00002100: 6063 6174 7472 7360 6020 6973 2062 656e  `cattrs`` is ben
+-00002110: 6368 6d61 726b 6564 2075 7369 6e67 2070  chmarked using p
+-00002120: 6572 665f 2061 6e64 2070 7974 6573 742d  erf_ and pytest-
+-00002130: 6265 6e63 686d 6172 6b5f 2e0a 0a54 6869  benchmark_...Thi
+-00002140: 7320 7061 636b 6167 6520 7761 7320 6372  s package was cr
+-00002150: 6561 7465 6420 7769 7468 2043 6f6f 6b69  eated with Cooki
+-00002160: 6563 7574 7465 725f 2061 6e64 2074 6865  ecutter_ and the
+-00002170: 2060 6175 6472 6579 722f 636f 6f6b 6965   `audreyr/cookie
+-00002180: 6375 7474 6572 2d70 7970 6163 6b61 6765  cutter-pypackage
+-00002190: 605f 2070 726f 6a65 6374 2074 656d 706c  `_ project templ
+-000021a0: 6174 652e 0a0a 2e2e 205f 6174 7472 733a  ate..... _attrs:
+-000021b0: 2068 7474 7073 3a2f 2f67 6974 6875 622e   https://github.
+-000021c0: 636f 6d2f 6879 6e65 6b2f 6174 7472 730a  com/hynek/attrs.
+-000021d0: 2e2e 205f 6368 6172 6163 7465 7269 7374  .. _characterist
+-000021e0: 6963 3a20 6874 7470 733a 2f2f 6769 7468  ic: https://gith
+-000021f0: 7562 2e63 6f6d 2f68 796e 656b 2f63 6861  ub.com/hynek/cha
+-00002200: 7261 6374 6572 6973 7469 630a 2e2e 205f  racteristic... _
+-00002210: 4879 706f 7468 6573 6973 3a20 6874 7470  Hypothesis: http
+-00002220: 3a2f 2f68 7970 6f74 6865 7369 732e 7265  ://hypothesis.re
+-00002230: 6164 7468 6564 6f63 732e 696f 2f65 6e2f  adthedocs.io/en/
+-00002240: 6c61 7465 7374 2f0a 2e2e 205f 7065 7266  latest/... _perf
+-00002250: 3a20 6874 7470 733a 2f2f 6769 7468 7562  : https://github
+-00002260: 2e63 6f6d 2f68 6179 706f 2f70 6572 660a  .com/haypo/perf.
+-00002270: 2e2e 205f 7079 7465 7374 2d62 656e 6368  .. _pytest-bench
+-00002280: 6d61 726b 3a20 6874 7470 733a 2f2f 7079  mark: https://py
+-00002290: 7465 7374 2d62 656e 6368 6d61 726b 2e72  test-benchmark.r
+-000022a0: 6561 6474 6865 646f 6373 2e69 6f2f 656e  eadthedocs.io/en
+-000022b0: 2f6c 6174 6573 742f 696e 6465 782e 6874  /latest/index.ht
+-000022c0: 6d6c 0a2e 2e20 5f43 6f6f 6b69 6563 7574  ml... _Cookiecut
+-000022d0: 7465 723a 2068 7474 7073 3a2f 2f67 6974  ter: https://git
+-000022e0: 6875 622e 636f 6d2f 6175 6472 6579 722f  hub.com/audreyr/
+-000022f0: 636f 6f6b 6965 6375 7474 6572 0a2e 2e20  cookiecutter... 
+-00002300: 5f60 6175 6472 6579 722f 636f 6f6b 6965  _`audreyr/cookie
+-00002310: 6375 7474 6572 2d70 7970 6163 6b61 6765  cutter-pypackage
+-00002320: 603a 2068 7474 7073 3a2f 2f67 6974 6875  `: https://githu
+-00002330: 622e 636f 6d2f 6175 6472 6579 722f 636f  b.com/audreyr/co
+-00002340: 6f6b 6965 6375 7474 6572 2d70 7970 6163  okiecutter-pypac
+-00002350: 6b61 6765 0a0a                           kage..
++00000020: 7273 0a56 6572 7369 6f6e 3a20 3233 2e31  rs.Version: 23.1
++00000030: 2e30 7263 300a 5375 6d6d 6172 793a 2043  .0rc0.Summary: C
++00000040: 6f6d 706f 7361 626c 6520 636f 6d70 6c65  omposable comple
++00000050: 7820 636c 6173 7320 7375 7070 6f72 7420  x class support 
++00000060: 666f 7220 6174 7472 7320 616e 6420 6461  for attrs and da
++00000070: 7461 636c 6173 7365 732e 0a48 6f6d 652d  taclasses..Home-
++00000080: 7061 6765 3a20 6874 7470 733a 2f2f 6769  page: https://gi
++00000090: 7468 7562 2e63 6f6d 2f70 7974 686f 6e2d  thub.com/python-
++000000a0: 6174 7472 732f 6361 7474 7273 0a4c 6963  attrs/cattrs.Lic
++000000b0: 656e 7365 3a20 4d49 540a 4b65 7977 6f72  ense: MIT.Keywor
++000000c0: 6473 3a20 6174 7472 732c 7365 7269 616c  ds: attrs,serial
++000000d0: 697a 6174 696f 6e2c 6461 7461 636c 6173  ization,dataclas
++000000e0: 7365 730a 4175 7468 6f72 3a20 5469 6e20  ses.Author: Tin 
++000000f0: 5476 7274 6b6f 7669 630a 4175 7468 6f72  Tvrtkovic.Author
++00000100: 2d65 6d61 696c 3a20 7469 6e63 6865 7374  -email: tinchest
++00000110: 6572 4067 6d61 696c 2e63 6f6d 0a52 6571  er@gmail.com.Req
++00000120: 7569 7265 732d 5079 7468 6f6e 3a20 3e3d  uires-Python: >=
++00000130: 332e 370a 436c 6173 7369 6669 6572 3a20  3.7.Classifier: 
++00000140: 4c69 6365 6e73 6520 3a3a 204f 5349 2041  License :: OSI A
++00000150: 7070 726f 7665 6420 3a3a 204d 4954 204c  pproved :: MIT L
++00000160: 6963 656e 7365 0a43 6c61 7373 6966 6965  icense.Classifie
++00000170: 723a 2050 726f 6772 616d 6d69 6e67 204c  r: Programming L
++00000180: 616e 6775 6167 6520 3a3a 2050 7974 686f  anguage :: Pytho
++00000190: 6e20 3a3a 2033 0a43 6c61 7373 6966 6965  n :: 3.Classifie
++000001a0: 723a 2050 726f 6772 616d 6d69 6e67 204c  r: Programming L
++000001b0: 616e 6775 6167 6520 3a3a 2050 7974 686f  anguage :: Pytho
++000001c0: 6e20 3a3a 2033 2e37 0a43 6c61 7373 6966  n :: 3.7.Classif
++000001d0: 6965 723a 2050 726f 6772 616d 6d69 6e67  ier: Programming
++000001e0: 204c 616e 6775 6167 6520 3a3a 2050 7974   Language :: Pyt
++000001f0: 686f 6e20 3a3a 2033 2e38 0a43 6c61 7373  hon :: 3.8.Class
++00000200: 6966 6965 723a 2050 726f 6772 616d 6d69  ifier: Programmi
++00000210: 6e67 204c 616e 6775 6167 6520 3a3a 2050  ng Language :: P
++00000220: 7974 686f 6e20 3a3a 2033 2e39 0a43 6c61  ython :: 3.9.Cla
++00000230: 7373 6966 6965 723a 2050 726f 6772 616d  ssifier: Program
++00000240: 6d69 6e67 204c 616e 6775 6167 6520 3a3a  ming Language ::
++00000250: 2050 7974 686f 6e20 3a3a 2033 2e31 300a   Python :: 3.10.
++00000260: 436c 6173 7369 6669 6572 3a20 5072 6f67  Classifier: Prog
++00000270: 7261 6d6d 696e 6720 4c61 6e67 7561 6765  ramming Language
++00000280: 203a 3a20 5079 7468 6f6e 203a 3a20 332e   :: Python :: 3.
++00000290: 3131 0a50 726f 7669 6465 732d 4578 7472  11.Provides-Extr
++000002a0: 613a 2062 736f 6e0a 5072 6f76 6964 6573  a: bson.Provides
++000002b0: 2d45 7874 7261 3a20 6362 6f72 320a 5072  -Extra: cbor2.Pr
++000002c0: 6f76 6964 6573 2d45 7874 7261 3a20 6d73  ovides-Extra: ms
++000002d0: 6770 6163 6b0a 5072 6f76 6964 6573 2d45  gpack.Provides-E
++000002e0: 7874 7261 3a20 6f72 6a73 6f6e 0a50 726f  xtra: orjson.Pro
++000002f0: 7669 6465 732d 4578 7472 613a 2070 7979  vides-Extra: pyy
++00000300: 616d 6c0a 5072 6f76 6964 6573 2d45 7874  aml.Provides-Ext
++00000310: 7261 3a20 746f 6d6c 6b69 740a 5072 6f76  ra: tomlkit.Prov
++00000320: 6964 6573 2d45 7874 7261 3a20 756a 736f  ides-Extra: ujso
++00000330: 6e0a 5265 7175 6972 6573 2d44 6973 743a  n.Requires-Dist:
++00000340: 2050 7959 414d 4c20 283e 3d36 2e30 2c3c   PyYAML (>=6.0,<
++00000350: 372e 3029 203b 2065 7874 7261 203d 3d20  7.0) ; extra == 
++00000360: 2270 7979 616d 6c22 0a52 6571 7569 7265  "pyyaml".Require
++00000370: 732d 4469 7374 3a20 6174 7472 7320 283e  s-Dist: attrs (>
++00000380: 3d32 3029 0a52 6571 7569 7265 732d 4469  =20).Requires-Di
++00000390: 7374 3a20 6362 6f72 3220 283e 3d35 2e34  st: cbor2 (>=5.4
++000003a0: 2e36 2c3c 362e 302e 3029 203b 2065 7874  .6,<6.0.0) ; ext
++000003b0: 7261 203d 3d20 2263 626f 7232 220a 5265  ra == "cbor2".Re
++000003c0: 7175 6972 6573 2d44 6973 743a 2065 7863  quires-Dist: exc
++000003d0: 6570 7469 6f6e 6772 6f75 7020 3b20 7079  eptiongroup ; py
++000003e0: 7468 6f6e 5f76 6572 7369 6f6e 203c 2022  thon_version < "
++000003f0: 332e 3131 220a 5265 7175 6972 6573 2d44  3.11".Requires-D
++00000400: 6973 743a 206d 7367 7061 636b 2028 3e3d  ist: msgpack (>=
++00000410: 312e 302e 322c 3c32 2e30 2e30 2920 3b20  1.0.2,<2.0.0) ; 
++00000420: 6578 7472 6120 3d3d 2022 6d73 6770 6163  extra == "msgpac
++00000430: 6b22 0a52 6571 7569 7265 732d 4469 7374  k".Requires-Dist
++00000440: 3a20 6f72 6a73 6f6e 2028 3e3d 332e 352e  : orjson (>=3.5.
++00000450: 322c 3c34 2e30 2e30 2920 3b20 2869 6d70  2,<4.0.0) ; (imp
++00000460: 6c65 6d65 6e74 6174 696f 6e5f 6e61 6d65  lementation_name
++00000470: 203d 3d20 2263 7079 7468 6f6e 2229 2061   == "cpython") a
++00000480: 6e64 2028 6578 7472 6120 3d3d 2022 6f72  nd (extra == "or
++00000490: 6a73 6f6e 2229 0a52 6571 7569 7265 732d  json").Requires-
++000004a0: 4469 7374 3a20 7079 6d6f 6e67 6f20 283e  Dist: pymongo (>
++000004b0: 3d34 2e32 2e30 2c3c 352e 302e 3029 203b  =4.2.0,<5.0.0) ;
++000004c0: 2065 7874 7261 203d 3d20 2262 736f 6e22   extra == "bson"
++000004d0: 0a52 6571 7569 7265 732d 4469 7374 3a20  .Requires-Dist: 
++000004e0: 746f 6d6c 6b69 7420 283e 3d30 2e31 312e  tomlkit (>=0.11.
++000004f0: 342c 3c30 2e31 322e 3029 203b 2028 7079  4,<0.12.0) ; (py
++00000500: 7468 6f6e 5f76 6572 7369 6f6e 203c 2022  thon_version < "
++00000510: 3422 2920 616e 6420 2865 7874 7261 203d  4") and (extra =
++00000520: 3d20 2274 6f6d 6c6b 6974 2229 0a52 6571  = "tomlkit").Req
++00000530: 7569 7265 732d 4469 7374 3a20 7479 7069  uires-Dist: typi
++00000540: 6e67 5f65 7874 656e 7369 6f6e 7320 3b20  ng_extensions ; 
++00000550: 7079 7468 6f6e 5f76 6572 7369 6f6e 203c  python_version <
++00000560: 2022 332e 3130 220a 5265 7175 6972 6573   "3.10".Requires
++00000570: 2d44 6973 743a 2075 6a73 6f6e 2028 3e3d  -Dist: ujson (>=
++00000580: 352e 342e 302c 3c36 2e30 2e30 2920 3b20  5.4.0,<6.0.0) ; 
++00000590: 6578 7472 6120 3d3d 2022 756a 736f 6e22  extra == "ujson"
++000005a0: 0a50 726f 6a65 6374 2d55 524c 3a20 4275  .Project-URL: Bu
++000005b0: 6720 5472 6163 6b65 722c 2068 7474 7073  g Tracker, https
++000005c0: 3a2f 2f67 6974 6875 622e 636f 6d2f 7079  ://github.com/py
++000005d0: 7468 6f6e 2d61 7474 7273 2f63 6174 7472  thon-attrs/cattr
++000005e0: 732f 6973 7375 6573 0a50 726f 6a65 6374  s/issues.Project
++000005f0: 2d55 524c 3a20 4368 616e 6765 6c6f 672c  -URL: Changelog,
++00000600: 2068 7474 7073 3a2f 2f63 6174 742e 7273   https://catt.rs
++00000610: 2f65 6e2f 6c61 7465 7374 2f68 6973 746f  /en/latest/histo
++00000620: 7279 2e68 746d 6c0a 5072 6f6a 6563 742d  ry.html.Project-
++00000630: 5552 4c3a 2044 6f63 756d 656e 7461 7469  URL: Documentati
++00000640: 6f6e 2c20 6874 7470 733a 2f2f 6361 7474  on, https://catt
++00000650: 2e72 732f 656e 2f73 7461 626c 652f 0a50  .rs/en/stable/.P
++00000660: 726f 6a65 6374 2d55 524c 3a20 5265 706f  roject-URL: Repo
++00000670: 7369 746f 7279 2c20 6874 7470 733a 2f2f  sitory, https://
++00000680: 6769 7468 7562 2e63 6f6d 2f70 7974 686f  github.com/pytho
++00000690: 6e2d 6174 7472 732f 6361 7474 7273 0a44  n-attrs/cattrs.D
++000006a0: 6573 6372 6970 7469 6f6e 2d43 6f6e 7465  escription-Conte
++000006b0: 6e74 2d54 7970 653a 2074 6578 742f 6d61  nt-Type: text/ma
++000006c0: 726b 646f 776e 0a0a 2320 6361 7474 7273  rkdown..# cattrs
++000006d0: 0a0a 3c61 2068 7265 663d 2268 7474 7073  ..<a href="https
++000006e0: 3a2f 2f70 7970 692e 7079 7468 6f6e 2e6f  ://pypi.python.o
++000006f0: 7267 2f70 7970 692f 6361 7474 7273 223e  rg/pypi/cattrs">
++00000700: 3c69 6d67 2073 7263 3d22 6874 7470 733a  <img src="https:
++00000710: 2f2f 696d 672e 7368 6965 6c64 732e 696f  //img.shields.io
++00000720: 2f70 7970 692f 762f 6361 7474 7273 2e73  /pypi/v/cattrs.s
++00000730: 7667 222f 3e3c 2f61 3e0a 3c61 2068 7265  vg"/></a>.<a hre
++00000740: 663d 2268 7474 7073 3a2f 2f67 6974 6875  f="https://githu
++00000750: 622e 636f 6d2f 7079 7468 6f6e 2d61 7474  b.com/python-att
++00000760: 7273 2f63 6174 7472 732f 6163 7469 6f6e  rs/cattrs/action
++00000770: 733f 776f 726b 666c 6f77 3d43 4922 3e3c  s?workflow=CI"><
++00000780: 696d 6720 7372 633d 2268 7474 7073 3a2f  img src="https:/
++00000790: 2f67 6974 6875 622e 636f 6d2f 7079 7468  /github.com/pyth
++000007a0: 6f6e 2d61 7474 7273 2f63 6174 7472 732f  on-attrs/cattrs/
++000007b0: 776f 726b 666c 6f77 732f 4349 2f62 6164  workflows/CI/bad
++000007c0: 6765 2e73 7667 222f 3e3c 2f61 3e0a 3c61  ge.svg"/></a>.<a
++000007d0: 2068 7265 663d 2268 7474 7073 3a2f 2f63   href="https://c
++000007e0: 6174 742e 7273 2f65 6e2f 6c61 7465 7374  att.rs/en/latest
++000007f0: 2f3f 6261 6467 653d 6c61 7465 7374 223e  /?badge=latest">
++00000800: 3c69 6d67 2073 7263 3d22 6874 7470 733a  <img src="https:
++00000810: 2f2f 7265 6164 7468 6564 6f63 732e 6f72  //readthedocs.or
++00000820: 672f 7072 6f6a 6563 7473 2f63 6174 7472  g/projects/cattr
++00000830: 732f 6261 6467 652f 3f76 6572 7369 6f6e  s/badge/?version
++00000840: 3d6c 6174 6573 7422 2061 6c74 3d22 446f  =latest" alt="Do
++00000850: 6375 6d65 6e74 6174 696f 6e20 5374 6174  cumentation Stat
++00000860: 7573 222f 3e3c 2f61 3e0a 3c61 2068 7265  us"/></a>.<a hre
++00000870: 663d 2268 7474 7073 3a2f 2f67 6974 6875  f="https://githu
++00000880: 622e 636f 6d2f 7079 7468 6f6e 2d61 7474  b.com/python-att
++00000890: 7273 2f63 6174 7472 7322 3e3c 696d 6720  rs/cattrs"><img 
++000008a0: 7372 633d 2268 7474 7073 3a2f 2f69 6d67  src="https://img
++000008b0: 2e73 6869 656c 6473 2e69 6f2f 7079 7069  .shields.io/pypi
++000008c0: 2f70 7976 6572 7369 6f6e 732f 6361 7474  /pyversions/catt
++000008d0: 7273 2e73 7667 2220 616c 743d 2253 7570  rs.svg" alt="Sup
++000008e0: 706f 7274 6564 2050 7974 686f 6e20 7665  ported Python ve
++000008f0: 7273 696f 6e73 222f 3e3c 2f61 3e0a 3c61  rsions"/></a>.<a
++00000900: 2068 7265 663d 2268 7474 7073 3a2f 2f63   href="https://c
++00000910: 6f64 6563 6f76 2e69 6f2f 6768 2f70 7974  odecov.io/gh/pyt
++00000920: 686f 6e2d 6174 7472 732f 6361 7474 7273  hon-attrs/cattrs
++00000930: 2f22 3e3c 696d 6720 7372 633d 2268 7474  /"><img src="htt
++00000940: 7073 3a2f 2f63 6f64 6563 6f76 2e69 6f2f  ps://codecov.io/
++00000950: 6768 2f70 7974 686f 6e2d 6174 7472 732f  gh/python-attrs/
++00000960: 6361 7474 7273 2f62 7261 6e63 682f 6d61  cattrs/branch/ma
++00000970: 7374 6572 2f67 7261 7068 2f62 6164 6765  ster/graph/badge
++00000980: 2e73 7667 222f 3e3c 2f61 3e0a 3c61 2068  .svg"/></a>.<a h
++00000990: 7265 663d 2268 7474 7073 3a2f 2f67 6974  ref="https://git
++000009a0: 6875 622e 636f 6d2f 7073 662f 626c 6163  hub.com/psf/blac
++000009b0: 6b22 3e3c 696d 6720 7372 633d 2268 7474  k"><img src="htt
++000009c0: 7073 3a2f 2f69 6d67 2e73 6869 656c 6473  ps://img.shields
++000009d0: 2e69 6f2f 6261 6467 652f 636f 6465 2532  .io/badge/code%2
++000009e0: 3073 7479 6c65 2d62 6c61 636b 2d30 3030  0style-black-000
++000009f0: 3030 302e 7376 6722 2f3e 3c2f 613e 0a0a  000.svg"/></a>..
++00000a00: 2d2d 2d0a 0a2a 2a63 6174 7472 732a 2a20  ---..**cattrs** 
++00000a10: 6973 2061 6e20 6f70 656e 2073 6f75 7263  is an open sourc
++00000a20: 6520 5079 7468 6f6e 206c 6962 7261 7279  e Python library
++00000a30: 2066 6f72 2073 7472 7563 7475 7269 6e67   for structuring
++00000a40: 2061 6e64 2075 6e73 7472 7563 7475 7269   and unstructuri
++00000a50: 6e67 0a64 6174 612e 205f 6361 7474 7273  ng.data. _cattrs
++00000a60: 5f20 776f 726b 7320 6265 7374 2077 6974  _ works best wit
++00000a70: 6820 5f61 7474 7273 5f20 636c 6173 7365  h _attrs_ classe
++00000a80: 732c 2064 6174 6163 6c61 7373 6573 2061  s, dataclasses a
++00000a90: 6e64 2074 6865 2075 7375 616c 0a50 7974  nd the usual.Pyt
++00000aa0: 686f 6e20 636f 6c6c 6563 7469 6f6e 732c  hon collections,
++00000ab0: 2062 7574 206f 7468 6572 206b 696e 6473   but other kinds
++00000ac0: 206f 6620 636c 6173 7365 7320 6172 6520   of classes are 
++00000ad0: 7375 7070 6f72 7465 6420 6279 206d 616e  supported by man
++00000ae0: 7561 6c6c 790a 7265 6769 7374 6572 696e  ually.registerin
++00000af0: 6720 636f 6e76 6572 7465 7273 2e0a 0a50  g converters...P
++00000b00: 7974 686f 6e20 6861 7320 6120 7269 6368  ython has a rich
++00000b10: 2073 6574 206f 6620 706f 7765 7266 756c   set of powerful
++00000b20: 2c20 6561 7379 2074 6f20 7573 652c 2062  , easy to use, b
++00000b30: 7569 6c74 2d69 6e20 6461 7461 2074 7970  uilt-in data typ
++00000b40: 6573 206c 696b 650a 6469 6374 696f 6e61  es like.dictiona
++00000b50: 7269 6573 2c20 6c69 7374 7320 616e 6420  ries, lists and 
++00000b60: 7475 706c 6573 2e20 5468 6573 6520 6461  tuples. These da
++00000b70: 7461 2074 7970 6573 2061 7265 2061 6c73  ta types are als
++00000b80: 6f20 7468 6520 6c69 6e67 7561 2066 7261  o the lingua fra
++00000b90: 6e63 610a 6f66 206d 6f73 7420 6461 7461  nca.of most data
++00000ba0: 2073 6572 6961 6c69 7a61 7469 6f6e 206c   serialization l
++00000bb0: 6962 7261 7269 6573 2c20 666f 7220 666f  ibraries, for fo
++00000bc0: 726d 6174 7320 6c69 6b65 206a 736f 6e2c  rmats like json,
++00000bd0: 206d 7367 7061 636b 2c20 6362 6f72 2c0a   msgpack, cbor,.
++00000be0: 7961 6d6c 206f 7220 746f 6d6c 2e0a 0a44  yaml or toml...D
++00000bf0: 6174 6120 7479 7065 7320 6c69 6b65 2074  ata types like t
++00000c00: 6869 732c 2061 6e64 206d 6170 7069 6e67  his, and mapping
++00000c10: 7320 6c69 6b65 2060 6469 6374 6020 7320  s like `dict` s 
++00000c20: 696e 2070 6172 7469 6375 6c61 722c 2072  in particular, r
++00000c30: 6570 7265 7365 6e74 0a75 6e73 7472 7563  epresent.unstruc
++00000c40: 7475 7265 6420 6461 7461 2e20 596f 7572  tured data. Your
++00000c50: 2064 6174 6120 6973 2c20 696e 2061 6c6c   data is, in all
++00000c60: 206c 696b 656c 6968 6f6f 642c 2073 7472   likelihood, str
++00000c70: 7563 7475 7265 643a 206e 6f74 2061 6c6c  uctured: not all
++00000c80: 0a63 6f6d 6269 6e61 7469 6f6e 7320 6f66  .combinations of
++00000c90: 2066 6965 6c64 206e 616d 6573 206f 7220   field names or 
++00000ca0: 7661 6c75 6573 2061 7265 2076 616c 6964  values are valid
++00000cb0: 2069 6e70 7574 7320 746f 2079 6f75 7220   inputs to your 
++00000cc0: 7072 6f67 7261 6d73 2e20 496e 0a50 7974  programs. In.Pyt
++00000cd0: 686f 6e2c 2073 7472 7563 7475 7265 6420  hon, structured 
++00000ce0: 6461 7461 2069 7320 6265 7474 6572 2072  data is better r
++00000cf0: 6570 7265 7365 6e74 6564 2077 6974 6820  epresented with 
++00000d00: 636c 6173 7365 7320 616e 6420 656e 756d  classes and enum
++00000d10: 6572 6174 696f 6e73 2e0a 5f61 7474 7273  erations.._attrs
++00000d20: 5f20 6973 2061 6e20 6578 6365 6c6c 656e  _ is an excellen
++00000d30: 7420 6c69 6272 6172 7920 666f 7220 6465  t library for de
++00000d40: 636c 6172 6174 6976 656c 7920 6465 7363  claratively desc
++00000d50: 7269 6269 6e67 2074 6865 2073 7472 7563  ribing the struc
++00000d60: 7475 7265 206f 660a 796f 7572 2064 6174  ture of.your dat
++00000d70: 612c 2061 6e64 2076 616c 6964 6174 696e  a, and validatin
++00000d80: 6720 6974 2e0a 0a57 6865 6e20 796f 7527  g it...When you'
++00000d90: 7265 2068 616e 6465 6420 756e 7374 7275  re handed unstru
++00000da0: 6374 7572 6564 2064 6174 6120 2862 7920  ctured data (by 
++00000db0: 796f 7572 206e 6574 776f 726b 2c20 6669  your network, fi
++00000dc0: 6c65 2073 7973 7465 6d2c 2064 6174 6162  le system, datab
++00000dd0: 6173 652e 2e2e 292c 0a5f 6361 7474 7273  ase...),._cattrs
++00000de0: 5f20 6865 6c70 7320 746f 2063 6f6e 7665  _ helps to conve
++00000df0: 7274 2074 6869 7320 6461 7461 2069 6e74  rt this data int
++00000e00: 6f20 7374 7275 6374 7572 6564 2064 6174  o structured dat
++00000e10: 612e 2057 6865 6e20 796f 7520 6861 7665  a. When you have
++00000e20: 2074 6f0a 636f 6e76 6572 7420 796f 7572   to.convert your
++00000e30: 2073 7472 7563 7475 7265 6420 6461 7461   structured data
++00000e40: 2069 6e74 6f20 6461 7461 2074 7970 6573   into data types
++00000e50: 206f 7468 6572 206c 6962 7261 7269 6573   other libraries
++00000e60: 2063 616e 2068 616e 646c 652c 0a5f 6361   can handle,._ca
++00000e70: 7474 7273 5f20 7475 726e 7320 796f 7572  ttrs_ turns your
++00000e80: 2063 6c61 7373 6573 2061 6e64 2065 6e75   classes and enu
++00000e90: 6d65 7261 7469 6f6e 7320 696e 746f 2064  merations into d
++00000ea0: 6963 7469 6f6e 6172 6965 732c 2069 6e74  ictionaries, int
++00000eb0: 6567 6572 7320 616e 640a 7374 7269 6e67  egers and.string
++00000ec0: 732e 0a0a 4865 7265 2773 2061 2073 696d  s...Here's a sim
++00000ed0: 706c 6520 7461 7374 652e 2054 6865 206c  ple taste. The l
++00000ee0: 6973 7420 636f 6e74 6169 6e69 6e67 2061  ist containing a
++00000ef0: 2066 6c6f 6174 2c20 616e 2069 6e74 2061   float, an int a
++00000f00: 6e64 2061 2073 7472 696e 670a 6765 7473  nd a string.gets
++00000f10: 2063 6f6e 7665 7274 6564 2069 6e74 6f20   converted into 
++00000f20: 6120 7475 706c 6520 6f66 2074 6872 6565  a tuple of three
++00000f30: 2069 6e74 732e 0a0a 6060 6070 7974 686f   ints...```pytho
++00000f40: 6e0a 3e3e 3e20 696d 706f 7274 2063 6174  n.>>> import cat
++00000f50: 7472 730a 0a3e 3e3e 2063 6174 7472 732e  trs..>>> cattrs.
++00000f60: 7374 7275 6374 7572 6528 5b31 2e30 2c20  structure([1.0, 
++00000f70: 322c 2022 3322 5d2c 2074 7570 6c65 5b69  2, "3"], tuple[i
++00000f80: 6e74 2c20 696e 742c 2069 6e74 5d29 0a28  nt, int, int]).(
++00000f90: 312c 2032 2c20 3329 0a60 6060 0a0a 5f63  1, 2, 3).```.._c
++00000fa0: 6174 7472 735f 2077 6f72 6b73 2077 656c  attrs_ works wel
++00000fb0: 6c20 7769 7468 205f 6174 7472 735f 2063  l with _attrs_ c
++00000fc0: 6c61 7373 6573 206f 7574 206f 6620 7468  lasses out of th
++00000fd0: 6520 626f 782e 0a0a 6060 6070 7974 686f  e box...```pytho
++00000fe0: 6e0a 3e3e 3e20 6672 6f6d 2061 7474 7273  n.>>> from attrs
++00000ff0: 2069 6d70 6f72 7420 6672 6f7a 656e 0a3e   import frozen.>
++00001000: 3e3e 2069 6d70 6f72 7420 6361 7474 7273  >> import cattrs
++00001010: 0a0a 3e3e 3e20 4066 726f 7a65 6e20 2023  ..>>> @frozen  #
++00001020: 2049 7420 776f 726b 7320 7769 7468 206e   It works with n
++00001030: 6f6e 2d66 726f 7a65 6e20 636c 6173 7365  on-frozen classe
++00001040: 7320 746f 6f2e 0a2e 2e2e 2063 6c61 7373  s too..... class
++00001050: 2043 3a0a 2e2e 2e20 2020 2020 613a 2069   C:....     a: i
++00001060: 6e74 0a2e 2e2e 2020 2020 2062 3a20 7374  nt....     b: st
++00001070: 720a 0a3e 3e3e 2069 6e73 7461 6e63 6520  r..>>> instance 
++00001080: 3d20 4328 312c 2027 6127 290a 3e3e 3e20  = C(1, 'a').>>> 
++00001090: 6361 7474 7273 2e75 6e73 7472 7563 7475  cattrs.unstructu
++000010a0: 7265 2869 6e73 7461 6e63 6529 0a7b 2761  re(instance).{'a
++000010b0: 273a 2031 2c20 2762 273a 2027 6127 7d0a  ': 1, 'b': 'a'}.
++000010c0: 3e3e 3e20 6361 7474 7273 2e73 7472 7563  >>> cattrs.struc
++000010d0: 7475 7265 287b 2761 273a 2031 2c20 2762  ture({'a': 1, 'b
++000010e0: 273a 2027 6127 7d2c 2043 290a 4328 613d  ': 'a'}, C).C(a=
++000010f0: 312c 2062 3d27 6127 290a 6060 600a 0a48  1, b='a').```..H
++00001100: 6572 6527 7320 6120 6d75 6368 206d 6f72  ere's a much mor
++00001110: 6520 636f 6d70 6c65 7820 6578 616d 706c  e complex exampl
++00001120: 652c 2069 6e76 6f6c 7669 6e67 2060 6174  e, involving `at
++00001130: 7472 7360 2063 6c61 7373 6573 2077 6974  trs` classes wit
++00001140: 6820 7479 7065 0a6d 6574 6164 6174 612e  h type.metadata.
++00001150: 0a0a 6060 6070 7974 686f 6e0a 3e3e 3e20  ..```python.>>> 
++00001160: 6672 6f6d 2065 6e75 6d20 696d 706f 7274  from enum import
++00001170: 2075 6e69 7175 652c 2045 6e75 6d0a 3e3e   unique, Enum.>>
++00001180: 3e20 6672 6f6d 2074 7970 696e 6720 696d  > from typing im
++00001190: 706f 7274 204f 7074 696f 6e61 6c2c 2053  port Optional, S
++000011a0: 6571 7565 6e63 652c 2055 6e69 6f6e 0a3e  equence, Union.>
++000011b0: 3e3e 2066 726f 6d20 6361 7474 7273 2069  >> from cattrs i
++000011c0: 6d70 6f72 7420 7374 7275 6374 7572 652c  mport structure,
++000011d0: 2075 6e73 7472 7563 7475 7265 0a3e 3e3e   unstructure.>>>
++000011e0: 2066 726f 6d20 6174 7472 7320 696d 706f   from attrs impo
++000011f0: 7274 2064 6566 696e 652c 2066 6965 6c64  rt define, field
++00001200: 0a0a 3e3e 3e20 4075 6e69 7175 650a 2e2e  ..>>> @unique...
++00001210: 2e20 636c 6173 7320 4361 7442 7265 6564  . class CatBreed
++00001220: 2845 6e75 6d29 3a0a 2e2e 2e20 2020 2020  (Enum):....     
++00001230: 5349 414d 4553 4520 3d20 2273 6961 6d65  SIAMESE = "siame
++00001240: 7365 220a 2e2e 2e20 2020 2020 4d41 494e  se"....     MAIN
++00001250: 455f 434f 4f4e 203d 2022 6d61 696e 655f  E_COON = "maine_
++00001260: 636f 6f6e 220a 2e2e 2e20 2020 2020 5341  coon"....     SA
++00001270: 4352 4544 5f42 4952 4d41 4e20 3d20 2262  CRED_BIRMAN = "b
++00001280: 6972 6d61 6e22 0a0a 3e3e 3e20 4064 6566  irman"..>>> @def
++00001290: 696e 650a 2e2e 2e20 636c 6173 7320 4361  ine.... class Ca
++000012a0: 743a 0a2e 2e2e 2020 2020 2062 7265 6564  t:....     breed
++000012b0: 3a20 4361 7442 7265 6564 0a2e 2e2e 2020  : CatBreed....  
++000012c0: 2020 206e 616d 6573 3a20 5365 7175 656e     names: Sequen
++000012d0: 6365 5b73 7472 5d0a 0a3e 3e3e 2040 6465  ce[str]..>>> @de
++000012e0: 6669 6e65 0a2e 2e2e 2063 6c61 7373 2044  fine.... class D
++000012f0: 6f67 4d69 6372 6f63 6869 703a 0a2e 2e2e  ogMicrochip:....
++00001300: 2020 2020 2063 6869 705f 6964 203d 2066       chip_id = f
++00001310: 6965 6c64 2829 2020 2320 5479 7065 2061  ield()  # Type a
++00001320: 6e6e 6f74 6174 696f 6e73 2061 7265 206f  nnotations are o
++00001330: 7074 696f 6e61 6c2c 2062 7574 2072 6563  ptional, but rec
++00001340: 6f6d 6d65 6e64 6564 0a2e 2e2e 2020 2020  ommended....    
++00001350: 2074 696d 655f 6368 6970 7065 643a 2066   time_chipped: f
++00001360: 6c6f 6174 203d 2066 6965 6c64 2829 0a0a  loat = field()..
++00001370: 3e3e 3e20 4064 6566 696e 650a 2e2e 2e20  >>> @define.... 
++00001380: 636c 6173 7320 446f 673a 0a2e 2e2e 2020  class Dog:....  
++00001390: 2020 2063 7574 656e 6573 733a 2069 6e74     cuteness: int
++000013a0: 0a2e 2e2e 2020 2020 2063 6869 703a 204f  ....     chip: O
++000013b0: 7074 696f 6e61 6c5b 446f 674d 6963 726f  ptional[DogMicro
++000013c0: 6368 6970 5d20 3d20 4e6f 6e65 0a0a 3e3e  chip] = None..>>
++000013d0: 3e20 7020 3d20 756e 7374 7275 6374 7572  > p = unstructur
++000013e0: 6528 5b44 6f67 2863 7574 656e 6573 733d  e([Dog(cuteness=
++000013f0: 312c 2063 6869 703d 446f 674d 6963 726f  1, chip=DogMicro
++00001400: 6368 6970 2863 6869 705f 6964 3d31 2c20  chip(chip_id=1, 
++00001410: 7469 6d65 5f63 6869 7070 6564 3d31 302e  time_chipped=10.
++00001420: 3029 292c 0a2e 2e2e 2020 2020 2020 2020  0)),....        
++00001430: 2020 2020 2020 2020 2020 4361 7428 6272            Cat(br
++00001440: 6565 643d 4361 7442 7265 6564 2e4d 4149  eed=CatBreed.MAI
++00001450: 4e45 5f43 4f4f 4e2c 206e 616d 6573 3d28  NE_COON, names=(
++00001460: 2746 6c75 6666 6c79 272c 2027 466c 7566  'Fluffly', 'Fluf
++00001470: 6665 7227 2929 5d29 0a0a 3e3e 3e20 7072  fer'))])..>>> pr
++00001480: 696e 7428 7029 0a5b 7b27 6375 7465 6e65  int(p).[{'cutene
++00001490: 7373 273a 2031 2c20 2763 6869 7027 3a20  ss': 1, 'chip': 
++000014a0: 7b27 6368 6970 5f69 6427 3a20 312c 2027  {'chip_id': 1, '
++000014b0: 7469 6d65 5f63 6869 7070 6564 273a 2031  time_chipped': 1
++000014c0: 302e 307d 7d2c 207b 2762 7265 6564 273a  0.0}}, {'breed':
++000014d0: 2027 6d61 696e 655f 636f 6f6e 272c 2027   'maine_coon', '
++000014e0: 6e61 6d65 7327 3a20 2827 466c 7566 666c  names': ('Fluffl
++000014f0: 7927 2c20 2746 6c75 6666 6572 2729 7d5d  y', 'Fluffer')}]
++00001500: 0a3e 3e3e 2070 7269 6e74 2873 7472 7563  .>>> print(struc
++00001510: 7475 7265 2870 2c20 6c69 7374 5b55 6e69  ture(p, list[Uni
++00001520: 6f6e 5b44 6f67 2c20 4361 745d 5d29 290a  on[Dog, Cat]])).
++00001530: 5b44 6f67 2863 7574 656e 6573 733d 312c  [Dog(cuteness=1,
++00001540: 2063 6869 703d 446f 674d 6963 726f 6368   chip=DogMicroch
++00001550: 6970 2863 6869 705f 6964 3d31 2c20 7469  ip(chip_id=1, ti
++00001560: 6d65 5f63 6869 7070 6564 3d31 302e 3029  me_chipped=10.0)
++00001570: 292c 2043 6174 2862 7265 6564 3d3c 4361  ), Cat(breed=<Ca
++00001580: 7442 7265 6564 2e4d 4149 4e45 5f43 4f4f  tBreed.MAINE_COO
++00001590: 4e3a 2027 6d61 696e 655f 636f 6f6e 273e  N: 'maine_coon'>
++000015a0: 2c20 6e61 6d65 733d 5b27 466c 7566 666c  , names=['Fluffl
++000015b0: 7927 2c20 2746 6c75 6666 6572 275d 295d  y', 'Fluffer'])]
++000015c0: 0a60 6060 0a0a 436f 6e73 6964 6572 2075  .```..Consider u
++000015d0: 6e73 7472 7563 7475 7265 6420 6461 7461  nstructured data
++000015e0: 2061 206c 6f77 2d6c 6576 656c 2072 6570   a low-level rep
++000015f0: 7265 7365 6e74 6174 696f 6e20 7468 6174  resentation that
++00001600: 206e 6565 6473 2074 6f20 6265 2063 6f6e   needs to be con
++00001610: 7665 7274 6564 0a74 6f20 7374 7275 6374  verted.to struct
++00001620: 7572 6564 2064 6174 6120 746f 2062 6520  ured data to be 
++00001630: 6861 6e64 6c65 642c 2061 6e64 2075 7365  handled, and use
++00001640: 2060 7374 7275 6374 7572 6560 2e20 5768   `structure`. Wh
++00001650: 656e 2079 6f75 2772 6520 646f 6e65 2c0a  en you're done,.
++00001660: 6075 6e73 7472 7563 7475 7265 6020 7468  `unstructure` th
++00001670: 6520 6461 7461 2074 6f20 6974 7320 756e  e data to its un
++00001680: 7374 7275 6374 7572 6564 2066 6f72 6d20  structured form 
++00001690: 616e 6420 7061 7373 2069 7420 616c 6f6e  and pass it alon
++000016a0: 6720 746f 2061 6e6f 7468 6572 0a6c 6962  g to another.lib
++000016b0: 7261 7279 206f 7220 6d6f 6475 6c65 2e20  rary or module. 
++000016c0: 5573 6520 5b61 7474 7273 2074 7970 6520  Use [attrs type 
++000016d0: 6d65 7461 6461 7461 5d28 6874 7470 3a2f  metadata](http:/
++000016e0: 2f61 7474 7273 2e72 6561 6474 6865 646f  /attrs.readthedo
++000016f0: 6373 2e69 6f2f 656e 2f73 7461 626c 652f  cs.io/en/stable/
++00001700: 6578 616d 706c 6573 2e68 746d 6c23 7479  examples.html#ty
++00001710: 7065 7329 0a74 6f20 6164 6420 7479 7065  pes).to add type
++00001720: 206d 6574 6164 6174 6120 746f 2061 7474   metadata to att
++00001730: 7269 6275 7465 732c 2073 6f20 5f63 6174  ributes, so _cat
++00001740: 7472 735f 2077 696c 6c20 6b6e 6f77 2068  trs_ will know h
++00001750: 6f77 2074 6f20 7374 7275 6374 7572 6520  ow to structure 
++00001760: 616e 640a 6465 7374 7275 6374 7572 6520  and.destructure 
++00001770: 7468 656d 2e0a 0a2d 2046 7265 6520 736f  them...- Free so
++00001780: 6674 7761 7265 3a20 4d49 5420 6c69 6365  ftware: MIT lice
++00001790: 6e73 650a 2d20 446f 6375 6d65 6e74 6174  nse.- Documentat
++000017a0: 696f 6e3a 2068 7474 7073 3a2f 2f63 6174  ion: https://cat
++000017b0: 742e 7273 0a2d 2050 7974 686f 6e20 7665  t.rs.- Python ve
++000017c0: 7273 696f 6e73 2073 7570 706f 7274 6564  rsions supported
++000017d0: 3a20 332e 3720 616e 6420 7570 2e20 284f  : 3.7 and up. (O
++000017e0: 6c64 6572 2050 7974 686f 6e20 7665 7273  lder Python vers
++000017f0: 696f 6e73 2c20 6c69 6b65 2032 2e37 2c20  ions, like 2.7, 
++00001800: 332e 3520 616e 6420 332e 3620 6172 6520  3.5 and 3.6 are 
++00001810: 7375 7070 6f72 7465 6420 6279 206f 6c64  supported by old
++00001820: 6572 2076 6572 7369 6f6e 733b 2073 6565  er versions; see
++00001830: 2074 6865 2063 6861 6e67 656c 6f67 2e29   the changelog.)
++00001840: 0a0a 2323 2046 6561 7475 7265 730a 0a2d  ..## Features..-
++00001850: 2043 6f6e 7665 7274 7320 7374 7275 6374   Converts struct
++00001860: 7572 6564 2064 6174 6120 696e 746f 2075  ured data into u
++00001870: 6e73 7472 7563 7475 7265 6420 6461 7461  nstructured data
++00001880: 2c20 7265 6375 7273 6976 656c 793a 0a0a  , recursively:..
++00001890: 2020 2d20 5f61 7474 7273 5f20 636c 6173    - _attrs_ clas
++000018a0: 7365 7320 616e 6420 6461 7461 636c 6173  ses and dataclas
++000018b0: 7365 7320 6172 6520 636f 6e76 6572 7465  ses are converte
++000018c0: 6420 696e 746f 2064 6963 7469 6f6e 6172  d into dictionar
++000018d0: 6965 7320 696e 2061 2077 6179 2073 696d  ies in a way sim
++000018e0: 696c 6172 2074 6f20 6061 7474 7273 2e61  ilar to `attrs.a
++000018f0: 7364 6963 7460 2c20 6f72 2069 6e74 6f20  sdict`, or into 
++00001900: 7475 706c 6573 2069 6e20 6120 7761 7920  tuples in a way 
++00001910: 7369 6d69 6c61 7220 746f 2060 6174 7472  similar to `attr
++00001920: 732e 6173 7475 706c 6560 2e0a 2020 2d20  s.astuple`..  - 
++00001930: 456e 756d 6572 6174 696f 6e20 696e 7374  Enumeration inst
++00001940: 616e 6365 7320 6172 6520 636f 6e76 6572  ances are conver
++00001950: 7465 6420 746f 2074 6865 6972 2076 616c  ted to their val
++00001960: 7565 732e 0a20 202d 204f 7468 6572 2074  ues..  - Other t
++00001970: 7970 6573 2061 7265 206c 6574 2074 6872  ypes are let thr
++00001980: 6f75 6768 2077 6974 686f 7574 2063 6f6e  ough without con
++00001990: 7665 7273 696f 6e2e 2054 6869 7320 696e  version. This in
++000019a0: 636c 7564 6573 2074 7970 6573 2073 7563  cludes types suc
++000019b0: 6820 6173 0a20 2020 2069 6e74 6567 6572  h as.    integer
++000019c0: 732c 2064 6963 7469 6f6e 6172 6965 732c  s, dictionaries,
++000019d0: 206c 6973 7473 2061 6e64 2069 6e73 7461   lists and insta
++000019e0: 6e63 6573 206f 6620 6e6f 6e2d 5f61 7474  nces of non-_att
++000019f0: 7273 5f20 636c 6173 7365 732e 0a20 202d  rs_ classes..  -
++00001a00: 2043 7573 746f 6d20 636f 6e76 6572 7465   Custom converte
++00001a10: 7273 2066 6f72 2061 6e79 2074 7970 6520  rs for any type 
++00001a20: 6361 6e20 6265 2072 6567 6973 7465 7265  can be registere
++00001a30: 6420 7573 696e 6720 6072 6567 6973 7465  d using `registe
++00001a40: 725f 756e 7374 7275 6374 7572 655f 686f  r_unstructure_ho
++00001a50: 6f6b 602e 0a0a 2d20 436f 6e76 6572 7473  ok`...- Converts
++00001a60: 2075 6e73 7472 7563 7475 7265 6420 6461   unstructured da
++00001a70: 7461 2069 6e74 6f20 7374 7275 6374 7572  ta into structur
++00001a80: 6564 2064 6174 612c 2072 6563 7572 7369  ed data, recursi
++00001a90: 7665 6c79 2c20 6163 636f 7264 696e 6720  vely, according 
++00001aa0: 746f 0a20 2079 6f75 7220 7370 6563 6966  to.  your specif
++00001ab0: 6963 6174 696f 6e20 6769 7665 6e20 6173  ication given as
++00001ac0: 2061 2074 7970 652e 2054 6865 2066 6f6c   a type. The fol
++00001ad0: 6c6f 7769 6e67 2074 7970 6573 2061 7265  lowing types are
++00001ae0: 2073 7570 706f 7274 6564 3a0a 0a20 202d   supported:..  -
++00001af0: 2060 7479 7069 6e67 2e4f 7074 696f 6e61   `typing.Optiona
++00001b00: 6c5b 545d 602e 0a20 202d 2060 7479 7069  l[T]`..  - `typi
++00001b10: 6e67 2e4c 6973 745b 545d 602c 2060 7479  ng.List[T]`, `ty
++00001b20: 7069 6e67 2e4d 7574 6162 6c65 5365 7175  ping.MutableSequ
++00001b30: 656e 6365 5b54 5d60 2c20 6074 7970 696e  ence[T]`, `typin
++00001b40: 672e 5365 7175 656e 6365 5b54 5d60 2028  g.Sequence[T]` (
++00001b50: 636f 6e76 6572 7473 2074 6f20 6120 6c69  converts to a li
++00001b60: 7374 292e 0a20 202d 2060 7479 7069 6e67  st)..  - `typing
++00001b70: 2e54 7570 6c65 6020 2862 6f74 6820 7661  .Tuple` (both va
++00001b80: 7269 616e 7473 2c20 6054 7570 6c65 5b54  riants, `Tuple[T
++00001b90: 2c20 2e2e 2e5d 6020 616e 6420 6054 7570  , ...]` and `Tup
++00001ba0: 6c65 5b58 2c20 592c 205a 5d60 292e 0a20  le[X, Y, Z]`).. 
++00001bb0: 202d 2060 7479 7069 6e67 2e4d 7574 6162   - `typing.Mutab
++00001bc0: 6c65 5365 745b 545d 602c 2060 7479 7069  leSet[T]`, `typi
++00001bd0: 6e67 2e53 6574 5b54 5d60 2028 636f 6e76  ng.Set[T]` (conv
++00001be0: 6572 7473 2074 6f20 6120 7365 7429 2e0a  erts to a set)..
++00001bf0: 2020 2d20 6074 7970 696e 672e 4672 6f7a    - `typing.Froz
++00001c00: 656e 5365 745b 545d 6020 2863 6f6e 7665  enSet[T]` (conve
++00001c10: 7274 7320 746f 2061 2066 726f 7a65 6e73  rts to a frozens
++00001c20: 6574 292e 0a20 202d 2060 7479 7069 6e67  et)..  - `typing
++00001c30: 2e44 6963 745b 4b2c 2056 5d60 2c20 6074  .Dict[K, V]`, `t
++00001c40: 7970 696e 672e 4d75 7461 626c 654d 6170  yping.MutableMap
++00001c50: 7069 6e67 5b4b 2c20 565d 602c 2060 7479  ping[K, V]`, `ty
++00001c60: 7069 6e67 2e4d 6170 7069 6e67 5b4b 2c20  ping.Mapping[K, 
++00001c70: 565d 6020 2863 6f6e 7665 7274 7320 746f  V]` (converts to
++00001c80: 2061 2064 6963 7429 2e0a 2020 2d20 5f61   a dict)..  - _a
++00001c90: 7474 7273 5f20 636c 6173 7365 7320 7769  ttrs_ classes wi
++00001ca0: 7468 2073 696d 706c 6520 6174 7472 6962  th simple attrib
++00001cb0: 7574 6573 2061 6e64 2074 6865 2075 7375  utes and the usu
++00001cc0: 616c 2060 5f5f 696e 6974 5f5f 602e 0a0a  al `__init__`...
++00001cd0: 2020 2020 2d20 5369 6d70 6c65 2061 7474      - Simple att
++00001ce0: 7269 6275 7465 7320 6172 6520 6174 7472  ributes are attr
++00001cf0: 6962 7574 6573 2074 6861 7420 6361 6e20  ibutes that can 
++00001d00: 6265 2061 7373 6967 6e65 6420 756e 7374  be assigned unst
++00001d10: 7275 6374 7572 6564 2064 6174 612c 0a20  ructured data,. 
++00001d20: 2020 2020 206c 696b 6520 6e75 6d62 6572       like number
++00001d30: 732c 2073 7472 696e 6773 2c20 616e 6420  s, strings, and 
++00001d40: 636f 6c6c 6563 7469 6f6e 7320 6f66 2075  collections of u
++00001d50: 6e73 7472 7563 7475 7265 6420 6461 7461  nstructured data
++00001d60: 2e0a 0a20 202d 2041 6c6c 205f 6174 7472  ...  - All _attr
++00001d70: 735f 2063 6c61 7373 6573 2061 6e64 2064  s_ classes and d
++00001d80: 6174 6163 6c61 7373 6573 2077 6974 6820  ataclasses with 
++00001d90: 7468 6520 7573 7561 6c20 605f 5f69 6e69  the usual `__ini
++00001da0: 745f 5f60 2c20 6966 2074 6865 6972 2063  t__`, if their c
++00001db0: 6f6d 706c 6578 2061 7474 7269 6275 7465  omplex attribute
++00001dc0: 7320 6861 7665 2074 7970 6520 6d65 7461  s have type meta
++00001dd0: 6461 7461 2e0a 2020 2d20 6074 7970 696e  data..  - `typin
++00001de0: 672e 556e 696f 6e60 2073 206f 6620 7375  g.Union` s of su
++00001df0: 7070 6f72 7465 6420 5f61 7474 7273 5f20  pported _attrs_ 
++00001e00: 636c 6173 7365 732c 2067 6976 656e 2074  classes, given t
++00001e10: 6861 7420 616c 6c20 6f66 2074 6865 2063  hat all of the c
++00001e20: 6c61 7373 6573 2068 6176 6520 6120 756e  lasses have a un
++00001e30: 6971 7565 2066 6965 6c64 2e0a 2020 2d20  ique field..  - 
++00001e40: 6074 7970 696e 672e 556e 696f 6e60 2073  `typing.Union` s
++00001e50: 206f 6620 616e 7974 6869 6e67 2c20 6769   of anything, gi
++00001e60: 7665 6e20 7468 6174 2079 6f75 2070 726f  ven that you pro
++00001e70: 7669 6465 2061 2064 6973 616d 6269 6775  vide a disambigu
++00001e80: 6174 696f 6e20 6675 6e63 7469 6f6e 2066  ation function f
++00001e90: 6f72 2069 742e 0a20 202d 2043 7573 746f  or it..  - Custo
++00001ea0: 6d20 636f 6e76 6572 7465 7273 2066 6f72  m converters for
++00001eb0: 2061 6e79 2074 7970 6520 6361 6e20 6265   any type can be
++00001ec0: 2072 6567 6973 7465 7265 6420 7573 696e   registered usin
++00001ed0: 6720 6072 6567 6973 7465 725f 7374 7275  g `register_stru
++00001ee0: 6374 7572 655f 686f 6f6b 602e 0a0a 5f63  cture_hook`..._c
++00001ef0: 6174 7472 735f 2063 6f6d 6573 2077 6974  attrs_ comes wit
++00001f00: 6820 7072 6563 6f6e 6669 6775 7265 6420  h preconfigured 
++00001f10: 636f 6e76 6572 7465 7273 2066 6f72 2061  converters for a
++00001f20: 206e 756d 6265 7220 6f66 2073 6572 6961   number of seria
++00001f30: 6c69 7a61 7469 6f6e 206c 6962 7261 7269  lization librari
++00001f40: 6573 2c20 696e 636c 7564 696e 6720 6a73  es, including js
++00001f50: 6f6e 2c20 6d73 6770 6163 6b2c 2063 626f  on, msgpack, cbo
++00001f60: 7232 2c20 6273 6f6e 2c20 7961 6d6c 2061  r2, bson, yaml a
++00001f70: 6e64 2074 6f6d 6c2e 0a46 6f72 2064 6574  nd toml..For det
++00001f80: 6169 6c73 2c20 7365 6520 7468 6520 5b63  ails, see the [c
++00001f90: 6174 7472 2e70 7265 636f 6e66 2070 6163  attr.preconf pac
++00001fa0: 6b61 6765 5d28 6874 7470 733a 2f2f 6361  kage](https://ca
++00001fb0: 7474 2e72 732f 656e 2f73 7461 626c 652f  tt.rs/en/stable/
++00001fc0: 7072 6563 6f6e 662e 6874 6d6c 292e 0a0a  preconf.html)...
++00001fd0: 2323 2041 6464 6974 696f 6e61 6c20 646f  ## Additional do
++00001fe0: 6375 6d65 6e74 6174 696f 6e20 616e 6420  cumentation and 
++00001ff0: 7461 6c6b 730a 0a2d 205b 4f6e 2073 7472  talks..- [On str
++00002000: 7563 7475 7265 6420 616e 6420 756e 7374  uctured and unst
++00002010: 7275 6374 7572 6564 2064 6174 612c 206f  ructured data, o
++00002020: 7220 7468 6520 6361 7365 2066 6f72 2063  r the case for c
++00002030: 6174 7472 735d 2868 7474 7073 3a2f 2f74  attrs](https://t
++00002040: 6872 6565 6f66 7761 6e64 732e 636f 6d2f  hreeofwands.com/
++00002050: 6f6e 2d73 7472 7563 7475 7265 642d 616e  on-structured-an
++00002060: 642d 756e 7374 7275 6374 7572 6564 2d64  d-unstructured-d
++00002070: 6174 612d 6f72 2d74 6865 2d63 6173 652d  ata-or-the-case-
++00002080: 666f 722d 6361 7474 7273 2f29 0a2d 205b  for-cattrs/).- [
++00002090: 5768 7920 4920 7573 6520 6174 7472 7320  Why I use attrs 
++000020a0: 696e 7374 6561 6420 6f66 2070 7964 616e  instead of pydan
++000020b0: 7469 635d 2868 7474 7073 3a2f 2f74 6872  tic](https://thr
++000020c0: 6565 6f66 7761 6e64 732e 636f 6d2f 7768  eeofwands.com/wh
++000020d0: 792d 692d 7573 652d 6174 7472 732d 696e  y-i-use-attrs-in
++000020e0: 7374 6561 642d 6f66 2d70 7964 616e 7469  stead-of-pydanti
++000020f0: 632f 290a 2d20 5b63 6174 7472 7320 493a  c/).- [cattrs I:
++00002100: 2075 6e2f 7374 7275 6374 7572 696e 6720   un/structuring 
++00002110: 7370 6565 645d 2868 7474 7073 3a2f 2f74  speed](https://t
++00002120: 6872 6565 6f66 7761 6e64 732e 636f 6d2f  hreeofwands.com/
++00002130: 7768 792d 6361 7474 7273 2d69 732d 736f  why-cattrs-is-so
++00002140: 2d66 6173 742f 290a 2d20 5b50 7974 686f  -fast/).- [Pytho
++00002150: 6e20 6861 7320 6120 6d61 6372 6f20 6c61  n has a macro la
++00002160: 6e67 7561 6765 202d 2069 7427 7320 5079  nguage - it's Py
++00002170: 7468 6f6e 2028 5079 436f 6e20 4954 2032  thon (PyCon IT 2
++00002180: 3032 3229 5d28 6874 7470 733a 2f2f 7777  022)](https://ww
++00002190: 772e 796f 7574 7562 652e 636f 6d2f 7761  w.youtube.com/wa
++000021a0: 7463 683f 763d 5559 5253 6978 696b 5554  tch?v=UYRSixikUT
++000021b0: 6f29 0a0a 2323 2043 7265 6469 7473 0a0a  o)..## Credits..
++000021c0: 4d61 6a6f 7220 6372 6564 6974 7320 746f  Major credits to
++000021d0: 2048 796e 656b 2053 6368 6c61 7761 636b   Hynek Schlawack
++000021e0: 2066 6f72 2063 7265 6174 696e 6720 5b61   for creating [a
++000021f0: 7474 7273 5d28 6874 7470 733a 2f2f 6174  ttrs](https://at
++00002200: 7472 732e 6f72 6729 2061 6e64 2069 7473  trs.org) and its
++00002210: 2070 7265 6465 6365 7373 6f72 2c0a 5b63   predecessor,.[c
++00002220: 6861 7261 6374 6572 6973 7469 635d 2868  haracteristic](h
++00002230: 7474 7073 3a2f 2f67 6974 6875 622e 636f  ttps://github.co
++00002240: 6d2f 6879 6e65 6b2f 6368 6172 6163 7465  m/hynek/characte
++00002250: 7269 7374 6963 292e 0a0a 5f63 6174 7472  ristic)..._cattr
++00002260: 735f 2069 7320 7465 7374 6564 2077 6974  s_ is tested wit
++00002270: 6820 5b48 7970 6f74 6865 7369 735d 2868  h [Hypothesis](h
++00002280: 7474 703a 2f2f 6879 706f 7468 6573 6973  ttp://hypothesis
++00002290: 2e72 6561 6474 6865 646f 6373 2e69 6f2f  .readthedocs.io/
++000022a0: 656e 2f6c 6174 6573 742f 292c 2062 7920  en/latest/), by 
++000022b0: 4461 7669 6420 522e 204d 6163 4976 6572  David R. MacIver
++000022c0: 2e0a 0a5f 6361 7474 7273 5f20 6973 2062  ..._cattrs_ is b
++000022d0: 656e 6368 6d61 726b 6564 2075 7369 6e67  enchmarked using
++000022e0: 205b 7065 7266 5d28 6874 7470 733a 2f2f   [perf](https://
++000022f0: 6769 7468 7562 2e63 6f6d 2f68 6179 706f  github.com/haypo
++00002300: 2f70 6572 6629 2061 6e64 205b 7079 7465  /perf) and [pyte
++00002310: 7374 2d62 656e 6368 6d61 726b 5d28 6874  st-benchmark](ht
++00002320: 7470 733a 2f2f 7079 7465 7374 2d62 656e  tps://pytest-ben
++00002330: 6368 6d61 726b 2e72 6561 6474 6865 646f  chmark.readthedo
++00002340: 6373 2e69 6f2f 656e 2f6c 6174 6573 742f  cs.io/en/latest/
++00002350: 696e 6465 782e 6874 6d6c 292e 0a0a 5468  index.html)...Th
++00002360: 6973 2070 6163 6b61 6765 2077 6173 2063  is package was c
++00002370: 7265 6174 6564 2077 6974 6820 5b43 6f6f  reated with [Coo
++00002380: 6b69 6563 7574 7465 725d 2868 7474 7073  kiecutter](https
++00002390: 3a2f 2f67 6974 6875 622e 636f 6d2f 6175  ://github.com/au
++000023a0: 6472 6579 722f 636f 6f6b 6965 6375 7474  dreyr/cookiecutt
++000023b0: 6572 2920 616e 6420 7468 6520 5b60 6175  er) and the [`au
++000023c0: 6472 6579 722f 636f 6f6b 6965 6375 7474  dreyr/cookiecutt
++000023d0: 6572 2d70 7970 6163 6b61 6765 605d 2868  er-pypackage`](h
++000023e0: 7474 7073 3a2f 2f67 6974 6875 622e 636f  ttps://github.co
++000023f0: 6d2f 6175 6472 6579 722f 636f 6f6b 6965  m/audreyr/cookie
++00002400: 6375 7474 6572 2d70 7970 6163 6b61 6765  cutter-pypackage
++00002410: 2920 7072 6f6a 6563 7420 7465 6d70 6c61  ) project templa
++00002420: 7465 2e0a 0a                             te...
+```
+

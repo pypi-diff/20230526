@@ -978,3 +978,61 @@
 [2023-05-26 01:47:12] INFO root fetch - main [MainThread]: End processing [tree-of-thoughts]: success
 [2023-05-26 01:47:19] INFO root fetch - main [MainThread]: End processing [pipen-board]: success
 [2023-05-26 01:47:19] INFO root fetch - main [MainThread]: Store serial: [18254198]
+[2023-05-26 01:52:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18254198]
+[2023-05-26 01:52:28] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-26 01:52:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gbwhere
+[2023-05-26 01:52:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flipside
+[2023-05-26 01:52:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shroomdk
+[2023-05-26 01:52:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: soupwidget
+[2023-05-26 01:52:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gerador-posts
+[2023-05-26 01:52:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xlOil
+[2023-05-26 01:52:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: malclient-upgraded
+[2023-05-26 01:52:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cattrs
+[2023-05-26 01:52:28] INFO root fetch - processPackages [soupwidget]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-26 01:52:28] INFO root fetch - processPackages [flipside]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-05-26 01:52:28] INFO root fetch - processPackages [shroomdk]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-05-26 01:52:28] INFO root fetch - processPackages [gbwhere]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-26 01:52:28] INFO root fetch - processPackages [gerador-posts]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-26 01:52:28] INFO root fetch - processPackages [xlOil]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-26 01:52:28] INFO root fetch - processPackages [cattrs]: New version: [23.1.0rc0] Old Version: [22.2.0]
+[2023-05-26 01:52:28] INFO root fetch - processPackages [malclient-upgraded]: New version: [1.4a1] Old Version: [1.3.4a0]
+[2023-05-26 01:52:28] INFO root fetch - processPackages [flipside]: Downloading https://files.pythonhosted.org/packages/9d/ae/f606068baf9dfb0950bb202257331dc52d9cb2737986c16b16d8290757b6/flipside-2.0.4.tar.gz
+[2023-05-26 01:52:28] INFO root fetch - processPackages [soupwidget]: Downloading https://files.pythonhosted.org/packages/4e/b0/1f8b6f4b6da8fa8bbed88a0dd0cb4440779268260cc6b93613dfac96b8f3/soupwidget-0.0.5.tar.gz
+[2023-05-26 01:52:28] INFO root fetch - processPackages [gbwhere]: Downloading https://files.pythonhosted.org/packages/3b/d0/1f5887cc5404ff78caeaa92e8bfcead27a3cd5c5ffc8e8c0bec47825a8b6/gbwhere-0.1.0.tar.gz
+[2023-05-26 01:52:28] INFO root fetch - processPackages [shroomdk]: Downloading https://files.pythonhosted.org/packages/d6/fa/fcb70d4f4b2d090a4f505ff1aa9a81643d83bba3d98d8f66ab668a6ee5df/shroomdk-2.0.4.tar.gz
+[2023-05-26 01:52:28] INFO root fetch - processPackages [cattrs]: Downloading https://files.pythonhosted.org/packages/fc/da/ff3239eb4241cbc6f8b69f53d4ca27a178d51f9e5a954f1a3588c8227dc5/cattrs-22.2.0.tar.gz
+[2023-05-26 01:52:28] INFO root fetch - processPackages [gerador-posts]: Downloading https://files.pythonhosted.org/packages/d8/40/c67a4569ce81a75bfa7e3de546b342a01cad495b52fb32aef7f3031c0904/gerador_posts-0.1.1.tar.gz
+[2023-05-26 01:52:28] INFO root fetch - processPackages [xlOil]: Downloading https://files.pythonhosted.org/packages/b0/45/300fee520904b595c848b806e8719e069a21312cd02a59e98965352c3a58/xlOil-0.9.1-cp39-cp39-win_amd64.whl
+[2023-05-26 01:52:28] INFO root fetch - processPackages [malclient-upgraded]: Downloading https://files.pythonhosted.org/packages/13/da/adec38fcff0f93efb8b8503a900a8fe50b2ee6d834c827c7fe20e53c7e88/malclient-upgraded-1.3.4a0.tar.gz
+[2023-05-26 01:52:29] INFO root fetch - processPackages [gerador-posts]: executing diffoscope
+[2023-05-26 01:52:29] INFO root fetch - processPackages [gerador-posts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gerador_posts-0.1.0.tar.gz tmp/gerador_posts-0.1.1.tar.gz --markdown 20230526/g/gerador-posts/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-26 01:52:29] INFO root fetch - processPackages [gbwhere]: Downloading https://files.pythonhosted.org/packages/95/02/68c6b8159db73fd70165fe2b129c0dddc778d1b4befa79e01d763d83a1a7/gbwhere-0.1.1.tar.gz
+[2023-05-26 01:52:29] INFO root fetch - processPackages [cattrs]: Downloading https://files.pythonhosted.org/packages/2c/e9/d344005f7ad01d0a04274ce248697f5a20ebb1764056088e0996ef166452/cattrs-23.1.0rc0.tar.gz
+[2023-05-26 01:52:29] INFO root fetch - processPackages [flipside]: Downloading https://files.pythonhosted.org/packages/e6/0f/d5ef39d25f36b04384172cc80d4ac22fa520c5436067dfc2c305f958c158/flipside-2.0.5.tar.gz
+[2023-05-26 01:52:29] INFO root fetch - processPackages [soupwidget]: Downloading https://files.pythonhosted.org/packages/1a/6d/4cdcfd9446fa1cda0f7130065e251a8750a65ebeadde264f8b95e383f823/soupwidget-0.0.6.tar.gz
+[2023-05-26 01:52:29] INFO root fetch - processPackages [gbwhere]: executing diffoscope
+[2023-05-26 01:52:29] INFO root fetch - processPackages [gbwhere]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gbwhere-0.1.0.tar.gz tmp/gbwhere-0.1.1.tar.gz --markdown 20230526/g/gbwhere/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-26 01:52:29] INFO root fetch - processPackages [shroomdk]: Downloading https://files.pythonhosted.org/packages/d9/df/1cffdbff4b05819a85dc8b00107b1d415dc8ab7d703030543d87a3766c79/shroomdk-2.0.5.tar.gz
+[2023-05-26 01:52:29] INFO root fetch - processPackages [malclient-upgraded]: Downloading https://files.pythonhosted.org/packages/9b/f8/2280e31eaebc0c2992d046cda47c3e957e378f51ac774074f579714b2870/malclient-upgraded-1.4a1.tar.gz
+[2023-05-26 01:52:29] INFO root fetch - processPackages [flipside]: executing diffoscope
+[2023-05-26 01:52:29] INFO root fetch - processPackages [flipside]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flipside-2.0.4.tar.gz tmp/flipside-2.0.5.tar.gz --markdown 20230526/f/flipside/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-05-26 01:52:29] INFO root fetch - processPackages [soupwidget]: executing diffoscope
+[2023-05-26 01:52:29] INFO root fetch - processPackages [soupwidget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soupwidget-0.0.5.tar.gz tmp/soupwidget-0.0.6.tar.gz --markdown 20230526/s/soupwidget/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-26 01:52:29] INFO root fetch - processPackages [shroomdk]: executing diffoscope
+[2023-05-26 01:52:29] INFO root fetch - processPackages [shroomdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shroomdk-2.0.4.tar.gz tmp/shroomdk-2.0.5.tar.gz --markdown 20230526/s/shroomdk/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-05-26 01:52:29] INFO root fetch - processPackages [malclient-upgraded]: executing diffoscope
+[2023-05-26 01:52:29] INFO root fetch - processPackages [cattrs]: executing diffoscope
+[2023-05-26 01:52:29] INFO root fetch - processPackages [malclient-upgraded]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/malclient-upgraded-1.3.4a0.tar.gz tmp/malclient-upgraded-1.4a1.tar.gz --markdown 20230526/m/malclient-upgraded/1.3.4a0-1.4a1/diff.md --exclude *.pyd
+[2023-05-26 01:52:29] INFO root fetch - processPackages [cattrs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cattrs-22.2.0.tar.gz tmp/cattrs-23.1.0rc0.tar.gz --markdown 20230526/c/cattrs/22.2.0-23.1.0rc0/diff.md --exclude *.pyd
+[2023-05-26 01:52:29] INFO root fetch - processPackages [xlOil]: Downloading https://files.pythonhosted.org/packages/5c/f4/0e02a498e17e7cbe9962fac45d737df8af1fe2135acf4774fe1bd5ec8f0d/xlOil-0.9.2-cp39-cp39-win_amd64.whl
+[2023-05-26 01:52:30] INFO root fetch - processPackages [xlOil]: executing diffoscope
+[2023-05-26 01:52:30] INFO root fetch - processPackages [xlOil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xlOil-0.9.1-cp39-cp39-win_amd64.whl.zip tmp/xlOil-0.9.2-cp39-cp39-win_amd64.whl.zip --markdown 20230526/x/xlOil/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-26 01:52:30] INFO root fetch - main [MainThread]: End processing [gerador-posts]: success
+[2023-05-26 01:52:30] INFO root fetch - main [MainThread]: End processing [soupwidget]: success
+[2023-05-26 01:52:30] INFO root fetch - main [MainThread]: End processing [gbwhere]: success
+[2023-05-26 01:52:31] INFO root fetch - main [MainThread]: End processing [flipside]: success
+[2023-05-26 01:52:31] INFO root fetch - main [MainThread]: End processing [malclient-upgraded]: success
+[2023-05-26 01:52:31] INFO root fetch - main [MainThread]: End processing [cattrs]: success
+[2023-05-26 01:52:32] INFO root fetch - main [MainThread]: End processing [shroomdk]: success
+[2023-05-26 01:52:49] INFO root fetch - main [MainThread]: End processing [xlOil]: success
+[2023-05-26 01:52:49] INFO root fetch - main [MainThread]: Store serial: [18254225]
