@@ -202,3 +202,42 @@
 [2023-05-26 00:10:25] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-serverless-cluster-from-snapshot]: success
 [2023-05-26 00:10:29] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
 [2023-05-26 00:10:29] INFO root fetch - main [MainThread]: Store serial: [18253657]
+[2023-05-26 00:15:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18253657]
+[2023-05-26 00:15:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-26 00:15:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: skeleton-plot
+[2023-05-26 00:15:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: drtools
+[2023-05-26 00:15:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arraymap
+[2023-05-26 00:15:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyVIP
+[2023-05-26 00:15:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gscdash
+[2023-05-26 00:15:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: anyscale
+[2023-05-26 00:15:38] INFO root fetch - processPackages [gscdash]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-26 00:15:38] INFO root fetch - processPackages [skeleton-plot]: New version: [0.0.5] Old Version: [0.0.3]
+[2023-05-26 00:15:38] INFO root fetch - processPackages [arraymap]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 00:15:38] INFO root fetch - processPackages [drtools]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-26 00:15:38] INFO root fetch - processPackages [anyscale]: New version: [0.5.99] Old Version: [0.5.98]
+[2023-05-26 00:15:39] INFO root fetch - processPackages [pyVIP]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-26 00:15:39] INFO root fetch - processPackages [gscdash]: executing diffoscope
+[2023-05-26 00:15:39] INFO root fetch - processPackages [gscdash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gscdash-0.0.2.tar.gz tmp/gscdash-0.0.3.tar.gz --markdown 20230526/g/gscdash/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-26 00:15:39] INFO root fetch - processPackages [arraymap]: Downloading https://files.pythonhosted.org/packages/77/5c/c454163aa4556851112de57f5ad146ca5a6755de0f7b631ad1757913c083/arraymap-0.1.8.tar.gz
+[2023-05-26 00:15:39] INFO root fetch - processPackages [arraymap]: Downloading https://files.pythonhosted.org/packages/98/6e/76407ad1a050a89a9a4f768e016440fd483a57a3132f9558f14ce9955439/arraymap-0.1.9.tar.gz
+[2023-05-26 00:15:39] INFO root fetch - processPackages [arraymap]: executing diffoscope
+[2023-05-26 00:15:39] INFO root fetch - processPackages [arraymap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arraymap-0.1.8.tar.gz tmp/arraymap-0.1.9.tar.gz --markdown 20230526/a/arraymap/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 00:15:39] INFO root fetch - processPackages [drtools]: executing diffoscope
+[2023-05-26 00:15:39] INFO root fetch - processPackages [drtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drtools-1.0.8.tar.gz tmp/drtools-1.0.9.tar.gz --markdown 20230526/d/drtools/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-26 00:15:39] INFO root fetch - processPackages [pyVIP]: Downloading https://files.pythonhosted.org/packages/39/1b/db2d01237274ac153f338d5d3076a74bbf90a112253bf9f7e96cd7ba6ea5/pyVIP-1.8.0.tar.gz
+[2023-05-26 00:15:40] INFO root fetch - processPackages [pyVIP]: Downloading https://files.pythonhosted.org/packages/5c/34/05f8d836791da404a033434bffc70d7c8c0c2f898b2d3ba5b9b6996f5123/pyVIP-1.9.0.tar.gz
+[2023-05-26 00:15:40] INFO root fetch - processPackages [skeleton-plot]: Downloading https://files.pythonhosted.org/packages/f4/87/d453c3ee9de40134b007e72abbe7f768c1527da76baab5bf38ce45153848/skeleton_plot-0.0.3.tar.gz
+[2023-05-26 00:15:40] INFO root fetch - processPackages [pyVIP]: executing diffoscope
+[2023-05-26 00:15:40] INFO root fetch - processPackages [pyVIP]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyVIP-1.8.0.tar.gz tmp/pyVIP-1.9.0.tar.gz --markdown 20230526/p/pyVIP/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-26 00:15:40] INFO root fetch - processPackages [anyscale]: executing diffoscope
+[2023-05-26 00:15:40] INFO root fetch - processPackages [anyscale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anyscale-0.5.98.tar.gz tmp/anyscale-0.5.99.tar.gz --markdown 20230526/a/anyscale/0.5.98-0.5.99/diff.md --exclude *.pyd
+[2023-05-26 00:15:40] INFO root fetch - processPackages [skeleton-plot]: Downloading https://files.pythonhosted.org/packages/5e/3c/7f8d3929b8728a20a9bdaf11504e27e0c53797f1e5b3bad081b606b0ffba/skeleton_plot-0.0.5.tar.gz
+[2023-05-26 00:15:40] INFO root fetch - processPackages [skeleton-plot]: executing diffoscope
+[2023-05-26 00:15:40] INFO root fetch - processPackages [skeleton-plot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skeleton_plot-0.0.3.tar.gz tmp/skeleton_plot-0.0.5.tar.gz --markdown 20230526/s/skeleton-plot/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2023-05-26 00:15:40] INFO root fetch - main [MainThread]: End processing [gscdash]: success
+[2023-05-26 00:15:41] INFO root fetch - main [MainThread]: End processing [arraymap]: success
+[2023-05-26 00:15:41] INFO root fetch - main [MainThread]: End processing [drtools]: success
+[2023-05-26 00:15:41] INFO root fetch - main [MainThread]: End processing [pyVIP]: success
+[2023-05-26 00:15:41] INFO root fetch - main [MainThread]: End processing [skeleton-plot]: success
+[2023-05-26 00:15:50] INFO root fetch - main [MainThread]: End processing [anyscale]: success
+[2023-05-26 00:15:50] INFO root fetch - main [MainThread]: Store serial: [18253725]
