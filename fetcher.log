@@ -408,3 +408,30 @@
 [2023-05-26 00:37:06] INFO root fetch - main [MainThread]: End processing [fstd2nc]: success
 [2023-05-26 00:37:11] INFO root fetch - main [MainThread]: End processing [didppy]: success
 [2023-05-26 00:37:11] INFO root fetch - main [MainThread]: Store serial: [18253821]
+[2023-05-26 00:42:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18253821]
+[2023-05-26 00:42:20] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-26 00:42:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clonalEvolution
+[2023-05-26 00:42:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ssg-ada-course-search
+[2023-05-26 00:42:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: workadays
+[2023-05-26 00:42:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: argclass
+[2023-05-26 00:42:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: banana-dev-staging
+[2023-05-26 00:42:20] WARNING root fetch - processPackages [ssg-ada-course-search]: Skipping, unable to determine old version
+[2023-05-26 00:42:20] INFO root fetch - main [MainThread]: End processing [ssg-ada-course-search] error
+[2023-05-26 00:42:20] ERROR root fetch - processPackages [banana-dev-staging]: Unable to get metadata: No such project 'banana-dev-staging'
+[2023-05-26 00:42:20] INFO root fetch - main [MainThread]: End processing [banana-dev-staging] error
+[2023-05-26 00:42:20] INFO root fetch - processPackages [workadays]: New version: [2023.5.25] Old Version: [2023.5.23]
+[2023-05-26 00:42:20] INFO root fetch - processPackages [argclass]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-26 00:42:20] INFO root fetch - processPackages [clonalEvolution]: New version: [2.0.7] Old Version: [2.0.6]
+[2023-05-26 00:42:20] INFO root fetch - processPackages [workadays]: Downloading https://files.pythonhosted.org/packages/53/81/aa2f63166dc3457f4df3e8ade0ea842b9336b3e073480d53d8993652ec64/workadays-2023.5.23.tar.gz
+[2023-05-26 00:42:20] INFO root fetch - processPackages [argclass]: executing diffoscope
+[2023-05-26 00:42:20] INFO root fetch - processPackages [argclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argclass-0.9.1.tar.gz tmp/argclass-0.9.2.tar.gz --markdown 20230526/a/argclass/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-26 00:42:20] INFO root fetch - processPackages [clonalEvolution]: Downloading https://files.pythonhosted.org/packages/b5/f9/5722d849d174d98e0f40403bca4cc85a738466a04f835ac8396185365e0e/clonalEvolution-2.0.7.tar.gz
+[2023-05-26 00:42:20] INFO root fetch - processPackages [workadays]: Downloading https://files.pythonhosted.org/packages/6a/00/9d157de1fc0e91b231955f449332c8a64a02ef7feb7b311beded66256c0f/workadays-2023.5.25.tar.gz
+[2023-05-26 00:42:20] INFO root fetch - processPackages [clonalEvolution]: executing diffoscope
+[2023-05-26 00:42:20] INFO root fetch - processPackages [clonalEvolution]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clonalEvolution-2.0.6.tar.gz tmp/clonalEvolution-2.0.7.tar.gz --markdown 20230526/c/clonalEvolution/2.0.6-2.0.7/diff.md --exclude *.pyd
+[2023-05-26 00:42:20] INFO root fetch - processPackages [workadays]: executing diffoscope
+[2023-05-26 00:42:20] INFO root fetch - processPackages [workadays]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/workadays-2023.5.23.tar.gz tmp/workadays-2023.5.25.tar.gz --markdown 20230526/w/workadays/2023.5.23-2023.5.25/diff.md --exclude *.pyd
+[2023-05-26 00:42:21] INFO root fetch - main [MainThread]: End processing [argclass]: success
+[2023-05-26 00:42:21] INFO root fetch - main [MainThread]: End processing [clonalEvolution]: success
+[2023-05-26 00:42:22] INFO root fetch - main [MainThread]: End processing [workadays]: success
+[2023-05-26 00:42:22] INFO root fetch - main [MainThread]: Store serial: [18253846]
