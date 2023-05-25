@@ -241,3 +241,42 @@
 [2023-05-26 00:15:41] INFO root fetch - main [MainThread]: End processing [skeleton-plot]: success
 [2023-05-26 00:15:50] INFO root fetch - main [MainThread]: End processing [anyscale]: success
 [2023-05-26 00:15:50] INFO root fetch - main [MainThread]: Store serial: [18253725]
+[2023-05-26 00:20:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18253725]
+[2023-05-26 00:20:59] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-26 00:20:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: beaker-py
+[2023-05-26 00:20:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tensorflow-docs
+[2023-05-26 00:20:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jaxprvis
+[2023-05-26 00:20:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gptty
+[2023-05-26 00:20:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dicommeta
+[2023-05-26 00:20:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: argo-workflows
+[2023-05-26 00:20:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hmc-mir
+[2023-05-26 00:20:59] WARNING root fetch - processPackages [tensorflow-docs]: Skipping, unable to determine old version
+[2023-05-26 00:20:59] INFO root fetch - main [MainThread]: End processing [tensorflow-docs] error
+[2023-05-26 00:20:59] WARNING root fetch - processPackages [jaxprvis]: Skipping, unable to determine old version
+[2023-05-26 00:20:59] INFO root fetch - main [MainThread]: End processing [jaxprvis] error
+[2023-05-26 00:20:59] INFO root fetch - processPackages [gptty]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-26 00:20:59] WARNING root fetch - processPackages [hmc-mir]: Skipping, unable to determine old version
+[2023-05-26 00:20:59] INFO root fetch - main [MainThread]: End processing [hmc-mir] error
+[2023-05-26 00:20:59] INFO root fetch - processPackages [dicommeta]: New version: [0.6.7] Old Version: [0.6.6]
+[2023-05-26 00:20:59] INFO root fetch - processPackages [argo-workflows]: New version: [6.4.8] Old Version: [6.4.7]
+[2023-05-26 00:20:59] INFO root fetch - processPackages [beaker-py]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-26 00:20:59] INFO root fetch - processPackages [gptty]: Downloading https://files.pythonhosted.org/packages/0a/21/e0f84c7d309512ad5d74e61c9446424306f8ed5f9f51a303d39aaf32c0ea/gptty-0.2.6.tar.gz
+[2023-05-26 00:20:59] INFO root fetch - processPackages [argo-workflows]: Downloading https://files.pythonhosted.org/packages/f5/01/b69d1c2423c493b8d80462eff1227eded00a1650bea5ec0f8e4d77051a4b/argo-workflows-6.4.7.tar.gz
+[2023-05-26 00:20:59] INFO root fetch - processPackages [beaker-py]: Downloading https://files.pythonhosted.org/packages/1e/03/bd1b0b6d77693846240ec0ebd1d73dacd011695f5a0f3118ca23b8545c53/beaker-py-1.9.1.tar.gz
+[2023-05-26 00:20:59] INFO root fetch - processPackages [dicommeta]: Downloading https://files.pythonhosted.org/packages/05/a8/63aefd31c56fe434efa096fa55b0627108f81da0116a310ce05b2bfd4d79/dicommeta-0.6.7.tar.gz
+[2023-05-26 00:21:00] INFO root fetch - processPackages [dicommeta]: executing diffoscope
+[2023-05-26 00:21:00] INFO root fetch - processPackages [dicommeta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dicommeta-0.6.6.tar.gz tmp/dicommeta-0.6.7.tar.gz --markdown 20230526/d/dicommeta/0.6.6-0.6.7/diff.md --exclude *.pyd
+[2023-05-26 00:21:00] INFO root fetch - processPackages [gptty]: Downloading https://files.pythonhosted.org/packages/ab/64/75a32b9ecd7807dbb398da0abe2ca507aeb79358c6dd75b24596acff38bd/gptty-0.2.7.tar.gz
+[2023-05-26 00:21:00] INFO root fetch - processPackages [argo-workflows]: Downloading https://files.pythonhosted.org/packages/f9/74/c7a1240653fd1c7b5b0c4e3a12b541dddec766eeba13246c774dde3eb0ba/argo-workflows-6.4.8.tar.gz
+[2023-05-26 00:21:00] INFO root fetch - processPackages [gptty]: executing diffoscope
+[2023-05-26 00:21:00] INFO root fetch - processPackages [gptty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptty-0.2.6.tar.gz tmp/gptty-0.2.7.tar.gz --markdown 20230526/g/gptty/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-26 00:21:00] INFO root fetch - processPackages [argo-workflows]: executing diffoscope
+[2023-05-26 00:21:00] INFO root fetch - processPackages [argo-workflows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argo-workflows-6.4.7.tar.gz tmp/argo-workflows-6.4.8.tar.gz --markdown 20230526/a/argo-workflows/6.4.7-6.4.8/diff.md --exclude *.pyd
+[2023-05-26 00:21:00] INFO root fetch - processPackages [beaker-py]: Downloading https://files.pythonhosted.org/packages/0c/fc/715bf075aa3cd4e6a75dc7581bbba27a337add27bc93465c1719ad25ab7c/beaker-py-1.9.2.tar.gz
+[2023-05-26 00:21:00] INFO root fetch - processPackages [beaker-py]: executing diffoscope
+[2023-05-26 00:21:00] INFO root fetch - processPackages [beaker-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beaker-py-1.9.1.tar.gz tmp/beaker-py-1.9.2.tar.gz --markdown 20230526/b/beaker-py/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-26 00:21:01] INFO root fetch - main [MainThread]: End processing [dicommeta]: success
+[2023-05-26 00:21:01] INFO root fetch - main [MainThread]: End processing [gptty]: success
+[2023-05-26 00:21:01] INFO root fetch - main [MainThread]: End processing [beaker-py]: success
+[2023-05-26 00:21:04] INFO root fetch - main [MainThread]: End processing [argo-workflows]: success
+[2023-05-26 00:21:04] INFO root fetch - main [MainThread]: Store serial: [18253752]
