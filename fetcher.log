@@ -355,3 +355,56 @@
 [2023-05-26 00:31:54] INFO root fetch - main [MainThread]: End processing [potassium]: success
 [2023-05-26 00:31:55] INFO root fetch - main [MainThread]: End processing [nvidia-dali-tf-plugin-cuda120]: success
 [2023-05-26 00:31:55] INFO root fetch - main [MainThread]: Store serial: [18253783]
+[2023-05-26 00:36:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18253783]
+[2023-05-26 00:37:03] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-26 00:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: didppy
+[2023-05-26 00:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: es7s
+[2023-05-26 00:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vocex
+[2023-05-26 00:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ciohoudini
+[2023-05-26 00:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fstd2nc
+[2023-05-26 00:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: recurrent-memory-transformer-pytorch
+[2023-05-26 00:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: playgroundrl
+[2023-05-26 00:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: clonalEvolution
+[2023-05-26 00:37:03] INFO root fetch - processPackages [vocex]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-26 00:37:03] INFO root fetch - processPackages [fstd2nc]: New version: [0.20230515.1] Old Version: [0.20230515.0]
+[2023-05-26 00:37:03] INFO root fetch - processPackages [ciohoudini]: New version: [0.6.0] Old Version: [0.5.3]
+[2023-05-26 00:37:03] INFO root fetch - processPackages [playgroundrl]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-26 00:37:03] INFO root fetch - processPackages [recurrent-memory-transformer-pytorch]: New version: [0.4.0] Old Version: [0.3.2]
+[2023-05-26 00:37:03] INFO root fetch - processPackages [didppy]: New version: [0.4.0] Old Version: [0.3.4]
+[2023-05-26 00:37:03] INFO root fetch - processPackages [clonalEvolution]: New version: [2.0.6] Old Version: [2.0.5]
+[2023-05-26 00:37:04] INFO root fetch - processPackages [es7s]: New version: [3.6.0.dev0] Old Version: [3.5.0.dev0]
+[2023-05-26 00:37:04] INFO root fetch - processPackages [playgroundrl]: executing diffoscope
+[2023-05-26 00:37:04] INFO root fetch - processPackages [playgroundrl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/playgroundrl-0.0.7.tar.gz tmp/playgroundrl-0.0.8.tar.gz --markdown 20230526/p/playgroundrl/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-26 00:37:04] INFO root fetch - processPackages [clonalEvolution]: executing diffoscope
+[2023-05-26 00:37:04] INFO root fetch - processPackages [clonalEvolution]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clonalEvolution-2.0.5.tar.gz tmp/clonalEvolution-2.0.6.tar.gz --markdown 20230526/c/clonalEvolution/2.0.5-2.0.6/diff.md --exclude *.pyd
+[2023-05-26 00:37:04] INFO root fetch - processPackages [recurrent-memory-transformer-pytorch]: Downloading https://files.pythonhosted.org/packages/0d/8a/b15081b6a89a3563892f434b6ebd78c95d641ae246651483d863fc4c7c25/recurrent-memory-transformer-pytorch-0.3.2.tar.gz
+[2023-05-26 00:37:04] INFO root fetch - processPackages [ciohoudini]: Downloading https://files.pythonhosted.org/packages/7b/4c/46a88637b38fe56ce418f87105119206908b09b629673e557215ecb1651e/ciohoudini-0.5.3-py2.py3-none-any.whl
+[2023-05-26 00:37:04] INFO root fetch - processPackages [fstd2nc]: Downloading https://files.pythonhosted.org/packages/c9/ac/d8c7e09a59fc483ecac25dc5795bdc3768853b7ac17e8988af22cc5a7827/fstd2nc-0.20230515.0.tar.gz
+[2023-05-26 00:37:04] INFO root fetch - processPackages [es7s]: executing diffoscope
+[2023-05-26 00:37:04] INFO root fetch - processPackages [es7s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/es7s-3.5.0.dev0.tar.gz tmp/es7s-3.6.0.dev0.tar.gz --markdown 20230526/e/es7s/3.5.0.dev0-3.6.0.dev0/diff.md --exclude *.pyd
+[2023-05-26 00:37:04] INFO root fetch - processPackages [didppy]: Downloading https://files.pythonhosted.org/packages/9f/46/493f139d1ef67bf098f6dd1b2a9fe1b1451491ec9b430e08880d5627a049/didppy-0.3.4.tar.gz
+[2023-05-26 00:37:04] INFO root fetch - processPackages [vocex]: Downloading https://files.pythonhosted.org/packages/d8/89/931d107f90696b19e6a7bdc7049b5e3c8e06abf1c88ce2da5867e66068ba/vocex-0.1.1.tar.gz
+[2023-05-26 00:37:04] INFO root fetch - processPackages [didppy]: Downloading https://files.pythonhosted.org/packages/bd/6e/6f0a6acfa3b9065b1a7a706cc48391b73a5db336e55207ba514ed386b377/didppy-0.4.0.tar.gz
+[2023-05-26 00:37:04] INFO root fetch - processPackages [vocex]: Downloading https://files.pythonhosted.org/packages/b4/99/dbe6ea3e97eb1ac188a6e3d1e5b9bb25f98dc9bd007c2738d046c93ff56f/vocex-0.1.2.tar.gz
+[2023-05-26 00:37:04] INFO root fetch - processPackages [recurrent-memory-transformer-pytorch]: Downloading https://files.pythonhosted.org/packages/ed/2f/76e17c0499ff4f4cedc735ff4918220694f000e25bcb3e3cacad1d86f252/recurrent-memory-transformer-pytorch-0.4.0.tar.gz
+[2023-05-26 00:37:04] INFO root fetch - processPackages [vocex]: executing diffoscope
+[2023-05-26 00:37:04] INFO root fetch - processPackages [vocex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vocex-0.1.1.tar.gz tmp/vocex-0.1.2.tar.gz --markdown 20230526/v/vocex/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-26 00:37:04] INFO root fetch - processPackages [ciohoudini]: Downloading https://files.pythonhosted.org/packages/71/16/329c23f7e6d61d4b336318a677187c0f066eef2f0bccec5553b7256f461a/ciohoudini-0.6.0-py2.py3-none-any.whl
+[2023-05-26 00:37:04] INFO root fetch - processPackages [recurrent-memory-transformer-pytorch]: executing diffoscope
+[2023-05-26 00:37:04] INFO root fetch - processPackages [recurrent-memory-transformer-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recurrent-memory-transformer-pytorch-0.3.2.tar.gz tmp/recurrent-memory-transformer-pytorch-0.4.0.tar.gz --markdown 20230526/r/recurrent-memory-transformer-pytorch/0.3.2-0.4.0/diff.md --exclude *.pyd
+[2023-05-26 00:37:04] INFO root fetch - processPackages [didppy]: executing diffoscope
+[2023-05-26 00:37:04] INFO root fetch - processPackages [didppy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/didppy-0.3.4.tar.gz tmp/didppy-0.4.0.tar.gz --markdown 20230526/d/didppy/0.3.4-0.4.0/diff.md --exclude *.pyd
+[2023-05-26 00:37:04] INFO root fetch - processPackages [fstd2nc]: Downloading https://files.pythonhosted.org/packages/33/05/8485ec254e7a9f2837c87491d0f9bcd7d7cefda75dd931f19c3963bf5be4/fstd2nc-0.20230515.1.tar.gz
+[2023-05-26 00:37:04] INFO root fetch - processPackages [ciohoudini]: executing diffoscope
+[2023-05-26 00:37:04] INFO root fetch - processPackages [ciohoudini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ciohoudini-0.5.3-py2.py3-none-any.whl.zip tmp/ciohoudini-0.6.0-py2.py3-none-any.whl.zip --markdown 20230526/c/ciohoudini/0.5.3-0.6.0/diff.md --exclude *.pyd
+[2023-05-26 00:37:04] INFO root fetch - processPackages [fstd2nc]: executing diffoscope
+[2023-05-26 00:37:04] INFO root fetch - processPackages [fstd2nc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fstd2nc-0.20230515.0.tar.gz tmp/fstd2nc-0.20230515.1.tar.gz --markdown 20230526/f/fstd2nc/0.20230515.0-0.20230515.1/diff.md --exclude *.pyd
+[2023-05-26 00:37:05] INFO root fetch - main [MainThread]: End processing [playgroundrl]: success
+[2023-05-26 00:37:05] INFO root fetch - main [MainThread]: End processing [clonalEvolution]: success
+[2023-05-26 00:37:06] INFO root fetch - main [MainThread]: End processing [vocex]: success
+[2023-05-26 00:37:06] INFO root fetch - main [MainThread]: End processing [recurrent-memory-transformer-pytorch]: success
+[2023-05-26 00:37:06] INFO root fetch - main [MainThread]: End processing [es7s]: success
+[2023-05-26 00:37:06] INFO root fetch - main [MainThread]: End processing [ciohoudini]: success
+[2023-05-26 00:37:06] INFO root fetch - main [MainThread]: End processing [fstd2nc]: success
+[2023-05-26 00:37:11] INFO root fetch - main [MainThread]: End processing [didppy]: success
+[2023-05-26 00:37:11] INFO root fetch - main [MainThread]: Store serial: [18253821]
