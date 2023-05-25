@@ -107,3 +107,98 @@
 [2023-05-26 00:05:08] INFO root fetch - main [MainThread]: End processing [assemblyline]: success
 [2023-05-26 00:05:11] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-05-26 00:05:11] INFO root fetch - main [MainThread]: Store serial: [18253599]
+[2023-05-26 00:10:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18253599]
+[2023-05-26 00:10:20] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-26 00:10:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: claudia
+[2023-05-26 00:10:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kfish
+[2023-05-26 00:10:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-vendor
+[2023-05-26 00:10:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gscdash
+[2023-05-26 00:10:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lifelike
+[2023-05-26 00:10:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ninia
+[2023-05-26 00:10:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-jutil
+[2023-05-26 00:10:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: srwpy
+[2023-05-26 00:10:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: disfluency-constituency-parser
+[2023-05-26 00:10:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: django-jutil
+[2023-05-26 00:10:20] INFO root fetch - processPackages [claudia]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 00:10:20] INFO root fetch - processPackages [disfluency-constituency-parser]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-26 00:10:20] INFO root fetch - processPackages [ninia]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 00:10:20] INFO root fetch - processPackages [lifelike]: New version: [1.0.9] Old Version: [1.0.7]
+[2023-05-26 00:10:20] INFO root fetch - processPackages [gscdash]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-26 00:10:20] INFO root fetch - processPackages [kfish]: New version: [99.0.202305252205] Old Version: [99.0.202305252151]
+[2023-05-26 00:10:20] INFO root fetch - processPackages [django-jutil]: New version: [3.9.9] Old Version: [3.9.8]
+[2023-05-26 00:10:20] INFO root fetch - processPackages [srwpy]: New version: [4.0.0b0] Old Version: [0.0.4]
+[2023-05-26 00:10:20] INFO root fetch - processPackages [django-vendor]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-26 00:10:20] INFO root fetch - processPackages [django-jutil]: New version: [3.9.9] Old Version: [3.9.8]
+[2023-05-26 00:10:20] INFO root fetch - processPackages [ninia]: executing diffoscope
+[2023-05-26 00:10:20] INFO root fetch - processPackages [ninia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ninia-0.0.8.tar.gz tmp/ninia-0.0.9.tar.gz --markdown 20230526/n/ninia/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 00:10:21] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/b4/35/8b2bedae5f29f545aa74df960f356ac6c7763e8c5e48b1a4555532f599ac/kfish-99.0.202305252205-py3-none-any.whl
+[2023-05-26 00:10:21] INFO root fetch - processPackages [django-jutil]: Downloading https://files.pythonhosted.org/packages/2e/e6/3fdcc7e3736b647cf3ab5609859c19dc656fb6ea44111d0c1c4b5a0f1478/django-jutil-3.9.8.tar.gz
+[2023-05-26 00:10:21] INFO root fetch - processPackages [disfluency-constituency-parser]: Downloading https://files.pythonhosted.org/packages/f6/d2/a23eeba3c389c00e5f0312e93621a4218667fbc0c2f1d6dd9cd28c636c6e/disfluency_constituency_parser-0.0.7-py3-none-any.whl
+[2023-05-26 00:10:21] INFO root fetch - processPackages [srwpy]: Downloading https://files.pythonhosted.org/packages/fa/d0/5c087303c41f2f8c17b5ee7fb4a54c5be572c7166f2145897c7352fdebdb/srwpy-0.0.4.tar.gz
+[2023-05-26 00:10:21] INFO root fetch - processPackages [django-jutil]: Downloading https://files.pythonhosted.org/packages/2e/e6/3fdcc7e3736b647cf3ab5609859c19dc656fb6ea44111d0c1c4b5a0f1478/django-jutil-3.9.8.tar.gz
+[2023-05-26 00:10:21] INFO root fetch - processPackages [lifelike]: Downloading https://files.pythonhosted.org/packages/5b/e1/c7524eefec78262332ce4a0f522e8ec22a34ff28bbc1e594c93662262b5e/lifelike-1.0.9.tar.gz
+[2023-05-26 00:10:21] INFO root fetch - processPackages [gscdash]: Downloading https://files.pythonhosted.org/packages/1f/5f/4235cbbb4072978ee57380bc08f819e35d557ef008432cfe208c6e9a4d96/gscdash-0.0.3.tar.gz
+[2023-05-26 00:10:21] INFO root fetch - processPackages [claudia]: executing diffoscope
+[2023-05-26 00:10:21] INFO root fetch - processPackages [claudia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/claudia-0.0.8.tar.gz tmp/claudia-0.0.9.tar.gz --markdown 20230526/c/claudia/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 00:10:21] INFO root fetch - processPackages [gscdash]: executing diffoscope
+[2023-05-26 00:10:21] INFO root fetch - processPackages [gscdash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gscdash-0.0.2.tar.gz tmp/gscdash-0.0.3.tar.gz --markdown 20230526/g/gscdash/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-26 00:10:21] INFO root fetch - processPackages [lifelike]: executing diffoscope
+[2023-05-26 00:10:21] INFO root fetch - processPackages [lifelike]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifelike-1.0.7.tar.gz tmp/lifelike-1.0.9.tar.gz --markdown 20230526/l/lifelike/1.0.7-1.0.9/diff.md --exclude *.pyd
+[2023-05-26 00:10:21] INFO root fetch - processPackages [django-vendor]: Downloading https://files.pythonhosted.org/packages/ee/0a/cecc7b0b39780d9bc8258ef075ed92c67e6c27f9d6069d93b4f0426121fc/django-vendor-0.4.1.tar.gz
+[2023-05-26 00:10:21] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-05-26 00:10:21] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202305252151-py3-none-any.whl.zip tmp/kfish-99.0.202305252205-py3-none-any.whl.zip --markdown 20230526/k/kfish/99.0.202305252151-99.0.202305252205/diff.md --exclude *.pyd
+[2023-05-26 00:10:21] INFO root fetch - processPackages [disfluency-constituency-parser]: Downloading https://files.pythonhosted.org/packages/73/87/0f356629b612bfb467055031ecf60c59991ee2e3f82243808ba5d167bc5d/disfluency_constituency_parser-0.0.8-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-26 00:10:21] INFO root fetch - processPackages [srwpy]: Downloading https://files.pythonhosted.org/packages/17/8d/f862c254bcf0b229f7190a054b9693c19ef565e8f86b6a3406167f4d4e13/srwpy-4.0.0b0-cp39-cp39-win_amd64.whl
+[2023-05-26 00:10:21] INFO root fetch - processPackages [django-vendor]: executing diffoscope
+[2023-05-26 00:10:21] INFO root fetch - processPackages [django-vendor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-vendor-0.4.0.tar.gz tmp/django-vendor-0.4.1.tar.gz --markdown 20230526/d/django-vendor/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-26 00:10:21] INFO root fetch - processPackages [disfluency-constituency-parser]: executing diffoscope
+[2023-05-26 00:10:21] INFO root fetch - processPackages [disfluency-constituency-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/disfluency_constituency_parser-0.0.7-py3-none-any.whl.zip tmp/disfluency_constituency_parser-0.0.8-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230526/d/disfluency-constituency-parser/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-26 00:10:21] WARNING root fetch - processPackages [srwpy]: Skipping package: exceeds size limit 37072118>=10485760
+[2023-05-26 00:10:21] INFO root fetch - processPackages [srwpy]: Start processing: lnschema_bionty
+[2023-05-26 00:10:21] INFO root fetch - main [MainThread]: End processing [srwpy] error
+[2023-05-26 00:10:21] INFO root fetch - processPackages [lnschema_bionty]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-26 00:10:21] INFO root fetch - processPackages [django-jutil]: Downloading https://files.pythonhosted.org/packages/c7/e1/8d217e76e40dfccf488f7ca6bf4ab4dd7d1df5694dbd9b81fe94c00d18fd/django-jutil-3.9.9.tar.gz
+[2023-05-26 00:10:21] INFO root fetch - processPackages [django-jutil]: Downloading https://files.pythonhosted.org/packages/c7/e1/8d217e76e40dfccf488f7ca6bf4ab4dd7d1df5694dbd9b81fe94c00d18fd/django-jutil-3.9.9.tar.gz
+[2023-05-26 00:10:21] INFO root fetch - processPackages [lnschema_bionty]: executing diffoscope
+[2023-05-26 00:10:21] INFO root fetch - processPackages [lnschema_bionty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnschema_bionty-0.8.1.tar.gz tmp/lnschema_bionty-0.9.0.tar.gz --markdown 20230526/l/lnschema_bionty/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-26 00:10:21] INFO root fetch - processPackages [django-jutil]: executing diffoscope
+[2023-05-26 00:10:21] INFO root fetch - processPackages [django-jutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-jutil-3.9.8.tar.gz tmp/django-jutil-3.9.9.tar.gz --markdown 20230526/d/django-jutil/3.9.8-3.9.9/diff.md --exclude *.pyd
+[2023-05-26 00:10:21] INFO root fetch - processPackages [django-jutil]: executing diffoscope
+[2023-05-26 00:10:21] INFO root fetch - processPackages [django-jutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-jutil-3.9.8.tar.gz tmp/django-jutil-3.9.9.tar.gz --markdown 20230526/d/django-jutil/3.9.8-3.9.9/diff.md --exclude *.pyd
+[2023-05-26 00:10:22] INFO root fetch - processPackages [ninia]: Start processing: cybrid-api-id-python
+[2023-05-26 00:10:22] INFO root fetch - main [MainThread]: End processing [ninia]: success
+[2023-05-26 00:10:22] INFO root fetch - processPackages [cybrid-api-id-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-26 00:10:22] INFO root fetch - processPackages [cybrid-api-id-python]: executing diffoscope
+[2023-05-26 00:10:22] INFO root fetch - processPackages [cybrid-api-id-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-id-python-0.9.8.tar.gz tmp/cybrid-api-id-python-0.9.9.tar.gz --markdown 20230526/c/cybrid-api-id-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-26 00:10:23] INFO root fetch - processPackages [kfish]: Start processing: cybrid-api-organization-python
+[2023-05-26 00:10:23] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-05-26 00:10:23] INFO root fetch - processPackages [cybrid-api-organization-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-26 00:10:23] INFO root fetch - processPackages [lifelike]: Start processing: lnschema_lamin1
+[2023-05-26 00:10:23] INFO root fetch - main [MainThread]: End processing [lifelike]: success
+[2023-05-26 00:10:23] INFO root fetch - processPackages [lnschema_lamin1]: New version: [0.17a1] Old Version: [0.16.3]
+[2023-05-26 00:10:23] INFO root fetch - processPackages [cybrid-api-organization-python]: executing diffoscope
+[2023-05-26 00:10:23] INFO root fetch - processPackages [cybrid-api-organization-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-organization-python-0.9.8.tar.gz tmp/cybrid-api-organization-python-0.9.9.tar.gz --markdown 20230526/c/cybrid-api-organization-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-26 00:10:23] INFO root fetch - processPackages [gscdash]: Start processing: pepperize.cdk-serverless-cluster-from-snapshot
+[2023-05-26 00:10:23] INFO root fetch - main [MainThread]: End processing [gscdash]: success
+[2023-05-26 00:10:23] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 00:10:23] INFO root fetch - processPackages [lnschema_lamin1]: Downloading https://files.pythonhosted.org/packages/d2/3a/3d25bc7cfa0c7368cc46ecc800e54d9bc98c148470dd4e4038a1674c90b1/lnschema_lamin1-0.17a1.tar.gz
+[2023-05-26 00:10:23] INFO root fetch - processPackages [lnschema_lamin1]: executing diffoscope
+[2023-05-26 00:10:23] INFO root fetch - processPackages [lnschema_lamin1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnschema_lamin1-0.16.3.tar.gz tmp/lnschema_lamin1-0.17a1.tar.gz --markdown 20230526/l/lnschema_lamin1/0.16.3-0.17a1/diff.md --exclude *.pyd
+[2023-05-26 00:10:23] INFO root fetch - processPackages [lnschema_bionty]: Start processing: cybrid-api-bank-python
+[2023-05-26 00:10:23] INFO root fetch - main [MainThread]: End processing [lnschema_bionty]: success
+[2023-05-26 00:10:23] INFO root fetch - processPackages [cybrid-api-bank-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-26 00:10:23] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: executing diffoscope
+[2023-05-26 00:10:23] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.98.tar.gz tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.99.tar.gz --markdown 20230526/p/pepperize.cdk-serverless-cluster-from-snapshot/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 00:10:23] INFO root fetch - processPackages [cybrid-api-bank-python]: executing diffoscope
+[2023-05-26 00:10:23] INFO root fetch - processPackages [cybrid-api-bank-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-bank-python-0.9.8.tar.gz tmp/cybrid-api-bank-python-0.9.9.tar.gz --markdown 20230526/c/cybrid-api-bank-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-26 00:10:24] INFO root fetch - main [MainThread]: End processing [django-vendor]: success
+[2023-05-26 00:10:24] INFO root fetch - main [MainThread]: End processing [django-jutil]: success
+[2023-05-26 00:10:24] INFO root fetch - main [MainThread]: End processing [claudia]: success
+[2023-05-26 00:10:24] INFO root fetch - main [MainThread]: End processing [django-jutil]: success
+[2023-05-26 00:10:24] INFO root fetch - main [MainThread]: End processing [disfluency-constituency-parser]: success
+[2023-05-26 00:10:25] INFO root fetch - main [MainThread]: End processing [lnschema_lamin1]: success
+[2023-05-26 00:10:25] INFO root fetch - main [MainThread]: End processing [cybrid-api-organization-python]: success
+[2023-05-26 00:10:25] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
+[2023-05-26 00:10:25] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-serverless-cluster-from-snapshot]: success
+[2023-05-26 00:10:29] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
+[2023-05-26 00:10:29] INFO root fetch - main [MainThread]: Store serial: [18253657]
