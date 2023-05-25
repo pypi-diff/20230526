@@ -611,3 +611,78 @@
 [2023-05-26 00:58:15] INFO root fetch - processPackages [unstructured-api-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unstructured_api_tools-0.9.3.tar.gz tmp/unstructured_api_tools-0.9.4.tar.gz --markdown 20230526/u/unstructured-api-tools/0.9.3-0.9.4/diff.md --exclude *.pyd
 [2023-05-26 00:58:16] INFO root fetch - main [MainThread]: End processing [unstructured-api-tools]: success
 [2023-05-26 00:58:16] INFO root fetch - main [MainThread]: Store serial: [18253937]
+[2023-05-26 01:03:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18253937]
+[2023-05-26 01:03:25] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-26 01:03:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbscuid
+[2023-05-26 01:03:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: listoapi
+[2023-05-26 01:03:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aquatemp
+[2023-05-26 01:03:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: luminesce-sdk-preview
+[2023-05-26 01:03:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: phymmr-tools
+[2023-05-26 01:03:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: s2aff
+[2023-05-26 01:03:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo-addon-stock-quant-cost-info
+[2023-05-26 01:03:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mmit
+[2023-05-26 01:03:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tmnt-cu101
+[2023-05-26 01:03:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mdforest
+[2023-05-26 01:03:25] INFO root fetch - processPackages [listoapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 01:03:25] INFO root fetch - processPackages [nbscuid]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-26 01:03:25] INFO root fetch - processPackages [s2aff]: New version: [0.58] Old Version: [0.57]
+[2023-05-26 01:03:25] INFO root fetch - processPackages [mdforest]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-05-26 01:03:25] INFO root fetch - processPackages [mmit]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-26 01:03:25] INFO root fetch - processPackages [odoo-addon-stock-quant-cost-info]: New version: [16.0.1.0.0.2] Old Version: [15.0.1.1.0]
+[2023-05-26 01:03:25] WARNING root fetch - processPackages [aquatemp]: Skipping, unable to determine old version
+[2023-05-26 01:03:25] INFO root fetch - processPackages [aquatemp]: Start processing: flwr-nightly
+[2023-05-26 01:03:25] INFO root fetch - main [MainThread]: End processing [aquatemp] error
+[2023-05-26 01:03:25] INFO root fetch - processPackages [luminesce-sdk-preview]: New version: [1.9.92] Old Version: [1.9.88]
+[2023-05-26 01:03:25] INFO root fetch - processPackages [tmnt-cu101]: New version: [0.7.0b20230525] Old Version: [0.7.0b20230524]
+[2023-05-26 01:03:25] INFO root fetch - processPackages [flwr-nightly]: New version: [1.5.0.dev20230524] Old Version: [1.5.0.dev20230523]
+[2023-05-26 01:03:25] INFO root fetch - processPackages [phymmr-tools]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-26 01:03:25] INFO root fetch - processPackages [luminesce-sdk-preview]: executing diffoscope
+[2023-05-26 01:03:25] INFO root fetch - processPackages [luminesce-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luminesce-sdk-preview-1.9.88.tar.gz tmp/luminesce-sdk-preview-1.9.92.tar.gz --markdown 20230526/l/luminesce-sdk-preview/1.9.88-1.9.92/diff.md --exclude *.pyd
+[2023-05-26 01:03:25] INFO root fetch - processPackages [mdforest]: executing diffoscope
+[2023-05-26 01:03:25] INFO root fetch - processPackages [mdforest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdforest-1.5.1.tar.gz tmp/mdforest-1.5.2.tar.gz --markdown 20230526/m/mdforest/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-05-26 01:03:25] INFO root fetch - processPackages [odoo-addon-stock-quant-cost-info]: Downloading https://files.pythonhosted.org/packages/6f/23/c72025127e1255bec2c20180a2aab0cec9d8fe55fc19cb749d47e27b3e4e/odoo_addon_stock_quant_cost_info-15.0.1.1.0-py3-none-any.whl
+[2023-05-26 01:03:25] INFO root fetch - processPackages [listoapi]: Downloading https://files.pythonhosted.org/packages/80/bb/9db2635f6ee0a56c1ff5807c83ed5dd96380c1b2331cc46a924a11578b03/listoapi-0.1.8.tar.gz
+[2023-05-26 01:03:25] INFO root fetch - processPackages [s2aff]: Downloading https://files.pythonhosted.org/packages/b7/bc/16f11eb0bebdfb1f639012617a83cc06382a36bcfdd8d32fffcbf1403974/s2aff-0.58.tar.gz
+[2023-05-26 01:03:25] INFO root fetch - processPackages [phymmr-tools]: executing diffoscope
+[2023-05-26 01:03:25] INFO root fetch - processPackages [phymmr-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phymmr_tools-0.4.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/phymmr_tools-0.4.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230526/p/phymmr-tools/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-05-26 01:03:25] INFO root fetch - processPackages [tmnt-cu101]: Downloading https://files.pythonhosted.org/packages/d3/70/2253261c01bfa9698863c5e84ec59fde151df65116b977bdd7c7d6de6e37/tmnt-cu101-0.7.0b20230525.tar.gz
+[2023-05-26 01:03:25] INFO root fetch - processPackages [s2aff]: executing diffoscope
+[2023-05-26 01:03:25] INFO root fetch - processPackages [s2aff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/s2aff-0.57.tar.gz tmp/s2aff-0.58.tar.gz --markdown 20230526/s/s2aff/0.57-0.58/diff.md --exclude *.pyd
+[2023-05-26 01:03:25] INFO root fetch - processPackages [nbscuid]: Downloading https://files.pythonhosted.org/packages/c1/38/d5550f6363a004f039f5672197995877b94ac1d27736f395d93ec3da2f4d/nbscuid-0.0.8.tar.gz
+[2023-05-26 01:03:25] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/7b/3f/159084a183404145ea0cbaa061d97ac4830d44e076c7cdff0b5c0d93ac15/flwr_nightly-1.5.0.dev20230524.tar.gz
+[2023-05-26 01:03:25] INFO root fetch - processPackages [mmit]: Downloading https://files.pythonhosted.org/packages/8e/55/b5f2c5e606056fd54480f7ea3e7d58dec20249fd1278d4a041e16ebdfdb2/mmit-0.2.0.tar.gz
+[2023-05-26 01:03:25] INFO root fetch - processPackages [nbscuid]: executing diffoscope
+[2023-05-26 01:03:25] INFO root fetch - processPackages [nbscuid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbscuid-0.0.7.tar.gz tmp/nbscuid-0.0.8.tar.gz --markdown 20230526/n/nbscuid/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-26 01:03:25] INFO root fetch - processPackages [flwr-nightly]: executing diffoscope
+[2023-05-26 01:03:25] INFO root fetch - processPackages [flwr-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flwr_nightly-1.5.0.dev20230523.tar.gz tmp/flwr_nightly-1.5.0.dev20230524.tar.gz --markdown 20230526/f/flwr-nightly/1.5.0.dev20230523-1.5.0.dev20230524/diff.md --exclude *.pyd
+[2023-05-26 01:03:25] INFO root fetch - processPackages [tmnt-cu101]: executing diffoscope
+[2023-05-26 01:03:25] INFO root fetch - processPackages [tmnt-cu101]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-cu101-0.7.0b20230524.tar.gz tmp/tmnt-cu101-0.7.0b20230525.tar.gz --markdown 20230526/t/tmnt-cu101/0.7.0b20230524-0.7.0b20230525/diff.md --exclude *.pyd
+[2023-05-26 01:03:25] INFO root fetch - processPackages [odoo-addon-stock-quant-cost-info]: Downloading https://files.pythonhosted.org/packages/dd/14/136c0239928d0b1d05f365e52fe52baee94e24e646fb13591a23848391f1/odoo_addon_stock_quant_cost_info-16.0.1.0.0.2-py3-none-any.whl
+[2023-05-26 01:03:25] INFO root fetch - processPackages [listoapi]: Downloading https://files.pythonhosted.org/packages/f4/02/5254e5700dfa2a28394507f0196316a5d34a77b3391bdd6211760370acff/listoapi-0.1.9.tar.gz
+[2023-05-26 01:03:25] INFO root fetch - processPackages [mmit]: executing diffoscope
+[2023-05-26 01:03:25] INFO root fetch - processPackages [mmit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmit-0.1.0.tar.gz tmp/mmit-0.2.0.tar.gz --markdown 20230526/m/mmit/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-26 01:03:25] INFO root fetch - processPackages [odoo-addon-stock-quant-cost-info]: executing diffoscope
+[2023-05-26 01:03:25] INFO root fetch - processPackages [odoo-addon-stock-quant-cost-info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_quant_cost_info-15.0.1.1.0-py3-none-any.whl.zip tmp/odoo_addon_stock_quant_cost_info-16.0.1.0.0.2-py3-none-any.whl.zip --markdown 20230526/o/odoo-addon-stock-quant-cost-info/15.0.1.1.0-16.0.1.0.0.2/diff.md --exclude *.pyd
+[2023-05-26 01:03:25] INFO root fetch - processPackages [listoapi]: executing diffoscope
+[2023-05-26 01:03:25] INFO root fetch - processPackages [listoapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/listoapi-0.1.8.tar.gz tmp/listoapi-0.1.9.tar.gz --markdown 20230526/l/listoapi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 01:03:26] INFO root fetch - processPackages [mdforest]: Start processing: hades-cli
+[2023-05-26 01:03:26] INFO root fetch - main [MainThread]: End processing [mdforest]: success
+[2023-05-26 01:03:26] INFO root fetch - processPackages [hades-cli]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-26 01:03:27] INFO root fetch - processPackages [hades-cli]: executing diffoscope
+[2023-05-26 01:03:27] INFO root fetch - processPackages [hades-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hades-cli-0.0.3.tar.gz tmp/hades-cli-0.0.4.tar.gz --markdown 20230526/h/hades-cli/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-26 01:03:27] INFO root fetch - processPackages [nbscuid]: Start processing: tmnt
+[2023-05-26 01:03:27] INFO root fetch - main [MainThread]: End processing [nbscuid]: success
+[2023-05-26 01:03:27] INFO root fetch - processPackages [tmnt]: New version: [0.7.0b20230524] Old Version: [0.7.0b20230523]
+[2023-05-26 01:03:27] INFO root fetch - main [MainThread]: End processing [luminesce-sdk-preview]: success
+[2023-05-26 01:03:27] INFO root fetch - main [MainThread]: End processing [tmnt-cu101]: success
+[2023-05-26 01:03:27] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2023-05-26 01:03:27] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.0b20230523.tar.gz tmp/tmnt-0.7.0b20230524.tar.gz --markdown 20230526/t/tmnt/0.7.0b20230523-0.7.0b20230524/diff.md --exclude *.pyd
+[2023-05-26 01:03:28] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-quant-cost-info]: success
+[2023-05-26 01:03:28] INFO root fetch - main [MainThread]: End processing [s2aff]: success
+[2023-05-26 01:03:28] INFO root fetch - main [MainThread]: End processing [mmit]: success
+[2023-05-26 01:03:28] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
+[2023-05-26 01:03:28] INFO root fetch - main [MainThread]: End processing [hades-cli]: success
+[2023-05-26 01:03:29] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2023-05-26 01:03:29] INFO root fetch - main [MainThread]: End processing [listoapi]: success
+[2023-05-26 01:03:43] INFO root fetch - main [MainThread]: End processing [phymmr-tools]: success
+[2023-05-26 01:03:43] INFO root fetch - main [MainThread]: Store serial: [18253988]
