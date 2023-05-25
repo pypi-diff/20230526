@@ -726,3 +726,35 @@
 [2023-05-26 01:08:55] INFO root fetch - main [MainThread]: End processing [quick-batch]: success
 [2023-05-26 01:08:55] INFO root fetch - main [MainThread]: End processing [ORForise]: success
 [2023-05-26 01:08:55] INFO root fetch - main [MainThread]: Store serial: [18254007]
+[2023-05-26 01:13:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18254007]
+[2023-05-26 01:14:04] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-26 01:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hades-cli
+[2023-05-26 01:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-spotinst
+[2023-05-26 01:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anyscale
+[2023-05-26 01:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scrippy-remote
+[2023-05-26 01:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: playgroundrl
+[2023-05-26 01:14:04] INFO root fetch - processPackages [hades-cli]: New version: [0.0.5.1] Old Version: [0.0.5]
+[2023-05-26 01:14:04] INFO root fetch - processPackages [scrippy-remote]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-26 01:14:04] INFO root fetch - processPackages [playgroundrl]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-26 01:14:04] INFO root fetch - processPackages [pulumi-spotinst]: New version: [3.9.0a1633346805] Old Version: [3.9.0]
+[2023-05-26 01:14:04] INFO root fetch - processPackages [anyscale]: New version: [0.5.99] Old Version: [0.5.98]
+[2023-05-26 01:14:04] INFO root fetch - processPackages [hades-cli]: Downloading https://files.pythonhosted.org/packages/b3/8b/16409b59d1a75e570d6106061d6b20b2f8e100ef37205acb7392c8edc7e1/hades-cli-0.0.5.tar.gz
+[2023-05-26 01:14:04] INFO root fetch - processPackages [playgroundrl]: executing diffoscope
+[2023-05-26 01:14:04] INFO root fetch - processPackages [playgroundrl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/playgroundrl-0.0.7.tar.gz tmp/playgroundrl-0.0.8.tar.gz --markdown 20230526/p/playgroundrl/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-26 01:14:04] INFO root fetch - processPackages [anyscale]: executing diffoscope
+[2023-05-26 01:14:04] INFO root fetch - processPackages [anyscale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anyscale-0.5.98.tar.gz tmp/anyscale-0.5.99.tar.gz --markdown 20230526/a/anyscale/0.5.98-0.5.99/diff.md --exclude *.pyd
+[2023-05-26 01:14:04] INFO root fetch - processPackages [scrippy-remote]: Downloading https://files.pythonhosted.org/packages/e3/8a/ce8813f43c146ad84dbd917f544b59f945506a37859999de12d4ff668d38/scrippy-remote-2.0.8.tar.gz
+[2023-05-26 01:14:04] INFO root fetch - processPackages [hades-cli]: Downloading https://files.pythonhosted.org/packages/ae/19/689bba8d40c3320f75d44c6f67a7d1ecec287fa08eb6ab5be40c6bc42a20/hades-cli-0.0.5.1.tar.gz
+[2023-05-26 01:14:04] INFO root fetch - processPackages [pulumi-spotinst]: executing diffoscope
+[2023-05-26 01:14:04] INFO root fetch - processPackages [pulumi-spotinst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_spotinst-3.9.0.tar.gz tmp/pulumi_spotinst-3.9.0a1633346805.tar.gz --markdown 20230526/p/pulumi-spotinst/3.9.0-3.9.0a1633346805/diff.md --exclude *.pyd
+[2023-05-26 01:14:05] INFO root fetch - processPackages [scrippy-remote]: Downloading https://files.pythonhosted.org/packages/67/86/2b23ee08b2150288ed6519306392b72799f028d2f7943aee9a3cc4495e66/scrippy-remote-2.0.9.tar.gz
+[2023-05-26 01:14:05] INFO root fetch - processPackages [hades-cli]: executing diffoscope
+[2023-05-26 01:14:05] INFO root fetch - processPackages [hades-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hades-cli-0.0.5.tar.gz tmp/hades-cli-0.0.5.1.tar.gz --markdown 20230526/h/hades-cli/0.0.5-0.0.5.1/diff.md --exclude *.pyd
+[2023-05-26 01:14:05] INFO root fetch - processPackages [scrippy-remote]: executing diffoscope
+[2023-05-26 01:14:05] INFO root fetch - processPackages [scrippy-remote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrippy-remote-2.0.8.tar.gz tmp/scrippy-remote-2.0.9.tar.gz --markdown 20230526/s/scrippy-remote/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-26 01:14:05] INFO root fetch - main [MainThread]: End processing [playgroundrl]: success
+[2023-05-26 01:14:06] INFO root fetch - main [MainThread]: End processing [hades-cli]: success
+[2023-05-26 01:14:06] INFO root fetch - main [MainThread]: End processing [scrippy-remote]: success
+[2023-05-26 01:14:06] INFO root fetch - main [MainThread]: End processing [pulumi-spotinst]: success
+[2023-05-26 01:14:15] INFO root fetch - main [MainThread]: End processing [anyscale]: success
+[2023-05-26 01:14:15] INFO root fetch - main [MainThread]: Store serial: [18254021]
