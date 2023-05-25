@@ -686,3 +686,43 @@
 [2023-05-26 01:03:29] INFO root fetch - main [MainThread]: End processing [listoapi]: success
 [2023-05-26 01:03:43] INFO root fetch - main [MainThread]: End processing [phymmr-tools]: success
 [2023-05-26 01:03:43] INFO root fetch - main [MainThread]: Store serial: [18253988]
+[2023-05-26 01:08:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18253988]
+[2023-05-26 01:08:53] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-26 01:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aind-data-schema
+[2023-05-26 01:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hordelib
+[2023-05-26 01:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quick-batch
+[2023-05-26 01:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rivian-python-client
+[2023-05-26 01:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pepperize.cdk-ses-smtp-credentials
+[2023-05-26 01:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ORForise
+[2023-05-26 01:08:53] INFO root fetch - processPackages [aind-data-schema]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-26 01:08:53] INFO root fetch - processPackages [rivian-python-client]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-26 01:08:53] INFO root fetch - processPackages [hordelib]: New version: [1.3.6] Old Version: [1.3.5]
+[2023-05-26 01:08:53] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: New version: [0.3.335] Old Version: [0.3.334]
+[2023-05-26 01:08:53] INFO root fetch - processPackages [quick-batch]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-26 01:08:53] INFO root fetch - processPackages [ORForise]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-05-26 01:08:53] INFO root fetch - processPackages [quick-batch]: Downloading https://files.pythonhosted.org/packages/ff/dd/a2a250d7a71e681244246812ff68a313d3132ea7aa94e337a771fce1e7e6/quick_batch-0.1.4.tar.gz
+[2023-05-26 01:08:53] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Downloading https://files.pythonhosted.org/packages/40/94/2a45f1bd173e244facfef5a61de1767d3c0a23144f1e372a747a7d9c658e/pepperize.cdk-ses-smtp-credentials-0.3.334.tar.gz
+[2023-05-26 01:08:53] INFO root fetch - processPackages [hordelib]: Downloading https://files.pythonhosted.org/packages/a8/09/64b823a7afda1b158603836f999e23a8175d8358a7c051484ebf297e4efe/hordelib-1.3.5.tar.gz
+[2023-05-26 01:08:53] INFO root fetch - processPackages [ORForise]: Downloading https://files.pythonhosted.org/packages/bd/5f/64a7806f085748708f38c2317ff3d18df89a058424a5a714734bbd7cd45b/ORForise-1.4.0.tar.gz
+[2023-05-26 01:08:53] WARNING root fetch - processPackages [hordelib]: Skipping package: exceeds size limit 52354059>=10485760
+[2023-05-26 01:08:53] INFO root fetch - main [MainThread]: End processing [hordelib] error
+[2023-05-26 01:08:53] INFO root fetch - processPackages [aind-data-schema]: executing diffoscope
+[2023-05-26 01:08:53] INFO root fetch - processPackages [aind-data-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aind-data-schema-0.9.5.tar.gz tmp/aind-data-schema-0.9.6.tar.gz --markdown 20230526/a/aind-data-schema/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-26 01:08:53] INFO root fetch - processPackages [rivian-python-client]: Downloading https://files.pythonhosted.org/packages/78/b7/7c2f7288f882dc063824b4673cd6fba5b021232bd988c9a09e252f2b0ab0/rivian_python_client-0.2.3.tar.gz
+[2023-05-26 01:08:53] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Downloading https://files.pythonhosted.org/packages/a5/f3/4c99661617d7bada353df1f8b2ed7784ff1688a517cc7d1e68e941b0a598/pepperize.cdk-ses-smtp-credentials-0.3.335.tar.gz
+[2023-05-26 01:08:53] INFO root fetch - processPackages [quick-batch]: Downloading https://files.pythonhosted.org/packages/59/65/b8f968484f306afeaf4c39054e0295ec6a3b108b585360924f663a411fcd/quick_batch-0.1.5.tar.gz
+[2023-05-26 01:08:53] INFO root fetch - processPackages [rivian-python-client]: executing diffoscope
+[2023-05-26 01:08:53] INFO root fetch - processPackages [rivian-python-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rivian_python_client-0.2.2.tar.gz tmp/rivian_python_client-0.2.3.tar.gz --markdown 20230526/r/rivian-python-client/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-26 01:08:53] INFO root fetch - processPackages [ORForise]: Downloading https://files.pythonhosted.org/packages/69/f6/cc1d18829be717e76131b3db50a2ddc7b60f975dac7600870ec7c295fd44/ORForise-1.4.1.tar.gz
+[2023-05-26 01:08:53] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: executing diffoscope
+[2023-05-26 01:08:53] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ses-smtp-credentials-0.3.334.tar.gz tmp/pepperize.cdk-ses-smtp-credentials-0.3.335.tar.gz --markdown 20230526/p/pepperize.cdk-ses-smtp-credentials/0.3.334-0.3.335/diff.md --exclude *.pyd
+[2023-05-26 01:08:53] INFO root fetch - processPackages [quick-batch]: executing diffoscope
+[2023-05-26 01:08:53] INFO root fetch - processPackages [quick-batch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quick_batch-0.1.4.tar.gz tmp/quick_batch-0.1.5.tar.gz --markdown 20230526/q/quick-batch/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-26 01:08:54] INFO root fetch - processPackages [ORForise]: executing diffoscope
+[2023-05-26 01:08:54] INFO root fetch - processPackages [ORForise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ORForise-1.4.0.tar.gz tmp/ORForise-1.4.1.tar.gz --markdown 20230526/O/ORForise/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-05-26 01:08:55] INFO root fetch - main [MainThread]: End processing [rivian-python-client]: success
+[2023-05-26 01:08:55] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-ses-smtp-credentials]: success
+[2023-05-26 01:08:55] INFO root fetch - main [MainThread]: End processing [aind-data-schema]: success
+[2023-05-26 01:08:55] INFO root fetch - main [MainThread]: End processing [quick-batch]: success
+[2023-05-26 01:08:55] INFO root fetch - main [MainThread]: End processing [ORForise]: success
+[2023-05-26 01:08:55] INFO root fetch - main [MainThread]: Store serial: [18254007]
