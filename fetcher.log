@@ -862,3 +862,33 @@
 [2023-05-26 01:24:40] INFO root fetch - main [MainThread]: End processing [edpm]: success
 [2023-05-26 01:24:41] INFO root fetch - main [MainThread]: End processing [whylogs]: success
 [2023-05-26 01:24:41] INFO root fetch - main [MainThread]: Store serial: [18254084]
+[2023-05-26 01:29:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18254084]
+[2023-05-26 01:29:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-26 01:29:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ssg-ada-course-search
+[2023-05-26 01:29:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-solo
+[2023-05-26 01:29:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aij
+[2023-05-26 01:29:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vl-convert-python
+[2023-05-26 01:29:50] INFO root fetch - processPackages [django-solo]: New version: [2.1.0] Old Version: [2.0.0]
+[2023-05-26 01:29:50] INFO root fetch - processPackages [aij]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-26 01:29:50] INFO root fetch - processPackages [ssg-ada-course-search]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-26 01:29:50] INFO root fetch - processPackages [vl-convert-python]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-26 01:29:50] INFO root fetch - processPackages [aij]: Downloading https://files.pythonhosted.org/packages/4e/4f/1499888c7b384b3a1145594c2421df75cdc221fd184e0d56221f54fff9b3/aij-1.1.3.tar.gz
+[2023-05-26 01:29:50] INFO root fetch - processPackages [django-solo]: Downloading https://files.pythonhosted.org/packages/78/1a/3541daf9dbcefd041c64d9b06248522177165a7156746b7e1c1c7cf78ac8/django-solo-2.0.0.tar.gz
+[2023-05-26 01:29:50] INFO root fetch - processPackages [ssg-ada-course-search]: Downloading https://files.pythonhosted.org/packages/47/66/1b5d7bc4e8218d3fea5025376086029a0bacde7154d158973a4af9904e81/ssg-ada-course-search-0.0.1.tar.gz
+[2023-05-26 01:29:50] INFO root fetch - processPackages [aij]: executing diffoscope
+[2023-05-26 01:29:50] INFO root fetch - processPackages [aij]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aij-1.1.2.tar.gz tmp/aij-1.1.3.tar.gz --markdown 20230526/a/aij/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-26 01:29:50] INFO root fetch - processPackages [vl-convert-python]: Downloading https://files.pythonhosted.org/packages/64/cc/eecb15b1a2cc6fd37fb5a3af89faa3bb0f6c5c588dda5887002df1c67241/vl_convert_python-0.8.1.tar.gz
+[2023-05-26 01:29:50] INFO root fetch - processPackages [django-solo]: Downloading https://files.pythonhosted.org/packages/f4/45/28d9d559dea43a218ab66be740a4585dafd753dae86e1005681aafddefba/django-solo-2.1.0.tar.gz
+[2023-05-26 01:29:50] INFO root fetch - processPackages [ssg-ada-course-search]: Downloading https://files.pythonhosted.org/packages/44/c4/02d5c092cb7af770b4c12b7dd9855a33c76138a3c22ca736d52a89ee9609/ssg-ada-course-search-0.0.2.tar.gz
+[2023-05-26 01:29:50] INFO root fetch - processPackages [django-solo]: executing diffoscope
+[2023-05-26 01:29:50] INFO root fetch - processPackages [django-solo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-solo-2.0.0.tar.gz tmp/django-solo-2.1.0.tar.gz --markdown 20230526/d/django-solo/2.0.0-2.1.0/diff.md --exclude *.pyd
+[2023-05-26 01:29:50] INFO root fetch - processPackages [ssg-ada-course-search]: executing diffoscope
+[2023-05-26 01:29:50] INFO root fetch - processPackages [ssg-ada-course-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssg-ada-course-search-0.0.1.tar.gz tmp/ssg-ada-course-search-0.0.2.tar.gz --markdown 20230526/s/ssg-ada-course-search/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-26 01:29:51] INFO root fetch - main [MainThread]: End processing [aij]: success
+[2023-05-26 01:29:52] INFO root fetch - main [MainThread]: End processing [django-solo]: success
+[2023-05-26 01:29:52] INFO root fetch - processPackages [vl-convert-python]: Downloading https://files.pythonhosted.org/packages/2c/5e/b6ef3a0bd418911bc9813078e2373acb839085abe1ef6df34b9c045df500/vl_convert_python-0.9.0.tar.gz
+[2023-05-26 01:29:52] INFO root fetch - main [MainThread]: End processing [ssg-ada-course-search]: success
+[2023-05-26 01:29:52] INFO root fetch - processPackages [vl-convert-python]: executing diffoscope
+[2023-05-26 01:29:52] INFO root fetch - processPackages [vl-convert-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vl_convert_python-0.8.1.tar.gz tmp/vl_convert_python-0.9.0.tar.gz --markdown 20230526/v/vl-convert-python/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-26 01:31:01] INFO root fetch - main [MainThread]: End processing [vl-convert-python]: success
+[2023-05-26 01:31:01] INFO root fetch - main [MainThread]: Store serial: [18254100]
