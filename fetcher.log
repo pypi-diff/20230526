@@ -1,0 +1,109 @@
+[2023-05-26 00:04:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18253546]
+[2023-05-26 00:05:01] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-26 00:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hashkern
+[2023-05-26 00:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: isqrt
+[2023-05-26 00:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: text-grade
+[2023-05-26 00:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: assemblyline-service-client
+[2023-05-26 00:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: assemblyline-service-server
+[2023-05-26 00:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: assemblyline-ui
+[2023-05-26 00:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: assemblyline-v4-service
+[2023-05-26 00:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: assemblyline
+[2023-05-26 00:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: assemblyline-core
+[2023-05-26 00:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: faker-cli
+[2023-05-26 00:05:01] WARNING root fetch - processPackages [text-grade]: Skipping, unable to determine old version
+[2023-05-26 00:05:01] INFO root fetch - processPackages [text-grade]: Start processing: specmatic
+[2023-05-26 00:05:01] INFO root fetch - main [MainThread]: End processing [text-grade] error
+[2023-05-26 00:05:01] INFO root fetch - processPackages [hashkern]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-26 00:05:01] INFO root fetch - processPackages [isqrt]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-05-26 00:05:01] INFO root fetch - processPackages [assemblyline-service-server]: New version: [4.4.1.dev94] Old Version: [4.4.1.dev9]
+[2023-05-26 00:05:01] INFO root fetch - processPackages [faker-cli]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-26 00:05:01] INFO root fetch - processPackages [assemblyline]: New version: [4.4.1.dev94] Old Version: [4.4.1.dev9]
+[2023-05-26 00:05:01] INFO root fetch - processPackages [assemblyline-v4-service]: New version: [4.4.1.dev94] Old Version: [4.4.1.dev9]
+[2023-05-26 00:05:01] INFO root fetch - processPackages [assemblyline-service-client]: New version: [4.4.1.dev94] Old Version: [4.4.1.dev9]
+[2023-05-26 00:05:01] INFO root fetch - processPackages [specmatic]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-05-26 00:05:01] INFO root fetch - processPackages [assemblyline-core]: New version: [4.4.1.dev94] Old Version: [4.4.1.dev9]
+[2023-05-26 00:05:01] INFO root fetch - processPackages [assemblyline-ui]: New version: [4.4.1.dev94] Old Version: [4.4.1.dev9]
+[2023-05-26 00:05:01] INFO root fetch - processPackages [isqrt]: Downloading https://files.pythonhosted.org/packages/14/12/71643fc318fa3c7d71e019a5198850b52008fb9f20c39066c2afdac75908/isqrt-1.0.2.tar.gz
+[2023-05-26 00:05:01] INFO root fetch - processPackages [faker-cli]: Downloading https://files.pythonhosted.org/packages/55/89/4933becd0f13814cbbdc00e73b0ec6c5c71355f8c4ee0cca661b248967fe/faker_cli-0.0.3.tar.gz
+[2023-05-26 00:05:01] INFO root fetch - processPackages [assemblyline-service-server]: Downloading https://files.pythonhosted.org/packages/2e/ef/86d001cc5df366229b5d36b910bebe43a7e821cff39cbc33d595ca9893db/assemblyline_service_server-4.4.1.dev94-py3-none-any.whl
+[2023-05-26 00:05:01] INFO root fetch - processPackages [hashkern]: Downloading https://files.pythonhosted.org/packages/73/d6/ae7ef8326e5df8533403d9394f8121453078aa86bd9147927c12294af63d/hashkern-0.3.3.tar.gz
+[2023-05-26 00:05:01] INFO root fetch - processPackages [specmatic]: Downloading https://files.pythonhosted.org/packages/db/b3/4767ab9a4e6968a3a15636d9e52c2e6c855a947f6cfc1e5ef52526549498/specmatic-0.6.0.tar.gz
+[2023-05-26 00:05:01] WARNING root fetch - processPackages [specmatic]: Skipping package: exceeds size limit 79089024>=10485760
+[2023-05-26 00:05:01] INFO root fetch - processPackages [specmatic]: Start processing: kcli
+[2023-05-26 00:05:01] INFO root fetch - main [MainThread]: End processing [specmatic] error
+[2023-05-26 00:05:01] INFO root fetch - processPackages [assemblyline]: Downloading https://files.pythonhosted.org/packages/da/82/416f93729f505db34ec77547dcb797124818875669bed6c1b345377300bd/assemblyline-4.4.1.dev94.tar.gz
+[2023-05-26 00:05:01] INFO root fetch - processPackages [assemblyline-service-server]: executing diffoscope
+[2023-05-26 00:05:01] INFO root fetch - processPackages [assemblyline-service-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_service_server-4.4.1.dev9-py3-none-any.whl.zip tmp/assemblyline_service_server-4.4.1.dev94-py3-none-any.whl.zip --markdown 20230526/a/assemblyline-service-server/4.4.1.dev9-4.4.1.dev94/diff.md --exclude *.pyd
+[2023-05-26 00:05:01] INFO root fetch - processPackages [assemblyline-service-client]: Downloading https://files.pythonhosted.org/packages/80/bd/6c22b423ac82a89a39276c96439e9c06a57eed597782a0717d34e9a28f3e/assemblyline_service_client-4.4.1.dev94-py3-none-any.whl
+[2023-05-26 00:05:01] INFO root fetch - processPackages [hashkern]: executing diffoscope
+[2023-05-26 00:05:01] INFO root fetch - processPackages [hashkern]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hashkern-0.3.2.tar.gz tmp/hashkern-0.3.3.tar.gz --markdown 20230526/h/hashkern/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-26 00:05:01] INFO root fetch - processPackages [assemblyline-core]: Downloading https://files.pythonhosted.org/packages/4c/4b/fc195cffd9e49b8c28f480f1a3cf6caf4931cecbf16660a1dad5979fec37/assemblyline-core-4.4.1.dev94.tar.gz
+[2023-05-26 00:05:01] INFO root fetch - processPackages [assemblyline-v4-service]: Downloading https://files.pythonhosted.org/packages/59/1b/f560a6cbb34900b942ccfca5c62adea81bfcf60a1ccc54296f27addfb1f5/assemblyline_v4_service-4.4.1.dev94-py3-none-any.whl
+[2023-05-26 00:05:01] INFO root fetch - processPackages [faker-cli]: Downloading https://files.pythonhosted.org/packages/7f/ae/d50b4e7029291b83aedc215f6c7e6fb9abba907d3281cea157df01f15839/faker_cli-0.0.4.tar.gz
+[2023-05-26 00:05:01] INFO root fetch - processPackages [kcli]: New version: [99.0.202305252202] Old Version: [99.0.202305252148]
+[2023-05-26 00:05:01] INFO root fetch - processPackages [assemblyline-ui]: Downloading https://files.pythonhosted.org/packages/bc/ac/c6401cd254596b307c898da4031a0cc37450594d5753247f7935d468fdb1/assemblyline_ui-4.4.1.dev94-py3-none-any.whl
+[2023-05-26 00:05:01] INFO root fetch - processPackages [assemblyline]: executing diffoscope
+[2023-05-26 00:05:01] INFO root fetch - processPackages [assemblyline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline-4.4.1.dev9.tar.gz tmp/assemblyline-4.4.1.dev94.tar.gz --markdown 20230526/a/assemblyline/4.4.1.dev9-4.4.1.dev94/diff.md --exclude *.pyd
+[2023-05-26 00:05:01] INFO root fetch - processPackages [assemblyline-service-client]: executing diffoscope
+[2023-05-26 00:05:01] INFO root fetch - processPackages [assemblyline-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_service_client-4.4.1.dev9-py3-none-any.whl.zip tmp/assemblyline_service_client-4.4.1.dev94-py3-none-any.whl.zip --markdown 20230526/a/assemblyline-service-client/4.4.1.dev9-4.4.1.dev94/diff.md --exclude *.pyd
+[2023-05-26 00:05:01] INFO root fetch - processPackages [assemblyline-core]: executing diffoscope
+[2023-05-26 00:05:01] INFO root fetch - processPackages [assemblyline-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline-core-4.4.1.dev9.tar.gz tmp/assemblyline-core-4.4.1.dev94.tar.gz --markdown 20230526/a/assemblyline-core/4.4.1.dev9-4.4.1.dev94/diff.md --exclude *.pyd
+[2023-05-26 00:05:01] INFO root fetch - processPackages [isqrt]: Downloading https://files.pythonhosted.org/packages/48/1d/2e0bab86c007667a8ba39146a7265fb11307a8b04dd554347d3bc0cc798b/isqrt-1.1.0.tar.gz
+[2023-05-26 00:05:01] INFO root fetch - processPackages [assemblyline-v4-service]: executing diffoscope
+[2023-05-26 00:05:01] INFO root fetch - processPackages [assemblyline-v4-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_v4_service-4.4.1.dev9-py3-none-any.whl.zip tmp/assemblyline_v4_service-4.4.1.dev94-py3-none-any.whl.zip --markdown 20230526/a/assemblyline-v4-service/4.4.1.dev9-4.4.1.dev94/diff.md --exclude *.pyd
+[2023-05-26 00:05:01] INFO root fetch - processPackages [assemblyline-ui]: executing diffoscope
+[2023-05-26 00:05:01] INFO root fetch - processPackages [assemblyline-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_ui-4.4.1.dev9-py3-none-any.whl.zip tmp/assemblyline_ui-4.4.1.dev94-py3-none-any.whl.zip --markdown 20230526/a/assemblyline-ui/4.4.1.dev9-4.4.1.dev94/diff.md --exclude *.pyd
+[2023-05-26 00:05:01] INFO root fetch - processPackages [faker-cli]: executing diffoscope
+[2023-05-26 00:05:01] INFO root fetch - processPackages [faker-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faker_cli-0.0.3.tar.gz tmp/faker_cli-0.0.4.tar.gz --markdown 20230526/f/faker-cli/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-26 00:05:01] INFO root fetch - processPackages [isqrt]: executing diffoscope
+[2023-05-26 00:05:01] INFO root fetch - processPackages [isqrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isqrt-1.0.2.tar.gz tmp/isqrt-1.1.0.tar.gz --markdown 20230526/i/isqrt/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-05-26 00:05:02] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/f6/a3/df59a6384592dccddc10c174384044a40a2c256143424657c0580029a094/kcli-99.0.202305252202-py3-none-any.whl
+[2023-05-26 00:05:02] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-05-26 00:05:02] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202305252148-py3-none-any.whl.zip tmp/kcli-99.0.202305252202-py3-none-any.whl.zip --markdown 20230526/k/kcli/99.0.202305252148-99.0.202305252202/diff.md --exclude *.pyd
+[2023-05-26 00:05:03] INFO root fetch - processPackages [assemblyline-service-server]: Start processing: lndb
+[2023-05-26 00:05:03] INFO root fetch - main [MainThread]: End processing [assemblyline-service-server]: success
+[2023-05-26 00:05:03] INFO root fetch - processPackages [lndb]: New version: [0.45a1] Old Version: [0.44.7]
+[2023-05-26 00:05:03] INFO root fetch - processPackages [hashkern]: Start processing: dbt-bigquery
+[2023-05-26 00:05:03] INFO root fetch - main [MainThread]: End processing [hashkern]: success
+[2023-05-26 00:05:03] INFO root fetch - processPackages [lndb]: Downloading https://files.pythonhosted.org/packages/cb/94/05112bb628d2f87a5448261faa6f968886fb922c998564a0ce975ed8e1a9/lndb-0.44.7.tar.gz
+[2023-05-26 00:05:03] INFO root fetch - processPackages [dbt-bigquery]: New version: [1.6.0b2] Old Version: [1.6.0b1]
+[2023-05-26 00:05:03] INFO root fetch - processPackages [assemblyline-service-client]: Start processing: python-equilibrium
+[2023-05-26 00:05:03] INFO root fetch - main [MainThread]: End processing [assemblyline-service-client]: success
+[2023-05-26 00:05:03] INFO root fetch - processPackages [python-equilibrium]: New version: [0.5.0] Old Version: [0.4.0.post0]
+[2023-05-26 00:05:03] INFO root fetch - processPackages [lndb]: Downloading https://files.pythonhosted.org/packages/c5/5f/11e542566cbef992a98bd8f5119f493d03631cbe315b4dda22627ce5f502/lndb-0.45a1.tar.gz
+[2023-05-26 00:05:03] INFO root fetch - processPackages [lndb]: executing diffoscope
+[2023-05-26 00:05:03] INFO root fetch - processPackages [lndb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lndb-0.44.7.tar.gz tmp/lndb-0.45a1.tar.gz --markdown 20230526/l/lndb/0.44.7-0.45a1/diff.md --exclude *.pyd
+[2023-05-26 00:05:03] INFO root fetch - processPackages [dbt-bigquery]: Downloading https://files.pythonhosted.org/packages/b5/e1/115512b936351ea5a0d69a3d92bc1470092e53c6fd2f76e38573e86b589e/dbt-bigquery-1.6.0b2.tar.gz
+[2023-05-26 00:05:03] INFO root fetch - processPackages [isqrt]: Start processing: fovus
+[2023-05-26 00:05:03] INFO root fetch - main [MainThread]: End processing [isqrt]: success
+[2023-05-26 00:05:04] INFO root fetch - processPackages [dbt-bigquery]: executing diffoscope
+[2023-05-26 00:05:04] INFO root fetch - processPackages [dbt-bigquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-bigquery-1.6.0b1.tar.gz tmp/dbt-bigquery-1.6.0b2.tar.gz --markdown 20230526/d/dbt-bigquery/1.6.0b1-1.6.0b2/diff.md --exclude *.pyd
+[2023-05-26 00:05:04] INFO root fetch - processPackages [fovus]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-26 00:05:04] INFO root fetch - processPackages [faker-cli]: Start processing: aeroapi-python
+[2023-05-26 00:05:04] INFO root fetch - main [MainThread]: End processing [faker-cli]: success
+[2023-05-26 00:05:04] INFO root fetch - processPackages [python-equilibrium]: Downloading https://files.pythonhosted.org/packages/5f/3c/264abb2ddc14e74077cb5249f30abd5ecdf918823735666b654ddd744295/python_equilibrium-0.5.0.tar.gz
+[2023-05-26 00:05:04] WARNING root fetch - processPackages [aeroapi-python]: Skipping, unable to determine old version
+[2023-05-26 00:05:04] INFO root fetch - processPackages [aeroapi-python]: Start processing: mpbn
+[2023-05-26 00:05:04] INFO root fetch - main [MainThread]: End processing [aeroapi-python] error
+[2023-05-26 00:05:04] INFO root fetch - processPackages [python-equilibrium]: executing diffoscope
+[2023-05-26 00:05:04] INFO root fetch - processPackages [python-equilibrium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_equilibrium-0.4.0.post0.tar.gz tmp/python_equilibrium-0.5.0.tar.gz --markdown 20230526/p/python-equilibrium/0.4.0.post0-0.5.0/diff.md --exclude *.pyd
+[2023-05-26 00:05:04] INFO root fetch - processPackages [fovus]: Downloading https://files.pythonhosted.org/packages/2b/96/58a350978b4ca5f349aa57f4463f07096eebb1ce7224dff9d0e3ff55328e/fovus-1.0.3-py3-none-any.whl
+[2023-05-26 00:05:04] INFO root fetch - processPackages [mpbn]: New version: [3.0] Old Version: [2.0]
+[2023-05-26 00:05:04] INFO root fetch - processPackages [mpbn]: Downloading https://files.pythonhosted.org/packages/fa/dc/03e58a59dbb6737961c76200bdd8d4aa9472f22221204bc59ddc5bfcd2df/mpbn-2.0.tar.gz
+[2023-05-26 00:05:04] INFO root fetch - processPackages [fovus]: Downloading https://files.pythonhosted.org/packages/a0/fe/bd5616dfb9c4bef5534e70077225950e0b0527c0225d4a1fd568bce17ce8/fovus-1.0.4-py3-none-any.whl
+[2023-05-26 00:05:04] INFO root fetch - processPackages [fovus]: executing diffoscope
+[2023-05-26 00:05:04] INFO root fetch - processPackages [fovus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fovus-1.0.3-py3-none-any.whl.zip tmp/fovus-1.0.4-py3-none-any.whl.zip --markdown 20230526/f/fovus/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-26 00:05:04] INFO root fetch - main [MainThread]: End processing [assemblyline-ui]: success
+[2023-05-26 00:05:04] INFO root fetch - processPackages [mpbn]: Downloading https://files.pythonhosted.org/packages/87/2d/48e29762eeb2ff20d5f2ff6fa20250b4e94be4cda4fb151a87264c70df06/mpbn-3.0.tar.gz
+[2023-05-26 00:05:04] INFO root fetch - processPackages [mpbn]: executing diffoscope
+[2023-05-26 00:05:04] INFO root fetch - processPackages [mpbn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpbn-2.0.tar.gz tmp/mpbn-3.0.tar.gz --markdown 20230526/m/mpbn/2.0-3.0/diff.md --exclude *.pyd
+[2023-05-26 00:05:05] INFO root fetch - main [MainThread]: End processing [assemblyline-v4-service]: success
+[2023-05-26 00:05:05] INFO root fetch - main [MainThread]: End processing [dbt-bigquery]: success
+[2023-05-26 00:05:05] INFO root fetch - main [MainThread]: End processing [assemblyline-core]: success
+[2023-05-26 00:05:06] INFO root fetch - main [MainThread]: End processing [lndb]: success
+[2023-05-26 00:05:06] INFO root fetch - main [MainThread]: End processing [python-equilibrium]: success
+[2023-05-26 00:05:06] INFO root fetch - main [MainThread]: End processing [fovus]: success
+[2023-05-26 00:05:06] INFO root fetch - main [MainThread]: End processing [mpbn]: success
+[2023-05-26 00:05:08] INFO root fetch - main [MainThread]: End processing [assemblyline]: success
+[2023-05-26 00:05:11] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-05-26 00:05:11] INFO root fetch - main [MainThread]: Store serial: [18253599]
