@@ -921,3 +921,43 @@
 [2023-05-26 01:36:20] INFO root fetch - main [MainThread]: End processing [msgram]: success
 [2023-05-26 01:36:22] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes]: success
 [2023-05-26 01:36:22] INFO root fetch - main [MainThread]: Store serial: [18254139]
+[2023-05-26 01:41:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18254139]
+[2023-05-26 01:41:31] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-26 01:41:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gnssanalysis
+[2023-05-26 01:41:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moto
+[2023-05-26 01:41:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vector-quantize-pytorch
+[2023-05-26 01:41:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xklb
+[2023-05-26 01:41:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: evaics
+[2023-05-26 01:41:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gbwhere
+[2023-05-26 01:41:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: filtration-domination
+[2023-05-26 01:41:31] INFO root fetch - processPackages [gnssanalysis]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 01:41:31] INFO root fetch - processPackages [evaics]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-26 01:41:31] INFO root fetch - processPackages [vector-quantize-pytorch]: New version: [1.5.9] Old Version: [1.5.8]
+[2023-05-26 01:41:31] INFO root fetch - processPackages [filtration-domination]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-26 01:41:31] INFO root fetch - processPackages [xklb]: New version: [1.28.9] Old Version: [1.28.8]
+[2023-05-26 01:41:31] WARNING root fetch - processPackages [gbwhere]: Skipping, unable to determine old version
+[2023-05-26 01:41:31] INFO root fetch - main [MainThread]: End processing [gbwhere] error
+[2023-05-26 01:41:31] INFO root fetch - processPackages [moto]: New version: [4.1.9.dev9] Old Version: [4.1.9.dev8]
+[2023-05-26 01:41:31] INFO root fetch - processPackages [gnssanalysis]: executing diffoscope
+[2023-05-26 01:41:31] INFO root fetch - processPackages [gnssanalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gnssanalysis-0.0.8.tar.gz tmp/gnssanalysis-0.0.9.tar.gz --markdown 20230526/g/gnssanalysis/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 01:41:31] INFO root fetch - processPackages [vector-quantize-pytorch]: executing diffoscope
+[2023-05-26 01:41:31] INFO root fetch - processPackages [vector-quantize-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_quantize_pytorch-1.5.8.tar.gz tmp/vector_quantize_pytorch-1.5.9.tar.gz --markdown 20230526/v/vector-quantize-pytorch/1.5.8-1.5.9/diff.md --exclude *.pyd
+[2023-05-26 01:41:31] INFO root fetch - processPackages [evaics]: Downloading https://files.pythonhosted.org/packages/e5/af/e6891db794649d6704c41d0f407762c05ef381a597dece0bbf18169c45de/evaics-0.2.6.tar.gz
+[2023-05-26 01:41:31] INFO root fetch - processPackages [filtration-domination]: Downloading https://files.pythonhosted.org/packages/d3/90/d3ab3f816b4150d99120f8024a3c518b8b9503c64389dd58a6ab6f0b0d49/filtration_domination-0.0.3.tar.gz
+[2023-05-26 01:41:31] INFO root fetch - processPackages [xklb]: executing diffoscope
+[2023-05-26 01:41:31] INFO root fetch - processPackages [xklb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xklb-1.28.8.tar.gz tmp/xklb-1.28.9.tar.gz --markdown 20230526/x/xklb/1.28.8-1.28.9/diff.md --exclude *.pyd
+[2023-05-26 01:41:31] INFO root fetch - processPackages [moto]: executing diffoscope
+[2023-05-26 01:41:31] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-4.1.9.dev8.tar.gz tmp/moto-4.1.9.dev9.tar.gz --markdown 20230526/m/moto/4.1.9.dev8-4.1.9.dev9/diff.md --exclude *.pyd
+[2023-05-26 01:41:31] INFO root fetch - processPackages [evaics]: Downloading https://files.pythonhosted.org/packages/78/8c/f797f743d0e474da9de8952386d5e9b33e1db2fcf802159637fe0bdbe054/evaics-0.2.7.tar.gz
+[2023-05-26 01:41:31] INFO root fetch - processPackages [evaics]: executing diffoscope
+[2023-05-26 01:41:31] INFO root fetch - processPackages [evaics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evaics-0.2.6.tar.gz tmp/evaics-0.2.7.tar.gz --markdown 20230526/e/evaics/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-26 01:41:31] INFO root fetch - processPackages [filtration-domination]: Downloading https://files.pythonhosted.org/packages/0c/fd/2873fc552c4ec0cd2574b1e93ffa4538775a9a31d3b5bbdb2bd267d843ab/filtration_domination-0.0.4.tar.gz
+[2023-05-26 01:41:31] INFO root fetch - processPackages [filtration-domination]: executing diffoscope
+[2023-05-26 01:41:31] INFO root fetch - processPackages [filtration-domination]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/filtration_domination-0.0.3.tar.gz tmp/filtration_domination-0.0.4.tar.gz --markdown 20230526/f/filtration-domination/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-26 01:41:32] INFO root fetch - main [MainThread]: End processing [gnssanalysis]: success
+[2023-05-26 01:41:33] INFO root fetch - main [MainThread]: End processing [vector-quantize-pytorch]: success
+[2023-05-26 01:41:33] INFO root fetch - main [MainThread]: End processing [evaics]: success
+[2023-05-26 01:41:33] INFO root fetch - main [MainThread]: End processing [filtration-domination]: success
+[2023-05-26 01:41:33] INFO root fetch - main [MainThread]: End processing [xklb]: success
+[2023-05-26 01:42:02] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2023-05-26 01:42:02] INFO root fetch - main [MainThread]: Store serial: [18254161]
