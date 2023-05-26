@@ -7199,3 +7199,38 @@
 [2023-05-26 06:19:49] INFO root fetch - main [MainThread]: End processing [asynq]: success
 [2023-05-26 06:19:51] INFO root fetch - main [MainThread]: End processing [pgx]: success
 [2023-05-26 06:19:51] INFO root fetch - main [MainThread]: Store serial: [18257671]
+[2023-05-26 06:24:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18257671]
+[2023-05-26 06:25:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-26 06:25:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dinohub-seedwork-be
+[2023-05-26 06:25:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-mail-multicompany
+[2023-05-26 06:25:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addons-oca-multi-company
+[2023-05-26 06:25:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: AlgorithmADTs
+[2023-05-26 06:25:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: quickstart-vdk
+[2023-05-26 06:25:00] INFO root fetch - processPackages [odoo-addons-oca-multi-company]: New version: [16.0.20230525.0] Old Version: [16.0.20230428.0]
+[2023-05-26 06:25:00] INFO root fetch - processPackages [AlgorithmADTs]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-26 06:25:00] INFO root fetch - processPackages [dinohub-seedwork-be]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 06:25:00] INFO root fetch - processPackages [odoo-addon-mail-multicompany]: New version: [16.0.1.0.0.3] Old Version: [16.0.1.0.0.2]
+[2023-05-26 06:25:00] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.879711564.dev10831] Old Version: [0.2.878401624.dev10777]
+[2023-05-26 06:25:01] INFO root fetch - processPackages [dinohub-seedwork-be]: executing diffoscope
+[2023-05-26 06:25:01] INFO root fetch - processPackages [dinohub-seedwork-be]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dinohub_seedwork_be-0.1.8.tar.gz tmp/dinohub_seedwork_be-0.1.9.tar.gz --markdown 20230526/d/dinohub-seedwork-be/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 06:25:01] INFO root fetch - processPackages [odoo-addons-oca-multi-company]: Downloading https://files.pythonhosted.org/packages/e9/5b/a00c58cbcb0b200f03aa8c829361032baee34cd26e434844c5bf2009373b/odoo_addons_oca_multi_company-16.0.20230428.0-py3-none-any.whl
+[2023-05-26 06:25:01] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/79/a7/483719b4388c66e3f4339f77ad60f9ee581e52937b4ee6cc49d6af844220/quickstart-vdk-0.2.878401624.dev10777.tar.gz
+[2023-05-26 06:25:01] INFO root fetch - processPackages [odoo-addon-mail-multicompany]: Downloading https://files.pythonhosted.org/packages/47/f1/6b33b729737aaa70f7b83d124671330002c499c44026367a59d13d0d6b78/odoo_addon_mail_multicompany-16.0.1.0.0.2-py3-none-any.whl
+[2023-05-26 06:25:01] INFO root fetch - processPackages [AlgorithmADTs]: Downloading https://files.pythonhosted.org/packages/be/48/4cf927cf521f51c8477742bb386ec08f650093dd84715ab3e955456ed822/algorithmadts-0.2.2.tar.gz
+[2023-05-26 06:25:01] INFO root fetch - processPackages [odoo-addons-oca-multi-company]: Downloading https://files.pythonhosted.org/packages/f9/77/9d2ad2088d61adeb05ea175963c7937999bdedda56fc3f191c5fc61e6fc6/odoo_addons_oca_multi_company-16.0.20230525.0-py3-none-any.whl
+[2023-05-26 06:25:01] INFO root fetch - processPackages [odoo-addon-mail-multicompany]: Downloading https://files.pythonhosted.org/packages/e9/76/f7acb228706b33cb0d8b433a7ec00c5e334c1e9e0da334ed4aaa553fee31/odoo_addon_mail_multicompany-16.0.1.0.0.3-py3-none-any.whl
+[2023-05-26 06:25:01] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/19/d9/cd4c16fdc0bfe9edbd1953249693c0912bdd5b1cb2f7ff2ff7e6c2108690/quickstart-vdk-0.2.879711564.dev10831.tar.gz
+[2023-05-26 06:25:01] INFO root fetch - processPackages [odoo-addons-oca-multi-company]: executing diffoscope
+[2023-05-26 06:25:01] INFO root fetch - processPackages [odoo-addons-oca-multi-company]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_multi_company-16.0.20230428.0-py3-none-any.whl.zip tmp/odoo_addons_oca_multi_company-16.0.20230525.0-py3-none-any.whl.zip --markdown 20230526/o/odoo-addons-oca-multi-company/16.0.20230428.0-16.0.20230525.0/diff.md --exclude *.pyd
+[2023-05-26 06:25:01] INFO root fetch - processPackages [AlgorithmADTs]: executing diffoscope
+[2023-05-26 06:25:01] INFO root fetch - processPackages [AlgorithmADTs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/algorithmadts-0.2.1.tar.gz tmp/algorithmadts-0.2.2.tar.gz --markdown 20230526/A/AlgorithmADTs/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-26 06:25:01] INFO root fetch - processPackages [odoo-addon-mail-multicompany]: executing diffoscope
+[2023-05-26 06:25:01] INFO root fetch - processPackages [odoo-addon-mail-multicompany]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mail_multicompany-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_mail_multicompany-16.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230526/o/odoo-addon-mail-multicompany/16.0.1.0.0.2-16.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-05-26 06:25:01] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2023-05-26 06:25:01] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.878401624.dev10777.tar.gz tmp/quickstart-vdk-0.2.879711564.dev10831.tar.gz --markdown 20230526/q/quickstart-vdk/0.2.878401624.dev10777-0.2.879711564.dev10831/diff.md --exclude *.pyd
+[2023-05-26 06:25:02] INFO root fetch - main [MainThread]: End processing [dinohub-seedwork-be]: success
+[2023-05-26 06:25:02] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-multi-company]: success
+[2023-05-26 06:25:02] INFO root fetch - main [MainThread]: End processing [AlgorithmADTs]: success
+[2023-05-26 06:25:03] INFO root fetch - main [MainThread]: End processing [odoo-addon-mail-multicompany]: success
+[2023-05-26 06:25:03] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2023-05-26 06:25:03] INFO root fetch - main [MainThread]: Store serial: [18257702]
