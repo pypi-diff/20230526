@@ -9467,3 +9467,102 @@
 [2023-05-26 09:01:33] INFO root fetch - main [MainThread]: End processing [RobertCommonDriver]: success
 [2023-05-26 09:01:33] INFO root fetch - main [MainThread]: End processing [panda-server]: success
 [2023-05-26 09:01:33] INFO root fetch - main [MainThread]: Store serial: [18258839]
+[2023-05-26 09:06:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18258839]
+[2023-05-26 09:06:42] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-26 09:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lazyearth
+[2023-05-26 09:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-models-nightly
+[2023-05-26 09:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: my-provider
+[2023-05-26 09:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: seqio-nightly
+[2023-05-26 09:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: secret-message
+[2023-05-26 09:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dbt-snowflake
+[2023-05-26 09:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rsrch
+[2023-05-26 09:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: plaquette
+[2023-05-26 09:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: configzen
+[2023-05-26 09:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: yaml-config-builder
+[2023-05-26 09:06:42] INFO root fetch - processPackages [my-provider]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-26 09:06:42] WARNING root fetch - processPackages [plaquette]: Skipping, unable to determine old version
+[2023-05-26 09:06:42] INFO root fetch - processPackages [plaquette]: Start processing: pulumi-alicloud
+[2023-05-26 09:06:42] INFO root fetch - main [MainThread]: End processing [plaquette] error
+[2023-05-26 09:06:42] INFO root fetch - processPackages [configzen]: New version: [0.1.37] Old Version: [0.1.36]
+[2023-05-26 09:06:42] INFO root fetch - processPackages [yaml-config-builder]: New version: [8.0.2] Old Version: [8.0.1]
+[2023-05-26 09:06:42] INFO root fetch - processPackages [secret-message]: New version: [0.8] Old Version: [0.7]
+[2023-05-26 09:06:42] INFO root fetch - processPackages [rsrch]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-26 09:06:42] INFO root fetch - processPackages [lazyearth]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-26 09:06:42] INFO root fetch - processPackages [dbt-snowflake]: New version: [1.6.0b2] Old Version: [1.6.0b1]
+[2023-05-26 09:06:42] INFO root fetch - processPackages [seqio-nightly]: New version: [0.0.8.dev20220907] Old Version: [0.0.8.dev20220906]
+[2023-05-26 09:06:42] INFO root fetch - processPackages [tf-models-nightly]: New version: [2.9.0.dev20220920] Old Version: [2.9.0.dev20220919]
+[2023-05-26 09:06:42] INFO root fetch - processPackages [pulumi-alicloud]: New version: [3.9.0a1637592974] Old Version: [3.9.0a1635778307]
+[2023-05-26 09:06:42] INFO root fetch - processPackages [secret-message]: Downloading https://files.pythonhosted.org/packages/eb/1c/5d988979eead8ac422417348a5c8656a3fa17e3c14c548377a867e1f0fac/secret_message-0.7.tar.gz
+[2023-05-26 09:06:42] INFO root fetch - processPackages [seqio-nightly]: executing diffoscope
+[2023-05-26 09:06:42] INFO root fetch - processPackages [seqio-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqio-nightly-0.0.8.dev20220906.tar.gz tmp/seqio-nightly-0.0.8.dev20220907.tar.gz --markdown 20230526/s/seqio-nightly/0.0.8.dev20220906-0.0.8.dev20220907/diff.md --exclude *.pyd
+[2023-05-26 09:06:42] INFO root fetch - processPackages [tf-models-nightly]: executing diffoscope
+[2023-05-26 09:06:42] INFO root fetch - processPackages [tf-models-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip --markdown 20230526/t/tf-models-nightly/2.9.0.dev20220919-2.9.0.dev20220920/diff.md --exclude *.pyd
+[2023-05-26 09:06:42] INFO root fetch - processPackages [dbt-snowflake]: executing diffoscope
+[2023-05-26 09:06:42] INFO root fetch - processPackages [dbt-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-snowflake-1.6.0b1.tar.gz tmp/dbt-snowflake-1.6.0b2.tar.gz --markdown 20230526/d/dbt-snowflake/1.6.0b1-1.6.0b2/diff.md --exclude *.pyd
+[2023-05-26 09:06:42] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/30/94/47aa6641af7d1a1fa8cc70912a2af36c935ad72c91b830011ce24f74c791/configzen-0.1.36.tar.gz
+[2023-05-26 09:06:42] INFO root fetch - processPackages [yaml-config-builder]: Downloading https://files.pythonhosted.org/packages/75/6b/22b2120417dbbfc08e5b857fa3d5cb689258db0598070fa6a36e44bb9ce1/yaml_config_builder-8.0.1.tar.gz
+[2023-05-26 09:06:42] INFO root fetch - processPackages [rsrch]: Downloading https://files.pythonhosted.org/packages/16/f6/d184a1ac69afb84d9f5fd984a23d8fda6b3286c26daa3931cdc2ad0b6e51/rsrch-0.2.2.tar.gz
+[2023-05-26 09:06:42] INFO root fetch - processPackages [my-provider]: Downloading https://files.pythonhosted.org/packages/c7/55/5914135580dca2ebcc08a26a5ba4f01a433d480355262504e03c6d220b0d/my_provider-0.1.2.tar.gz
+[2023-05-26 09:06:42] INFO root fetch - processPackages [rsrch]: executing diffoscope
+[2023-05-26 09:06:42] INFO root fetch - processPackages [rsrch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rsrch-0.2.1.tar.gz tmp/rsrch-0.2.2.tar.gz --markdown 20230526/r/rsrch/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-26 09:06:42] INFO root fetch - processPackages [secret-message]: Downloading https://files.pythonhosted.org/packages/a2/0f/c57e586f5c03521a9c3245bffccd730637bcdb367027ca29950ef6b6075b/secret_message-0.8.tar.gz
+[2023-05-26 09:06:42] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/ad/4e/2186b0376efddb5bd7a34d0f72020a7bf7bd072abc17147ece0bf19fe524/configzen-0.1.37.tar.gz
+[2023-05-26 09:06:42] INFO root fetch - processPackages [my-provider]: executing diffoscope
+[2023-05-26 09:06:42] INFO root fetch - processPackages [my-provider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_provider-0.1.1.tar.gz tmp/my_provider-0.1.2.tar.gz --markdown 20230526/m/my-provider/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-26 09:06:42] INFO root fetch - processPackages [lazyearth]: executing diffoscope
+[2023-05-26 09:06:42] INFO root fetch - processPackages [lazyearth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazyearth-1.0.7.tar.gz tmp/lazyearth-1.0.8.tar.gz --markdown 20230526/l/lazyearth/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-05-26 09:06:42] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-26 09:06:42] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.36.tar.gz tmp/configzen-0.1.37.tar.gz --markdown 20230526/c/configzen/0.1.36-0.1.37/diff.md --exclude *.pyd
+[2023-05-26 09:06:42] INFO root fetch - processPackages [pulumi-alicloud]: executing diffoscope
+[2023-05-26 09:06:42] INFO root fetch - processPackages [pulumi-alicloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_alicloud-3.9.0a1635778307.tar.gz tmp/pulumi_alicloud-3.9.0a1637592974.tar.gz --markdown 20230526/p/pulumi-alicloud/3.9.0a1635778307-3.9.0a1637592974/diff.md --exclude *.pyd
+[2023-05-26 09:06:43] INFO root fetch - processPackages [secret-message]: executing diffoscope
+[2023-05-26 09:06:43] INFO root fetch - processPackages [secret-message]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secret_message-0.7.tar.gz tmp/secret_message-0.8.tar.gz --markdown 20230526/s/secret-message/0.7-0.8/diff.md --exclude *.pyd
+[2023-05-26 09:06:43] INFO root fetch - processPackages [yaml-config-builder]: Downloading https://files.pythonhosted.org/packages/c5/ba/b365e392d25dfc9ceeb8d53ffeafbcf65cb90902e15ac684c2d3e4a510b7/yaml_config_builder-8.0.2.tar.gz
+[2023-05-26 09:06:43] INFO root fetch - processPackages [yaml-config-builder]: executing diffoscope
+[2023-05-26 09:06:43] INFO root fetch - processPackages [yaml-config-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yaml_config_builder-8.0.1.tar.gz tmp/yaml_config_builder-8.0.2.tar.gz --markdown 20230526/y/yaml-config-builder/8.0.1-8.0.2/diff.md --exclude *.pyd
+[2023-05-26 09:06:44] INFO root fetch - processPackages [dbt-snowflake]: Start processing: macrometa-target-collection
+[2023-05-26 09:06:44] INFO root fetch - main [MainThread]: End processing [dbt-snowflake]: success
+[2023-05-26 09:06:44] INFO root fetch - processPackages [macrometa-target-collection]: New version: [0.0.62] Old Version: [0.0.61]
+[2023-05-26 09:06:44] INFO root fetch - processPackages [macrometa-target-collection]: Downloading https://files.pythonhosted.org/packages/82/3f/ac9cef22fdfe61fad562f04d52e5f269dbb7eadc502c041bd916dfca1fea/macrometa-target-collection-0.0.62.tar.gz
+[2023-05-26 09:06:44] INFO root fetch - processPackages [macrometa-target-collection]: executing diffoscope
+[2023-05-26 09:06:44] INFO root fetch - processPackages [macrometa-target-collection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-target-collection-0.0.61.tar.gz tmp/macrometa-target-collection-0.0.62.tar.gz --markdown 20230526/m/macrometa-target-collection/0.0.61-0.0.62/diff.md --exclude *.pyd
+[2023-05-26 09:06:44] INFO root fetch - processPackages [my-provider]: Start processing: spanda
+[2023-05-26 09:06:44] INFO root fetch - main [MainThread]: End processing [my-provider]: success
+[2023-05-26 09:06:44] INFO root fetch - processPackages [spanda]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 09:06:45] INFO root fetch - processPackages [lazyearth]: Start processing: python-lsp-pyre
+[2023-05-26 09:06:45] INFO root fetch - main [MainThread]: End processing [lazyearth]: success
+[2023-05-26 09:06:45] INFO root fetch - processPackages [spanda]: Downloading https://files.pythonhosted.org/packages/f9/1c/224f2a2844ff544cba61066bbbc6eac17089005c1cc1100c368cf8be5aea/spanda-0.0.8.tar.gz
+[2023-05-26 09:06:45] INFO root fetch - processPackages [python-lsp-pyre]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-26 09:06:45] INFO root fetch - processPackages [python-lsp-pyre]: Downloading https://files.pythonhosted.org/packages/ff/ca/5abbd3c0e69dd7048c88f784b4617a5632f58dcf1eb42632a39e780e5fa9/python_lsp_pyre-0.1.1.tar.gz
+[2023-05-26 09:06:45] INFO root fetch - processPackages [spanda]: Downloading https://files.pythonhosted.org/packages/3f/ee/2a6ac7824ab34f67be3c79be0283b2c16749354722e45300bcd2ff6258e2/spanda-0.0.9.tar.gz
+[2023-05-26 09:06:45] INFO root fetch - processPackages [spanda]: executing diffoscope
+[2023-05-26 09:06:45] INFO root fetch - processPackages [spanda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanda-0.0.8.tar.gz tmp/spanda-0.0.9.tar.gz --markdown 20230526/s/spanda/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 09:06:45] INFO root fetch - processPackages [python-lsp-pyre]: Downloading https://files.pythonhosted.org/packages/5a/87/3f2a602ff65b9f82d1b9c9f5fdb910c94b8bc7fa715ba23d1519c9b74567/python_lsp_pyre-0.1.2.tar.gz
+[2023-05-26 09:06:45] INFO root fetch - processPackages [python-lsp-pyre]: executing diffoscope
+[2023-05-26 09:06:45] INFO root fetch - processPackages [python-lsp-pyre]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_lsp_pyre-0.1.1.tar.gz tmp/python_lsp_pyre-0.1.2.tar.gz --markdown 20230526/p/python-lsp-pyre/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-26 09:06:45] INFO root fetch - processPackages [configzen]: Start processing: macrometa-source-collection
+[2023-05-26 09:06:45] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-26 09:06:45] INFO root fetch - processPackages [macrometa-source-collection]: New version: [0.0.32] Old Version: [0.0.31]
+[2023-05-26 09:06:45] INFO root fetch - processPackages [rsrch]: Start processing: apiquotamanager
+[2023-05-26 09:06:45] INFO root fetch - main [MainThread]: End processing [rsrch]: success
+[2023-05-26 09:06:45] WARNING root fetch - processPackages [apiquotamanager]: Skipping, unable to determine old version
+[2023-05-26 09:06:45] INFO root fetch - processPackages [apiquotamanager]: Start processing: tagging-module
+[2023-05-26 09:06:45] INFO root fetch - main [MainThread]: End processing [apiquotamanager] error
+[2023-05-26 09:06:45] INFO root fetch - processPackages [tagging-module]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-26 09:06:45] INFO root fetch - main [MainThread]: End processing [secret-message]: success
+[2023-05-26 09:06:45] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
+[2023-05-26 09:06:45] INFO root fetch - processPackages [macrometa-source-collection]: Downloading https://files.pythonhosted.org/packages/e0/30/b6046f15d6efe602b988189105bdc59464566c76b4f9e14768834311af8d/macrometa-source-collection-0.0.32.tar.gz
+[2023-05-26 09:06:45] INFO root fetch - processPackages [macrometa-source-collection]: executing diffoscope
+[2023-05-26 09:06:45] INFO root fetch - processPackages [macrometa-source-collection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-collection-0.0.31.tar.gz tmp/macrometa-source-collection-0.0.32.tar.gz --markdown 20230526/m/macrometa-source-collection/0.0.31-0.0.32/diff.md --exclude *.pyd
+[2023-05-26 09:06:45] INFO root fetch - processPackages [tagging-module]: Downloading https://files.pythonhosted.org/packages/77/cb/12822e8921e1bd82693f9fe1fbcafd3c66459c5f2155f3bfddce94cc7e26/tagging_module-0.0.4.tar.gz
+[2023-05-26 09:06:45] INFO root fetch - processPackages [tagging-module]: executing diffoscope
+[2023-05-26 09:06:45] INFO root fetch - processPackages [tagging-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tagging_module-0.0.3.tar.gz tmp/tagging_module-0.0.4.tar.gz --markdown 20230526/t/tagging-module/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-26 09:06:46] INFO root fetch - main [MainThread]: End processing [yaml-config-builder]: success
+[2023-05-26 09:06:46] INFO root fetch - main [MainThread]: End processing [macrometa-target-collection]: success
+[2023-05-26 09:06:47] INFO root fetch - main [MainThread]: End processing [python-lsp-pyre]: success
+[2023-05-26 09:06:47] INFO root fetch - main [MainThread]: End processing [tagging-module]: success
+[2023-05-26 09:06:47] INFO root fetch - main [MainThread]: End processing [macrometa-source-collection]: success
+[2023-05-26 09:06:47] INFO root fetch - main [MainThread]: End processing [spanda]: success
+[2023-05-26 09:06:58] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
+[2023-05-26 09:07:10] INFO root fetch - main [MainThread]: End processing [pulumi-alicloud]: success
+[2023-05-26 09:07:10] INFO root fetch - main [MainThread]: Store serial: [18258892]
