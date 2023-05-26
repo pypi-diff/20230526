@@ -18142,3 +18142,95 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 16:59:29] INFO root fetch - main [MainThread]: End processing [h5]: success
 [2023-05-26 17:00:20] INFO root fetch - main [MainThread]: End processing [license-expression]: success
 [2023-05-26 17:00:20] INFO root fetch - main [MainThread]: Store serial: [18264426]
+[2023-05-26 17:05:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18264426]
+[2023-05-26 17:05:30] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-26 17:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: graphinglib
+[2023-05-26 17:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langchain-discord
+[2023-05-26 17:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytket-qir
+[2023-05-26 17:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: docarray
+[2023-05-26 17:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ipapp
+[2023-05-26 17:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: minet
+[2023-05-26 17:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: disaster-id-scan
+[2023-05-26 17:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: zhmcclient
+[2023-05-26 17:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: TimePrintOnPYPI
+[2023-05-26 17:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: c2cciutils
+[2023-05-26 17:05:30] INFO root fetch - processPackages [langchain-discord]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-26 17:05:30] INFO root fetch - processPackages [graphinglib]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-26 17:05:30] INFO root fetch - processPackages [pytket-qir]: New version: [0.2.0rc9] Old Version: [0.2.0rc8]
+[2023-05-26 17:05:30] INFO root fetch - processPackages [TimePrintOnPYPI]: New version: [1.5] Old Version: [1.4]
+[2023-05-26 17:05:30] INFO root fetch - processPackages [zhmcclient]: New version: [1.8.1] Old Version: [1.8.0]
+[2023-05-26 17:05:30] INFO root fetch - processPackages [minet]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2023-05-26 17:05:30] WARNING root fetch - processPackages [disaster-id-scan]: Skipping, unable to determine old version
+[2023-05-26 17:05:30] INFO root fetch - processPackages [disaster-id-scan]: Start processing: mujoco-dev
+[2023-05-26 17:05:30] INFO root fetch - main [MainThread]: End processing [disaster-id-scan] error
+[2023-05-26 17:05:30] INFO root fetch - processPackages [ipapp]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-05-26 17:05:30] INFO root fetch - processPackages [docarray]: New version: [0.9.9.dev5] Old Version: [0.9.9.dev4]
+[2023-05-26 17:05:30] INFO root fetch - processPackages [mujoco-dev]: New version: [2.3.6.dev535615505] Old Version: [2.3.6.dev535234007]
+[2023-05-26 17:05:30] INFO root fetch - processPackages [c2cciutils]: New version: [1.6.0.dev98] Old Version: [1.6.0.dev95]
+[2023-05-26 17:05:30] INFO root fetch - processPackages [docarray]: executing diffoscope
+[2023-05-26 17:05:30] INFO root fetch - processPackages [docarray]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docarray-0.9.9.dev4.tar.gz tmp/docarray-0.9.9.dev5.tar.gz --markdown 20230526/d/docarray/0.9.9.dev4-0.9.9.dev5/diff.md --exclude *.pyd
+[2023-05-26 17:05:30] INFO root fetch - processPackages [graphinglib]: Downloading https://files.pythonhosted.org/packages/4b/b0/a268ff071075bef9ea4ab502f8493f126e647f11841a537ff35ea245c20a/graphinglib-1.0.0.tar.gz
+[2023-05-26 17:05:30] INFO root fetch - processPackages [zhmcclient]: Downloading https://files.pythonhosted.org/packages/c0/b7/174292e133bcab7de3aef1f144c4d684f660c837549207eda267d431a8e4/zhmcclient-1.8.0.tar.gz
+[2023-05-26 17:05:30] INFO root fetch - processPackages [pytket-qir]: Downloading https://files.pythonhosted.org/packages/c9/21/7aeb3a95f17a5965c4e211e4a4650a83141cf9d88593c9e694ed44344587/pytket_qir-0.2.0rc9-py3-none-any.whl
+[2023-05-26 17:05:30] INFO root fetch - processPackages [TimePrintOnPYPI]: Downloading https://files.pythonhosted.org/packages/1c/41/9369a9da05711e99194ff74f6bc4c13cdc1921516af3703c41db4aaef5af/TimePrintOnPYPI-1.5.tar.gz
+[2023-05-26 17:05:30] INFO root fetch - processPackages [langchain-discord]: Downloading https://files.pythonhosted.org/packages/ba/89/d22f2b1adeb998123a941602327e4d6aef50368b090f8dce17d5b2aedb2b/langchain_discord-0.0.5.tar.gz
+[2023-05-26 17:05:30] INFO root fetch - processPackages [c2cciutils]: executing diffoscope
+[2023-05-26 17:05:30] INFO root fetch - processPackages [c2cciutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c2cciutils-1.6.0.dev95.tar.gz tmp/c2cciutils-1.6.0.dev98.tar.gz --markdown 20230526/c/c2cciutils/1.6.0.dev95-1.6.0.dev98/diff.md --exclude *.pyd
+[2023-05-26 17:05:30] INFO root fetch - processPackages [mujoco-dev]: Downloading https://files.pythonhosted.org/packages/ec/2b/a25680198448ef489d844f5a3176915efd60297f14374193710b4b1a1c0a/mujoco_dev-2.3.6.dev535234007-cp39-cp39-win_amd64.whl
+[2023-05-26 17:05:30] INFO root fetch - processPackages [ipapp]: Downloading https://files.pythonhosted.org/packages/f0/81/51418e0675d666079ff1f162d24ed35d1f04ce2f4160a06e39dd9220d6ba/ipapp-1.3.8.tar.gz
+[2023-05-26 17:05:30] INFO root fetch - processPackages [minet]: executing diffoscope
+[2023-05-26 17:05:30] INFO root fetch - processPackages [minet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/minet-1.0.0a8.tar.gz tmp/minet-1.0.0a9.tar.gz --markdown 20230526/m/minet/1.0.0a8-1.0.0a9/diff.md --exclude *.pyd
+[2023-05-26 17:05:30] INFO root fetch - processPackages [langchain-discord]: executing diffoscope
+[2023-05-26 17:05:30] INFO root fetch - processPackages [langchain-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_discord-0.0.4.tar.gz tmp/langchain_discord-0.0.5.tar.gz --markdown 20230526/l/langchain-discord/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-26 17:05:30] INFO root fetch - processPackages [pytket-qir]: executing diffoscope
+[2023-05-26 17:05:30] INFO root fetch - processPackages [pytket-qir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytket_qir-0.2.0rc8-py3-none-any.whl.zip tmp/pytket_qir-0.2.0rc9-py3-none-any.whl.zip --markdown 20230526/p/pytket-qir/0.2.0rc8-0.2.0rc9/diff.md --exclude *.pyd
+[2023-05-26 17:05:30] INFO root fetch - processPackages [TimePrintOnPYPI]: executing diffoscope
+[2023-05-26 17:05:30] INFO root fetch - processPackages [TimePrintOnPYPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TimePrintOnPYPI-1.4.tar.gz tmp/TimePrintOnPYPI-1.5.tar.gz --markdown 20230526/T/TimePrintOnPYPI/1.4-1.5/diff.md --exclude *.pyd
+[2023-05-26 17:05:30] INFO root fetch - processPackages [graphinglib]: Downloading https://files.pythonhosted.org/packages/b9/6e/cb7bd132bc561b1cb5e9517022c222a26259c05173ec8f1dde6e5e467686/graphinglib-1.0.1.tar.gz
+[2023-05-26 17:05:30] INFO root fetch - processPackages [graphinglib]: executing diffoscope
+[2023-05-26 17:05:30] INFO root fetch - processPackages [graphinglib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphinglib-1.0.0.tar.gz tmp/graphinglib-1.0.1.tar.gz --markdown 20230526/g/graphinglib/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-26 17:05:30] INFO root fetch - processPackages [zhmcclient]: Downloading https://files.pythonhosted.org/packages/d5/8f/77467fff2a2b0515a0e6298abec2b3894c12ab30031ee7fc1b366efb9377/zhmcclient-1.8.1.tar.gz
+[2023-05-26 17:05:31] INFO root fetch - processPackages [ipapp]: Downloading https://files.pythonhosted.org/packages/5e/89/30008faa7f32520060488639ca7dba6d649e6d4a83cc03715f2cab70acdd/ipapp-1.3.9.tar.gz
+[2023-05-26 17:05:31] INFO root fetch - processPackages [zhmcclient]: executing diffoscope
+[2023-05-26 17:05:31] INFO root fetch - processPackages [zhmcclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zhmcclient-1.8.0.tar.gz tmp/zhmcclient-1.8.1.tar.gz --markdown 20230526/z/zhmcclient/1.8.0-1.8.1/diff.md --exclude *.pyd
+[2023-05-26 17:05:31] INFO root fetch - processPackages [ipapp]: executing diffoscope
+[2023-05-26 17:05:31] INFO root fetch - processPackages [ipapp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipapp-1.3.8.tar.gz tmp/ipapp-1.3.9.tar.gz --markdown 20230526/i/ipapp/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-05-26 17:05:31] INFO root fetch - processPackages [mujoco-dev]: Downloading https://files.pythonhosted.org/packages/02/87/14777dc44cbe7f09ed89416d588def3f5b55b6f6752eccc06f9bcebf9e32/mujoco_dev-2.3.6.dev535615505-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-26 17:05:32] INFO root fetch - processPackages [mujoco-dev]: executing diffoscope
+[2023-05-26 17:05:32] INFO root fetch - processPackages [mujoco-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mujoco_dev-2.3.6.dev535234007-cp39-cp39-win_amd64.whl.zip tmp/mujoco_dev-2.3.6.dev535615505-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230526/m/mujoco-dev/2.3.6.dev535234007-2.3.6.dev535615505/diff.md --exclude *.pyd
+[2023-05-26 17:05:32] INFO root fetch - processPackages [langchain-discord]: Start processing: overwatch-client
+[2023-05-26 17:05:32] INFO root fetch - main [MainThread]: End processing [langchain-discord]: success
+[2023-05-26 17:05:32] INFO root fetch - processPackages [overwatch-client]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-26 17:05:33] INFO root fetch - processPackages [overwatch-client]: Downloading https://files.pythonhosted.org/packages/84/e8/51d974a18f97104d2be604a8ee00845fb2525b75d2bf5f58c42e17114aa5/overwatch_client-0.1.3.tar.gz
+[2023-05-26 17:05:33] INFO root fetch - processPackages [docarray]: Start processing: degex
+[2023-05-26 17:05:33] INFO root fetch - main [MainThread]: End processing [docarray]: success
+[2023-05-26 17:05:33] INFO root fetch - processPackages [overwatch-client]: executing diffoscope
+[2023-05-26 17:05:33] INFO root fetch - processPackages [overwatch-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/overwatch_client-0.1.2.tar.gz tmp/overwatch_client-0.1.3.tar.gz --markdown 20230526/o/overwatch-client/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-26 17:05:33] INFO root fetch - processPackages [degex]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 17:05:33] INFO root fetch - processPackages [pytket-qir]: Start processing: skit-calls
+[2023-05-26 17:05:33] INFO root fetch - main [MainThread]: End processing [pytket-qir]: success
+[2023-05-26 17:05:33] INFO root fetch - processPackages [skit-calls]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-26 17:05:33] INFO root fetch - processPackages [TimePrintOnPYPI]: Start processing: auto-screener
+[2023-05-26 17:05:33] INFO root fetch - main [MainThread]: End processing [TimePrintOnPYPI]: success
+[2023-05-26 17:05:33] INFO root fetch - processPackages [auto-screener]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 17:05:33] INFO root fetch - main [MainThread]: End processing [graphinglib]: success
+[2023-05-26 17:05:33] INFO root fetch - processPackages [degex]: Downloading https://files.pythonhosted.org/packages/90/6c/d7d1d3b23570dbee69f17ec54e71f213e0e24d400e19eb4a148f06bf243c/degex-0.0.8.tar.gz
+[2023-05-26 17:05:33] INFO root fetch - processPackages [skit-calls]: Downloading https://files.pythonhosted.org/packages/2f/78/82a290c9dd7966b4e9863f4aad5ca0fffc23f4c9d7b4e2540ab055802779/skit-calls-0.2.8.tar.gz
+[2023-05-26 17:05:33] INFO root fetch - processPackages [auto-screener]: executing diffoscope
+[2023-05-26 17:05:33] INFO root fetch - processPackages [auto-screener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto-screener-0.0.8.tar.gz tmp/auto-screener-0.0.9.tar.gz --markdown 20230526/a/auto-screener/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 17:05:33] INFO root fetch - main [MainThread]: End processing [ipapp]: success
+[2023-05-26 17:05:33] INFO root fetch - processPackages [degex]: Downloading https://files.pythonhosted.org/packages/74/65/f4d9a3d93ba514ed7f472f3fc394d0623dcafdf4aa47ec2e39f2dbfd19f4/degex-0.0.9.tar.gz
+[2023-05-26 17:05:33] INFO root fetch - processPackages [skit-calls]: Downloading https://files.pythonhosted.org/packages/a0/a2/1df75e5ff48129f8c2a73316a23be7278f3caafecb02b7cd0d1a3f4ae936/skit-calls-0.2.9.tar.gz
+[2023-05-26 17:05:34] INFO root fetch - processPackages [skit-calls]: executing diffoscope
+[2023-05-26 17:05:34] INFO root fetch - processPackages [skit-calls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skit-calls-0.2.8.tar.gz tmp/skit-calls-0.2.9.tar.gz --markdown 20230526/s/skit-calls/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-26 17:05:34] INFO root fetch - processPackages [degex]: executing diffoscope
+[2023-05-26 17:05:34] INFO root fetch - processPackages [degex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/degex-0.0.8.tar.gz tmp/degex-0.0.9.tar.gz --markdown 20230526/d/degex/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 17:05:35] INFO root fetch - main [MainThread]: End processing [overwatch-client]: success
+[2023-05-26 17:05:35] INFO root fetch - main [MainThread]: End processing [skit-calls]: success
+[2023-05-26 17:05:35] INFO root fetch - main [MainThread]: End processing [minet]: success
+[2023-05-26 17:05:35] INFO root fetch - main [MainThread]: End processing [degex]: success
+[2023-05-26 17:05:36] INFO root fetch - main [MainThread]: End processing [auto-screener]: success
+[2023-05-26 17:05:36] INFO root fetch - main [MainThread]: End processing [mujoco-dev]: success
+[2023-05-26 17:05:37] INFO root fetch - main [MainThread]: End processing [zhmcclient]: success
+[2023-05-26 17:05:37] INFO root fetch - main [MainThread]: End processing [c2cciutils]: success
+[2023-05-26 17:05:37] INFO root fetch - main [MainThread]: Store serial: [18264487]
