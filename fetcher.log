@@ -1898,3 +1898,40 @@
 [2023-05-26 03:02:13] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
 [2023-05-26 03:02:14] INFO root fetch - main [MainThread]: End processing [acryl-datahub]: success
 [2023-05-26 03:02:14] INFO root fetch - main [MainThread]: Store serial: [18254768]
+[2023-05-26 03:07:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18254768]
+[2023-05-26 03:07:23] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-26 03:07:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Numtoname
+[2023-05-26 03:07:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tinygrad
+[2023-05-26 03:07:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigquery-ml-utils
+[2023-05-26 03:07:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: steptools
+[2023-05-26 03:07:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: miresta
+[2023-05-26 03:07:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-hugo-deploy
+[2023-05-26 03:07:23] INFO root fetch - processPackages [miresta]: New version: [0.5] Old Version: [0.3]
+[2023-05-26 03:07:23] INFO root fetch - processPackages [steptools]: New version: [20.2] Old Version: [20.1]
+[2023-05-26 03:07:23] WARNING root fetch - processPackages [Numtoname]: Skipping, unable to determine old version
+[2023-05-26 03:07:23] INFO root fetch - main [MainThread]: End processing [Numtoname] error
+[2023-05-26 03:07:23] INFO root fetch - processPackages [tinygrad]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-26 03:07:23] INFO root fetch - processPackages [cdk-hugo-deploy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 03:07:23] INFO root fetch - processPackages [bigquery-ml-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 03:07:23] INFO root fetch - processPackages [miresta]: executing diffoscope
+[2023-05-26 03:07:23] INFO root fetch - processPackages [miresta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/miresta-0.3.tar.gz tmp/miresta-0.5.tar.gz --markdown 20230526/m/miresta/0.3-0.5/diff.md --exclude *.pyd
+[2023-05-26 03:07:23] INFO root fetch - processPackages [cdk-hugo-deploy]: executing diffoscope
+[2023-05-26 03:07:23] INFO root fetch - processPackages [cdk-hugo-deploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-hugo-deploy-0.0.98.tar.gz tmp/cdk-hugo-deploy-0.0.99.tar.gz --markdown 20230526/c/cdk-hugo-deploy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 03:07:23] INFO root fetch - processPackages [bigquery-ml-utils]: Downloading https://files.pythonhosted.org/packages/4a/57/6672a03abdd5473c48a109ecbb349d6ff204c77048dd58812a9699cf61ce/bigquery_ml_utils-0.1.8-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-26 03:07:23] INFO root fetch - processPackages [tinygrad]: Downloading https://files.pythonhosted.org/packages/43/2c/ff8ca9d7ca24d6c4a7117eb6185336b4f48b2ecf3751ff0f9304eb4c991e/tinygrad-0.5.0.tar.gz
+[2023-05-26 03:07:23] INFO root fetch - processPackages [steptools]: Downloading https://files.pythonhosted.org/packages/55/42/d3e8eee16cf7f4b670ccf26c61c756d3a7b30ad34acbc6a6d2498da91be3/steptools-20.1-cp37-abi3-win_amd64.whl
+[2023-05-26 03:07:24] INFO root fetch - processPackages [steptools]: Downloading https://files.pythonhosted.org/packages/ed/c3/490e57738973a1fbf345186289861978aaa321b150271d5227e4868144b7/steptools-20.2-cp37-abi3-win_amd64.whl
+[2023-05-26 03:07:24] INFO root fetch - processPackages [tinygrad]: Downloading https://files.pythonhosted.org/packages/80/fb/54ea59ce69d88345cc509a9e28aa65b25db38b58230d4867d14433cda5dd/tinygrad-0.6.0.tar.gz
+[2023-05-26 03:07:24] INFO root fetch - processPackages [tinygrad]: executing diffoscope
+[2023-05-26 03:07:24] INFO root fetch - processPackages [tinygrad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinygrad-0.5.0.tar.gz tmp/tinygrad-0.6.0.tar.gz --markdown 20230526/t/tinygrad/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-26 03:07:24] INFO root fetch - processPackages [steptools]: executing diffoscope
+[2023-05-26 03:07:24] INFO root fetch - processPackages [steptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steptools-20.1-cp37-abi3-win_amd64.whl.zip tmp/steptools-20.2-cp37-abi3-win_amd64.whl.zip --markdown 20230526/s/steptools/20.1-20.2/diff.md --exclude *.pyd
+[2023-05-26 03:07:24] INFO root fetch - main [MainThread]: End processing [cdk-hugo-deploy]: success
+[2023-05-26 03:07:25] INFO root fetch - main [MainThread]: End processing [miresta]: success
+[2023-05-26 03:07:25] INFO root fetch - processPackages [bigquery-ml-utils]: Downloading https://files.pythonhosted.org/packages/46/f2/c7a4f468909e98a985a731527e97c1fd4ba29f8c8859d2a55a3a5ee70d12/bigquery_ml_utils-0.1.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-26 03:07:25] INFO root fetch - processPackages [bigquery-ml-utils]: executing diffoscope
+[2023-05-26 03:07:25] INFO root fetch - processPackages [bigquery-ml-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigquery_ml_utils-0.1.8-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/bigquery_ml_utils-0.1.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230526/b/bigquery-ml-utils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 03:07:25] INFO root fetch - main [MainThread]: End processing [tinygrad]: success
+[2023-05-26 03:07:25] INFO root fetch - main [MainThread]: End processing [steptools]: success
+[2023-05-26 03:07:26] INFO root fetch - main [MainThread]: End processing [bigquery-ml-utils]: success
+[2023-05-26 03:07:26] INFO root fetch - main [MainThread]: Store serial: [18254803]
