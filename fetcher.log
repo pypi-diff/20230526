@@ -16407,3 +16407,90 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 15:36:02] INFO root fetch - main [MainThread]: End processing [c65faucet]: success
 [2023-05-26 15:36:04] INFO root fetch - main [MainThread]: End processing [encord-active-components]: success
 [2023-05-26 15:36:04] INFO root fetch - main [MainThread]: Store serial: [18263483]
+[2023-05-26 15:41:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18263483]
+[2023-05-26 15:41:14] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-26 15:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tb-paho-mqtt-client
+[2023-05-26 15:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wayfarer
+[2023-05-26 15:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: microgue
+[2023-05-26 15:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: craft-ai-sdk
+[2023-05-26 15:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-pure-client
+[2023-05-26 15:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: multidecoder
+[2023-05-26 15:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pg-bulk-ingest
+[2023-05-26 15:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dwiqc
+[2023-05-26 15:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: py-pde
+[2023-05-26 15:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: akerbp.mlops
+[2023-05-26 15:41:14] INFO root fetch - processPackages [wayfarer]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-26 15:41:14] INFO root fetch - processPackages [multidecoder]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-05-26 15:41:14] INFO root fetch - processPackages [craft-ai-sdk]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-26 15:41:14] INFO root fetch - processPackages [microgue]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-26 15:41:14] INFO root fetch - processPackages [tb-paho-mqtt-client]: New version: [1.6.3] Old Version: [1.6.2]
+[2023-05-26 15:41:14] INFO root fetch - processPackages [py-pure-client]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-26 15:41:14] INFO root fetch - processPackages [pg-bulk-ingest]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 15:41:14] INFO root fetch - processPackages [dwiqc]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-26 15:41:14] INFO root fetch - processPackages [py-pde]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-26 15:41:14] INFO root fetch - processPackages [akerbp.mlops]: New version: [3.1.2a5] Old Version: [3.1.2a4]
+[2023-05-26 15:41:14] INFO root fetch - processPackages [py-pde]: executing diffoscope
+[2023-05-26 15:41:14] INFO root fetch - processPackages [py-pde]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-pde-0.9.3.tar.gz tmp/py-pde-0.9.4.tar.gz --markdown 20230526/p/py-pde/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-26 15:41:14] INFO root fetch - processPackages [wayfarer]: Downloading https://files.pythonhosted.org/packages/e9/ae/85520ee93a739aec9e4b31a13850503d58081de24dd3211174932eddf526/wayfarer-0.9.3.tar.gz
+[2023-05-26 15:41:14] INFO root fetch - processPackages [microgue]: Downloading https://files.pythonhosted.org/packages/98/95/499e794cabfb9e4cb53a9815c4cebfd42228624c81653267c5a25f8319b5/microgue-2.0.9.tar.gz
+[2023-05-26 15:41:14] INFO root fetch - processPackages [py-pure-client]: Downloading https://files.pythonhosted.org/packages/f5/a9/1e9044d916cb22d9033363f82ed590e172e0135238fa7d4d04c91aab2b5b/py-pure-client-1.8.0.tar.gz
+[2023-05-26 15:41:14] INFO root fetch - processPackages [dwiqc]: Downloading https://files.pythonhosted.org/packages/b0/2e/d0f772af2af224123697dd773b620913b11f667ed3c1ea39c72764ae394c/dwiqc-0.2.2-py2.py3-none-any.whl
+[2023-05-26 15:41:14] INFO root fetch - processPackages [microgue]: executing diffoscope
+[2023-05-26 15:41:14] INFO root fetch - processPackages [tb-paho-mqtt-client]: Downloading https://files.pythonhosted.org/packages/ba/e2/c5dd360309b651ec353ffb35b05a3a4ce3a8d3635764d9849be6cabc8755/tb-paho-mqtt-client-1.6.2.tar.gz
+[2023-05-26 15:41:14] INFO root fetch - processPackages [microgue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/microgue-2.0.8.tar.gz tmp/microgue-2.0.9.tar.gz --markdown 20230526/m/microgue/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-26 15:41:14] INFO root fetch - processPackages [akerbp.mlops]: Downloading https://files.pythonhosted.org/packages/6a/c9/3106dc3c22cb81a38f4af88bbd7160e07710c646a39fd805e0f6e4944622/akerbp.mlops-3.1.2a5.tar.gz
+[2023-05-26 15:41:14] INFO root fetch - processPackages [dwiqc]: executing diffoscope
+[2023-05-26 15:41:14] INFO root fetch - processPackages [dwiqc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dwiqc-0.2.1-py2.py3-none-any.whl.zip tmp/dwiqc-0.2.2-py2.py3-none-any.whl.zip --markdown 20230526/d/dwiqc/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-26 15:41:14] INFO root fetch - processPackages [multidecoder]: Downloading https://files.pythonhosted.org/packages/84/17/7f8a154491769b4a2e96acca86bcd7d6821702923cb419ca53197be553ad/multidecoder-0.1.0.tar.gz
+[2023-05-26 15:41:14] INFO root fetch - processPackages [multidecoder]: executing diffoscope
+[2023-05-26 15:41:14] INFO root fetch - processPackages [multidecoder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multidecoder-0.0.9.tar.gz tmp/multidecoder-0.1.0.tar.gz --markdown 20230526/m/multidecoder/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-05-26 15:41:14] INFO root fetch - processPackages [akerbp.mlops]: executing diffoscope
+[2023-05-26 15:41:14] INFO root fetch - processPackages [akerbp.mlops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akerbp.mlops-3.1.2a4.tar.gz tmp/akerbp.mlops-3.1.2a5.tar.gz --markdown 20230526/a/akerbp.mlops/3.1.2a4-3.1.2a5/diff.md --exclude *.pyd
+[2023-05-26 15:41:14] INFO root fetch - processPackages [pg-bulk-ingest]: executing diffoscope
+[2023-05-26 15:41:14] INFO root fetch - processPackages [pg-bulk-ingest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_bulk_ingest-0.0.8.tar.gz tmp/pg_bulk_ingest-0.0.9.tar.gz --markdown 20230526/p/pg-bulk-ingest/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 15:41:14] INFO root fetch - processPackages [craft-ai-sdk]: executing diffoscope
+[2023-05-26 15:41:14] INFO root fetch - processPackages [craft-ai-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/craft_ai_sdk-0.9.0.tar.gz tmp/craft_ai_sdk-0.9.1.tar.gz --markdown 20230526/c/craft-ai-sdk/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-26 15:41:14] INFO root fetch - processPackages [wayfarer]: Downloading https://files.pythonhosted.org/packages/bf/87/46fa47b204dcc6bfc4414ba3dc39551c4fd3a2a80841e2d9aed9f26614c0/wayfarer-0.9.4.tar.gz
+[2023-05-26 15:41:14] INFO root fetch - processPackages [py-pure-client]: Downloading https://files.pythonhosted.org/packages/a2/95/0c1453c53a70db65236cf75842d1452fee7d3c3a4f0246e1797872c54cbe/py-pure-client-1.9.0.tar.gz
+[2023-05-26 15:41:14] INFO root fetch - processPackages [wayfarer]: executing diffoscope
+[2023-05-26 15:41:14] INFO root fetch - processPackages [wayfarer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wayfarer-0.9.3.tar.gz tmp/wayfarer-0.9.4.tar.gz --markdown 20230526/w/wayfarer/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-26 15:41:14] INFO root fetch - processPackages [tb-paho-mqtt-client]: Downloading https://files.pythonhosted.org/packages/7e/2c/be75d139554a427a56100b75d091137b716d223e38b3ebeaee0f25ad3bb2/tb-paho-mqtt-client-1.6.3.tar.gz
+[2023-05-26 15:41:14] INFO root fetch - processPackages [tb-paho-mqtt-client]: executing diffoscope
+[2023-05-26 15:41:14] INFO root fetch - processPackages [tb-paho-mqtt-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb-paho-mqtt-client-1.6.2.tar.gz tmp/tb-paho-mqtt-client-1.6.3.tar.gz --markdown 20230526/t/tb-paho-mqtt-client/1.6.2-1.6.3/diff.md --exclude *.pyd
+[2023-05-26 15:41:15] INFO root fetch - processPackages [py-pure-client]: executing diffoscope
+[2023-05-26 15:41:15] INFO root fetch - processPackages [py-pure-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-pure-client-1.8.0.tar.gz tmp/py-pure-client-1.9.0.tar.gz --markdown 20230526/p/py-pure-client/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-26 15:41:16] INFO root fetch - processPackages [microgue]: Start processing: legend-daq2lh5
+[2023-05-26 15:41:16] INFO root fetch - main [MainThread]: End processing [microgue]: success
+[2023-05-26 15:41:16] WARNING root fetch - processPackages [legend-daq2lh5]: Skipping, unable to determine old version
+[2023-05-26 15:41:16] INFO root fetch - processPackages [legend-daq2lh5]: Start processing: decay-scheme
+[2023-05-26 15:41:16] INFO root fetch - main [MainThread]: End processing [legend-daq2lh5] error
+[2023-05-26 15:41:16] INFO root fetch - processPackages [decay-scheme]: New version: [0.0.0a3] Old Version: [0.0.0a2]
+[2023-05-26 15:41:16] INFO root fetch - processPackages [decay-scheme]: Downloading https://files.pythonhosted.org/packages/1e/10/6420d49e392246267729788eb8e5302077b97c00d6779302656adff80517/decay_scheme-0.0.0a2.tar.gz
+[2023-05-26 15:41:16] INFO root fetch - processPackages [dwiqc]: Start processing: jsmetrics
+[2023-05-26 15:41:16] INFO root fetch - main [MainThread]: End processing [dwiqc]: success
+[2023-05-26 15:41:16] INFO root fetch - processPackages [py-pde]: Start processing: svbench
+[2023-05-26 15:41:16] INFO root fetch - main [MainThread]: End processing [py-pde]: success
+[2023-05-26 15:41:16] INFO root fetch - processPackages [jsmetrics]: New version: [0.1.1b0] Old Version: [0.1.1]
+[2023-05-26 15:41:16] INFO root fetch - processPackages [decay-scheme]: Downloading https://files.pythonhosted.org/packages/29/94/f34e094c998201d6ea762426ef5399c44adcdb2016dcc0c43437682664bf/decay_scheme-0.0.0a3.tar.gz
+[2023-05-26 15:41:17] INFO root fetch - processPackages [svbench]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-05-26 15:41:17] INFO root fetch - processPackages [jsmetrics]: Downloading https://files.pythonhosted.org/packages/c4/8d/5c715d85832b52cb333f9a6f135649940459106daa4550fbb64de4e987d5/jsmetrics-0.1.1.tar.gz
+[2023-05-26 15:41:17] INFO root fetch - processPackages [decay-scheme]: executing diffoscope
+[2023-05-26 15:41:17] INFO root fetch - processPackages [decay-scheme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decay_scheme-0.0.0a2.tar.gz tmp/decay_scheme-0.0.0a3.tar.gz --markdown 20230526/d/decay-scheme/0.0.0a2-0.0.0a3/diff.md --exclude *.pyd
+[2023-05-26 15:41:17] INFO root fetch - processPackages [svbench]: Downloading https://files.pythonhosted.org/packages/7e/9a/a37fa15d0a7d8c1904c77b808116129962779dbdd2ff9672d176bc6fcbad/svbench-0.6.0.tar.gz
+[2023-05-26 15:41:17] INFO root fetch - main [MainThread]: End processing [akerbp.mlops]: success
+[2023-05-26 15:41:17] INFO root fetch - main [MainThread]: End processing [craft-ai-sdk]: success
+[2023-05-26 15:41:17] INFO root fetch - processPackages [svbench]: Downloading https://files.pythonhosted.org/packages/cd/76/a45925c604303366040a1341d1c68e0bc7b3cd2d84a4375d5064ad02b812/svbench-0.7.0.tar.gz
+[2023-05-26 15:41:17] INFO root fetch - main [MainThread]: End processing [pg-bulk-ingest]: success
+[2023-05-26 15:41:17] INFO root fetch - main [MainThread]: End processing [multidecoder]: success
+[2023-05-26 15:41:17] INFO root fetch - processPackages [svbench]: executing diffoscope
+[2023-05-26 15:41:17] INFO root fetch - processPackages [svbench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/svbench-0.6.0.tar.gz tmp/svbench-0.7.0.tar.gz --markdown 20230526/s/svbench/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-05-26 15:41:18] INFO root fetch - main [MainThread]: End processing [wayfarer]: success
+[2023-05-26 15:41:18] INFO root fetch - processPackages [jsmetrics]: Downloading https://files.pythonhosted.org/packages/3f/82/5373c22c8c36667ec15ff366f89521a655500ea16fdecd71bc5b152f9f18/jsmetrics-0.1.1b0.tar.gz
+[2023-05-26 15:41:18] INFO root fetch - main [MainThread]: End processing [tb-paho-mqtt-client]: success
+[2023-05-26 15:41:18] INFO root fetch - main [MainThread]: End processing [decay-scheme]: success
+[2023-05-26 15:41:18] INFO root fetch - processPackages [jsmetrics]: executing diffoscope
+[2023-05-26 15:41:18] INFO root fetch - processPackages [jsmetrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsmetrics-0.1.1.tar.gz tmp/jsmetrics-0.1.1b0.tar.gz --markdown 20230526/j/jsmetrics/0.1.1-0.1.1b0/diff.md --exclude *.pyd
+[2023-05-26 15:41:19] INFO root fetch - main [MainThread]: End processing [svbench]: success
+[2023-05-26 15:41:20] INFO root fetch - main [MainThread]: End processing [jsmetrics]: success
+[2023-05-26 15:41:34] INFO root fetch - main [MainThread]: End processing [py-pure-client]: success
+[2023-05-26 15:41:34] INFO root fetch - main [MainThread]: Store serial: [18263524]
