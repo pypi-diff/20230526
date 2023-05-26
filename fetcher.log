@@ -10144,3 +10144,129 @@
 [2023-05-26 09:40:26] INFO root fetch - main [MainThread]: End processing [pulumi-docker]: success
 [2023-05-26 09:40:27] INFO root fetch - main [MainThread]: End processing [pulumi-vault]: success
 [2023-05-26 09:40:27] INFO root fetch - main [MainThread]: Store serial: [18259272]
+[2023-05-26 09:45:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18259272]
+[2023-05-26 09:45:37] INFO root fetch - main [MainThread]: Found 22 changed packages
+[2023-05-26 09:45:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eodc-sdk
+[2023-05-26 09:45:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kuto
+[2023-05-26 09:45:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jjuke
+[2023-05-26 09:45:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pydra-fsl
+[2023-05-26 09:45:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-oci
+[2023-05-26 09:45:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xw-utils
+[2023-05-26 09:45:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: secret-message
+[2023-05-26 09:45:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pulumi-tls
+[2023-05-26 09:45:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pycliwrapper
+[2023-05-26 09:45:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pulumi-rke
+[2023-05-26 09:45:37] INFO root fetch - processPackages [kuto]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 09:45:37] INFO root fetch - processPackages [jjuke]: New version: [0.0.0.5] Old Version: [0.0.0.4]
+[2023-05-26 09:45:37] WARNING root fetch - processPackages [eodc-sdk]: Skipping, unable to determine old version
+[2023-05-26 09:45:37] INFO root fetch - processPackages [eodc-sdk]: Start processing: numerous.sdk
+[2023-05-26 09:45:37] INFO root fetch - main [MainThread]: End processing [eodc-sdk] error
+[2023-05-26 09:45:37] INFO root fetch - processPackages [pycliwrapper]: New version: [0.3] Old Version: [0.2]
+[2023-05-26 09:45:37] INFO root fetch - processPackages [secret-message]: New version: [0.9] Old Version: [0.8]
+[2023-05-26 09:45:37] INFO root fetch - processPackages [pulumi-oci]: New version: [0.9.1a1677791364] Old Version: [0.9.0]
+[2023-05-26 09:45:37] INFO root fetch - processPackages [pydra-fsl]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 09:45:37] INFO root fetch - processPackages [pulumi-tls]: New version: [5.1.0a1685085554] Old Version: [5.1.0a1684391197]
+[2023-05-26 09:45:37] INFO root fetch - processPackages [pulumi-rke]: New version: [3.3.0a1685084065] Old Version: [3.3.0a1684391037]
+[2023-05-26 09:45:37] INFO root fetch - processPackages [numerous.sdk]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-26 09:45:37] INFO root fetch - processPackages [jjuke]: executing diffoscope
+[2023-05-26 09:45:37] INFO root fetch - processPackages [jjuke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jjuke-0.0.0.4.tar.gz tmp/jjuke-0.0.0.5.tar.gz --markdown 20230526/j/jjuke/0.0.0.4-0.0.0.5/diff.md --exclude *.pyd
+[2023-05-26 09:45:37] INFO root fetch - processPackages [kuto]: executing diffoscope
+[2023-05-26 09:45:37] INFO root fetch - processPackages [kuto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kuto-0.0.8-py3-none-any.whl.zip tmp/kuto-0.0.9.tar.gz --markdown 20230526/k/kuto/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 09:45:37] INFO root fetch - processPackages [xw-utils]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-26 09:45:37] INFO root fetch - processPackages [secret-message]: executing diffoscope
+[2023-05-26 09:45:37] INFO root fetch - processPackages [secret-message]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secret_message-0.8.tar.gz tmp/secret_message-0.9.tar.gz --markdown 20230526/s/secret-message/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-26 09:45:38] INFO root fetch - processPackages [pycliwrapper]: Downloading https://files.pythonhosted.org/packages/d9/e3/82db9ef1bb66d142c214ac38d04ccfe4cce4e6e589b865e25a63abf772ce/pycliwrapper-0.3.tar.gz
+[2023-05-26 09:45:38] INFO root fetch - processPackages [pydra-fsl]: Downloading https://files.pythonhosted.org/packages/a3/0e/6763eeba5bb3375298fc7519ac1d8d63117462e51e9969ddf2a285b4d126/pydra_fsl-0.0.8.tar.gz
+[2023-05-26 09:45:38] INFO root fetch - processPackages [xw-utils]: Downloading https://files.pythonhosted.org/packages/9a/25/3b0af1016b947a1a4b40fb80e5ce7d74310e51100f276a8d54014bfba4e2/xw_utils-1.0.7-cp39-cp39-win_amd64.whl
+[2023-05-26 09:45:38] INFO root fetch - processPackages [pycliwrapper]: executing diffoscope
+[2023-05-26 09:45:38] INFO root fetch - processPackages [pycliwrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycliwrapper-0.2.tar.gz tmp/pycliwrapper-0.3.tar.gz --markdown 20230526/p/pycliwrapper/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-26 09:45:38] INFO root fetch - processPackages [pulumi-rke]: Downloading https://files.pythonhosted.org/packages/fc/95/db81569b6c4b74cb6da58a2994a97ef926183b8bf0342dd943fc717b86ec/pulumi_rke-3.3.0a1685084065.tar.gz
+[2023-05-26 09:45:38] INFO root fetch - processPackages [pulumi-oci]: executing diffoscope
+[2023-05-26 09:45:38] INFO root fetch - processPackages [pulumi-oci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_oci-0.9.0.tar.gz tmp/pulumi_oci-0.9.1a1677791364.tar.gz --markdown 20230526/p/pulumi-oci/0.9.0-0.9.1a1677791364/diff.md --exclude *.pyd
+[2023-05-26 09:45:38] INFO root fetch - processPackages [pulumi-tls]: Downloading https://files.pythonhosted.org/packages/51/27/d6d19a92145cc76c7f6bcd0350d90c8a3e343d53d1c5e2971d1cd9944a86/pulumi_tls-5.1.0a1685085554.tar.gz
+[2023-05-26 09:45:38] INFO root fetch - processPackages [numerous.sdk]: executing diffoscope
+[2023-05-26 09:45:38] INFO root fetch - processPackages [numerous.sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numerous.sdk-0.8.0.tar.gz tmp/numerous.sdk-0.9.0.tar.gz --markdown 20230526/n/numerous.sdk/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-26 09:45:38] INFO root fetch - processPackages [pulumi-rke]: executing diffoscope
+[2023-05-26 09:45:38] INFO root fetch - processPackages [pulumi-rke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_rke-3.3.0a1684391037.tar.gz tmp/pulumi_rke-3.3.0a1685084065.tar.gz --markdown 20230526/p/pulumi-rke/3.3.0a1684391037-3.3.0a1685084065/diff.md --exclude *.pyd
+[2023-05-26 09:45:38] INFO root fetch - processPackages [xw-utils]: Downloading https://files.pythonhosted.org/packages/af/ee/b41f4548fe575a327ddf1ab922ab911e75eaab54c03efa58a37ae66d7195/xw_utils-1.0.8-cp39-cp39-musllinux_1_1_aarch64.whl
+[2023-05-26 09:45:38] INFO root fetch - processPackages [pulumi-tls]: executing diffoscope
+[2023-05-26 09:45:38] INFO root fetch - processPackages [pulumi-tls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_tls-5.1.0a1684391197.tar.gz tmp/pulumi_tls-5.1.0a1685085554.tar.gz --markdown 20230526/p/pulumi-tls/5.1.0a1684391197-5.1.0a1685085554/diff.md --exclude *.pyd
+[2023-05-26 09:45:38] INFO root fetch - processPackages [xw-utils]: executing diffoscope
+[2023-05-26 09:45:38] INFO root fetch - processPackages [xw-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xw_utils-1.0.7-cp39-cp39-win_amd64.whl.zip tmp/xw_utils-1.0.8-cp39-cp39-musllinux_1_1_aarch64.whl.zip --markdown 20230526/x/xw-utils/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-05-26 09:45:38] INFO root fetch - processPackages [pydra-fsl]: Downloading https://files.pythonhosted.org/packages/01/95/5681f06f697e05dd675fd56473ea56f5b4a9a90862261bc27fe200af5c30/pydra_fsl-0.0.9.tar.gz
+[2023-05-26 09:45:38] INFO root fetch - processPackages [pydra-fsl]: executing diffoscope
+[2023-05-26 09:45:38] INFO root fetch - processPackages [pydra-fsl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydra_fsl-0.0.8.tar.gz tmp/pydra_fsl-0.0.9.tar.gz --markdown 20230526/p/pydra-fsl/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 09:45:39] INFO root fetch - processPackages [kuto]: Start processing: my-provider
+[2023-05-26 09:45:39] INFO root fetch - main [MainThread]: End processing [kuto]: success
+[2023-05-26 09:45:39] INFO root fetch - processPackages [my-provider]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-26 09:45:39] INFO root fetch - processPackages [secret-message]: Start processing: kuto
+[2023-05-26 09:45:39] INFO root fetch - main [MainThread]: End processing [secret-message]: success
+[2023-05-26 09:45:39] INFO root fetch - processPackages [kuto]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 09:45:39] INFO root fetch - processPackages [kuto]: executing diffoscope
+[2023-05-26 09:45:39] INFO root fetch - processPackages [kuto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kuto-0.0.8-py3-none-any.whl.zip tmp/kuto-0.0.9.tar.gz --markdown 20230526/k/kuto/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 09:45:39] INFO root fetch - processPackages [my-provider]: executing diffoscope
+[2023-05-26 09:45:39] INFO root fetch - processPackages [my-provider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_provider-0.1.1.tar.gz tmp/my_provider-0.1.2.tar.gz --markdown 20230526/m/my-provider/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-26 09:45:40] INFO root fetch - processPackages [jjuke]: Start processing: ChatLLM
+[2023-05-26 09:45:40] INFO root fetch - main [MainThread]: End processing [jjuke]: success
+[2023-05-26 09:45:40] INFO root fetch - processPackages [pycliwrapper]: Start processing: discopy
+[2023-05-26 09:45:40] INFO root fetch - main [MainThread]: End processing [pycliwrapper]: success
+[2023-05-26 09:45:40] INFO root fetch - processPackages [ChatLLM]: New version: [2023.5.4.12.7.23] Old Version: [2023.5.4.11.58.59]
+[2023-05-26 09:45:40] INFO root fetch - processPackages [discopy]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-26 09:45:40] INFO root fetch - processPackages [discopy]: Downloading https://files.pythonhosted.org/packages/5a/4e/c05c69028100e0669ee285346188f0b427759d3ffe0787faff8ba5299125/discopy-1.1.1.tar.gz
+[2023-05-26 09:45:40] INFO root fetch - processPackages [xw-utils]: Start processing: streamlit-nightly
+[2023-05-26 09:45:40] INFO root fetch - main [MainThread]: End processing [xw-utils]: success
+[2023-05-26 09:45:40] INFO root fetch - processPackages [ChatLLM]: executing diffoscope
+[2023-05-26 09:45:40] INFO root fetch - processPackages [ChatLLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ChatLLM-2023.5.4.11.58.59.tar.gz tmp/ChatLLM-2023.5.4.12.7.23.tar.gz --markdown 20230526/C/ChatLLM/2023.5.4.11.58.59-2023.5.4.12.7.23/diff.md --exclude *.pyd
+[2023-05-26 09:45:40] INFO root fetch - processPackages [discopy]: Downloading https://files.pythonhosted.org/packages/36/a1/f94f4845f45919ee4995e080de7937ecfda49fc67977d54ee4e13fd785b6/discopy-1.1.2.tar.gz
+[2023-05-26 09:45:40] INFO root fetch - processPackages [streamlit-nightly]: New version: [1.9.3.dev20220601] Old Version: [1.9.3.dev20220531]
+[2023-05-26 09:45:40] INFO root fetch - processPackages [pulumi-tls]: Start processing: MeUtils
+[2023-05-26 09:45:40] INFO root fetch - main [MainThread]: End processing [pulumi-tls]: success
+[2023-05-26 09:45:41] INFO root fetch - processPackages [MeUtils]: New version: [2023.5.9.15.50.17] Old Version: [2023.5.5.13.0.43]
+[2023-05-26 09:45:41] INFO root fetch - processPackages [discopy]: executing diffoscope
+[2023-05-26 09:45:41] INFO root fetch - processPackages [discopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discopy-1.1.1.tar.gz tmp/discopy-1.1.2.tar.gz --markdown 20230526/d/discopy/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-26 09:45:41] INFO root fetch - processPackages [streamlit-nightly]: executing diffoscope
+[2023-05-26 09:45:41] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-nightly-1.9.3.dev20220531.tar.gz tmp/streamlit-nightly-1.9.3.dev20220601.tar.gz --markdown 20230526/s/streamlit-nightly/1.9.3.dev20220531-1.9.3.dev20220601/diff.md --exclude *.pyd
+[2023-05-26 09:45:41] INFO root fetch - processPackages [MeUtils]: executing diffoscope
+[2023-05-26 09:45:41] INFO root fetch - processPackages [MeUtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MeUtils-2023.5.5.13.0.43.tar.gz tmp/MeUtils-2023.5.9.15.50.17.tar.gz --markdown 20230526/M/MeUtils/2023.5.5.13.0.43-2023.5.9.15.50.17/diff.md --exclude *.pyd
+[2023-05-26 09:45:41] INFO root fetch - processPackages [pydra-fsl]: Start processing: smart-app-framework
+[2023-05-26 09:45:41] INFO root fetch - main [MainThread]: End processing [pydra-fsl]: success
+[2023-05-26 09:45:41] INFO root fetch - processPackages [kuto]: Start processing: nlu-tmp
+[2023-05-26 09:45:41] INFO root fetch - main [MainThread]: End processing [kuto]: success
+[2023-05-26 09:45:41] INFO root fetch - processPackages [nlu-tmp]: New version: [4.5.0rc5] Old Version: [4.3.0rc3]
+[2023-05-26 09:45:41] INFO root fetch - processPackages [smart-app-framework]: New version: [2.1.0] Old Version: [2.0.2rc1]
+[2023-05-26 09:45:41] INFO root fetch - processPackages [nlu-tmp]: executing diffoscope
+[2023-05-26 09:45:41] INFO root fetch - processPackages [nlu-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlu_tmp-4.3.0rc3.tar.gz tmp/nlu_tmp-4.5.0rc5.tar.gz --markdown 20230526/n/nlu-tmp/4.3.0rc3-4.5.0rc5/diff.md --exclude *.pyd
+[2023-05-26 09:45:41] INFO root fetch - processPackages [smart-app-framework]: Downloading https://files.pythonhosted.org/packages/94/ba/9ce16ce9c93fd59f523d81448223ae1dd607a17f521e52d21c3927c93387/smart_app_framework-2.0.2rc1-py3-none-any.whl
+[2023-05-26 09:45:41] INFO root fetch - processPackages [my-provider]: Start processing: silicron
+[2023-05-26 09:45:41] INFO root fetch - main [MainThread]: End processing [my-provider]: success
+[2023-05-26 09:45:41] INFO root fetch - processPackages [silicron]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-26 09:45:42] INFO root fetch - processPackages [numerous.sdk]: Start processing: johnsnowlabs-for-databricks-tmp
+[2023-05-26 09:45:42] INFO root fetch - main [MainThread]: End processing [numerous.sdk]: success
+[2023-05-26 09:45:42] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: New version: [4.4.9] Old Version: [4.4.8]
+[2023-05-26 09:45:42] INFO root fetch - processPackages [smart-app-framework]: Downloading https://files.pythonhosted.org/packages/a4/32/a425db8075d80770998dd0bb0e93034cadebdcf0321492a59043d262b488/smart_app_framework-2.1.0-py3-none-any.whl
+[2023-05-26 09:45:42] INFO root fetch - processPackages [pulumi-rke]: Start processing: eodc-sdk
+[2023-05-26 09:45:42] INFO root fetch - main [MainThread]: End processing [pulumi-rke]: success
+[2023-05-26 09:45:42] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: executing diffoscope
+[2023-05-26 09:45:42] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/johnsnowlabs_for_databricks_tmp-4.4.8.tar.gz tmp/johnsnowlabs_for_databricks_tmp-4.4.9.tar.gz --markdown 20230526/j/johnsnowlabs-for-databricks-tmp/4.4.8-4.4.9/diff.md --exclude *.pyd
+[2023-05-26 09:45:42] INFO root fetch - processPackages [silicron]: Downloading https://files.pythonhosted.org/packages/ba/37/abc73f35f2baeb8a32ca02cb151545c123ff28913b77f507412d77714d9b/silicron-0.0.1.tar.gz
+[2023-05-26 09:45:42] INFO root fetch - processPackages [eodc-sdk]: New version: [2023.5.0rc1] Old Version: [2023.5.0rc0]
+[2023-05-26 09:45:42] INFO root fetch - processPackages [smart-app-framework]: executing diffoscope
+[2023-05-26 09:45:42] INFO root fetch - processPackages [smart-app-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smart_app_framework-2.0.2rc1-py3-none-any.whl.zip tmp/smart_app_framework-2.1.0-py3-none-any.whl.zip --markdown 20230526/s/smart-app-framework/2.0.2rc1-2.1.0/diff.md --exclude *.pyd
+[2023-05-26 09:45:42] INFO root fetch - processPackages [eodc-sdk]: Downloading https://files.pythonhosted.org/packages/eb/46/89cbf6b7cecaf36190f101a11594a5dd8b568530807f199e0dbf547e4f34/eodc_sdk-2023.5.0rc0.tar.gz
+[2023-05-26 09:45:42] INFO root fetch - processPackages [silicron]: Downloading https://files.pythonhosted.org/packages/3e/98/8d9b741d69da11dd256a871a84ded0962ce212441c568649d1790fb4fdb2/silicron-0.0.2.tar.gz
+[2023-05-26 09:45:42] INFO root fetch - processPackages [silicron]: executing diffoscope
+[2023-05-26 09:45:42] INFO root fetch - processPackages [silicron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silicron-0.0.1.tar.gz tmp/silicron-0.0.2.tar.gz --markdown 20230526/s/silicron/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-26 09:45:42] INFO root fetch - processPackages [eodc-sdk]: Downloading https://files.pythonhosted.org/packages/c6/65/b1ec363eecc41ba22be8b1a36e497036d07e1f20623d3d431c2ecdf9a87a/eodc_sdk-2023.5.0rc1.tar.gz
+[2023-05-26 09:45:42] INFO root fetch - processPackages [eodc-sdk]: executing diffoscope
+[2023-05-26 09:45:42] INFO root fetch - processPackages [eodc-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eodc_sdk-2023.5.0rc0.tar.gz tmp/eodc_sdk-2023.5.0rc1.tar.gz --markdown 20230526/e/eodc-sdk/2023.5.0rc0-2023.5.0rc1/diff.md --exclude *.pyd
+[2023-05-26 09:45:43] INFO root fetch - main [MainThread]: End processing [ChatLLM]: success
+[2023-05-26 09:45:43] INFO root fetch - main [MainThread]: End processing [discopy]: success
+[2023-05-26 09:45:44] INFO root fetch - main [MainThread]: End processing [johnsnowlabs-for-databricks-tmp]: success
+[2023-05-26 09:45:44] INFO root fetch - main [MainThread]: End processing [silicron]: success
+[2023-05-26 09:45:44] INFO root fetch - main [MainThread]: End processing [eodc-sdk]: success
+[2023-05-26 09:45:46] INFO root fetch - main [MainThread]: End processing [smart-app-framework]: success
+[2023-05-26 09:45:48] INFO root fetch - main [MainThread]: End processing [nlu-tmp]: success
+[2023-05-26 09:45:51] INFO root fetch - main [MainThread]: End processing [MeUtils]: success
+[2023-05-26 09:45:55] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
+[2023-05-26 09:46:27] INFO root fetch - main [MainThread]: End processing [pulumi-oci]: success
+[2023-05-26 09:46:27] INFO root fetch - main [MainThread]: Store serial: [18259361]
