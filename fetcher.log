@@ -22322,3 +22322,64 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 19:16:17] INFO root fetch - main [MainThread]: End processing [polymesh]: success
 [2023-05-26 19:16:17] INFO root fetch - main [MainThread]: End processing [odoo14-addon-community-maps]: success
 [2023-05-26 19:16:17] INFO root fetch - main [MainThread]: Store serial: [18266839]
+[2023-05-26 19:21:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18266839]
+[2023-05-26 19:21:26] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-26 19:21:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: OASYS1-ShadowOui-Advanced-Tools
+[2023-05-26 19:21:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: samscore
+[2023-05-26 19:21:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: custom_py_docx
+[2023-05-26 19:21:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tkinter-layout-helpers
+[2023-05-26 19:21:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dysh
+[2023-05-26 19:21:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: webpy-framework
+[2023-05-26 19:21:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Flask-JWT-Extended
+[2023-05-26 19:21:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: clearblade-cloud-iot
+[2023-05-26 19:21:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: humanloop
+[2023-05-26 19:21:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dict-toolbox
+[2023-05-26 19:21:26] WARNING root fetch - processPackages [custom_py_docx]: Skipping, unable to determine old version
+[2023-05-26 19:21:26] INFO root fetch - processPackages [custom_py_docx]: Start processing: tlogg
+[2023-05-26 19:21:26] INFO root fetch - main [MainThread]: End processing [custom_py_docx] error
+[2023-05-26 19:21:26] INFO root fetch - processPackages [OASYS1-ShadowOui-Advanced-Tools]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-05-26 19:21:26] INFO root fetch - processPackages [humanloop]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-05-26 19:21:26] WARNING root fetch - processPackages [samscore]: Skipping, unable to determine old version
+[2023-05-26 19:21:26] INFO root fetch - processPackages [samscore]: Start processing: Fletxible
+[2023-05-26 19:21:26] INFO root fetch - main [MainThread]: End processing [samscore] error
+[2023-05-26 19:21:26] WARNING root fetch - processPackages [webpy-framework]: Skipping, unable to determine old version
+[2023-05-26 19:21:26] WARNING root fetch - processPackages [dysh]: Skipping, unable to determine old version
+[2023-05-26 19:21:26] INFO root fetch - main [MainThread]: End processing [webpy-framework] error
+[2023-05-26 19:21:26] INFO root fetch - main [MainThread]: End processing [dysh] error
+[2023-05-26 19:21:26] INFO root fetch - processPackages [dict-toolbox]: New version: [3.1.2] Old Version: [3.1.1]
+[2023-05-26 19:21:26] WARNING root fetch - processPackages [tkinter-layout-helpers]: Skipping, unable to determine old version
+[2023-05-26 19:21:26] INFO root fetch - main [MainThread]: End processing [tkinter-layout-helpers] error
+[2023-05-26 19:21:26] INFO root fetch - processPackages [clearblade-cloud-iot]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-26 19:21:26] INFO root fetch - processPackages [Flask-JWT-Extended]: New version: [4.5.1] Old Version: [4.4.4]
+[2023-05-26 19:21:26] INFO root fetch - processPackages [tlogg]: New version: [0.5.0a9] Old Version: [0.5.0a8]
+[2023-05-26 19:21:26] INFO root fetch - processPackages [Fletxible]: New version: [0.5.6] Old Version: [0.5.4]
+[2023-05-26 19:21:26] INFO root fetch - processPackages [Flask-JWT-Extended]: Downloading https://files.pythonhosted.org/packages/69/ce/6cd609743a4a71452ec5e95a58a44b54374f1673b7c2f88520117f7f4626/Flask-JWT-Extended-4.4.4.tar.gz
+[2023-05-26 19:21:26] INFO root fetch - processPackages [OASYS1-ShadowOui-Advanced-Tools]: executing diffoscope
+[2023-05-26 19:21:26] INFO root fetch - processPackages [OASYS1-ShadowOui-Advanced-Tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OASYS1-ShadowOui-Advanced-Tools-1.0.98.tar.gz tmp/OASYS1-ShadowOui-Advanced-Tools-1.0.99.tar.gz --markdown 20230526/O/OASYS1-ShadowOui-Advanced-Tools/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-05-26 19:21:26] INFO root fetch - processPackages [clearblade-cloud-iot]: Downloading https://files.pythonhosted.org/packages/6b/36/7d478ed43edc4b04edb2acdab189781aafa22a3b6bfba0cc76c956a0a759/clearblade-cloud-iot-2.0.0.tar.gz
+[2023-05-26 19:21:26] INFO root fetch - processPackages [humanloop]: Downloading https://files.pythonhosted.org/packages/39/3f/f47942e6b259e600d5be0468999874a5e2b75a45755b76e0ac844b0c3818/humanloop-0.4.5.tar.gz
+[2023-05-26 19:21:26] INFO root fetch - processPackages [dict-toolbox]: Downloading https://files.pythonhosted.org/packages/0a/58/379d697c9bf33b30bba6e5f427f391b5e4bfbb6efe0c6eef942202412773/dict-toolbox-3.1.1.tar.gz
+[2023-05-26 19:21:26] INFO root fetch - processPackages [humanloop]: executing diffoscope
+[2023-05-26 19:21:26] INFO root fetch - processPackages [humanloop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/humanloop-0.4.4.tar.gz tmp/humanloop-0.4.5.tar.gz --markdown 20230526/h/humanloop/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-05-26 19:21:27] INFO root fetch - processPackages [Flask-JWT-Extended]: Downloading https://files.pythonhosted.org/packages/6f/97/7785ac3a23e36d55da4e2f363ebcadb5301a9225ec593e35f5102965c056/Flask-JWT-Extended-4.5.1.tar.gz
+[2023-05-26 19:21:27] INFO root fetch - processPackages [Fletxible]: Downloading https://files.pythonhosted.org/packages/d2/e8/f70c3e3c64f421446cabbec63af7ede28a8a89a42011990a57195b07966a/Fletxible-0.5.6.tar.gz
+[2023-05-26 19:21:27] INFO root fetch - processPackages [Flask-JWT-Extended]: executing diffoscope
+[2023-05-26 19:21:27] INFO root fetch - processPackages [Flask-JWT-Extended]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Flask-JWT-Extended-4.4.4.tar.gz tmp/Flask-JWT-Extended-4.5.1.tar.gz --markdown 20230526/F/Flask-JWT-Extended/4.4.4-4.5.1/diff.md --exclude *.pyd
+[2023-05-26 19:21:27] INFO root fetch - processPackages [tlogg]: executing diffoscope
+[2023-05-26 19:21:27] INFO root fetch - processPackages [tlogg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tlogg-0.5.0a8.tar.gz tmp/tlogg-0.5.0a9.tar.gz --markdown 20230526/t/tlogg/0.5.0a8-0.5.0a9/diff.md --exclude *.pyd
+[2023-05-26 19:21:27] INFO root fetch - processPackages [clearblade-cloud-iot]: Downloading https://files.pythonhosted.org/packages/80/9a/eb10b901120292151ff813d60c7b782f65abe35eded7b9583ea75fe275f3/clearblade-cloud-iot-2.0.1.tar.gz
+[2023-05-26 19:21:27] INFO root fetch - processPackages [dict-toolbox]: Downloading https://files.pythonhosted.org/packages/ea/6d/d7727cad8ad484cf8bbab056125e56aba8db87d10fe9a83d5321ebd1e74e/dict-toolbox-3.1.2.tar.gz
+[2023-05-26 19:21:27] INFO root fetch - processPackages [clearblade-cloud-iot]: executing diffoscope
+[2023-05-26 19:21:27] INFO root fetch - processPackages [clearblade-cloud-iot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clearblade-cloud-iot-2.0.0.tar.gz tmp/clearblade-cloud-iot-2.0.1.tar.gz --markdown 20230526/c/clearblade-cloud-iot/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-26 19:21:27] INFO root fetch - processPackages [Fletxible]: executing diffoscope
+[2023-05-26 19:21:27] INFO root fetch - processPackages [Fletxible]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Fletxible-0.5.4.tar.gz tmp/Fletxible-0.5.6.tar.gz --markdown 20230526/F/Fletxible/0.5.4-0.5.6/diff.md --exclude *.pyd
+[2023-05-26 19:21:27] INFO root fetch - processPackages [dict-toolbox]: executing diffoscope
+[2023-05-26 19:21:27] INFO root fetch - processPackages [dict-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dict-toolbox-3.1.1.tar.gz tmp/dict-toolbox-3.1.2.tar.gz --markdown 20230526/d/dict-toolbox/3.1.1-3.1.2/diff.md --exclude *.pyd
+[2023-05-26 19:21:28] INFO root fetch - main [MainThread]: End processing [OASYS1-ShadowOui-Advanced-Tools]: success
+[2023-05-26 19:21:28] INFO root fetch - main [MainThread]: End processing [Fletxible]: success
+[2023-05-26 19:21:29] INFO root fetch - main [MainThread]: End processing [clearblade-cloud-iot]: success
+[2023-05-26 19:21:29] INFO root fetch - main [MainThread]: End processing [tlogg]: success
+[2023-05-26 19:21:29] INFO root fetch - main [MainThread]: End processing [dict-toolbox]: success
+[2023-05-26 19:21:29] INFO root fetch - main [MainThread]: End processing [Flask-JWT-Extended]: success
+[2023-05-26 19:21:31] INFO root fetch - main [MainThread]: End processing [humanloop]: success
+[2023-05-26 19:21:31] INFO root fetch - main [MainThread]: Store serial: [18266887]
