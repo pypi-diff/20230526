@@ -11714,3 +11714,102 @@
 [2023-05-26 11:13:10] INFO root fetch - main [MainThread]: End processing [lamindb]: success
 [2023-05-26 11:13:10] INFO root fetch - main [MainThread]: End processing [idr-gallery]: success
 [2023-05-26 11:13:10] INFO root fetch - main [MainThread]: Store serial: [18260299]
+[2023-05-26 11:18:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18260299]
+[2023-05-26 11:18:20] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-26 11:18:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: experimaestro
+[2023-05-26 11:18:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trcli-a
+[2023-05-26 11:18:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: codecov-cli
+[2023-05-26 11:18:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: textbsr
+[2023-05-26 11:18:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: async-dramatiq
+[2023-05-26 11:18:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tf-geometric
+[2023-05-26 11:18:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pycontent-type
+[2023-05-26 11:18:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tracebloc-package-dev
+[2023-05-26 11:18:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cf-deploy
+[2023-05-26 11:18:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mootdx
+[2023-05-26 11:18:20] WARNING root fetch - processPackages [pycontent-type]: Skipping, unable to determine old version
+[2023-05-26 11:18:20] INFO root fetch - processPackages [async-dramatiq]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-26 11:18:20] INFO root fetch - processPackages [pycontent-type]: Start processing: scrapy-zyte-api
+[2023-05-26 11:18:20] INFO root fetch - main [MainThread]: End processing [pycontent-type] error
+[2023-05-26 11:18:20] INFO root fetch - processPackages [textbsr]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 11:18:20] INFO root fetch - processPackages [trcli-a]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-05-26 11:18:20] INFO root fetch - processPackages [tracebloc-package-dev]: New version: [0.4.0] Old Version: [0.3.9]
+[2023-05-26 11:18:20] INFO root fetch - processPackages [codecov-cli]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 11:18:20] INFO root fetch - processPackages [experimaestro]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-26 11:18:20] INFO root fetch - processPackages [tf-geometric]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-26 11:18:20] INFO root fetch - processPackages [cf-deploy]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 11:18:20] INFO root fetch - processPackages [scrapy-zyte-api]: New version: [0.8.4] Old Version: [0.8.3]
+[2023-05-26 11:18:20] INFO root fetch - processPackages [mootdx]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-26 11:18:20] INFO root fetch - processPackages [textbsr]: executing diffoscope
+[2023-05-26 11:18:20] INFO root fetch - processPackages [textbsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textbsr-0.0.8.tar.gz tmp/textbsr-0.0.9.tar.gz --markdown 20230526/t/textbsr/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 11:18:20] INFO root fetch - processPackages [cf-deploy]: executing diffoscope
+[2023-05-26 11:18:20] INFO root fetch - processPackages [cf-deploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cf_deploy-0.1.8.tar.gz tmp/cf_deploy-0.1.9.tar.gz --markdown 20230526/c/cf-deploy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 11:18:20] INFO root fetch - processPackages [async-dramatiq]: Downloading https://files.pythonhosted.org/packages/2a/d2/90ecf3a8d60bc16a42f11f1117695b4aa0c634880e8ef64f69e1969d02a0/async_dramatiq-0.1.0.tar.gz
+[2023-05-26 11:18:21] INFO root fetch - processPackages [trcli-a]: Downloading https://files.pythonhosted.org/packages/b5/7b/71b64c7556db7fa448d397edc135f7630747f13a5b1c71a3304d9f330ff7/trcli_a-1.5.0-py3-none-any.whl
+[2023-05-26 11:18:21] INFO root fetch - processPackages [tracebloc-package-dev]: Downloading https://files.pythonhosted.org/packages/b5/a9/4737f29ab25ca678a91ae46e60a0b5902483c60c7d3d8d3880baf987fe40/tracebloc_package-dev-0.4.0.tar.gz
+[2023-05-26 11:18:21] INFO root fetch - processPackages [tf-geometric]: Downloading https://files.pythonhosted.org/packages/08/c0/7cad4da902580d87eea4d14b3111ed941ee92dc2124b9acfb4758a6534f4/tf_geometric-0.1.5.tar.gz
+[2023-05-26 11:18:21] INFO root fetch - processPackages [scrapy-zyte-api]: Downloading https://files.pythonhosted.org/packages/0d/f6/3fbe8f039259371dba3950f44c8bae92ff20864144b875d8c4630c470b56/scrapy-zyte-api-0.8.3.tar.gz
+[2023-05-26 11:18:21] INFO root fetch - processPackages [tracebloc-package-dev]: executing diffoscope
+[2023-05-26 11:18:21] INFO root fetch - processPackages [tracebloc-package-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tracebloc_package-dev-0.3.9.tar.gz tmp/tracebloc_package-dev-0.4.0.tar.gz --markdown 20230526/t/tracebloc-package-dev/0.3.9-0.4.0/diff.md --exclude *.pyd
+[2023-05-26 11:18:21] INFO root fetch - processPackages [async-dramatiq]: Downloading https://files.pythonhosted.org/packages/e5/e6/70a24fadb5d4fe291dec838668dd3097a8a1d81ed82788f22429222d64ab/async_dramatiq-0.1.1.tar.gz
+[2023-05-26 11:18:21] INFO root fetch - processPackages [codecov-cli]: executing diffoscope
+[2023-05-26 11:18:21] INFO root fetch - processPackages [codecov-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codecov-cli-0.1.8.tar.gz tmp/codecov-cli-0.1.9.tar.gz --markdown 20230526/c/codecov-cli/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 11:18:21] INFO root fetch - processPackages [trcli-a]: Downloading https://files.pythonhosted.org/packages/f9/da/b86aed7a22c3d8be56229b7f371c415aaca73e994df9c1a15a1e24be6185/trcli_a-1.5.1-py3-none-any.whl
+[2023-05-26 11:18:21] INFO root fetch - processPackages [scrapy-zyte-api]: Downloading https://files.pythonhosted.org/packages/e7/7b/36aad7ebce5dc78b2d17301e554e0ea8e9e4a4667245e6a67e1de860c1fd/scrapy-zyte-api-0.8.4.tar.gz
+[2023-05-26 11:18:21] INFO root fetch - processPackages [tf-geometric]: Downloading https://files.pythonhosted.org/packages/be/65/4194f9c75ccebe479a8faa161ce28456e5d7cf1766c803944336e6bce8ed/tf_geometric-0.1.6.tar.gz
+[2023-05-26 11:18:21] INFO root fetch - processPackages [experimaestro]: executing diffoscope
+[2023-05-26 11:18:21] INFO root fetch - processPackages [experimaestro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/experimaestro-0.9.8-py2.py3-none-any.whl.zip tmp/experimaestro-0.9.9-py2.py3-none-any.whl.zip --markdown 20230526/e/experimaestro/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-26 11:18:21] INFO root fetch - processPackages [mootdx]: executing diffoscope
+[2023-05-26 11:18:21] INFO root fetch - processPackages [mootdx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mootdx-0.9.8.tar.gz tmp/mootdx-0.9.9.tar.gz --markdown 20230526/m/mootdx/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-26 11:18:21] INFO root fetch - processPackages [async-dramatiq]: executing diffoscope
+[2023-05-26 11:18:21] INFO root fetch - processPackages [async-dramatiq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_dramatiq-0.1.0.tar.gz tmp/async_dramatiq-0.1.1.tar.gz --markdown 20230526/a/async-dramatiq/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-26 11:18:21] INFO root fetch - processPackages [scrapy-zyte-api]: executing diffoscope
+[2023-05-26 11:18:21] INFO root fetch - processPackages [scrapy-zyte-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapy-zyte-api-0.8.3.tar.gz tmp/scrapy-zyte-api-0.8.4.tar.gz --markdown 20230526/s/scrapy-zyte-api/0.8.3-0.8.4/diff.md --exclude *.pyd
+[2023-05-26 11:18:21] INFO root fetch - processPackages [trcli-a]: executing diffoscope
+[2023-05-26 11:18:21] INFO root fetch - processPackages [trcli-a]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trcli_a-1.5.0-py3-none-any.whl.zip tmp/trcli_a-1.5.1-py3-none-any.whl.zip --markdown 20230526/t/trcli-a/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-05-26 11:18:21] INFO root fetch - processPackages [tf-geometric]: executing diffoscope
+[2023-05-26 11:18:21] INFO root fetch - processPackages [tf-geometric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_geometric-0.1.5.tar.gz tmp/tf_geometric-0.1.6.tar.gz --markdown 20230526/t/tf-geometric/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-26 11:18:22] INFO root fetch - processPackages [cf-deploy]: Start processing: msaBase
+[2023-05-26 11:18:22] INFO root fetch - main [MainThread]: End processing [cf-deploy]: success
+[2023-05-26 11:18:22] INFO root fetch - processPackages [msaBase]: New version: [0.0.9] Old Version: [0.0.81]
+[2023-05-26 11:18:22] INFO root fetch - processPackages [msaBase]: Downloading https://files.pythonhosted.org/packages/41/c7/58decab68bb36f8613f658165baa8185366d6ae5e7295b2cb821f5847501/msaBase-0.0.81.tar.gz
+[2023-05-26 11:18:22] INFO root fetch - processPackages [textbsr]: Start processing: DataDoctor
+[2023-05-26 11:18:22] INFO root fetch - main [MainThread]: End processing [textbsr]: success
+[2023-05-26 11:18:22] INFO root fetch - processPackages [DataDoctor]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-26 11:18:22] INFO root fetch - processPackages [msaBase]: executing diffoscope
+[2023-05-26 11:18:22] INFO root fetch - processPackages [msaBase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/msaBase-0.0.81.tar.gz tmp/msaBase-0.0.9.tar.gz --markdown 20230526/m/msaBase/0.0.81-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 11:18:23] INFO root fetch - processPackages [DataDoctor]: executing diffoscope
+[2023-05-26 11:18:23] INFO root fetch - processPackages [DataDoctor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DataDoctor-1.0.8.tar.gz tmp/DataDoctor-1.0.9.tar.gz --markdown 20230526/D/DataDoctor/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-26 11:18:24] INFO root fetch - processPackages [scrapy-zyte-api]: Start processing: starred-astro
+[2023-05-26 11:18:24] INFO root fetch - main [MainThread]: End processing [scrapy-zyte-api]: success
+[2023-05-26 11:18:24] INFO root fetch - processPackages [mootdx]: Start processing: we-testtttt
+[2023-05-26 11:18:24] INFO root fetch - main [MainThread]: End processing [mootdx]: success
+[2023-05-26 11:18:24] INFO root fetch - processPackages [starred-astro]: New version: [1.1] Old Version: [1.0]
+[2023-05-26 11:18:24] WARNING root fetch - processPackages [we-testtttt]: Skipping, unable to determine old version
+[2023-05-26 11:18:24] INFO root fetch - processPackages [we-testtttt]: Start processing: edu-segmentation
+[2023-05-26 11:18:24] INFO root fetch - main [MainThread]: End processing [we-testtttt] error
+[2023-05-26 11:18:24] INFO root fetch - processPackages [trcli-a]: Start processing: nxsrecselector
+[2023-05-26 11:18:24] INFO root fetch - main [MainThread]: End processing [trcli-a]: success
+[2023-05-26 11:18:24] INFO root fetch - processPackages [edu-segmentation]: New version: [0.0.78] Old Version: [0.0.77]
+[2023-05-26 11:18:24] INFO root fetch - main [MainThread]: End processing [codecov-cli]: success
+[2023-05-26 11:18:24] INFO root fetch - processPackages [nxsrecselector]: New version: [3.27.0] Old Version: [3.26.3]
+[2023-05-26 11:18:24] INFO root fetch - main [MainThread]: End processing [async-dramatiq]: success
+[2023-05-26 11:18:24] INFO root fetch - processPackages [starred-astro]: Downloading https://files.pythonhosted.org/packages/c3/57/be4157dc7e20dbfc6b4de7931c3b374a541e7b3dd45a889b8e96fada523e/starred-astro-1.0.tar.gz
+[2023-05-26 11:18:24] INFO root fetch - main [MainThread]: End processing [tracebloc-package-dev]: success
+[2023-05-26 11:18:24] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/e6/30/af1527a79f5f17adab14dafe0fda561c2c3873ba25372d99eaf5fe1b654c/edu_segmentation-0.0.78.tar.gz
+[2023-05-26 11:18:24] INFO root fetch - processPackages [nxsrecselector]: Downloading https://files.pythonhosted.org/packages/01/67/d1e9358f98dd39b72574c69e303f7d0ece04ce766dc02c056f7a2678fc0a/nxsrecselector-3.26.3.tar.gz
+[2023-05-26 11:18:24] INFO root fetch - processPackages [starred-astro]: Downloading https://files.pythonhosted.org/packages/57/e4/07ff562d59dff0f44f38bfc1cfea0cac39da54e6b195078e8090309f0016/starred-astro-1.1.tar.gz
+[2023-05-26 11:18:24] INFO root fetch - processPackages [edu-segmentation]: executing diffoscope
+[2023-05-26 11:18:24] INFO root fetch - processPackages [edu-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edu_segmentation-0.0.77.tar.gz tmp/edu_segmentation-0.0.78.tar.gz --markdown 20230526/e/edu-segmentation/0.0.77-0.0.78/diff.md --exclude *.pyd
+[2023-05-26 11:18:24] INFO root fetch - processPackages [starred-astro]: executing diffoscope
+[2023-05-26 11:18:24] INFO root fetch - processPackages [starred-astro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starred-astro-1.0.tar.gz tmp/starred-astro-1.1.tar.gz --markdown 20230526/s/starred-astro/1.0-1.1/diff.md --exclude *.pyd
+[2023-05-26 11:18:24] INFO root fetch - processPackages [nxsrecselector]: Downloading https://files.pythonhosted.org/packages/b1/c7/ef42920f663739f74b97fb2707f0bf9fe7e7f3a38a18c36592a857e711b5/nxsrecselector-3.27.0.tar.gz
+[2023-05-26 11:18:24] INFO root fetch - main [MainThread]: End processing [experimaestro]: success
+[2023-05-26 11:18:24] INFO root fetch - main [MainThread]: End processing [DataDoctor]: success
+[2023-05-26 11:18:25] INFO root fetch - main [MainThread]: End processing [tf-geometric]: success
+[2023-05-26 11:18:25] INFO root fetch - processPackages [nxsrecselector]: executing diffoscope
+[2023-05-26 11:18:25] INFO root fetch - processPackages [nxsrecselector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nxsrecselector-3.26.3.tar.gz tmp/nxsrecselector-3.27.0.tar.gz --markdown 20230526/n/nxsrecselector/3.26.3-3.27.0/diff.md --exclude *.pyd
+[2023-05-26 11:18:25] INFO root fetch - main [MainThread]: End processing [msaBase]: success
+[2023-05-26 11:18:26] INFO root fetch - main [MainThread]: End processing [starred-astro]: success
+[2023-05-26 11:18:26] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
+[2023-05-26 11:18:26] INFO root fetch - main [MainThread]: End processing [nxsrecselector]: success
+[2023-05-26 11:18:26] INFO root fetch - main [MainThread]: Store serial: [18260364]
