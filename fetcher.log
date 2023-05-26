@@ -22213,3 +22213,71 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 19:05:51] INFO root fetch - main [MainThread]: End processing [k1lib]: success
 [2023-05-26 19:05:52] INFO root fetch - main [MainThread]: End processing [tetraux]: success
 [2023-05-26 19:05:52] INFO root fetch - main [MainThread]: Store serial: [18266742]
+[2023-05-26 19:10:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18266742]
+[2023-05-26 19:11:01] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-26 19:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pybov
+[2023-05-26 19:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arraylib-solve
+[2023-05-26 19:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deephaven-plugin-plotly-express
+[2023-05-26 19:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aws-glue-sessions
+[2023-05-26 19:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: huanyuan
+[2023-05-26 19:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: arch
+[2023-05-26 19:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dotspace
+[2023-05-26 19:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pepperize.cdk-lambda-deno
+[2023-05-26 19:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: discord-ext-pager
+[2023-05-26 19:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: PyVolSuggester
+[2023-05-26 19:11:01] WARNING root fetch - processPackages [huanyuan]: Skipping, unable to determine old version
+[2023-05-26 19:11:01] INFO root fetch - processPackages [huanyuan]: Start processing: tlcpack-sphinx-addon
+[2023-05-26 19:11:01] INFO root fetch - main [MainThread]: End processing [huanyuan] error
+[2023-05-26 19:11:01] INFO root fetch - processPackages [arraylib-solve]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-26 19:11:01] INFO root fetch - processPackages [PyVolSuggester]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-26 19:11:01] INFO root fetch - processPackages [aws-glue-sessions]: New version: [0.9] Old Version: [0.8]
+[2023-05-26 19:11:01] INFO root fetch - processPackages [dotspace]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-26 19:11:01] INFO root fetch - processPackages [deephaven-plugin-plotly-express]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-26 19:11:01] INFO root fetch - processPackages [pybov]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-26 19:11:01] INFO root fetch - processPackages [pepperize.cdk-lambda-deno]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 19:11:01] INFO root fetch - processPackages [arch]: New version: [6.1.0] Old Version: [6.0.1]
+[2023-05-26 19:11:01] INFO root fetch - processPackages [arraylib-solve]: executing diffoscope
+[2023-05-26 19:11:01] INFO root fetch - processPackages [arraylib-solve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arraylib_solve-0.8.0.tar.gz tmp/arraylib_solve-0.9.0.tar.gz --markdown 20230526/a/arraylib-solve/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-26 19:11:01] INFO root fetch - processPackages [PyVolSuggester]: executing diffoscope
+[2023-05-26 19:11:01] INFO root fetch - processPackages [PyVolSuggester]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvolsuggester-0.0.1.tar.gz tmp/pyvolsuggester-0.0.2.tar.gz --markdown 20230526/P/PyVolSuggester/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-26 19:11:01] INFO root fetch - processPackages [discord-ext-pager]: New version: [1.1.1b0] Old Version: [1.1.1]
+[2023-05-26 19:11:01] INFO root fetch - processPackages [tlcpack-sphinx-addon]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-26 19:11:01] INFO root fetch - processPackages [deephaven-plugin-plotly-express]: Downloading https://files.pythonhosted.org/packages/b2/9b/bdfbfe560db2cf5b68af453404bdefbd8d17c1727b4bfec1a3ae00fdf7dc/deephaven-plugin-plotly-express-0.0.3.tar.gz
+[2023-05-26 19:11:01] INFO root fetch - processPackages [dotspace]: Downloading https://files.pythonhosted.org/packages/cf/50/991fddc83253bfb1f0dfffdb4ff074526e08faf19a0b16fadcda1818f1a6/dotspace-0.0.5.tar.gz
+[2023-05-26 19:11:01] INFO root fetch - processPackages [pybov]: Downloading https://files.pythonhosted.org/packages/e9/0d/c555f336c27baf3ca110cbff157fed781723afcbcdb4bb393e53dbc77cc2/pybov-0.1.1.tar.gz
+[2023-05-26 19:11:01] INFO root fetch - processPackages [arch]: Downloading https://files.pythonhosted.org/packages/9c/41/de6c71fe3a63f0c97e2199e0968ed4375b00c76adca645610617beb497e3/arch-6.0.1.tar.gz
+[2023-05-26 19:11:01] INFO root fetch - processPackages [discord-ext-pager]: Downloading https://files.pythonhosted.org/packages/5b/59/9a3bda63312954b04497220bbc6457c15f3d4084fd1d5a2009cc7f7ba7b1/discord-ext-pager-1.1.1.tar.gz
+[2023-05-26 19:11:01] INFO root fetch - processPackages [aws-glue-sessions]: Downloading https://files.pythonhosted.org/packages/9b/0d/aa1389d99e636f106946f33ea7c19aaa976848ec7c638bd4f3c6681a4ee0/aws_glue_sessions-0.8-py3-none-any.whl
+[2023-05-26 19:11:01] INFO root fetch - processPackages [tlcpack-sphinx-addon]: Downloading https://files.pythonhosted.org/packages/08/73/bb951a8c0ec7a5db5bbed5108eb9f73752d23534a4437875c19e2ae788f7/tlcpack-sphinx-addon-0.2.1.tar.gz
+[2023-05-26 19:11:01] INFO root fetch - processPackages [dotspace]: executing diffoscope
+[2023-05-26 19:11:01] INFO root fetch - processPackages [dotspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dotspace-0.0.4.tar.gz tmp/dotspace-0.0.5.tar.gz --markdown 20230526/d/dotspace/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-26 19:11:02] INFO root fetch - processPackages [pepperize.cdk-lambda-deno]: executing diffoscope
+[2023-05-26 19:11:02] INFO root fetch - processPackages [pepperize.cdk-lambda-deno]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-lambda-deno-0.0.98.tar.gz tmp/pepperize.cdk-lambda-deno-0.0.99.tar.gz --markdown 20230526/p/pepperize.cdk-lambda-deno/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 19:11:02] INFO root fetch - processPackages [arch]: Downloading https://files.pythonhosted.org/packages/bb/60/71169464a03885ef1dd2033833335a79a2fd3e47080034b261daff4abd52/arch-6.1.0-cp39-cp39-win_amd64.whl
+[2023-05-26 19:11:02] INFO root fetch - processPackages [discord-ext-pager]: executing diffoscope
+[2023-05-26 19:11:02] INFO root fetch - processPackages [discord-ext-pager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discord-ext-pager-1.1.1.tar.gz tmp/discord-ext-pager-1.1.1b0.tar.gz --markdown 20230526/d/discord-ext-pager/1.1.1-1.1.1b0/diff.md --exclude *.pyd
+[2023-05-26 19:11:02] INFO root fetch - processPackages [pybov]: Downloading https://files.pythonhosted.org/packages/76/ec/09c5c62fe54da3acea7af96acaa98eacb9e05e1825ad594a33e83dc6b32b/pybov-0.1.2.tar.gz
+[2023-05-26 19:11:02] INFO root fetch - processPackages [deephaven-plugin-plotly-express]: Downloading https://files.pythonhosted.org/packages/16/f2/1d3e53ce7e143b7d8a6d7d82f9cf34e096cc2f1c4ef9995d1bab154dad05/deephaven-plugin-plotly-express-0.0.4.tar.gz
+[2023-05-26 19:11:02] INFO root fetch - processPackages [aws-glue-sessions]: Downloading https://files.pythonhosted.org/packages/de/d0/6226f9719cb7ac5041502fd4b0bbfc030319f800e755c12b4ef75d01c208/aws_glue_sessions-0.9-py3-none-any.whl
+[2023-05-26 19:11:02] INFO root fetch - processPackages [tlcpack-sphinx-addon]: Downloading https://files.pythonhosted.org/packages/67/ca/a6f6de148ee7178bbd99f1b41aab7357a3e7c1d49095eb8eca3f8691c6bc/tlcpack-sphinx-addon-0.2.2.tar.gz
+[2023-05-26 19:11:02] INFO root fetch - processPackages [pybov]: executing diffoscope
+[2023-05-26 19:11:02] INFO root fetch - processPackages [pybov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybov-0.1.1.tar.gz tmp/pybov-0.1.2.tar.gz --markdown 20230526/p/pybov/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-26 19:11:02] INFO root fetch - processPackages [aws-glue-sessions]: executing diffoscope
+[2023-05-26 19:11:02] INFO root fetch - processPackages [aws-glue-sessions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_glue_sessions-0.8-py3-none-any.whl.zip tmp/aws_glue_sessions-0.9-py3-none-any.whl.zip --markdown 20230526/a/aws-glue-sessions/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-26 19:11:02] INFO root fetch - processPackages [deephaven-plugin-plotly-express]: executing diffoscope
+[2023-05-26 19:11:02] INFO root fetch - processPackages [deephaven-plugin-plotly-express]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deephaven-plugin-plotly-express-0.0.3.tar.gz tmp/deephaven-plugin-plotly-express-0.0.4.tar.gz --markdown 20230526/d/deephaven-plugin-plotly-express/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-26 19:11:02] INFO root fetch - processPackages [tlcpack-sphinx-addon]: executing diffoscope
+[2023-05-26 19:11:02] INFO root fetch - processPackages [tlcpack-sphinx-addon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tlcpack-sphinx-addon-0.2.1.tar.gz tmp/tlcpack-sphinx-addon-0.2.2.tar.gz --markdown 20230526/t/tlcpack-sphinx-addon/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-26 19:11:02] INFO root fetch - processPackages [arch]: executing diffoscope
+[2023-05-26 19:11:02] INFO root fetch - processPackages [arch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arch-6.0.1.tar.gz tmp/arch-6.1.0-cp39-cp39-win_amd64.whl.zip --markdown 20230526/a/arch/6.0.1-6.1.0/diff.md --exclude *.pyd
+[2023-05-26 19:11:03] INFO root fetch - main [MainThread]: End processing [arraylib-solve]: success
+[2023-05-26 19:11:03] INFO root fetch - main [MainThread]: End processing [PyVolSuggester]: success
+[2023-05-26 19:11:04] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-lambda-deno]: success
+[2023-05-26 19:11:04] INFO root fetch - main [MainThread]: End processing [dotspace]: success
+[2023-05-26 19:11:04] INFO root fetch - main [MainThread]: End processing [pybov]: success
+[2023-05-26 19:11:04] INFO root fetch - main [MainThread]: End processing [discord-ext-pager]: success
+[2023-05-26 19:11:04] INFO root fetch - main [MainThread]: End processing [deephaven-plugin-plotly-express]: success
+[2023-05-26 19:11:05] INFO root fetch - main [MainThread]: End processing [aws-glue-sessions]: success
+[2023-05-26 19:11:05] INFO root fetch - main [MainThread]: End processing [tlcpack-sphinx-addon]: success
+[2023-05-26 19:11:05] INFO root fetch - main [MainThread]: End processing [arch]: success
+[2023-05-26 19:11:05] INFO root fetch - main [MainThread]: Store serial: [18266804]
