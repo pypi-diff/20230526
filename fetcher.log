@@ -13718,3 +13718,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 13:03:38] INFO root fetch - main [MainThread]: End processing [ranx]: success
 [2023-05-26 13:03:38] INFO root fetch - main [MainThread]: End processing [docarray]: success
 [2023-05-26 13:03:38] INFO root fetch - main [MainThread]: Store serial: [18261732]
+[2023-05-26 13:08:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18261732]
+[2023-05-26 13:08:48] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-26 13:08:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pepperize.projen-awscdk-app-ts
+[2023-05-26 13:08:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mathslib
+[2023-05-26 13:08:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Rest-OC
+[2023-05-26 13:08:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: crawler-commons
+[2023-05-26 13:08:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: SenCalculator
+[2023-05-26 13:08:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: localstack-core
+[2023-05-26 13:08:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ucampurestorage
+[2023-05-26 13:08:48] INFO root fetch - processPackages [Rest-OC]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-05-26 13:08:48] INFO root fetch - processPackages [mathslib]: New version: [2.9.0] Old Version: [2.8.0]
+[2023-05-26 13:08:48] WARNING root fetch - processPackages [SenCalculator]: Skipping, unable to determine old version
+[2023-05-26 13:08:48] INFO root fetch - main [MainThread]: End processing [SenCalculator] error
+[2023-05-26 13:08:48] INFO root fetch - processPackages [ucampurestorage]: New version: [1.1.3] Old Version: [1.1.1]
+[2023-05-26 13:08:48] INFO root fetch - processPackages [crawler-commons]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 13:08:48] INFO root fetch - processPackages [localstack-core]: New version: [2.1.1.dev20230526110734] Old Version: [2.1.1.dev20230526083416]
+[2023-05-26 13:08:48] INFO root fetch - processPackages [pepperize.projen-awscdk-app-ts]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 13:08:48] INFO root fetch - processPackages [mathslib]: Downloading https://files.pythonhosted.org/packages/3c/7f/a056d73737f1289ea360d64ff4befabfb7806959d2d830eac89444d3b553/mathslib-2.8.0.tar.gz
+[2023-05-26 13:08:48] INFO root fetch - processPackages [crawler-commons]: executing diffoscope
+[2023-05-26 13:08:48] INFO root fetch - processPackages [crawler-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crawler_commons-0.0.8.tar.gz tmp/crawler_commons-0.0.9.tar.gz --markdown 20230526/c/crawler-commons/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 13:08:48] INFO root fetch - processPackages [Rest-OC]: Downloading https://files.pythonhosted.org/packages/85/4c/9207bc3472014c7a9f36201c053962aafe5ef64df725fccee1a59ad21ce9/Rest-OC-1.2.1.tar.gz
+[2023-05-26 13:08:48] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/a4/36/2373283d6a1089e7daa615aca9fbf7c4119007a1ef6e3a94446b39225fdb/localstack-core-2.1.1.dev20230526110734.tar.gz
+[2023-05-26 13:08:48] INFO root fetch - processPackages [mathslib]: Downloading https://files.pythonhosted.org/packages/b9/18/18c1a1ddd16806396cd80205e1569813a1a4e4be23228651721ddcec7837/mathslib-2.9.0.tar.gz
+[2023-05-26 13:08:48] INFO root fetch - processPackages [mathslib]: executing diffoscope
+[2023-05-26 13:08:48] INFO root fetch - processPackages [mathslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mathslib-2.8.0.tar.gz tmp/mathslib-2.9.0.tar.gz --markdown 20230526/m/mathslib/2.8.0-2.9.0/diff.md --exclude *.pyd
+[2023-05-26 13:08:48] INFO root fetch - processPackages [pepperize.projen-awscdk-app-ts]: executing diffoscope
+[2023-05-26 13:08:48] INFO root fetch - processPackages [pepperize.projen-awscdk-app-ts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.projen-awscdk-app-ts-0.0.98.tar.gz tmp/pepperize.projen-awscdk-app-ts-0.0.99.tar.gz --markdown 20230526/p/pepperize.projen-awscdk-app-ts/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 13:08:48] INFO root fetch - processPackages [ucampurestorage]: Downloading https://files.pythonhosted.org/packages/5d/48/40616e50882e7409c3e1bc85b910d2bad13a6a50236a2f850c7087d0831a/ucampurestorage-1.1.3.tar.gz
+[2023-05-26 13:08:48] INFO root fetch - processPackages [Rest-OC]: Downloading https://files.pythonhosted.org/packages/2d/8f/f3651565ecefe3d863752b5d04f42b0ce5a50bd5768e5303b0ba366745cc/Rest-OC-1.2.2.tar.gz
+[2023-05-26 13:08:48] INFO root fetch - processPackages [Rest-OC]: executing diffoscope
+[2023-05-26 13:08:48] INFO root fetch - processPackages [Rest-OC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Rest-OC-1.2.1.tar.gz tmp/Rest-OC-1.2.2.tar.gz --markdown 20230526/R/Rest-OC/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-05-26 13:08:48] INFO root fetch - processPackages [localstack-core]: executing diffoscope
+[2023-05-26 13:08:48] INFO root fetch - processPackages [localstack-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localstack-core-2.1.1.dev20230526083416.tar.gz tmp/localstack-core-2.1.1.dev20230526110734.tar.gz --markdown 20230526/l/localstack-core/2.1.1.dev20230526083416-2.1.1.dev20230526110734/diff.md --exclude *.pyd
+[2023-05-26 13:08:49] INFO root fetch - processPackages [ucampurestorage]: executing diffoscope
+[2023-05-26 13:08:49] INFO root fetch - processPackages [ucampurestorage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ucampurestorage-1.1.1.tar.gz tmp/ucampurestorage-1.1.3.tar.gz --markdown 20230526/u/ucampurestorage/1.1.1-1.1.3/diff.md --exclude *.pyd
+[2023-05-26 13:08:49] INFO root fetch - main [MainThread]: End processing [crawler-commons]: success
+[2023-05-26 13:08:50] INFO root fetch - main [MainThread]: End processing [pepperize.projen-awscdk-app-ts]: success
+[2023-05-26 13:08:50] INFO root fetch - main [MainThread]: End processing [mathslib]: success
+[2023-05-26 13:08:51] INFO root fetch - main [MainThread]: End processing [Rest-OC]: success
+[2023-05-26 13:08:52] INFO root fetch - main [MainThread]: End processing [ucampurestorage]: success
+[2023-05-26 13:08:55] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
+[2023-05-26 13:08:55] INFO root fetch - main [MainThread]: Store serial: [18261754]
