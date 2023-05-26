@@ -6990,3 +6990,19 @@
 [2023-05-26 05:53:40] INFO root fetch - main [MainThread]: End processing [Pandora-Cloud]: success
 [2023-05-26 05:53:40] INFO root fetch - main [MainThread]: End processing [binsync]: success
 [2023-05-26 05:53:40] INFO root fetch - main [MainThread]: Store serial: [18257452]
+[2023-05-26 05:58:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18257452]
+[2023-05-26 05:58:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-26 05:58:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ncbi-datasets-pylib
+[2023-05-26 05:58:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MakerToolbox
+[2023-05-26 05:58:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: macrometa-source-bigquery
+[2023-05-26 05:58:50] INFO root fetch - processPackages [macrometa-source-bigquery]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 05:58:50] WARNING root fetch - processPackages [MakerToolbox]: Skipping, unable to determine old version
+[2023-05-26 05:58:50] INFO root fetch - main [MainThread]: End processing [MakerToolbox] error
+[2023-05-26 05:58:50] INFO root fetch - processPackages [ncbi-datasets-pylib]: New version: [9.1.0] Old Version: [9.0.0]
+[2023-05-26 05:58:50] INFO root fetch - processPackages [macrometa-source-bigquery]: executing diffoscope
+[2023-05-26 05:58:50] INFO root fetch - processPackages [macrometa-source-bigquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-bigquery-0.0.8.tar.gz tmp/macrometa-source-bigquery-0.0.9.tar.gz --markdown 20230526/m/macrometa-source-bigquery/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 05:58:50] INFO root fetch - processPackages [ncbi-datasets-pylib]: executing diffoscope
+[2023-05-26 05:58:50] INFO root fetch - processPackages [ncbi-datasets-pylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ncbi-datasets-pylib-9.0.0.tar.gz tmp/ncbi-datasets-pylib-9.1.0.tar.gz --markdown 20230526/n/ncbi-datasets-pylib/9.0.0-9.1.0/diff.md --exclude *.pyd
+[2023-05-26 05:58:51] INFO root fetch - main [MainThread]: End processing [macrometa-source-bigquery]: success
+[2023-05-26 05:58:52] INFO root fetch - main [MainThread]: End processing [ncbi-datasets-pylib]: success
+[2023-05-26 05:58:52] INFO root fetch - main [MainThread]: Store serial: [18257461]
