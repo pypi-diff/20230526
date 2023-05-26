@@ -12829,3 +12829,83 @@
 [2023-05-26 12:13:25] INFO root fetch - main [MainThread]: End processing [northgravity]: success
 [2023-05-26 12:13:44] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
 [2023-05-26 12:13:44] INFO root fetch - main [MainThread]: Store serial: [18261095]
+[2023-05-26 12:18:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18261095]
+[2023-05-26 12:18:58] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-26 12:18:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdktf
+[2023-05-26 12:18:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: windpyutils
+[2023-05-26 12:18:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-ows-lib
+[2023-05-26 12:18:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: arclet-alconna-ariadne
+[2023-05-26 12:18:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: arclet-alconna-avilla
+[2023-05-26 12:18:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: arclet-alconna-graia
+[2023-05-26 12:18:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: arclet-alconna-ichika
+[2023-05-26 12:18:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bagbag
+[2023-05-26 12:18:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: questdb-connect
+[2023-05-26 12:18:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pySMART
+[2023-05-26 12:18:58] INFO root fetch - processPackages [arclet-alconna-ariadne]: New version: [0.14.0] Old Version: [0.13.3]
+[2023-05-26 12:18:58] INFO root fetch - processPackages [windpyutils]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-26 12:18:58] INFO root fetch - processPackages [django-ows-lib]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-26 12:18:58] INFO root fetch - processPackages [arclet-alconna-ichika]: New version: [0.14.0] Old Version: [0.13.3]
+[2023-05-26 12:18:58] INFO root fetch - processPackages [arclet-alconna-graia]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-26 12:18:58] INFO root fetch - processPackages [cdktf]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-26 12:18:58] INFO root fetch - processPackages [bagbag]: New version: [0.59.8] Old Version: [0.59.7]
+[2023-05-26 12:18:58] INFO root fetch - processPackages [questdb-connect]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-26 12:18:58] INFO root fetch - processPackages [arclet-alconna-avilla]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-26 12:18:58] INFO root fetch - processPackages [pySMART]: New version: [1.2.5.dev23] Old Version: [1.2.4.dev16]
+[2023-05-26 12:18:59] INFO root fetch - processPackages [arclet-alconna-ariadne]: Downloading https://files.pythonhosted.org/packages/e1/cd/622ba7a965bcac6bbf87473903337466e988b2d929c6994355039b0ec5cd/arclet-alconna-ariadne-0.13.3.tar.gz
+[2023-05-26 12:18:59] INFO root fetch - processPackages [questdb-connect]: executing diffoscope
+[2023-05-26 12:18:59] INFO root fetch - processPackages [questdb-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/questdb-connect-1.0.5.tar.gz tmp/questdb-connect-1.0.6.tar.gz --markdown 20230526/q/questdb-connect/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-26 12:18:59] INFO root fetch - processPackages [arclet-alconna-ichika]: Downloading https://files.pythonhosted.org/packages/c2/3d/c134c45c86cea750520b6507b47ce173a55184e38fc15287d03841bc6f74/arclet-alconna-ichika-0.13.3.tar.gz
+[2023-05-26 12:18:59] INFO root fetch - processPackages [pySMART]: Downloading https://files.pythonhosted.org/packages/85/56/8b03c62004be0192445007cc15236ff78156000a5659dc24934bc1b1825a/pySMART-1.2.4.dev16.tar.gz
+[2023-05-26 12:18:59] INFO root fetch - processPackages [windpyutils]: executing diffoscope
+[2023-05-26 12:18:59] INFO root fetch - processPackages [windpyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/windpyutils-2.0.8.tar.gz tmp/windpyutils-2.0.9.tar.gz --markdown 20230526/w/windpyutils/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-26 12:18:59] INFO root fetch - processPackages [django-ows-lib]: Downloading https://files.pythonhosted.org/packages/99/bc/1297e45fbb9993bbf14e2007dfbb962d8c2738ae833662f850645090f9e2/django-ows-lib-0.4.1.tar.gz
+[2023-05-26 12:18:59] INFO root fetch - processPackages [arclet-alconna-ariadne]: Downloading https://files.pythonhosted.org/packages/d8/a8/571a008c269cd4513c87d024f84e2ff4763836c90e3637595d34181f3d4f/arclet-alconna-ariadne-0.14.0.tar.gz
+[2023-05-26 12:18:59] INFO root fetch - processPackages [bagbag]: executing diffoscope
+[2023-05-26 12:18:59] INFO root fetch - processPackages [bagbag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bagbag-0.59.7.tar.gz tmp/bagbag-0.59.8.tar.gz --markdown 20230526/b/bagbag/0.59.7-0.59.8/diff.md --exclude *.pyd
+[2023-05-26 12:18:59] INFO root fetch - processPackages [arclet-alconna-ichika]: Downloading https://files.pythonhosted.org/packages/45/45/046dd8646f6993f81c451a959d255b0005d603c2e6769226aec8dbafbd17/arclet-alconna-ichika-0.14.0.tar.gz
+[2023-05-26 12:18:59] INFO root fetch - processPackages [arclet-alconna-avilla]: executing diffoscope
+[2023-05-26 12:18:59] INFO root fetch - processPackages [arclet-alconna-avilla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet-alconna-avilla-0.2.0.tar.gz tmp/arclet-alconna-avilla-0.3.0.tar.gz --markdown 20230526/a/arclet-alconna-avilla/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-26 12:18:59] INFO root fetch - processPackages [cdktf]: executing diffoscope
+[2023-05-26 12:18:59] INFO root fetch - processPackages [django-ows-lib]: executing diffoscope
+[2023-05-26 12:18:59] INFO root fetch - processPackages [cdktf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-0.9.3.tar.gz tmp/cdktf-0.9.4.tar.gz --markdown 20230526/c/cdktf/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-26 12:18:59] INFO root fetch - processPackages [django-ows-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-ows-lib-0.4.0.tar.gz tmp/django-ows-lib-0.4.1.tar.gz --markdown 20230526/d/django-ows-lib/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-26 12:18:59] INFO root fetch - processPackages [arclet-alconna-graia]: executing diffoscope
+[2023-05-26 12:18:59] INFO root fetch - processPackages [arclet-alconna-graia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet-alconna-graia-0.9.0.tar.gz tmp/arclet-alconna-graia-0.9.1.tar.gz --markdown 20230526/a/arclet-alconna-graia/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-26 12:18:59] INFO root fetch - processPackages [arclet-alconna-ariadne]: executing diffoscope
+[2023-05-26 12:18:59] INFO root fetch - processPackages [arclet-alconna-ariadne]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet-alconna-ariadne-0.13.3.tar.gz tmp/arclet-alconna-ariadne-0.14.0.tar.gz --markdown 20230526/a/arclet-alconna-ariadne/0.13.3-0.14.0/diff.md --exclude *.pyd
+[2023-05-26 12:18:59] INFO root fetch - processPackages [arclet-alconna-ichika]: executing diffoscope
+[2023-05-26 12:18:59] INFO root fetch - processPackages [arclet-alconna-ichika]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet-alconna-ichika-0.13.3.tar.gz tmp/arclet-alconna-ichika-0.14.0.tar.gz --markdown 20230526/a/arclet-alconna-ichika/0.13.3-0.14.0/diff.md --exclude *.pyd
+[2023-05-26 12:18:59] INFO root fetch - processPackages [pySMART]: Downloading https://files.pythonhosted.org/packages/15/a0/8fcbab366eda86a64ea0cb793179efb9648930e9980097fceb8cc5b15c18/pySMART-1.2.5.dev23.tar.gz
+[2023-05-26 12:18:59] INFO root fetch - processPackages [pySMART]: executing diffoscope
+[2023-05-26 12:18:59] INFO root fetch - processPackages [pySMART]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pySMART-1.2.4.dev16.tar.gz tmp/pySMART-1.2.5.dev23.tar.gz --markdown 20230526/p/pySMART/1.2.4.dev16-1.2.5.dev23/diff.md --exclude *.pyd
+[2023-05-26 12:19:00] INFO root fetch - processPackages [questdb-connect]: Start processing: nlu-tmp
+[2023-05-26 12:19:00] INFO root fetch - main [MainThread]: End processing [questdb-connect]: success
+[2023-05-26 12:19:00] INFO root fetch - processPackages [nlu-tmp]: New version: [4.5.0rc5] Old Version: [4.3.0rc7]
+[2023-05-26 12:19:00] INFO root fetch - processPackages [nlu-tmp]: executing diffoscope
+[2023-05-26 12:19:00] INFO root fetch - processPackages [nlu-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlu_tmp-4.3.0rc7.tar.gz tmp/nlu_tmp-4.5.0rc5.tar.gz --markdown 20230526/n/nlu-tmp/4.3.0rc7-4.5.0rc5/diff.md --exclude *.pyd
+[2023-05-26 12:19:01] INFO root fetch - processPackages [arclet-alconna-avilla]: Start processing: nlu-tmp
+[2023-05-26 12:19:01] INFO root fetch - main [MainThread]: End processing [arclet-alconna-avilla]: success
+[2023-05-26 12:19:01] INFO root fetch - processPackages [nlu-tmp]: New version: [4.5.0rc5] Old Version: [4.3.0rc7]
+[2023-05-26 12:19:01] INFO root fetch - processPackages [cdktf]: Start processing: peakventures
+[2023-05-26 12:19:01] INFO root fetch - main [MainThread]: End processing [cdktf]: success
+[2023-05-26 12:19:01] INFO root fetch - processPackages [peakventures]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-26 12:19:01] INFO root fetch - processPackages [nlu-tmp]: executing diffoscope
+[2023-05-26 12:19:01] INFO root fetch - processPackages [nlu-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlu_tmp-4.3.0rc7.tar.gz tmp/nlu_tmp-4.5.0rc5.tar.gz --markdown 20230526/n/nlu-tmp/4.3.0rc7-4.5.0rc5/diff.md --exclude *.pyd
+[2023-05-26 12:19:01] INFO root fetch - processPackages [windpyutils]: Start processing: johnsnowlabs-for-databricks-tmp
+[2023-05-26 12:19:01] INFO root fetch - main [MainThread]: End processing [windpyutils]: success
+[2023-05-26 12:19:01] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: New version: [4.4.9] Old Version: [4.4.8]
+[2023-05-26 12:19:01] INFO root fetch - processPackages [peakventures]: executing diffoscope
+[2023-05-26 12:19:01] INFO root fetch - processPackages [peakventures]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peakventures-1.0.3.tar.gz tmp/peakventures-1.0.4.tar.gz --markdown 20230526/p/peakventures/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-26 12:19:01] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: executing diffoscope
+[2023-05-26 12:19:01] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/johnsnowlabs_for_databricks_tmp-4.4.8.tar.gz tmp/johnsnowlabs_for_databricks_tmp-4.4.9.tar.gz --markdown 20230526/j/johnsnowlabs-for-databricks-tmp/4.4.8-4.4.9/diff.md --exclude *.pyd
+[2023-05-26 12:19:02] INFO root fetch - main [MainThread]: End processing [django-ows-lib]: success
+[2023-05-26 12:19:02] INFO root fetch - main [MainThread]: End processing [arclet-alconna-ichika]: success
+[2023-05-26 12:19:02] INFO root fetch - main [MainThread]: End processing [arclet-alconna-ariadne]: success
+[2023-05-26 12:19:02] INFO root fetch - main [MainThread]: End processing [arclet-alconna-graia]: success
+[2023-05-26 12:19:02] INFO root fetch - main [MainThread]: End processing [bagbag]: success
+[2023-05-26 12:19:03] INFO root fetch - main [MainThread]: End processing [peakventures]: success
+[2023-05-26 12:19:04] INFO root fetch - main [MainThread]: End processing [johnsnowlabs-for-databricks-tmp]: success
+[2023-05-26 12:19:07] INFO root fetch - main [MainThread]: End processing [pySMART]: success
+[2023-05-26 12:19:07] INFO root fetch - main [MainThread]: End processing [nlu-tmp]: success
+[2023-05-26 12:19:07] INFO root fetch - main [MainThread]: End processing [nlu-tmp]: success
+[2023-05-26 12:19:07] INFO root fetch - main [MainThread]: Store serial: [18261147]
