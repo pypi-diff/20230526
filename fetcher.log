@@ -1372,3 +1372,90 @@
 [2023-05-26 02:13:51] INFO root fetch - main [MainThread]: End processing [cdk-watchful]: success
 [2023-05-26 02:13:58] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
 [2023-05-26 02:13:58] INFO root fetch - main [MainThread]: Store serial: [18254456]
+[2023-05-26 02:19:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18254456]
+[2023-05-26 02:19:07] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-26 02:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-common
+[2023-05-26 02:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-events-notify
+[2023-05-26 02:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hades-cli
+[2023-05-26 02:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytorch-ignite
+[2023-05-26 02:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdktf-cdk8s
+[2023-05-26 02:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: disfluency-constituency-parser
+[2023-05-26 02:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: MicroLIA
+[2023-05-26 02:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: torchmultimodal-nightly
+[2023-05-26 02:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cdklabs.cdk-hyperledger-fabric-network
+[2023-05-26 02:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cdk-stacksets
+[2023-05-26 02:19:07] INFO root fetch - processPackages [cdktf-cdk8s]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-26 02:19:07] INFO root fetch - processPackages [hades-cli]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 02:19:07] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: New version: [0.8.99] Old Version: [0.8.98]
+[2023-05-26 02:19:07] INFO root fetch - processPackages [MicroLIA]: New version: [2.2.3] Old Version: [2.2.0]
+[2023-05-26 02:19:07] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-26 02:19:07] INFO root fetch - processPackages [disfluency-constituency-parser]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 02:19:07] INFO root fetch - processPackages [torchmultimodal-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-26 02:19:07] INFO root fetch - processPackages [cdk-stacksets]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 02:19:07] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-26 02:19:07] INFO root fetch - processPackages [pytorch-ignite]: New version: [0.5.0.dev20230526] Old Version: [0.5.0.dev20230525]
+[2023-05-26 02:19:07] INFO root fetch - processPackages [hades-cli]: executing diffoscope
+[2023-05-26 02:19:07] INFO root fetch - processPackages [hades-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hades-cli-0.0.8.tar.gz tmp/hades-cli-0.0.9.tar.gz --markdown 20230526/h/hades-cli/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 02:19:07] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2023-05-26 02:19:07] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20230526/c/cdk-common/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-26 02:19:07] INFO root fetch - processPackages [cdk-stacksets]: executing diffoscope
+[2023-05-26 02:19:07] INFO root fetch - processPackages [cdk-stacksets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-stacksets-0.0.98.tar.gz tmp/cdk-stacksets-0.0.99.tar.gz --markdown 20230526/c/cdk-stacksets/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 02:19:08] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2023-05-26 02:19:08] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.0.98.tar.gz tmp/cdk-events-notify-2.0.99.tar.gz --markdown 20230526/c/cdk-events-notify/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-26 02:19:08] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: executing diffoscope
+[2023-05-26 02:19:08] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz --markdown 20230526/c/cdklabs.cdk-hyperledger-fabric-network/0.8.98-0.8.99/diff.md --exclude *.pyd
+[2023-05-26 02:19:08] INFO root fetch - processPackages [cdktf-cdk8s]: executing diffoscope
+[2023-05-26 02:19:08] INFO root fetch - processPackages [cdktf-cdk8s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdk8s-0.5.8.tar.gz tmp/cdktf-cdk8s-0.5.9.tar.gz --markdown 20230526/c/cdktf-cdk8s/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-26 02:19:08] INFO root fetch - processPackages [pytorch-ignite]: Downloading https://files.pythonhosted.org/packages/74/81/6bee017c7c7a12847370c3ffa069a1535d527258aa5db8a5f7923254a954/pytorch-ignite-0.5.0.dev20230526.tar.gz
+[2023-05-26 02:19:08] INFO root fetch - processPackages [torchmultimodal-nightly]: executing diffoscope
+[2023-05-26 02:19:08] INFO root fetch - processPackages [torchmultimodal-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchmultimodal_nightly-2023.5.8-py39-none-any.whl.zip tmp/torchmultimodal_nightly-2023.5.9-py39-none-any.whl.zip --markdown 20230526/t/torchmultimodal-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-26 02:19:08] INFO root fetch - processPackages [disfluency-constituency-parser]: Downloading https://files.pythonhosted.org/packages/30/24/b9e5b902e1bb6e5e4a027a5017f087330484f324f27b4bbd6bf9fe90da3d/disfluency_constituency_parser-0.0.9-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-26 02:19:08] INFO root fetch - processPackages [MicroLIA]: Downloading https://files.pythonhosted.org/packages/22/cd/19292d57616082c7c3e74521ff037c629b4009441f0d5f85d94726769d4a/MicroLIA-2.2.3.tar.gz
+[2023-05-26 02:19:08] INFO root fetch - processPackages [disfluency-constituency-parser]: executing diffoscope
+[2023-05-26 02:19:08] INFO root fetch - processPackages [disfluency-constituency-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/disfluency_constituency_parser-0.0.8-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/disfluency_constituency_parser-0.0.9-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230526/d/disfluency-constituency-parser/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 02:19:08] INFO root fetch - processPackages [MicroLIA]: executing diffoscope
+[2023-05-26 02:19:08] INFO root fetch - processPackages [MicroLIA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MicroLIA-2.2.0.tar.gz tmp/MicroLIA-2.2.3.tar.gz --markdown 20230526/M/MicroLIA/2.2.0-2.2.3/diff.md --exclude *.pyd
+[2023-05-26 02:19:08] INFO root fetch - processPackages [pytorch-ignite]: executing diffoscope
+[2023-05-26 02:19:08] INFO root fetch - processPackages [pytorch-ignite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytorch-ignite-0.5.0.dev20230525.tar.gz tmp/pytorch-ignite-0.5.0.dev20230526.tar.gz --markdown 20230526/p/pytorch-ignite/0.5.0.dev20230525-0.5.0.dev20230526/diff.md --exclude *.pyd
+[2023-05-26 02:19:09] INFO root fetch - processPackages [hades-cli]: Start processing: khloraascaf
+[2023-05-26 02:19:09] INFO root fetch - main [MainThread]: End processing [hades-cli]: success
+[2023-05-26 02:19:09] INFO root fetch - processPackages [khloraascaf]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-26 02:19:09] INFO root fetch - processPackages [khloraascaf]: executing diffoscope
+[2023-05-26 02:19:09] INFO root fetch - processPackages [khloraascaf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khloraascaf-1.8.0.tar.gz tmp/khloraascaf-1.9.0.tar.gz --markdown 20230526/k/khloraascaf/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-26 02:19:09] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Start processing: constructs
+[2023-05-26 02:19:09] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-hyperledger-fabric-network]: success
+[2023-05-26 02:19:09] INFO root fetch - processPackages [constructs]: New version: [3.4.99] Old Version: [3.4.98]
+[2023-05-26 02:19:09] INFO root fetch - processPackages [cdk-common]: Start processing: marquedown
+[2023-05-26 02:19:09] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2023-05-26 02:19:09] INFO root fetch - processPackages [marquedown]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-26 02:19:10] INFO root fetch - processPackages [constructs]: executing diffoscope
+[2023-05-26 02:19:10] INFO root fetch - processPackages [constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/constructs-3.4.98.tar.gz tmp/constructs-3.4.99.tar.gz --markdown 20230526/c/constructs/3.4.98-3.4.99/diff.md --exclude *.pyd
+[2023-05-26 02:19:10] INFO root fetch - processPackages [marquedown]: executing diffoscope
+[2023-05-26 02:19:10] INFO root fetch - processPackages [marquedown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marquedown-0.8.0.tar.gz tmp/marquedown-0.9.0.tar.gz --markdown 20230526/m/marquedown/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-26 02:19:10] INFO root fetch - processPackages [cdk-events-notify]: Start processing: cdklabs.appsync-utils
+[2023-05-26 02:19:10] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
+[2023-05-26 02:19:10] INFO root fetch - processPackages [cdklabs.appsync-utils]: New version: [0.0.98] Old Version: [0.0.97]
+[2023-05-26 02:19:10] INFO root fetch - processPackages [cdktf-cdk8s]: Start processing: cdktf-surreal-backend
+[2023-05-26 02:19:10] INFO root fetch - main [MainThread]: End processing [cdktf-cdk8s]: success
+[2023-05-26 02:19:10] INFO root fetch - processPackages [cdktf-surreal-backend]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-05-26 02:19:10] INFO root fetch - processPackages [cdktf-surreal-backend]: executing diffoscope
+[2023-05-26 02:19:10] INFO root fetch - processPackages [cdktf-surreal-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-surreal-backend-1.0.98.tar.gz tmp/cdktf-surreal-backend-1.0.99.tar.gz --markdown 20230526/c/cdktf-surreal-backend/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-05-26 02:19:10] INFO root fetch - processPackages [cdklabs.appsync-utils]: Downloading https://files.pythonhosted.org/packages/c2/b6/9921880127918975163ef796466fd100a8f3a6246436ca4993eafae4915d/cdklabs.appsync-utils-0.0.98.tar.gz
+[2023-05-26 02:19:10] INFO root fetch - processPackages [cdklabs.appsync-utils]: executing diffoscope
+[2023-05-26 02:19:10] INFO root fetch - processPackages [cdklabs.appsync-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.appsync-utils-0.0.97.tar.gz tmp/cdklabs.appsync-utils-0.0.98.tar.gz --markdown 20230526/c/cdklabs.appsync-utils/0.0.97-0.0.98/diff.md --exclude *.pyd
+[2023-05-26 02:19:10] INFO root fetch - processPackages [cdk-stacksets]: Start processing: cdk-secret-manager-wrapper-layer
+[2023-05-26 02:19:10] INFO root fetch - main [MainThread]: End processing [cdk-stacksets]: success
+[2023-05-26 02:19:10] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-26 02:19:10] INFO root fetch - main [MainThread]: End processing [torchmultimodal-nightly]: success
+[2023-05-26 02:19:10] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: executing diffoscope
+[2023-05-26 02:19:10] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz --markdown 20230526/c/cdk-secret-manager-wrapper-layer/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-26 02:19:11] INFO root fetch - main [MainThread]: End processing [khloraascaf]: success
+[2023-05-26 02:19:11] INFO root fetch - main [MainThread]: End processing [constructs]: success
+[2023-05-26 02:19:12] INFO root fetch - main [MainThread]: End processing [marquedown]: success
+[2023-05-26 02:19:12] INFO root fetch - main [MainThread]: End processing [cdktf-surreal-backend]: success
+[2023-05-26 02:19:12] INFO root fetch - main [MainThread]: End processing [cdklabs.appsync-utils]: success
+[2023-05-26 02:19:12] INFO root fetch - main [MainThread]: End processing [cdk-secret-manager-wrapper-layer]: success
+[2023-05-26 02:19:12] INFO root fetch - main [MainThread]: End processing [disfluency-constituency-parser]: success
+[2023-05-26 02:19:14] INFO root fetch - main [MainThread]: End processing [pytorch-ignite]: success
+[2023-05-26 02:19:14] INFO root fetch - main [MainThread]: End processing [MicroLIA]: success
+[2023-05-26 02:19:14] INFO root fetch - main [MainThread]: Store serial: [18254506]
