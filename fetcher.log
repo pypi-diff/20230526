@@ -10502,3 +10502,55 @@
 [2023-05-26 10:02:47] INFO root fetch - main [MainThread]: End processing [aiopioneer]: success
 [2023-05-26 10:02:48] INFO root fetch - main [MainThread]: End processing [loqusdb]: success
 [2023-05-26 10:02:48] INFO root fetch - main [MainThread]: Store serial: [18259538]
+[2023-05-26 10:07:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18259538]
+[2023-05-26 10:07:58] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-26 10:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: textbsr
+[2023-05-26 10:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: p-template-crawler
+[2023-05-26 10:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cluster-experiments
+[2023-05-26 10:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ChatLLM
+[2023-05-26 10:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cyberbullying-detection
+[2023-05-26 10:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: invenio-userprofiles
+[2023-05-26 10:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyglove
+[2023-05-26 10:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aliyun-python-sdk-dms-enterprise
+[2023-05-26 10:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: recon-lw
+[2023-05-26 10:07:58] INFO root fetch - processPackages [ChatLLM]: New version: [2023.5.4.12.7.23] Old Version: [2023.5.4.11.58.59]
+[2023-05-26 10:07:58] INFO root fetch - processPackages [p-template-crawler]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 10:07:58] INFO root fetch - processPackages [textbsr]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 10:07:58] WARNING root fetch - processPackages [cyberbullying-detection]: Skipping, unable to determine old version
+[2023-05-26 10:07:58] INFO root fetch - main [MainThread]: End processing [cyberbullying-detection] error
+[2023-05-26 10:07:58] INFO root fetch - processPackages [invenio-userprofiles]: New version: [2.2.1] Old Version: [2.2.0]
+[2023-05-26 10:07:58] INFO root fetch - processPackages [cluster-experiments]: New version: [0.9.0] Old Version: [0.8.5]
+[2023-05-26 10:07:58] INFO root fetch - processPackages [aliyun-python-sdk-dms-enterprise]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-05-26 10:07:58] INFO root fetch - processPackages [pyglove]: New version: [0.3.1.dev20230526] Old Version: [0.3.1.dev20230525]
+[2023-05-26 10:07:58] INFO root fetch - processPackages [recon-lw]: New version: [2.0.0.dev5082955800] Old Version: [2.0.0.dev5081971643]
+[2023-05-26 10:07:59] INFO root fetch - processPackages [textbsr]: executing diffoscope
+[2023-05-26 10:07:59] INFO root fetch - processPackages [textbsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textbsr-0.0.8.tar.gz tmp/textbsr-0.0.9.tar.gz --markdown 20230526/t/textbsr/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 10:07:59] INFO root fetch - processPackages [ChatLLM]: executing diffoscope
+[2023-05-26 10:07:59] INFO root fetch - processPackages [ChatLLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ChatLLM-2023.5.4.11.58.59.tar.gz tmp/ChatLLM-2023.5.4.12.7.23.tar.gz --markdown 20230526/C/ChatLLM/2023.5.4.11.58.59-2023.5.4.12.7.23/diff.md --exclude *.pyd
+[2023-05-26 10:07:59] INFO root fetch - processPackages [recon-lw]: executing diffoscope
+[2023-05-26 10:07:59] INFO root fetch - processPackages [recon-lw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recon_lw-2.0.0.dev5081971643.tar.gz tmp/recon_lw-2.0.0.dev5082955800.tar.gz --markdown 20230526/r/recon-lw/2.0.0.dev5081971643-2.0.0.dev5082955800/diff.md --exclude *.pyd
+[2023-05-26 10:07:59] INFO root fetch - processPackages [invenio-userprofiles]: Downloading https://files.pythonhosted.org/packages/d8/d3/a9d0b728c3216a227a1e37acca97a7f9a07bf3a30cb8e1fd43ef9cf1e6af/invenio-userprofiles-2.2.0.tar.gz
+[2023-05-26 10:07:59] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/6e/36/ca39823aa23f059c4fe7f0959227e91cd9aa4c129605869b58d91ad1bea3/pyglove-0.3.1.dev20230525.tar.gz
+[2023-05-26 10:07:59] INFO root fetch - processPackages [cluster-experiments]: Downloading https://files.pythonhosted.org/packages/cd/bd/8de79b31d7ef7d138e610e60062ba97cfd0a8b15b090bc8499d959678fa9/cluster_experiments-0.8.5.tar.gz
+[2023-05-26 10:07:59] INFO root fetch - processPackages [aliyun-python-sdk-dms-enterprise]: executing diffoscope
+[2023-05-26 10:07:59] INFO root fetch - processPackages [aliyun-python-sdk-dms-enterprise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliyun-python-sdk-dms-enterprise-1.8.1.tar.gz tmp/aliyun-python-sdk-dms-enterprise-1.9.0.tar.gz --markdown 20230526/a/aliyun-python-sdk-dms-enterprise/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-05-26 10:07:59] INFO root fetch - processPackages [p-template-crawler]: executing diffoscope
+[2023-05-26 10:07:59] INFO root fetch - processPackages [p-template-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-crawler-0.0.8.tar.gz tmp/p-template-crawler-0.0.9.tar.gz --markdown 20230526/p/p-template-crawler/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 10:07:59] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/9d/77/858bda576a6453297e717fe33bcc36bd1e32f5a019e564ed7960869efaa7/pyglove-0.3.1.dev20230526.tar.gz
+[2023-05-26 10:07:59] INFO root fetch - processPackages [invenio-userprofiles]: Downloading https://files.pythonhosted.org/packages/64/da/48f40931e0732a09f0bf2951d7c00db8ec8e3813f3e793d9baaad2620e58/invenio-userprofiles-2.2.1.tar.gz
+[2023-05-26 10:07:59] INFO root fetch - processPackages [cluster-experiments]: Downloading https://files.pythonhosted.org/packages/5f/03/8c64016f07cd05d06cfc7431563abf72b878f164205c259493e786328e54/cluster_experiments-0.9.0.tar.gz
+[2023-05-26 10:07:59] INFO root fetch - processPackages [invenio-userprofiles]: executing diffoscope
+[2023-05-26 10:07:59] INFO root fetch - processPackages [invenio-userprofiles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invenio-userprofiles-2.2.0.tar.gz tmp/invenio-userprofiles-2.2.1.tar.gz --markdown 20230526/i/invenio-userprofiles/2.2.0-2.2.1/diff.md --exclude *.pyd
+[2023-05-26 10:07:59] INFO root fetch - processPackages [cluster-experiments]: executing diffoscope
+[2023-05-26 10:07:59] INFO root fetch - processPackages [cluster-experiments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cluster_experiments-0.8.5.tar.gz tmp/cluster_experiments-0.9.0.tar.gz --markdown 20230526/c/cluster-experiments/0.8.5-0.9.0/diff.md --exclude *.pyd
+[2023-05-26 10:07:59] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2023-05-26 10:07:59] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.3.1.dev20230525.tar.gz tmp/pyglove-0.3.1.dev20230526.tar.gz --markdown 20230526/p/pyglove/0.3.1.dev20230525-0.3.1.dev20230526/diff.md --exclude *.pyd
+[2023-05-26 10:08:00] INFO root fetch - main [MainThread]: End processing [textbsr]: success
+[2023-05-26 10:08:00] INFO root fetch - main [MainThread]: End processing [recon-lw]: success
+[2023-05-26 10:08:01] INFO root fetch - main [MainThread]: End processing [p-template-crawler]: success
+[2023-05-26 10:08:01] INFO root fetch - main [MainThread]: End processing [aliyun-python-sdk-dms-enterprise]: success
+[2023-05-26 10:08:01] INFO root fetch - main [MainThread]: End processing [ChatLLM]: success
+[2023-05-26 10:08:01] INFO root fetch - main [MainThread]: End processing [invenio-userprofiles]: success
+[2023-05-26 10:08:02] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2023-05-26 10:08:02] INFO root fetch - main [MainThread]: End processing [cluster-experiments]: success
+[2023-05-26 10:08:02] INFO root fetch - main [MainThread]: Store serial: [18259566]
