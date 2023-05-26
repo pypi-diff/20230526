@@ -1708,3 +1708,52 @@
 [2023-05-26 02:40:52] INFO root fetch - main [MainThread]: End processing [khloraascaf-utils]: success
 [2023-05-26 02:40:54] INFO root fetch - main [MainThread]: End processing [MicroLIA]: success
 [2023-05-26 02:40:54] INFO root fetch - main [MainThread]: Store serial: [18254647]
+[2023-05-26 02:45:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18254647]
+[2023-05-26 02:46:03] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-26 02:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bdfrx
+[2023-05-26 02:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: GoogleBard
+[2023-05-26 02:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-comprehend-s3olap
+[2023-05-26 02:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fluctuate
+[2023-05-26 02:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bingbong
+[2023-05-26 02:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tfds-nightly
+[2023-05-26 02:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tradchat
+[2023-05-26 02:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sentry-kafka-schemas
+[2023-05-26 02:46:03] INFO root fetch - processPackages [GoogleBard]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-26 02:46:03] INFO root fetch - processPackages [fluctuate]: New version: [2.0.0b1] Old Version: [1.0.1]
+[2023-05-26 02:46:03] WARNING root fetch - processPackages [tradchat]: Skipping, unable to determine old version
+[2023-05-26 02:46:03] INFO root fetch - main [MainThread]: End processing [tradchat] error
+[2023-05-26 02:46:03] INFO root fetch - processPackages [sentry-kafka-schemas]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 02:46:03] INFO root fetch - processPackages [bdfrx]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-05-26 02:46:03] INFO root fetch - processPackages [bingbong]: New version: [0.3.1] Old Version: [0.2.3]
+[2023-05-26 02:46:03] INFO root fetch - processPackages [cdk-comprehend-s3olap]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-26 02:46:03] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.2.dev202305250045] Old Version: [4.9.2.dev202305240044]
+[2023-05-26 02:46:03] INFO root fetch - processPackages [cdk-comprehend-s3olap]: Downloading https://files.pythonhosted.org/packages/d2/64/ec00fce58a2563fe9a768f5ee5a77ecba74bfccf89b1ec489306be4a20a8/cdk_comprehend_s3olap-2.0.98.tar.gz
+[2023-05-26 02:46:03] INFO root fetch - processPackages [GoogleBard]: Downloading https://files.pythonhosted.org/packages/e9/9e/a12b5d8dfbecb3712ad7d212a297ee1511b423c2bcd3873a5eae086fd1f3/GoogleBard-1.1.1.tar.gz
+[2023-05-26 02:46:03] WARNING root fetch - processPackages [cdk-comprehend-s3olap]: Skipping package: exceeds size limit 14179128>=10485760
+[2023-05-26 02:46:03] INFO root fetch - main [MainThread]: End processing [cdk-comprehend-s3olap] error
+[2023-05-26 02:46:03] INFO root fetch - processPackages [bingbong]: Downloading https://files.pythonhosted.org/packages/80/a2/c7699bf7411f1db31e3aa093d5162a731a41ff9d843a732ac6cdeb75be78/bingbong-0.2.3-py3-none-any.whl
+[2023-05-26 02:46:03] INFO root fetch - processPackages [bdfrx]: Downloading https://files.pythonhosted.org/packages/5d/5d/5a08a4afd461e1030325a00fc5c09e960bd7d42285684e4ada0a91cf928a/bdfrx-1.0.6.tar.gz
+[2023-05-26 02:46:03] INFO root fetch - processPackages [fluctuate]: Downloading https://files.pythonhosted.org/packages/3f/73/5b31c1de9ac20540cac0a8de4d87fb3d3c0e3245c1553def9d5e4af2b19c/fluctuate-2.0.0b1.tar.gz
+[2023-05-26 02:46:03] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/40/cc/31684b7c2976abcd710ca83aeb552ad8d516f7dbfeb86bcd85e5290ec917/tfds-nightly-4.9.2.dev202305250045.tar.gz
+[2023-05-26 02:46:03] INFO root fetch - processPackages [GoogleBard]: Downloading https://files.pythonhosted.org/packages/79/bb/560816988f91ffcb1d27bdc974f32b79388d8feabd23eae6f8cbeeb1be0c/GoogleBard-1.1.2.tar.gz
+[2023-05-26 02:46:03] INFO root fetch - processPackages [sentry-kafka-schemas]: executing diffoscope
+[2023-05-26 02:46:03] INFO root fetch - processPackages [sentry-kafka-schemas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sentry-kafka-schemas-0.1.8.tar.gz tmp/sentry-kafka-schemas-0.1.9.tar.gz --markdown 20230526/s/sentry-kafka-schemas/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 02:46:03] INFO root fetch - processPackages [fluctuate]: executing diffoscope
+[2023-05-26 02:46:03] INFO root fetch - processPackages [fluctuate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluctuate-1.0.1.tar.gz tmp/fluctuate-2.0.0b1.tar.gz --markdown 20230526/f/fluctuate/1.0.1-2.0.0b1/diff.md --exclude *.pyd
+[2023-05-26 02:46:03] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2023-05-26 02:46:03] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.2.dev202305240044.tar.gz tmp/tfds-nightly-4.9.2.dev202305250045.tar.gz --markdown 20230526/t/tfds-nightly/4.9.2.dev202305240044-4.9.2.dev202305250045/diff.md --exclude *.pyd
+[2023-05-26 02:46:03] INFO root fetch - processPackages [bingbong]: Downloading https://files.pythonhosted.org/packages/b8/ab/9bc4f555f541432005bf39d280334fc70a9682d1ec4a541ce9e4ebd245e6/bingbong-0.3.1-py3-none-any.whl
+[2023-05-26 02:46:03] INFO root fetch - processPackages [bdfrx]: Downloading https://files.pythonhosted.org/packages/13/7c/fd0d502e3a4d94a44275f8a78a1eb0f0f18db553d98d5d0d36c8390269af/bdfrx-1.0.7.tar.gz
+[2023-05-26 02:46:04] INFO root fetch - processPackages [GoogleBard]: executing diffoscope
+[2023-05-26 02:46:04] INFO root fetch - processPackages [GoogleBard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GoogleBard-1.1.1.tar.gz tmp/GoogleBard-1.1.2.tar.gz --markdown 20230526/G/GoogleBard/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-26 02:46:04] INFO root fetch - processPackages [bdfrx]: executing diffoscope
+[2023-05-26 02:46:04] INFO root fetch - processPackages [bdfrx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bdfrx-1.0.6.tar.gz tmp/bdfrx-1.0.7.tar.gz --markdown 20230526/b/bdfrx/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-05-26 02:46:04] INFO root fetch - processPackages [bingbong]: executing diffoscope
+[2023-05-26 02:46:04] INFO root fetch - processPackages [bingbong]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bingbong-0.2.3-py3-none-any.whl.zip tmp/bingbong-0.3.1-py3-none-any.whl.zip --markdown 20230526/b/bingbong/0.2.3-0.3.1/diff.md --exclude *.pyd
+[2023-05-26 02:46:05] INFO root fetch - main [MainThread]: End processing [fluctuate]: success
+[2023-05-26 02:46:05] INFO root fetch - main [MainThread]: End processing [GoogleBard]: success
+[2023-05-26 02:46:05] INFO root fetch - main [MainThread]: End processing [sentry-kafka-schemas]: success
+[2023-05-26 02:46:05] INFO root fetch - main [MainThread]: End processing [bingbong]: success
+[2023-05-26 02:46:06] INFO root fetch - main [MainThread]: End processing [bdfrx]: success
+[2023-05-26 02:46:15] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2023-05-26 02:46:15] INFO root fetch - main [MainThread]: Store serial: [18254671]
