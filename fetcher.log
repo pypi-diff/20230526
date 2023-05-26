@@ -8503,3 +8503,38 @@
 [2023-05-26 07:41:30] INFO root fetch - main [MainThread]: End processing [dspawpy]: success
 [2023-05-26 07:41:30] INFO root fetch - main [MainThread]: End processing [odoo11-addon-membership-extension]: success
 [2023-05-26 07:41:30] INFO root fetch - main [MainThread]: Store serial: [18258269]
+[2023-05-26 07:46:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18258269]
+[2023-05-26 07:46:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-26 07:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aliyun-python-sdk-dcdn
+[2023-05-26 07:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: swibots
+[2023-05-26 07:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yins-music
+[2023-05-26 07:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: canvas-pilot
+[2023-05-26 07:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cve-py
+[2023-05-26 07:46:39] INFO root fetch - processPackages [yins-music]: New version: [0.0.7.dev2] Old Version: [0.0.7.dev1]
+[2023-05-26 07:46:39] INFO root fetch - processPackages [canvas-pilot]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-26 07:46:39] INFO root fetch - processPackages [aliyun-python-sdk-dcdn]: New version: [2.2.9] Old Version: [2.2.8]
+[2023-05-26 07:46:39] INFO root fetch - processPackages [cve-py]: New version: [1.2.2] Old Version: [1.2.0]
+[2023-05-26 07:46:39] INFO root fetch - processPackages [swibots]: New version: [1.2.7] Old Version: [1.2.6]
+[2023-05-26 07:46:39] INFO root fetch - processPackages [canvas-pilot]: Downloading https://files.pythonhosted.org/packages/3e/d3/073fa3e2db78f7fc7fc0a84a43584addcfcab93378f294393a1817f98f71/canvas-pilot-0.1.1.tar.gz
+[2023-05-26 07:46:39] INFO root fetch - processPackages [swibots]: Downloading https://files.pythonhosted.org/packages/e7/0a/df2c564664ada8c8669e6eb7ab7c832db1cbfae4f8e58ac35809081faf9b/swibots-1.2.6.tar.gz
+[2023-05-26 07:46:39] INFO root fetch - processPackages [cve-py]: Downloading https://files.pythonhosted.org/packages/70/b3/278cc0c29fda460fc290019b604d795e32ae17b0df8267f192ec197b8c31/cve-py-1.2.0.tar.gz
+[2023-05-26 07:46:39] INFO root fetch - processPackages [yins-music]: Downloading https://files.pythonhosted.org/packages/94/16/899f64b25fc23c8ab92e42eca5e08c9f3ddfc27e118c39518d5b2d61c352/yins-music-0.0.7.dev2.tar.gz
+[2023-05-26 07:46:39] INFO root fetch - processPackages [aliyun-python-sdk-dcdn]: executing diffoscope
+[2023-05-26 07:46:39] INFO root fetch - processPackages [aliyun-python-sdk-dcdn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliyun-python-sdk-dcdn-2.2.8.tar.gz tmp/aliyun-python-sdk-dcdn-2.2.9.tar.gz --markdown 20230526/a/aliyun-python-sdk-dcdn/2.2.8-2.2.9/diff.md --exclude *.pyd
+[2023-05-26 07:46:39] INFO root fetch - processPackages [yins-music]: executing diffoscope
+[2023-05-26 07:46:39] INFO root fetch - processPackages [yins-music]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yins-music-0.0.7.dev1.tar.gz tmp/yins-music-0.0.7.dev2.tar.gz --markdown 20230526/y/yins-music/0.0.7.dev1-0.0.7.dev2/diff.md --exclude *.pyd
+[2023-05-26 07:46:39] INFO root fetch - processPackages [canvas-pilot]: Downloading https://files.pythonhosted.org/packages/71/37/ea07c7b3d06c02a45f74172d11daa6d2c749605662214c95403c59412b49/canvas-pilot-0.1.2.tar.gz
+[2023-05-26 07:46:39] INFO root fetch - processPackages [swibots]: Downloading https://files.pythonhosted.org/packages/e7/0c/ed978303f1bd88f8341ae181f6ca1fb2f29062017d08c473c341f5194e80/swibots-1.2.7.tar.gz
+[2023-05-26 07:46:39] INFO root fetch - processPackages [cve-py]: Downloading https://files.pythonhosted.org/packages/9a/a5/c0b486de9d716695c37267333d24dc913466f432dca4e42d70a86b99ceaa/cve-py-1.2.2.tar.gz
+[2023-05-26 07:46:39] INFO root fetch - processPackages [canvas-pilot]: executing diffoscope
+[2023-05-26 07:46:39] INFO root fetch - processPackages [canvas-pilot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canvas-pilot-0.1.1.tar.gz tmp/canvas-pilot-0.1.2.tar.gz --markdown 20230526/c/canvas-pilot/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-26 07:46:39] INFO root fetch - processPackages [swibots]: executing diffoscope
+[2023-05-26 07:46:39] INFO root fetch - processPackages [swibots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swibots-1.2.6.tar.gz tmp/swibots-1.2.7.tar.gz --markdown 20230526/s/swibots/1.2.6-1.2.7/diff.md --exclude *.pyd
+[2023-05-26 07:46:39] INFO root fetch - processPackages [cve-py]: executing diffoscope
+[2023-05-26 07:46:39] INFO root fetch - processPackages [cve-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cve-py-1.2.0.tar.gz tmp/cve-py-1.2.2.tar.gz --markdown 20230526/c/cve-py/1.2.0-1.2.2/diff.md --exclude *.pyd
+[2023-05-26 07:46:41] INFO root fetch - main [MainThread]: End processing [canvas-pilot]: success
+[2023-05-26 07:46:41] INFO root fetch - main [MainThread]: End processing [yins-music]: success
+[2023-05-26 07:46:41] INFO root fetch - main [MainThread]: End processing [cve-py]: success
+[2023-05-26 07:46:42] INFO root fetch - main [MainThread]: End processing [swibots]: success
+[2023-05-26 07:46:42] INFO root fetch - main [MainThread]: End processing [aliyun-python-sdk-dcdn]: success
+[2023-05-26 07:46:42] INFO root fetch - main [MainThread]: Store serial: [18258284]
