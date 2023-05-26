@@ -18659,3 +18659,82 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 17:33:34] INFO root fetch - main [MainThread]: End processing [eodc-faas-force]: success
 [2023-05-26 17:33:46] INFO root fetch - main [MainThread]: End processing [spreadsheet-migrator]: success
 [2023-05-26 17:33:46] INFO root fetch - main [MainThread]: Store serial: [18264750]
+[2023-05-26 17:38:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18264750]
+[2023-05-26 17:38:55] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-26 17:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smartlogger
+[2023-05-26 17:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flowchain
+[2023-05-26 17:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chatgptonic
+[2023-05-26 17:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tutor-mfe
+[2023-05-26 17:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: shlep
+[2023-05-26 17:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: konfuzio-sdk
+[2023-05-26 17:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: published-ss
+[2023-05-26 17:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: seldonian-experiments
+[2023-05-26 17:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: PyRigol-DS1000x
+[2023-05-26 17:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cognite-neat
+[2023-05-26 17:38:56] INFO root fetch - processPackages [chatgptonic]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-26 17:38:56] INFO root fetch - processPackages [smartlogger]: New version: [0.0.1.dev9] Old Version: [0.0.1.dev8]
+[2023-05-26 17:38:56] INFO root fetch - processPackages [tutor-mfe]: New version: [15.0.7] Old Version: [15.0.6]
+[2023-05-26 17:38:56] INFO root fetch - processPackages [flowchain]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-26 17:38:56] INFO root fetch - processPackages [seldonian-experiments]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-26 17:38:56] WARNING root fetch - processPackages [published-ss]: Skipping, unable to determine old version
+[2023-05-26 17:38:56] INFO root fetch - processPackages [shlep]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-05-26 17:38:56] INFO root fetch - processPackages [published-ss]: Start processing: matchmakereft
+[2023-05-26 17:38:56] INFO root fetch - main [MainThread]: End processing [published-ss] error
+[2023-05-26 17:38:56] INFO root fetch - processPackages [konfuzio-sdk]: New version: [0.2.9.dev20230104175944] Old Version: [0.2.9.dev20221227125623]
+[2023-05-26 17:38:56] INFO root fetch - processPackages [matchmakereft]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-05-26 17:38:56] INFO root fetch - processPackages [PyRigol-DS1000x]: New version: [0.2] Old Version: [0.1]
+[2023-05-26 17:38:56] INFO root fetch - processPackages [cognite-neat]: New version: [0.12.1] Old Version: [0.12.0]
+[2023-05-26 17:38:56] INFO root fetch - processPackages [konfuzio-sdk]: executing diffoscope
+[2023-05-26 17:38:56] INFO root fetch - processPackages [konfuzio-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/konfuzio_sdk-0.2.9.dev20221227125623.tar.gz tmp/konfuzio_sdk-0.2.9.dev20230104175944.tar.gz --markdown 20230526/k/konfuzio-sdk/0.2.9.dev20221227125623-0.2.9.dev20230104175944/diff.md --exclude *.pyd
+[2023-05-26 17:38:56] INFO root fetch - processPackages [flowchain]: Downloading https://files.pythonhosted.org/packages/d9/b3/2cd85d8403f0fa4d809abc26c0179ecd70765b439d1a881316965b0785d1/flowchain-0.0.1.tar.gz
+[2023-05-26 17:38:56] INFO root fetch - processPackages [tutor-mfe]: Downloading https://files.pythonhosted.org/packages/d8/e3/983f4b5e6439762964771f13b7f9183bc9bbf94541462fd052b8e5c0e2ba/tutor-mfe-15.0.6.tar.gz
+[2023-05-26 17:38:56] INFO root fetch - processPackages [seldonian-experiments]: Downloading https://files.pythonhosted.org/packages/5d/7f/1853c17aa6278bd81190b8b8b235d147aa62ae5f2bf43585aab6c2523716/seldonian_experiments-0.1.1.tar.gz
+[2023-05-26 17:38:56] INFO root fetch - processPackages [matchmakereft]: executing diffoscope
+[2023-05-26 17:38:56] INFO root fetch - processPackages [matchmakereft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matchmakereft-1.0.2.tar.gz tmp/matchmakereft-1.1.0-py2.py3-none-any.whl.zip --markdown 20230526/m/matchmakereft/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-05-26 17:38:56] INFO root fetch - processPackages [chatgptonic]: Downloading https://files.pythonhosted.org/packages/66/9a/932a028d2315c9728673d08f089aa6272ee46183c12ad1710067afc3f1ba/chatgptonic-1.1.2.tar.gz
+[2023-05-26 17:38:56] INFO root fetch - processPackages [shlep]: Downloading https://files.pythonhosted.org/packages/a4/31/5e649090d8168eb66e72fa9dad131e70101e0973256ea31837c65c232684/shlep-1.2.2.tar.gz
+[2023-05-26 17:38:56] INFO root fetch - processPackages [cognite-neat]: Downloading https://files.pythonhosted.org/packages/a0/b4/0f6e5a0c5add1e1413a009167e44f74e1d615742a36c47a77186a2c031d3/cognite_neat-0.12.0.tar.gz
+[2023-05-26 17:38:56] INFO root fetch - processPackages [PyRigol-DS1000x]: Downloading https://files.pythonhosted.org/packages/28/a3/273590b19c415970d7e86a8655d9918f23293dcf6cb20c8661d1b0535109/PyRigol_DS1000x-0.1.tar.gz
+[2023-05-26 17:38:56] INFO root fetch - processPackages [smartlogger]: executing diffoscope
+[2023-05-26 17:38:56] INFO root fetch - processPackages [smartlogger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartlogger-0.0.1.dev8.tar.gz tmp/smartlogger-0.0.1.dev9.tar.gz --markdown 20230526/s/smartlogger/0.0.1.dev8-0.0.1.dev9/diff.md --exclude *.pyd
+[2023-05-26 17:38:56] INFO root fetch - processPackages [flowchain]: Downloading https://files.pythonhosted.org/packages/f4/39/67e6e1f53ffb33f8764023c885cc92834b245052474105f60c5e488c137d/flowchain-0.0.2.tar.gz
+[2023-05-26 17:38:56] INFO root fetch - processPackages [tutor-mfe]: Downloading https://files.pythonhosted.org/packages/8b/39/35d28511d893be2c049201ea01e5b90137a3379183d613f7fb22ed2b6ba2/tutor-mfe-15.0.7.tar.gz
+[2023-05-26 17:38:56] INFO root fetch - processPackages [shlep]: executing diffoscope
+[2023-05-26 17:38:56] INFO root fetch - processPackages [shlep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shlep-1.2.1.tar.gz tmp/shlep-1.2.2.tar.gz --markdown 20230526/s/shlep/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-05-26 17:38:56] INFO root fetch - processPackages [PyRigol-DS1000x]: Downloading https://files.pythonhosted.org/packages/05/c3/5c0ecce9c1f256c4015b6f6dea9ca6606236a7b8d9ed750d259fb6ae04f5/PyRigol_DS1000x-0.2.tar.gz
+[2023-05-26 17:38:56] INFO root fetch - processPackages [seldonian-experiments]: Downloading https://files.pythonhosted.org/packages/3e/99/9c9b6178165cac465f8d93ce74b0c4d88c99a8860008415e4200c9810a4d/seldonian_experiments-0.2.0.tar.gz
+[2023-05-26 17:38:56] INFO root fetch - processPackages [cognite-neat]: Downloading https://files.pythonhosted.org/packages/f7/8c/fdf9adefbea91396c9cdb0d9c900539e371ddb7cbc5a00a7630d0eee56d9/cognite_neat-0.12.1.tar.gz
+[2023-05-26 17:38:56] INFO root fetch - processPackages [chatgptonic]: executing diffoscope
+[2023-05-26 17:38:56] INFO root fetch - processPackages [chatgptonic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatgptonic-1.1.1.tar.gz tmp/chatgptonic-1.1.2.tar.gz --markdown 20230526/c/chatgptonic/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-26 17:38:56] INFO root fetch - processPackages [tutor-mfe]: executing diffoscope
+[2023-05-26 17:38:56] INFO root fetch - processPackages [tutor-mfe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tutor-mfe-15.0.6.tar.gz tmp/tutor-mfe-15.0.7.tar.gz --markdown 20230526/t/tutor-mfe/15.0.6-15.0.7/diff.md --exclude *.pyd
+[2023-05-26 17:38:56] INFO root fetch - processPackages [flowchain]: executing diffoscope
+[2023-05-26 17:38:56] INFO root fetch - processPackages [flowchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowchain-0.0.1.tar.gz tmp/flowchain-0.0.2.tar.gz --markdown 20230526/f/flowchain/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-26 17:38:56] INFO root fetch - processPackages [PyRigol-DS1000x]: executing diffoscope
+[2023-05-26 17:38:56] INFO root fetch - processPackages [PyRigol-DS1000x]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyRigol_DS1000x-0.1.tar.gz tmp/PyRigol_DS1000x-0.2.tar.gz --markdown 20230526/P/PyRigol-DS1000x/0.1-0.2/diff.md --exclude *.pyd
+[2023-05-26 17:38:56] INFO root fetch - processPackages [seldonian-experiments]: executing diffoscope
+[2023-05-26 17:38:56] INFO root fetch - processPackages [seldonian-experiments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seldonian_experiments-0.1.1.tar.gz tmp/seldonian_experiments-0.2.0.tar.gz --markdown 20230526/s/seldonian-experiments/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-26 17:38:56] INFO root fetch - processPackages [cognite-neat]: executing diffoscope
+[2023-05-26 17:38:56] INFO root fetch - processPackages [cognite-neat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cognite_neat-0.12.0.tar.gz tmp/cognite_neat-0.12.1.tar.gz --markdown 20230526/c/cognite-neat/0.12.0-0.12.1/diff.md --exclude *.pyd
+[2023-05-26 17:38:58] INFO root fetch - processPackages [konfuzio-sdk]: Start processing: evaics
+[2023-05-26 17:38:58] INFO root fetch - main [MainThread]: End processing [konfuzio-sdk]: success
+[2023-05-26 17:38:58] INFO root fetch - processPackages [evaics]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-05-26 17:38:58] INFO root fetch - processPackages [matchmakereft]: Start processing: odoo14-addon-shopfloor-single-product-transfer
+[2023-05-26 17:38:58] INFO root fetch - main [MainThread]: End processing [matchmakereft]: success
+[2023-05-26 17:38:58] WARNING root fetch - processPackages [odoo14-addon-shopfloor-single-product-transfer]: Skipping, unable to determine old version
+[2023-05-26 17:38:58] INFO root fetch - processPackages [odoo14-addon-shopfloor-single-product-transfer]: Start processing: odoo14-addon-shopfloor-single-product-transfer-mobile
+[2023-05-26 17:38:58] INFO root fetch - main [MainThread]: End processing [odoo14-addon-shopfloor-single-product-transfer] error
+[2023-05-26 17:38:58] INFO root fetch - processPackages [evaics]: executing diffoscope
+[2023-05-26 17:38:58] INFO root fetch - processPackages [evaics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evaics-0.2.7.tar.gz tmp/evaics-0.2.8.tar.gz --markdown 20230526/e/evaics/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-05-26 17:38:58] WARNING root fetch - processPackages [odoo14-addon-shopfloor-single-product-transfer-mobile]: Skipping, unable to determine old version
+[2023-05-26 17:38:58] INFO root fetch - main [MainThread]: End processing [odoo14-addon-shopfloor-single-product-transfer-mobile] error
+[2023-05-26 17:38:58] INFO root fetch - main [MainThread]: End processing [seldonian-experiments]: success
+[2023-05-26 17:38:58] INFO root fetch - main [MainThread]: End processing [flowchain]: success
+[2023-05-26 17:38:58] INFO root fetch - main [MainThread]: End processing [tutor-mfe]: success
+[2023-05-26 17:38:59] INFO root fetch - main [MainThread]: End processing [smartlogger]: success
+[2023-05-26 17:38:59] INFO root fetch - main [MainThread]: End processing [PyRigol-DS1000x]: success
+[2023-05-26 17:38:59] INFO root fetch - main [MainThread]: End processing [chatgptonic]: success
+[2023-05-26 17:38:59] INFO root fetch - main [MainThread]: End processing [shlep]: success
+[2023-05-26 17:39:00] INFO root fetch - main [MainThread]: End processing [evaics]: success
+[2023-05-26 17:41:02] INFO root fetch - main [MainThread]: End processing [cognite-neat]: success
+[2023-05-26 17:41:02] INFO root fetch - main [MainThread]: Store serial: [18264793]
