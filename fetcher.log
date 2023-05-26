@@ -10657,3 +10657,60 @@
 [2023-05-26 10:13:17] INFO root fetch - main [MainThread]: End processing [jawasCalcul]: success
 [2023-05-26 10:13:18] INFO root fetch - main [MainThread]: End processing [ChatLLM]: success
 [2023-05-26 10:13:18] INFO root fetch - main [MainThread]: Store serial: [18259612]
+[2023-05-26 10:18:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18259612]
+[2023-05-26 10:18:27] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-26 10:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cherwell-pydantic-api
+[2023-05-26 10:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: canaveral-cli
+[2023-05-26 10:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: my-provider
+[2023-05-26 10:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: librebor-r11s
+[2023-05-26 10:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: edu-segmentation
+[2023-05-26 10:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyproject-appimage
+[2023-05-26 10:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mltlk
+[2023-05-26 10:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dav-tools
+[2023-05-26 10:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: hydesign
+[2023-05-26 10:18:27] INFO root fetch - processPackages [canaveral-cli]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-26 10:18:27] INFO root fetch - processPackages [cherwell-pydantic-api]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-26 10:18:27] INFO root fetch - processPackages [edu-segmentation]: New version: [0.0.71] Old Version: [0.0.70]
+[2023-05-26 10:18:27] INFO root fetch - processPackages [my-provider]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-26 10:18:27] INFO root fetch - processPackages [mltlk]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-26 10:18:27] INFO root fetch - processPackages [dav-tools]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-26 10:18:27] INFO root fetch - processPackages [pyproject-appimage]: New version: [3.0] Old Version: [2.0]
+[2023-05-26 10:18:27] ERROR root fetch - processPackages [librebor-r11s]: Unable to get metadata: No such project 'librebor-r11s'
+[2023-05-26 10:18:27] INFO root fetch - main [MainThread]: End processing [librebor-r11s] error
+[2023-05-26 10:18:27] INFO root fetch - processPackages [hydesign]: New version: [1.1.1] Old Version: [1.0.3]
+[2023-05-26 10:18:27] INFO root fetch - processPackages [cherwell-pydantic-api]: Downloading https://files.pythonhosted.org/packages/51/ab/bec40d02741259d16ff68b587e0f50db508227890ba31f239c9dc62a17c3/cherwell_pydantic_api-0.0.3.tar.gz
+[2023-05-26 10:18:27] INFO root fetch - processPackages [dav-tools]: Downloading https://files.pythonhosted.org/packages/c1/03/fb6d12f8b7824f87f880a7237639e8a90589c4fb9da4af0f1a3f34886bdf/dav_tools-0.0.8.tar.gz
+[2023-05-26 10:18:27] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/af/c3/9ea5e3263502bbafccd7b718bd92a3c2af800b182d34a8b181b6996a6ad1/edu_segmentation-0.0.71.tar.gz
+[2023-05-26 10:18:27] INFO root fetch - processPackages [mltlk]: Downloading https://files.pythonhosted.org/packages/1a/92/5185dd45a8d0f19da481da3851eedac0bb1da746a8e484427a49f8b85a3b/mltlk-0.1.0.tar.gz
+[2023-05-26 10:18:27] INFO root fetch - processPackages [my-provider]: Downloading https://files.pythonhosted.org/packages/ac/36/a3e4d4ca05df69931605e0576c0d88bd1a724d7ab22702e791b86761e5de/my_provider-0.1.3.tar.gz
+[2023-05-26 10:18:27] INFO root fetch - processPackages [pyproject-appimage]: Downloading https://files.pythonhosted.org/packages/f8/6b/8cdc5b5cdbb6918f1390ec0c97e58c2b976709fa04c1550ca4bed343baa9/pyproject-appimage-2.0.tar.gz
+[2023-05-26 10:18:27] INFO root fetch - processPackages [canaveral-cli]: Downloading https://files.pythonhosted.org/packages/57/98/2b46975cfa3ef55ca3f457535a835d8b4f59a4084188c17c71e9ba2a14b8/canaveral_cli-0.1.5.tar.gz
+[2023-05-26 10:18:27] INFO root fetch - processPackages [dav-tools]: executing diffoscope
+[2023-05-26 10:18:27] INFO root fetch - processPackages [dav-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dav_tools-0.0.7.tar.gz tmp/dav_tools-0.0.8.tar.gz --markdown 20230526/d/dav-tools/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-26 10:18:27] INFO root fetch - processPackages [edu-segmentation]: executing diffoscope
+[2023-05-26 10:18:27] INFO root fetch - processPackages [edu-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edu_segmentation-0.0.70.tar.gz tmp/edu_segmentation-0.0.71.tar.gz --markdown 20230526/e/edu-segmentation/0.0.70-0.0.71/diff.md --exclude *.pyd
+[2023-05-26 10:18:27] INFO root fetch - processPackages [hydesign]: Downloading https://files.pythonhosted.org/packages/8f/58/7c4e6e892578aafaecb693a0c4ed1ffc456592ea65c0bdd6ecf82ee35a53/hydesign-1.0.3.tar.gz
+[2023-05-26 10:18:27] WARNING root fetch - processPackages [hydesign]: Skipping package: exceeds size limit 15128594>=10485760
+[2023-05-26 10:18:27] INFO root fetch - main [MainThread]: End processing [hydesign] error
+[2023-05-26 10:18:27] INFO root fetch - processPackages [canaveral-cli]: executing diffoscope
+[2023-05-26 10:18:27] INFO root fetch - processPackages [canaveral-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canaveral_cli-0.1.4.tar.gz tmp/canaveral_cli-0.1.5.tar.gz --markdown 20230526/c/canaveral-cli/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-26 10:18:27] INFO root fetch - processPackages [my-provider]: Downloading https://files.pythonhosted.org/packages/3b/34/83032eb4b3056f3b338fee34dcdb217f3041faa0e170e462f83072e1fa1a/my_provider-0.1.4.tar.gz
+[2023-05-26 10:18:27] INFO root fetch - processPackages [pyproject-appimage]: Downloading https://files.pythonhosted.org/packages/b6/44/dab836cf5e3f1425c9fb7631f538d5548fb8d1c3bac9575a463600f2ff25/pyproject-appimage-3.0.tar.gz
+[2023-05-26 10:18:27] INFO root fetch - processPackages [mltlk]: Downloading https://files.pythonhosted.org/packages/96/75/0870dfa3cacaa35159760b7ca2f9395e925b13ffc21bbd7ef1054f5c0c78/mltlk-0.1.1.tar.gz
+[2023-05-26 10:18:27] INFO root fetch - processPackages [cherwell-pydantic-api]: Downloading https://files.pythonhosted.org/packages/b0/ab/353c8791b15967dbca10b58c87c37f1e3060141ce7c00d48c85fd9dfab41/cherwell_pydantic_api-0.0.4.tar.gz
+[2023-05-26 10:18:27] INFO root fetch - processPackages [my-provider]: executing diffoscope
+[2023-05-26 10:18:27] INFO root fetch - processPackages [my-provider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_provider-0.1.3.tar.gz tmp/my_provider-0.1.4.tar.gz --markdown 20230526/m/my-provider/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-26 10:18:27] INFO root fetch - processPackages [pyproject-appimage]: executing diffoscope
+[2023-05-26 10:18:27] INFO root fetch - processPackages [pyproject-appimage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproject-appimage-2.0.tar.gz tmp/pyproject-appimage-3.0.tar.gz --markdown 20230526/p/pyproject-appimage/2.0-3.0/diff.md --exclude *.pyd
+[2023-05-26 10:18:27] INFO root fetch - processPackages [cherwell-pydantic-api]: executing diffoscope
+[2023-05-26 10:18:27] INFO root fetch - processPackages [cherwell-pydantic-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cherwell_pydantic_api-0.0.3.tar.gz tmp/cherwell_pydantic_api-0.0.4.tar.gz --markdown 20230526/c/cherwell-pydantic-api/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-26 10:18:28] INFO root fetch - processPackages [mltlk]: executing diffoscope
+[2023-05-26 10:18:28] INFO root fetch - processPackages [mltlk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mltlk-0.1.0.tar.gz tmp/mltlk-0.1.1.tar.gz --markdown 20230526/m/mltlk/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-26 10:18:28] INFO root fetch - main [MainThread]: End processing [dav-tools]: success
+[2023-05-26 10:18:29] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
+[2023-05-26 10:18:29] INFO root fetch - main [MainThread]: End processing [my-provider]: success
+[2023-05-26 10:18:29] INFO root fetch - main [MainThread]: End processing [pyproject-appimage]: success
+[2023-05-26 10:18:29] INFO root fetch - main [MainThread]: End processing [canaveral-cli]: success
+[2023-05-26 10:18:30] INFO root fetch - main [MainThread]: End processing [mltlk]: success
+[2023-05-26 10:18:31] INFO root fetch - main [MainThread]: End processing [cherwell-pydantic-api]: success
+[2023-05-26 10:18:31] INFO root fetch - main [MainThread]: Store serial: [18259643]
