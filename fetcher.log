@@ -11286,3 +11286,128 @@
 [2023-05-26 10:51:02] INFO root fetch - main [MainThread]: End processing [algodojo]: success
 [2023-05-26 10:51:31] INFO root fetch - main [MainThread]: End processing [kolla-ansible]: success
 [2023-05-26 10:51:31] INFO root fetch - main [MainThread]: Store serial: [18259983]
+[2023-05-26 10:56:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18259983]
+[2023-05-26 10:56:43] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-05-26 10:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scipion-em-reliontomo
+[2023-05-26 10:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: peakventures
+[2023-05-26 10:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edu-segmentation
+[2023-05-26 10:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: packagetestbancolombia
+[2023-05-26 10:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kcli
+[2023-05-26 10:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: DataDoctor
+[2023-05-26 10:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: home-assistant-chip-clusters
+[2023-05-26 10:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: home-assistant-chip-core
+[2023-05-26 10:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: home-assistant-chip-repl
+[2023-05-26 10:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: indecro
+[2023-05-26 10:56:43] INFO root fetch - processPackages [peakventures]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-26 10:56:43] INFO root fetch - processPackages [edu-segmentation]: New version: [0.0.76] Old Version: [0.0.75]
+[2023-05-26 10:56:43] INFO root fetch - processPackages [packagetestbancolombia]: New version: [1.0.2] Old Version: [0.1]
+[2023-05-26 10:56:43] INFO root fetch - processPackages [DataDoctor]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-26 10:56:43] INFO root fetch - processPackages [home-assistant-chip-core]: New version: [2023.5.3] Old Version: [2023.5.2]
+[2023-05-26 10:56:43] INFO root fetch - processPackages [home-assistant-chip-repl]: New version: [2023.5.3] Old Version: [2023.5.2]
+[2023-05-26 10:56:43] INFO root fetch - processPackages [scipion-em-reliontomo]: New version: [3.2.0] Old Version: [3.1.6]
+[2023-05-26 10:56:43] INFO root fetch - processPackages [indecro]: New version: [0.131] Old Version: [0.13]
+[2023-05-26 10:56:43] INFO root fetch - processPackages [home-assistant-chip-clusters]: New version: [2023.5.3] Old Version: [2023.5.2]
+[2023-05-26 10:56:43] INFO root fetch - processPackages [kcli]: New version: [99.0.202305260850] Old Version: [99.0.202305252202]
+[2023-05-26 10:56:43] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/5d/70/a6e92fd61da6b8b879fc33b2f70cae7b7b1733a9b0e22679a721eb7b6f78/edu_segmentation-0.0.75.tar.gz
+[2023-05-26 10:56:43] INFO root fetch - processPackages [peakventures]: Downloading https://files.pythonhosted.org/packages/28/8e/7839eb6afc5fda876d95625bb17e691c1eae34904c4d197950a1471b8b74/peakventures-1.0.2.tar.gz
+[2023-05-26 10:56:43] INFO root fetch - processPackages [scipion-em-reliontomo]: executing diffoscope
+[2023-05-26 10:56:43] INFO root fetch - processPackages [scipion-em-reliontomo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scipion-em-reliontomo-3.1.6.tar.gz tmp/scipion-em-reliontomo-3.2.0.tar.gz --markdown 20230526/s/scipion-em-reliontomo/3.1.6-3.2.0/diff.md --exclude *.pyd
+[2023-05-26 10:56:43] INFO root fetch - processPackages [home-assistant-chip-core]: Downloading https://files.pythonhosted.org/packages/1a/48/66fdffb34e17c0dc66c4b87ef7e81ebb8e5c2df61977bd3eadb3f32d6cdf/home_assistant_chip_core-2023.5.2-cp37-abi3-manylinux_2_31_x86_64.whl
+[2023-05-26 10:56:43] INFO root fetch - processPackages [packagetestbancolombia]: Downloading https://files.pythonhosted.org/packages/40/0c/b3c34a580e3f66162f36c2a441739f35a158bb3db64b9c6cc540cc3bc868/packagetestbancolombia-0.1.tar.gz
+[2023-05-26 10:56:43] WARNING root fetch - processPackages [home-assistant-chip-core]: Skipping package: exceeds size limit 17918527>=10485760
+[2023-05-26 10:56:43] INFO root fetch - processPackages [indecro]: Downloading https://files.pythonhosted.org/packages/f4/b2/7b77d2a255c797375dc4d6751f875b52b9ed70ceae2d223e6958301cb8bb/indecro-0.131.tar.gz
+[2023-05-26 10:56:43] INFO root fetch - processPackages [home-assistant-chip-core]: Start processing: kfish
+[2023-05-26 10:56:43] INFO root fetch - main [MainThread]: End processing [home-assistant-chip-core] error
+[2023-05-26 10:56:43] INFO root fetch - processPackages [home-assistant-chip-clusters]: Downloading https://files.pythonhosted.org/packages/75/a7/15595bf9b42e88b8ea812fd273b69e5fe777195cf88055230f6bb5e93f32/home_assistant_chip_clusters-2023.5.3-py3-none-any.whl
+[2023-05-26 10:56:43] INFO root fetch - processPackages [kfish]: New version: [99.0.202305260853] Old Version: [99.0.202305252205]
+[2023-05-26 10:56:43] INFO root fetch - processPackages [home-assistant-chip-repl]: Downloading https://files.pythonhosted.org/packages/cb/b6/16ebadaed3e732c9d2cb2e3628215795f9fd114dd8ea3527f89e04c3e0bb/home_assistant_chip_repl-2023.5.3-py3-none-any.whl
+[2023-05-26 10:56:43] INFO root fetch - processPackages [indecro]: executing diffoscope
+[2023-05-26 10:56:43] INFO root fetch - processPackages [indecro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indecro-0.13.tar.gz tmp/indecro-0.131.tar.gz --markdown 20230526/i/indecro/0.13-0.131/diff.md --exclude *.pyd
+[2023-05-26 10:56:43] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/3b/2c/7393db74c2da75f708132b2ac262a53de8c363e42f0ccd5f09ffe03cce69/kcli-99.0.202305260850-py3-none-any.whl
+[2023-05-26 10:56:43] INFO root fetch - processPackages [home-assistant-chip-repl]: executing diffoscope
+[2023-05-26 10:56:43] INFO root fetch - processPackages [home-assistant-chip-repl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/home_assistant_chip_repl-2023.5.2-py3-none-any.whl.zip tmp/home_assistant_chip_repl-2023.5.3-py3-none-any.whl.zip --markdown 20230526/h/home-assistant-chip-repl/2023.5.2-2023.5.3/diff.md --exclude *.pyd
+[2023-05-26 10:56:43] INFO root fetch - processPackages [home-assistant-chip-clusters]: executing diffoscope
+[2023-05-26 10:56:43] INFO root fetch - processPackages [home-assistant-chip-clusters]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/home_assistant_chip_clusters-2023.5.2-py3-none-any.whl.zip tmp/home_assistant_chip_clusters-2023.5.3-py3-none-any.whl.zip --markdown 20230526/h/home-assistant-chip-clusters/2023.5.2-2023.5.3/diff.md --exclude *.pyd
+[2023-05-26 10:56:43] INFO root fetch - processPackages [DataDoctor]: executing diffoscope
+[2023-05-26 10:56:43] INFO root fetch - processPackages [DataDoctor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DataDoctor-1.0.8.tar.gz tmp/DataDoctor-1.0.9.tar.gz --markdown 20230526/D/DataDoctor/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-26 10:56:43] INFO root fetch - processPackages [peakventures]: Downloading https://files.pythonhosted.org/packages/7d/7b/80ca396b3a4f632bd81b993b12b89c7874a08d1a4d3b0577994adfd58a98/peakventures-1.0.3.tar.gz
+[2023-05-26 10:56:43] INFO root fetch - processPackages [packagetestbancolombia]: Downloading https://files.pythonhosted.org/packages/a8/1b/cbbcbf05fd2882c86bbe1e2b70dcdc06cadd16e9b044fca52df63812d2ae/packagetestbancolombia-1.0.2.tar.gz
+[2023-05-26 10:56:43] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/80/64/e9eaf551b5c552065f16855eeddfe9dfbb15e23b48b0425b2da35cf543ac/edu_segmentation-0.0.76.tar.gz
+[2023-05-26 10:56:43] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/43/4b/35a3aafc55a9a5896928579ca4d8000cfc8fd3639b88738cca26241fbc2a/kfish-99.0.202305260853-py3-none-any.whl
+[2023-05-26 10:56:43] INFO root fetch - processPackages [packagetestbancolombia]: executing diffoscope
+[2023-05-26 10:56:43] INFO root fetch - processPackages [packagetestbancolombia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/packagetestbancolombia-0.1.tar.gz tmp/packagetestbancolombia-1.0.2.tar.gz --markdown 20230526/p/packagetestbancolombia/0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-26 10:56:43] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-05-26 10:56:43] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202305252202-py3-none-any.whl.zip tmp/kcli-99.0.202305260850-py3-none-any.whl.zip --markdown 20230526/k/kcli/99.0.202305252202-99.0.202305260850/diff.md --exclude *.pyd
+[2023-05-26 10:56:43] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-05-26 10:56:43] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202305252205-py3-none-any.whl.zip tmp/kfish-99.0.202305260853-py3-none-any.whl.zip --markdown 20230526/k/kfish/99.0.202305252205-99.0.202305260853/diff.md --exclude *.pyd
+[2023-05-26 10:56:43] INFO root fetch - processPackages [edu-segmentation]: executing diffoscope
+[2023-05-26 10:56:43] INFO root fetch - processPackages [edu-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edu_segmentation-0.0.75.tar.gz tmp/edu_segmentation-0.0.76.tar.gz --markdown 20230526/e/edu-segmentation/0.0.75-0.0.76/diff.md --exclude *.pyd
+[2023-05-26 10:56:43] INFO root fetch - processPackages [peakventures]: executing diffoscope
+[2023-05-26 10:56:43] INFO root fetch - processPackages [peakventures]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peakventures-1.0.2.tar.gz tmp/peakventures-1.0.3.tar.gz --markdown 20230526/p/peakventures/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-26 10:56:45] INFO root fetch - processPackages [scipion-em-reliontomo]: Start processing: act-scio
+[2023-05-26 10:56:45] INFO root fetch - main [MainThread]: End processing [scipion-em-reliontomo]: success
+[2023-05-26 10:56:45] INFO root fetch - processPackages [act-scio]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 10:56:45] INFO root fetch - processPackages [act-scio]: executing diffoscope
+[2023-05-26 10:56:45] INFO root fetch - processPackages [act-scio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/act-scio-0.0.8.tar.gz tmp/act-scio-0.0.9.tar.gz --markdown 20230526/a/act-scio/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 10:56:45] INFO root fetch - processPackages [indecro]: Start processing: peakventures
+[2023-05-26 10:56:45] INFO root fetch - main [MainThread]: End processing [indecro]: success
+[2023-05-26 10:56:45] INFO root fetch - processPackages [packagetestbancolombia]: Start processing: ronnytest
+[2023-05-26 10:56:45] INFO root fetch - main [MainThread]: End processing [packagetestbancolombia]: success
+[2023-05-26 10:56:45] INFO root fetch - processPackages [peakventures]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-26 10:56:45] INFO root fetch - processPackages [ronnytest]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-26 10:56:45] INFO root fetch - processPackages [home-assistant-chip-clusters]: Start processing: django-ows-lib
+[2023-05-26 10:56:45] INFO root fetch - main [MainThread]: End processing [home-assistant-chip-clusters]: success
+[2023-05-26 10:56:45] INFO root fetch - processPackages [home-assistant-chip-repl]: Start processing: nonebot-plugin-alconna
+[2023-05-26 10:56:45] INFO root fetch - main [MainThread]: End processing [home-assistant-chip-repl]: success
+[2023-05-26 10:56:45] INFO root fetch - processPackages [django-ows-lib]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-26 10:56:45] INFO root fetch - processPackages [peakventures]: executing diffoscope
+[2023-05-26 10:56:45] INFO root fetch - processPackages [peakventures]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peakventures-1.0.2.tar.gz tmp/peakventures-1.0.3.tar.gz --markdown 20230526/p/peakventures/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-26 10:56:45] INFO root fetch - processPackages [nonebot-plugin-alconna]: New version: [0.6.0] Old Version: [0.5.1]
+[2023-05-26 10:56:46] INFO root fetch - processPackages [ronnytest]: Downloading https://files.pythonhosted.org/packages/52/a9/9e5f43e906a6ff1d005c1fb759a98986e151f61950bfca5d890ca94824d3/ronnytest-0.2.6.tar.gz
+[2023-05-26 10:56:46] INFO root fetch - processPackages [ronnytest]: Downloading https://files.pythonhosted.org/packages/0d/4c/2fa98496fd1d3331e2f0019725900ed8d131f69ae8d19b88b62d03fa8b15/ronnytest-0.2.7.tar.gz
+[2023-05-26 10:56:46] INFO root fetch - processPackages [django-ows-lib]: Downloading https://files.pythonhosted.org/packages/b0/2b/e19d9f36cf051b8ea368b7e2ac59321beb8591a704128e90629723293d00/django-ows-lib-0.4.0.tar.gz
+[2023-05-26 10:56:46] INFO root fetch - processPackages [nonebot-plugin-alconna]: Downloading https://files.pythonhosted.org/packages/5e/d6/90b867e1653ee7e3ef0d4a971e55f4c76442119729d1aeadc86a586ba2f8/nonebot-plugin-alconna-0.6.0.tar.gz
+[2023-05-26 10:56:46] INFO root fetch - processPackages [django-ows-lib]: executing diffoscope
+[2023-05-26 10:56:46] INFO root fetch - processPackages [django-ows-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-ows-lib-0.3.0.tar.gz tmp/django-ows-lib-0.4.0.tar.gz --markdown 20230526/d/django-ows-lib/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-26 10:56:46] INFO root fetch - processPackages [nonebot-plugin-alconna]: executing diffoscope
+[2023-05-26 10:56:46] INFO root fetch - processPackages [nonebot-plugin-alconna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-alconna-0.5.1.tar.gz tmp/nonebot-plugin-alconna-0.6.0.tar.gz --markdown 20230526/n/nonebot-plugin-alconna/0.5.1-0.6.0/diff.md --exclude *.pyd
+[2023-05-26 10:56:46] INFO root fetch - processPackages [ronnytest]: executing diffoscope
+[2023-05-26 10:56:46] INFO root fetch - processPackages [ronnytest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ronnytest-0.2.6.tar.gz tmp/ronnytest-0.2.7.tar.gz --markdown 20230526/r/ronnytest/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-26 10:56:46] INFO root fetch - processPackages [DataDoctor]: Start processing: edu-segmentation
+[2023-05-26 10:56:46] INFO root fetch - main [MainThread]: End processing [DataDoctor]: success
+[2023-05-26 10:56:46] INFO root fetch - processPackages [edu-segmentation]: New version: [0.0.76] Old Version: [0.0.75]
+[2023-05-26 10:56:46] INFO root fetch - processPackages [peakventures]: Start processing: py-utls
+[2023-05-26 10:56:46] INFO root fetch - main [MainThread]: End processing [peakventures]: success
+[2023-05-26 10:56:46] INFO root fetch - processPackages [kfish]: Start processing: humlab-penelope
+[2023-05-26 10:56:46] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-05-26 10:56:46] INFO root fetch - processPackages [py-utls]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-26 10:56:46] INFO root fetch - processPackages [edu-segmentation]: Start processing: peakventures
+[2023-05-26 10:56:46] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
+[2023-05-26 10:56:46] INFO root fetch - processPackages [humlab-penelope]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-05-26 10:56:46] INFO root fetch - processPackages [peakventures]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-26 10:56:46] INFO root fetch - processPackages [edu-segmentation]: executing diffoscope
+[2023-05-26 10:56:46] INFO root fetch - processPackages [edu-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edu_segmentation-0.0.75.tar.gz tmp/edu_segmentation-0.0.76.tar.gz --markdown 20230526/e/edu-segmentation/0.0.75-0.0.76/diff.md --exclude *.pyd
+[2023-05-26 10:56:46] INFO root fetch - processPackages [peakventures]: executing diffoscope
+[2023-05-26 10:56:46] INFO root fetch - processPackages [peakventures]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peakventures-1.0.2.tar.gz tmp/peakventures-1.0.3.tar.gz --markdown 20230526/p/peakventures/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-26 10:56:46] INFO root fetch - processPackages [py-utls]: Downloading https://files.pythonhosted.org/packages/03/15/a243f995c286143e04286a603b1f123b0807c3f9145db93db7449786c872/py-utls-0.1.4.tar.gz
+[2023-05-26 10:56:46] INFO root fetch - processPackages [humlab-penelope]: executing diffoscope
+[2023-05-26 10:56:46] INFO root fetch - processPackages [humlab-penelope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/humlab-penelope-0.7.8.tar.gz tmp/humlab-penelope-0.7.9.tar.gz --markdown 20230526/h/humlab-penelope/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2023-05-26 10:56:46] INFO root fetch - processPackages [py-utls]: Downloading https://files.pythonhosted.org/packages/eb/c3/a0dbe131a51f06ed71ca329121db38c0a26bc201096b1bf014b76cef6fd0/py-utls-0.1.5.tar.gz
+[2023-05-26 10:56:47] INFO root fetch - processPackages [py-utls]: executing diffoscope
+[2023-05-26 10:56:47] INFO root fetch - processPackages [py-utls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-utls-0.1.4.tar.gz tmp/py-utls-0.1.5.tar.gz --markdown 20230526/p/py-utls/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-26 10:56:48] INFO root fetch - processPackages [peakventures]: Start processing: tldrwl
+[2023-05-26 10:56:48] INFO root fetch - main [MainThread]: End processing [peakventures]: success
+[2023-05-26 10:56:48] INFO root fetch - processPackages [tldrwl]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-26 10:56:48] INFO root fetch - processPackages [tldrwl]: executing diffoscope
+[2023-05-26 10:56:48] INFO root fetch - processPackages [tldrwl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tldrwl-1.0.0.tar.gz tmp/tldrwl-1.0.1.tar.gz --markdown 20230526/t/tldrwl/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-26 10:56:48] INFO root fetch - main [MainThread]: End processing [act-scio]: success
+[2023-05-26 10:56:48] INFO root fetch - main [MainThread]: End processing [ronnytest]: success
+[2023-05-26 10:56:49] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
+[2023-05-26 10:56:49] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-alconna]: success
+[2023-05-26 10:56:49] INFO root fetch - main [MainThread]: End processing [peakventures]: success
+[2023-05-26 10:56:49] INFO root fetch - main [MainThread]: End processing [py-utls]: success
+[2023-05-26 10:56:49] INFO root fetch - main [MainThread]: End processing [django-ows-lib]: success
+[2023-05-26 10:56:50] INFO root fetch - main [MainThread]: End processing [tldrwl]: success
+[2023-05-26 10:56:51] INFO root fetch - main [MainThread]: End processing [humlab-penelope]: success
+[2023-05-26 10:56:51] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-05-26 10:56:51] INFO root fetch - main [MainThread]: Store serial: [18260039]
