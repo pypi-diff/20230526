@@ -9018,3 +9018,100 @@
 [2023-05-26 08:29:00] INFO root fetch - main [MainThread]: End processing [libcnmc]: success
 [2023-05-26 08:29:04] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
 [2023-05-26 08:29:04] INFO root fetch - main [MainThread]: Store serial: [18258566]
+[2023-05-26 08:34:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18258566]
+[2023-05-26 08:34:14] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-26 08:34:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: embedbase-internet-search
+[2023-05-26 08:34:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Contentstack
+[2023-05-26 08:34:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jefferson-street-composer
+[2023-05-26 08:34:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-kong
+[2023-05-26 08:34:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-kafka
+[2023-05-26 08:34:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sealights-python-agent
+[2023-05-26 08:34:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: GXN
+[2023-05-26 08:34:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: structout
+[2023-05-26 08:34:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: faceid-dev
+[2023-05-26 08:34:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: innerverz
+[2023-05-26 08:34:14] INFO root fetch - processPackages [jefferson-street-composer]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-26 08:34:14] WARNING root fetch - processPackages [embedbase-internet-search]: Skipping, unable to determine old version
+[2023-05-26 08:34:14] INFO root fetch - processPackages [embedbase-internet-search]: Start processing: BaseNN
+[2023-05-26 08:34:14] INFO root fetch - main [MainThread]: End processing [embedbase-internet-search] error
+[2023-05-26 08:34:14] WARNING root fetch - processPackages [faceid-dev]: Skipping, unable to determine old version
+[2023-05-26 08:34:14] INFO root fetch - processPackages [Contentstack]: New version: [1.8.0] Old Version: [1.7.0]
+[2023-05-26 08:34:14] INFO root fetch - processPackages [faceid-dev]: Start processing: pulumi-fastly
+[2023-05-26 08:34:14] INFO root fetch - main [MainThread]: End processing [faceid-dev] error
+[2023-05-26 08:34:14] INFO root fetch - processPackages [innerverz]: New version: [0.0.14] Old Version: [0.0.13]
+[2023-05-26 08:34:14] INFO root fetch - processPackages [GXN]: New version: [0.0.30] Old Version: [0.0.29]
+[2023-05-26 08:34:14] INFO root fetch - processPackages [pulumi-kong]: New version: [4.6.0a1685079815] Old Version: [4.6.0a1684388359]
+[2023-05-26 08:34:14] INFO root fetch - processPackages [structout]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 08:34:14] INFO root fetch - processPackages [BaseNN]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-26 08:34:14] INFO root fetch - processPackages [pulumi-kafka]: New version: [3.5.0a1685079548] Old Version: [3.5.0a1684388239]
+[2023-05-26 08:34:14] INFO root fetch - processPackages [sealights-python-agent]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-26 08:34:14] INFO root fetch - processPackages [pulumi-fastly]: New version: [7.4.0a1685079686] Old Version: [7.4.0a1684388245]
+[2023-05-26 08:34:14] INFO root fetch - processPackages [structout]: executing diffoscope
+[2023-05-26 08:34:14] INFO root fetch - processPackages [structout]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/structout-0.1.8.tar.gz tmp/structout-0.1.9.tar.gz --markdown 20230526/s/structout/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 08:34:14] INFO root fetch - processPackages [jefferson-street-composer]: Downloading https://files.pythonhosted.org/packages/61/da/4044b5e71cd1f84285ca8692aa5dbf621d10dfbd756c7807005cb1399e48/jefferson-street-composer-1.1.1.tar.gz
+[2023-05-26 08:34:14] INFO root fetch - processPackages [BaseNN]: Downloading https://files.pythonhosted.org/packages/18/61/fb1b15d83bfc9d48c1ead13a3ed123aa99d6ab773170c1a008b62c0ac39d/BaseNN-0.1.4.tar.gz
+[2023-05-26 08:34:14] INFO root fetch - processPackages [Contentstack]: Downloading https://files.pythonhosted.org/packages/cc/6a/7ee21c62e3f69925d80a020ef45041f72c7d40dd5def6b3996b51d595b16/Contentstack-1.7.0.tar.gz
+[2023-05-26 08:34:14] INFO root fetch - processPackages [GXN]: Downloading https://files.pythonhosted.org/packages/4a/f6/51b26321b8d89ec9489baf7d37d4b0a6c8bbd0d4edb037cc809d252ee7a7/GXN-0.0.29.tar.gz
+[2023-05-26 08:34:14] INFO root fetch - processPackages [innerverz]: Downloading https://files.pythonhosted.org/packages/ae/fd/1b2199189022895798078f08d18ba3b977e5751a234578b0ac700570dfdc/innerverz-0.0.13.tar.gz
+[2023-05-26 08:34:14] WARNING root fetch - processPackages [GXN]: Skipping package: exceeds size limit 38270602>=10485760
+[2023-05-26 08:34:14] INFO root fetch - processPackages [GXN]: Start processing: PyIpify
+[2023-05-26 08:34:14] INFO root fetch - main [MainThread]: End processing [GXN] error
+[2023-05-26 08:34:15] WARNING root fetch - processPackages [PyIpify]: Skipping, unable to determine old version
+[2023-05-26 08:34:15] INFO root fetch - processPackages [PyIpify]: Start processing: upgini
+[2023-05-26 08:34:15] INFO root fetch - main [MainThread]: End processing [PyIpify] error
+[2023-05-26 08:34:15] INFO root fetch - processPackages [upgini]: New version: [1.1.99] Old Version: [1.1.98]
+[2023-05-26 08:34:15] INFO root fetch - processPackages [pulumi-kong]: Downloading https://files.pythonhosted.org/packages/27/bb/1773ba856572f56cdaa5604c9a89d9b0c0e8dcbfe356940eecdf1160c2c2/pulumi_kong-4.6.0a1685079815.tar.gz
+[2023-05-26 08:34:15] INFO root fetch - processPackages [sealights-python-agent]: Downloading https://files.pythonhosted.org/packages/25/c4/647deb66379b0238199145cd4a21b49931b6f1ee6dc4b29e567d021c6ab3/sealights-python-agent-1.1.1.tar.gz
+[2023-05-26 08:34:15] INFO root fetch - processPackages [jefferson-street-composer]: Downloading https://files.pythonhosted.org/packages/c9/a1/e17d9d9f316f294908a815df833a6dc4a0ba5def4dd57dd74981f29234b6/jefferson-street-composer-1.1.2.tar.gz
+[2023-05-26 08:34:15] INFO root fetch - processPackages [pulumi-fastly]: Downloading https://files.pythonhosted.org/packages/60/ea/85dd8045dba94663ec9af6510ee58a41edd321055c660825b7ef9f746e64/pulumi_fastly-7.4.0a1685079686.tar.gz
+[2023-05-26 08:34:15] INFO root fetch - processPackages [pulumi-kafka]: Downloading https://files.pythonhosted.org/packages/09/28/f1b6d3c08db424793f0c4cd9a616c9f40177648b055634aa5de510625315/pulumi_kafka-3.5.0a1685079548.tar.gz
+[2023-05-26 08:34:15] INFO root fetch - processPackages [upgini]: executing diffoscope
+[2023-05-26 08:34:15] INFO root fetch - processPackages [upgini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upgini-1.1.98.tar.gz tmp/upgini-1.1.99.tar.gz --markdown 20230526/u/upgini/1.1.98-1.1.99/diff.md --exclude *.pyd
+[2023-05-26 08:34:15] INFO root fetch - processPackages [BaseNN]: Downloading https://files.pythonhosted.org/packages/d7/77/6c932488dfceb165414fab335be1dad4b27a5ab84a647342fb81f581984d/BaseNN-0.1.5.tar.gz
+[2023-05-26 08:34:15] INFO root fetch - processPackages [pulumi-kong]: executing diffoscope
+[2023-05-26 08:34:15] INFO root fetch - processPackages [pulumi-kong]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kong-4.6.0a1684388359.tar.gz tmp/pulumi_kong-4.6.0a1685079815.tar.gz --markdown 20230526/p/pulumi-kong/4.6.0a1684388359-4.6.0a1685079815/diff.md --exclude *.pyd
+[2023-05-26 08:34:15] INFO root fetch - processPackages [Contentstack]: Downloading https://files.pythonhosted.org/packages/56/30/eb034aca06df3a5b4d2f55154e4f6c78a9c89acfd43079142040a64c7fc6/Contentstack-1.8.0.tar.gz
+[2023-05-26 08:34:15] INFO root fetch - processPackages [innerverz]: Downloading https://files.pythonhosted.org/packages/bf/68/bac28eb50963f82a65be5697a2578b9e90cc6569f6ea28882a979e031aa6/innerverz-0.0.14.tar.gz
+[2023-05-26 08:34:15] INFO root fetch - processPackages [jefferson-street-composer]: executing diffoscope
+[2023-05-26 08:34:15] INFO root fetch - processPackages [jefferson-street-composer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jefferson-street-composer-1.1.1.tar.gz tmp/jefferson-street-composer-1.1.2.tar.gz --markdown 20230526/j/jefferson-street-composer/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-26 08:34:15] INFO root fetch - processPackages [pulumi-kafka]: executing diffoscope
+[2023-05-26 08:34:15] INFO root fetch - processPackages [pulumi-kafka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kafka-3.5.0a1684388239.tar.gz tmp/pulumi_kafka-3.5.0a1685079548.tar.gz --markdown 20230526/p/pulumi-kafka/3.5.0a1684388239-3.5.0a1685079548/diff.md --exclude *.pyd
+[2023-05-26 08:34:15] INFO root fetch - processPackages [pulumi-fastly]: executing diffoscope
+[2023-05-26 08:34:15] INFO root fetch - processPackages [pulumi-fastly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_fastly-7.4.0a1684388245.tar.gz tmp/pulumi_fastly-7.4.0a1685079686.tar.gz --markdown 20230526/p/pulumi-fastly/7.4.0a1684388245-7.4.0a1685079686/diff.md --exclude *.pyd
+[2023-05-26 08:34:15] INFO root fetch - processPackages [sealights-python-agent]: executing diffoscope
+[2023-05-26 08:34:15] INFO root fetch - processPackages [sealights-python-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sealights-python-agent-1.1.0.tar.gz tmp/sealights-python-agent-1.1.1.tar.gz --markdown 20230526/s/sealights-python-agent/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-26 08:34:15] INFO root fetch - processPackages [Contentstack]: executing diffoscope
+[2023-05-26 08:34:15] INFO root fetch - processPackages [Contentstack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Contentstack-1.7.0.tar.gz tmp/Contentstack-1.8.0.tar.gz --markdown 20230526/C/Contentstack/1.7.0-1.8.0/diff.md --exclude *.pyd
+[2023-05-26 08:34:15] INFO root fetch - processPackages [BaseNN]: executing diffoscope
+[2023-05-26 08:34:15] INFO root fetch - processPackages [BaseNN]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BaseNN-0.1.4.tar.gz tmp/BaseNN-0.1.5.tar.gz --markdown 20230526/B/BaseNN/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-26 08:34:15] INFO root fetch - processPackages [innerverz]: executing diffoscope
+[2023-05-26 08:34:15] INFO root fetch - processPackages [innerverz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/innerverz-0.0.13.tar.gz tmp/innerverz-0.0.14.tar.gz --markdown 20230526/i/innerverz/0.0.13-0.0.14/diff.md --exclude *.pyd
+[2023-05-26 08:34:16] INFO root fetch - processPackages [structout]: Start processing: innerverz
+[2023-05-26 08:34:16] INFO root fetch - main [MainThread]: End processing [structout]: success
+[2023-05-26 08:34:16] INFO root fetch - processPackages [innerverz]: New version: [0.0.14] Old Version: [0.0.13]
+[2023-05-26 08:34:16] INFO root fetch - processPackages [innerverz]: executing diffoscope
+[2023-05-26 08:34:16] INFO root fetch - processPackages [innerverz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/innerverz-0.0.13.tar.gz tmp/innerverz-0.0.14.tar.gz --markdown 20230526/i/innerverz/0.0.13-0.0.14/diff.md --exclude *.pyd
+[2023-05-26 08:34:16] INFO root fetch - processPackages [pulumi-kong]: Start processing: DLite-Python
+[2023-05-26 08:34:16] INFO root fetch - main [MainThread]: End processing [pulumi-kong]: success
+[2023-05-26 08:34:17] INFO root fetch - processPackages [DLite-Python]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-26 08:34:17] INFO root fetch - processPackages [DLite-Python]: Downloading https://files.pythonhosted.org/packages/c3/fa/69f479b4ea01ee628ccea2a8e42c64c31bd7cfd27f044d5ee13194c470d1/DLite-Python-0.3.8.tar.gz
+[2023-05-26 08:34:17] INFO root fetch - processPackages [jefferson-street-composer]: Start processing: pulumi-mailgun
+[2023-05-26 08:34:17] INFO root fetch - main [MainThread]: End processing [jefferson-street-composer]: success
+[2023-05-26 08:34:17] INFO root fetch - processPackages [pulumi-mailgun]: New version: [3.5.0a1685079957] Old Version: [3.5.0a1684388767]
+[2023-05-26 08:34:17] INFO root fetch - main [MainThread]: End processing [upgini]: success
+[2023-05-26 08:34:17] INFO root fetch - processPackages [DLite-Python]: Downloading https://files.pythonhosted.org/packages/6d/e9/b36cfdab29339560a33db0c4dc25d113bd55fd78bf27c3d749e903385e81/DLite-Python-0.3.9.tar.gz
+[2023-05-26 08:34:17] INFO root fetch - processPackages [DLite-Python]: executing diffoscope
+[2023-05-26 08:34:17] INFO root fetch - processPackages [DLite-Python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DLite-Python-0.3.8.tar.gz tmp/DLite-Python-0.3.9.tar.gz --markdown 20230526/D/DLite-Python/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-26 08:34:17] INFO root fetch - processPackages [pulumi-mailgun]: Downloading https://files.pythonhosted.org/packages/e2/06/a9add4b6df843387ade67aabdbf7b4ce047f39723903b8494d26dea403cf/pulumi_mailgun-3.5.0a1685079957.tar.gz
+[2023-05-26 08:34:17] INFO root fetch - processPackages [pulumi-mailgun]: executing diffoscope
+[2023-05-26 08:34:17] INFO root fetch - processPackages [pulumi-mailgun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_mailgun-3.5.0a1684388767.tar.gz tmp/pulumi_mailgun-3.5.0a1685079957.tar.gz --markdown 20230526/p/pulumi-mailgun/3.5.0a1684388767-3.5.0a1685079957/diff.md --exclude *.pyd
+[2023-05-26 08:34:17] INFO root fetch - main [MainThread]: End processing [Contentstack]: success
+[2023-05-26 08:34:18] INFO root fetch - main [MainThread]: End processing [pulumi-kafka]: success
+[2023-05-26 08:34:18] INFO root fetch - main [MainThread]: End processing [BaseNN]: success
+[2023-05-26 08:34:18] INFO root fetch - main [MainThread]: End processing [pulumi-fastly]: success
+[2023-05-26 08:34:19] INFO root fetch - main [MainThread]: End processing [sealights-python-agent]: success
+[2023-05-26 08:34:19] INFO root fetch - main [MainThread]: End processing [DLite-Python]: success
+[2023-05-26 08:34:20] INFO root fetch - main [MainThread]: End processing [pulumi-mailgun]: success
+[2023-05-26 08:34:20] INFO root fetch - main [MainThread]: End processing [innerverz]: success
+[2023-05-26 08:35:04] INFO root fetch - main [MainThread]: End processing [innerverz]: success
+[2023-05-26 08:35:04] INFO root fetch - main [MainThread]: Store serial: [18258644]
