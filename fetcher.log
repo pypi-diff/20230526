@@ -15927,3 +15927,108 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 15:14:42] INFO root fetch - main [MainThread]: End processing [odoo14-addon-shopfloor]: success
 [2023-05-26 15:14:42] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-route53-health-check]: success
 [2023-05-26 15:14:42] INFO root fetch - main [MainThread]: Store serial: [18263200]
+[2023-05-26 15:19:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18263200]
+[2023-05-26 15:19:51] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-26 15:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xpressinsight
+[2023-05-26 15:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: activitystreampython
+[2023-05-26 15:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbdev-scipy
+[2023-05-26 15:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lifeguard
+[2023-05-26 15:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aa-charlink
+[2023-05-26 15:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: charactr-api-sdk
+[2023-05-26 15:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: digital-unit
+[2023-05-26 15:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pepperize.cdk-route53-health-check
+[2023-05-26 15:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ddadevops
+[2023-05-26 15:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: zksync2
+[2023-05-26 15:19:51] INFO root fetch - processPackages [activitystreampython]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-26 15:19:51] INFO root fetch - processPackages [xpressinsight]: New version: [1.6.0.post1] Old Version: [1.6.0]
+[2023-05-26 15:19:51] INFO root fetch - processPackages [charactr-api-sdk]: New version: [1.1.4] Old Version: [1.1.1]
+[2023-05-26 15:19:51] INFO root fetch - processPackages [zksync2]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-26 15:19:51] INFO root fetch - processPackages [aa-charlink]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-26 15:19:51] INFO root fetch - processPackages [digital-unit]: New version: [1.5b0] Old Version: [1.5.1]
+[2023-05-26 15:19:51] INFO root fetch - processPackages [lifeguard]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-26 15:19:51] INFO root fetch - processPackages [ddadevops]: New version: [4.0.0.dev9] Old Version: [4.0.0.dev8]
+[2023-05-26 15:19:51] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 15:19:51] INFO root fetch - processPackages [nbdev-scipy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 15:19:52] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: executing diffoscope
+[2023-05-26 15:19:52] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-route53-health-check-0.0.98.tar.gz tmp/pepperize.cdk-route53-health-check-0.0.99.tar.gz --markdown 20230526/p/pepperize.cdk-route53-health-check/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 15:19:52] INFO root fetch - processPackages [ddadevops]: executing diffoscope
+[2023-05-26 15:19:52] INFO root fetch - processPackages [ddadevops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddadevops-4.0.0.dev8.tar.gz tmp/ddadevops-4.0.0.dev9.tar.gz --markdown 20230526/d/ddadevops/4.0.0.dev8-4.0.0.dev9/diff.md --exclude *.pyd
+[2023-05-26 15:19:52] INFO root fetch - processPackages [nbdev-scipy]: executing diffoscope
+[2023-05-26 15:19:52] INFO root fetch - processPackages [nbdev-scipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-scipy-0.0.98.tar.gz tmp/nbdev-scipy-0.0.99.tar.gz --markdown 20230526/n/nbdev-scipy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 15:19:52] INFO root fetch - processPackages [xpressinsight]: Downloading https://files.pythonhosted.org/packages/ad/dc/f8731dd424fe56513ef26da6ffcaeaee55c6e8c63b28d932f26afb5010e7/xpressinsight-1.6.0-py3-none-any.whl
+[2023-05-26 15:19:52] INFO root fetch - processPackages [digital-unit]: Downloading https://files.pythonhosted.org/packages/12/e1/d8c0be0b7d023d31683391bd48a1dd0bc85a043b5b9460dddfcae1eae879/digital_unit-1.5.1.tar.gz
+[2023-05-26 15:19:52] INFO root fetch - processPackages [zksync2]: Downloading https://files.pythonhosted.org/packages/ad/1f/7daa5ccf3424a19b6b89ccc1ed6e4c157cced4f271a8712ae00c491435aa/zksync2-0.4.0.tar.gz
+[2023-05-26 15:19:52] INFO root fetch - processPackages [lifeguard]: Downloading https://files.pythonhosted.org/packages/54/e7/7a1ffca0fbf7f3e1882be22197d7b980c50cb57c9416322c1f8399d2b1e2/lifeguard-1.0.2.tar.gz
+[2023-05-26 15:19:52] INFO root fetch - processPackages [charactr-api-sdk]: Downloading https://files.pythonhosted.org/packages/01/5e/60c206f91c4407ca7d915c64c204d511ec51b140ddebbe10ddfb1e33ac43/charactr_api_sdk-1.1.4.tar.gz
+[2023-05-26 15:19:52] INFO root fetch - processPackages [activitystreampython]: Downloading https://files.pythonhosted.org/packages/02/b7/865cf25762f61ae4443de1a80e0783a9d2520bb77fead606c7f19e681306/activitystreampython-0.1.4.tar.gz
+[2023-05-26 15:19:52] INFO root fetch - processPackages [aa-charlink]: Downloading https://files.pythonhosted.org/packages/ad/cb/8a9826001281be0ea1091fa8feea6c938ac117c4e96741411127d826d482/aa-charlink-0.5.1.tar.gz
+[2023-05-26 15:19:52] INFO root fetch - processPackages [digital-unit]: executing diffoscope
+[2023-05-26 15:19:52] INFO root fetch - processPackages [digital-unit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digital_unit-1.5.1.tar.gz tmp/digital_unit-1.5b0.tar.gz --markdown 20230526/d/digital-unit/1.5.1-1.5b0/diff.md --exclude *.pyd
+[2023-05-26 15:19:52] INFO root fetch - processPackages [activitystreampython]: executing diffoscope
+[2023-05-26 15:19:52] INFO root fetch - processPackages [activitystreampython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/activitystreampython-0.1.3.tar.gz tmp/activitystreampython-0.1.4.tar.gz --markdown 20230526/a/activitystreampython/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-26 15:19:52] INFO root fetch - processPackages [charactr-api-sdk]: executing diffoscope
+[2023-05-26 15:19:52] INFO root fetch - processPackages [charactr-api-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/charactr_api_sdk-1.1.1.tar.gz tmp/charactr_api_sdk-1.1.4.tar.gz --markdown 20230526/c/charactr-api-sdk/1.1.1-1.1.4/diff.md --exclude *.pyd
+[2023-05-26 15:19:52] INFO root fetch - processPackages [aa-charlink]: executing diffoscope
+[2023-05-26 15:19:52] INFO root fetch - processPackages [aa-charlink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa-charlink-0.5.0.tar.gz tmp/aa-charlink-0.5.1.tar.gz --markdown 20230526/a/aa-charlink/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-26 15:19:52] INFO root fetch - processPackages [lifeguard]: Downloading https://files.pythonhosted.org/packages/f1/8a/8b1cfb5b02fc71824873ac5c4c59ef89d4ea86214c8e4010c5da71051226/lifeguard-1.0.3.tar.gz
+[2023-05-26 15:19:52] INFO root fetch - processPackages [xpressinsight]: Downloading https://files.pythonhosted.org/packages/78/c2/5acfc1c7d07d36f32adabfe1bd75bc35c8dfa768ec003fc82a816d9796d6/xpressinsight-1.6.0.post1-py3-none-any.whl
+[2023-05-26 15:19:52] INFO root fetch - processPackages [zksync2]: Downloading https://files.pythonhosted.org/packages/9e/a1/79a7b8d1e524ec929095d8d7cf558580da11445183090fb330d1e7d3adbf/zksync2-0.5.0.tar.gz
+[2023-05-26 15:19:52] INFO root fetch - processPackages [zksync2]: executing diffoscope
+[2023-05-26 15:19:52] INFO root fetch - processPackages [zksync2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zksync2-0.4.0.tar.gz tmp/zksync2-0.5.0.tar.gz --markdown 20230526/z/zksync2/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-26 15:19:52] INFO root fetch - processPackages [xpressinsight]: executing diffoscope
+[2023-05-26 15:19:52] INFO root fetch - processPackages [xpressinsight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xpressinsight-1.6.0-py3-none-any.whl.zip tmp/xpressinsight-1.6.0.post1-py3-none-any.whl.zip --markdown 20230526/x/xpressinsight/1.6.0-1.6.0.post1/diff.md --exclude *.pyd
+[2023-05-26 15:19:52] INFO root fetch - processPackages [lifeguard]: executing diffoscope
+[2023-05-26 15:19:52] INFO root fetch - processPackages [lifeguard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifeguard-1.0.2.tar.gz tmp/lifeguard-1.0.3.tar.gz --markdown 20230526/l/lifeguard/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-26 15:19:53] INFO root fetch - processPackages [nbdev-scipy]: Start processing: nbdev-sphinx
+[2023-05-26 15:19:53] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
+[2023-05-26 15:19:53] INFO root fetch - processPackages [nbdev-sphinx]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 15:19:53] INFO root fetch - processPackages [nbdev-sphinx]: executing diffoscope
+[2023-05-26 15:19:53] INFO root fetch - processPackages [nbdev-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-sphinx-0.0.98.tar.gz tmp/nbdev-sphinx-0.0.99.tar.gz --markdown 20230526/n/nbdev-sphinx/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 15:19:53] INFO root fetch - processPackages [ddadevops]: Start processing: odoo-addon-pdf-helper
+[2023-05-26 15:19:53] INFO root fetch - main [MainThread]: End processing [ddadevops]: success
+[2023-05-26 15:19:53] INFO root fetch - processPackages [odoo-addon-pdf-helper]: New version: [16.0.1.0.0.2] Old Version: [15.0.1.0.0.2]
+[2023-05-26 15:19:54] INFO root fetch - processPackages [odoo-addon-pdf-helper]: Downloading https://files.pythonhosted.org/packages/c4/ea/710f5576b38fcdba23cf4637990faeb74bbd10352dad74d91cca821633aa/odoo_addon_pdf_helper-15.0.1.0.0.2-py3-none-any.whl
+[2023-05-26 15:19:54] INFO root fetch - processPackages [odoo-addon-pdf-helper]: Downloading https://files.pythonhosted.org/packages/3c/dc/903f9dd962b576929708aa525c3d021f5aa1555034ba0fe74f51402c9c7a/odoo_addon_pdf_helper-16.0.1.0.0.2-py3-none-any.whl
+[2023-05-26 15:19:54] INFO root fetch - processPackages [activitystreampython]: Start processing: elgin
+[2023-05-26 15:19:54] INFO root fetch - main [MainThread]: End processing [activitystreampython]: success
+[2023-05-26 15:19:54] INFO root fetch - processPackages [odoo-addon-pdf-helper]: executing diffoscope
+[2023-05-26 15:19:54] INFO root fetch - processPackages [odoo-addon-pdf-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_pdf_helper-15.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_pdf_helper-16.0.1.0.0.2-py3-none-any.whl.zip --markdown 20230526/o/odoo-addon-pdf-helper/15.0.1.0.0.2-16.0.1.0.0.2/diff.md --exclude *.pyd
+[2023-05-26 15:19:54] INFO root fetch - processPackages [elgin]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 15:19:54] INFO root fetch - processPackages [digital-unit]: Start processing: packagetestbancolombia
+[2023-05-26 15:19:54] INFO root fetch - main [MainThread]: End processing [digital-unit]: success
+[2023-05-26 15:19:54] WARNING root fetch - processPackages [packagetestbancolombia]: Skipping, unable to determine old version
+[2023-05-26 15:19:54] INFO root fetch - processPackages [packagetestbancolombia]: Start processing: digital-unit
+[2023-05-26 15:19:54] INFO root fetch - main [MainThread]: End processing [packagetestbancolombia] error
+[2023-05-26 15:19:54] INFO root fetch - processPackages [digital-unit]: New version: [1.5b0] Old Version: [1.5.1]
+[2023-05-26 15:19:54] INFO root fetch - processPackages [charactr-api-sdk]: Start processing: oarepo-model-builder
+[2023-05-26 15:19:54] INFO root fetch - main [MainThread]: End processing [charactr-api-sdk]: success
+[2023-05-26 15:19:54] INFO root fetch - processPackages [oarepo-model-builder]: New version: [4.0.8] Old Version: [4.0.7]
+[2023-05-26 15:19:54] INFO root fetch - processPackages [digital-unit]: executing diffoscope
+[2023-05-26 15:19:54] INFO root fetch - processPackages [digital-unit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digital_unit-1.5.1.tar.gz tmp/digital_unit-1.5b0.tar.gz --markdown 20230526/d/digital-unit/1.5.1-1.5b0/diff.md --exclude *.pyd
+[2023-05-26 15:19:54] INFO root fetch - processPackages [elgin]: Downloading https://files.pythonhosted.org/packages/70/eb/6d4da7759f54598f3e182cd9c84e83ddd373b31d077b427858ec07cac67f/elgin-0.1.9.tar.gz
+[2023-05-26 15:19:54] INFO root fetch - processPackages [elgin]: executing diffoscope
+[2023-05-26 15:19:54] INFO root fetch - processPackages [elgin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elgin-0.1.8.tar.gz tmp/elgin-0.1.9.tar.gz --markdown 20230526/e/elgin/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 15:19:54] INFO root fetch - processPackages [oarepo-model-builder]: Downloading https://files.pythonhosted.org/packages/a7/f0/62f6d05442790f0562d20d7e93407d69aeea6c98832d6f8f68b27611715f/oarepo-model-builder-4.0.8.tar.gz
+[2023-05-26 15:19:55] INFO root fetch - processPackages [oarepo-model-builder]: executing diffoscope
+[2023-05-26 15:19:55] INFO root fetch - processPackages [oarepo-model-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-model-builder-4.0.7.tar.gz tmp/oarepo-model-builder-4.0.8.tar.gz --markdown 20230526/o/oarepo-model-builder/4.0.7-4.0.8/diff.md --exclude *.pyd
+[2023-05-26 15:19:55] INFO root fetch - processPackages [xpressinsight]: Start processing: nbdev-django
+[2023-05-26 15:19:55] INFO root fetch - main [MainThread]: End processing [xpressinsight]: success
+[2023-05-26 15:19:55] INFO root fetch - processPackages [aa-charlink]: Start processing: pepperize.cdk-route53-health-check
+[2023-05-26 15:19:55] INFO root fetch - main [MainThread]: End processing [aa-charlink]: success
+[2023-05-26 15:19:55] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 15:19:55] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 15:19:55] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: executing diffoscope
+[2023-05-26 15:19:55] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-route53-health-check-0.0.98.tar.gz tmp/pepperize.cdk-route53-health-check-0.0.99.tar.gz --markdown 20230526/p/pepperize.cdk-route53-health-check/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 15:19:55] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-05-26 15:19:55] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230526/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 15:19:55] INFO root fetch - main [MainThread]: End processing [lifeguard]: success
+[2023-05-26 15:19:56] INFO root fetch - main [MainThread]: End processing [nbdev-sphinx]: success
+[2023-05-26 15:19:56] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-route53-health-check]: success
+[2023-05-26 15:19:56] INFO root fetch - main [MainThread]: End processing [digital-unit]: success
+[2023-05-26 15:19:57] INFO root fetch - main [MainThread]: End processing [elgin]: success
+[2023-05-26 15:19:57] INFO root fetch - main [MainThread]: End processing [odoo-addon-pdf-helper]: success
+[2023-05-26 15:19:57] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-05-26 15:19:57] INFO root fetch - main [MainThread]: End processing [zksync2]: success
+[2023-05-26 15:19:58] INFO root fetch - main [MainThread]: End processing [oarepo-model-builder]: success
+[2023-05-26 15:19:58] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-route53-health-check]: success
+[2023-05-26 15:19:58] INFO root fetch - main [MainThread]: Store serial: [18263253]
