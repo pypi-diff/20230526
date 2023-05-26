@@ -3906,3 +3906,33 @@
 [2023-05-26 03:32:02] INFO root fetch - main [MainThread]: End processing [great-expectations]: success
 [2023-05-26 03:32:06] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte]: success
 [2023-05-26 03:32:06] INFO root fetch - main [MainThread]: Store serial: [18255866]
+[2023-05-26 03:37:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18255866]
+[2023-05-26 03:37:15] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-26 03:37:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: malclient-upgraded
+[2023-05-26 03:37:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cerc-geometry
+[2023-05-26 03:37:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbdev-stdlib
+[2023-05-26 03:37:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbdev-numpy
+[2023-05-26 03:37:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fpsql
+[2023-05-26 03:37:15] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 03:37:15] INFO root fetch - processPackages [cerc-geometry]: New version: [2.1.1] Old Version: [2.1.0]
+[2023-05-26 03:37:15] INFO root fetch - processPackages [malclient-upgraded]: New version: [1.4a2] Old Version: [1.4a1]
+[2023-05-26 03:37:15] INFO root fetch - processPackages [fpsql]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-26 03:37:15] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 03:37:15] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-05-26 03:37:15] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230526/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 03:37:15] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-05-26 03:37:15] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230526/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 03:37:15] INFO root fetch - processPackages [fpsql]: executing diffoscope
+[2023-05-26 03:37:15] INFO root fetch - processPackages [fpsql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fpsql-1.0.1.tar.gz tmp/fpsql-1.0.2.tar.gz --markdown 20230526/f/fpsql/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-26 03:37:15] INFO root fetch - processPackages [cerc-geometry]: Downloading https://files.pythonhosted.org/packages/80/c9/e7cf75214b16feb0a3fb2bcee7b9961de926c1741b18cd7bd58a8ea25315/cerc-geometry-2.1.1.tar.gz
+[2023-05-26 03:37:15] INFO root fetch - processPackages [malclient-upgraded]: Downloading https://files.pythonhosted.org/packages/4c/b4/f048d2917d9d8586c9d08df0460a7c42b0dc137f887b173b441e0d38bfe5/malclient-upgraded-1.4a2.tar.gz
+[2023-05-26 03:37:15] INFO root fetch - processPackages [cerc-geometry]: executing diffoscope
+[2023-05-26 03:37:15] INFO root fetch - processPackages [cerc-geometry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerc-geometry-2.1.0.tar.gz tmp/cerc-geometry-2.1.1.tar.gz --markdown 20230526/c/cerc-geometry/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2023-05-26 03:37:16] INFO root fetch - processPackages [malclient-upgraded]: executing diffoscope
+[2023-05-26 03:37:16] INFO root fetch - processPackages [malclient-upgraded]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/malclient-upgraded-1.4a1.tar.gz tmp/malclient-upgraded-1.4a2.tar.gz --markdown 20230526/m/malclient-upgraded/1.4a1-1.4a2/diff.md --exclude *.pyd
+[2023-05-26 03:37:17] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-05-26 03:37:17] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-05-26 03:37:17] INFO root fetch - main [MainThread]: End processing [fpsql]: success
+[2023-05-26 03:37:17] INFO root fetch - main [MainThread]: End processing [malclient-upgraded]: success
+[2023-05-26 03:37:17] INFO root fetch - main [MainThread]: End processing [cerc-geometry]: success
+[2023-05-26 03:37:17] INFO root fetch - main [MainThread]: Store serial: [18255977]
