@@ -13760,3 +13760,69 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 13:08:52] INFO root fetch - main [MainThread]: End processing [ucampurestorage]: success
 [2023-05-26 13:08:55] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
 [2023-05-26 13:08:55] INFO root fetch - main [MainThread]: Store serial: [18261754]
+[2023-05-26 13:13:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18261754]
+[2023-05-26 13:14:04] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-26 13:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: projen
+[2023-05-26 13:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: syngen
+[2023-05-26 13:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pepperize.cdk-private-bucket
+[2023-05-26 13:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sklearndf
+[2023-05-26 13:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pharmpy-core
+[2023-05-26 13:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: crawler-commons
+[2023-05-26 13:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo14-addon-l10n-it-fatturapa-out
+[2023-05-26 13:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: qibolab
+[2023-05-26 13:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: prefect-postgres-sensors
+[2023-05-26 13:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: recon-lw
+[2023-05-26 13:14:04] INFO root fetch - processPackages [sklearndf]: New version: [2.2rc1] Old Version: [2.2rc0]
+[2023-05-26 13:14:04] INFO root fetch - processPackages [syngen]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 13:14:04] INFO root fetch - processPackages [pharmpy-core]: New version: [0.96.0] Old Version: [0.95.0]
+[2023-05-26 13:14:04] WARNING root fetch - processPackages [prefect-postgres-sensors]: Skipping, unable to determine old version
+[2023-05-26 13:14:04] INFO root fetch - processPackages [prefect-postgres-sensors]: Start processing: GBT-parser
+[2023-05-26 13:14:04] INFO root fetch - processPackages [qibolab]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-26 13:14:04] INFO root fetch - main [MainThread]: End processing [prefect-postgres-sensors] error
+[2023-05-26 13:14:04] INFO root fetch - processPackages [crawler-commons]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 13:14:04] INFO root fetch - processPackages [recon-lw]: New version: [2.0.0.dev5090178202] Old Version: [2.0.0.dev5089586034]
+[2023-05-26 13:14:04] INFO root fetch - processPackages [pepperize.cdk-private-bucket]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 13:14:04] INFO root fetch - processPackages [odoo14-addon-l10n-it-fatturapa-out]: New version: [14.0.3.4.1] Old Version: [14.0.3.4.0]
+[2023-05-26 13:14:04] INFO root fetch - processPackages [GBT-parser]: New version: [1.0.4] Old Version: [1.0.16]
+[2023-05-26 13:14:04] INFO root fetch - processPackages [projen]: New version: [0.71.9] Old Version: [0.71.8]
+[2023-05-26 13:14:04] INFO root fetch - processPackages [crawler-commons]: executing diffoscope
+[2023-05-26 13:14:04] INFO root fetch - processPackages [crawler-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crawler_commons-0.0.8.tar.gz tmp/crawler_commons-0.0.9.tar.gz --markdown 20230526/c/crawler-commons/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 13:14:04] INFO root fetch - processPackages [recon-lw]: Downloading https://files.pythonhosted.org/packages/10/31/c7dbb42747df408c74542d06522ae929ca702f0b492c5ce29350b32ea081/recon_lw-2.0.0.dev5089586034.tar.gz
+[2023-05-26 13:14:04] INFO root fetch - processPackages [sklearndf]: Downloading https://files.pythonhosted.org/packages/8e/f9/91df596c25bbf2307b5428be5d3fdab29a4ec34ab786742fbdbbc1c13264/sklearndf-2.2rc0.tar.gz
+[2023-05-26 13:14:04] INFO root fetch - processPackages [GBT-parser]: Downloading https://files.pythonhosted.org/packages/b4/89/409684a1d8ebc31cff33d74a4f8170114ccf8d4a70a8235664ebb741a22b/GBT_parser-1.0.16.tar.gz
+[2023-05-26 13:14:04] INFO root fetch - processPackages [syngen]: Downloading https://files.pythonhosted.org/packages/1c/ec/09634635304cfe54bd538c9f136477113b28b8b56e10596aec3cf678573a/syngen-0.1.9.tar.gz
+[2023-05-26 13:14:04] INFO root fetch - processPackages [pharmpy-core]: Downloading https://files.pythonhosted.org/packages/80/59/5c162a7cc5727f3dc2c51a28e41ecdb0980c57f1274b1caacf42fc5cb4b0/pharmpy-core-0.96.0.tar.gz
+[2023-05-26 13:14:04] INFO root fetch - processPackages [qibolab]: Downloading https://files.pythonhosted.org/packages/5f/50/b3f5a8752e26001c19cc0020e30ac295569dae77b3232c25bd5e283b8294/qibolab-0.0.4.tar.gz
+[2023-05-26 13:14:04] INFO root fetch - processPackages [pepperize.cdk-private-bucket]: executing diffoscope
+[2023-05-26 13:14:04] INFO root fetch - processPackages [pepperize.cdk-private-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-private-bucket-0.0.98.tar.gz tmp/pepperize.cdk-private-bucket-0.0.99.tar.gz --markdown 20230526/p/pepperize.cdk-private-bucket/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 13:14:04] INFO root fetch - processPackages [odoo14-addon-l10n-it-fatturapa-out]: Downloading https://files.pythonhosted.org/packages/f6/cc/0213324bcaf734a514a15f979167fd35d8c40cb09591c7dc3dd49512300c/odoo14_addon_l10n_it_fatturapa_out-14.0.3.4.1-py3-none-any.whl
+[2023-05-26 13:14:04] INFO root fetch - processPackages [syngen]: executing diffoscope
+[2023-05-26 13:14:04] INFO root fetch - processPackages [syngen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syngen-0.1.8.tar.gz tmp/syngen-0.1.9.tar.gz --markdown 20230526/s/syngen/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 13:14:04] INFO root fetch - processPackages [recon-lw]: Downloading https://files.pythonhosted.org/packages/8c/71/bcde366f02dfb57c05496998860286d0a58329b029981422419dfa4d0de8/recon_lw-2.0.0.dev5090178202.tar.gz
+[2023-05-26 13:14:04] INFO root fetch - processPackages [projen]: executing diffoscope
+[2023-05-26 13:14:04] INFO root fetch - processPackages [projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projen-0.71.8.tar.gz tmp/projen-0.71.9.tar.gz --markdown 20230526/p/projen/0.71.8-0.71.9/diff.md --exclude *.pyd
+[2023-05-26 13:14:04] INFO root fetch - processPackages [pharmpy-core]: executing diffoscope
+[2023-05-26 13:14:04] INFO root fetch - processPackages [pharmpy-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pharmpy-core-0.95.0.tar.gz tmp/pharmpy-core-0.96.0.tar.gz --markdown 20230526/p/pharmpy-core/0.95.0-0.96.0/diff.md --exclude *.pyd
+[2023-05-26 13:14:04] INFO root fetch - processPackages [qibolab]: executing diffoscope
+[2023-05-26 13:14:04] INFO root fetch - processPackages [qibolab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qibolab-0.0.3.tar.gz tmp/qibolab-0.0.4.tar.gz --markdown 20230526/q/qibolab/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-26 13:14:04] INFO root fetch - processPackages [odoo14-addon-l10n-it-fatturapa-out]: executing diffoscope
+[2023-05-26 13:14:04] INFO root fetch - processPackages [odoo14-addon-l10n-it-fatturapa-out]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_it_fatturapa_out-14.0.3.4.0-py3-none-any.whl.zip tmp/odoo14_addon_l10n_it_fatturapa_out-14.0.3.4.1-py3-none-any.whl.zip --markdown 20230526/o/odoo14-addon-l10n-it-fatturapa-out/14.0.3.4.0-14.0.3.4.1/diff.md --exclude *.pyd
+[2023-05-26 13:14:04] INFO root fetch - processPackages [GBT-parser]: Downloading https://files.pythonhosted.org/packages/4e/13/0452228ec4defa94f994d234370136b37a8a2e1cfc8daa2f0221db0502b7/GBT_parser-1.0.4.tar.gz
+[2023-05-26 13:14:04] INFO root fetch - processPackages [recon-lw]: executing diffoscope
+[2023-05-26 13:14:04] INFO root fetch - processPackages [recon-lw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recon_lw-2.0.0.dev5089586034.tar.gz tmp/recon_lw-2.0.0.dev5090178202.tar.gz --markdown 20230526/r/recon-lw/2.0.0.dev5089586034-2.0.0.dev5090178202/diff.md --exclude *.pyd
+[2023-05-26 13:14:04] INFO root fetch - processPackages [GBT-parser]: executing diffoscope
+[2023-05-26 13:14:04] INFO root fetch - processPackages [GBT-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GBT_parser-1.0.16.tar.gz tmp/GBT_parser-1.0.4.tar.gz --markdown 20230526/G/GBT-parser/1.0.16-1.0.4/diff.md --exclude *.pyd
+[2023-05-26 13:14:04] INFO root fetch - processPackages [sklearndf]: Downloading https://files.pythonhosted.org/packages/c9/87/2a61895fe40abc7eebfb5db7558cde9e253144d157bfa4dfac73622f229e/sklearndf-2.2rc1.tar.gz
+[2023-05-26 13:14:05] INFO root fetch - processPackages [sklearndf]: executing diffoscope
+[2023-05-26 13:14:05] INFO root fetch - processPackages [sklearndf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sklearndf-2.2rc0.tar.gz tmp/sklearndf-2.2rc1.tar.gz --markdown 20230526/s/sklearndf/2.2rc0-2.2rc1/diff.md --exclude *.pyd
+[2023-05-26 13:14:05] INFO root fetch - main [MainThread]: End processing [crawler-commons]: success
+[2023-05-26 13:14:06] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-private-bucket]: success
+[2023-05-26 13:14:06] INFO root fetch - main [MainThread]: End processing [syngen]: success
+[2023-05-26 13:14:06] INFO root fetch - main [MainThread]: End processing [recon-lw]: success
+[2023-05-26 13:14:07] INFO root fetch - main [MainThread]: End processing [qibolab]: success
+[2023-05-26 13:14:07] INFO root fetch - main [MainThread]: End processing [projen]: success
+[2023-05-26 13:14:07] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-it-fatturapa-out]: success
+[2023-05-26 13:14:08] INFO root fetch - main [MainThread]: End processing [sklearndf]: success
+[2023-05-26 13:14:08] INFO root fetch - main [MainThread]: End processing [GBT-parser]: success
+[2023-05-26 13:14:21] INFO root fetch - main [MainThread]: End processing [pharmpy-core]: success
+[2023-05-26 13:14:21] INFO root fetch - main [MainThread]: Store serial: [18261789]
