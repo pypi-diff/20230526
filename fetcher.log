@@ -7359,3 +7359,64 @@
 [2023-05-26 06:30:19] INFO root fetch - main [MainThread]: End processing [odoo10-addon-partner-password-reset]: success
 [2023-05-26 06:30:21] INFO root fetch - main [MainThread]: End processing [funboost]: success
 [2023-05-26 06:30:21] INFO root fetch - main [MainThread]: Store serial: [18257744]
+[2023-05-26 06:35:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18257744]
+[2023-05-26 06:35:30] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-26 06:35:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ndtorch
+[2023-05-26 06:35:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: binsync
+[2023-05-26 06:35:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: plugnplai
+[2023-05-26 06:35:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pymemuc
+[2023-05-26 06:35:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: adt-cache
+[2023-05-26 06:35:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: crewmate
+[2023-05-26 06:35:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: alignparse
+[2023-05-26 06:35:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dartrig
+[2023-05-26 06:35:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: autocare-dlt
+[2023-05-26 06:35:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: redis-observer
+[2023-05-26 06:35:30] INFO root fetch - processPackages [adt-cache]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 06:35:30] INFO root fetch - processPackages [ndtorch]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-26 06:35:30] INFO root fetch - processPackages [pymemuc]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-26 06:35:30] INFO root fetch - processPackages [crewmate]: New version: [0.0.0.4] Old Version: [0.0.0.3]
+[2023-05-26 06:35:30] INFO root fetch - processPackages [binsync]: New version: [3.9.0] Old Version: [3.6.0]
+[2023-05-26 06:35:30] INFO root fetch - processPackages [plugnplai]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-26 06:35:30] INFO root fetch - processPackages [autocare-dlt]: New version: [0.2.2] Old Version: [0.2.0]
+[2023-05-26 06:35:30] INFO root fetch - processPackages [alignparse]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-26 06:35:30] INFO root fetch - processPackages [dartrig]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-26 06:35:30] INFO root fetch - processPackages [adt-cache]: executing diffoscope
+[2023-05-26 06:35:30] INFO root fetch - processPackages [adt-cache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adt_cache-0.0.8.tar.gz tmp/adt_cache-0.0.9.tar.gz --markdown 20230526/a/adt-cache/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 06:35:30] INFO root fetch - processPackages [binsync]: executing diffoscope
+[2023-05-26 06:35:30] INFO root fetch - processPackages [binsync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binsync-3.6.0.tar.gz tmp/binsync-3.9.0.tar.gz --markdown 20230526/b/binsync/3.6.0-3.9.0/diff.md --exclude *.pyd
+[2023-05-26 06:35:30] WARNING root fetch - processPackages [redis-observer]: Skipping, unable to determine old version
+[2023-05-26 06:35:30] INFO root fetch - main [MainThread]: End processing [redis-observer] error
+[2023-05-26 06:35:31] INFO root fetch - processPackages [pymemuc]: Downloading https://files.pythonhosted.org/packages/34/6a/fde7020c469d1546ab0aa4ef61cf10b127517d93049a1bd12b37a2c58721/pymemuc-0.2.6.tar.gz
+[2023-05-26 06:35:31] INFO root fetch - processPackages [plugnplai]: Downloading https://files.pythonhosted.org/packages/9a/27/4dfd20cfdab8e4ad0860e6acb564e1241c59956448d5b92810ed584135ee/plugnplai-0.0.5.tar.gz
+[2023-05-26 06:35:31] INFO root fetch - processPackages [crewmate]: Downloading https://files.pythonhosted.org/packages/79/5d/e55a651e4a108320db8b423cbc6a98caba64e50b191855da7210e9e77ce5/crewmate-0.0.0.3.tar.gz
+[2023-05-26 06:35:31] INFO root fetch - processPackages [dartrig]: Downloading https://files.pythonhosted.org/packages/2b/f3/36c6d30068a6fe9bdb24a6b03ed0fd1982cdfcc62bae0a09b03c16f99985/dartrig-0.1.2.tar.gz
+[2023-05-26 06:35:31] INFO root fetch - processPackages [alignparse]: Downloading https://files.pythonhosted.org/packages/8a/5c/d86034217450fa0281cdff8bcd9d23a0193e2d349297e643a5a5efb4350b/alignparse-0.6.0.tar.gz
+[2023-05-26 06:35:31] INFO root fetch - processPackages [ndtorch]: Downloading https://files.pythonhosted.org/packages/05/0b/faea01ad0fce9217b4686561a4ccd0a78d685f7113eb665fbed3f36a56e1/ndtorch-0.1.2.tar.gz
+[2023-05-26 06:35:31] INFO root fetch - processPackages [dartrig]: executing diffoscope
+[2023-05-26 06:35:31] INFO root fetch - processPackages [dartrig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dartrig-0.1.1.tar.gz tmp/dartrig-0.1.2.tar.gz --markdown 20230526/d/dartrig/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-26 06:35:31] INFO root fetch - processPackages [autocare-dlt]: Downloading https://files.pythonhosted.org/packages/ed/e8/f3c787f8a68964f4cc67e5c19c5589088e05fb2cbf1bc3476e5858945129/autocare_dlt-0.2.2-py3-none-any.whl
+[2023-05-26 06:35:31] INFO root fetch - processPackages [crewmate]: Downloading https://files.pythonhosted.org/packages/62/7e/92b8aa5298ff6981bd5c0fb8476298b7acda85d096d02ead343d9aeb23da/crewmate-0.0.0.4.tar.gz
+[2023-05-26 06:35:31] INFO root fetch - processPackages [ndtorch]: executing diffoscope
+[2023-05-26 06:35:31] INFO root fetch - processPackages [ndtorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ndtorch-0.1.1.tar.gz tmp/ndtorch-0.1.2.tar.gz --markdown 20230526/n/ndtorch/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-26 06:35:31] INFO root fetch - processPackages [pymemuc]: Downloading https://files.pythonhosted.org/packages/06/59/470518014dee9895c49d365800b2cff1fd7e8635d072f5074478dc57e36b/pymemuc-0.2.7.tar.gz
+[2023-05-26 06:35:31] WARNING root fetch - processPackages [autocare-dlt]: Skipping package: exceeds size limit 14609443>=10485760
+[2023-05-26 06:35:31] INFO root fetch - main [MainThread]: End processing [autocare-dlt] error
+[2023-05-26 06:35:31] INFO root fetch - processPackages [pymemuc]: executing diffoscope
+[2023-05-26 06:35:31] INFO root fetch - processPackages [pymemuc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymemuc-0.2.6.tar.gz tmp/pymemuc-0.2.7.tar.gz --markdown 20230526/p/pymemuc/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-26 06:35:31] INFO root fetch - processPackages [crewmate]: executing diffoscope
+[2023-05-26 06:35:31] INFO root fetch - processPackages [crewmate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crewmate-0.0.0.3.tar.gz tmp/crewmate-0.0.0.4.tar.gz --markdown 20230526/c/crewmate/0.0.0.3-0.0.0.4/diff.md --exclude *.pyd
+[2023-05-26 06:35:31] INFO root fetch - processPackages [alignparse]: Downloading https://files.pythonhosted.org/packages/84/88/35a5cb3278a12d5a0827c943e6e6be2e93ea5e66e5d09579f6c691835492/alignparse-0.6.1.tar.gz
+[2023-05-26 06:35:31] INFO root fetch - processPackages [alignparse]: executing diffoscope
+[2023-05-26 06:35:31] INFO root fetch - processPackages [alignparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alignparse-0.6.0.tar.gz tmp/alignparse-0.6.1.tar.gz --markdown 20230526/a/alignparse/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-26 06:35:31] INFO root fetch - processPackages [plugnplai]: Downloading https://files.pythonhosted.org/packages/59/fd/b769fa3dfe4ab5c03742e8e00088201bf677db6ca0b47368ee1d08fe10e1/plugnplai-0.0.6.tar.gz
+[2023-05-26 06:35:32] INFO root fetch - processPackages [plugnplai]: executing diffoscope
+[2023-05-26 06:35:32] INFO root fetch - processPackages [plugnplai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plugnplai-0.0.5.tar.gz tmp/plugnplai-0.0.6.tar.gz --markdown 20230526/p/plugnplai/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-26 06:35:32] INFO root fetch - main [MainThread]: End processing [adt-cache]: success
+[2023-05-26 06:35:32] INFO root fetch - main [MainThread]: End processing [dartrig]: success
+[2023-05-26 06:35:32] INFO root fetch - main [MainThread]: End processing [binsync]: success
+[2023-05-26 06:35:33] INFO root fetch - main [MainThread]: End processing [pymemuc]: success
+[2023-05-26 06:35:33] INFO root fetch - main [MainThread]: End processing [crewmate]: success
+[2023-05-26 06:35:33] INFO root fetch - main [MainThread]: End processing [plugnplai]: success
+[2023-05-26 06:35:34] INFO root fetch - main [MainThread]: End processing [ndtorch]: success
+[2023-05-26 06:35:35] INFO root fetch - main [MainThread]: End processing [alignparse]: success
+[2023-05-26 06:35:35] INFO root fetch - main [MainThread]: Store serial: [18257782]
