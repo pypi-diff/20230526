@@ -7156,3 +7156,46 @@
 [2023-05-26 06:14:30] INFO root fetch - main [MainThread]: End processing [Pandora-ChatGPT]: success
 [2023-05-26 06:14:37] INFO root fetch - main [MainThread]: End processing [pipen-board]: success
 [2023-05-26 06:14:37] INFO root fetch - main [MainThread]: Store serial: [18257590]
+[2023-05-26 06:19:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18257590]
+[2023-05-26 06:19:46] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-26 06:19:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-mrp-component-operation-scrap-reason
+[2023-05-26 06:19:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: thztools
+[2023-05-26 06:19:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pgx
+[2023-05-26 06:19:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-mis-builder
+[2023-05-26 06:19:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: asynq
+[2023-05-26 06:19:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: imessagedb
+[2023-05-26 06:19:46] INFO root fetch - processPackages [odoo14-addon-mrp-component-operation-scrap-reason]: New version: [14.0.1.1.1.dev1] Old Version: [14.0.1.1.0]
+[2023-05-26 06:19:46] INFO root fetch - processPackages [odoo-addon-mis-builder]: New version: [16.0.5.1.1.2] Old Version: [16.0.5.1.1.1]
+[2023-05-26 06:19:46] INFO root fetch - processPackages [thztools]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-26 06:19:46] INFO root fetch - processPackages [pgx]: New version: [0.8.0] Old Version: [0.7.4]
+[2023-05-26 06:19:46] INFO root fetch - processPackages [asynq]: New version: [1.5.0] Old Version: [1.4.0]
+[2023-05-26 06:19:46] INFO root fetch - processPackages [imessagedb]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-05-26 06:19:46] INFO root fetch - processPackages [thztools]: Downloading https://files.pythonhosted.org/packages/2d/09/b94d627adc2582cfe531c94fbc3b9e5dcf239946a9cb52f972b95b1e637a/thztools-1.0.1-py3-none-any.whl
+[2023-05-26 06:19:46] INFO root fetch - processPackages [odoo14-addon-mrp-component-operation-scrap-reason]: Downloading https://files.pythonhosted.org/packages/d1/23/a8da29382eb81d951f7a38b9cac1340b14054a46790eeb0618f0991409c7/odoo14_addon_mrp_component_operation_scrap_reason-14.0.1.1.1.dev1-py3-none-any.whl
+[2023-05-26 06:19:46] INFO root fetch - processPackages [pgx]: Downloading https://files.pythonhosted.org/packages/ca/8a/ce3c800527b1387a03398c78d47527bec2d72cc526a4b62db88f36a65680/pgx-0.7.4.tar.gz
+[2023-05-26 06:19:46] INFO root fetch - processPackages [imessagedb]: Downloading https://files.pythonhosted.org/packages/6b/3c/a616b2c0f633909bed48554a69de2c3009c7c720504e43b34dffe8af44bb/imessagedb-1.4.1.tar.gz
+[2023-05-26 06:19:46] INFO root fetch - processPackages [asynq]: Downloading https://files.pythonhosted.org/packages/c4/08/e43ae80f2cee1d2639549c3e4a4c194a566903012780259a5a92d02598e7/asynq-1.4.0.tar.gz
+[2023-05-26 06:19:46] INFO root fetch - processPackages [odoo-addon-mis-builder]: Downloading https://files.pythonhosted.org/packages/a9/3b/a45d4b5690cb9a1a632c4c58dc3926b07b7ab665c38719d478ea070f89ad/odoo_addon_mis_builder-16.0.5.1.1.1-py3-none-any.whl
+[2023-05-26 06:19:46] INFO root fetch - processPackages [imessagedb]: executing diffoscope
+[2023-05-26 06:19:46] INFO root fetch - processPackages [imessagedb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imessagedb-1.4.0.tar.gz tmp/imessagedb-1.4.1.tar.gz --markdown 20230526/i/imessagedb/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-05-26 06:19:46] INFO root fetch - processPackages [odoo14-addon-mrp-component-operation-scrap-reason]: executing diffoscope
+[2023-05-26 06:19:46] INFO root fetch - processPackages [odoo14-addon-mrp-component-operation-scrap-reason]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_mrp_component_operation_scrap_reason-14.0.1.1.0-py3-none-any.whl.zip tmp/odoo14_addon_mrp_component_operation_scrap_reason-14.0.1.1.1.dev1-py3-none-any.whl.zip --markdown 20230526/o/odoo14-addon-mrp-component-operation-scrap-reason/14.0.1.1.0-14.0.1.1.1.dev1/diff.md --exclude *.pyd
+[2023-05-26 06:19:46] INFO root fetch - processPackages [thztools]: Downloading https://files.pythonhosted.org/packages/a7/ee/03585b9c4a1bd851962da21b3fc58e3ff23470fd6ea9329c021462000d72/thztools-1.0.2.tar.gz
+[2023-05-26 06:19:46] INFO root fetch - processPackages [thztools]: executing diffoscope
+[2023-05-26 06:19:46] INFO root fetch - processPackages [thztools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thztools-1.0.1-py3-none-any.whl.zip tmp/thztools-1.0.2.tar.gz --markdown 20230526/t/thztools/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-26 06:19:46] INFO root fetch - processPackages [asynq]: Downloading https://files.pythonhosted.org/packages/e1/6d/2c302dbb6c6d89df48c824ccfca379b53e94de5e7736f8f33b9bf00832d4/asynq-1.5.0-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-26 06:19:46] INFO root fetch - processPackages [odoo-addon-mis-builder]: Downloading https://files.pythonhosted.org/packages/4b/be/1b2a487316a3d450cdadcf9bcb1f354b17606cba709b8475f42583eaac60/odoo_addon_mis_builder-16.0.5.1.1.2-py3-none-any.whl
+[2023-05-26 06:19:47] INFO root fetch - processPackages [pgx]: Downloading https://files.pythonhosted.org/packages/31/10/478bf40937f0edcb14868212bc5304155f19f9405dae99d57e10120ea036/pgx-0.8.0.tar.gz
+[2023-05-26 06:19:47] INFO root fetch - processPackages [odoo-addon-mis-builder]: executing diffoscope
+[2023-05-26 06:19:47] INFO root fetch - processPackages [odoo-addon-mis-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mis_builder-16.0.5.1.1.1-py3-none-any.whl.zip tmp/odoo_addon_mis_builder-16.0.5.1.1.2-py3-none-any.whl.zip --markdown 20230526/o/odoo-addon-mis-builder/16.0.5.1.1.1-16.0.5.1.1.2/diff.md --exclude *.pyd
+[2023-05-26 06:19:47] INFO root fetch - processPackages [pgx]: executing diffoscope
+[2023-05-26 06:19:47] INFO root fetch - processPackages [pgx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pgx-0.7.4.tar.gz tmp/pgx-0.8.0.tar.gz --markdown 20230526/p/pgx/0.7.4-0.8.0/diff.md --exclude *.pyd
+[2023-05-26 06:19:48] INFO root fetch - main [MainThread]: End processing [imessagedb]: success
+[2023-05-26 06:19:48] INFO root fetch - main [MainThread]: End processing [odoo14-addon-mrp-component-operation-scrap-reason]: success
+[2023-05-26 06:19:48] INFO root fetch - main [MainThread]: End processing [thztools]: success
+[2023-05-26 06:19:48] INFO root fetch - processPackages [asynq]: executing diffoscope
+[2023-05-26 06:19:48] INFO root fetch - processPackages [asynq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asynq-1.4.0.tar.gz tmp/asynq-1.5.0-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230526/a/asynq/1.4.0-1.5.0/diff.md --exclude *.pyd
+[2023-05-26 06:19:49] INFO root fetch - main [MainThread]: End processing [odoo-addon-mis-builder]: success
+[2023-05-26 06:19:49] INFO root fetch - main [MainThread]: End processing [asynq]: success
+[2023-05-26 06:19:51] INFO root fetch - main [MainThread]: End processing [pgx]: success
+[2023-05-26 06:19:51] INFO root fetch - main [MainThread]: Store serial: [18257671]
