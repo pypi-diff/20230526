@@ -4004,3 +4004,57 @@
 [2023-05-26 03:42:32] INFO root fetch - processPackages [pywwt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywwt-0.8.0.tar.gz tmp/pywwt-0.9.0.tar.gz --markdown 20230526/p/pywwt/0.8.0-0.9.0/diff.md --exclude *.pyd
 [2023-05-26 03:42:48] INFO root fetch - main [MainThread]: End processing [pywwt]: success
 [2023-05-26 03:42:48] INFO root fetch - main [MainThread]: Store serial: [18256015]
+[2023-05-26 03:47:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18256015]
+[2023-05-26 03:47:58] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-26 03:47:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: we-report
+[2023-05-26 03:47:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-lambda-layer-wget
+[2023-05-26 03:47:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbdev-sphinx
+[2023-05-26 03:47:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rust-contracts-builder
+[2023-05-26 03:47:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nbdev-django
+[2023-05-26 03:47:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: yunchi
+[2023-05-26 03:47:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pycorekit
+[2023-05-26 03:47:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: as400
+[2023-05-26 03:47:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nbdev-apl
+[2023-05-26 03:47:58] INFO root fetch - processPackages [yunchi]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-26 03:47:58] INFO root fetch - processPackages [we-report]: New version: [0.1.9] Old Version: [0.0.1.9]
+[2023-05-26 03:47:58] INFO root fetch - processPackages [as400]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-26 03:47:58] INFO root fetch - processPackages [rust-contracts-builder]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-05-26 03:47:58] WARNING root fetch - processPackages [pycorekit]: Skipping, unable to determine old version
+[2023-05-26 03:47:58] INFO root fetch - main [MainThread]: End processing [pycorekit] error
+[2023-05-26 03:47:58] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.795] Old Version: [0.0.794]
+[2023-05-26 03:47:58] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 03:47:58] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-26 03:47:58] INFO root fetch - processPackages [nbdev-sphinx]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 03:47:58] INFO root fetch - processPackages [nbdev-sphinx]: executing diffoscope
+[2023-05-26 03:47:58] INFO root fetch - processPackages [nbdev-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-sphinx-0.0.98.tar.gz tmp/nbdev-sphinx-0.0.99.tar.gz --markdown 20230526/n/nbdev-sphinx/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 03:47:58] WARNING root fetch - processPackages [yunchi]: fallback to get urls: [1.0.7]
+[2023-05-26 03:47:58] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-05-26 03:47:58] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230526/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 03:47:58] WARNING root fetch - processPackages [yunchi]: None
+[2023-05-26 03:47:58] WARNING root fetch - processPackages [yunchi]: None
+[2023-05-26 03:47:58] INFO root fetch - processPackages [as400]: Downloading https://files.pythonhosted.org/packages/ba/d6/4efb389bace0669f02d27a4fd4b67e51c650b395871b25e057faf09e846a/as400-1.0.4.tar.gz
+[2023-05-26 03:47:58] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/32/89/01b37b80b58b69b7547373b574234cdaf71361329b828d4a74d0980bded6/nbdev-apl-0.0.794.tar.gz
+[2023-05-26 03:47:58] WARNING root fetch - processPackages [yunchi]: unable to get url for both version [1.0.7]
+[2023-05-26 03:47:58] INFO root fetch - processPackages [rust-contracts-builder]: Downloading https://files.pythonhosted.org/packages/4b/3b/7432a5767142d8d80ddf3142aa1a23cc0544d22e2e906e262c867b4a25a4/rust-contracts-builder-0.2.7.tar.gz
+[2023-05-26 03:47:58] WARNING root fetch - processPackages [yunchi]: None
+[2023-05-26 03:47:58] INFO root fetch - main [MainThread]: End processing [yunchi] error
+[2023-05-26 03:47:58] INFO root fetch - processPackages [we-report]: executing diffoscope
+[2023-05-26 03:47:58] INFO root fetch - processPackages [we-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/we_report-0.0.1.9-py3-none-any.whl.zip tmp/we_report-0.1.9-py3-none-any.whl.zip --markdown 20230526/w/we-report/0.0.1.9-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 03:47:58] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/ff/a6/a71601caf91ab58a2c35a185784c79369ab525c92fac17a41344e1722d34/nbdev-apl-0.0.795.tar.gz
+[2023-05-26 03:47:58] INFO root fetch - processPackages [rust-contracts-builder]: Downloading https://files.pythonhosted.org/packages/b2/05/bddc5d4e0a4ad2be9c7888c222250fd4a9fbcaaf2da5f2f7dae10563e1a3/rust-contracts-builder-0.2.8.tar.gz
+[2023-05-26 03:47:59] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-05-26 03:47:59] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.794.tar.gz tmp/nbdev-apl-0.0.795.tar.gz --markdown 20230526/n/nbdev-apl/0.0.794-0.0.795/diff.md --exclude *.pyd
+[2023-05-26 03:47:59] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-05-26 03:47:59] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230526/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-26 03:47:59] INFO root fetch - processPackages [rust-contracts-builder]: executing diffoscope
+[2023-05-26 03:47:59] INFO root fetch - processPackages [rust-contracts-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rust-contracts-builder-0.2.7.tar.gz tmp/rust-contracts-builder-0.2.8.tar.gz --markdown 20230526/r/rust-contracts-builder/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-05-26 03:47:59] INFO root fetch - processPackages [as400]: executing diffoscope
+[2023-05-26 03:47:59] INFO root fetch - processPackages [as400]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/as400-1.0.3.tar.gz tmp/as400-1.0.4.tar.gz --markdown 20230526/a/as400/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-26 03:47:59] INFO root fetch - main [MainThread]: End processing [nbdev-sphinx]: success
+[2023-05-26 03:48:00] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-05-26 03:48:00] INFO root fetch - main [MainThread]: End processing [we-report]: success
+[2023-05-26 03:48:00] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-05-26 03:48:00] INFO root fetch - main [MainThread]: End processing [rust-contracts-builder]: success
+[2023-05-26 03:48:00] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-05-26 03:48:01] INFO root fetch - main [MainThread]: End processing [as400]: success
+[2023-05-26 03:48:01] INFO root fetch - main [MainThread]: Store serial: [18256044]
