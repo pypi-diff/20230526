@@ -7086,3 +7086,73 @@
 [2023-05-26 06:09:16] INFO root fetch - main [MainThread]: End processing [exergenics-etl]: success
 [2023-05-26 06:09:16] INFO root fetch - main [MainThread]: End processing [qcore]: success
 [2023-05-26 06:09:16] INFO root fetch - main [MainThread]: Store serial: [18257543]
+[2023-05-26 06:14:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18257543]
+[2023-05-26 06:14:25] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-26 06:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: paper-qa
+[2023-05-26 06:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Pandora-ChatGPT
+[2023-05-26 06:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: swaystatus
+[2023-05-26 06:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: boonamber
+[2023-05-26 06:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xw-utils
+[2023-05-26 06:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo9-addon-mrp-bom-dismantling
+[2023-05-26 06:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo9-addon-quality-control
+[2023-05-26 06:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo9-addon-mrp-production-request
+[2023-05-26 06:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: BrainGB
+[2023-05-26 06:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: binsync
+[2023-05-26 06:14:25] INFO root fetch - processPackages [paper-qa]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-26 06:14:25] INFO root fetch - processPackages [swaystatus]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-26 06:14:25] INFO root fetch - processPackages [BrainGB]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-26 06:14:25] INFO root fetch - processPackages [Pandora-ChatGPT]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-26 06:14:25] INFO root fetch - processPackages [odoo9-addon-mrp-bom-dismantling]: New version: [9.0.1.0.1.99.dev9] Old Version: [9.0.1.0.1.99.dev8]
+[2023-05-26 06:14:25] INFO root fetch - processPackages [odoo9-addon-quality-control]: New version: [9.0.1.3.0.99.dev9] Old Version: [9.0.1.3.0.99.dev8]
+[2023-05-26 06:14:25] INFO root fetch - processPackages [odoo9-addon-mrp-production-request]: New version: [9.0.1.0.0.99.dev8] Old Version: [9.0.1.0.0.99.dev7]
+[2023-05-26 06:14:25] INFO root fetch - processPackages [binsync]: New version: [3.9.0] Old Version: [3.6.0]
+[2023-05-26 06:14:25] INFO root fetch - processPackages [boonamber]: New version: [2.0.6] Old Version: [2.0.5]
+[2023-05-26 06:14:25] INFO root fetch - processPackages [xw-utils]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-26 06:14:25] INFO root fetch - processPackages [boonamber]: Downloading https://files.pythonhosted.org/packages/71/16/977c9e600ac91d39eda4e00c9d002092e829288954d1e6c5e3aad2ecdc9a/boonamber-2.0.5.tar.gz
+[2023-05-26 06:14:25] INFO root fetch - processPackages [odoo9-addon-mrp-bom-dismantling]: Downloading https://files.pythonhosted.org/packages/a7/0a/c8ecd71b86d5275a795f212911265cbc6d77aa2fd27cf21943583619f847/odoo9_addon_mrp_bom_dismantling-9.0.1.0.1.99.dev8-py2-none-any.whl
+[2023-05-26 06:14:25] INFO root fetch - processPackages [swaystatus]: Downloading https://files.pythonhosted.org/packages/21/4c/a76e232c18ab867d531ffca22804b68a1938ba700ee47f9cb9f979925382/swaystatus-0.3.3.tar.gz
+[2023-05-26 06:14:25] INFO root fetch - processPackages [xw-utils]: Downloading https://files.pythonhosted.org/packages/da/40/a533b32082a69d6b6cbb7a74eb463cd6649a452a19e08d43ce4d340c9f0b/xw_utils-1.0.3-cp39-cp39-win_amd64.whl
+[2023-05-26 06:14:25] INFO root fetch - processPackages [BrainGB]: Downloading https://files.pythonhosted.org/packages/08/be/16354dbdef27c751e79fe182a8bb7e65a10fcbb4f8bd49aff4f7b52b78e8/BrainGB-1.0.3.tar.gz
+[2023-05-26 06:14:26] INFO root fetch - processPackages [binsync]: executing diffoscope
+[2023-05-26 06:14:26] INFO root fetch - processPackages [binsync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binsync-3.6.0.tar.gz tmp/binsync-3.9.0.tar.gz --markdown 20230526/b/binsync/3.6.0-3.9.0/diff.md --exclude *.pyd
+[2023-05-26 06:14:26] INFO root fetch - processPackages [paper-qa]: executing diffoscope
+[2023-05-26 06:14:26] INFO root fetch - processPackages [paper-qa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper-qa-1.8.0.tar.gz tmp/paper-qa-1.9.0.tar.gz --markdown 20230526/p/paper-qa/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-26 06:14:26] INFO root fetch - processPackages [Pandora-ChatGPT]: Downloading https://files.pythonhosted.org/packages/47/59/13535fd76ba70393c88a85c92754254b83e3c9affcd1079f04f9b3b6259a/Pandora-ChatGPT-1.1.9.tar.gz
+[2023-05-26 06:14:26] INFO root fetch - processPackages [odoo9-addon-quality-control]: executing diffoscope
+[2023-05-26 06:14:26] INFO root fetch - processPackages [odoo9-addon-quality-control]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo9_addon_quality_control-9.0.1.3.0.99.dev8-py2-none-any.whl.zip tmp/odoo9_addon_quality_control-9.0.1.3.0.99.dev9-py2-none-any.whl.zip --markdown 20230526/o/odoo9-addon-quality-control/9.0.1.3.0.99.dev8-9.0.1.3.0.99.dev9/diff.md --exclude *.pyd
+[2023-05-26 06:14:26] INFO root fetch - processPackages [boonamber]: Downloading https://files.pythonhosted.org/packages/0e/01/244a9cd8c23ea556710117f917c107e7aed543e2b0cf03b9011f614929cc/boonamber-2.0.6.tar.gz
+[2023-05-26 06:14:26] INFO root fetch - processPackages [BrainGB]: Downloading https://files.pythonhosted.org/packages/1e/96/2a79318fb4850c65eda2d9b6822c67aceacaac947663b5291cde2fbd5de2/BrainGB-1.0.4.tar.gz
+[2023-05-26 06:14:26] INFO root fetch - processPackages [Pandora-ChatGPT]: executing diffoscope
+[2023-05-26 06:14:26] INFO root fetch - processPackages [Pandora-ChatGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pandora-ChatGPT-1.1.8.tar.gz tmp/Pandora-ChatGPT-1.1.9.tar.gz --markdown 20230526/P/Pandora-ChatGPT/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-26 06:14:26] INFO root fetch - processPackages [xw-utils]: Downloading https://files.pythonhosted.org/packages/76/ca/60ee4e1c559ecd87e3a326571269b5a8b1b7281460f2ce03d68b760001c8/xw_utils-1.0.4-cp39-cp39-musllinux_1_1_aarch64.whl
+[2023-05-26 06:14:26] INFO root fetch - processPackages [swaystatus]: Downloading https://files.pythonhosted.org/packages/71/cb/0f26a6e4e999b77d39d0e7ac0c0ab8c17f3677fdd4f6368532bb832ae97d/swaystatus-0.3.4.tar.gz
+[2023-05-26 06:14:26] INFO root fetch - processPackages [odoo9-addon-mrp-bom-dismantling]: Downloading https://files.pythonhosted.org/packages/07/33/477a224f109e276879310463163603a353f4bc30ad46c57ec84158ba87d9/odoo9_addon_mrp_bom_dismantling-9.0.1.0.1.99.dev9-py2-none-any.whl
+[2023-05-26 06:14:26] INFO root fetch - processPackages [BrainGB]: executing diffoscope
+[2023-05-26 06:14:26] INFO root fetch - processPackages [BrainGB]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BrainGB-1.0.3.tar.gz tmp/BrainGB-1.0.4.tar.gz --markdown 20230526/B/BrainGB/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-26 06:14:26] INFO root fetch - processPackages [odoo9-addon-mrp-production-request]: executing diffoscope
+[2023-05-26 06:14:26] INFO root fetch - processPackages [odoo9-addon-mrp-production-request]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo9_addon_mrp_production_request-9.0.1.0.0.99.dev7-py2-none-any.whl.zip tmp/odoo9_addon_mrp_production_request-9.0.1.0.0.99.dev8-py2-none-any.whl.zip --markdown 20230526/o/odoo9-addon-mrp-production-request/9.0.1.0.0.99.dev7-9.0.1.0.0.99.dev8/diff.md --exclude *.pyd
+[2023-05-26 06:14:26] INFO root fetch - processPackages [swaystatus]: executing diffoscope
+[2023-05-26 06:14:26] INFO root fetch - processPackages [swaystatus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swaystatus-0.3.3.tar.gz tmp/swaystatus-0.3.4.tar.gz --markdown 20230526/s/swaystatus/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-26 06:14:26] INFO root fetch - processPackages [boonamber]: executing diffoscope
+[2023-05-26 06:14:26] INFO root fetch - processPackages [boonamber]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boonamber-2.0.5.tar.gz tmp/boonamber-2.0.6.tar.gz --markdown 20230526/b/boonamber/2.0.5-2.0.6/diff.md --exclude *.pyd
+[2023-05-26 06:14:26] INFO root fetch - processPackages [odoo9-addon-mrp-bom-dismantling]: executing diffoscope
+[2023-05-26 06:14:26] INFO root fetch - processPackages [odoo9-addon-mrp-bom-dismantling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo9_addon_mrp_bom_dismantling-9.0.1.0.1.99.dev8-py2-none-any.whl.zip tmp/odoo9_addon_mrp_bom_dismantling-9.0.1.0.1.99.dev9-py2-none-any.whl.zip --markdown 20230526/o/odoo9-addon-mrp-bom-dismantling/9.0.1.0.1.99.dev8-9.0.1.0.1.99.dev9/diff.md --exclude *.pyd
+[2023-05-26 06:14:26] INFO root fetch - processPackages [xw-utils]: executing diffoscope
+[2023-05-26 06:14:26] INFO root fetch - processPackages [xw-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xw_utils-1.0.3-cp39-cp39-win_amd64.whl.zip tmp/xw_utils-1.0.4-cp39-cp39-musllinux_1_1_aarch64.whl.zip --markdown 20230526/x/xw-utils/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-26 06:14:28] INFO root fetch - processPackages [paper-qa]: Start processing: pipen-board
+[2023-05-26 06:14:28] INFO root fetch - main [MainThread]: End processing [paper-qa]: success
+[2023-05-26 06:14:28] INFO root fetch - processPackages [pipen-board]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-26 06:14:28] INFO root fetch - main [MainThread]: End processing [binsync]: success
+[2023-05-26 06:14:28] INFO root fetch - processPackages [pipen-board]: Downloading https://files.pythonhosted.org/packages/d6/bd/16a6a6f6967042146f108081fc50a82cd7eba82356d85a27f39761bfe149/pipen_board-0.2.2.tar.gz
+[2023-05-26 06:14:28] INFO root fetch - processPackages [pipen-board]: executing diffoscope
+[2023-05-26 06:14:28] INFO root fetch - processPackages [pipen-board]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen_board-0.2.1.tar.gz tmp/pipen_board-0.2.2.tar.gz --markdown 20230526/p/pipen-board/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-26 06:14:28] INFO root fetch - main [MainThread]: End processing [BrainGB]: success
+[2023-05-26 06:14:28] INFO root fetch - main [MainThread]: End processing [odoo9-addon-quality-control]: success
+[2023-05-26 06:14:28] INFO root fetch - main [MainThread]: End processing [swaystatus]: success
+[2023-05-26 06:14:29] INFO root fetch - main [MainThread]: End processing [xw-utils]: success
+[2023-05-26 06:14:29] INFO root fetch - main [MainThread]: End processing [boonamber]: success
+[2023-05-26 06:14:29] INFO root fetch - main [MainThread]: End processing [odoo9-addon-mrp-production-request]: success
+[2023-05-26 06:14:29] INFO root fetch - main [MainThread]: End processing [odoo9-addon-mrp-bom-dismantling]: success
+[2023-05-26 06:14:30] INFO root fetch - main [MainThread]: End processing [Pandora-ChatGPT]: success
+[2023-05-26 06:14:37] INFO root fetch - main [MainThread]: End processing [pipen-board]: success
+[2023-05-26 06:14:37] INFO root fetch - main [MainThread]: Store serial: [18257590]
