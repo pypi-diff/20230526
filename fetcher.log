@@ -10270,3 +10270,103 @@
 [2023-05-26 09:45:55] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
 [2023-05-26 09:46:27] INFO root fetch - main [MainThread]: End processing [pulumi-oci]: success
 [2023-05-26 09:46:27] INFO root fetch - main [MainThread]: Store serial: [18259361]
+[2023-05-26 09:51:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18259361]
+[2023-05-26 09:51:35] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-26 09:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kuto
+[2023-05-26 09:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keras-nightly
+[2023-05-26 09:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: optuna-integration
+[2023-05-26 09:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: finalynx
+[2023-05-26 09:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aiogrobid
+[2023-05-26 09:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: blue-engine
+[2023-05-26 09:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pycliwrapper
+[2023-05-26 09:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: adapta
+[2023-05-26 09:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aiogrobid
+[2023-05-26 09:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: qoa4ml
+[2023-05-26 09:51:35] INFO root fetch - processPackages [finalynx]: New version: [1.9.0] Old Version: [1.8.3]
+[2023-05-26 09:51:35] INFO root fetch - processPackages [aiogrobid]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-26 09:51:35] INFO root fetch - processPackages [blue-engine]: New version: [0.0.3.5] Old Version: [0.0.2]
+[2023-05-26 09:51:35] INFO root fetch - processPackages [optuna-integration]: New version: [3.2.0b0] Old Version: [3.2.0]
+[2023-05-26 09:51:35] INFO root fetch - processPackages [kuto]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 09:51:35] INFO root fetch - processPackages [adapta]: New version: [2.2.9] Old Version: [2.2.8]
+[2023-05-26 09:51:35] INFO root fetch - processPackages [aiogrobid]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-26 09:51:35] INFO root fetch - processPackages [pycliwrapper]: New version: [1.1] Old Version: [1.0]
+[2023-05-26 09:51:35] INFO root fetch - processPackages [qoa4ml]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 09:51:36] INFO root fetch - processPackages [finalynx]: executing diffoscope
+[2023-05-26 09:51:36] INFO root fetch - processPackages [finalynx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finalynx-1.8.3.tar.gz tmp/finalynx-1.9.0.tar.gz --markdown 20230526/f/finalynx/1.8.3-1.9.0/diff.md --exclude *.pyd
+[2023-05-26 09:51:36] INFO root fetch - processPackages [keras-nightly]: New version: [2.9.0.dev2022033107] Old Version: [2.9.0.dev2022033007]
+[2023-05-26 09:51:36] INFO root fetch - processPackages [qoa4ml]: executing diffoscope
+[2023-05-26 09:51:36] INFO root fetch - processPackages [qoa4ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qoa4ml-0.0.8.tar.gz tmp/qoa4ml-0.0.9.tar.gz --markdown 20230526/q/qoa4ml/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 09:51:36] INFO root fetch - processPackages [aiogrobid]: Downloading https://files.pythonhosted.org/packages/0a/52/8c4aed83f4e7f3f76cca2aa37f87f8b8928870c22b8d0679271d6892794c/aiogrobid-0.1.5.tar.gz
+[2023-05-26 09:51:36] INFO root fetch - processPackages [aiogrobid]: Downloading https://files.pythonhosted.org/packages/0a/52/8c4aed83f4e7f3f76cca2aa37f87f8b8928870c22b8d0679271d6892794c/aiogrobid-0.1.5.tar.gz
+[2023-05-26 09:51:36] INFO root fetch - processPackages [optuna-integration]: Downloading https://files.pythonhosted.org/packages/3d/1d/7442013646766811791689729ae45094ff708c0b6e4ae659d1cd73fecfe6/optuna-integration-3.2.0.tar.gz
+[2023-05-26 09:51:36] INFO root fetch - processPackages [adapta]: Downloading https://files.pythonhosted.org/packages/b3/85/4559f0cb12668234ce61f3bb2a12b219eb5088d5459d301d74f3debcdbac/adapta-2.2.8.tar.gz
+[2023-05-26 09:51:36] INFO root fetch - processPackages [pycliwrapper]: Downloading https://files.pythonhosted.org/packages/b8/28/a72c966b1b4d38196c76d107b2b8873adaf69ba2a37cb775b7fc9ac1edff/pycliwrapper-1.0.tar.gz
+[2023-05-26 09:51:36] INFO root fetch - processPackages [blue-engine]: Downloading https://files.pythonhosted.org/packages/8f/6d/111f4587f749e78b4d6864c9e2ab5afc854848e855223d9c9fb3129644a1/blue-engine-0.0.3.5.tar.gz
+[2023-05-26 09:51:36] INFO root fetch - processPackages [kuto]: executing diffoscope
+[2023-05-26 09:51:36] INFO root fetch - processPackages [kuto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kuto-0.0.8-py3-none-any.whl.zip tmp/kuto-0.0.9.tar.gz --markdown 20230526/k/kuto/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 09:51:36] INFO root fetch - processPackages [optuna-integration]: Downloading https://files.pythonhosted.org/packages/83/d6/113b53f4a3ccc3720ab557a379bd962d0a100f50526ece081042d631c218/optuna-integration-3.2.0b0.tar.gz
+[2023-05-26 09:51:36] INFO root fetch - processPackages [adapta]: Downloading https://files.pythonhosted.org/packages/e8/a0/4b931f604283ab5133299737083c8836b4d46008353579e44a3c668cbb38/adapta-2.2.9.tar.gz
+[2023-05-26 09:51:36] INFO root fetch - processPackages [aiogrobid]: Downloading https://files.pythonhosted.org/packages/26/f5/1723a843b69ffba3227348ecfe79b3c1719e405c866327f86d867602deea/aiogrobid-0.1.6.tar.gz
+[2023-05-26 09:51:36] INFO root fetch - processPackages [blue-engine]: executing diffoscope
+[2023-05-26 09:51:36] INFO root fetch - processPackages [blue-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blue-engine-0.0.2.tar.gz tmp/blue-engine-0.0.3.5.tar.gz --markdown 20230526/b/blue-engine/0.0.2-0.0.3.5/diff.md --exclude *.pyd
+[2023-05-26 09:51:36] INFO root fetch - processPackages [aiogrobid]: Downloading https://files.pythonhosted.org/packages/26/f5/1723a843b69ffba3227348ecfe79b3c1719e405c866327f86d867602deea/aiogrobid-0.1.6.tar.gz
+[2023-05-26 09:51:36] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2023-05-26 09:51:36] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-2.9.0.dev2022033007-py2.py3-none-any.whl.zip tmp/keras_nightly-2.9.0.dev2022033107-py2.py3-none-any.whl.zip --markdown 20230526/k/keras-nightly/2.9.0.dev2022033007-2.9.0.dev2022033107/diff.md --exclude *.pyd
+[2023-05-26 09:51:36] INFO root fetch - processPackages [pycliwrapper]: Downloading https://files.pythonhosted.org/packages/6b/21/10f70910a61c92d343866637402dab75d4d9def785c28a76bbe108295f63/pycliwrapper-1.1.tar.gz
+[2023-05-26 09:51:36] INFO root fetch - processPackages [optuna-integration]: executing diffoscope
+[2023-05-26 09:51:36] INFO root fetch - processPackages [optuna-integration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optuna-integration-3.2.0.tar.gz tmp/optuna-integration-3.2.0b0.tar.gz --markdown 20230526/o/optuna-integration/3.2.0-3.2.0b0/diff.md --exclude *.pyd
+[2023-05-26 09:51:36] INFO root fetch - processPackages [adapta]: executing diffoscope
+[2023-05-26 09:51:36] INFO root fetch - processPackages [adapta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adapta-2.2.8.tar.gz tmp/adapta-2.2.9.tar.gz --markdown 20230526/a/adapta/2.2.8-2.2.9/diff.md --exclude *.pyd
+[2023-05-26 09:51:36] INFO root fetch - processPackages [aiogrobid]: executing diffoscope
+[2023-05-26 09:51:36] INFO root fetch - processPackages [aiogrobid]: executing diffoscope
+[2023-05-26 09:51:36] INFO root fetch - processPackages [aiogrobid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogrobid-0.1.5.tar.gz tmp/aiogrobid-0.1.6.tar.gz --markdown 20230526/a/aiogrobid/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-26 09:51:36] INFO root fetch - processPackages [aiogrobid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogrobid-0.1.5.tar.gz tmp/aiogrobid-0.1.6.tar.gz --markdown 20230526/a/aiogrobid/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-26 09:51:36] INFO root fetch - processPackages [pycliwrapper]: executing diffoscope
+[2023-05-26 09:51:36] INFO root fetch - processPackages [pycliwrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycliwrapper-1.0.tar.gz tmp/pycliwrapper-1.1.tar.gz --markdown 20230526/p/pycliwrapper/1.0-1.1/diff.md --exclude *.pyd
+[2023-05-26 09:51:37] INFO root fetch - processPackages [qoa4ml]: Start processing: textbsr
+[2023-05-26 09:51:37] INFO root fetch - main [MainThread]: End processing [qoa4ml]: success
+[2023-05-26 09:51:37] INFO root fetch - processPackages [textbsr]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 09:51:37] INFO root fetch - processPackages [textbsr]: executing diffoscope
+[2023-05-26 09:51:37] INFO root fetch - processPackages [textbsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textbsr-0.0.8.tar.gz tmp/textbsr-0.0.9.tar.gz --markdown 20230526/t/textbsr/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 09:51:37] INFO root fetch - processPackages [kuto]: Start processing: lesscode-py
+[2023-05-26 09:51:37] INFO root fetch - main [MainThread]: End processing [kuto]: success
+[2023-05-26 09:51:38] INFO root fetch - processPackages [lesscode-py]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-26 09:51:38] INFO root fetch - processPackages [blue-engine]: Start processing: tf-nightly-cpu
+[2023-05-26 09:51:38] INFO root fetch - main [MainThread]: End processing [blue-engine]: success
+[2023-05-26 09:51:38] INFO root fetch - processPackages [lesscode-py]: executing diffoscope
+[2023-05-26 09:51:38] INFO root fetch - processPackages [lesscode-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lesscode-py-0.3.8.tar.gz tmp/lesscode-py-0.3.9.tar.gz --markdown 20230526/l/lesscode-py/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-26 09:51:38] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.14.0.dev20230526] Old Version: [2.14.0.dev20230525]
+[2023-05-26 09:51:38] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/16/f2/edad80b54f256cb9ef40fdf53bee2b3ec423935e348303952c905508dbb7/tf_nightly_cpu-2.14.0.dev20230526-cp39-cp39-win_amd64.whl
+[2023-05-26 09:51:38] INFO root fetch - processPackages [aiogrobid]: Start processing: imucal
+[2023-05-26 09:51:38] INFO root fetch - main [MainThread]: End processing [aiogrobid]: success
+[2023-05-26 09:51:38] INFO root fetch - processPackages [imucal]: New version: [2.4.0] Old Version: [2.3.1]
+[2023-05-26 09:51:38] INFO root fetch - processPackages [aiogrobid]: Start processing: brainways-reg-model
+[2023-05-26 09:51:38] INFO root fetch - main [MainThread]: End processing [aiogrobid]: success
+[2023-05-26 09:51:39] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2023-05-26 09:51:39] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.14.0.dev20230525-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.14.0.dev20230526-cp39-cp39-win_amd64.whl.zip --markdown 20230526/t/tf-nightly-cpu/2.14.0.dev20230525-2.14.0.dev20230526/diff.md --exclude *.pyd
+[2023-05-26 09:51:39] WARNING root fetch - processPackages [brainways-reg-model]: Skipping, unable to determine old version
+[2023-05-26 09:51:39] INFO root fetch - processPackages [brainways-reg-model]: Start processing: aiogrobid
+[2023-05-26 09:51:39] INFO root fetch - main [MainThread]: End processing [brainways-reg-model] error
+[2023-05-26 09:51:39] INFO root fetch - processPackages [aiogrobid]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-26 09:51:39] INFO root fetch - processPackages [optuna-integration]: Start processing: mikro
+[2023-05-26 09:51:39] INFO root fetch - main [MainThread]: End processing [optuna-integration]: success
+[2023-05-26 09:51:39] INFO root fetch - processPackages [mikro]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-26 09:51:39] INFO root fetch - processPackages [imucal]: Downloading https://files.pythonhosted.org/packages/19/15/67836c485f0d6f5bce7bfcf56b323e2ce37261c3d9aeb19f8d6f3c15b554/imucal-2.3.1.tar.gz
+[2023-05-26 09:51:39] INFO root fetch - main [MainThread]: End processing [finalynx]: success
+[2023-05-26 09:51:39] INFO root fetch - processPackages [aiogrobid]: executing diffoscope
+[2023-05-26 09:51:39] INFO root fetch - processPackages [aiogrobid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogrobid-0.1.5.tar.gz tmp/aiogrobid-0.1.6.tar.gz --markdown 20230526/a/aiogrobid/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-26 09:51:39] INFO root fetch - processPackages [imucal]: Downloading https://files.pythonhosted.org/packages/7c/39/143b34a55fd159f3a202ef5e76bd27d31bcbfffa7ee5fe5502647889b193/imucal-2.4.0.tar.gz
+[2023-05-26 09:51:39] INFO root fetch - processPackages [mikro]: executing diffoscope
+[2023-05-26 09:51:39] INFO root fetch - processPackages [mikro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mikro-0.3.8.tar.gz tmp/mikro-0.3.9.tar.gz --markdown 20230526/m/mikro/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-26 09:51:39] INFO root fetch - processPackages [imucal]: executing diffoscope
+[2023-05-26 09:51:39] INFO root fetch - processPackages [imucal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imucal-2.3.1.tar.gz tmp/imucal-2.4.0.tar.gz --markdown 20230526/i/imucal/2.3.1-2.4.0/diff.md --exclude *.pyd
+[2023-05-26 09:51:39] INFO root fetch - main [MainThread]: End processing [pycliwrapper]: success
+[2023-05-26 09:51:39] INFO root fetch - main [MainThread]: End processing [textbsr]: success
+[2023-05-26 09:51:39] INFO root fetch - main [MainThread]: End processing [adapta]: success
+[2023-05-26 09:51:41] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2023-05-26 09:51:41] INFO root fetch - main [MainThread]: End processing [aiogrobid]: success
+[2023-05-26 09:51:41] INFO root fetch - main [MainThread]: End processing [lesscode-py]: success
+[2023-05-26 09:51:41] INFO root fetch - main [MainThread]: End processing [imucal]: success
+[2023-05-26 09:51:41] INFO root fetch - main [MainThread]: End processing [mikro]: success
+[2023-05-26 09:51:45] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2023-05-26 09:51:45] INFO root fetch - main [MainThread]: Store serial: [18259440]
