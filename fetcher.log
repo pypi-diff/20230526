@@ -6637,3 +6637,55 @@
 [2023-05-26 05:21:14] INFO root fetch - main [MainThread]: End processing [hagrid]: success
 [2023-05-26 05:21:18] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-spotinst]: success
 [2023-05-26 05:21:18] INFO root fetch - main [MainThread]: Store serial: [18257260]
+[2023-05-26 05:26:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18257260]
+[2023-05-26 05:26:27] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-26 05:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: caqui
+[2023-05-26 05:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sqlglot
+[2023-05-26 05:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: algokit-client-generator
+[2023-05-26 05:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: config-joker
+[2023-05-26 05:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: algokit-utils
+[2023-05-26 05:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: scAnnot
+[2023-05-26 05:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aliyun-python-sdk-config
+[2023-05-26 05:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: watchmaker
+[2023-05-26 05:26:27] INFO root fetch - processPackages [scAnnot]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-26 05:26:27] INFO root fetch - processPackages [algokit-utils]: New version: [1.2.0b7] Old Version: [1.2.0b6]
+[2023-05-26 05:26:27] INFO root fetch - processPackages [algokit-client-generator]: New version: [0.1.0b8] Old Version: [0.1.0b7]
+[2023-05-26 05:26:27] INFO root fetch - processPackages [config-joker]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-26 05:26:27] INFO root fetch - processPackages [aliyun-python-sdk-config]: New version: [2.2.9] Old Version: [2.2.8]
+[2023-05-26 05:26:27] INFO root fetch - processPackages [watchmaker]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-26 05:26:27] INFO root fetch - processPackages [sqlglot]: New version: [9.0.6] Old Version: [9.0.5]
+[2023-05-26 05:26:27] INFO root fetch - processPackages [caqui]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-26 05:26:27] INFO root fetch - processPackages [sqlglot]: executing diffoscope
+[2023-05-26 05:26:27] INFO root fetch - processPackages [sqlglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlglot-9.0.5.tar.gz tmp/sqlglot-9.0.6.tar.gz --markdown 20230526/s/sqlglot/9.0.5-9.0.6/diff.md --exclude *.pyd
+[2023-05-26 05:26:27] INFO root fetch - processPackages [scAnnot]: Downloading https://files.pythonhosted.org/packages/bc/b9/20697c251b7b94c71ed33032e182f0337e157a79b41cbc41ef9927e0df06/scAnnot-0.0.3.tar.gz
+[2023-05-26 05:26:27] INFO root fetch - processPackages [algokit-utils]: Downloading https://files.pythonhosted.org/packages/d6/9e/1e0b90701d4df918cc938e9659f91a75ba804cf257402d40cdd3be576b71/algokit_utils-1.2.0b7-py3-none-any.whl
+[2023-05-26 05:26:27] INFO root fetch - processPackages [aliyun-python-sdk-config]: Downloading https://files.pythonhosted.org/packages/93/ff/6cc4efc723f83d0c256aca8c0dda84499d4e5132ba428e071dd915292ccc/aliyun-python-sdk-config-2.2.8.tar.gz
+[2023-05-26 05:26:27] INFO root fetch - processPackages [watchmaker]: Downloading https://files.pythonhosted.org/packages/2f/69/dac9ecdc4f97c01a478b04b88d5dbb05a2411b709d4d67fdbd7b26a2dc6d/watchmaker-0.9.5.tar.gz
+[2023-05-26 05:26:27] INFO root fetch - processPackages [caqui]: Downloading https://files.pythonhosted.org/packages/5e/9c/5aaa058e3fbefe095e743664ced7ce38e8a0d45aa1f6eb693b341214165a/caqui-1.0.3.tar.gz
+[2023-05-26 05:26:27] INFO root fetch - processPackages [config-joker]: Downloading https://files.pythonhosted.org/packages/71/44/721a3f0abaf21ec6bd79f4c8c05b1ad9b68faa098fee30f4c180fc2ddf9d/config_joker-0.6.0.tar.gz
+[2023-05-26 05:26:27] INFO root fetch - processPackages [algokit-utils]: executing diffoscope
+[2023-05-26 05:26:27] INFO root fetch - processPackages [algokit-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/algokit_utils-1.2.0b6-py3-none-any.whl.zip tmp/algokit_utils-1.2.0b7-py3-none-any.whl.zip --markdown 20230526/a/algokit-utils/1.2.0b6-1.2.0b7/diff.md --exclude *.pyd
+[2023-05-26 05:26:27] INFO root fetch - processPackages [algokit-client-generator]: Downloading https://files.pythonhosted.org/packages/66/95/8f4503f7306a8c5c56901b8403c8f039d70a5fcadb8bffe41f307b35451e/algokit_client_generator-0.1.0b8-py3-none-any.whl
+[2023-05-26 05:26:27] INFO root fetch - processPackages [config-joker]: executing diffoscope
+[2023-05-26 05:26:27] INFO root fetch - processPackages [config-joker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/config_joker-0.5.0.tar.gz tmp/config_joker-0.6.0.tar.gz --markdown 20230526/c/config-joker/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-26 05:26:27] INFO root fetch - processPackages [aliyun-python-sdk-config]: Downloading https://files.pythonhosted.org/packages/28/4a/1a8c1e27c32e14ed7277db2fff08b298fb0fb0091deb4f9489e397da473c/aliyun-python-sdk-config-2.2.9.tar.gz
+[2023-05-26 05:26:27] INFO root fetch - processPackages [caqui]: Downloading https://files.pythonhosted.org/packages/e6/3f/562f151d1079666d305aed98e5789368d42028d9c1b209405e5c428cc88e/caqui-1.0.4.tar.gz
+[2023-05-26 05:26:27] INFO root fetch - processPackages [scAnnot]: Downloading https://files.pythonhosted.org/packages/57/6d/efb66f575d10a97524fdedf493ea3efc25afba25e784be3376f50537cf34/scAnnot-0.0.4.tar.gz
+[2023-05-26 05:26:28] INFO root fetch - processPackages [algokit-client-generator]: executing diffoscope
+[2023-05-26 05:26:28] INFO root fetch - processPackages [algokit-client-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/algokit_client_generator-0.1.0b7-py3-none-any.whl.zip tmp/algokit_client_generator-0.1.0b8-py3-none-any.whl.zip --markdown 20230526/a/algokit-client-generator/0.1.0b7-0.1.0b8/diff.md --exclude *.pyd
+[2023-05-26 05:26:28] INFO root fetch - processPackages [aliyun-python-sdk-config]: executing diffoscope
+[2023-05-26 05:26:28] INFO root fetch - processPackages [aliyun-python-sdk-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliyun-python-sdk-config-2.2.8.tar.gz tmp/aliyun-python-sdk-config-2.2.9.tar.gz --markdown 20230526/a/aliyun-python-sdk-config/2.2.8-2.2.9/diff.md --exclude *.pyd
+[2023-05-26 05:26:28] INFO root fetch - processPackages [caqui]: executing diffoscope
+[2023-05-26 05:26:28] INFO root fetch - processPackages [caqui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/caqui-1.0.3.tar.gz tmp/caqui-1.0.4.tar.gz --markdown 20230526/c/caqui/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-26 05:26:28] INFO root fetch - processPackages [scAnnot]: executing diffoscope
+[2023-05-26 05:26:28] INFO root fetch - processPackages [scAnnot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scAnnot-0.0.3.tar.gz tmp/scAnnot-0.0.4.tar.gz --markdown 20230526/s/scAnnot/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-26 05:26:28] WARNING root fetch - processPackages [watchmaker]: Skipping package: exceeds size limit 38270187>=10485760
+[2023-05-26 05:26:28] INFO root fetch - main [MainThread]: End processing [watchmaker] error
+[2023-05-26 05:26:29] INFO root fetch - main [MainThread]: End processing [algokit-utils]: success
+[2023-05-26 05:26:29] INFO root fetch - main [MainThread]: End processing [config-joker]: success
+[2023-05-26 05:26:29] INFO root fetch - main [MainThread]: End processing [algokit-client-generator]: success
+[2023-05-26 05:26:29] INFO root fetch - main [MainThread]: End processing [scAnnot]: success
+[2023-05-26 05:26:30] INFO root fetch - main [MainThread]: End processing [aliyun-python-sdk-config]: success
+[2023-05-26 05:26:30] INFO root fetch - main [MainThread]: End processing [caqui]: success
+[2023-05-26 05:26:31] INFO root fetch - main [MainThread]: End processing [sqlglot]: success
+[2023-05-26 05:26:31] INFO root fetch - main [MainThread]: Store serial: [18257282]
