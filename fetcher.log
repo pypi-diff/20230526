@@ -13826,3 +13826,93 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 13:14:08] INFO root fetch - main [MainThread]: End processing [GBT-parser]: success
 [2023-05-26 13:14:21] INFO root fetch - main [MainThread]: End processing [pharmpy-core]: success
 [2023-05-26 13:14:21] INFO root fetch - main [MainThread]: Store serial: [18261789]
+[2023-05-26 13:19:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18261789]
+[2023-05-26 13:19:30] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-26 13:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: boxsdk
+[2023-05-26 13:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: earthkit-data
+[2023-05-26 13:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: keystem
+[2023-05-26 13:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bosch-alarm-mode2
+[2023-05-26 13:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dwh-oppfolging
+[2023-05-26 13:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aviral-second-try
+[2023-05-26 13:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: prefect-postgres-sensors
+[2023-05-26 13:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: regi
+[2023-05-26 13:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ruamel.yaml
+[2023-05-26 13:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: vbarongdatools001
+[2023-05-26 13:19:30] INFO root fetch - processPackages [earthkit-data]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-26 13:19:30] INFO root fetch - processPackages [bosch-alarm-mode2]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-26 13:19:30] INFO root fetch - processPackages [keystem]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-26 13:19:30] INFO root fetch - processPackages [prefect-postgres-sensors]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-26 13:19:30] INFO root fetch - processPackages [boxsdk]: New version: [3.7.2] Old Version: [3.7.1]
+[2023-05-26 13:19:30] INFO root fetch - processPackages [vbarongdatools001]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-26 13:19:30] WARNING root fetch - processPackages [aviral-second-try]: Skipping, unable to determine old version
+[2023-05-26 13:19:30] INFO root fetch - processPackages [dwh-oppfolging]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 13:19:30] INFO root fetch - processPackages [aviral-second-try]: Start processing: PyIpify
+[2023-05-26 13:19:30] INFO root fetch - main [MainThread]: End processing [aviral-second-try] error
+[2023-05-26 13:19:30] INFO root fetch - processPackages [regi]: New version: [1.2] Old Version: [1.0]
+[2023-05-26 13:19:30] INFO root fetch - processPackages [ruamel.yaml]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-05-26 13:19:30] INFO root fetch - processPackages [PyIpify]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-26 13:19:30] INFO root fetch - processPackages [bosch-alarm-mode2]: executing diffoscope
+[2023-05-26 13:19:30] INFO root fetch - processPackages [bosch-alarm-mode2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bosch_alarm_mode2-0.3.8.tar.gz tmp/bosch_alarm_mode2-0.3.9.tar.gz --markdown 20230526/b/bosch-alarm-mode2/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-26 13:19:30] INFO root fetch - processPackages [ruamel.yaml]: executing diffoscope
+[2023-05-26 13:19:30] INFO root fetch - processPackages [ruamel.yaml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ruamel.yaml-0.9.7.tar.gz tmp/ruamel.yaml-0.9.8.tar.gz --markdown 20230526/r/ruamel.yaml/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-05-26 13:19:30] INFO root fetch - processPackages [prefect-postgres-sensors]: Downloading https://files.pythonhosted.org/packages/a1/8c/4d7999c9caec0d0e69cd75dbea4e3016529673322395ba3e7c6b272e62f1/prefect_postgres_sensors-0.1.0.tar.gz
+[2023-05-26 13:19:30] INFO root fetch - processPackages [regi]: Downloading https://files.pythonhosted.org/packages/30/66/5928051ca0a359aa5bef2344d99700319a6fd4e5adc1bf103483e71c9781/regi-1.0.tar.gz
+[2023-05-26 13:19:30] INFO root fetch - processPackages [earthkit-data]: Downloading https://files.pythonhosted.org/packages/4e/27/0828eb7c061f6b8f02af6f4ee522e21920131640baf485c9da3ccc8ced3a/earthkit-data-0.1.2.tar.gz
+[2023-05-26 13:19:30] INFO root fetch - processPackages [vbarongdatools001]: Downloading https://files.pythonhosted.org/packages/09/6c/142fef7d2a69801bdf80a92348c4c0a3ea706ebbfd3f0f30fa182239bdde/vbarongdatools001-0.0.3.tar.gz
+[2023-05-26 13:19:30] INFO root fetch - processPackages [keystem]: Downloading https://files.pythonhosted.org/packages/9e/91/0536c4e33cceeaecce6d0013d34d33eb135f10b9db4a9faa458809844e3d/keystem-1.0.1.tar.gz
+[2023-05-26 13:19:30] INFO root fetch - processPackages [dwh-oppfolging]: Downloading https://files.pythonhosted.org/packages/bd/7e/5b047e6145691fd94030b91144fa2afefbfdc63cb48e64510f7889eb3d1e/dwh_oppfolging-0.0.8.tar.gz
+[2023-05-26 13:19:30] INFO root fetch - processPackages [PyIpify]: Downloading https://files.pythonhosted.org/packages/eb/5a/3d803a8af674a95bf397a3027c5cb2aed56bf541be4dafa8d86fb310b86f/PyIpify-0.0.1.tar.gz
+[2023-05-26 13:19:30] INFO root fetch - processPackages [boxsdk]: Downloading https://files.pythonhosted.org/packages/d1/7c/853bf10009610b50d8a150c1e9ebff1f4ba3891e808b7a8991ecf7d0f491/boxsdk-3.7.1.tar.gz
+[2023-05-26 13:19:30] INFO root fetch - processPackages [prefect-postgres-sensors]: Downloading https://files.pythonhosted.org/packages/94/24/c61ee9055090369452355e82388d32ddcc8cf37d699dbc1dd14bf73bc4b3/prefect_postgres_sensors-0.2.0.tar.gz
+[2023-05-26 13:19:30] INFO root fetch - processPackages [vbarongdatools001]: executing diffoscope
+[2023-05-26 13:19:30] INFO root fetch - processPackages [vbarongdatools001]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbarongdatools001-0.0.2.tar.gz tmp/vbarongdatools001-0.0.3.tar.gz --markdown 20230526/v/vbarongdatools001/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-26 13:19:31] INFO root fetch - processPackages [regi]: Downloading https://files.pythonhosted.org/packages/af/ac/0597bd355eb8670abec33b4ba97144f42d4cf2caaccc734f7773d2e5d2f6/regi-1.2.tar.gz
+[2023-05-26 13:19:31] INFO root fetch - processPackages [keystem]: Downloading https://files.pythonhosted.org/packages/71/04/4575a6f4f26bdf099e3f64697e989de8b71d53df3d51ec0ced8ce1e04d2b/keystem-1.0.2.tar.gz
+[2023-05-26 13:19:31] INFO root fetch - processPackages [earthkit-data]: Downloading https://files.pythonhosted.org/packages/af/3e/df59da14db3798873d54c932da2f228c2f10cc49e7f3d48cf894e6e3d309/earthkit-data-0.1.3.tar.gz
+[2023-05-26 13:19:31] INFO root fetch - processPackages [PyIpify]: Downloading https://files.pythonhosted.org/packages/a1/a9/996491d70637306be5f69e5aea1266b3e66f8f1b8b0389b9993044447190/PyIpify-0.0.2.tar.gz
+[2023-05-26 13:19:31] INFO root fetch - processPackages [prefect-postgres-sensors]: executing diffoscope
+[2023-05-26 13:19:31] INFO root fetch - processPackages [prefect-postgres-sensors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prefect_postgres_sensors-0.1.0.tar.gz tmp/prefect_postgres_sensors-0.2.0.tar.gz --markdown 20230526/p/prefect-postgres-sensors/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-26 13:19:31] INFO root fetch - processPackages [keystem]: executing diffoscope
+[2023-05-26 13:19:31] INFO root fetch - processPackages [keystem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keystem-1.0.1.tar.gz tmp/keystem-1.0.2.tar.gz --markdown 20230526/k/keystem/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-26 13:19:31] INFO root fetch - processPackages [boxsdk]: Downloading https://files.pythonhosted.org/packages/fa/bf/492122c7a13625532c00b6d38516a604cafcb9b290bdab8f8e9cd25aacc3/boxsdk-3.7.2.tar.gz
+[2023-05-26 13:19:31] INFO root fetch - processPackages [earthkit-data]: executing diffoscope
+[2023-05-26 13:19:31] INFO root fetch - processPackages [earthkit-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/earthkit-data-0.1.2.tar.gz tmp/earthkit-data-0.1.3.tar.gz --markdown 20230526/e/earthkit-data/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-26 13:19:31] INFO root fetch - processPackages [PyIpify]: executing diffoscope
+[2023-05-26 13:19:31] INFO root fetch - processPackages [PyIpify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyIpify-0.0.1.tar.gz tmp/PyIpify-0.0.2.tar.gz --markdown 20230526/P/PyIpify/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-26 13:19:31] INFO root fetch - processPackages [regi]: executing diffoscope
+[2023-05-26 13:19:31] INFO root fetch - processPackages [regi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regi-1.0.tar.gz tmp/regi-1.2.tar.gz --markdown 20230526/r/regi/1.0-1.2/diff.md --exclude *.pyd
+[2023-05-26 13:19:31] INFO root fetch - processPackages [boxsdk]: executing diffoscope
+[2023-05-26 13:19:31] INFO root fetch - processPackages [boxsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boxsdk-3.7.1.tar.gz tmp/boxsdk-3.7.2.tar.gz --markdown 20230526/b/boxsdk/3.7.1-3.7.2/diff.md --exclude *.pyd
+[2023-05-26 13:19:31] INFO root fetch - processPackages [dwh-oppfolging]: Downloading https://files.pythonhosted.org/packages/d7/53/d6168fd1cf2cce707cc3d8f9c54f278c6cb5a0b20d7af3d70b4516681c1b/dwh_oppfolging-0.0.9.tar.gz
+[2023-05-26 13:19:31] INFO root fetch - processPackages [dwh-oppfolging]: executing diffoscope
+[2023-05-26 13:19:31] INFO root fetch - processPackages [dwh-oppfolging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dwh_oppfolging-0.0.8.tar.gz tmp/dwh_oppfolging-0.0.9.tar.gz --markdown 20230526/d/dwh-oppfolging/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 13:19:32] INFO root fetch - processPackages [bosch-alarm-mode2]: Start processing: crawler-commons
+[2023-05-26 13:19:32] INFO root fetch - main [MainThread]: End processing [bosch-alarm-mode2]: success
+[2023-05-26 13:19:32] INFO root fetch - processPackages [crawler-commons]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 13:19:32] INFO root fetch - processPackages [crawler-commons]: executing diffoscope
+[2023-05-26 13:19:32] INFO root fetch - processPackages [crawler-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crawler_commons-0.0.8.tar.gz tmp/crawler_commons-0.0.9.tar.gz --markdown 20230526/c/crawler-commons/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 13:19:32] INFO root fetch - processPackages [ruamel.yaml]: Start processing: geotribu
+[2023-05-26 13:19:32] INFO root fetch - main [MainThread]: End processing [ruamel.yaml]: success
+[2023-05-26 13:19:32] INFO root fetch - processPackages [geotribu]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-26 13:19:33] INFO root fetch - processPackages [geotribu]: executing diffoscope
+[2023-05-26 13:19:33] INFO root fetch - processPackages [geotribu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geotribu-0.9.0.tar.gz tmp/geotribu-0.9.1.tar.gz --markdown 20230526/g/geotribu/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-26 13:19:33] INFO root fetch - processPackages [prefect-postgres-sensors]: Start processing: aish
+[2023-05-26 13:19:33] INFO root fetch - main [MainThread]: End processing [prefect-postgres-sensors]: success
+[2023-05-26 13:19:33] INFO root fetch - processPackages [aish]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-26 13:19:33] INFO root fetch - processPackages [regi]: Start processing: trading-utils-test
+[2023-05-26 13:19:33] INFO root fetch - main [MainThread]: End processing [regi]: success
+[2023-05-26 13:19:33] INFO root fetch - main [MainThread]: End processing [keystem]: success
+[2023-05-26 13:19:33] INFO root fetch - main [MainThread]: End processing [PyIpify]: success
+[2023-05-26 13:19:33] WARNING root fetch - processPackages [trading-utils-test]: Skipping, unable to determine old version
+[2023-05-26 13:19:33] INFO root fetch - main [MainThread]: End processing [trading-utils-test] error
+[2023-05-26 13:19:33] INFO root fetch - main [MainThread]: End processing [vbarongdatools001]: success
+[2023-05-26 13:19:33] INFO root fetch - processPackages [aish]: Downloading https://files.pythonhosted.org/packages/2b/d8/da70aad2f3521aa8fa49d27fa152348506d8a4df03cac0e2b651db213452/aish-0.1.6.tar.gz
+[2023-05-26 13:19:33] INFO root fetch - processPackages [aish]: executing diffoscope
+[2023-05-26 13:19:33] INFO root fetch - processPackages [aish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aish-0.1.5.tar.gz tmp/aish-0.1.6.tar.gz --markdown 20230526/a/aish/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-26 13:19:34] INFO root fetch - main [MainThread]: End processing [dwh-oppfolging]: success
+[2023-05-26 13:19:34] INFO root fetch - main [MainThread]: End processing [crawler-commons]: success
+[2023-05-26 13:19:35] INFO root fetch - main [MainThread]: End processing [boxsdk]: success
+[2023-05-26 13:19:35] INFO root fetch - main [MainThread]: End processing [aish]: success
+[2023-05-26 13:19:35] INFO root fetch - main [MainThread]: End processing [geotribu]: success
+[2023-05-26 13:19:47] INFO root fetch - main [MainThread]: End processing [earthkit-data]: success
+[2023-05-26 13:19:47] INFO root fetch - main [MainThread]: Store serial: [18261838]
