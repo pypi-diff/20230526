@@ -4094,3 +4094,47 @@
 [2023-05-26 03:53:14] INFO root fetch - processPackages [uwsift]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uwsift-1.2.3.tar.gz tmp/uwsift-2.0.0b0.tar.gz --markdown 20230526/u/uwsift/1.2.3-2.0.0b0/diff.md --exclude *.pyd
 [2023-05-26 03:53:21] INFO root fetch - main [MainThread]: End processing [uwsift]: success
 [2023-05-26 03:53:21] INFO root fetch - main [MainThread]: Store serial: [18256075]
+[2023-05-26 03:58:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18256075]
+[2023-05-26 03:58:30] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-26 03:58:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cn2int
+[2023-05-26 03:58:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cerc-geometry
+[2023-05-26 03:58:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: slurmrestapi
+[2023-05-26 03:58:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pycorekit
+[2023-05-26 03:58:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: slurmrestapi
+[2023-05-26 03:58:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: slurmrestapi
+[2023-05-26 03:58:30] INFO root fetch - processPackages [slurmrestapi]: New version: [0.0.39.1] Old Version: [0.0.38.1]
+[2023-05-26 03:58:30] INFO root fetch - processPackages [pycorekit]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-26 03:58:30] INFO root fetch - processPackages [cerc-geometry]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-05-26 03:58:30] INFO root fetch - processPackages [slurmrestapi]: New version: [0.0.39.1] Old Version: [0.0.38.1]
+[2023-05-26 03:58:30] INFO root fetch - processPackages [cn2int]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-26 03:58:30] INFO root fetch - processPackages [slurmrestapi]: New version: [0.0.39.1] Old Version: [0.0.38.1]
+[2023-05-26 03:58:31] INFO root fetch - processPackages [slurmrestapi]: Downloading https://files.pythonhosted.org/packages/92/bb/f5b472fc18f2b27d41df432a5facd785b424222965ff74f081a8b880dfb6/slurmrestapi-0.0.38.1.tar.gz
+[2023-05-26 03:58:31] INFO root fetch - processPackages [slurmrestapi]: Downloading https://files.pythonhosted.org/packages/92/bb/f5b472fc18f2b27d41df432a5facd785b424222965ff74f081a8b880dfb6/slurmrestapi-0.0.38.1.tar.gz
+[2023-05-26 03:58:31] INFO root fetch - processPackages [slurmrestapi]: Downloading https://files.pythonhosted.org/packages/92/bb/f5b472fc18f2b27d41df432a5facd785b424222965ff74f081a8b880dfb6/slurmrestapi-0.0.38.1.tar.gz
+[2023-05-26 03:58:31] INFO root fetch - processPackages [pycorekit]: Downloading https://files.pythonhosted.org/packages/6e/e5/c0f3a69870522b2720d5cfcba25a0a204af3c4b397cdab4f1d1b5c881264/pycorekit-0.0.2.tar.gz
+[2023-05-26 03:58:31] INFO root fetch - processPackages [cn2int]: Downloading https://files.pythonhosted.org/packages/73/2c/15cf5823faf4afc87db02655b0a3f218ee75494b5247d2a9719185ad846d/cn2int-0.2.2.tar.gz
+[2023-05-26 03:58:31] INFO root fetch - processPackages [cerc-geometry]: Downloading https://files.pythonhosted.org/packages/c2/63/8ccb473512692c4526f99966c169fb363b0e5da3dc5144b6beb438adec2c/cerc-geometry-2.1.2.tar.gz
+[2023-05-26 03:58:31] INFO root fetch - processPackages [cerc-geometry]: executing diffoscope
+[2023-05-26 03:58:31] INFO root fetch - processPackages [cerc-geometry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerc-geometry-2.1.1.tar.gz tmp/cerc-geometry-2.1.2.tar.gz --markdown 20230526/c/cerc-geometry/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-05-26 03:58:31] INFO root fetch - processPackages [slurmrestapi]: Downloading https://files.pythonhosted.org/packages/54/cb/961ddd6fc4bd424edb11dbf8ec5c2633018de4c7f2bd75cd08c0d1a5dd81/slurmrestapi-0.0.39.1.tar.gz
+[2023-05-26 03:58:31] INFO root fetch - processPackages [slurmrestapi]: Downloading https://files.pythonhosted.org/packages/54/cb/961ddd6fc4bd424edb11dbf8ec5c2633018de4c7f2bd75cd08c0d1a5dd81/slurmrestapi-0.0.39.1.tar.gz
+[2023-05-26 03:58:31] INFO root fetch - processPackages [slurmrestapi]: Downloading https://files.pythonhosted.org/packages/54/cb/961ddd6fc4bd424edb11dbf8ec5c2633018de4c7f2bd75cd08c0d1a5dd81/slurmrestapi-0.0.39.1.tar.gz
+[2023-05-26 03:58:31] INFO root fetch - processPackages [pycorekit]: Downloading https://files.pythonhosted.org/packages/66/89/20bce6a85d3e051930cc411ea2daba08705e2b11520b02c1e9b7d04de03b/pycorekit-0.0.3.tar.gz
+[2023-05-26 03:58:31] INFO root fetch - processPackages [slurmrestapi]: executing diffoscope
+[2023-05-26 03:58:31] INFO root fetch - processPackages [slurmrestapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slurmrestapi-0.0.38.1.tar.gz tmp/slurmrestapi-0.0.39.1.tar.gz --markdown 20230526/s/slurmrestapi/0.0.38.1-0.0.39.1/diff.md --exclude *.pyd
+[2023-05-26 03:58:31] INFO root fetch - processPackages [cn2int]: Downloading https://files.pythonhosted.org/packages/b1/d5/9fb02df58517edd96951d2f49193afafeab00997af896c0a303a08f5c961/cn2int-0.2.3.tar.gz
+[2023-05-26 03:58:31] INFO root fetch - processPackages [pycorekit]: executing diffoscope
+[2023-05-26 03:58:31] INFO root fetch - processPackages [pycorekit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycorekit-0.0.2.tar.gz tmp/pycorekit-0.0.3.tar.gz --markdown 20230526/p/pycorekit/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-26 03:58:31] INFO root fetch - processPackages [slurmrestapi]: executing diffoscope
+[2023-05-26 03:58:31] INFO root fetch - processPackages [slurmrestapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slurmrestapi-0.0.38.1.tar.gz tmp/slurmrestapi-0.0.39.1.tar.gz --markdown 20230526/s/slurmrestapi/0.0.38.1-0.0.39.1/diff.md --exclude *.pyd
+[2023-05-26 03:58:31] INFO root fetch - processPackages [slurmrestapi]: executing diffoscope
+[2023-05-26 03:58:31] INFO root fetch - processPackages [slurmrestapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slurmrestapi-0.0.38.1.tar.gz tmp/slurmrestapi-0.0.39.1.tar.gz --markdown 20230526/s/slurmrestapi/0.0.38.1-0.0.39.1/diff.md --exclude *.pyd
+[2023-05-26 03:58:31] INFO root fetch - processPackages [cn2int]: executing diffoscope
+[2023-05-26 03:58:31] INFO root fetch - processPackages [cn2int]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cn2int-0.2.2.tar.gz tmp/cn2int-0.2.3.tar.gz --markdown 20230526/c/cn2int/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-26 03:58:32] INFO root fetch - main [MainThread]: End processing [pycorekit]: success
+[2023-05-26 03:58:33] INFO root fetch - main [MainThread]: End processing [cerc-geometry]: success
+[2023-05-26 03:58:33] INFO root fetch - main [MainThread]: End processing [cn2int]: success
+[2023-05-26 03:58:37] INFO root fetch - main [MainThread]: End processing [slurmrestapi]: success
+[2023-05-26 03:58:37] INFO root fetch - main [MainThread]: End processing [slurmrestapi]: success
+[2023-05-26 03:58:39] INFO root fetch - main [MainThread]: End processing [slurmrestapi]: success
+[2023-05-26 03:58:39] INFO root fetch - main [MainThread]: Store serial: [18256089]
