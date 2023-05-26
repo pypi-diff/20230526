@@ -13007,3 +13007,77 @@
 [2023-05-26 12:24:23] INFO root fetch - main [MainThread]: End processing [oarepo-model-builder]: success
 [2023-05-26 12:24:37] INFO root fetch - main [MainThread]: End processing [indy-vdr]: success
 [2023-05-26 12:24:37] INFO root fetch - main [MainThread]: Store serial: [18261212]
+[2023-05-26 12:29:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18261212]
+[2023-05-26 12:29:51] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-26 12:29:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cf-deploy
+[2023-05-26 12:29:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nlu-tmp
+[2023-05-26 12:29:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: johnsnowlabs-for-databricks-tmp
+[2023-05-26 12:29:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ev-fleet-sim
+[2023-05-26 12:29:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: divent
+[2023-05-26 12:29:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyhamsys
+[2023-05-26 12:29:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: solarmach
+[2023-05-26 12:29:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mtbase
+[2023-05-26 12:29:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: panther
+[2023-05-26 12:29:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: openassetio
+[2023-05-26 12:29:51] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: New version: [4.4.9] Old Version: [4.4.8]
+[2023-05-26 12:29:51] INFO root fetch - processPackages [cf-deploy]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 12:29:51] INFO root fetch - processPackages [nlu-tmp]: New version: [4.5.0rc5] Old Version: [4.3.0rc7]
+[2023-05-26 12:29:51] INFO root fetch - processPackages [divent]: New version: [3.4.1] Old Version: [3.4.0]
+[2023-05-26 12:29:51] INFO root fetch - processPackages [ev-fleet-sim]: New version: [1.9.post3] Old Version: [1.9.post2]
+[2023-05-26 12:29:51] INFO root fetch - processPackages [solarmach]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-26 12:29:51] INFO root fetch - processPackages [pyhamsys]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-26 12:29:51] INFO root fetch - processPackages [openassetio]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2023-05-26 12:29:51] INFO root fetch - processPackages [mtbase]: New version: [4.5.202305261027] Old Version: [4.5.202305261023]
+[2023-05-26 12:29:51] INFO root fetch - processPackages [panther]: New version: [1.7.6] Old Version: [1.7.5]
+[2023-05-26 12:29:51] INFO root fetch - processPackages [cf-deploy]: executing diffoscope
+[2023-05-26 12:29:51] INFO root fetch - processPackages [cf-deploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cf_deploy-0.1.8.tar.gz tmp/cf_deploy-0.1.9.tar.gz --markdown 20230526/c/cf-deploy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 12:29:51] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: executing diffoscope
+[2023-05-26 12:29:51] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/johnsnowlabs_for_databricks_tmp-4.4.8.tar.gz tmp/johnsnowlabs_for_databricks_tmp-4.4.9.tar.gz --markdown 20230526/j/johnsnowlabs-for-databricks-tmp/4.4.8-4.4.9/diff.md --exclude *.pyd
+[2023-05-26 12:29:51] INFO root fetch - processPackages [nlu-tmp]: executing diffoscope
+[2023-05-26 12:29:51] INFO root fetch - processPackages [nlu-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlu_tmp-4.3.0rc7.tar.gz tmp/nlu_tmp-4.5.0rc5.tar.gz --markdown 20230526/n/nlu-tmp/4.3.0rc7-4.5.0rc5/diff.md --exclude *.pyd
+[2023-05-26 12:29:51] INFO root fetch - processPackages [divent]: Downloading https://files.pythonhosted.org/packages/93/9f/cda2dab6f49f116df4f49e823837f3695a550b73f93a29c3dc5a32a80581/divent-3.4.0.tar.gz
+[2023-05-26 12:29:51] INFO root fetch - processPackages [solarmach]: Downloading https://files.pythonhosted.org/packages/69/60/c998ecf4e3b40dcbf147745ce6ff8f6928af1914e872e262f0989789f01c/solarmach-0.2.1.tar.gz
+[2023-05-26 12:29:51] INFO root fetch - processPackages [pyhamsys]: Downloading https://files.pythonhosted.org/packages/34/b5/1193a054cd656492ad7d66af0ce339325683eda7aa49fe7708ab5d24cc05/pyhamsys-0.0.3.tar.gz
+[2023-05-26 12:29:51] INFO root fetch - processPackages [mtbase]: Downloading https://files.pythonhosted.org/packages/52/87/94e1958f7c11c14e35b6537dd4441b3def9a91b74aab2142a27b0e903790/mtbase-4.5.202305261027-py3-none-any.whl
+[2023-05-26 12:29:51] INFO root fetch - processPackages [panther]: Downloading https://files.pythonhosted.org/packages/d5/3b/2c34d1e94997f300d71348ea7dae0153b9a9a5b34d6c22fd10e2b81f4ae3/panther-1.7.5.tar.gz
+[2023-05-26 12:29:51] INFO root fetch - processPackages [mtbase]: executing diffoscope
+[2023-05-26 12:29:51] INFO root fetch - processPackages [mtbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtbase-4.5.202305261023-py3-none-any.whl.zip tmp/mtbase-4.5.202305261027-py3-none-any.whl.zip --markdown 20230526/m/mtbase/4.5.202305261023-4.5.202305261027/diff.md --exclude *.pyd
+[2023-05-26 12:29:52] INFO root fetch - processPackages [ev-fleet-sim]: executing diffoscope
+[2023-05-26 12:29:52] INFO root fetch - processPackages [ev-fleet-sim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ev-fleet-sim-1.9.post2.tar.gz tmp/ev-fleet-sim-1.9.post3.tar.gz --markdown 20230526/e/ev-fleet-sim/1.9.post2-1.9.post3/diff.md --exclude *.pyd
+[2023-05-26 12:29:52] INFO root fetch - processPackages [divent]: Downloading https://files.pythonhosted.org/packages/e6/79/396444172e6a4aeeb1ef865dd57b519a4343de8c16c1fa2fc1fa7c1e450c/divent-3.4.1.tar.gz
+[2023-05-26 12:29:52] INFO root fetch - processPackages [openassetio]: executing diffoscope
+[2023-05-26 12:29:52] INFO root fetch - processPackages [openassetio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openassetio-1.0.0a8-cp39-cp39-win_amd64.whl.zip tmp/openassetio-1.0.0a9-cp39-cp39-win_amd64.whl.zip --markdown 20230526/o/openassetio/1.0.0a8-1.0.0a9/diff.md --exclude *.pyd
+[2023-05-26 12:29:52] INFO root fetch - processPackages [divent]: executing diffoscope
+[2023-05-26 12:29:52] INFO root fetch - processPackages [panther]: Downloading https://files.pythonhosted.org/packages/f0/5a/86f03d08f757ae51553b8ecf5e4075028151475c45167f1af3152269c219/panther-1.7.6.tar.gz
+[2023-05-26 12:29:52] INFO root fetch - processPackages [divent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/divent-3.4.0.tar.gz tmp/divent-3.4.1.tar.gz --markdown 20230526/d/divent/3.4.0-3.4.1/diff.md --exclude *.pyd
+[2023-05-26 12:29:52] INFO root fetch - processPackages [panther]: executing diffoscope
+[2023-05-26 12:29:52] INFO root fetch - processPackages [panther]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panther-1.7.5.tar.gz tmp/panther-1.7.6.tar.gz --markdown 20230526/p/panther/1.7.5-1.7.6/diff.md --exclude *.pyd
+[2023-05-26 12:29:52] INFO root fetch - processPackages [pyhamsys]: Downloading https://files.pythonhosted.org/packages/85/b7/07bd718eabf76d2c30198b0ed24564748ae1231e9c21b0bbd12c6395dfa6/pyhamsys-0.0.4.tar.gz
+[2023-05-26 12:29:52] INFO root fetch - processPackages [solarmach]: Downloading https://files.pythonhosted.org/packages/81/b1/845c0a1f55130477b96277b12c7070a8d075b74d476604ba6760ab6f1464/solarmach-0.2.2.tar.gz
+[2023-05-26 12:29:52] INFO root fetch - processPackages [pyhamsys]: executing diffoscope
+[2023-05-26 12:29:52] INFO root fetch - processPackages [pyhamsys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhamsys-0.0.3.tar.gz tmp/pyhamsys-0.0.4.tar.gz --markdown 20230526/p/pyhamsys/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-26 12:29:52] INFO root fetch - processPackages [solarmach]: executing diffoscope
+[2023-05-26 12:29:52] INFO root fetch - processPackages [solarmach]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solarmach-0.2.1.tar.gz tmp/solarmach-0.2.2.tar.gz --markdown 20230526/s/solarmach/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-26 12:29:53] INFO root fetch - processPackages [cf-deploy]: Start processing: rmmbr
+[2023-05-26 12:29:53] INFO root fetch - main [MainThread]: End processing [cf-deploy]: success
+[2023-05-26 12:29:53] INFO root fetch - processPackages [rmmbr]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-26 12:29:53] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: Start processing: rudderclient
+[2023-05-26 12:29:53] INFO root fetch - main [MainThread]: End processing [johnsnowlabs-for-databricks-tmp]: success
+[2023-05-26 12:29:53] INFO root fetch - processPackages [rudderclient]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-05-26 12:29:53] INFO root fetch - processPackages [rmmbr]: Downloading https://files.pythonhosted.org/packages/f4/40/80fcb553b12d1dd930a100563943c42f742efc1117d4d13ce7e2fa227f9b/rmmbr-0.0.8.tar.gz
+[2023-05-26 12:29:53] INFO root fetch - processPackages [rmmbr]: executing diffoscope
+[2023-05-26 12:29:53] INFO root fetch - processPackages [rmmbr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rmmbr-0.0.7.tar.gz tmp/rmmbr-0.0.8.tar.gz --markdown 20230526/r/rmmbr/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-26 12:29:53] INFO root fetch - processPackages [rudderclient]: Downloading https://files.pythonhosted.org/packages/69/c4/5904855611a8fd43ffb88da7159d5bfbaafbf379490e488b51574228a0a6/rudderclient-1.4.2.tar.gz
+[2023-05-26 12:29:54] INFO root fetch - processPackages [rudderclient]: executing diffoscope
+[2023-05-26 12:29:54] INFO root fetch - processPackages [rudderclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rudderclient-1.4.1.tar.gz tmp/rudderclient-1.4.2.tar.gz --markdown 20230526/r/rudderclient/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-05-26 12:29:54] INFO root fetch - main [MainThread]: End processing [ev-fleet-sim]: success
+[2023-05-26 12:29:54] INFO root fetch - main [MainThread]: End processing [mtbase]: success
+[2023-05-26 12:29:54] INFO root fetch - main [MainThread]: End processing [openassetio]: success
+[2023-05-26 12:29:54] INFO root fetch - main [MainThread]: End processing [panther]: success
+[2023-05-26 12:29:54] INFO root fetch - main [MainThread]: End processing [pyhamsys]: success
+[2023-05-26 12:29:55] INFO root fetch - main [MainThread]: End processing [solarmach]: success
+[2023-05-26 12:29:55] INFO root fetch - main [MainThread]: End processing [rmmbr]: success
+[2023-05-26 12:29:56] INFO root fetch - main [MainThread]: End processing [rudderclient]: success
+[2023-05-26 12:29:56] INFO root fetch - main [MainThread]: End processing [divent]: success
+[2023-05-26 12:29:57] INFO root fetch - main [MainThread]: End processing [nlu-tmp]: success
+[2023-05-26 12:29:57] INFO root fetch - main [MainThread]: Store serial: [18261269]
