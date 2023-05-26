@@ -8641,3 +8641,34 @@
 [2023-05-26 07:51:58] INFO root fetch - main [MainThread]: End processing [nlu-tmp]: success
 [2023-05-26 07:51:59] INFO root fetch - main [MainThread]: End processing [pulumi-artifactory]: success
 [2023-05-26 07:51:59] INFO root fetch - main [MainThread]: Store serial: [18258339]
+[2023-05-26 07:57:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18258339]
+[2023-05-26 07:57:08] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-26 07:57:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: splight-cli
+[2023-05-26 07:57:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: GXN
+[2023-05-26 07:57:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yins-music
+[2023-05-26 07:57:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: honeybee-ph
+[2023-05-26 07:57:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: alibabacloud-ros-tran
+[2023-05-26 07:57:08] INFO root fetch - processPackages [yins-music]: New version: [0.0.7.dev3] Old Version: [0.0.7.dev2]
+[2023-05-26 07:57:08] INFO root fetch - processPackages [GXN]: New version: [0.0.28] Old Version: [0.0.27]
+[2023-05-26 07:57:08] INFO root fetch - processPackages [splight-cli]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-05-26 07:57:08] INFO root fetch - processPackages [honeybee-ph]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-26 07:57:08] INFO root fetch - processPackages [alibabacloud-ros-tran]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-26 07:57:09] INFO root fetch - processPackages [splight-cli]: Downloading https://files.pythonhosted.org/packages/e2/18/2fecbd3353d20cfbcd568fd4477ae48db2ce8f345e7628d12352c36a074b/splight-cli-2.3.8.tar.gz
+[2023-05-26 07:57:09] INFO root fetch - processPackages [yins-music]: Downloading https://files.pythonhosted.org/packages/38/e2/e59f8edaf99c9b41a6043d32a529c04613e975fa11714ae44a916aa3f5ca/yins-music-0.0.7.dev3.tar.gz
+[2023-05-26 07:57:09] INFO root fetch - processPackages [GXN]: Downloading https://files.pythonhosted.org/packages/3f/cb/30962979a806e1bbfb3318c5753c90d7bd233631ea5dfec557132c6537b1/GXN-0.0.27.tar.gz
+[2023-05-26 07:57:09] WARNING root fetch - processPackages [GXN]: Skipping package: exceeds size limit 54515175>=10485760
+[2023-05-26 07:57:09] INFO root fetch - main [MainThread]: End processing [GXN] error
+[2023-05-26 07:57:09] INFO root fetch - processPackages [yins-music]: executing diffoscope
+[2023-05-26 07:57:09] INFO root fetch - processPackages [yins-music]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yins-music-0.0.7.dev2.tar.gz tmp/yins-music-0.0.7.dev3.tar.gz --markdown 20230526/y/yins-music/0.0.7.dev2-0.0.7.dev3/diff.md --exclude *.pyd
+[2023-05-26 07:57:09] INFO root fetch - processPackages [alibabacloud-ros-tran]: executing diffoscope
+[2023-05-26 07:57:09] INFO root fetch - processPackages [alibabacloud-ros-tran]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud-ros-tran-0.3.8.tar.gz tmp/alibabacloud-ros-tran-0.3.9.tar.gz --markdown 20230526/a/alibabacloud-ros-tran/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-26 07:57:09] INFO root fetch - processPackages [honeybee-ph]: executing diffoscope
+[2023-05-26 07:57:09] INFO root fetch - processPackages [honeybee-ph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-ph-1.9.0.tar.gz tmp/honeybee-ph-1.9.1.tar.gz --markdown 20230526/h/honeybee-ph/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-26 07:57:09] INFO root fetch - processPackages [splight-cli]: Downloading https://files.pythonhosted.org/packages/00/cc/31c3fe41cd2bd1be86c2e70ea2ff58d854bdc6e3ae16d0a20b4d618c9db1/splight-cli-2.3.9.tar.gz
+[2023-05-26 07:57:09] INFO root fetch - processPackages [splight-cli]: executing diffoscope
+[2023-05-26 07:57:09] INFO root fetch - processPackages [splight-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splight-cli-2.3.8.tar.gz tmp/splight-cli-2.3.9.tar.gz --markdown 20230526/s/splight-cli/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-05-26 07:57:11] INFO root fetch - main [MainThread]: End processing [yins-music]: success
+[2023-05-26 07:57:11] INFO root fetch - main [MainThread]: End processing [honeybee-ph]: success
+[2023-05-26 07:57:11] INFO root fetch - main [MainThread]: End processing [splight-cli]: success
+[2023-05-26 07:57:11] INFO root fetch - main [MainThread]: End processing [alibabacloud-ros-tran]: success
+[2023-05-26 07:57:11] INFO root fetch - main [MainThread]: Store serial: [18258383]
