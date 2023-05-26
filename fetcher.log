@@ -17742,3 +17742,65 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 16:35:07] INFO root fetch - main [MainThread]: End processing [indico-plugin-ursh]: success
 [2023-05-26 16:35:12] INFO root fetch - main [MainThread]: End processing [chainlit]: success
 [2023-05-26 16:35:12] INFO root fetch - main [MainThread]: Store serial: [18264195]
+[2023-05-26 16:40:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18264195]
+[2023-05-26 16:40:21] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-26 16:40:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datadog-checks-base
+[2023-05-26 16:40:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: indico-plugin-vc-zoom
+[2023-05-26 16:40:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ddev
+[2023-05-26 16:40:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stabilityai
+[2023-05-26 16:40:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: datadog-checks-dev
+[2023-05-26 16:40:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pycellbase
+[2023-05-26 16:40:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wheeel
+[2023-05-26 16:40:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sciform
+[2023-05-26 16:40:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: griffon
+[2023-05-26 16:40:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyqt5span
+[2023-05-26 16:40:21] WARNING root fetch - processPackages [stabilityai]: Skipping, unable to determine old version
+[2023-05-26 16:40:21] INFO root fetch - main [MainThread]: End processing [stabilityai] error
+[2023-05-26 16:40:21] INFO root fetch - processPackages [ddev]: New version: [2.1.0] Old Version: [2.0.0]
+[2023-05-26 16:40:21] INFO root fetch - processPackages [indico-plugin-vc-zoom]: New version: [3.2.2] Old Version: [3.2.1]
+[2023-05-26 16:40:21] INFO root fetch - processPackages [pycellbase]: New version: [5.5.0] Old Version: [5.4.0]
+[2023-05-26 16:40:21] INFO root fetch - processPackages [wheeel]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-26 16:40:21] WARNING root fetch - processPackages [sciform]: Skipping, unable to determine old version
+[2023-05-26 16:40:21] INFO root fetch - main [MainThread]: End processing [sciform] error
+[2023-05-26 16:40:21] INFO root fetch - processPackages [datadog-checks-dev]: New version: [9.4.1] Old Version: [9.4.0]
+[2023-05-26 16:40:21] INFO root fetch - processPackages [datadog-checks-base]: New version: [9.6.0] Old Version: [9.5.0]
+[2023-05-26 16:40:22] INFO root fetch - processPackages [griffon]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-26 16:40:22] INFO root fetch - processPackages [pyqt5span]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-26 16:40:22] INFO root fetch - processPackages [pycellbase]: Downloading https://files.pythonhosted.org/packages/8c/32/8f150abdf909a3a5b4018d9fa97e81a796eac4dc2175708c95c98e25a71d/pycellbase-5.4.0.tar.gz
+[2023-05-26 16:40:22] INFO root fetch - processPackages [wheeel]: Downloading https://files.pythonhosted.org/packages/18/08/82065a6512f87f9db0c7f1530fdd2aba2c75a455ca695e3109ed7c8060b0/wheeel-0.0.1.tar.gz
+[2023-05-26 16:40:22] INFO root fetch - processPackages [indico-plugin-vc-zoom]: Downloading https://files.pythonhosted.org/packages/29/d9/6307821265d981b7c73e38ab352af99c529f75c7d1dec017e2d742533b93/indico_plugin_vc_zoom-3.2.1-py3-none-any.whl
+[2023-05-26 16:40:22] INFO root fetch - processPackages [datadog-checks-base]: Downloading https://files.pythonhosted.org/packages/43/33/0058df29cd2f889d75fd3b628c22d38554e17b2fe2867f0de729b045318d/datadog_checks_base-9.5.0-py2.py3-none-any.whl
+[2023-05-26 16:40:22] INFO root fetch - processPackages [ddev]: Downloading https://files.pythonhosted.org/packages/9e/15/304972120fdbfccc97087f52e95154d8706184ee522923a86bd77b142b21/ddev-2.0.0.tar.gz
+[2023-05-26 16:40:22] INFO root fetch - processPackages [pyqt5span]: Downloading https://files.pythonhosted.org/packages/93/77/f90632ba65ea8a76ee3eb23d9f2a4d7335f6739558caf83d3738f683b463/pyqt5span-0.1.1.tar.gz
+[2023-05-26 16:40:22] INFO root fetch - processPackages [datadog-checks-dev]: executing diffoscope
+[2023-05-26 16:40:22] INFO root fetch - processPackages [datadog-checks-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datadog_checks_dev-9.4.0-py2.py3-none-any.whl.zip tmp/datadog_checks_dev-9.4.1-py2.py3-none-any.whl.zip --markdown 20230526/d/datadog-checks-dev/9.4.0-9.4.1/diff.md --exclude *.pyd
+[2023-05-26 16:40:22] INFO root fetch - processPackages [griffon]: Downloading https://files.pythonhosted.org/packages/6c/3a/a89ade86cacdc39f1c7cc974bc1e60593f1cc3fd045cfaf8a1486f4a9fc4/griffon-0.2.5.tar.gz
+[2023-05-26 16:40:22] INFO root fetch - processPackages [wheeel]: Downloading https://files.pythonhosted.org/packages/6b/94/be876fa145f09f71bbf7783e039424c4788e5e90c593f5889ca0d3723b1b/wheeel-0.0.2.tar.gz
+[2023-05-26 16:40:22] INFO root fetch - processPackages [indico-plugin-vc-zoom]: Downloading https://files.pythonhosted.org/packages/1e/ac/bb0cf98f559dfe9ea99ebfc9d3c02e5d46b3e0daa3da84675207116ffec2/indico_plugin_vc_zoom-3.2.2-py3-none-any.whl
+[2023-05-26 16:40:22] INFO root fetch - processPackages [wheeel]: executing diffoscope
+[2023-05-26 16:40:22] INFO root fetch - processPackages [wheeel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wheeel-0.0.1.tar.gz tmp/wheeel-0.0.2.tar.gz --markdown 20230526/w/wheeel/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-26 16:40:22] INFO root fetch - processPackages [griffon]: executing diffoscope
+[2023-05-26 16:40:22] INFO root fetch - processPackages [griffon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griffon-0.2.4.tar.gz tmp/griffon-0.2.5.tar.gz --markdown 20230526/g/griffon/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-26 16:40:22] INFO root fetch - processPackages [pycellbase]: Downloading https://files.pythonhosted.org/packages/f1/32/49f42940f7665cde11ccf43ffcfb0ddf7892c803c8c7560e91d53079be67/pycellbase-5.5.0.tar.gz
+[2023-05-26 16:40:22] INFO root fetch - processPackages [pyqt5span]: Downloading https://files.pythonhosted.org/packages/7d/85/76cba2533779b5104027ad7acd07877b3405188fdb6fce5699e43b76b78a/pyqt5span-0.1.2.tar.gz
+[2023-05-26 16:40:22] INFO root fetch - processPackages [ddev]: Downloading https://files.pythonhosted.org/packages/e6/9c/7b9c2bac09ab97380c79e9abee49f5a667ebf081a1185b87d865d1626649/ddev-2.1.0.tar.gz
+[2023-05-26 16:40:22] INFO root fetch - processPackages [indico-plugin-vc-zoom]: executing diffoscope
+[2023-05-26 16:40:22] INFO root fetch - processPackages [indico-plugin-vc-zoom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indico_plugin_vc_zoom-3.2.1-py3-none-any.whl.zip tmp/indico_plugin_vc_zoom-3.2.2-py3-none-any.whl.zip --markdown 20230526/i/indico-plugin-vc-zoom/3.2.1-3.2.2/diff.md --exclude *.pyd
+[2023-05-26 16:40:22] INFO root fetch - processPackages [datadog-checks-base]: Downloading https://files.pythonhosted.org/packages/85/a5/da8ded74bcfc838d21b13ba266ea5256690703a778c52ecefea6536ae83e/datadog_checks_base-9.6.0-py2.py3-none-any.whl
+[2023-05-26 16:40:22] INFO root fetch - processPackages [pyqt5span]: executing diffoscope
+[2023-05-26 16:40:22] INFO root fetch - processPackages [pyqt5span]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqt5span-0.1.1.tar.gz tmp/pyqt5span-0.1.2.tar.gz --markdown 20230526/p/pyqt5span/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-26 16:40:22] INFO root fetch - processPackages [pycellbase]: executing diffoscope
+[2023-05-26 16:40:22] INFO root fetch - processPackages [pycellbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycellbase-5.4.0.tar.gz tmp/pycellbase-5.5.0.tar.gz --markdown 20230526/p/pycellbase/5.4.0-5.5.0/diff.md --exclude *.pyd
+[2023-05-26 16:40:22] INFO root fetch - processPackages [ddev]: executing diffoscope
+[2023-05-26 16:40:22] INFO root fetch - processPackages [ddev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddev-2.0.0.tar.gz tmp/ddev-2.1.0.tar.gz --markdown 20230526/d/ddev/2.0.0-2.1.0/diff.md --exclude *.pyd
+[2023-05-26 16:40:22] INFO root fetch - processPackages [datadog-checks-base]: executing diffoscope
+[2023-05-26 16:40:22] INFO root fetch - processPackages [datadog-checks-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datadog_checks_base-9.5.0-py2.py3-none-any.whl.zip tmp/datadog_checks_base-9.6.0-py2.py3-none-any.whl.zip --markdown 20230526/d/datadog-checks-base/9.5.0-9.6.0/diff.md --exclude *.pyd
+[2023-05-26 16:40:24] INFO root fetch - main [MainThread]: End processing [wheeel]: success
+[2023-05-26 16:40:24] INFO root fetch - main [MainThread]: End processing [pyqt5span]: success
+[2023-05-26 16:40:24] INFO root fetch - main [MainThread]: End processing [griffon]: success
+[2023-05-26 16:40:24] INFO root fetch - main [MainThread]: End processing [pycellbase]: success
+[2023-05-26 16:40:25] INFO root fetch - main [MainThread]: End processing [ddev]: success
+[2023-05-26 16:40:25] INFO root fetch - main [MainThread]: End processing [datadog-checks-dev]: success
+[2023-05-26 16:40:25] INFO root fetch - main [MainThread]: End processing [datadog-checks-base]: success
+[2023-05-26 16:40:30] INFO root fetch - main [MainThread]: End processing [indico-plugin-vc-zoom]: success
+[2023-05-26 16:40:30] INFO root fetch - main [MainThread]: Store serial: [18264230]
