@@ -8765,3 +8765,59 @@
 [2023-05-26 08:07:36] INFO root fetch - main [MainThread]: End processing [pulumi-akamai]: success
 [2023-05-26 08:07:38] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2023-05-26 08:07:38] INFO root fetch - main [MainThread]: Store serial: [18258444]
+[2023-05-26 08:12:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18258444]
+[2023-05-26 08:12:48] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-26 08:12:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-consul
+[2023-05-26 08:12:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-cloudamqp
+[2023-05-26 08:12:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dfimagetools
+[2023-05-26 08:12:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gcat-runner
+[2023-05-26 08:12:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pipen-board
+[2023-05-26 08:12:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kuto
+[2023-05-26 08:12:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: code-snapshot
+[2023-05-26 08:12:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vstutils
+[2023-05-26 08:12:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: skill-sdk
+[2023-05-26 08:12:48] INFO root fetch - processPackages [pulumi-cloudamqp]: New version: [3.9.2] Old Version: [3.9.1]
+[2023-05-26 08:12:48] WARNING root fetch - processPackages [gcat-runner]: Skipping, unable to determine old version
+[2023-05-26 08:12:48] INFO root fetch - main [MainThread]: End processing [gcat-runner] error
+[2023-05-26 08:12:48] INFO root fetch - processPackages [code-snapshot]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-26 08:12:48] INFO root fetch - processPackages [pulumi-consul]: New version: [3.9.0a1685078770] Old Version: [3.9.0a1684387460]
+[2023-05-26 08:12:48] INFO root fetch - processPackages [dfimagetools]: New version: [20230526] Old Version: [20230410]
+[2023-05-26 08:12:48] INFO root fetch - processPackages [kuto]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 08:12:48] INFO root fetch - processPackages [pipen-board]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-26 08:12:48] INFO root fetch - processPackages [vstutils]: New version: [5.4.9] Old Version: [5.4.8]
+[2023-05-26 08:12:48] INFO root fetch - processPackages [skill-sdk]: New version: [2.1] Old Version: [2.0b3]
+[2023-05-26 08:12:48] INFO root fetch - processPackages [kuto]: executing diffoscope
+[2023-05-26 08:12:48] INFO root fetch - processPackages [kuto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kuto-0.0.8-py3-none-any.whl.zip tmp/kuto-0.0.9.tar.gz --markdown 20230526/k/kuto/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 08:12:48] INFO root fetch - processPackages [dfimagetools]: Downloading https://files.pythonhosted.org/packages/5d/a3/aaa5c812e4d8a82c090bf69c5c96e502a0bc27a16fe3ffe18d7c0c1230bb/dfimagetools-20230410.tar.gz
+[2023-05-26 08:12:48] INFO root fetch - processPackages [code-snapshot]: Downloading https://files.pythonhosted.org/packages/a2/dc/5e1202546a8d94e39ebf62433e7bc478e5e2985627060155df8087177873/code-snapshot-0.2.3.tar.gz
+[2023-05-26 08:12:48] INFO root fetch - processPackages [vstutils]: Downloading https://files.pythonhosted.org/packages/c3/e9/d4abad63dcfc1004b5c1557a027354436691c249a98f05da7bf8d54b856f/vstutils-5.4.9.tar.gz
+[2023-05-26 08:12:48] INFO root fetch - processPackages [pipen-board]: Downloading https://files.pythonhosted.org/packages/46/82/27bfdee1d5992015a39c3e0667af2d741842be2846e29a7e05a25774e50d/pipen_board-0.2.3.tar.gz
+[2023-05-26 08:12:48] INFO root fetch - processPackages [skill-sdk]: Downloading https://files.pythonhosted.org/packages/77/93/ad868c99da93c4b5a32458b6a8793f7105d28079d93a9a9d61e2c7aa3834/skill-sdk-2.0b3.tar.gz
+[2023-05-26 08:12:48] INFO root fetch - processPackages [vstutils]: executing diffoscope
+[2023-05-26 08:12:48] INFO root fetch - processPackages [vstutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vstutils-5.4.8.tar.gz tmp/vstutils-5.4.9.tar.gz --markdown 20230526/v/vstutils/5.4.8-5.4.9/diff.md --exclude *.pyd
+[2023-05-26 08:12:48] INFO root fetch - processPackages [pulumi-consul]: Downloading https://files.pythonhosted.org/packages/c8/d5/6aa5e38efe0b4aa3f659fd9ff5ad16a5cd3c5fc035397f88f96fb123ab73/pulumi_consul-3.9.0a1685078770.tar.gz
+[2023-05-26 08:12:48] INFO root fetch - processPackages [pulumi-cloudamqp]: executing diffoscope
+[2023-05-26 08:12:48] INFO root fetch - processPackages [pulumi-cloudamqp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_cloudamqp-3.9.1.tar.gz tmp/pulumi_cloudamqp-3.9.2.tar.gz --markdown 20230526/p/pulumi-cloudamqp/3.9.1-3.9.2/diff.md --exclude *.pyd
+[2023-05-26 08:12:48] INFO root fetch - processPackages [dfimagetools]: Downloading https://files.pythonhosted.org/packages/28/95/3ae28057eaaf0e3bd4527a30e97cc5908b90d9ca1231a4931e1589a8ab26/dfimagetools-20230526.tar.gz
+[2023-05-26 08:12:48] INFO root fetch - processPackages [pulumi-consul]: executing diffoscope
+[2023-05-26 08:12:48] INFO root fetch - processPackages [pulumi-consul]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_consul-3.9.0a1684387460.tar.gz tmp/pulumi_consul-3.9.0a1685078770.tar.gz --markdown 20230526/p/pulumi-consul/3.9.0a1684387460-3.9.0a1685078770/diff.md --exclude *.pyd
+[2023-05-26 08:12:48] INFO root fetch - processPackages [pipen-board]: Downloading https://files.pythonhosted.org/packages/17/e3/b260bbb093b315ad770d707753b9263f532a79909c56f70d9ec047434dcd/pipen_board-0.2.4.tar.gz
+[2023-05-26 08:12:48] INFO root fetch - processPackages [dfimagetools]: executing diffoscope
+[2023-05-26 08:12:48] INFO root fetch - processPackages [dfimagetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dfimagetools-20230410.tar.gz tmp/dfimagetools-20230526.tar.gz --markdown 20230526/d/dfimagetools/20230410-20230526/diff.md --exclude *.pyd
+[2023-05-26 08:12:48] INFO root fetch - processPackages [code-snapshot]: Downloading https://files.pythonhosted.org/packages/e3/67/505b5cc997e5ada28d9ce847b3cc73a794415c018160df5b9b7cd0cdb43a/code-snapshot-0.2.4.tar.gz
+[2023-05-26 08:12:48] INFO root fetch - processPackages [pipen-board]: executing diffoscope
+[2023-05-26 08:12:48] INFO root fetch - processPackages [pipen-board]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen_board-0.2.3.tar.gz tmp/pipen_board-0.2.4.tar.gz --markdown 20230526/p/pipen-board/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-26 08:12:48] INFO root fetch - processPackages [code-snapshot]: executing diffoscope
+[2023-05-26 08:12:48] INFO root fetch - processPackages [code-snapshot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/code-snapshot-0.2.3.tar.gz tmp/code-snapshot-0.2.4.tar.gz --markdown 20230526/c/code-snapshot/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-26 08:12:49] INFO root fetch - processPackages [skill-sdk]: Downloading https://files.pythonhosted.org/packages/33/e3/02e7ee7d1697567f1e54ece434609d63ce0220f68a9f118c1b99db6a48fc/skill-sdk-2.1.tar.gz
+[2023-05-26 08:12:49] INFO root fetch - processPackages [skill-sdk]: executing diffoscope
+[2023-05-26 08:12:49] INFO root fetch - processPackages [skill-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skill-sdk-2.0b3.tar.gz tmp/skill-sdk-2.1.tar.gz --markdown 20230526/s/skill-sdk/2.0b3-2.1/diff.md --exclude *.pyd
+[2023-05-26 08:12:49] INFO root fetch - main [MainThread]: End processing [kuto]: success
+[2023-05-26 08:12:50] INFO root fetch - main [MainThread]: End processing [pulumi-consul]: success
+[2023-05-26 08:12:50] INFO root fetch - main [MainThread]: End processing [dfimagetools]: success
+[2023-05-26 08:12:51] INFO root fetch - main [MainThread]: End processing [vstutils]: success
+[2023-05-26 08:12:51] INFO root fetch - main [MainThread]: End processing [skill-sdk]: success
+[2023-05-26 08:12:51] INFO root fetch - main [MainThread]: End processing [code-snapshot]: success
+[2023-05-26 08:12:52] INFO root fetch - main [MainThread]: End processing [pulumi-cloudamqp]: success
+[2023-05-26 08:12:57] INFO root fetch - main [MainThread]: End processing [pipen-board]: success
+[2023-05-26 08:12:57] INFO root fetch - main [MainThread]: Store serial: [18258472]
