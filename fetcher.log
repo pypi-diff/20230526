@@ -17304,3 +17304,87 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 16:12:47] INFO root fetch - main [MainThread]: End processing [qontract-reconcile]: success
 [2023-05-26 16:13:04] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
 [2023-05-26 16:13:04] INFO root fetch - main [MainThread]: Store serial: [18263958]
+[2023-05-26 16:18:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18263958]
+[2023-05-26 16:18:16] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-26 16:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: microarch
+[2023-05-26 16:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ob-dj-store
+[2023-05-26 16:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: netdoc
+[2023-05-26 16:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: frankAllSkyCam
+[2023-05-26 16:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kthbuild
+[2023-05-26 16:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bbrl-gymnasium
+[2023-05-26 16:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: uquake
+[2023-05-26 16:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ada-url
+[2023-05-26 16:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ipsocgen
+[2023-05-26 16:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: loqusdb
+[2023-05-26 16:18:16] INFO root fetch - processPackages [ob-dj-store]: New version: [0.0.9.8] Old Version: [0.0.9.7]
+[2023-05-26 16:18:16] INFO root fetch - processPackages [loqusdb]: New version: [2.7.1] Old Version: [2.7.0]
+[2023-05-26 16:18:16] INFO root fetch - processPackages [ipsocgen]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 16:18:16] INFO root fetch - processPackages [ada-url]: New version: [1.0.0] Old Version: [0.1.0]
+[2023-05-26 16:18:16] INFO root fetch - processPackages [microarch]: New version: [0.1.1] Old Version: [0.0.9]
+[2023-05-26 16:18:16] INFO root fetch - processPackages [netdoc]: New version: [0.9.71] Old Version: [0.9.70]
+[2023-05-26 16:18:16] INFO root fetch - processPackages [kthbuild]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-05-26 16:18:16] WARNING root fetch - processPackages [frankAllSkyCam]: Skipping, unable to determine old version
+[2023-05-26 16:18:16] INFO root fetch - processPackages [frankAllSkyCam]: Start processing: leanit-mweb
+[2023-05-26 16:18:16] INFO root fetch - main [MainThread]: End processing [frankAllSkyCam] error
+[2023-05-26 16:18:16] WARNING root fetch - processPackages [bbrl-gymnasium]: Skipping, unable to determine old version
+[2023-05-26 16:18:16] INFO root fetch - processPackages [bbrl-gymnasium]: Start processing: preppy
+[2023-05-26 16:18:16] INFO root fetch - main [MainThread]: End processing [bbrl-gymnasium] error
+[2023-05-26 16:18:16] INFO root fetch - processPackages [uquake]: New version: [1.4.6] Old Version: [1.4.5]
+[2023-05-26 16:18:16] INFO root fetch - processPackages [leanit-mweb]: New version: [23.5.9] Old Version: [23.5.8]
+[2023-05-26 16:18:16] INFO root fetch - processPackages [preppy]: New version: [4.2.2] Old Version: [4.2.1]
+[2023-05-26 16:18:16] INFO root fetch - processPackages [ipsocgen]: Downloading https://files.pythonhosted.org/packages/11/54/e76ec133a215133bc0add89fbba0f3e5d9473aaf7a80771670485d2081b0/ipsocgen-0.1.8.tar.gz
+[2023-05-26 16:18:16] INFO root fetch - processPackages [microarch]: Downloading https://files.pythonhosted.org/packages/33/98/70e2cac959bf42f2f29cab074ad871477755447053961367764163d84302/microarch-0.1.1.tar.gz
+[2023-05-26 16:18:16] INFO root fetch - processPackages [ada-url]: Downloading https://files.pythonhosted.org/packages/85/46/6c124665b00407d2e3867a5e6501b39d940eb0c16e379e95db80023501b6/ada-url-0.1.0.tar.gz
+[2023-05-26 16:18:16] INFO root fetch - processPackages [netdoc]: Downloading https://files.pythonhosted.org/packages/c5/bc/813dccd0af76852b3fea6f6f9ba3ebc578c1efa3980ff3e4676ac88f2077/netdoc-0.9.71.tar.gz
+[2023-05-26 16:18:16] INFO root fetch - processPackages [uquake]: Downloading https://files.pythonhosted.org/packages/cc/e7/160673d86a12517ce4b55bad3e2c8bed746e15d7a1cff9f079af6fb96f54/uquake-1.4.6.tar.gz
+[2023-05-26 16:18:16] INFO root fetch - processPackages [loqusdb]: Downloading https://files.pythonhosted.org/packages/24/84/adabec698190806f43baedfd3d35f891b0fe496b4c0099d7a1b282561d77/loqusdb-2.7.1.tar.gz
+[2023-05-26 16:18:16] INFO root fetch - processPackages [preppy]: Downloading https://files.pythonhosted.org/packages/b3/ae/820f2c088374eaa5584951fc73e1f6285451ef0b4886098760b5e5e7ed23/preppy-4.2.1-py2.py3-none-any.whl
+[2023-05-26 16:18:16] INFO root fetch - processPackages [kthbuild]: Downloading https://files.pythonhosted.org/packages/e2/a2/bb64ca9ce376d8190fa78fd3939fad818098521a94d6c13af3ae93d57ef2/kthbuild-2.9.1.tar.gz
+[2023-05-26 16:18:16] INFO root fetch - processPackages [ob-dj-store]: executing diffoscope
+[2023-05-26 16:18:16] INFO root fetch - processPackages [ob-dj-store]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ob-dj-store-0.0.9.7.tar.gz tmp/ob-dj-store-0.0.9.8.tar.gz --markdown 20230526/o/ob-dj-store/0.0.9.7-0.0.9.8/diff.md --exclude *.pyd
+[2023-05-26 16:18:16] INFO root fetch - processPackages [leanit-mweb]: Downloading https://files.pythonhosted.org/packages/cb/c6/a5bb1c5a00d9a73e92ee6e0ebf72f93285b9d9a4b6d97cc1b73021b230a0/leanit-mweb-23.5.9.tar.gz
+[2023-05-26 16:18:16] INFO root fetch - processPackages [uquake]: executing diffoscope
+[2023-05-26 16:18:16] INFO root fetch - processPackages [uquake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uquake-1.4.5.tar.gz tmp/uquake-1.4.6.tar.gz --markdown 20230526/u/uquake/1.4.5-1.4.6/diff.md --exclude *.pyd
+[2023-05-26 16:18:16] INFO root fetch - processPackages [microarch]: executing diffoscope
+[2023-05-26 16:18:16] INFO root fetch - processPackages [microarch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/microarch-0.0.9.tar.gz tmp/microarch-0.1.1.tar.gz --markdown 20230526/m/microarch/0.0.9-0.1.1/diff.md --exclude *.pyd
+[2023-05-26 16:18:17] INFO root fetch - processPackages [loqusdb]: executing diffoscope
+[2023-05-26 16:18:17] INFO root fetch - processPackages [loqusdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loqusdb-2.7.0.tar.gz tmp/loqusdb-2.7.1.tar.gz --markdown 20230526/l/loqusdb/2.7.0-2.7.1/diff.md --exclude *.pyd
+[2023-05-26 16:18:17] INFO root fetch - processPackages [netdoc]: executing diffoscope
+[2023-05-26 16:18:17] INFO root fetch - processPackages [netdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netdoc-0.9.70.tar.gz tmp/netdoc-0.9.71.tar.gz --markdown 20230526/n/netdoc/0.9.70-0.9.71/diff.md --exclude *.pyd
+[2023-05-26 16:18:17] INFO root fetch - processPackages [kthbuild]: executing diffoscope
+[2023-05-26 16:18:17] INFO root fetch - processPackages [kthbuild]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kthbuild-2.9.0.tar.gz tmp/kthbuild-2.9.1.tar.gz --markdown 20230526/k/kthbuild/2.9.0-2.9.1/diff.md --exclude *.pyd
+[2023-05-26 16:18:17] INFO root fetch - processPackages [leanit-mweb]: executing diffoscope
+[2023-05-26 16:18:17] INFO root fetch - processPackages [leanit-mweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leanit-mweb-23.5.8.tar.gz tmp/leanit-mweb-23.5.9.tar.gz --markdown 20230526/l/leanit-mweb/23.5.8-23.5.9/diff.md --exclude *.pyd
+[2023-05-26 16:18:17] INFO root fetch - processPackages [preppy]: Downloading https://files.pythonhosted.org/packages/a1/1f/ebf7aebe9c691c0cb42dcdaaf742b5561e6a8cf788e92b588b52344ea72e/preppy-4.2.2-py2.py3-none-any.whl
+[2023-05-26 16:18:17] INFO root fetch - processPackages [ipsocgen]: Downloading https://files.pythonhosted.org/packages/65/4b/20da524e91684573355257160a62b7f893d4175024d3f8ef3e478b720b50/ipsocgen-0.1.9.tar.gz
+[2023-05-26 16:18:17] INFO root fetch - processPackages [ada-url]: Downloading https://files.pythonhosted.org/packages/4e/2f/8b7d61d65c89735c303eaa834c87337a8d4173fd2b7e654404c6d909ddf9/ada-url-1.0.0.tar.gz
+[2023-05-26 16:18:17] INFO root fetch - processPackages [preppy]: executing diffoscope
+[2023-05-26 16:18:17] INFO root fetch - processPackages [preppy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/preppy-4.2.1-py2.py3-none-any.whl.zip tmp/preppy-4.2.2-py2.py3-none-any.whl.zip --markdown 20230526/p/preppy/4.2.1-4.2.2/diff.md --exclude *.pyd
+[2023-05-26 16:18:17] INFO root fetch - processPackages [ipsocgen]: executing diffoscope
+[2023-05-26 16:18:17] INFO root fetch - processPackages [ipsocgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipsocgen-0.1.8.tar.gz tmp/ipsocgen-0.1.9.tar.gz --markdown 20230526/i/ipsocgen/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 16:18:17] INFO root fetch - processPackages [ada-url]: executing diffoscope
+[2023-05-26 16:18:17] INFO root fetch - processPackages [ada-url]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ada-url-0.1.0.tar.gz tmp/ada-url-1.0.0.tar.gz --markdown 20230526/a/ada-url/0.1.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-26 16:18:18] INFO root fetch - processPackages [kthbuild]: Start processing: digital-unit
+[2023-05-26 16:18:18] INFO root fetch - main [MainThread]: End processing [kthbuild]: success
+[2023-05-26 16:18:18] INFO root fetch - processPackages [digital-unit]: New version: [1.5b0] Old Version: [1.5.2]
+[2023-05-26 16:18:19] INFO root fetch - processPackages [digital-unit]: Downloading https://files.pythonhosted.org/packages/85/8e/892cf1a4a6c12ec345f05c984b69b6818ee55b07bb31c67708badbd1c11e/digital_unit-1.5.2.tar.gz
+[2023-05-26 16:18:19] INFO root fetch - processPackages [microarch]: Start processing: egnn-jax
+[2023-05-26 16:18:19] INFO root fetch - main [MainThread]: End processing [microarch]: success
+[2023-05-26 16:18:19] INFO root fetch - processPackages [egnn-jax]: New version: [0.3] Old Version: [0.2]
+[2023-05-26 16:18:19] INFO root fetch - processPackages [digital-unit]: executing diffoscope
+[2023-05-26 16:18:19] INFO root fetch - processPackages [digital-unit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digital_unit-1.5.2.tar.gz tmp/digital_unit-1.5b0.tar.gz --markdown 20230526/d/digital-unit/1.5.2-1.5b0/diff.md --exclude *.pyd
+[2023-05-26 16:18:19] INFO root fetch - main [MainThread]: End processing [ob-dj-store]: success
+[2023-05-26 16:18:19] INFO root fetch - processPackages [egnn-jax]: Downloading https://files.pythonhosted.org/packages/9d/a1/f97ad3155330067450dc5b4004dac8337b739265d9bf7a75403124d27e90/egnn_jax-0.2.tar.gz
+[2023-05-26 16:18:19] INFO root fetch - main [MainThread]: End processing [leanit-mweb]: success
+[2023-05-26 16:18:19] INFO root fetch - processPackages [egnn-jax]: Downloading https://files.pythonhosted.org/packages/d4/0a/0f7274851cb5d07ae73527ae105197f72b14a242f17b3f1aedbb9e1a866f/egnn_jax-0.3.tar.gz
+[2023-05-26 16:18:19] INFO root fetch - main [MainThread]: End processing [loqusdb]: success
+[2023-05-26 16:18:19] INFO root fetch - main [MainThread]: End processing [preppy]: success
+[2023-05-26 16:18:20] INFO root fetch - main [MainThread]: End processing [uquake]: success
+[2023-05-26 16:18:20] INFO root fetch - processPackages [egnn-jax]: executing diffoscope
+[2023-05-26 16:18:20] INFO root fetch - processPackages [egnn-jax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/egnn_jax-0.2.tar.gz tmp/egnn_jax-0.3.tar.gz --markdown 20230526/e/egnn-jax/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-26 16:18:20] INFO root fetch - main [MainThread]: End processing [ipsocgen]: success
+[2023-05-26 16:18:20] INFO root fetch - main [MainThread]: End processing [netdoc]: success
+[2023-05-26 16:18:21] INFO root fetch - main [MainThread]: End processing [digital-unit]: success
+[2023-05-26 16:18:21] INFO root fetch - main [MainThread]: End processing [egnn-jax]: success
+[2023-05-26 16:18:25] INFO root fetch - main [MainThread]: End processing [ada-url]: success
+[2023-05-26 16:18:25] INFO root fetch - main [MainThread]: Store serial: [18264018]
