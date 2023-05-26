@@ -12909,3 +12909,101 @@
 [2023-05-26 12:19:07] INFO root fetch - main [MainThread]: End processing [nlu-tmp]: success
 [2023-05-26 12:19:07] INFO root fetch - main [MainThread]: End processing [nlu-tmp]: success
 [2023-05-26 12:19:07] INFO root fetch - main [MainThread]: Store serial: [18261147]
+[2023-05-26 12:24:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18261147]
+[2023-05-26 12:24:17] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-26 12:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lusid-notifications-sdk-preview
+[2023-05-26 12:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: typedb-jupyter
+[2023-05-26 12:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: range-digit
+[2023-05-26 12:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sqlite-ml
+[2023-05-26 12:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: clouding-server-manager
+[2023-05-26 12:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: greenlab
+[2023-05-26 12:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bosch-alarm-mode2
+[2023-05-26 12:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: eodc-faas-force
+[2023-05-26 12:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: birentechci
+[2023-05-26 12:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pupil-labs-realtime-api
+[2023-05-26 12:24:17] INFO root fetch - processPackages [sqlite-ml]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-26 12:24:17] INFO root fetch - processPackages [range-digit]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-26 12:24:17] INFO root fetch - processPackages [clouding-server-manager]: New version: [1.0.0] Old Version: [0.1.0]
+[2023-05-26 12:24:17] INFO root fetch - processPackages [greenlab]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-26 12:24:17] INFO root fetch - processPackages [typedb-jupyter]: New version: [0.3] Old Version: [0.2]
+[2023-05-26 12:24:17] INFO root fetch - processPackages [eodc-faas-force]: New version: [2023.5.1rc3] Old Version: [2023.5.1rc2]
+[2023-05-26 12:24:17] INFO root fetch - processPackages [bosch-alarm-mode2]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-26 12:24:17] INFO root fetch - processPackages [birentechci]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 12:24:17] INFO root fetch - processPackages [pupil-labs-realtime-api]: New version: [1.2.0a3] Old Version: [1.2.0a2]
+[2023-05-26 12:24:17] INFO root fetch - processPackages [lusid-notifications-sdk-preview]: New version: [0.1.706] Old Version: [0.1.705]
+[2023-05-26 12:24:17] INFO root fetch - processPackages [sqlite-ml]: Downloading https://files.pythonhosted.org/packages/ce/0b/39aad857eb828b1c89565928eb0ffc765aa76ae58e4d30380f5d9a900284/sqlite_ml-0.1.1.tar.gz
+[2023-05-26 12:24:17] INFO root fetch - processPackages [birentechci]: executing diffoscope
+[2023-05-26 12:24:17] INFO root fetch - processPackages [birentechci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/birentechci-0.0.8.tar.gz tmp/birentechci-0.0.9.tar.gz --markdown 20230526/b/birentechci/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 12:24:18] INFO root fetch - processPackages [clouding-server-manager]: Downloading https://files.pythonhosted.org/packages/f1/5b/839ab793cab19813092e3796630bd1eac8b3ec5d1e9868b5baed5c097cca/clouding_server_manager-0.1.0.tar.gz
+[2023-05-26 12:24:18] INFO root fetch - processPackages [bosch-alarm-mode2]: executing diffoscope
+[2023-05-26 12:24:18] INFO root fetch - processPackages [bosch-alarm-mode2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bosch_alarm_mode2-0.3.8.tar.gz tmp/bosch_alarm_mode2-0.3.9.tar.gz --markdown 20230526/b/bosch-alarm-mode2/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-26 12:24:18] INFO root fetch - processPackages [eodc-faas-force]: Downloading https://files.pythonhosted.org/packages/ab/ca/a79bed391f132638973268d0fdaaf630493562908b898c4a6138ea9e1833/eodc_faas_force-2023.5.1rc2.tar.gz
+[2023-05-26 12:24:18] INFO root fetch - processPackages [range-digit]: Downloading https://files.pythonhosted.org/packages/46/41/ea26bf809fbe23bb02abc7ae4b0cc92e49fa5dd3ade716fb8fc20a13d159/range_digit-0.1.1-py3-none-any.whl
+[2023-05-26 12:24:18] INFO root fetch - processPackages [greenlab]: Downloading https://files.pythonhosted.org/packages/de/fe/96ea5f8f77eb93aef343da2fefff4078ac4e9a8b42f3abfc41a2877413c3/greenlab-0.0.2.tar.gz
+[2023-05-26 12:24:18] INFO root fetch - processPackages [typedb-jupyter]: Downloading https://files.pythonhosted.org/packages/f3/23/7f0a01ae8217e88928bd26819a37ca789e81ccaddc5ec9cb9a0e517b43d6/typedb-jupyter-0.2.tar.gz
+[2023-05-26 12:24:18] INFO root fetch - processPackages [pupil-labs-realtime-api]: Downloading https://files.pythonhosted.org/packages/dd/ef/f8d1510680fac2b9636215ee7b0d3c1b9e675e5b44e5158e548ce87551d5/pupil_labs_realtime_api-1.2.0a2.tar.gz
+[2023-05-26 12:24:18] INFO root fetch - processPackages [range-digit]: executing diffoscope
+[2023-05-26 12:24:18] INFO root fetch - processPackages [range-digit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/range_digit-0.1.0-py3-none-any.whl.zip tmp/range_digit-0.1.1-py3-none-any.whl.zip --markdown 20230526/r/range-digit/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-26 12:24:18] INFO root fetch - processPackages [sqlite-ml]: Downloading https://files.pythonhosted.org/packages/bc/4f/0d622e5b6f0f97e31694afb4e41942c477147b9039b6c2eaaca814213680/sqlite_ml-0.1.2.tar.gz
+[2023-05-26 12:24:18] INFO root fetch - processPackages [lusid-notifications-sdk-preview]: Downloading https://files.pythonhosted.org/packages/bb/0a/cc84363e252d135b8cbcee2bc852b57751f8332f7b90452b82f3c72bfba6/lusid-notifications-sdk-preview-0.1.706.tar.gz
+[2023-05-26 12:24:18] INFO root fetch - processPackages [clouding-server-manager]: Downloading https://files.pythonhosted.org/packages/5b/b6/05e29fd154785749b9576d400069aae92c8624b12a5276185d8bf64add76/clouding_server_manager-1.0.0.tar.gz
+[2023-05-26 12:24:18] INFO root fetch - processPackages [eodc-faas-force]: Downloading https://files.pythonhosted.org/packages/9e/0b/9eef35da51e05e39be14c9ab55588eb250bf295ed6be658133344537080d/eodc_faas_force-2023.5.1rc3.tar.gz
+[2023-05-26 12:24:18] INFO root fetch - processPackages [sqlite-ml]: executing diffoscope
+[2023-05-26 12:24:18] INFO root fetch - processPackages [sqlite-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite_ml-0.1.1.tar.gz tmp/sqlite_ml-0.1.2.tar.gz --markdown 20230526/s/sqlite-ml/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-26 12:24:18] INFO root fetch - processPackages [lusid-notifications-sdk-preview]: executing diffoscope
+[2023-05-26 12:24:18] INFO root fetch - processPackages [lusid-notifications-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-notifications-sdk-preview-0.1.705.tar.gz tmp/lusid-notifications-sdk-preview-0.1.706.tar.gz --markdown 20230526/l/lusid-notifications-sdk-preview/0.1.705-0.1.706/diff.md --exclude *.pyd
+[2023-05-26 12:24:18] INFO root fetch - processPackages [eodc-faas-force]: executing diffoscope
+[2023-05-26 12:24:18] INFO root fetch - processPackages [eodc-faas-force]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eodc_faas_force-2023.5.1rc2.tar.gz tmp/eodc_faas_force-2023.5.1rc3.tar.gz --markdown 20230526/e/eodc-faas-force/2023.5.1rc2-2023.5.1rc3/diff.md --exclude *.pyd
+[2023-05-26 12:24:18] INFO root fetch - processPackages [greenlab]: Downloading https://files.pythonhosted.org/packages/0a/89/1b99dfa82967cb3a415c1365604d683d9c7c3bf575bf79f716de4a941b8d/greenlab-0.0.3.tar.gz
+[2023-05-26 12:24:18] INFO root fetch - processPackages [clouding-server-manager]: executing diffoscope
+[2023-05-26 12:24:18] INFO root fetch - processPackages [clouding-server-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clouding_server_manager-0.1.0.tar.gz tmp/clouding_server_manager-1.0.0.tar.gz --markdown 20230526/c/clouding-server-manager/0.1.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-26 12:24:18] INFO root fetch - processPackages [typedb-jupyter]: Downloading https://files.pythonhosted.org/packages/80/eb/7041b1f515ffeb300450a039eff3a136adb97e90f415f21c786d3f4103e7/typedb-jupyter-0.3.tar.gz
+[2023-05-26 12:24:18] INFO root fetch - processPackages [pupil-labs-realtime-api]: Downloading https://files.pythonhosted.org/packages/3d/e8/a0f838c4b3f397ac9f7ba4c69cb33e6fbb6ed106e169f72599811c72d7c8/pupil_labs_realtime_api-1.2.0a3.tar.gz
+[2023-05-26 12:24:18] INFO root fetch - processPackages [greenlab]: executing diffoscope
+[2023-05-26 12:24:18] INFO root fetch - processPackages [greenlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/greenlab-0.0.2.tar.gz tmp/greenlab-0.0.3.tar.gz --markdown 20230526/g/greenlab/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-26 12:24:18] INFO root fetch - processPackages [typedb-jupyter]: executing diffoscope
+[2023-05-26 12:24:18] INFO root fetch - processPackages [typedb-jupyter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typedb-jupyter-0.2.tar.gz tmp/typedb-jupyter-0.3.tar.gz --markdown 20230526/t/typedb-jupyter/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-26 12:24:18] INFO root fetch - processPackages [pupil-labs-realtime-api]: executing diffoscope
+[2023-05-26 12:24:18] INFO root fetch - processPackages [pupil-labs-realtime-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pupil_labs_realtime_api-1.2.0a2.tar.gz tmp/pupil_labs_realtime_api-1.2.0a3.tar.gz --markdown 20230526/p/pupil-labs-realtime-api/1.2.0a2-1.2.0a3/diff.md --exclude *.pyd
+[2023-05-26 12:24:19] INFO root fetch - processPackages [bosch-alarm-mode2]: Start processing: linehaul
+[2023-05-26 12:24:19] INFO root fetch - main [MainThread]: End processing [bosch-alarm-mode2]: success
+[2023-05-26 12:24:19] WARNING root fetch - processPackages [linehaul]: Skipping, unable to determine old version
+[2023-05-26 12:24:19] INFO root fetch - processPackages [linehaul]: Start processing: simplemiddleware
+[2023-05-26 12:24:19] INFO root fetch - main [MainThread]: End processing [linehaul] error
+[2023-05-26 12:24:19] WARNING root fetch - processPackages [simplemiddleware]: Skipping, unable to determine old version
+[2023-05-26 12:24:19] INFO root fetch - processPackages [simplemiddleware]: Start processing: mtbase
+[2023-05-26 12:24:19] INFO root fetch - main [MainThread]: End processing [simplemiddleware] error
+[2023-05-26 12:24:19] INFO root fetch - processPackages [mtbase]: New version: [4.5.202305261023] Old Version: [4.5.202305260953]
+[2023-05-26 12:24:19] INFO root fetch - processPackages [mtbase]: Downloading https://files.pythonhosted.org/packages/4d/cb/7c548cb51c5e446b6b8fb21f278aa43b135f37a1362c07a5bf674dc94dca/mtbase-4.5.202305261023-py3-none-any.whl
+[2023-05-26 12:24:19] INFO root fetch - processPackages [mtbase]: executing diffoscope
+[2023-05-26 12:24:19] INFO root fetch - processPackages [mtbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtbase-4.5.202305260953-py3-none-any.whl.zip tmp/mtbase-4.5.202305261023-py3-none-any.whl.zip --markdown 20230526/m/mtbase/4.5.202305260953-4.5.202305261023/diff.md --exclude *.pyd
+[2023-05-26 12:24:19] INFO root fetch - processPackages [birentechci]: Start processing: oarepo-model-builder
+[2023-05-26 12:24:19] INFO root fetch - main [MainThread]: End processing [birentechci]: success
+[2023-05-26 12:24:19] INFO root fetch - processPackages [oarepo-model-builder]: New version: [4.0.7] Old Version: [4.0.6]
+[2023-05-26 12:24:20] INFO root fetch - processPackages [oarepo-model-builder]: Downloading https://files.pythonhosted.org/packages/3c/89/afa97c46beb776c93b4282f038348f7d03aa9b80a3ece808f04550fce342/oarepo-model-builder-4.0.6.tar.gz
+[2023-05-26 12:24:20] INFO root fetch - processPackages [sqlite-ml]: Start processing: indy-vdr
+[2023-05-26 12:24:20] INFO root fetch - main [MainThread]: End processing [sqlite-ml]: success
+[2023-05-26 12:24:20] INFO root fetch - processPackages [range-digit]: Start processing: cf-deploy
+[2023-05-26 12:24:20] INFO root fetch - main [MainThread]: End processing [range-digit]: success
+[2023-05-26 12:24:20] INFO root fetch - processPackages [oarepo-model-builder]: Downloading https://files.pythonhosted.org/packages/8d/59/454f6c3b205064608c9c913c7bed34530b513b47b2d5a0b834453d80481e/oarepo-model-builder-4.0.7.tar.gz
+[2023-05-26 12:24:20] INFO root fetch - processPackages [cf-deploy]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 12:24:20] INFO root fetch - processPackages [indy-vdr]: New version: [0.4.0.dev5] Old Version: [0.4.0.dev4]
+[2023-05-26 12:24:20] INFO root fetch - processPackages [oarepo-model-builder]: executing diffoscope
+[2023-05-26 12:24:20] INFO root fetch - processPackages [oarepo-model-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-model-builder-4.0.6.tar.gz tmp/oarepo-model-builder-4.0.7.tar.gz --markdown 20230526/o/oarepo-model-builder/4.0.6-4.0.7/diff.md --exclude *.pyd
+[2023-05-26 12:24:20] INFO root fetch - processPackages [cf-deploy]: executing diffoscope
+[2023-05-26 12:24:20] INFO root fetch - processPackages [cf-deploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cf_deploy-0.1.8.tar.gz tmp/cf_deploy-0.1.9.tar.gz --markdown 20230526/c/cf-deploy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 12:24:20] INFO root fetch - processPackages [indy-vdr]: Downloading https://files.pythonhosted.org/packages/94/78/28ec8bb74ce9a07fd94d28205fc380864629d8c23cb72c666d83ad14de50/indy_vdr-0.4.0.dev4-py3-none-win_amd64.whl
+[2023-05-26 12:24:20] INFO root fetch - main [MainThread]: End processing [eodc-faas-force]: success
+[2023-05-26 12:24:20] INFO root fetch - main [MainThread]: End processing [typedb-jupyter]: success
+[2023-05-26 12:24:20] INFO root fetch - main [MainThread]: End processing [greenlab]: success
+[2023-05-26 12:24:21] INFO root fetch - main [MainThread]: End processing [clouding-server-manager]: success
+[2023-05-26 12:24:21] INFO root fetch - processPackages [indy-vdr]: Downloading https://files.pythonhosted.org/packages/7b/ff/0a1aa9b639649154dc674eeee335afc3b1803e7e0cf0e4c64bfe0ab124fb/indy_vdr-0.4.0.dev5-py3-none-win_amd64.whl
+[2023-05-26 12:24:21] INFO root fetch - main [MainThread]: End processing [pupil-labs-realtime-api]: success
+[2023-05-26 12:24:21] INFO root fetch - processPackages [indy-vdr]: executing diffoscope
+[2023-05-26 12:24:21] INFO root fetch - processPackages [indy-vdr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indy_vdr-0.4.0.dev4-py3-none-win_amd64.whl.zip tmp/indy_vdr-0.4.0.dev5-py3-none-win_amd64.whl.zip --markdown 20230526/i/indy-vdr/0.4.0.dev4-0.4.0.dev5/diff.md --exclude *.pyd
+[2023-05-26 12:24:22] INFO root fetch - main [MainThread]: End processing [lusid-notifications-sdk-preview]: success
+[2023-05-26 12:24:22] INFO root fetch - main [MainThread]: End processing [cf-deploy]: success
+[2023-05-26 12:24:22] INFO root fetch - main [MainThread]: End processing [mtbase]: success
+[2023-05-26 12:24:23] INFO root fetch - main [MainThread]: End processing [oarepo-model-builder]: success
+[2023-05-26 12:24:37] INFO root fetch - main [MainThread]: End processing [indy-vdr]: success
+[2023-05-26 12:24:37] INFO root fetch - main [MainThread]: Store serial: [18261212]
