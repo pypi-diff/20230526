@@ -9566,3 +9566,72 @@
 [2023-05-26 09:06:58] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
 [2023-05-26 09:07:10] INFO root fetch - main [MainThread]: End processing [pulumi-alicloud]: success
 [2023-05-26 09:07:10] INFO root fetch - main [MainThread]: Store serial: [18258892]
+[2023-05-26 09:12:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18258892]
+[2023-05-26 09:12:19] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-26 09:12:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dls-normsql
+[2023-05-26 09:12:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fetchify
+[2023-05-26 09:12:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-postgresql
+[2023-05-26 09:12:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pepperize.cdk-terraform-state-backend
+[2023-05-26 09:12:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fetchify
+[2023-05-26 09:12:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-pagerduty
+[2023-05-26 09:12:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pulumi-rabbitmq
+[2023-05-26 09:12:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: countess
+[2023-05-26 09:12:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: shellserver
+[2023-05-26 09:12:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cognite-extractor-utils
+[2023-05-26 09:12:19] INFO root fetch - processPackages [dls-normsql]: New version: [2.0.0] Old Version: [1.2.2]
+[2023-05-26 09:12:19] INFO root fetch - processPackages [fetchify]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-26 09:12:19] INFO root fetch - processPackages [fetchify]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-26 09:12:19] INFO root fetch - processPackages [shellserver]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 09:12:19] INFO root fetch - processPackages [pulumi-pagerduty]: New version: [3.9.0a1678824312] Old Version: [3.9.0a1678231019]
+[2023-05-26 09:12:19] INFO root fetch - processPackages [countess]: New version: [0.0.28] Old Version: [0.0.27]
+[2023-05-26 09:12:19] INFO root fetch - processPackages [pulumi-postgresql]: New version: [3.9.0a1685082890] Old Version: [3.9.0a1684392571]
+[2023-05-26 09:12:19] INFO root fetch - processPackages [pulumi-rabbitmq]: New version: [3.4.0a1685083063] Old Version: [3.4.0a1684390361]
+[2023-05-26 09:12:19] INFO root fetch - processPackages [cognite-extractor-utils]: New version: [5.0.0] Old Version: [4.3.1]
+[2023-05-26 09:12:20] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-26 09:12:20] INFO root fetch - processPackages [dls-normsql]: Downloading https://files.pythonhosted.org/packages/dc/24/58889b5c553bd903daebea9269cb834ddfbe41e1ddcb886a06deecbb2792/dls-normsql-1.2.2.tar.gz
+[2023-05-26 09:12:20] INFO root fetch - processPackages [fetchify]: Downloading https://files.pythonhosted.org/packages/4a/7a/019fe9aad89d41fdb99a850f3a4c3ca70d48386fae36c9d27e7a0a4089fc/fetchify-1.1.3-py3-none-any.whl
+[2023-05-26 09:12:20] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: executing diffoscope
+[2023-05-26 09:12:20] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-terraform-state-backend-0.1.98.tar.gz tmp/pepperize.cdk-terraform-state-backend-0.1.99.tar.gz --markdown 20230526/p/pepperize.cdk-terraform-state-backend/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-26 09:12:20] INFO root fetch - processPackages [fetchify]: Downloading https://files.pythonhosted.org/packages/4a/7a/019fe9aad89d41fdb99a850f3a4c3ca70d48386fae36c9d27e7a0a4089fc/fetchify-1.1.3-py3-none-any.whl
+[2023-05-26 09:12:20] INFO root fetch - processPackages [shellserver]: Downloading https://files.pythonhosted.org/packages/5c/47/219c71a9756984e255fc347c7058c2b030ce84aaa8d8b977e6c76f068480/shellserver-0.0.8.tar.gz
+[2023-05-26 09:12:20] INFO root fetch - processPackages [countess]: Downloading https://files.pythonhosted.org/packages/66/de/a2201f1b519dd8d0a90ba695e1b6cd80b11d2a5e37cb64b26a35ed03c582/countess-0.0.27.tar.gz
+[2023-05-26 09:12:20] INFO root fetch - processPackages [cognite-extractor-utils]: Downloading https://files.pythonhosted.org/packages/32/1a/ae3efbd11fa88695494d95e3906d5d172cefb425391e0d6c6c33181c49d2/cognite_extractor_utils-4.3.1.tar.gz
+[2023-05-26 09:12:20] INFO root fetch - processPackages [pulumi-pagerduty]: Downloading https://files.pythonhosted.org/packages/e3/fb/cfd0770cc238f4c5d0519a47c0dfe5476a67ad16fc40bc8e1152c8898f91/pulumi_pagerduty-3.9.0a1678231019.tar.gz
+[2023-05-26 09:12:20] INFO root fetch - processPackages [pulumi-postgresql]: Downloading https://files.pythonhosted.org/packages/ab/75/f79356bd8030fd7e914815af801d0eb86d023075f86727fe779005eca5bd/pulumi_postgresql-3.9.0a1685082890.tar.gz
+[2023-05-26 09:12:20] INFO root fetch - processPackages [pulumi-rabbitmq]: Downloading https://files.pythonhosted.org/packages/20/c6/591fbbfebda55d27e426e7b6259cecfc8f7fd11d7d454b06a3f840487579/pulumi_rabbitmq-3.4.0a1685083063.tar.gz
+[2023-05-26 09:12:20] INFO root fetch - processPackages [dls-normsql]: Downloading https://files.pythonhosted.org/packages/6f/a0/24fd2270701a7d3df1fd1ebd2634e5d03b75227233dc2f9777c8f6806853/dls-normsql-2.0.0.tar.gz
+[2023-05-26 09:12:20] INFO root fetch - processPackages [fetchify]: Downloading https://files.pythonhosted.org/packages/e4/e6/fb0efb2aa02cafb06ceda552ef04ad756fc271f15532f1f111aec248cd1e/fetchify-1.1.4.tar.gz
+[2023-05-26 09:12:20] INFO root fetch - processPackages [fetchify]: Downloading https://files.pythonhosted.org/packages/e4/e6/fb0efb2aa02cafb06ceda552ef04ad756fc271f15532f1f111aec248cd1e/fetchify-1.1.4.tar.gz
+[2023-05-26 09:12:20] INFO root fetch - processPackages [countess]: Downloading https://files.pythonhosted.org/packages/07/d6/6ca8ba0ca04f149e59596b862b364b17edcd2159a72d563d8031dbc8bd91/countess-0.0.28.tar.gz
+[2023-05-26 09:12:20] INFO root fetch - processPackages [pulumi-postgresql]: executing diffoscope
+[2023-05-26 09:12:20] INFO root fetch - processPackages [pulumi-postgresql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_postgresql-3.9.0a1684392571.tar.gz tmp/pulumi_postgresql-3.9.0a1685082890.tar.gz --markdown 20230526/p/pulumi-postgresql/3.9.0a1684392571-3.9.0a1685082890/diff.md --exclude *.pyd
+[2023-05-26 09:12:20] INFO root fetch - processPackages [pulumi-rabbitmq]: executing diffoscope
+[2023-05-26 09:12:20] INFO root fetch - processPackages [pulumi-rabbitmq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_rabbitmq-3.4.0a1684390361.tar.gz tmp/pulumi_rabbitmq-3.4.0a1685083063.tar.gz --markdown 20230526/p/pulumi-rabbitmq/3.4.0a1684390361-3.4.0a1685083063/diff.md --exclude *.pyd
+[2023-05-26 09:12:20] INFO root fetch - processPackages [cognite-extractor-utils]: Downloading https://files.pythonhosted.org/packages/bc/a5/7ac5254d28054a8374d748e6510f5249d10bd264a2f5a57d82ca4cca9885/cognite_extractor_utils-5.0.0.tar.gz
+[2023-05-26 09:12:20] INFO root fetch - processPackages [dls-normsql]: executing diffoscope
+[2023-05-26 09:12:20] INFO root fetch - processPackages [dls-normsql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dls-normsql-1.2.2.tar.gz tmp/dls-normsql-2.0.0.tar.gz --markdown 20230526/d/dls-normsql/1.2.2-2.0.0/diff.md --exclude *.pyd
+[2023-05-26 09:12:20] INFO root fetch - processPackages [pulumi-pagerduty]: Downloading https://files.pythonhosted.org/packages/b2/77/786140b79d0946ee18e80ac92af9889e190480f889211497d09069a9f0fa/pulumi_pagerduty-3.9.0a1678824312.tar.gz
+[2023-05-26 09:12:20] INFO root fetch - processPackages [shellserver]: Downloading https://files.pythonhosted.org/packages/52/7f/995ec55e8f719ed1bf75502ac03981f54e3cec768591d0a6369c07ac9d28/shellserver-0.0.9.tar.gz
+[2023-05-26 09:12:20] INFO root fetch - processPackages [fetchify]: executing diffoscope
+[2023-05-26 09:12:20] INFO root fetch - processPackages [fetchify]: executing diffoscope
+[2023-05-26 09:12:20] INFO root fetch - processPackages [fetchify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fetchify-1.1.3-py3-none-any.whl.zip tmp/fetchify-1.1.4.tar.gz --markdown 20230526/f/fetchify/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-26 09:12:20] INFO root fetch - processPackages [fetchify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fetchify-1.1.3-py3-none-any.whl.zip tmp/fetchify-1.1.4.tar.gz --markdown 20230526/f/fetchify/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-26 09:12:20] INFO root fetch - processPackages [countess]: executing diffoscope
+[2023-05-26 09:12:20] INFO root fetch - processPackages [countess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/countess-0.0.27.tar.gz tmp/countess-0.0.28.tar.gz --markdown 20230526/c/countess/0.0.27-0.0.28/diff.md --exclude *.pyd
+[2023-05-26 09:12:20] INFO root fetch - processPackages [cognite-extractor-utils]: executing diffoscope
+[2023-05-26 09:12:20] INFO root fetch - processPackages [cognite-extractor-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cognite_extractor_utils-4.3.1.tar.gz tmp/cognite_extractor_utils-5.0.0.tar.gz --markdown 20230526/c/cognite-extractor-utils/4.3.1-5.0.0/diff.md --exclude *.pyd
+[2023-05-26 09:12:20] INFO root fetch - processPackages [shellserver]: executing diffoscope
+[2023-05-26 09:12:20] INFO root fetch - processPackages [shellserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shellserver-0.0.8.tar.gz tmp/shellserver-0.0.9.tar.gz --markdown 20230526/s/shellserver/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 09:12:20] INFO root fetch - processPackages [pulumi-pagerduty]: executing diffoscope
+[2023-05-26 09:12:20] INFO root fetch - processPackages [pulumi-pagerduty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_pagerduty-3.9.0a1678231019.tar.gz tmp/pulumi_pagerduty-3.9.0a1678824312.tar.gz --markdown 20230526/p/pulumi-pagerduty/3.9.0a1678231019-3.9.0a1678824312/diff.md --exclude *.pyd
+[2023-05-26 09:12:22] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-terraform-state-backend]: success
+[2023-05-26 09:12:22] INFO root fetch - main [MainThread]: End processing [fetchify]: success
+[2023-05-26 09:12:22] INFO root fetch - main [MainThread]: End processing [pulumi-postgresql]: success
+[2023-05-26 09:12:22] INFO root fetch - main [MainThread]: End processing [fetchify]: success
+[2023-05-26 09:12:22] INFO root fetch - main [MainThread]: End processing [dls-normsql]: success
+[2023-05-26 09:12:22] INFO root fetch - main [MainThread]: End processing [cognite-extractor-utils]: success
+[2023-05-26 09:12:23] INFO root fetch - main [MainThread]: End processing [shellserver]: success
+[2023-05-26 09:12:23] INFO root fetch - main [MainThread]: End processing [pulumi-rabbitmq]: success
+[2023-05-26 09:12:23] INFO root fetch - main [MainThread]: End processing [countess]: success
+[2023-05-26 09:12:23] INFO root fetch - main [MainThread]: End processing [pulumi-pagerduty]: success
+[2023-05-26 09:12:23] INFO root fetch - main [MainThread]: Store serial: [18258920]
