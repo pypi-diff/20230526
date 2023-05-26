@@ -21658,3 +21658,124 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 18:31:26] INFO root fetch - main [MainThread]: End processing [functioncache]: success
 [2023-05-26 18:32:25] INFO root fetch - main [MainThread]: End processing [vl-convert-python]: success
 [2023-05-26 18:32:25] INFO root fetch - main [MainThread]: Store serial: [18266349]
+[2023-05-26 18:37:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18266349]
+[2023-05-26 18:37:40] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-05-26 18:37:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dotspace
+[2023-05-26 18:37:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deckz
+[2023-05-26 18:37:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smartlogger
+[2023-05-26 18:37:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yt-idefix
+[2023-05-26 18:37:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: deeplake
+[2023-05-26 18:37:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: onepasswd
+[2023-05-26 18:37:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cmind
+[2023-05-26 18:37:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: preemo-worker-sdk
+[2023-05-26 18:37:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: whatsapp-python
+[2023-05-26 18:37:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: qontract-reconcile
+[2023-05-26 18:37:41] INFO root fetch - processPackages [smartlogger]: New version: [0.0.1.dev9] Old Version: [0.0.1.dev8]
+[2023-05-26 18:37:41] WARNING root fetch - processPackages [dotspace]: Skipping, unable to determine old version
+[2023-05-26 18:37:41] INFO root fetch - processPackages [yt-idefix]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-26 18:37:41] INFO root fetch - processPackages [dotspace]: Start processing: lusid-notifications-sdk-preview
+[2023-05-26 18:37:41] INFO root fetch - main [MainThread]: End processing [dotspace] error
+[2023-05-26 18:37:41] INFO root fetch - processPackages [onepasswd]: New version: [0.2.4rc2] Old Version: [0.2.4rc1]
+[2023-05-26 18:37:41] INFO root fetch - processPackages [preemo-worker-sdk]: New version: [0.6.0] Old Version: [0.5.2]
+[2023-05-26 18:37:41] INFO root fetch - processPackages [whatsapp-python]: New version: [2.4.3] Old Version: [2.3.2]
+[2023-05-26 18:37:41] INFO root fetch - processPackages [deeplake]: New version: [3.5.3] Old Version: [3.5.2]
+[2023-05-26 18:37:41] INFO root fetch - processPackages [cmind]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-26 18:37:41] INFO root fetch - processPackages [deckz]: New version: [9.5.0] Old Version: [9.4.0]
+[2023-05-26 18:37:41] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-05-26 18:37:41] INFO root fetch - processPackages [lusid-notifications-sdk-preview]: New version: [0.1.711] Old Version: [0.1.706]
+[2023-05-26 18:37:41] INFO root fetch - processPackages [preemo-worker-sdk]: Downloading https://files.pythonhosted.org/packages/64/bc/36bbe985738203c486614df5e78082f53c800acf2678b658830ba3d0ccc1/preemo_worker_sdk-0.5.2.tar.gz
+[2023-05-26 18:37:41] INFO root fetch - processPackages [onepasswd]: Downloading https://files.pythonhosted.org/packages/7f/5b/ed0b34c247133eb0f6920147218a20d9b2a8609e90c71aa0c4fa70093568/onepasswd-0.2.4rc1.tar.gz
+[2023-05-26 18:37:41] INFO root fetch - processPackages [deckz]: Downloading https://files.pythonhosted.org/packages/f0/b9/4b6216a837a58603e2071ca6f2dedf0c2bdd9a01e2a9b20f4e714bfa2e96/deckz-9.4.0.tar.gz
+[2023-05-26 18:37:41] INFO root fetch - processPackages [lusid-notifications-sdk-preview]: Downloading https://files.pythonhosted.org/packages/d3/29/0f62f5a8b1aa866ae29bf785ad42e64b3585e5ecdc9f43c8cc5a5a7c976d/lusid-notifications-sdk-preview-0.1.711.tar.gz
+[2023-05-26 18:37:41] INFO root fetch - processPackages [whatsapp-python]: Downloading https://files.pythonhosted.org/packages/70/0b/226cd5168f6cd53a007327f5bac5496c29c1811ad8d0347ae78a2d0ff035/whatsapp-python-2.3.2.tar.gz
+[2023-05-26 18:37:41] INFO root fetch - processPackages [yt-idefix]: Downloading https://files.pythonhosted.org/packages/49/fd/43bb9e9b1f3761e67f69187e1b9f274fe7e6786f518b0dbc8e2413ddc060/yt_idefix-2.0.2.tar.gz
+[2023-05-26 18:37:41] INFO root fetch - processPackages [cmind]: Downloading https://files.pythonhosted.org/packages/51/3a/3518186c893dc0576666ee76c25aa35761d47c5da53ae6bdfacddb63dd9f/cmind-1.2.1.tar.gz
+[2023-05-26 18:37:41] INFO root fetch - processPackages [smartlogger]: executing diffoscope
+[2023-05-26 18:37:41] INFO root fetch - processPackages [smartlogger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartlogger-0.0.1.dev8.tar.gz tmp/smartlogger-0.0.1.dev9.tar.gz --markdown 20230526/s/smartlogger/0.0.1.dev8-0.0.1.dev9/diff.md --exclude *.pyd
+[2023-05-26 18:37:41] INFO root fetch - processPackages [deeplake]: Downloading https://files.pythonhosted.org/packages/3e/43/574c61481b67b007cfe965e43429358eb8d64bf07290bdc66f7bda6d5715/deeplake-3.5.3.tar.gz
+[2023-05-26 18:37:41] INFO root fetch - processPackages [preemo-worker-sdk]: Downloading https://files.pythonhosted.org/packages/80/3d/612224a74f725f7c6bb3a3ff7ad34348ced610b50e80fe2b69581a522fe4/preemo_worker_sdk-0.6.0.tar.gz
+[2023-05-26 18:37:41] INFO root fetch - processPackages [lusid-notifications-sdk-preview]: executing diffoscope
+[2023-05-26 18:37:41] INFO root fetch - processPackages [lusid-notifications-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-notifications-sdk-preview-0.1.706.tar.gz tmp/lusid-notifications-sdk-preview-0.1.711.tar.gz --markdown 20230526/l/lusid-notifications-sdk-preview/0.1.706-0.1.711/diff.md --exclude *.pyd
+[2023-05-26 18:37:41] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-05-26 18:37:41] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230526/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-05-26 18:37:41] INFO root fetch - processPackages [yt-idefix]: executing diffoscope
+[2023-05-26 18:37:41] INFO root fetch - processPackages [yt-idefix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt_idefix-2.0.1.tar.gz tmp/yt_idefix-2.0.2.tar.gz --markdown 20230526/y/yt-idefix/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-05-26 18:37:41] INFO root fetch - processPackages [cmind]: executing diffoscope
+[2023-05-26 18:37:41] INFO root fetch - processPackages [cmind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmind-1.2.0.tar.gz tmp/cmind-1.2.1.tar.gz --markdown 20230526/c/cmind/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-26 18:37:41] INFO root fetch - processPackages [whatsapp-python]: Downloading https://files.pythonhosted.org/packages/cc/26/2a57d82da56b06e0714cefde294fb671468494c64fa0fcf7795b4e7da5df/whatsapp-python-2.4.3.tar.gz
+[2023-05-26 18:37:41] INFO root fetch - processPackages [deeplake]: executing diffoscope
+[2023-05-26 18:37:41] INFO root fetch - processPackages [deeplake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deeplake-3.5.2.tar.gz tmp/deeplake-3.5.3.tar.gz --markdown 20230526/d/deeplake/3.5.2-3.5.3/diff.md --exclude *.pyd
+[2023-05-26 18:37:41] INFO root fetch - processPackages [preemo-worker-sdk]: executing diffoscope
+[2023-05-26 18:37:41] INFO root fetch - processPackages [preemo-worker-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/preemo_worker_sdk-0.5.2.tar.gz tmp/preemo_worker_sdk-0.6.0.tar.gz --markdown 20230526/p/preemo-worker-sdk/0.5.2-0.6.0/diff.md --exclude *.pyd
+[2023-05-26 18:37:41] INFO root fetch - processPackages [onepasswd]: Downloading https://files.pythonhosted.org/packages/79/be/e71af233599a1e24f2e1d728132fb642f01d528ba34746010270b05eaea9/onepasswd-0.2.4rc2.tar.gz
+[2023-05-26 18:37:41] INFO root fetch - processPackages [deckz]: Downloading https://files.pythonhosted.org/packages/60/aa/4cab6308800ad6da6c0ad8404317d6bc7e0633e8ba286dd1805751bb2ed1/deckz-9.5.0.tar.gz
+[2023-05-26 18:37:41] INFO root fetch - processPackages [whatsapp-python]: executing diffoscope
+[2023-05-26 18:37:41] INFO root fetch - processPackages [whatsapp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whatsapp-python-2.3.2.tar.gz tmp/whatsapp-python-2.4.3.tar.gz --markdown 20230526/w/whatsapp-python/2.3.2-2.4.3/diff.md --exclude *.pyd
+[2023-05-26 18:37:41] INFO root fetch - processPackages [deckz]: executing diffoscope
+[2023-05-26 18:37:41] INFO root fetch - processPackages [deckz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deckz-9.4.0.tar.gz tmp/deckz-9.5.0.tar.gz --markdown 20230526/d/deckz/9.4.0-9.5.0/diff.md --exclude *.pyd
+[2023-05-26 18:37:41] INFO root fetch - processPackages [onepasswd]: executing diffoscope
+[2023-05-26 18:37:41] INFO root fetch - processPackages [onepasswd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onepasswd-0.2.4rc1.tar.gz tmp/onepasswd-0.2.4rc2.tar.gz --markdown 20230526/o/onepasswd/0.2.4rc1-0.2.4rc2/diff.md --exclude *.pyd
+[2023-05-26 18:37:43] INFO root fetch - processPackages [smartlogger]: Start processing: tn-slack-py-module
+[2023-05-26 18:37:43] INFO root fetch - main [MainThread]: End processing [smartlogger]: success
+[2023-05-26 18:37:43] INFO root fetch - processPackages [tn-slack-py-module]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 18:37:43] INFO root fetch - processPackages [yt-idefix]: Start processing: log10-io
+[2023-05-26 18:37:43] INFO root fetch - main [MainThread]: End processing [yt-idefix]: success
+[2023-05-26 18:37:43] INFO root fetch - processPackages [log10-io]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-26 18:37:43] INFO root fetch - processPackages [whatsapp-python]: Start processing: laminci
+[2023-05-26 18:37:43] INFO root fetch - main [MainThread]: End processing [whatsapp-python]: success
+[2023-05-26 18:37:43] INFO root fetch - processPackages [laminci]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-26 18:37:43] INFO root fetch - processPackages [tn-slack-py-module]: executing diffoscope
+[2023-05-26 18:37:43] INFO root fetch - processPackages [tn-slack-py-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tn-slack-py-module-0.0.8.tar.gz tmp/tn-slack-py-module-0.0.9.tar.gz --markdown 20230526/t/tn-slack-py-module/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 18:37:44] INFO root fetch - processPackages [log10-io]: Downloading https://files.pythonhosted.org/packages/77/87/51d798f98520ce43a18316edec0c038fa3507cd26f75b651b1cafb2820b5/log10_io-0.0.7.tar.gz
+[2023-05-26 18:37:44] INFO root fetch - processPackages [laminci]: Downloading https://files.pythonhosted.org/packages/a8/28/d31ef020a6e0539802a5f9620120e675271b77421d7039a50059e096613b/laminci-0.6.1.tar.gz
+[2023-05-26 18:37:44] INFO root fetch - processPackages [log10-io]: Downloading https://files.pythonhosted.org/packages/47/65/e6bc5e9e0aa60c93b02cdc4a076479ff8109cdfa98d17e06f20c337d6131/log10_io-0.0.8.tar.gz
+[2023-05-26 18:37:44] INFO root fetch - processPackages [laminci]: executing diffoscope
+[2023-05-26 18:37:44] INFO root fetch - processPackages [laminci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/laminci-0.6.0.tar.gz tmp/laminci-0.6.1.tar.gz --markdown 20230526/l/laminci/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-26 18:37:44] INFO root fetch - processPackages [preemo-worker-sdk]: Start processing: mujoco-dev
+[2023-05-26 18:37:44] INFO root fetch - main [MainThread]: End processing [preemo-worker-sdk]: success
+[2023-05-26 18:37:44] INFO root fetch - processPackages [mujoco-dev]: New version: [2.3.6.dev535635490] Old Version: [2.3.6.dev535615505]
+[2023-05-26 18:37:44] INFO root fetch - processPackages [lusid-notifications-sdk-preview]: Start processing: PyShoreVolume
+[2023-05-26 18:37:44] INFO root fetch - main [MainThread]: End processing [lusid-notifications-sdk-preview]: success
+[2023-05-26 18:37:44] INFO root fetch - processPackages [log10-io]: executing diffoscope
+[2023-05-26 18:37:44] INFO root fetch - processPackages [log10-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/log10_io-0.0.7.tar.gz tmp/log10_io-0.0.8.tar.gz --markdown 20230526/l/log10-io/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-26 18:37:44] INFO root fetch - processPackages [PyShoreVolume]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-26 18:37:44] INFO root fetch - processPackages [deckz]: Start processing: vanty-cli
+[2023-05-26 18:37:44] INFO root fetch - main [MainThread]: End processing [deckz]: success
+[2023-05-26 18:37:44] WARNING root fetch - processPackages [vanty-cli]: Skipping, unable to determine old version
+[2023-05-26 18:37:44] INFO root fetch - processPackages [vanty-cli]: Start processing: pyqt5-fugueicons
+[2023-05-26 18:37:44] INFO root fetch - main [MainThread]: End processing [vanty-cli] error
+[2023-05-26 18:37:44] INFO root fetch - processPackages [pyqt5-fugueicons]: New version: [3.5.6.2] Old Version: [3.5.6.1]
+[2023-05-26 18:37:44] INFO root fetch - processPackages [mujoco-dev]: Downloading https://files.pythonhosted.org/packages/f0/87/bf4358b9063478c3fe1ce895a9cf45faf4386c413baa37b922e89a3471c4/mujoco_dev-2.3.6.dev535615505-cp39-cp39-win_amd64.whl
+[2023-05-26 18:37:44] INFO root fetch - processPackages [pyqt5-fugueicons]: Downloading https://files.pythonhosted.org/packages/f6/b4/8b97f1ccb5d758329605947ab3c7a2a33c48a62d394d25c946e9c5f0c287/pyqt5_fugueicons-3.5.6.1.tar.gz
+[2023-05-26 18:37:44] INFO root fetch - processPackages [PyShoreVolume]: Downloading https://files.pythonhosted.org/packages/ab/24/fb0600bc6573a56e3f4a5ef4340c3b43b70e2bb98ff4ae91a50c0d8ceadd/PyShoreVolume-1.0.3.tar.gz
+[2023-05-26 18:37:44] INFO root fetch - processPackages [PyShoreVolume]: executing diffoscope
+[2023-05-26 18:37:44] INFO root fetch - processPackages [PyShoreVolume]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyShoreVolume-1.0.2.tar.gz tmp/PyShoreVolume-1.0.3.tar.gz --markdown 20230526/P/PyShoreVolume/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-26 18:37:45] INFO root fetch - processPackages [cmind]: Start processing: samscore
+[2023-05-26 18:37:45] INFO root fetch - main [MainThread]: End processing [cmind]: success
+[2023-05-26 18:37:45] INFO root fetch - processPackages [samscore]: New version: [1.1] Old Version: [1.0]
+[2023-05-26 18:37:45] INFO root fetch - processPackages [samscore]: Downloading https://files.pythonhosted.org/packages/50/0b/8a382b645b5e5a0b98823062a4752f567fc0f9c7f12dff9d3fb652a10503/samscore-1.0.tar.gz
+[2023-05-26 18:37:45] INFO root fetch - processPackages [mujoco-dev]: Downloading https://files.pythonhosted.org/packages/41/f8/f14c268a22dbea20658d04fc6dda7d1179c65780ed709e9e034ceebc7697/mujoco_dev-2.3.6.dev535635490-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-26 18:37:45] INFO root fetch - processPackages [samscore]: Downloading https://files.pythonhosted.org/packages/90/6d/9d5c7b0e45dc25f9d4ea8559a273c1f4988e9052abc59e1e535b1411867e/samscore-1.1.tar.gz
+[2023-05-26 18:37:45] INFO root fetch - processPackages [samscore]: executing diffoscope
+[2023-05-26 18:37:45] INFO root fetch - processPackages [samscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/samscore-1.0.tar.gz tmp/samscore-1.1.tar.gz --markdown 20230526/s/samscore/1.0-1.1/diff.md --exclude *.pyd
+[2023-05-26 18:37:45] INFO root fetch - processPackages [onepasswd]: Start processing: auto-screener
+[2023-05-26 18:37:45] INFO root fetch - main [MainThread]: End processing [onepasswd]: success
+[2023-05-26 18:37:45] INFO root fetch - processPackages [auto-screener]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 18:37:45] INFO root fetch - processPackages [auto-screener]: executing diffoscope
+[2023-05-26 18:37:45] INFO root fetch - processPackages [auto-screener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto-screener-0.0.8.tar.gz tmp/auto-screener-0.0.9.tar.gz --markdown 20230526/a/auto-screener/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 18:37:45] INFO root fetch - processPackages [pyqt5-fugueicons]: Downloading https://files.pythonhosted.org/packages/9f/23/7b9ba9775f8e5b05092fba5e981c57634c40c4d03c2fa834d790fc734527/pyqt5_fugueicons-3.5.6.2.tar.gz
+[2023-05-26 18:37:46] INFO root fetch - main [MainThread]: End processing [tn-slack-py-module]: success
+[2023-05-26 18:37:46] INFO root fetch - processPackages [mujoco-dev]: executing diffoscope
+[2023-05-26 18:37:46] INFO root fetch - processPackages [mujoco-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mujoco_dev-2.3.6.dev535615505-cp39-cp39-win_amd64.whl.zip tmp/mujoco_dev-2.3.6.dev535635490-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230526/m/mujoco-dev/2.3.6.dev535615505-2.3.6.dev535635490/diff.md --exclude *.pyd
+[2023-05-26 18:37:46] INFO root fetch - main [MainThread]: End processing [log10-io]: success
+[2023-05-26 18:37:46] INFO root fetch - main [MainThread]: End processing [laminci]: success
+[2023-05-26 18:37:46] INFO root fetch - processPackages [pyqt5-fugueicons]: executing diffoscope
+[2023-05-26 18:37:46] INFO root fetch - processPackages [pyqt5-fugueicons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqt5_fugueicons-3.5.6.1.tar.gz tmp/pyqt5_fugueicons-3.5.6.2.tar.gz --markdown 20230526/p/pyqt5-fugueicons/3.5.6.1-3.5.6.2/diff.md --exclude *.pyd
+[2023-05-26 18:37:47] INFO root fetch - main [MainThread]: End processing [PyShoreVolume]: success
+[2023-05-26 18:37:47] INFO root fetch - main [MainThread]: End processing [samscore]: success
+[2023-05-26 18:37:47] INFO root fetch - main [MainThread]: End processing [qontract-reconcile]: success
+[2023-05-26 18:37:48] INFO root fetch - main [MainThread]: End processing [auto-screener]: success
+[2023-05-26 18:37:48] INFO root fetch - main [MainThread]: End processing [deeplake]: success
+[2023-05-26 18:37:49] INFO root fetch - main [MainThread]: End processing [pyqt5-fugueicons]: success
+[2023-05-26 18:37:51] INFO root fetch - main [MainThread]: End processing [mujoco-dev]: success
+[2023-05-26 18:37:51] INFO root fetch - main [MainThread]: Store serial: [18266424]
