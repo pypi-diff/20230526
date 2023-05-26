@@ -15761,3 +15761,102 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 15:03:44] INFO root fetch - main [MainThread]: End processing [testrail-api-reporter]: success
 [2023-05-26 15:04:02] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
 [2023-05-26 15:04:02] INFO root fetch - main [MainThread]: Store serial: [18263040]
+[2023-05-26 15:09:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18263040]
+[2023-05-26 15:09:19] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-26 15:09:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torch-utilities
+[2023-05-26 15:09:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: uquake
+[2023-05-26 15:09:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: invenio-rdm-migrator
+[2023-05-26 15:09:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pydantic-core
+[2023-05-26 15:09:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ovos-skill-date-time
+[2023-05-26 15:09:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: activitystreampython
+[2023-05-26 15:09:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: MCPoly
+[2023-05-26 15:09:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: GoogleBard
+[2023-05-26 15:09:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: average-minimum-distance
+[2023-05-26 15:09:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: useis
+[2023-05-26 15:09:19] INFO root fetch - processPackages [torch-utilities]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-26 15:09:19] INFO root fetch - processPackages [activitystreampython]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-26 15:09:19] INFO root fetch - processPackages [ovos-skill-date-time]: New version: [0.2.3a4] Old Version: [0.2.3a3]
+[2023-05-26 15:09:19] INFO root fetch - processPackages [uquake]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-05-26 15:09:19] INFO root fetch - processPackages [invenio-rdm-migrator]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2023-05-26 15:09:19] INFO root fetch - processPackages [GoogleBard]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-26 15:09:19] INFO root fetch - processPackages [average-minimum-distance]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-05-26 15:09:19] INFO root fetch - processPackages [MCPoly]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-26 15:09:19] INFO root fetch - processPackages [useis]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-26 15:09:19] INFO root fetch - processPackages [pydantic-core]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-05-26 15:09:19] INFO root fetch - processPackages [torch-utilities]: executing diffoscope
+[2023-05-26 15:09:19] INFO root fetch - processPackages [torch-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_utilities-1.0.4.tar.gz tmp/torch_utilities-1.0.5.tar.gz --markdown 20230526/t/torch-utilities/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-26 15:09:19] INFO root fetch - processPackages [uquake]: Downloading https://files.pythonhosted.org/packages/5f/07/34998bae44a3e0d1a4e6f7702f26fea38c72d70250d45520d06423dfea87/uquake-1.4.1.tar.gz
+[2023-05-26 15:09:19] INFO root fetch - processPackages [GoogleBard]: Downloading https://files.pythonhosted.org/packages/e0/77/8ff143a3f2bb7b5bd72e0d48dfbd9dc6acc54a68b8cc4e9722fc69f967d0/GoogleBard-1.1.3.tar.gz
+[2023-05-26 15:09:19] INFO root fetch - processPackages [activitystreampython]: Downloading https://files.pythonhosted.org/packages/f9/b6/bb3861291b7e30153e9a70767c61c757a6dd8ab633abb9e44c70ec76e56c/activitystreampython-0.1.3.tar.gz
+[2023-05-26 15:09:19] INFO root fetch - processPackages [useis]: Downloading https://files.pythonhosted.org/packages/02/68/b3233a0b03e34e633c0779486a9f0f43b3d7d2c7cd3399454e74a2593671/useis-1.1.2.tar.gz
+[2023-05-26 15:09:19] INFO root fetch - processPackages [activitystreampython]: executing diffoscope
+[2023-05-26 15:09:19] INFO root fetch - processPackages [activitystreampython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/activitystreampython-0.1.2.tar.gz tmp/activitystreampython-0.1.3.tar.gz --markdown 20230526/a/activitystreampython/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-26 15:09:19] INFO root fetch - processPackages [invenio-rdm-migrator]: Downloading https://files.pythonhosted.org/packages/f2/35/df1d3d1fd116accb444b432b3a6355ab02c1c2c7fc74df9355a7b4183460/invenio-rdm-migrator-1.0.0a8.tar.gz
+[2023-05-26 15:09:19] INFO root fetch - processPackages [MCPoly]: Downloading https://files.pythonhosted.org/packages/fe/86/a64248f788cee9780b0864af9ad1cbca55ca6ddafd9422e5df0f39bb971d/MCPoly-0.3.3.tar.gz
+[2023-05-26 15:09:19] INFO root fetch - processPackages [GoogleBard]: executing diffoscope
+[2023-05-26 15:09:19] INFO root fetch - processPackages [GoogleBard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GoogleBard-1.1.2.tar.gz tmp/GoogleBard-1.1.3.tar.gz --markdown 20230526/G/GoogleBard/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-26 15:09:19] INFO root fetch - processPackages [uquake]: Downloading https://files.pythonhosted.org/packages/56/48/a141a4cac1f516e85d5756eca907fa7623be5378424fe716bdb53d11f8c7/uquake-1.4.2.tar.gz
+[2023-05-26 15:09:19] INFO root fetch - processPackages [MCPoly]: executing diffoscope
+[2023-05-26 15:09:19] INFO root fetch - processPackages [MCPoly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MCPoly-0.3.2.tar.gz tmp/MCPoly-0.3.3.tar.gz --markdown 20230526/M/MCPoly/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-26 15:09:19] INFO root fetch - processPackages [useis]: executing diffoscope
+[2023-05-26 15:09:19] INFO root fetch - processPackages [average-minimum-distance]: Downloading https://files.pythonhosted.org/packages/13/d8/381d6d57c4cb973680258e3a658d9f8233dae5b19d5313cc76979becba5c/average-minimum-distance-1.4.1.tar.gz
+[2023-05-26 15:09:19] INFO root fetch - processPackages [useis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/useis-1.1.1.tar.gz tmp/useis-1.1.2.tar.gz --markdown 20230526/u/useis/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-26 15:09:19] INFO root fetch - processPackages [ovos-skill-date-time]: Downloading https://files.pythonhosted.org/packages/db/27/d21bc501bc878be12e8e10066c7a28da441e8d1d39fdc9d58d14b073b8de/ovos_skill_date_time-0.2.3a4-py3-none-any.whl
+[2023-05-26 15:09:19] INFO root fetch - processPackages [uquake]: executing diffoscope
+[2023-05-26 15:09:19] INFO root fetch - processPackages [uquake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uquake-1.4.1.tar.gz tmp/uquake-1.4.2.tar.gz --markdown 20230526/u/uquake/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-05-26 15:09:19] INFO root fetch - processPackages [ovos-skill-date-time]: executing diffoscope
+[2023-05-26 15:09:19] INFO root fetch - processPackages [ovos-skill-date-time]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_skill_date_time-0.2.3a3-py3-none-any.whl.zip tmp/ovos_skill_date_time-0.2.3a4-py3-none-any.whl.zip --markdown 20230526/o/ovos-skill-date-time/0.2.3a3-0.2.3a4/diff.md --exclude *.pyd
+[2023-05-26 15:09:19] INFO root fetch - processPackages [pydantic-core]: executing diffoscope
+[2023-05-26 15:09:19] INFO root fetch - processPackages [pydantic-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_core-0.8.2.tar.gz tmp/pydantic_core-0.9.0.tar.gz --markdown 20230526/p/pydantic-core/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-05-26 15:09:19] INFO root fetch - processPackages [invenio-rdm-migrator]: Downloading https://files.pythonhosted.org/packages/f6/0b/8a545ab266d704938b556168a3fcddbc06ebfc9f0eb7ae8dfd46a1ee9f19/invenio-rdm-migrator-1.0.0a9.tar.gz
+[2023-05-26 15:09:19] INFO root fetch - processPackages [invenio-rdm-migrator]: executing diffoscope
+[2023-05-26 15:09:19] INFO root fetch - processPackages [invenio-rdm-migrator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invenio-rdm-migrator-1.0.0a8.tar.gz tmp/invenio-rdm-migrator-1.0.0a9.tar.gz --markdown 20230526/i/invenio-rdm-migrator/1.0.0a8-1.0.0a9/diff.md --exclude *.pyd
+[2023-05-26 15:09:20] INFO root fetch - processPackages [average-minimum-distance]: executing diffoscope
+[2023-05-26 15:09:20] INFO root fetch - processPackages [average-minimum-distance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/average-minimum-distance-1.4.0.tar.gz tmp/average-minimum-distance-1.4.1.tar.gz --markdown 20230526/a/average-minimum-distance/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-05-26 15:09:21] INFO root fetch - processPackages [activitystreampython]: Start processing: nbdev-stdlib
+[2023-05-26 15:09:21] INFO root fetch - main [MainThread]: End processing [activitystreampython]: success
+[2023-05-26 15:09:21] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 15:09:21] INFO root fetch - processPackages [torch-utilities]: Start processing: finalynx
+[2023-05-26 15:09:21] INFO root fetch - main [MainThread]: End processing [torch-utilities]: success
+[2023-05-26 15:09:21] INFO root fetch - processPackages [finalynx]: New version: [1.9.0] Old Version: [1.8.3]
+[2023-05-26 15:09:21] INFO root fetch - processPackages [finalynx]: executing diffoscope
+[2023-05-26 15:09:21] INFO root fetch - processPackages [finalynx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finalynx-1.8.3.tar.gz tmp/finalynx-1.9.0.tar.gz --markdown 20230526/f/finalynx/1.8.3-1.9.0/diff.md --exclude *.pyd
+[2023-05-26 15:09:21] INFO root fetch - processPackages [GoogleBard]: Start processing: fitsio
+[2023-05-26 15:09:21] INFO root fetch - main [MainThread]: End processing [GoogleBard]: success
+[2023-05-26 15:09:21] INFO root fetch - processPackages [fitsio]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-26 15:09:21] INFO root fetch - processPackages [MCPoly]: Start processing: avclass-malicialab
+[2023-05-26 15:09:21] INFO root fetch - main [MainThread]: End processing [MCPoly]: success
+[2023-05-26 15:09:21] INFO root fetch - processPackages [avclass-malicialab]: New version: [2.8.3] Old Version: [2.8.2]
+[2023-05-26 15:09:21] INFO root fetch - processPackages [fitsio]: Downloading https://files.pythonhosted.org/packages/1f/0e/b312ff3f6b588c13fc2256a5df4c4d63c527a07e176012d0593136af53ee/fitsio-1.1.8.tar.gz
+[2023-05-26 15:09:22] INFO root fetch - processPackages [avclass-malicialab]: Downloading https://files.pythonhosted.org/packages/2b/2b/c664e9b8232c523b8ca4dbc5a11753df9ffeed8b0c2b7b2f37ed0aa8144e/avclass-malicialab-2.8.2.tar.gz
+[2023-05-26 15:09:22] INFO root fetch - processPackages [uquake]: Start processing: nbdev-numpy
+[2023-05-26 15:09:22] INFO root fetch - main [MainThread]: End processing [uquake]: success
+[2023-05-26 15:09:22] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 15:09:22] INFO root fetch - processPackages [avclass-malicialab]: Downloading https://files.pythonhosted.org/packages/03/e9/db16b882e586fabfc3d064d31fdf6915e18a9cca3d18e9a9001eebd63a5d/avclass-malicialab-2.8.3.tar.gz
+[2023-05-26 15:09:22] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-05-26 15:09:22] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230526/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 15:09:22] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-05-26 15:09:22] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230526/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 15:09:22] INFO root fetch - processPackages [avclass-malicialab]: executing diffoscope
+[2023-05-26 15:09:22] INFO root fetch - processPackages [avclass-malicialab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/avclass-malicialab-2.8.2.tar.gz tmp/avclass-malicialab-2.8.3.tar.gz --markdown 20230526/a/avclass-malicialab/2.8.2-2.8.3/diff.md --exclude *.pyd
+[2023-05-26 15:09:22] INFO root fetch - processPackages [fitsio]: Downloading https://files.pythonhosted.org/packages/17/0d/090accff764d855c68a9b1fd51e87ef99c986d9ae9eb2fbb5f4527c07005/fitsio-1.1.9.tar.gz
+[2023-05-26 15:09:22] INFO root fetch - processPackages [invenio-rdm-migrator]: Start processing: odoo14-addon-product-import-ubl
+[2023-05-26 15:09:22] INFO root fetch - main [MainThread]: End processing [invenio-rdm-migrator]: success
+[2023-05-26 15:09:23] INFO root fetch - processPackages [odoo14-addon-product-import-ubl]: New version: [14.0.1.1.1] Old Version: [14.0.1.1.0]
+[2023-05-26 15:09:23] INFO root fetch - processPackages [odoo14-addon-product-import-ubl]: Downloading https://files.pythonhosted.org/packages/bc/76/ae49a172aaba5b0d967bfa874db209103ddfa5015dcac494168c7e27281e/odoo14_addon_product_import_ubl-14.0.1.1.0-py3-none-any.whl
+[2023-05-26 15:09:23] INFO root fetch - processPackages [fitsio]: executing diffoscope
+[2023-05-26 15:09:23] INFO root fetch - processPackages [fitsio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fitsio-1.1.8.tar.gz tmp/fitsio-1.1.9.tar.gz --markdown 20230526/f/fitsio/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-26 15:09:23] INFO root fetch - processPackages [odoo14-addon-product-import-ubl]: Downloading https://files.pythonhosted.org/packages/20/0b/488306af18ffe30799ebe8a5718174e8ea497c7c71b129ffc1ccb8d5419d/odoo14_addon_product_import_ubl-14.0.1.1.1-py3-none-any.whl
+[2023-05-26 15:09:23] INFO root fetch - processPackages [odoo14-addon-product-import-ubl]: executing diffoscope
+[2023-05-26 15:09:23] INFO root fetch - processPackages [odoo14-addon-product-import-ubl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_product_import_ubl-14.0.1.1.0-py3-none-any.whl.zip tmp/odoo14_addon_product_import_ubl-14.0.1.1.1-py3-none-any.whl.zip --markdown 20230526/o/odoo14-addon-product-import-ubl/14.0.1.1.0-14.0.1.1.1/diff.md --exclude *.pyd
+[2023-05-26 15:09:24] INFO root fetch - main [MainThread]: End processing [pydantic-core]: success
+[2023-05-26 15:09:24] INFO root fetch - main [MainThread]: End processing [avclass-malicialab]: success
+[2023-05-26 15:09:24] INFO root fetch - main [MainThread]: End processing [useis]: success
+[2023-05-26 15:09:25] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-05-26 15:09:25] INFO root fetch - main [MainThread]: End processing [finalynx]: success
+[2023-05-26 15:09:25] INFO root fetch - main [MainThread]: End processing [odoo14-addon-product-import-ubl]: success
+[2023-05-26 15:09:26] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-05-26 15:09:26] INFO root fetch - main [MainThread]: End processing [average-minimum-distance]: success
+[2023-05-26 15:09:26] INFO root fetch - main [MainThread]: End processing [ovos-skill-date-time]: success
+[2023-05-26 15:09:27] INFO root fetch - main [MainThread]: End processing [fitsio]: success
+[2023-05-26 15:09:27] INFO root fetch - main [MainThread]: Store serial: [18263170]
