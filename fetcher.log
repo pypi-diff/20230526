@@ -21779,3 +21779,87 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 18:37:49] INFO root fetch - main [MainThread]: End processing [pyqt5-fugueicons]: success
 [2023-05-26 18:37:51] INFO root fetch - main [MainThread]: End processing [mujoco-dev]: success
 [2023-05-26 18:37:51] INFO root fetch - main [MainThread]: Store serial: [18266424]
+[2023-05-26 18:42:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18266424]
+[2023-05-26 18:43:03] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-26 18:43:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: acestream-search
+[2023-05-26 18:43:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shub-workflow
+[2023-05-26 18:43:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: acwater
+[2023-05-26 18:43:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pg-bulk-ingest
+[2023-05-26 18:43:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spl-widgets
+[2023-05-26 18:43:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nbxmpp
+[2023-05-26 18:43:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: docusign-esign
+[2023-05-26 18:43:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: diagonal-b6
+[2023-05-26 18:43:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: enough-cards
+[2023-05-26 18:43:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: wds-client
+[2023-05-26 18:43:03] INFO root fetch - processPackages [shub-workflow]: New version: [1.9.7.4] Old Version: [1.9.7.3]
+[2023-05-26 18:43:03] INFO root fetch - processPackages [acwater]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-26 18:43:03] INFO root fetch - processPackages [acestream-search]: New version: [1.6.2] Old Version: [1.6.1]
+[2023-05-26 18:43:03] INFO root fetch - processPackages [nbxmpp]: New version: [4.3.0] Old Version: [4.2.2]
+[2023-05-26 18:43:03] INFO root fetch - processPackages [spl-widgets]: New version: [1.5.0] Old Version: [1.0.0]
+[2023-05-26 18:43:03] INFO root fetch - processPackages [pg-bulk-ingest]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 18:43:03] INFO root fetch - processPackages [docusign-esign]: New version: [3.9.0rc1] Old Version: [3.9.0]
+[2023-05-26 18:43:03] WARNING root fetch - processPackages [enough-cards]: Skipping, unable to determine old version
+[2023-05-26 18:43:03] INFO root fetch - processPackages [enough-cards]: Start processing: upgini
+[2023-05-26 18:43:03] INFO root fetch - main [MainThread]: End processing [enough-cards] error
+[2023-05-26 18:43:03] INFO root fetch - processPackages [diagonal-b6]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-26 18:43:03] INFO root fetch - processPackages [wds-client]: New version: [0.2.87] Old Version: [0.2.85]
+[2023-05-26 18:43:03] INFO root fetch - processPackages [upgini]: New version: [1.1.99] Old Version: [1.1.98]
+[2023-05-26 18:43:04] INFO root fetch - processPackages [pg-bulk-ingest]: executing diffoscope
+[2023-05-26 18:43:04] INFO root fetch - processPackages [pg-bulk-ingest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_bulk_ingest-0.0.8.tar.gz tmp/pg_bulk_ingest-0.0.9.tar.gz --markdown 20230526/p/pg-bulk-ingest/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 18:43:04] INFO root fetch - processPackages [upgini]: executing diffoscope
+[2023-05-26 18:43:04] INFO root fetch - processPackages [upgini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upgini-1.1.98.tar.gz tmp/upgini-1.1.99.tar.gz --markdown 20230526/u/upgini/1.1.98-1.1.99/diff.md --exclude *.pyd
+[2023-05-26 18:43:04] INFO root fetch - processPackages [nbxmpp]: Downloading https://files.pythonhosted.org/packages/d1/d0/e3abc3f11ee5b38284a1988b8540d06f25d98c7c097a56d0b122e3d8fb5c/nbxmpp-4.2.2.tar.gz
+[2023-05-26 18:43:04] INFO root fetch - processPackages [acwater]: Downloading https://files.pythonhosted.org/packages/e8/70/1d0a886a815ba8a9fc407afb9a93cd883c9b4f732ba53324dc0f6c347bdc/acwater-0.3.2.tar.gz
+[2023-05-26 18:43:04] INFO root fetch - processPackages [acestream-search]: Downloading https://files.pythonhosted.org/packages/88/ab/b923916b40e0406202b5a47467c560923a3f3e2965c9a91a39aa561d45f1/acestream_search-1.6.1.tar.gz
+[2023-05-26 18:43:04] INFO root fetch - processPackages [docusign-esign]: Downloading https://files.pythonhosted.org/packages/75/22/db8359151c6024b8b5a4c597c2fd1e80f8d7d674813179745547e495fff5/docusign-esign-3.9.0.tar.gz
+[2023-05-26 18:43:04] INFO root fetch - processPackages [spl-widgets]: Downloading https://files.pythonhosted.org/packages/0b/40/107c8f34b654272318a396e1d41363373b9f734519d91e94dd75085c6719/spl_widgets-1.0.0.tar.gz
+[2023-05-26 18:43:04] INFO root fetch - processPackages [diagonal-b6]: Downloading https://files.pythonhosted.org/packages/77/47/0ef88f7fe7b934399deef8bf6b4770e8bae46ef835842b740a1077ce040d/diagonal_b6-0.0.1.tar.gz
+[2023-05-26 18:43:04] INFO root fetch - processPackages [acwater]: executing diffoscope
+[2023-05-26 18:43:04] INFO root fetch - processPackages [acwater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acwater-0.3.1.tar.gz tmp/acwater-0.3.2.tar.gz --markdown 20230526/a/acwater/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-26 18:43:04] INFO root fetch - processPackages [wds-client]: Downloading https://files.pythonhosted.org/packages/11/75/e3eaaab944a5429a818b53409185373bc1fd1ceda465ca912831b94a300d/wds-client-0.2.87.tar.gz
+[2023-05-26 18:43:04] INFO root fetch - processPackages [nbxmpp]: Downloading https://files.pythonhosted.org/packages/93/6a/6b9e8de1e6b126e93975a4a51d740651d1c49b49d304f2181f73f34a821e/nbxmpp-4.3.0.tar.gz
+[2023-05-26 18:43:04] INFO root fetch - processPackages [shub-workflow]: executing diffoscope
+[2023-05-26 18:43:04] INFO root fetch - processPackages [shub-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shub-workflow-1.9.7.3.tar.gz tmp/shub-workflow-1.9.7.4.tar.gz --markdown 20230526/s/shub-workflow/1.9.7.3-1.9.7.4/diff.md --exclude *.pyd
+[2023-05-26 18:43:04] INFO root fetch - processPackages [wds-client]: executing diffoscope
+[2023-05-26 18:43:04] INFO root fetch - processPackages [wds-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wds-client-0.2.85.tar.gz tmp/wds-client-0.2.87.tar.gz --markdown 20230526/w/wds-client/0.2.85-0.2.87/diff.md --exclude *.pyd
+[2023-05-26 18:43:04] INFO root fetch - processPackages [diagonal-b6]: Downloading https://files.pythonhosted.org/packages/e0/64/668dabc0a8f0c7299a5e35aa7c6319eddbffee4593114fd0802f7f8f3226/diagonal_b6-0.0.2.tar.gz
+[2023-05-26 18:43:04] INFO root fetch - processPackages [nbxmpp]: executing diffoscope
+[2023-05-26 18:43:04] INFO root fetch - processPackages [nbxmpp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbxmpp-4.2.2.tar.gz tmp/nbxmpp-4.3.0.tar.gz --markdown 20230526/n/nbxmpp/4.2.2-4.3.0/diff.md --exclude *.pyd
+[2023-05-26 18:43:04] INFO root fetch - processPackages [spl-widgets]: Downloading https://files.pythonhosted.org/packages/9f/01/9ce7e49b42fe2fef5f1bb6548167dde0ae59f2102ff039ef7bb2db35cea0/spl_widgets-1.5.0.tar.gz
+[2023-05-26 18:43:04] INFO root fetch - processPackages [acestream-search]: Downloading https://files.pythonhosted.org/packages/6a/4a/18bad3a7e7f8d4ce407737e07099f8f6c521555893d107b017cdc656fb62/acestream_search-1.6.2.tar.gz
+[2023-05-26 18:43:04] INFO root fetch - processPackages [acestream-search]: executing diffoscope
+[2023-05-26 18:43:04] INFO root fetch - processPackages [acestream-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acestream_search-1.6.1.tar.gz tmp/acestream_search-1.6.2.tar.gz --markdown 20230526/a/acestream-search/1.6.1-1.6.2/diff.md --exclude *.pyd
+[2023-05-26 18:43:04] INFO root fetch - processPackages [spl-widgets]: executing diffoscope
+[2023-05-26 18:43:04] INFO root fetch - processPackages [spl-widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spl_widgets-1.0.0.tar.gz tmp/spl_widgets-1.5.0.tar.gz --markdown 20230526/s/spl-widgets/1.0.0-1.5.0/diff.md --exclude *.pyd
+[2023-05-26 18:43:04] INFO root fetch - processPackages [diagonal-b6]: executing diffoscope
+[2023-05-26 18:43:04] INFO root fetch - processPackages [diagonal-b6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diagonal_b6-0.0.1.tar.gz tmp/diagonal_b6-0.0.2.tar.gz --markdown 20230526/d/diagonal-b6/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-26 18:43:04] INFO root fetch - processPackages [docusign-esign]: Downloading https://files.pythonhosted.org/packages/9a/1d/bd6330aab317a9807113e36447af83e1b5072fc546915d9fba5ec31fa5d2/docusign-esign-3.9.0rc1.tar.gz
+[2023-05-26 18:43:05] INFO root fetch - processPackages [docusign-esign]: executing diffoscope
+[2023-05-26 18:43:05] INFO root fetch - processPackages [docusign-esign]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docusign-esign-3.9.0.tar.gz tmp/docusign-esign-3.9.0rc1.tar.gz --markdown 20230526/d/docusign-esign/3.9.0-3.9.0rc1/diff.md --exclude *.pyd
+[2023-05-26 18:43:05] INFO root fetch - processPackages [pg-bulk-ingest]: Start processing: samscore
+[2023-05-26 18:43:05] INFO root fetch - main [MainThread]: End processing [pg-bulk-ingest]: success
+[2023-05-26 18:43:05] WARNING root fetch - processPackages [samscore]: Skipping, unable to determine old version
+[2023-05-26 18:43:05] INFO root fetch - processPackages [samscore]: Start processing: k1usnsst
+[2023-05-26 18:43:05] INFO root fetch - main [MainThread]: End processing [samscore] error
+[2023-05-26 18:43:05] INFO root fetch - processPackages [k1usnsst]: New version: [23.5.26] Old Version: [23.1.27]
+[2023-05-26 18:43:05] INFO root fetch - processPackages [k1usnsst]: Downloading https://files.pythonhosted.org/packages/f0/3f/27426876a8a5664485b97206aabb4d5769b749305b179e4c56a76e943bd4/k1usnsst-23.1.27.tar.gz
+[2023-05-26 18:43:05] INFO root fetch - processPackages [k1usnsst]: Downloading https://files.pythonhosted.org/packages/30/a3/e884cf0f22b055e82c56beed1eb2cb77f0ce31c7470ac0760ae14964c16a/k1usnsst-23.5.26.tar.gz
+[2023-05-26 18:43:05] INFO root fetch - processPackages [k1usnsst]: executing diffoscope
+[2023-05-26 18:43:05] INFO root fetch - processPackages [k1usnsst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/k1usnsst-23.1.27.tar.gz tmp/k1usnsst-23.5.26.tar.gz --markdown 20230526/k/k1usnsst/23.1.27-23.5.26/diff.md --exclude *.pyd
+[2023-05-26 18:43:06] INFO root fetch - processPackages [acwater]: Start processing: proxyUtil
+[2023-05-26 18:43:06] INFO root fetch - main [MainThread]: End processing [acwater]: success
+[2023-05-26 18:43:06] WARNING root fetch - processPackages [proxyUtil]: Skipping, unable to determine old version
+[2023-05-26 18:43:06] INFO root fetch - processPackages [proxyUtil]: Start processing: dotspace
+[2023-05-26 18:43:06] INFO root fetch - main [MainThread]: End processing [proxyUtil] error
+[2023-05-26 18:43:06] WARNING root fetch - processPackages [dotspace]: Skipping, unable to determine old version
+[2023-05-26 18:43:06] INFO root fetch - main [MainThread]: End processing [dotspace] error
+[2023-05-26 18:43:06] INFO root fetch - main [MainThread]: End processing [upgini]: success
+[2023-05-26 18:43:06] INFO root fetch - main [MainThread]: End processing [shub-workflow]: success
+[2023-05-26 18:43:06] INFO root fetch - main [MainThread]: End processing [acestream-search]: success
+[2023-05-26 18:43:07] INFO root fetch - main [MainThread]: End processing [spl-widgets]: success
+[2023-05-26 18:43:07] INFO root fetch - main [MainThread]: End processing [wds-client]: success
+[2023-05-26 18:43:07] INFO root fetch - main [MainThread]: End processing [diagonal-b6]: success
+[2023-05-26 18:43:08] INFO root fetch - main [MainThread]: End processing [k1usnsst]: success
+[2023-05-26 18:43:09] INFO root fetch - main [MainThread]: End processing [nbxmpp]: success
+[2023-05-26 18:43:16] INFO root fetch - main [MainThread]: End processing [docusign-esign]: success
+[2023-05-26 18:43:16] INFO root fetch - main [MainThread]: Store serial: [18266478]
