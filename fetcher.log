@@ -14929,3 +14929,100 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 14:12:48] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-ssm-parameters-cross-region]: success
 [2023-05-26 14:12:48] INFO root fetch - main [MainThread]: End processing [splunk-add-on-ucc-framework]: success
 [2023-05-26 14:12:48] INFO root fetch - main [MainThread]: Store serial: [18262488]
+[2023-05-26 14:17:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18262488]
+[2023-05-26 14:17:57] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-26 14:17:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: invenio-alma
+[2023-05-26 14:17:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-gem
+[2023-05-26 14:17:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pysqueezebox
+[2023-05-26 14:17:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: anonupload
+[2023-05-26 14:17:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spai
+[2023-05-26 14:17:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: prefect-postgres-sensors
+[2023-05-26 14:17:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: act4e-mcdp
+[2023-05-26 14:17:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: wnnet
+[2023-05-26 14:17:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: NanoComp
+[2023-05-26 14:17:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyaver
+[2023-05-26 14:17:57] INFO root fetch - processPackages [django-gem]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-26 14:17:57] INFO root fetch - processPackages [invenio-alma]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-26 14:17:57] INFO root fetch - processPackages [spai]: New version: [2023.5.26.post2] Old Version: [2023.5.26]
+[2023-05-26 14:17:57] INFO root fetch - processPackages [wnnet]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-26 14:17:57] INFO root fetch - processPackages [pyaver]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 14:17:57] INFO root fetch - processPackages [act4e-mcdp]: New version: [0.2.1] Old Version: [0.1]
+[2023-05-26 14:17:57] INFO root fetch - processPackages [prefect-postgres-sensors]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-26 14:17:57] INFO root fetch - processPackages [NanoComp]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-26 14:17:57] INFO root fetch - processPackages [anonupload]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-05-26 14:17:57] INFO root fetch - processPackages [pysqueezebox]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-05-26 14:17:57] INFO root fetch - processPackages [act4e-mcdp]: Downloading https://files.pythonhosted.org/packages/ce/a9/6c83ee959ecbc5cbd83267d06feb1df751a150325ff9cd4543c6691b1f31/act4e_mcdp-0.1-py3-none-any.whl
+[2023-05-26 14:17:57] INFO root fetch - processPackages [NanoComp]: Downloading https://files.pythonhosted.org/packages/f3/ec/a4ee750ccef5c346268ca155b8941ee9f2faa62c343861e488f9c495989e/NanoComp-1.9.1.tar.gz
+[2023-05-26 14:17:57] INFO root fetch - processPackages [wnnet]: Downloading https://files.pythonhosted.org/packages/2b/bb/63a592800bbabae90ace0c290f659ddd3c00a9fcdaf3a9a38df3d7209181/wnnet-1.1.0.tar.gz
+[2023-05-26 14:17:57] INFO root fetch - processPackages [pyaver]: Downloading https://files.pythonhosted.org/packages/95/5a/b36c202e31e9277b8f66c330a0d863b67fa9b4533089abd9b4dd294a16a6/pyaver-0.0.8.tar.gz
+[2023-05-26 14:17:57] INFO root fetch - processPackages [spai]: Downloading https://files.pythonhosted.org/packages/36/3c/5183ee6359ed6febfb00583e4f1995ebd9c908838d103cf502bce5ac7602/spai-2023.5.26.post2.tar.gz
+[2023-05-26 14:17:57] INFO root fetch - processPackages [anonupload]: Downloading https://files.pythonhosted.org/packages/9a/bb/7afd3735c09e8441f817ccbbdb8da00265f789b4983add14715b4094fa23/anonupload-1.1.5-py3-none-any.whl
+[2023-05-26 14:17:57] INFO root fetch - processPackages [prefect-postgres-sensors]: Downloading https://files.pythonhosted.org/packages/6b/4e/f08d9bf318930ab1f87a7983434f93d61273b68c9792428ed8c7adef2b7b/prefect_postgres_sensors-0.4.0.tar.gz
+[2023-05-26 14:17:57] INFO root fetch - processPackages [invenio-alma]: Downloading https://files.pythonhosted.org/packages/f9/ea/625e5f50675f705a1658b637a802815ef7091c06c2d99ca6e1c02223486d/invenio-alma-0.9.1.tar.gz
+[2023-05-26 14:17:57] INFO root fetch - processPackages [django-gem]: Downloading https://files.pythonhosted.org/packages/69/21/4537b9059d6292523a71232a3b737112401191859edc61c27d0c8b330e03/django_gem-1.0.3.tar.gz
+[2023-05-26 14:17:57] INFO root fetch - processPackages [pysqueezebox]: Downloading https://files.pythonhosted.org/packages/4a/7d/499e903d53d4e785dfed7eb9c08153a3fbd28046a06f244cc91b42e92781/pysqueezebox-0.6.3.tar.gz
+[2023-05-26 14:17:58] INFO root fetch - processPackages [act4e-mcdp]: Downloading https://files.pythonhosted.org/packages/6f/eb/0bf923ae33bb6573c9bb6f24298634ba739e7f9945a333ee4e0cae34e179/act4e_mcdp-0.2.1-py3-none-any.whl
+[2023-05-26 14:17:58] INFO root fetch - processPackages [anonupload]: executing diffoscope
+[2023-05-26 14:17:58] INFO root fetch - processPackages [anonupload]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anonupload-1.1.4-py3-none-any.whl.zip tmp/anonupload-1.1.5-py3-none-any.whl.zip --markdown 20230526/a/anonupload/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-05-26 14:17:58] INFO root fetch - processPackages [invenio-alma]: executing diffoscope
+[2023-05-26 14:17:58] INFO root fetch - processPackages [invenio-alma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invenio-alma-0.9.0.tar.gz tmp/invenio-alma-0.9.1.tar.gz --markdown 20230526/i/invenio-alma/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-26 14:17:58] INFO root fetch - processPackages [django-gem]: executing diffoscope
+[2023-05-26 14:17:58] INFO root fetch - processPackages [django-gem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_gem-1.0.2.tar.gz tmp/django_gem-1.0.3.tar.gz --markdown 20230526/d/django-gem/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-26 14:17:58] INFO root fetch - processPackages [wnnet]: Downloading https://files.pythonhosted.org/packages/a8/44/9fba6b9d3af62447659c75d3652669731f5935927493b4a3dfd0be466c9b/wnnet-1.2.0.tar.gz
+[2023-05-26 14:17:58] INFO root fetch - processPackages [pysqueezebox]: executing diffoscope
+[2023-05-26 14:17:58] INFO root fetch - processPackages [pysqueezebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysqueezebox-0.6.2.tar.gz tmp/pysqueezebox-0.6.3.tar.gz --markdown 20230526/p/pysqueezebox/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-05-26 14:17:58] INFO root fetch - processPackages [prefect-postgres-sensors]: Downloading https://files.pythonhosted.org/packages/9f/74/bb33a2ff5f8bf9746760a9fdc6cb0d1f28e15da708cc272241d932d3871f/prefect_postgres_sensors-0.5.0.tar.gz
+[2023-05-26 14:17:58] INFO root fetch - processPackages [pyaver]: Downloading https://files.pythonhosted.org/packages/4f/de/06081737bbd2b0a128bb8961c755f75493680c0d2124f4234415b8117269/pyaver-0.0.9.tar.gz
+[2023-05-26 14:17:58] INFO root fetch - processPackages [NanoComp]: Downloading https://files.pythonhosted.org/packages/c1/9c/32d11a236bcdb9184941f12413704398bd46fa984d43387cb8f02d0472d4/NanoComp-1.9.2.tar.gz
+[2023-05-26 14:17:58] INFO root fetch - processPackages [spai]: executing diffoscope
+[2023-05-26 14:17:58] INFO root fetch - processPackages [spai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spai-2023.5.26.tar.gz tmp/spai-2023.5.26.post2.tar.gz --markdown 20230526/s/spai/2023.5.26-2023.5.26.post2/diff.md --exclude *.pyd
+[2023-05-26 14:17:58] INFO root fetch - processPackages [act4e-mcdp]: executing diffoscope
+[2023-05-26 14:17:58] INFO root fetch - processPackages [act4e-mcdp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/act4e_mcdp-0.1-py3-none-any.whl.zip tmp/act4e_mcdp-0.2.1-py3-none-any.whl.zip --markdown 20230526/a/act4e-mcdp/0.1-0.2.1/diff.md --exclude *.pyd
+[2023-05-26 14:17:58] INFO root fetch - processPackages [NanoComp]: executing diffoscope
+[2023-05-26 14:17:58] INFO root fetch - processPackages [NanoComp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NanoComp-1.9.1.tar.gz tmp/NanoComp-1.9.2.tar.gz --markdown 20230526/N/NanoComp/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-26 14:17:58] INFO root fetch - processPackages [wnnet]: executing diffoscope
+[2023-05-26 14:17:58] INFO root fetch - processPackages [wnnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wnnet-1.1.0.tar.gz tmp/wnnet-1.2.0.tar.gz --markdown 20230526/w/wnnet/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-26 14:17:58] INFO root fetch - processPackages [prefect-postgres-sensors]: executing diffoscope
+[2023-05-26 14:17:58] INFO root fetch - processPackages [prefect-postgres-sensors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prefect_postgres_sensors-0.4.0.tar.gz tmp/prefect_postgres_sensors-0.5.0.tar.gz --markdown 20230526/p/prefect-postgres-sensors/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-26 14:17:58] INFO root fetch - processPackages [pyaver]: executing diffoscope
+[2023-05-26 14:17:58] INFO root fetch - processPackages [pyaver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaver-0.0.8.tar.gz tmp/pyaver-0.0.9.tar.gz --markdown 20230526/p/pyaver/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 14:18:00] INFO root fetch - processPackages [anonupload]: Start processing: test-quicktree
+[2023-05-26 14:18:00] INFO root fetch - main [MainThread]: End processing [anonupload]: success
+[2023-05-26 14:18:00] WARNING root fetch - processPackages [test-quicktree]: Skipping, unable to determine old version
+[2023-05-26 14:18:00] INFO root fetch - processPackages [test-quicktree]: Start processing: beanie
+[2023-05-26 14:18:00] INFO root fetch - main [MainThread]: End processing [test-quicktree] error
+[2023-05-26 14:18:00] INFO root fetch - processPackages [django-gem]: Start processing: django-vendor
+[2023-05-26 14:18:00] INFO root fetch - main [MainThread]: End processing [django-gem]: success
+[2023-05-26 14:18:00] INFO root fetch - processPackages [django-vendor]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-26 14:18:00] INFO root fetch - processPackages [act4e-mcdp]: Start processing: news-crawlers
+[2023-05-26 14:18:00] INFO root fetch - main [MainThread]: End processing [act4e-mcdp]: success
+[2023-05-26 14:18:00] INFO root fetch - processPackages [news-crawlers]: New version: [3.5.0] Old Version: [3.4.3]
+[2023-05-26 14:18:00] INFO root fetch - processPackages [beanie]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-26 14:18:00] INFO root fetch - processPackages [django-vendor]: executing diffoscope
+[2023-05-26 14:18:00] INFO root fetch - processPackages [django-vendor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-vendor-0.4.0.tar.gz tmp/django-vendor-0.4.1.tar.gz --markdown 20230526/d/django-vendor/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-26 14:18:00] INFO root fetch - processPackages [pysqueezebox]: Start processing: asimov
+[2023-05-26 14:18:00] INFO root fetch - main [MainThread]: End processing [pysqueezebox]: success
+[2023-05-26 14:18:00] INFO root fetch - processPackages [invenio-alma]: Start processing: xw-utils
+[2023-05-26 14:18:00] INFO root fetch - main [MainThread]: End processing [invenio-alma]: success
+[2023-05-26 14:18:00] INFO root fetch - processPackages [news-crawlers]: executing diffoscope
+[2023-05-26 14:18:00] INFO root fetch - processPackages [news-crawlers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/news_crawlers-3.4.3.tar.gz tmp/news_crawlers-3.5.0.tar.gz --markdown 20230526/n/news-crawlers/3.4.3-3.5.0/diff.md --exclude *.pyd
+[2023-05-26 14:18:00] INFO root fetch - processPackages [xw-utils]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-26 14:18:00] INFO root fetch - processPackages [asimov]: New version: [0.6.0a3] Old Version: [0.6.0a2]
+[2023-05-26 14:18:00] INFO root fetch - processPackages [beanie]: executing diffoscope
+[2023-05-26 14:18:00] INFO root fetch - processPackages [beanie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beanie-1.9.1.tar.gz tmp/beanie-1.9.2.tar.gz --markdown 20230526/b/beanie/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-26 14:18:01] INFO root fetch - processPackages [xw-utils]: executing diffoscope
+[2023-05-26 14:18:01] INFO root fetch - processPackages [xw-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xw_utils-1.0.8-cp39-cp39-win_amd64.whl.zip tmp/xw_utils-1.0.9-cp39-cp39-win_amd64.whl.zip --markdown 20230526/x/xw-utils/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-26 14:18:01] INFO root fetch - processPackages [asimov]: Downloading https://files.pythonhosted.org/packages/c5/b9/5ed11d50773c8edea30493d6b28e0727d3b2730a9801e5192ea1fc1ab5e1/asimov-0.6.0a3-py2.py3-none-any.whl
+[2023-05-26 14:18:01] INFO root fetch - main [MainThread]: End processing [NanoComp]: success
+[2023-05-26 14:18:01] INFO root fetch - main [MainThread]: End processing [prefect-postgres-sensors]: success
+[2023-05-26 14:18:01] INFO root fetch - main [MainThread]: End processing [wnnet]: success
+[2023-05-26 14:18:01] INFO root fetch - main [MainThread]: End processing [spai]: success
+[2023-05-26 14:18:01] INFO root fetch - processPackages [asimov]: executing diffoscope
+[2023-05-26 14:18:01] INFO root fetch - processPackages [asimov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asimov-0.6.0a2-py2.py3-none-any.whl.zip tmp/asimov-0.6.0a3-py2.py3-none-any.whl.zip --markdown 20230526/a/asimov/0.6.0a2-0.6.0a3/diff.md --exclude *.pyd
+[2023-05-26 14:18:01] INFO root fetch - main [MainThread]: End processing [pyaver]: success
+[2023-05-26 14:18:03] INFO root fetch - main [MainThread]: End processing [xw-utils]: success
+[2023-05-26 14:18:03] INFO root fetch - main [MainThread]: End processing [news-crawlers]: success
+[2023-05-26 14:18:03] INFO root fetch - main [MainThread]: End processing [beanie]: success
+[2023-05-26 14:18:03] INFO root fetch - main [MainThread]: End processing [asimov]: success
+[2023-05-26 14:18:03] INFO root fetch - main [MainThread]: End processing [django-vendor]: success
+[2023-05-26 14:18:03] INFO root fetch - main [MainThread]: Store serial: [18262559]
