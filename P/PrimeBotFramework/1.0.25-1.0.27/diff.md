@@ -1,0 +1,192 @@
+# Comparing `tmp/PrimeBotFramework-1.0.25.tar.gz` & `tmp/PrimeBotFramework-1.0.27.tar.gz`
+
+## filetype from file(1)
+
+```diff
+@@ -1 +1 @@
+-gzip compressed data, was "/opt/atlassian/pipelines/agent/build/dist/.tmp-f4z3cnjz/PrimeBotFramework-1.0.25.tar", last modified: Wed May 24 17:27:23 2023, max compression
++gzip compressed data, was "/opt/atlassian/pipelines/agent/build/dist/.tmp-yvgw175j/PrimeBotFramework-1.0.27.tar", last modified: Fri May 26 16:58:57 2023, max compression
+```
+
+## Comparing `PrimeBotFramework-1.0.25.tar` & `PrimeBotFramework-1.0.27.tar`
+
+### file list
+
+```diff
+@@ -1,40 +1,40 @@
+-drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-24 17:27:23.027807 PrimeBotFramework-1.0.25/
+--rw-rw-rw-   0 root         (0) root         (0)      516 2023-05-24 17:27:23.031807 PrimeBotFramework-1.0.25/PKG-INFO
+-drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-24 17:27:23.027807 PrimeBotFramework-1.0.25/PrimeBot/
+-drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-24 17:27:23.027807 PrimeBotFramework-1.0.25/PrimeBot/B2E/
+--rw-rw-rw-   0 root         (0) root         (0)     4028 2023-05-24 17:27:12.000000 PrimeBotFramework-1.0.25/PrimeBot/B2E/__init__.py
+-drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-24 17:27:23.027807 PrimeBotFramework-1.0.25/PrimeBot/Cnab750V1/
+--rw-rw-rw-   0 root         (0) root         (0)     8320 2023-05-24 17:27:12.000000 PrimeBotFramework-1.0.25/PrimeBot/Cnab750V1/__init__.py
+-drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-24 17:27:23.027807 PrimeBotFramework-1.0.25/PrimeBot/CpfCnpj/
+--rw-rw-rw-   0 root         (0) root         (0)     1963 2023-05-24 17:27:12.000000 PrimeBotFramework-1.0.25/PrimeBot/CpfCnpj/__init__.py
+--rw-rw-rw-   0 root         (0) root         (0)      662 2023-05-24 17:27:12.000000 PrimeBotFramework-1.0.25/PrimeBot/CpfCnpj/api_codes.py
+--rw-rw-rw-   0 root         (0) root         (0)      365 2023-05-24 17:27:12.000000 PrimeBotFramework-1.0.25/PrimeBot/CpfCnpj/model.py
+-drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-24 17:27:23.027807 PrimeBotFramework-1.0.25/PrimeBot/D4Sign/
+--rw-rw-rw-   0 root         (0) root         (0)     2600 2023-05-24 17:27:12.000000 PrimeBotFramework-1.0.25/PrimeBot/D4Sign/__init__.py
+-drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-24 17:27:23.027807 PrimeBotFramework-1.0.25/PrimeBot/DeathByCaptcha/
+--rw-rw-rw-   0 root         (0) root         (0)     2822 2023-05-24 17:27:12.000000 PrimeBotFramework-1.0.25/PrimeBot/DeathByCaptcha/__init__.py
+-drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-24 17:27:23.027807 PrimeBotFramework-1.0.25/PrimeBot/Documents/
+--rw-rw-rw-   0 root         (0) root         (0)     1098 2023-05-24 17:27:12.000000 PrimeBotFramework-1.0.25/PrimeBot/Documents/__init__.py
+-drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-24 17:27:23.027807 PrimeBotFramework-1.0.25/PrimeBot/Elastic/
+--rw-rw-rw-   0 root         (0) root         (0)     1239 2023-05-24 17:27:12.000000 PrimeBotFramework-1.0.25/PrimeBot/Elastic/__init__.py
+-drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-24 17:27:23.027807 PrimeBotFramework-1.0.25/PrimeBot/ExchangeGraph/
+--rw-rw-rw-   0 root         (0) root         (0)     8987 2023-05-24 17:27:12.000000 PrimeBotFramework-1.0.25/PrimeBot/ExchangeGraph/__init__.py
+-drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-24 17:27:23.027807 PrimeBotFramework-1.0.25/PrimeBot/IntegracaoSendGrid/
+--rw-rw-rw-   0 root         (0) root         (0)     4251 2023-05-24 17:27:12.000000 PrimeBotFramework-1.0.25/PrimeBot/IntegracaoSendGrid/__init__.py
+-drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-24 17:27:23.027807 PrimeBotFramework-1.0.25/PrimeBot/ListenerECS/
+--rw-rw-rw-   0 root         (0) root         (0)     4096 2023-05-24 17:27:12.000000 PrimeBotFramework-1.0.25/PrimeBot/ListenerECS/__init__.py
+-drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-24 17:27:23.027807 PrimeBotFramework-1.0.25/PrimeBot/Mongo/
+--rw-rw-rw-   0 root         (0) root         (0)      465 2023-05-24 17:27:12.000000 PrimeBotFramework-1.0.25/PrimeBot/Mongo/__init__.py
+-drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-24 17:27:23.027807 PrimeBotFramework-1.0.25/PrimeBot/OracleDB/
+--rw-rw-rw-   0 root         (0) root         (0)      562 2023-05-24 17:27:12.000000 PrimeBotFramework-1.0.25/PrimeBot/OracleDB/__init__.py
+-drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-24 17:27:23.027807 PrimeBotFramework-1.0.25/PrimeBot/Vault/
+--rw-rw-rw-   0 root         (0) root         (0)     2740 2023-05-24 17:27:12.000000 PrimeBotFramework-1.0.25/PrimeBot/Vault/__init__.py
+--rw-rw-rw-   0 root         (0) root         (0)        0 2023-05-24 17:27:12.000000 PrimeBotFramework-1.0.25/PrimeBot/__init__.py
+-drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-24 17:27:23.027807 PrimeBotFramework-1.0.25/PrimeBotFramework.egg-info/
+--rw-rw-rw-   0 root         (0) root         (0)      516 2023-05-24 17:27:22.000000 PrimeBotFramework-1.0.25/PrimeBotFramework.egg-info/PKG-INFO
+--rw-rw-rw-   0 root         (0) root         (0)      709 2023-05-24 17:27:23.000000 PrimeBotFramework-1.0.25/PrimeBotFramework.egg-info/SOURCES.txt
+--rw-rw-rw-   0 root         (0) root         (0)        1 2023-05-24 17:27:22.000000 PrimeBotFramework-1.0.25/PrimeBotFramework.egg-info/dependency_links.txt
+--rw-rw-rw-   0 root         (0) root         (0)      195 2023-05-24 17:27:22.000000 PrimeBotFramework-1.0.25/PrimeBotFramework.egg-info/requires.txt
+--rw-rw-rw-   0 root         (0) root         (0)        9 2023-05-24 17:27:22.000000 PrimeBotFramework-1.0.25/PrimeBotFramework.egg-info/top_level.txt
+--rw-rw-rw-   0 root         (0) root         (0)       38 2023-05-24 17:27:23.031807 PrimeBotFramework-1.0.25/setup.cfg
+--rw-rw-rw-   0 root         (0) root         (0)      928 2023-05-24 17:27:12.000000 PrimeBotFramework-1.0.25/setup.py
++drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-26 16:58:57.006805 PrimeBotFramework-1.0.27/
++-rw-rw-rw-   0 root         (0) root         (0)      516 2023-05-26 16:58:57.010805 PrimeBotFramework-1.0.27/PKG-INFO
++drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-26 16:58:57.006805 PrimeBotFramework-1.0.27/PrimeBot/
++drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-26 16:58:57.006805 PrimeBotFramework-1.0.27/PrimeBot/B2E/
++-rw-rw-rw-   0 root         (0) root         (0)     4028 2023-05-26 16:58:47.000000 PrimeBotFramework-1.0.27/PrimeBot/B2E/__init__.py
++drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-26 16:58:57.006805 PrimeBotFramework-1.0.27/PrimeBot/Cnab750V1/
++-rw-rw-rw-   0 root         (0) root         (0)    10035 2023-05-26 16:58:47.000000 PrimeBotFramework-1.0.27/PrimeBot/Cnab750V1/__init__.py
++drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-26 16:58:57.006805 PrimeBotFramework-1.0.27/PrimeBot/CpfCnpj/
++-rw-rw-rw-   0 root         (0) root         (0)     1963 2023-05-26 16:58:47.000000 PrimeBotFramework-1.0.27/PrimeBot/CpfCnpj/__init__.py
++-rw-rw-rw-   0 root         (0) root         (0)      662 2023-05-26 16:58:47.000000 PrimeBotFramework-1.0.27/PrimeBot/CpfCnpj/api_codes.py
++-rw-rw-rw-   0 root         (0) root         (0)      365 2023-05-26 16:58:47.000000 PrimeBotFramework-1.0.27/PrimeBot/CpfCnpj/model.py
++drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-26 16:58:57.006805 PrimeBotFramework-1.0.27/PrimeBot/D4Sign/
++-rw-rw-rw-   0 root         (0) root         (0)     2600 2023-05-26 16:58:47.000000 PrimeBotFramework-1.0.27/PrimeBot/D4Sign/__init__.py
++drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-26 16:58:57.006805 PrimeBotFramework-1.0.27/PrimeBot/DeathByCaptcha/
++-rw-rw-rw-   0 root         (0) root         (0)     2822 2023-05-26 16:58:47.000000 PrimeBotFramework-1.0.27/PrimeBot/DeathByCaptcha/__init__.py
++drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-26 16:58:57.006805 PrimeBotFramework-1.0.27/PrimeBot/Documents/
++-rw-rw-rw-   0 root         (0) root         (0)     1098 2023-05-26 16:58:47.000000 PrimeBotFramework-1.0.27/PrimeBot/Documents/__init__.py
++drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-26 16:58:57.006805 PrimeBotFramework-1.0.27/PrimeBot/Elastic/
++-rw-rw-rw-   0 root         (0) root         (0)     1239 2023-05-26 16:58:47.000000 PrimeBotFramework-1.0.27/PrimeBot/Elastic/__init__.py
++drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-26 16:58:57.006805 PrimeBotFramework-1.0.27/PrimeBot/ExchangeGraph/
++-rw-rw-rw-   0 root         (0) root         (0)     8987 2023-05-26 16:58:47.000000 PrimeBotFramework-1.0.27/PrimeBot/ExchangeGraph/__init__.py
++drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-26 16:58:57.006805 PrimeBotFramework-1.0.27/PrimeBot/IntegracaoSendGrid/
++-rw-rw-rw-   0 root         (0) root         (0)     4251 2023-05-26 16:58:47.000000 PrimeBotFramework-1.0.27/PrimeBot/IntegracaoSendGrid/__init__.py
++drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-26 16:58:57.006805 PrimeBotFramework-1.0.27/PrimeBot/ListenerECS/
++-rw-rw-rw-   0 root         (0) root         (0)     4096 2023-05-26 16:58:47.000000 PrimeBotFramework-1.0.27/PrimeBot/ListenerECS/__init__.py
++drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-26 16:58:57.006805 PrimeBotFramework-1.0.27/PrimeBot/Mongo/
++-rw-rw-rw-   0 root         (0) root         (0)      465 2023-05-26 16:58:47.000000 PrimeBotFramework-1.0.27/PrimeBot/Mongo/__init__.py
++drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-26 16:58:57.006805 PrimeBotFramework-1.0.27/PrimeBot/OracleDB/
++-rw-rw-rw-   0 root         (0) root         (0)      562 2023-05-26 16:58:47.000000 PrimeBotFramework-1.0.27/PrimeBot/OracleDB/__init__.py
++drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-26 16:58:57.006805 PrimeBotFramework-1.0.27/PrimeBot/Vault/
++-rw-rw-rw-   0 root         (0) root         (0)     2740 2023-05-26 16:58:47.000000 PrimeBotFramework-1.0.27/PrimeBot/Vault/__init__.py
++-rw-rw-rw-   0 root         (0) root         (0)        0 2023-05-26 16:58:47.000000 PrimeBotFramework-1.0.27/PrimeBot/__init__.py
++drwxrwxrwx   0 root         (0) root         (0)        0 2023-05-26 16:58:57.010805 PrimeBotFramework-1.0.27/PrimeBotFramework.egg-info/
++-rw-rw-rw-   0 root         (0) root         (0)      516 2023-05-26 16:58:56.000000 PrimeBotFramework-1.0.27/PrimeBotFramework.egg-info/PKG-INFO
++-rw-rw-rw-   0 root         (0) root         (0)      709 2023-05-26 16:58:57.000000 PrimeBotFramework-1.0.27/PrimeBotFramework.egg-info/SOURCES.txt
++-rw-rw-rw-   0 root         (0) root         (0)        1 2023-05-26 16:58:56.000000 PrimeBotFramework-1.0.27/PrimeBotFramework.egg-info/dependency_links.txt
++-rw-rw-rw-   0 root         (0) root         (0)      195 2023-05-26 16:58:56.000000 PrimeBotFramework-1.0.27/PrimeBotFramework.egg-info/requires.txt
++-rw-rw-rw-   0 root         (0) root         (0)        9 2023-05-26 16:58:56.000000 PrimeBotFramework-1.0.27/PrimeBotFramework.egg-info/top_level.txt
++-rw-rw-rw-   0 root         (0) root         (0)       38 2023-05-26 16:58:57.010805 PrimeBotFramework-1.0.27/setup.cfg
++-rw-rw-rw-   0 root         (0) root         (0)      928 2023-05-26 16:58:47.000000 PrimeBotFramework-1.0.27/setup.py
+```
+
+### Comparing `PrimeBotFramework-1.0.25/PKG-INFO` & `PrimeBotFramework-1.0.27/PKG-INFO`
+
+ * *Files 0% similar despite different names*
+
+```diff
+@@ -1,10 +1,10 @@
+ Metadata-Version: 2.1
+ Name: PrimeBotFramework
+-Version: 1.0.25
++Version: 1.0.27
+ Summary: Um pacote de padronizacao de pacotes a serem utilizados pela Prime
+ Home-page: 
+ Author: Prime Control
+ Author-email: 
+ License: MIT
+ Keywords: PrimeBotFramework
+ Classifier: Development Status :: 5 - Production/Stable
+```
+
+### Comparing `PrimeBotFramework-1.0.25/PrimeBot/B2E/__init__.py` & `PrimeBotFramework-1.0.27/PrimeBot/B2E/__init__.py`
+
+ * *Files identical despite different names*
+
+### Comparing `PrimeBotFramework-1.0.25/PrimeBot/CpfCnpj/__init__.py` & `PrimeBotFramework-1.0.27/PrimeBot/CpfCnpj/__init__.py`
+
+ * *Files identical despite different names*
+
+### Comparing `PrimeBotFramework-1.0.25/PrimeBot/CpfCnpj/api_codes.py` & `PrimeBotFramework-1.0.27/PrimeBot/CpfCnpj/api_codes.py`
+
+ * *Files identical despite different names*
+
+### Comparing `PrimeBotFramework-1.0.25/PrimeBot/D4Sign/__init__.py` & `PrimeBotFramework-1.0.27/PrimeBot/D4Sign/__init__.py`
+
+ * *Files identical despite different names*
+
+### Comparing `PrimeBotFramework-1.0.25/PrimeBot/DeathByCaptcha/__init__.py` & `PrimeBotFramework-1.0.27/PrimeBot/DeathByCaptcha/__init__.py`
+
+ * *Files identical despite different names*
+
+### Comparing `PrimeBotFramework-1.0.25/PrimeBot/Documents/__init__.py` & `PrimeBotFramework-1.0.27/PrimeBot/Documents/__init__.py`
+
+ * *Files identical despite different names*
+
+### Comparing `PrimeBotFramework-1.0.25/PrimeBot/Elastic/__init__.py` & `PrimeBotFramework-1.0.27/PrimeBot/Elastic/__init__.py`
+
+ * *Files identical despite different names*
+
+### Comparing `PrimeBotFramework-1.0.25/PrimeBot/ExchangeGraph/__init__.py` & `PrimeBotFramework-1.0.27/PrimeBot/ExchangeGraph/__init__.py`
+
+ * *Files identical despite different names*
+
+### Comparing `PrimeBotFramework-1.0.25/PrimeBot/IntegracaoSendGrid/__init__.py` & `PrimeBotFramework-1.0.27/PrimeBot/IntegracaoSendGrid/__init__.py`
+
+ * *Files identical despite different names*
+
+### Comparing `PrimeBotFramework-1.0.25/PrimeBot/ListenerECS/__init__.py` & `PrimeBotFramework-1.0.27/PrimeBot/ListenerECS/__init__.py`
+
+ * *Files identical despite different names*
+
+### Comparing `PrimeBotFramework-1.0.25/PrimeBot/OracleDB/__init__.py` & `PrimeBotFramework-1.0.27/PrimeBot/OracleDB/__init__.py`
+
+ * *Files identical despite different names*
+
+### Comparing `PrimeBotFramework-1.0.25/PrimeBot/Vault/__init__.py` & `PrimeBotFramework-1.0.27/PrimeBot/Vault/__init__.py`
+
+ * *Files identical despite different names*
+
+### Comparing `PrimeBotFramework-1.0.25/PrimeBotFramework.egg-info/PKG-INFO` & `PrimeBotFramework-1.0.27/PrimeBotFramework.egg-info/PKG-INFO`
+
+ * *Files 0% similar despite different names*
+
+```diff
+@@ -1,10 +1,10 @@
+ Metadata-Version: 2.1
+ Name: PrimeBotFramework
+-Version: 1.0.25
++Version: 1.0.27
+ Summary: Um pacote de padronizacao de pacotes a serem utilizados pela Prime
+ Home-page: 
+ Author: Prime Control
+ Author-email: 
+ License: MIT
+ Keywords: PrimeBotFramework
+ Classifier: Development Status :: 5 - Production/Stable
+```
+
+### Comparing `PrimeBotFramework-1.0.25/PrimeBotFramework.egg-info/SOURCES.txt` & `PrimeBotFramework-1.0.27/PrimeBotFramework.egg-info/SOURCES.txt`
+
+ * *Files identical despite different names*
+
+### Comparing `PrimeBotFramework-1.0.25/setup.py` & `PrimeBotFramework-1.0.27/setup.py`
+
+ * *Files identical despite different names*
+

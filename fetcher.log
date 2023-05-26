@@ -22033,3 +22033,67 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 18:54:48] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
 [2023-05-26 18:55:16] INFO root fetch - main [MainThread]: End processing [burdoc]: success
 [2023-05-26 18:55:16] INFO root fetch - main [MainThread]: Store serial: [18266606]
+[2023-05-26 19:00:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18266606]
+[2023-05-26 19:00:26] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-26 19:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: memorix-client-redis
+[2023-05-26 19:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dotspace
+[2023-05-26 19:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: taskcluster-taskgraph
+[2023-05-26 19:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: onnxruntime-extensions
+[2023-05-26 19:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: c4m-pdk-gf180mcu
+[2023-05-26 19:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: omnisearch
+[2023-05-26 19:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: NEMO-CE
+[2023-05-26 19:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PrimeBotFramework
+[2023-05-26 19:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: plaquette
+[2023-05-26 19:00:26] INFO root fetch - processPackages [taskcluster-taskgraph]: New version: [5.2.0] Old Version: [5.1.1]
+[2023-05-26 19:00:26] INFO root fetch - processPackages [c4m-pdk-gf180mcu]: New version: [0.0.3] Old Version: [0.0.1]
+[2023-05-26 19:00:26] INFO root fetch - processPackages [onnxruntime-extensions]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-05-26 19:00:26] INFO root fetch - processPackages [omnisearch]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-26 19:00:26] INFO root fetch - processPackages [memorix-client-redis]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-05-26 19:00:26] INFO root fetch - processPackages [dotspace]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-26 19:00:26] INFO root fetch - processPackages [PrimeBotFramework]: New version: [1.0.27] Old Version: [1.0.25]
+[2023-05-26 19:00:26] INFO root fetch - processPackages [plaquette]: New version: [0.0.1a1] Old Version: [0.0.1a0]
+[2023-05-26 19:00:26] INFO root fetch - processPackages [NEMO-CE]: New version: [1.3.0] Old Version: [1.2.1]
+[2023-05-26 19:00:26] INFO root fetch - processPackages [c4m-pdk-gf180mcu]: Downloading https://files.pythonhosted.org/packages/cb/d9/1634aa0343ab5e6cff3435f5fffc908b74353d36709fb2ebd0632c1faa31/c4m_pdk_gf180mcu-0.0.1.tar.gz
+[2023-05-26 19:00:26] INFO root fetch - processPackages [omnisearch]: Downloading https://files.pythonhosted.org/packages/c4/10/018c8da26f8923a8dc66485bedc6a5e91a0c05b61862e7221bada75c5c02/omnisearch-0.0.3.tar.gz
+[2023-05-26 19:00:26] INFO root fetch - processPackages [taskcluster-taskgraph]: Downloading https://files.pythonhosted.org/packages/37/9e/85571d10c8b20cf79e3420dd3e12fc0ca66cebd7a4f79543690401ab3bcf/taskcluster-taskgraph-5.1.1.tar.gz
+[2023-05-26 19:00:26] INFO root fetch - processPackages [dotspace]: Downloading https://files.pythonhosted.org/packages/b1/af/e2f7a6f187b1100e404cea2116251bde611c3d761bcbea7720a418e5721e/dotspace-0.0.3.tar.gz
+[2023-05-26 19:00:26] INFO root fetch - processPackages [onnxruntime-extensions]: Downloading https://files.pythonhosted.org/packages/2b/ee/66a6201d4fa4c6ce90eb7bf78b80431a1721b3d79f2b7095849831b9b306/onnxruntime_extensions-0.7.0-cp39-cp39-win_amd64.whl
+[2023-05-26 19:00:26] INFO root fetch - processPackages [memorix-client-redis]: Downloading https://files.pythonhosted.org/packages/96/70/855cbea2b940f87b9a61c5726410f5b71fa816f9254090cd27eda3bbbe46/memorix_client_redis-1.4.2.tar.gz
+[2023-05-26 19:00:26] INFO root fetch - processPackages [plaquette]: Downloading https://files.pythonhosted.org/packages/9b/4a/2747a5186d8f744cbc7cd95bcb401067b37502c65492ff4baeca38182342/plaquette-0.0.1a0-py3-none-any.whl
+[2023-05-26 19:00:26] INFO root fetch - processPackages [PrimeBotFramework]: Downloading https://files.pythonhosted.org/packages/38/a5/c3614dc07c9d92514ad05213a0aa99755a325c386663652db035f4be902d/PrimeBotFramework-1.0.25.tar.gz
+[2023-05-26 19:00:26] INFO root fetch - processPackages [memorix-client-redis]: executing diffoscope
+[2023-05-26 19:00:26] INFO root fetch - processPackages [memorix-client-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memorix_client_redis-1.4.1.tar.gz tmp/memorix_client_redis-1.4.2.tar.gz --markdown 20230526/m/memorix-client-redis/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-05-26 19:00:26] INFO root fetch - processPackages [c4m-pdk-gf180mcu]: Downloading https://files.pythonhosted.org/packages/c0/9a/610ac4df5f2ef14f786ee9eb20641aa193747c302f732ebf3b78ccd5c49a/c4m_pdk_gf180mcu-0.0.3-py3-none-any.whl
+[2023-05-26 19:00:26] INFO root fetch - processPackages [taskcluster-taskgraph]: Downloading https://files.pythonhosted.org/packages/78/97/7f7b03cfd3fb82e6f502eac43f95dea324a020d71a235c1246585be45a79/taskcluster-taskgraph-5.2.0.tar.gz
+[2023-05-26 19:00:26] INFO root fetch - processPackages [omnisearch]: Downloading https://files.pythonhosted.org/packages/c2/4b/c7b5d6f58fd823a1a80354a608b562a02c647dbe19488573555b22e93692/omnisearch-0.0.4.tar.gz
+[2023-05-26 19:00:26] INFO root fetch - processPackages [omnisearch]: executing diffoscope
+[2023-05-26 19:00:26] INFO root fetch - processPackages [omnisearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omnisearch-0.0.3.tar.gz tmp/omnisearch-0.0.4.tar.gz --markdown 20230526/o/omnisearch/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-26 19:00:26] INFO root fetch - processPackages [c4m-pdk-gf180mcu]: executing diffoscope
+[2023-05-26 19:00:26] INFO root fetch - processPackages [c4m-pdk-gf180mcu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c4m_pdk_gf180mcu-0.0.1.tar.gz tmp/c4m_pdk_gf180mcu-0.0.3-py3-none-any.whl.zip --markdown 20230526/c/c4m-pdk-gf180mcu/0.0.1-0.0.3/diff.md --exclude *.pyd
+[2023-05-26 19:00:26] INFO root fetch - processPackages [dotspace]: Downloading https://files.pythonhosted.org/packages/0d/4f/14350c30080adc43ee16765e05d858ed73f82ffc227c0ebf5c0f1b66eead/dotspace-0.0.4.tar.gz
+[2023-05-26 19:00:26] INFO root fetch - processPackages [plaquette]: Downloading https://files.pythonhosted.org/packages/51/9a/8960bcec5675bcf8f1afe0b48633c9ae66fa7bd7d5d859f5fd26cb9276a1/plaquette-0.0.1a1-py3-none-any.whl
+[2023-05-26 19:00:26] INFO root fetch - processPackages [taskcluster-taskgraph]: executing diffoscope
+[2023-05-26 19:00:26] INFO root fetch - processPackages [taskcluster-taskgraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskcluster-taskgraph-5.1.1.tar.gz tmp/taskcluster-taskgraph-5.2.0.tar.gz --markdown 20230526/t/taskcluster-taskgraph/5.1.1-5.2.0/diff.md --exclude *.pyd
+[2023-05-26 19:00:26] INFO root fetch - processPackages [PrimeBotFramework]: Downloading https://files.pythonhosted.org/packages/51/71/2147221e421566fded1d8449b0aaf2085f35ddd25cabbebafe9420d4872a/PrimeBotFramework-1.0.27.tar.gz
+[2023-05-26 19:00:26] INFO root fetch - processPackages [onnxruntime-extensions]: Downloading https://files.pythonhosted.org/packages/58/c7/e6b864cdf6a496cefda9b4a47e33872227aa1e272e997062dda0cbc8cfdf/onnxruntime_extensions-0.8.0-cp39-cp39-win_amd64.whl
+[2023-05-26 19:00:26] INFO root fetch - processPackages [NEMO-CE]: Downloading https://files.pythonhosted.org/packages/80/ce/877de2395f3efc8b05fccb6af13a8e57c6dfb295bb465c83b18f4d2c0feb/NEMO_CE-1.3.0-py3-none-any.whl
+[2023-05-26 19:00:26] INFO root fetch - processPackages [plaquette]: executing diffoscope
+[2023-05-26 19:00:26] INFO root fetch - processPackages [dotspace]: executing diffoscope
+[2023-05-26 19:00:26] INFO root fetch - processPackages [plaquette]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plaquette-0.0.1a0-py3-none-any.whl.zip tmp/plaquette-0.0.1a1-py3-none-any.whl.zip --markdown 20230526/p/plaquette/0.0.1a0-0.0.1a1/diff.md --exclude *.pyd
+[2023-05-26 19:00:26] INFO root fetch - processPackages [dotspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dotspace-0.0.3.tar.gz tmp/dotspace-0.0.4.tar.gz --markdown 20230526/d/dotspace/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-26 19:00:26] INFO root fetch - processPackages [PrimeBotFramework]: executing diffoscope
+[2023-05-26 19:00:26] INFO root fetch - processPackages [PrimeBotFramework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PrimeBotFramework-1.0.25.tar.gz tmp/PrimeBotFramework-1.0.27.tar.gz --markdown 20230526/P/PrimeBotFramework/1.0.25-1.0.27/diff.md --exclude *.pyd
+[2023-05-26 19:00:27] INFO root fetch - processPackages [onnxruntime-extensions]: executing diffoscope
+[2023-05-26 19:00:27] INFO root fetch - processPackages [onnxruntime-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnxruntime_extensions-0.7.0-cp39-cp39-win_amd64.whl.zip tmp/onnxruntime_extensions-0.8.0-cp39-cp39-win_amd64.whl.zip --markdown 20230526/o/onnxruntime-extensions/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-05-26 19:00:27] INFO root fetch - processPackages [NEMO-CE]: executing diffoscope
+[2023-05-26 19:00:27] INFO root fetch - processPackages [NEMO-CE]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NEMO_CE-1.2.1-py3-none-any.whl.zip tmp/NEMO_CE-1.3.0-py3-none-any.whl.zip --markdown 20230526/N/NEMO-CE/1.2.1-1.3.0/diff.md --exclude *.pyd
+[2023-05-26 19:00:28] INFO root fetch - main [MainThread]: End processing [memorix-client-redis]: success
+[2023-05-26 19:00:28] INFO root fetch - main [MainThread]: End processing [omnisearch]: success
+[2023-05-26 19:00:28] INFO root fetch - main [MainThread]: End processing [dotspace]: success
+[2023-05-26 19:00:29] INFO root fetch - main [MainThread]: End processing [plaquette]: success
+[2023-05-26 19:00:29] INFO root fetch - main [MainThread]: End processing [PrimeBotFramework]: success
+[2023-05-26 19:00:29] INFO root fetch - main [MainThread]: End processing [taskcluster-taskgraph]: success
+[2023-05-26 19:00:29] INFO root fetch - main [MainThread]: End processing [onnxruntime-extensions]: success
+[2023-05-26 19:00:29] INFO root fetch - main [MainThread]: End processing [c4m-pdk-gf180mcu]: success
+[2023-05-26 19:00:34] INFO root fetch - main [MainThread]: End processing [NEMO-CE]: success
+[2023-05-26 19:00:34] INFO root fetch - main [MainThread]: Store serial: [18266657]
