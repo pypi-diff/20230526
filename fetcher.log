@@ -1526,3 +1526,103 @@
 [2023-05-26 02:24:27] INFO root fetch - main [MainThread]: End processing [cdklabs.ecs-codedeploy]: success
 [2023-05-26 02:25:13] INFO root fetch - main [MainThread]: End processing [as400]: success
 [2023-05-26 02:25:13] INFO root fetch - main [MainThread]: Store serial: [18254543]
+[2023-05-26 02:30:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18254543]
+[2023-05-26 02:30:22] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-05-26 02:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-certbot-dns-route53
+[2023-05-26 02:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-docker-image-deployment
+[2023-05-26 02:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-serverless-clamscan
+[2023-05-26 02:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk8s-image
+[2023-05-26 02:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ccp-performance
+[2023-05-26 02:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pantsbuild.pants
+[2023-05-26 02:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: python-plisio
+[2023-05-26 02:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdk-certbot-dns-route53
+[2023-05-26 02:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: report-ranger
+[2023-05-26 02:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pantsbuild.pants.testutil
+[2023-05-26 02:30:22] INFO root fetch - processPackages [ccp-performance]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-26 02:30:22] WARNING root fetch - processPackages [python-plisio]: Skipping, unable to determine old version
+[2023-05-26 02:30:22] INFO root fetch - processPackages [python-plisio]: Start processing: cdk-ecs-service-extensions
+[2023-05-26 02:30:22] INFO root fetch - main [MainThread]: End processing [python-plisio] error
+[2023-05-26 02:30:22] INFO root fetch - processPackages [report-ranger]: New version: [2.0] Old Version: [1.0]
+[2023-05-26 02:30:22] INFO root fetch - processPackages [cdk-docker-image-deployment]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 02:30:22] INFO root fetch - processPackages [pantsbuild.pants.testutil]: New version: [2.9.2rc0] Old Version: [2.9.2]
+[2023-05-26 02:30:22] INFO root fetch - processPackages [cdk-serverless-clamscan]: New version: [2.4.99] Old Version: [2.4.98]
+[2023-05-26 02:30:22] INFO root fetch - processPackages [cdk8s-image]: New version: [0.2.99] Old Version: [0.2.98]
+[2023-05-26 02:30:22] INFO root fetch - processPackages [cdk-certbot-dns-route53]: New version: [2.1.99] Old Version: [2.1.98]
+[2023-05-26 02:30:22] INFO root fetch - processPackages [pantsbuild.pants]: New version: [2.9.2rc0] Old Version: [2.9.2]
+[2023-05-26 02:30:22] INFO root fetch - processPackages [cdk-ecs-service-extensions]: New version: [2.0.1a9] Old Version: [2.0.1a8]
+[2023-05-26 02:30:22] INFO root fetch - processPackages [cdk-certbot-dns-route53]: New version: [2.1.99] Old Version: [2.1.98]
+[2023-05-26 02:30:22] INFO root fetch - processPackages [report-ranger]: Downloading https://files.pythonhosted.org/packages/b7/5b/371d8adac359d7f20a3c6b0283c5b2d7079b01c8d4aa13f4643349f23958/Report-Ranger-1.0.tar.gz
+[2023-05-26 02:30:22] INFO root fetch - processPackages [cdk-ecs-service-extensions]: executing diffoscope
+[2023-05-26 02:30:22] INFO root fetch - processPackages [cdk-ecs-service-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-ecs-service-extensions-2.0.1a8.tar.gz tmp/cdk-ecs-service-extensions-2.0.1a9.tar.gz --markdown 20230526/c/cdk-ecs-service-extensions/2.0.1a8-2.0.1a9/diff.md --exclude *.pyd
+[2023-05-26 02:30:22] INFO root fetch - processPackages [cdk8s-image]: executing diffoscope
+[2023-05-26 02:30:22] INFO root fetch - processPackages [cdk8s-image]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-image-0.2.98.tar.gz tmp/cdk8s-image-0.2.99.tar.gz --markdown 20230526/c/cdk8s-image/0.2.98-0.2.99/diff.md --exclude *.pyd
+[2023-05-26 02:30:22] INFO root fetch - processPackages [cdk-serverless-clamscan]: executing diffoscope
+[2023-05-26 02:30:22] INFO root fetch - processPackages [cdk-serverless-clamscan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-serverless-clamscan-2.4.98.tar.gz tmp/cdk-serverless-clamscan-2.4.99.tar.gz --markdown 20230526/c/cdk-serverless-clamscan/2.4.98-2.4.99/diff.md --exclude *.pyd
+[2023-05-26 02:30:22] INFO root fetch - processPackages [ccp-performance]: Downloading https://files.pythonhosted.org/packages/a3/ff/fa5a817b9a7784704e073611b59d059762a2c6d07c34d99f3536d5bbc66f/ccp-performance-0.3.3.tar.gz
+[2023-05-26 02:30:22] INFO root fetch - processPackages [pantsbuild.pants]: Downloading https://files.pythonhosted.org/packages/9d/fb/48c0150109e3f3706e9104d71fa88777a017fbbdb74c6e6fe4890559df4a/pantsbuild.pants-2.9.2-cp39-cp39-manylinux2014_x86_64.whl
+[2023-05-26 02:30:22] INFO root fetch - processPackages [cdk-certbot-dns-route53]: executing diffoscope
+[2023-05-26 02:30:22] INFO root fetch - processPackages [cdk-certbot-dns-route53]: executing diffoscope
+[2023-05-26 02:30:22] INFO root fetch - processPackages [cdk-certbot-dns-route53]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-certbot-dns-route53-2.1.98.tar.gz tmp/cdk-certbot-dns-route53-2.1.99.tar.gz --markdown 20230526/c/cdk-certbot-dns-route53/2.1.98-2.1.99/diff.md --exclude *.pyd
+[2023-05-26 02:30:22] INFO root fetch - processPackages [cdk-certbot-dns-route53]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-certbot-dns-route53-2.1.98.tar.gz tmp/cdk-certbot-dns-route53-2.1.99.tar.gz --markdown 20230526/c/cdk-certbot-dns-route53/2.1.98-2.1.99/diff.md --exclude *.pyd
+[2023-05-26 02:30:22] INFO root fetch - processPackages [ccp-performance]: executing diffoscope
+[2023-05-26 02:30:22] INFO root fetch - processPackages [ccp-performance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccp-performance-0.3.2.tar.gz tmp/ccp-performance-0.3.3.tar.gz --markdown 20230526/c/ccp-performance/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-26 02:30:22] INFO root fetch - processPackages [pantsbuild.pants.testutil]: executing diffoscope
+[2023-05-26 02:30:22] INFO root fetch - processPackages [pantsbuild.pants.testutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pantsbuild.pants.testutil-2.9.2-py37.py38.py39-none-any.whl.zip tmp/pantsbuild.pants.testutil-2.9.2rc0-py37.py38.py39-none-any.whl.zip --markdown 20230526/p/pantsbuild.pants.testutil/2.9.2-2.9.2rc0/diff.md --exclude *.pyd
+[2023-05-26 02:30:22] INFO root fetch - processPackages [report-ranger]: Downloading https://files.pythonhosted.org/packages/45/3f/70067526c5db4f9072a8c3a2d2f21c0fe68358afe007dc479379d8eed6d1/Report-Ranger-2.0.tar.gz
+[2023-05-26 02:30:22] INFO root fetch - processPackages [cdk-docker-image-deployment]: executing diffoscope
+[2023-05-26 02:30:22] INFO root fetch - processPackages [cdk-docker-image-deployment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-docker-image-deployment-0.0.98.tar.gz tmp/cdk-docker-image-deployment-0.0.99.tar.gz --markdown 20230526/c/cdk-docker-image-deployment/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 02:30:22] INFO root fetch - processPackages [report-ranger]: executing diffoscope
+[2023-05-26 02:30:22] INFO root fetch - processPackages [report-ranger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Report-Ranger-1.0.tar.gz tmp/Report-Ranger-2.0.tar.gz --markdown 20230526/r/report-ranger/1.0-2.0/diff.md --exclude *.pyd
+[2023-05-26 02:30:23] WARNING root fetch - processPackages [pantsbuild.pants]: Skipping package: exceeds size limit 43333544>=10485760
+[2023-05-26 02:30:23] INFO root fetch - processPackages [pantsbuild.pants]: Start processing: cdk-gitlab-runner
+[2023-05-26 02:30:23] INFO root fetch - main [MainThread]: End processing [pantsbuild.pants] error
+[2023-05-26 02:30:23] INFO root fetch - processPackages [cdk-gitlab-runner]: New version: [2.1.99] Old Version: [2.1.98]
+[2023-05-26 02:30:23] INFO root fetch - processPackages [cdk-gitlab-runner]: executing diffoscope
+[2023-05-26 02:30:23] INFO root fetch - processPackages [cdk-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-gitlab-runner-2.1.98.tar.gz tmp/cdk-gitlab-runner-2.1.99.tar.gz --markdown 20230526/c/cdk-gitlab-runner/2.1.98-2.1.99/diff.md --exclude *.pyd
+[2023-05-26 02:30:24] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Start processing: cdk-tweet-queue
+[2023-05-26 02:30:24] INFO root fetch - main [MainThread]: End processing [cdk-ecs-service-extensions]: success
+[2023-05-26 02:30:24] INFO root fetch - processPackages [cdk-tweet-queue]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-26 02:30:24] INFO root fetch - processPackages [cdk-tweet-queue]: executing diffoscope
+[2023-05-26 02:30:24] INFO root fetch - processPackages [cdk-tweet-queue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-tweet-queue-2.0.98.tar.gz tmp/cdk-tweet-queue-2.0.99.tar.gz --markdown 20230526/c/cdk-tweet-queue/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-26 02:30:24] INFO root fetch - processPackages [cdk8s-image]: Start processing: cdk-secret-manager-wrapper-layer
+[2023-05-26 02:30:24] INFO root fetch - main [MainThread]: End processing [cdk8s-image]: success
+[2023-05-26 02:30:24] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-26 02:30:24] INFO root fetch - processPackages [cdk-serverless-clamscan]: Start processing: cdk8s-jenkins
+[2023-05-26 02:30:24] INFO root fetch - main [MainThread]: End processing [cdk-serverless-clamscan]: success
+[2023-05-26 02:30:24] INFO root fetch - processPackages [cdk8s-jenkins]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 02:30:24] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: executing diffoscope
+[2023-05-26 02:30:24] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz --markdown 20230526/c/cdk-secret-manager-wrapper-layer/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-26 02:30:24] INFO root fetch - processPackages [cdk8s-jenkins]: executing diffoscope
+[2023-05-26 02:30:24] INFO root fetch - processPackages [cdk8s-jenkins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-jenkins-0.0.98.tar.gz tmp/cdk8s-jenkins-0.0.99.tar.gz --markdown 20230526/c/cdk8s-jenkins/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 02:30:24] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Start processing: cdktf-proxmox
+[2023-05-26 02:30:24] INFO root fetch - main [MainThread]: End processing [cdk-certbot-dns-route53]: success
+[2023-05-26 02:30:24] INFO root fetch - processPackages [cdktf-proxmox]: New version: [0.0.9] Old Version: [0.0.89]
+[2023-05-26 02:30:24] INFO root fetch - processPackages [cdktf-proxmox]: Downloading https://files.pythonhosted.org/packages/46/5a/73025869b7086eed903393eff09e91d86e19975e858a4ada476caf6513db/cdktf-proxmox-0.0.89.tar.gz
+[2023-05-26 02:30:25] INFO root fetch - processPackages [cdktf-proxmox]: executing diffoscope
+[2023-05-26 02:30:25] INFO root fetch - processPackages [cdktf-proxmox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-proxmox-0.0.89.tar.gz tmp/cdktf-proxmox-0.0.9.tar.gz --markdown 20230526/c/cdktf-proxmox/0.0.89-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 02:30:25] INFO root fetch - processPackages [pantsbuild.pants.testutil]: Start processing: cdk-aurora-globaldatabase
+[2023-05-26 02:30:25] INFO root fetch - main [MainThread]: End processing [pantsbuild.pants.testutil]: success
+[2023-05-26 02:30:25] INFO root fetch - processPackages [ccp-performance]: Start processing: cdk8s-redis
+[2023-05-26 02:30:25] INFO root fetch - main [MainThread]: End processing [ccp-performance]: success
+[2023-05-26 02:30:25] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-26 02:30:25] INFO root fetch - processPackages [cdk8s-redis]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-26 02:30:25] INFO root fetch - processPackages [report-ranger]: Start processing: cdktf-github-actions
+[2023-05-26 02:30:25] INFO root fetch - main [MainThread]: End processing [report-ranger]: success
+[2023-05-26 02:30:25] INFO root fetch - main [MainThread]: End processing [cdk-certbot-dns-route53]: success
+[2023-05-26 02:30:25] INFO root fetch - processPackages [cdktf-github-actions]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 02:30:25] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2023-05-26 02:30:25] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20230526/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-26 02:30:25] INFO root fetch - processPackages [cdk8s-redis]: executing diffoscope
+[2023-05-26 02:30:25] INFO root fetch - processPackages [cdk8s-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-redis-0.1.98.tar.gz tmp/cdk8s-redis-0.1.99.tar.gz --markdown 20230526/c/cdk8s-redis/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-26 02:30:25] INFO root fetch - processPackages [cdktf-github-actions]: executing diffoscope
+[2023-05-26 02:30:25] INFO root fetch - processPackages [cdktf-github-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-github-actions-0.0.98.tar.gz tmp/cdktf-github-actions-0.0.99.tar.gz --markdown 20230526/c/cdktf-github-actions/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 02:30:25] INFO root fetch - main [MainThread]: End processing [cdk-docker-image-deployment]: success
+[2023-05-26 02:30:26] INFO root fetch - main [MainThread]: End processing [cdk-tweet-queue]: success
+[2023-05-26 02:30:26] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
+[2023-05-26 02:30:26] INFO root fetch - main [MainThread]: End processing [cdk-secret-manager-wrapper-layer]: success
+[2023-05-26 02:30:26] INFO root fetch - main [MainThread]: End processing [cdk8s-jenkins]: success
+[2023-05-26 02:30:27] INFO root fetch - main [MainThread]: End processing [cdktf-github-actions]: success
+[2023-05-26 02:30:27] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2023-05-26 02:30:27] INFO root fetch - main [MainThread]: End processing [cdk8s-redis]: success
+[2023-05-26 02:30:29] INFO root fetch - main [MainThread]: End processing [cdktf-proxmox]: success
+[2023-05-26 02:30:29] INFO root fetch - main [MainThread]: Store serial: [18254609]
