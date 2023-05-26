@@ -9292,3 +9292,61 @@
 [2023-05-26 08:45:38] INFO root fetch - main [MainThread]: End processing [azure-mgmt-rdbms]: success
 [2023-05-26 08:45:46] INFO root fetch - main [MainThread]: End processing [ert]: success
 [2023-05-26 08:45:46] INFO root fetch - main [MainThread]: Store serial: [18258759]
+[2023-05-26 08:50:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18258759]
+[2023-05-26 08:50:56] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-26 08:50:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-newrelic
+[2023-05-26 08:50:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shlep
+[2023-05-26 08:50:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-nomad
+[2023-05-26 08:50:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: to-cei
+[2023-05-26 08:50:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: juno-ai
+[2023-05-26 08:50:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: py-Ayiin
+[2023-05-26 08:50:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: RobertCommonIO
+[2023-05-26 08:50:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tagging-module
+[2023-05-26 08:50:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: AkvoDjangoFormGateway
+[2023-05-26 08:50:56] INFO root fetch - processPackages [shlep]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-26 08:50:56] INFO root fetch - processPackages [to-cei]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-26 08:50:56] INFO root fetch - processPackages [py-Ayiin]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-26 08:50:56] INFO root fetch - processPackages [RobertCommonIO]: New version: [0.1.40] Old Version: [0.1.39]
+[2023-05-26 08:50:56] INFO root fetch - processPackages [tagging-module]: New version: [0.0.1.1] Old Version: [0.0.1]
+[2023-05-26 08:50:56] WARNING root fetch - processPackages [juno-ai]: Skipping, unable to determine old version
+[2023-05-26 08:50:56] INFO root fetch - main [MainThread]: End processing [juno-ai] error
+[2023-05-26 08:50:56] INFO root fetch - processPackages [pulumi-nomad]: New version: [0.4.2a1685080815] Old Version: [0.4.2a1684389286]
+[2023-05-26 08:50:56] INFO root fetch - processPackages [AkvoDjangoFormGateway]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 08:50:56] INFO root fetch - processPackages [pulumi-newrelic]: New version: [5.9.1] Old Version: [5.9.0a1680282898]
+[2023-05-26 08:50:56] INFO root fetch - processPackages [to-cei]: Downloading https://files.pythonhosted.org/packages/95/9d/d35f38fe2513e95caa313e1f2532cfb1a60743f0445c885ff00968a0a009/to_cei-0.2.0.tar.gz
+[2023-05-26 08:50:56] INFO root fetch - processPackages [RobertCommonIO]: Downloading https://files.pythonhosted.org/packages/75/07/f530189f1b9e0b094e39e87596d70f2af0f317d2fceb0f5e02204b6afd56/RobertCommonIO-0.1.39.tar.gz
+[2023-05-26 08:50:56] INFO root fetch - processPackages [py-Ayiin]: Downloading https://files.pythonhosted.org/packages/01/bc/afa57b5b0ddb0f43e3a2d4db5d5f7a1270e0bda47cc6d026ae3d1f35848c/py-Ayiin-0.4.0.tar.gz
+[2023-05-26 08:50:56] INFO root fetch - processPackages [AkvoDjangoFormGateway]: Downloading https://files.pythonhosted.org/packages/a5/63/66f43573e6c85ebadf5b6f1f6fcfc226f6a4ac08e1944978107ceb1f1b7c/AkvoDjangoFormGateway-0.0.8.tar.gz
+[2023-05-26 08:50:56] INFO root fetch - processPackages [tagging-module]: Downloading https://files.pythonhosted.org/packages/47/1d/3b5795957b4c4253466cdb020fcc7eff581ef5126b9088c42025220745fd/tagging_module-0.0.1.tar.gz
+[2023-05-26 08:50:57] INFO root fetch - processPackages [shlep]: Downloading https://files.pythonhosted.org/packages/6e/9a/98ac935826e9b51818203ed45aa0336e3d59ea27ca011637a15671aa27b1/shlep-1.1.1.tar.gz
+[2023-05-26 08:50:57] INFO root fetch - processPackages [pulumi-nomad]: Downloading https://files.pythonhosted.org/packages/e6/69/3835c625ea949a058b82bf15fc61b387bb789559bd0d5f6bf04e099d0f97/pulumi_nomad-0.4.2a1685080815.tar.gz
+[2023-05-26 08:50:57] INFO root fetch - processPackages [to-cei]: Downloading https://files.pythonhosted.org/packages/dd/c4/79d45e22b65bb035275b3364afb227cce23b4da03c6b8dc39d3f5bee0dc7/to_cei-0.2.1.tar.gz
+[2023-05-26 08:50:57] INFO root fetch - processPackages [pulumi-newrelic]: executing diffoscope
+[2023-05-26 08:50:57] INFO root fetch - processPackages [pulumi-newrelic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_newrelic-5.9.0a1680282898.tar.gz tmp/pulumi_newrelic-5.9.1.tar.gz --markdown 20230526/p/pulumi-newrelic/5.9.0a1680282898-5.9.1/diff.md --exclude *.pyd
+[2023-05-26 08:50:57] INFO root fetch - processPackages [shlep]: executing diffoscope
+[2023-05-26 08:50:57] INFO root fetch - processPackages [shlep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shlep-1.1.0.tar.gz tmp/shlep-1.1.1.tar.gz --markdown 20230526/s/shlep/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-26 08:50:57] INFO root fetch - processPackages [AkvoDjangoFormGateway]: Downloading https://files.pythonhosted.org/packages/a2/10/518faa13322cb469ce1e198c70a6ed8b0d5ee1db8a6a1cc88e6e6e41b5d0/AkvoDjangoFormGateway-0.0.9.tar.gz
+[2023-05-26 08:50:57] INFO root fetch - processPackages [RobertCommonIO]: Downloading https://files.pythonhosted.org/packages/bd/fc/a2dc7641d8eba541d1e2e8ffffce47845f8c83cd18ccd9685dc079b57a0b/RobertCommonIO-0.1.40.tar.gz
+[2023-05-26 08:50:57] INFO root fetch - processPackages [py-Ayiin]: Downloading https://files.pythonhosted.org/packages/7b/6d/71414a08a9e22fc230ddcefa9804bb6f4cd7d268fc22713bf40f87873efb/py-Ayiin-0.4.1.tar.gz
+[2023-05-26 08:50:57] INFO root fetch - processPackages [tagging-module]: Downloading https://files.pythonhosted.org/packages/42/c4/1b57d34be01b7f0060c30aab2597c66a96d2bae4468a7aaf913c5f605c76/tagging_module-0.0.1.1-py3-none-any.whl
+[2023-05-26 08:50:57] INFO root fetch - processPackages [pulumi-nomad]: executing diffoscope
+[2023-05-26 08:50:57] INFO root fetch - processPackages [pulumi-nomad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_nomad-0.4.2a1684389286.tar.gz tmp/pulumi_nomad-0.4.2a1685080815.tar.gz --markdown 20230526/p/pulumi-nomad/0.4.2a1684389286-0.4.2a1685080815/diff.md --exclude *.pyd
+[2023-05-26 08:50:57] INFO root fetch - processPackages [AkvoDjangoFormGateway]: executing diffoscope
+[2023-05-26 08:50:57] INFO root fetch - processPackages [AkvoDjangoFormGateway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AkvoDjangoFormGateway-0.0.8.tar.gz tmp/AkvoDjangoFormGateway-0.0.9.tar.gz --markdown 20230526/A/AkvoDjangoFormGateway/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 08:50:57] INFO root fetch - processPackages [RobertCommonIO]: executing diffoscope
+[2023-05-26 08:50:57] INFO root fetch - processPackages [RobertCommonIO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RobertCommonIO-0.1.39.tar.gz tmp/RobertCommonIO-0.1.40.tar.gz --markdown 20230526/R/RobertCommonIO/0.1.39-0.1.40/diff.md --exclude *.pyd
+[2023-05-26 08:50:57] INFO root fetch - processPackages [to-cei]: executing diffoscope
+[2023-05-26 08:50:57] INFO root fetch - processPackages [to-cei]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/to_cei-0.2.0.tar.gz tmp/to_cei-0.2.1.tar.gz --markdown 20230526/t/to-cei/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-26 08:50:57] INFO root fetch - processPackages [py-Ayiin]: executing diffoscope
+[2023-05-26 08:50:57] INFO root fetch - processPackages [py-Ayiin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-Ayiin-0.4.0.tar.gz tmp/py-Ayiin-0.4.1.tar.gz --markdown 20230526/p/py-Ayiin/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-26 08:50:57] INFO root fetch - processPackages [tagging-module]: executing diffoscope
+[2023-05-26 08:50:57] INFO root fetch - processPackages [tagging-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tagging_module-0.0.1.tar.gz tmp/tagging_module-0.0.1.1-py3-none-any.whl.zip --markdown 20230526/t/tagging-module/0.0.1-0.0.1.1/diff.md --exclude *.pyd
+[2023-05-26 08:50:58] INFO root fetch - main [MainThread]: End processing [shlep]: success
+[2023-05-26 08:50:59] INFO root fetch - main [MainThread]: End processing [tagging-module]: success
+[2023-05-26 08:50:59] INFO root fetch - main [MainThread]: End processing [AkvoDjangoFormGateway]: success
+[2023-05-26 08:50:59] INFO root fetch - main [MainThread]: End processing [to-cei]: success
+[2023-05-26 08:50:59] INFO root fetch - main [MainThread]: End processing [pulumi-newrelic]: success
+[2023-05-26 08:50:59] INFO root fetch - main [MainThread]: End processing [py-Ayiin]: success
+[2023-05-26 08:51:00] INFO root fetch - main [MainThread]: End processing [RobertCommonIO]: success
+[2023-05-26 08:51:00] INFO root fetch - main [MainThread]: End processing [pulumi-nomad]: success
+[2023-05-26 08:51:00] INFO root fetch - main [MainThread]: Store serial: [18258787]
