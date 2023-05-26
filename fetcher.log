@@ -10748,3 +10748,89 @@
 [2023-05-26 10:23:42] INFO root fetch - main [MainThread]: End processing [simple_openid_connect]: success
 [2023-05-26 10:23:42] INFO root fetch - main [MainThread]: End processing [biobb-flexdyn]: success
 [2023-05-26 10:23:42] INFO root fetch - main [MainThread]: Store serial: [18259656]
+[2023-05-26 10:28:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18259656]
+[2023-05-26 10:28:52] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-26 10:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: innerverz
+[2023-05-26 10:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: textbsr
+[2023-05-26 10:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: limpo
+[2023-05-26 10:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lesscode-py
+[2023-05-26 10:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: roman
+[2023-05-26 10:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: innerverz
+[2023-05-26 10:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: FicusFramework
+[2023-05-26 10:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: algokit-utils
+[2023-05-26 10:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: jsonpatchplus
+[2023-05-26 10:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: innerverz
+[2023-05-26 10:28:52] INFO root fetch - processPackages [textbsr]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 10:28:52] INFO root fetch - processPackages [innerverz]: New version: [0.0.19] Old Version: [0.0.18]
+[2023-05-26 10:28:52] INFO root fetch - processPackages [algokit-utils]: New version: [1.2.0b8] Old Version: [1.2.0b7]
+[2023-05-26 10:28:52] INFO root fetch - processPackages [roman]: New version: [4.1] Old Version: [4.0]
+[2023-05-26 10:28:52] INFO root fetch - processPackages [innerverz]: New version: [0.0.19] Old Version: [0.0.18]
+[2023-05-26 10:28:52] INFO root fetch - processPackages [innerverz]: New version: [0.0.19] Old Version: [0.0.18]
+[2023-05-26 10:28:52] INFO root fetch - processPackages [FicusFramework]: New version: [3.1.0.post1] Old Version: [3.1.0]
+[2023-05-26 10:28:52] INFO root fetch - processPackages [limpo]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-26 10:28:52] INFO root fetch - processPackages [jsonpatchplus]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-26 10:28:52] INFO root fetch - processPackages [lesscode-py]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-26 10:28:52] INFO root fetch - processPackages [textbsr]: executing diffoscope
+[2023-05-26 10:28:52] INFO root fetch - processPackages [textbsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textbsr-0.0.8.tar.gz tmp/textbsr-0.0.9.tar.gz --markdown 20230526/t/textbsr/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 10:28:52] INFO root fetch - processPackages [lesscode-py]: executing diffoscope
+[2023-05-26 10:28:52] INFO root fetch - processPackages [lesscode-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lesscode-py-0.3.8.tar.gz tmp/lesscode-py-0.3.9.tar.gz --markdown 20230526/l/lesscode-py/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-26 10:28:52] INFO root fetch - processPackages [roman]: Downloading https://files.pythonhosted.org/packages/b0/b3/dc50a14f2d06e19340dcee6eabbc95904b6d4014f8f2d22c6338c1b5d31c/roman-4.0.tar.gz
+[2023-05-26 10:28:52] INFO root fetch - processPackages [innerverz]: Downloading https://files.pythonhosted.org/packages/fb/ac/19d6df1f312fd3128b72fbed85ca60520e51e1d7e4cd1e9993870e1d2010/innerverz-0.0.18.tar.gz
+[2023-05-26 10:28:52] INFO root fetch - processPackages [innerverz]: Downloading https://files.pythonhosted.org/packages/fb/ac/19d6df1f312fd3128b72fbed85ca60520e51e1d7e4cd1e9993870e1d2010/innerverz-0.0.18.tar.gz
+[2023-05-26 10:28:52] INFO root fetch - processPackages [innerverz]: Downloading https://files.pythonhosted.org/packages/fb/ac/19d6df1f312fd3128b72fbed85ca60520e51e1d7e4cd1e9993870e1d2010/innerverz-0.0.18.tar.gz
+[2023-05-26 10:28:52] INFO root fetch - processPackages [FicusFramework]: Downloading https://files.pythonhosted.org/packages/b3/a4/90df75b2dee0c8c34b6be91d1d9ccba87885ea1124c1956658561f85c58b/FicusFramework-3.1.0.tar.gz
+[2023-05-26 10:28:52] INFO root fetch - processPackages [algokit-utils]: Downloading https://files.pythonhosted.org/packages/95/5d/1b4e816f41359170344cec5dcc0f48979d443c6396d6c38366f34a649348/algokit_utils-1.2.0b8-py3-none-any.whl
+[2023-05-26 10:28:52] INFO root fetch - processPackages [limpo]: Downloading https://files.pythonhosted.org/packages/6f/c7/911a69c9b218bdded229281b43db16b2b4bd8a8238b75856852de4428930/limpo-0.0.2.tar.gz
+[2023-05-26 10:28:52] INFO root fetch - processPackages [jsonpatchplus]: Downloading https://files.pythonhosted.org/packages/40/75/4e81717aaeaf5a08008fb2374c0769905d2999b7e4723a73f23ad5ed2582/jsonpatchplus-0.2.0.tar.gz
+[2023-05-26 10:28:52] INFO root fetch - processPackages [jsonpatchplus]: executing diffoscope
+[2023-05-26 10:28:52] INFO root fetch - processPackages [jsonpatchplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonpatchplus-0.1.1.tar.gz tmp/jsonpatchplus-0.2.0.tar.gz --markdown 20230526/j/jsonpatchplus/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-26 10:28:52] INFO root fetch - processPackages [algokit-utils]: executing diffoscope
+[2023-05-26 10:28:52] INFO root fetch - processPackages [algokit-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/algokit_utils-1.2.0b7-py3-none-any.whl.zip tmp/algokit_utils-1.2.0b8-py3-none-any.whl.zip --markdown 20230526/a/algokit-utils/1.2.0b7-1.2.0b8/diff.md --exclude *.pyd
+[2023-05-26 10:28:52] INFO root fetch - processPackages [roman]: Downloading https://files.pythonhosted.org/packages/32/0c/10c242792e9c857d5d8df19780abec0f241c8a3d9631cccbce16d0f1c769/roman-4.1.tar.gz
+[2023-05-26 10:28:52] INFO root fetch - processPackages [innerverz]: Downloading https://files.pythonhosted.org/packages/fc/7b/f0c16f47f6a0c59c4c5e5e828e3c1b070d2121113b399a902ed5cd4f7f08/innerverz-0.0.19.tar.gz
+[2023-05-26 10:28:52] INFO root fetch - processPackages [innerverz]: Downloading https://files.pythonhosted.org/packages/fc/7b/f0c16f47f6a0c59c4c5e5e828e3c1b070d2121113b399a902ed5cd4f7f08/innerverz-0.0.19.tar.gz
+[2023-05-26 10:28:52] INFO root fetch - processPackages [innerverz]: Downloading https://files.pythonhosted.org/packages/fc/7b/f0c16f47f6a0c59c4c5e5e828e3c1b070d2121113b399a902ed5cd4f7f08/innerverz-0.0.19.tar.gz
+[2023-05-26 10:28:52] INFO root fetch - processPackages [FicusFramework]: Downloading https://files.pythonhosted.org/packages/72/68/0f13c56c18011d7fa43c944118048a8db32f0f07050b5caefc43c3266015/FicusFramework-3.1.0.post1.tar.gz
+[2023-05-26 10:28:52] INFO root fetch - processPackages [roman]: executing diffoscope
+[2023-05-26 10:28:52] INFO root fetch - processPackages [roman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roman-4.0.tar.gz tmp/roman-4.1.tar.gz --markdown 20230526/r/roman/4.0-4.1/diff.md --exclude *.pyd
+[2023-05-26 10:28:52] INFO root fetch - processPackages [innerverz]: executing diffoscope
+[2023-05-26 10:28:52] INFO root fetch - processPackages [innerverz]: executing diffoscope
+[2023-05-26 10:28:52] INFO root fetch - processPackages [innerverz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/innerverz-0.0.18.tar.gz tmp/innerverz-0.0.19.tar.gz --markdown 20230526/i/innerverz/0.0.18-0.0.19/diff.md --exclude *.pyd
+[2023-05-26 10:28:52] INFO root fetch - processPackages [innerverz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/innerverz-0.0.18.tar.gz tmp/innerverz-0.0.19.tar.gz --markdown 20230526/i/innerverz/0.0.18-0.0.19/diff.md --exclude *.pyd
+[2023-05-26 10:28:52] INFO root fetch - processPackages [innerverz]: executing diffoscope
+[2023-05-26 10:28:52] INFO root fetch - processPackages [innerverz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/innerverz-0.0.18.tar.gz tmp/innerverz-0.0.19.tar.gz --markdown 20230526/i/innerverz/0.0.18-0.0.19/diff.md --exclude *.pyd
+[2023-05-26 10:28:52] INFO root fetch - processPackages [FicusFramework]: executing diffoscope
+[2023-05-26 10:28:52] INFO root fetch - processPackages [FicusFramework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FicusFramework-3.1.0.tar.gz tmp/FicusFramework-3.1.0.post1.tar.gz --markdown 20230526/F/FicusFramework/3.1.0-3.1.0.post1/diff.md --exclude *.pyd
+[2023-05-26 10:28:52] INFO root fetch - processPackages [limpo]: Downloading https://files.pythonhosted.org/packages/6f/9f/5e21f3048a61fe550f7d2eefb07f08d0cf1c99b60db081196052fb3ddd79/limpo-0.0.3.tar.gz
+[2023-05-26 10:28:52] INFO root fetch - processPackages [limpo]: executing diffoscope
+[2023-05-26 10:28:52] INFO root fetch - processPackages [limpo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/limpo-0.0.2.tar.gz tmp/limpo-0.0.3.tar.gz --markdown 20230526/l/limpo/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-26 10:28:53] INFO root fetch - processPackages [textbsr]: Start processing: brainways
+[2023-05-26 10:28:53] INFO root fetch - main [MainThread]: End processing [textbsr]: success
+[2023-05-26 10:28:53] WARNING root fetch - processPackages [brainways]: Skipping, unable to determine old version
+[2023-05-26 10:28:53] INFO root fetch - processPackages [brainways]: Start processing: eodc
+[2023-05-26 10:28:53] INFO root fetch - main [MainThread]: End processing [brainways] error
+[2023-05-26 10:28:54] WARNING root fetch - processPackages [eodc]: Skipping, unable to determine old version
+[2023-05-26 10:28:54] INFO root fetch - processPackages [eodc]: Start processing: indecro
+[2023-05-26 10:28:54] INFO root fetch - main [MainThread]: End processing [eodc] error
+[2023-05-26 10:28:54] INFO root fetch - processPackages [indecro]: New version: [0.13] Old Version: [0.102]
+[2023-05-26 10:28:54] INFO root fetch - processPackages [indecro]: Downloading https://files.pythonhosted.org/packages/8b/1e/3b5078da80e35415caf27ca478e3fbbb01a0bbbe639f456982fa2b3ac6cd/indecro-0.102.tar.gz
+[2023-05-26 10:28:54] INFO root fetch - processPackages [roman]: Start processing: edu-segmentation
+[2023-05-26 10:28:54] INFO root fetch - main [MainThread]: End processing [roman]: success
+[2023-05-26 10:28:54] INFO root fetch - processPackages [edu-segmentation]: New version: [0.0.72] Old Version: [0.0.71]
+[2023-05-26 10:28:54] INFO root fetch - main [MainThread]: End processing [lesscode-py]: success
+[2023-05-26 10:28:54] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/4a/c9/92a22e21d0495cf661c827113b46e2135f281d71f822716b1e052ef9a8db/edu_segmentation-0.0.72.tar.gz
+[2023-05-26 10:28:54] INFO root fetch - processPackages [indecro]: Downloading https://files.pythonhosted.org/packages/25/04/29bcc510b17c24d6e359083dc7298c6d1e586fcb3e7bf6dc2170a1cb557f/indecro-0.13.tar.gz
+[2023-05-26 10:28:54] INFO root fetch - processPackages [edu-segmentation]: executing diffoscope
+[2023-05-26 10:28:54] INFO root fetch - processPackages [edu-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edu_segmentation-0.0.71.tar.gz tmp/edu_segmentation-0.0.72.tar.gz --markdown 20230526/e/edu-segmentation/0.0.71-0.0.72/diff.md --exclude *.pyd
+[2023-05-26 10:28:54] INFO root fetch - processPackages [indecro]: executing diffoscope
+[2023-05-26 10:28:54] INFO root fetch - processPackages [indecro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indecro-0.102.tar.gz tmp/indecro-0.13.tar.gz --markdown 20230526/i/indecro/0.102-0.13/diff.md --exclude *.pyd
+[2023-05-26 10:28:55] INFO root fetch - main [MainThread]: End processing [jsonpatchplus]: success
+[2023-05-26 10:28:55] INFO root fetch - main [MainThread]: End processing [algokit-utils]: success
+[2023-05-26 10:28:55] INFO root fetch - main [MainThread]: End processing [innerverz]: success
+[2023-05-26 10:28:55] INFO root fetch - main [MainThread]: End processing [innerverz]: success
+[2023-05-26 10:28:55] INFO root fetch - main [MainThread]: End processing [limpo]: success
+[2023-05-26 10:28:55] INFO root fetch - main [MainThread]: End processing [innerverz]: success
+[2023-05-26 10:28:56] INFO root fetch - main [MainThread]: End processing [FicusFramework]: success
+[2023-05-26 10:28:56] INFO root fetch - main [MainThread]: End processing [indecro]: success
+[2023-05-26 10:28:57] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
+[2023-05-26 10:28:57] INFO root fetch - main [MainThread]: Store serial: [18259697]
