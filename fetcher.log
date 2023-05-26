@@ -14719,3 +14719,125 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 14:01:59] INFO root fetch - main [MainThread]: End processing [encord-active-components]: success
 [2023-05-26 14:02:02] INFO root fetch - main [MainThread]: End processing [cg]: success
 [2023-05-26 14:02:02] INFO root fetch - main [MainThread]: Store serial: [18262368]
+[2023-05-26 14:07:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18262368]
+[2023-05-26 14:07:11] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-05-26 14:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tipologias
+[2023-05-26 14:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: piwwwaterflow
+[2023-05-26 14:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: regi
+[2023-05-26 14:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: poetry-plugin-taskipy
+[2023-05-26 14:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rfrx
+[2023-05-26 14:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyodb
+[2023-05-26 14:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: xrmap
+[2023-05-26 14:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: edat-utils
+[2023-05-26 14:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bip-utils
+[2023-05-26 14:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: experimaestro
+[2023-05-26 14:07:11] INFO root fetch - processPackages [piwwwaterflow]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-26 14:07:11] INFO root fetch - processPackages [tipologias]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-26 14:07:11] INFO root fetch - processPackages [regi]: New version: [2.0] Old Version: [1.2]
+[2023-05-26 14:07:11] INFO root fetch - processPackages [pyodb]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-26 14:07:11] WARNING root fetch - processPackages [poetry-plugin-taskipy]: Skipping, unable to determine old version
+[2023-05-26 14:07:11] INFO root fetch - processPackages [poetry-plugin-taskipy]: Start processing: aars
+[2023-05-26 14:07:11] INFO root fetch - main [MainThread]: End processing [poetry-plugin-taskipy] error
+[2023-05-26 14:07:11] INFO root fetch - processPackages [rfrx]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-05-26 14:07:11] INFO root fetch - processPackages [xrmap]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-26 14:07:11] INFO root fetch - processPackages [bip-utils]: New version: [2.7.1] Old Version: [2.7.0]
+[2023-05-26 14:07:11] INFO root fetch - processPackages [experimaestro]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-26 14:07:11] INFO root fetch - processPackages [edat-utils]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-26 14:07:11] INFO root fetch - processPackages [aars]: New version: [0.7.4] Old Version: [0.7.3]
+[2023-05-26 14:07:11] INFO root fetch - processPackages [experimaestro]: executing diffoscope
+[2023-05-26 14:07:11] INFO root fetch - processPackages [experimaestro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/experimaestro-0.9.8-py2.py3-none-any.whl.zip tmp/experimaestro-0.9.9-py2.py3-none-any.whl.zip --markdown 20230526/e/experimaestro/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-26 14:07:11] INFO root fetch - processPackages [rfrx]: Downloading https://files.pythonhosted.org/packages/17/73/ef628a009c1b490ed3cdd0c54a951dc824bdb135b5f9954a5008eda83dde/rfrx-2.1.1.tar.gz
+[2023-05-26 14:07:11] INFO root fetch - processPackages [tipologias]: Downloading https://files.pythonhosted.org/packages/30/18/834ce2f71fb0096d2520baa009dc911763f0049eeff1ea0d1c93d4ba66a8/tipologias-0.0.1.tar.gz
+[2023-05-26 14:07:11] INFO root fetch - processPackages [xrmap]: Downloading https://files.pythonhosted.org/packages/e4/ad/87b0bfda058267fa880f4aac5be424b879af04dd30e564ca02730f7e32b9/xrmap-0.0.8.tar.gz
+[2023-05-26 14:07:11] INFO root fetch - processPackages [aars]: Downloading https://files.pythonhosted.org/packages/2e/05/aa7ebbe0bc18233f9b2009d39da367367bcaa0fb1c10ba3ba877a23fdfba/aars-0.7.3.tar.gz
+[2023-05-26 14:07:11] INFO root fetch - processPackages [edat-utils]: Downloading https://files.pythonhosted.org/packages/84/b9/6427d33ebd518e61082c163e45631f6353603bb96d083f05014303f72c3e/edat_utils-0.3.9.tar.gz
+[2023-05-26 14:07:11] INFO root fetch - processPackages [pyodb]: Downloading https://files.pythonhosted.org/packages/7a/98/fb1ba4e50292fa627b6739ade80748e4ba5ae3bcf28b11dd96e6932b5add/pyodb-0.1.1.tar.gz
+[2023-05-26 14:07:11] INFO root fetch - processPackages [bip-utils]: Downloading https://files.pythonhosted.org/packages/e7/2f/baba669c680fef1e841d05840f4089d24841cd485fa4b0c7ce4bedd24d25/bip_utils-2.7.0.tar.gz
+[2023-05-26 14:07:11] INFO root fetch - processPackages [regi]: Downloading https://files.pythonhosted.org/packages/d7/9f/5513954f0f829b0665a92f0334ca900d7615e3cba4a0db2b5c97c6ec40d5/regi-2.0.tar.gz
+[2023-05-26 14:07:11] INFO root fetch - processPackages [edat-utils]: executing diffoscope
+[2023-05-26 14:07:11] INFO root fetch - processPackages [edat-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edat_utils-0.3.8.tar.gz tmp/edat_utils-0.3.9.tar.gz --markdown 20230526/e/edat-utils/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-26 14:07:11] INFO root fetch - processPackages [piwwwaterflow]: Downloading https://files.pythonhosted.org/packages/d1/78/a04904d0afdaa7eb291fb79039ea83d73364153a3427da1302905344333a/piwwwaterflow-0.1.6.tar.gz
+[2023-05-26 14:07:11] INFO root fetch - processPackages [xrmap]: executing diffoscope
+[2023-05-26 14:07:11] INFO root fetch - processPackages [xrmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xrmap-0.0.7.tar.gz tmp/xrmap-0.0.8.tar.gz --markdown 20230526/x/xrmap/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-26 14:07:11] INFO root fetch - processPackages [rfrx]: Downloading https://files.pythonhosted.org/packages/0c/8d/a751c1cc41fe7ec78f0840a49eb960ee94b67456b6b80798f5374b6f17fa/rfrx-2.1.2.tar.gz
+[2023-05-26 14:07:11] INFO root fetch - processPackages [tipologias]: Downloading https://files.pythonhosted.org/packages/df/9c/53c9b0f312279fb76284da6bbc57f31601334c252163f5bcc201a21fcb2d/tipologias-0.0.2.tar.gz
+[2023-05-26 14:07:11] INFO root fetch - processPackages [aars]: Downloading https://files.pythonhosted.org/packages/6d/b8/840466463ce41bd57cd881dfc2178a8a4a1a0af9ea10d58eb71358e083b5/aars-0.7.4.tar.gz
+[2023-05-26 14:07:11] INFO root fetch - processPackages [piwwwaterflow]: executing diffoscope
+[2023-05-26 14:07:11] INFO root fetch - processPackages [piwwwaterflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piwwwaterflow-0.1.5.tar.gz tmp/piwwwaterflow-0.1.6.tar.gz --markdown 20230526/p/piwwwaterflow/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-26 14:07:11] INFO root fetch - processPackages [regi]: executing diffoscope
+[2023-05-26 14:07:11] INFO root fetch - processPackages [regi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regi-1.2.tar.gz tmp/regi-2.0.tar.gz --markdown 20230526/r/regi/1.2-2.0/diff.md --exclude *.pyd
+[2023-05-26 14:07:11] INFO root fetch - processPackages [pyodb]: Downloading https://files.pythonhosted.org/packages/c5/a7/964e15fee05771c2f920b7cc41a17e2593d4718d08e0e8321f68ce9d1654/pyodb-0.1.2.tar.gz
+[2023-05-26 14:07:11] INFO root fetch - processPackages [aars]: executing diffoscope
+[2023-05-26 14:07:11] INFO root fetch - processPackages [aars]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aars-0.7.3.tar.gz tmp/aars-0.7.4.tar.gz --markdown 20230526/a/aars/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2023-05-26 14:07:11] INFO root fetch - processPackages [rfrx]: executing diffoscope
+[2023-05-26 14:07:11] INFO root fetch - processPackages [rfrx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rfrx-2.1.1.tar.gz tmp/rfrx-2.1.2.tar.gz --markdown 20230526/r/rfrx/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-05-26 14:07:11] INFO root fetch - processPackages [tipologias]: executing diffoscope
+[2023-05-26 14:07:11] INFO root fetch - processPackages [tipologias]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tipologias-0.0.1.tar.gz tmp/tipologias-0.0.2.tar.gz --markdown 20230526/t/tipologias/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-26 14:07:11] INFO root fetch - processPackages [bip-utils]: Downloading https://files.pythonhosted.org/packages/94/b3/531711f4b3c6bd03af868e493e6df3c4e16c399d32f58abae0f8afce0f04/bip_utils-2.7.1.tar.gz
+[2023-05-26 14:07:11] INFO root fetch - processPackages [pyodb]: executing diffoscope
+[2023-05-26 14:07:11] INFO root fetch - processPackages [pyodb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyodb-0.1.1.tar.gz tmp/pyodb-0.1.2.tar.gz --markdown 20230526/p/pyodb/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-26 14:07:12] INFO root fetch - processPackages [bip-utils]: executing diffoscope
+[2023-05-26 14:07:12] INFO root fetch - processPackages [bip-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bip_utils-2.7.0.tar.gz tmp/bip_utils-2.7.1.tar.gz --markdown 20230526/b/bip-utils/2.7.0-2.7.1/diff.md --exclude *.pyd
+[2023-05-26 14:07:13] INFO root fetch - processPackages [edat-utils]: Start processing: qontract-reconcile
+[2023-05-26 14:07:13] INFO root fetch - main [MainThread]: End processing [edat-utils]: success
+[2023-05-26 14:07:13] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-05-26 14:07:13] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-05-26 14:07:13] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230526/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-05-26 14:07:14] INFO root fetch - processPackages [xrmap]: Start processing: AlgBench
+[2023-05-26 14:07:14] INFO root fetch - main [MainThread]: End processing [xrmap]: success
+[2023-05-26 14:07:14] INFO root fetch - processPackages [aars]: Start processing: spsdk
+[2023-05-26 14:07:14] INFO root fetch - main [MainThread]: End processing [aars]: success
+[2023-05-26 14:07:14] INFO root fetch - processPackages [AlgBench]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-26 14:07:14] INFO root fetch - processPackages [spsdk]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-26 14:07:14] INFO root fetch - processPackages [rfrx]: Start processing: resotoui
+[2023-05-26 14:07:14] INFO root fetch - main [MainThread]: End processing [rfrx]: success
+[2023-05-26 14:07:14] INFO root fetch - processPackages [resotoui]: New version: [3.5.0] Old Version: [3.4.0]
+[2023-05-26 14:07:14] INFO root fetch - processPackages [experimaestro]: Start processing: tf-agents-nightly
+[2023-05-26 14:07:14] INFO root fetch - main [MainThread]: End processing [experimaestro]: success
+[2023-05-26 14:07:14] INFO root fetch - processPackages [tf-agents-nightly]: New version: [0.9.0.dev20210812] Old Version: [0.9.0.dev20210811]
+[2023-05-26 14:07:14] INFO root fetch - processPackages [piwwwaterflow]: Start processing: cg
+[2023-05-26 14:07:14] INFO root fetch - main [MainThread]: End processing [piwwwaterflow]: success
+[2023-05-26 14:07:14] INFO root fetch - processPackages [cg]: New version: [32.2.3] Old Version: [32.2.2]
+[2023-05-26 14:07:14] INFO root fetch - processPackages [AlgBench]: Downloading https://files.pythonhosted.org/packages/1e/05/c11b47f76772906902ed6f2a57ede4472c329cb8e269d72abf33eb6bf830/AlgBench-1.1.0.tar.gz
+[2023-05-26 14:07:14] INFO root fetch - processPackages [regi]: Start processing: speechmatics-python
+[2023-05-26 14:07:14] INFO root fetch - main [MainThread]: End processing [regi]: success
+[2023-05-26 14:07:14] INFO root fetch - processPackages [spsdk]: Downloading https://files.pythonhosted.org/packages/09/58/bdfa7ee31d26fca7fefae6c13a58c2ed6a339590458f9d63efd8010cfd70/spsdk-1.9.0.tar.gz
+[2023-05-26 14:07:14] INFO root fetch - processPackages [resotoui]: Downloading https://files.pythonhosted.org/packages/3f/47/1ed12722e6c936d9282c08388304ccabd0002ef6edce8c12568b4cc50134/resotoui-3.4.0.tar.gz
+[2023-05-26 14:07:14] INFO root fetch - processPackages [cg]: executing diffoscope
+[2023-05-26 14:07:14] INFO root fetch - processPackages [cg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cg-32.2.2.tar.gz tmp/cg-32.2.3.tar.gz --markdown 20230526/c/cg/32.2.2-32.2.3/diff.md --exclude *.pyd
+[2023-05-26 14:07:14] INFO root fetch - processPackages [AlgBench]: executing diffoscope
+[2023-05-26 14:07:14] INFO root fetch - processPackages [AlgBench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AlgBench-1.0.0.tar.gz tmp/AlgBench-1.1.0.tar.gz --markdown 20230526/A/AlgBench/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-26 14:07:14] INFO root fetch - processPackages [speechmatics-python]: New version: [1.8.3] Old Version: [1.8.2]
+[2023-05-26 14:07:14] INFO root fetch - processPackages [tf-agents-nightly]: executing diffoscope
+[2023-05-26 14:07:14] INFO root fetch - processPackages [tf-agents-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_agents_nightly-0.9.0.dev20210811-py3-none-any.whl.zip tmp/tf_agents_nightly-0.9.0.dev20210812-py3-none-any.whl.zip --markdown 20230526/t/tf-agents-nightly/0.9.0.dev20210811-0.9.0.dev20210812/diff.md --exclude *.pyd
+[2023-05-26 14:07:14] INFO root fetch - processPackages [spsdk]: Downloading https://files.pythonhosted.org/packages/0a/99/c1a4be20fee02f6d007964e8f655287b385573cb2ec9f032041ef3fb9e38/spsdk-1.9.1.tar.gz
+[2023-05-26 14:07:14] INFO root fetch - processPackages [speechmatics-python]: Downloading https://files.pythonhosted.org/packages/a4/98/fc658420cd8d12c0f92f49bd2f2e63d8e151345c8be44a0fff1c0e778f14/speechmatics-python-1.8.3.tar.gz
+[2023-05-26 14:07:15] INFO root fetch - processPackages [pyodb]: Start processing: langchain-serve
+[2023-05-26 14:07:15] INFO root fetch - main [MainThread]: End processing [pyodb]: success
+[2023-05-26 14:07:15] INFO root fetch - processPackages [langchain-serve]: New version: [0.0.9.dev9] Old Version: [0.0.9.dev22]
+[2023-05-26 14:07:15] INFO root fetch - processPackages [tipologias]: Start processing: alkira
+[2023-05-26 14:07:15] INFO root fetch - main [MainThread]: End processing [tipologias]: success
+[2023-05-26 14:07:15] INFO root fetch - processPackages [speechmatics-python]: executing diffoscope
+[2023-05-26 14:07:15] INFO root fetch - processPackages [speechmatics-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speechmatics-python-1.8.2.tar.gz tmp/speechmatics-python-1.8.3.tar.gz --markdown 20230526/s/speechmatics-python/1.8.2-1.8.3/diff.md --exclude *.pyd
+[2023-05-26 14:07:15] INFO root fetch - processPackages [langchain-serve]: executing diffoscope
+[2023-05-26 14:07:15] INFO root fetch - processPackages [langchain-serve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain-serve-0.0.9.dev22.tar.gz tmp/langchain-serve-0.0.9.dev9.tar.gz --markdown 20230526/l/langchain-serve/0.0.9.dev22-0.0.9.dev9/diff.md --exclude *.pyd
+[2023-05-26 14:07:15] WARNING root fetch - processPackages [alkira]: Skipping, unable to determine old version
+[2023-05-26 14:07:15] INFO root fetch - processPackages [alkira]: Start processing: alkira-sdk
+[2023-05-26 14:07:15] INFO root fetch - main [MainThread]: End processing [alkira] error
+[2023-05-26 14:07:15] INFO root fetch - processPackages [spsdk]: executing diffoscope
+[2023-05-26 14:07:15] INFO root fetch - processPackages [spsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spsdk-1.9.0.tar.gz tmp/spsdk-1.9.1.tar.gz --markdown 20230526/s/spsdk/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-26 14:07:15] WARNING root fetch - processPackages [alkira-sdk]: Skipping, unable to determine old version
+[2023-05-26 14:07:15] INFO root fetch - main [MainThread]: End processing [alkira-sdk] error
+[2023-05-26 14:07:16] INFO root fetch - processPackages [resotoui]: Downloading https://files.pythonhosted.org/packages/25/7c/8145bcafda0221d777f7c6a45d85ba3505b274f1de55e475e0465d66188c/resotoui-3.5.0.tar.gz
+[2023-05-26 14:07:16] INFO root fetch - processPackages [resotoui]: executing diffoscope
+[2023-05-26 14:07:16] INFO root fetch - processPackages [resotoui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/resotoui-3.4.0.tar.gz tmp/resotoui-3.5.0.tar.gz --markdown 20230526/r/resotoui/3.4.0-3.5.0/diff.md --exclude *.pyd
+[2023-05-26 14:07:16] INFO root fetch - main [MainThread]: End processing [AlgBench]: success
+[2023-05-26 14:07:17] INFO root fetch - main [MainThread]: End processing [langchain-serve]: success
+[2023-05-26 14:07:17] INFO root fetch - main [MainThread]: End processing [speechmatics-python]: success
+[2023-05-26 14:07:18] INFO root fetch - main [MainThread]: End processing [bip-utils]: success
+[2023-05-26 14:07:20] INFO root fetch - main [MainThread]: End processing [qontract-reconcile]: success
+[2023-05-26 14:07:21] INFO root fetch - main [MainThread]: End processing [tf-agents-nightly]: success
+[2023-05-26 14:07:22] INFO root fetch - main [MainThread]: End processing [spsdk]: success
+[2023-05-26 14:07:24] INFO root fetch - main [MainThread]: End processing [resotoui]: success
+[2023-05-26 14:07:27] INFO root fetch - main [MainThread]: End processing [cg]: success
+[2023-05-26 14:07:27] INFO root fetch - main [MainThread]: Store serial: [18262434]
