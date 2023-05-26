@@ -1095,3 +1095,62 @@
 [2023-05-26 01:58:05] INFO root fetch - main [MainThread]: End processing [MicroLIA]: success
 [2023-05-26 01:58:06] INFO root fetch - main [MainThread]: End processing [itsxpress]: success
 [2023-05-26 01:58:06] INFO root fetch - main [MainThread]: Store serial: [18254261]
+[2023-05-26 02:03:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18254261]
+[2023-05-26 02:03:15] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-26 02:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lancedb
+[2023-05-26 02:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dataquality
+[2023-05-26 02:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hades-cli
+[2023-05-26 02:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ssg-ada-course-search
+[2023-05-26 02:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: edat-utils
+[2023-05-26 02:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: edat-utils
+[2023-05-26 02:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: x-transformers
+[2023-05-26 02:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: hades-cli
+[2023-05-26 02:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: MicroLIA
+[2023-05-26 02:03:15] INFO root fetch - processPackages [lancedb]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-26 02:03:15] INFO root fetch - processPackages [edat-utils]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-05-26 02:03:15] INFO root fetch - processPackages [ssg-ada-course-search]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-26 02:03:15] INFO root fetch - processPackages [MicroLIA]: New version: [2.2.1] Old Version: [2.2.0]
+[2023-05-26 02:03:15] INFO root fetch - processPackages [hades-cli]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 02:03:15] INFO root fetch - processPackages [hades-cli]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 02:03:15] INFO root fetch - processPackages [edat-utils]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-05-26 02:03:15] INFO root fetch - processPackages [dataquality]: New version: [0.8.9] Old Version: [0.8.8a0]
+[2023-05-26 02:03:15] INFO root fetch - processPackages [x-transformers]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-26 02:03:15] INFO root fetch - processPackages [MicroLIA]: executing diffoscope
+[2023-05-26 02:03:15] INFO root fetch - processPackages [MicroLIA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MicroLIA-2.2.0.tar.gz tmp/MicroLIA-2.2.1.tar.gz --markdown 20230526/M/MicroLIA/2.2.0-2.2.1/diff.md --exclude *.pyd
+[2023-05-26 02:03:15] INFO root fetch - processPackages [lancedb]: Downloading https://files.pythonhosted.org/packages/78/d9/1fd5a2ae549dd63fbab070116fce11d9767910fbd945d069c95023b4cd6b/lancedb-0.1.2.tar.gz
+[2023-05-26 02:03:15] INFO root fetch - processPackages [edat-utils]: Downloading https://files.pythonhosted.org/packages/6f/55/f091a83af2101b6932624b8631da25dc78fcf996763524874df5dd6e5197/edat_utils-0.3.4.tar.gz
+[2023-05-26 02:03:15] INFO root fetch - processPackages [hades-cli]: Downloading https://files.pythonhosted.org/packages/90/4f/6f4e6cfc7bf5c28e47bc621408946d36bd594c767e53d1892079c17d1d2a/hades-cli-0.0.9.tar.gz
+[2023-05-26 02:03:15] INFO root fetch - processPackages [hades-cli]: Downloading https://files.pythonhosted.org/packages/90/4f/6f4e6cfc7bf5c28e47bc621408946d36bd594c767e53d1892079c17d1d2a/hades-cli-0.0.9.tar.gz
+[2023-05-26 02:03:15] INFO root fetch - processPackages [ssg-ada-course-search]: Downloading https://files.pythonhosted.org/packages/29/fe/f9a67d1c6c5e7c8aa2bda6b60e4690e82ddbf59f0b58db20842d4b9b80eb/ssg-ada-course-search-0.0.4.tar.gz
+[2023-05-26 02:03:15] INFO root fetch - processPackages [edat-utils]: Downloading https://files.pythonhosted.org/packages/6f/55/f091a83af2101b6932624b8631da25dc78fcf996763524874df5dd6e5197/edat_utils-0.3.4.tar.gz
+[2023-05-26 02:03:16] INFO root fetch - processPackages [hades-cli]: executing diffoscope
+[2023-05-26 02:03:16] INFO root fetch - processPackages [hades-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hades-cli-0.0.8.tar.gz tmp/hades-cli-0.0.9.tar.gz --markdown 20230526/h/hades-cli/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 02:03:16] INFO root fetch - processPackages [ssg-ada-course-search]: executing diffoscope
+[2023-05-26 02:03:16] INFO root fetch - processPackages [ssg-ada-course-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssg-ada-course-search-0.0.3.tar.gz tmp/ssg-ada-course-search-0.0.4.tar.gz --markdown 20230526/s/ssg-ada-course-search/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-26 02:03:16] INFO root fetch - processPackages [hades-cli]: executing diffoscope
+[2023-05-26 02:03:16] INFO root fetch - processPackages [hades-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hades-cli-0.0.8.tar.gz tmp/hades-cli-0.0.9.tar.gz --markdown 20230526/h/hades-cli/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 02:03:16] INFO root fetch - processPackages [dataquality]: Downloading https://files.pythonhosted.org/packages/ec/c0/a67c048905f2c652971d55ff82c30b8a749cfdd800d5119bb8accf3770bc/dataquality-0.8.8a0.tar.gz
+[2023-05-26 02:03:16] INFO root fetch - processPackages [x-transformers]: executing diffoscope
+[2023-05-26 02:03:16] INFO root fetch - processPackages [x-transformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/x-transformers-1.9.1.tar.gz tmp/x-transformers-1.9.2.tar.gz --markdown 20230526/x/x-transformers/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-26 02:03:16] INFO root fetch - processPackages [lancedb]: Downloading https://files.pythonhosted.org/packages/b4/28/225688cf621b9c8a65f6d63fcfbf16fe33efe86438fb23138e0e67acd0c0/lancedb-0.1.3.tar.gz
+[2023-05-26 02:03:16] INFO root fetch - processPackages [edat-utils]: Downloading https://files.pythonhosted.org/packages/0b/da/9fdaa58f41bc6566908c5504d6f5e7601da750f0eef6cc37a41a940eb02d/edat_utils-0.3.5.tar.gz
+[2023-05-26 02:03:16] INFO root fetch - processPackages [edat-utils]: Downloading https://files.pythonhosted.org/packages/0b/da/9fdaa58f41bc6566908c5504d6f5e7601da750f0eef6cc37a41a940eb02d/edat_utils-0.3.5.tar.gz
+[2023-05-26 02:03:16] INFO root fetch - processPackages [lancedb]: executing diffoscope
+[2023-05-26 02:03:16] INFO root fetch - processPackages [lancedb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lancedb-0.1.2.tar.gz tmp/lancedb-0.1.3.tar.gz --markdown 20230526/l/lancedb/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-26 02:03:16] INFO root fetch - processPackages [edat-utils]: executing diffoscope
+[2023-05-26 02:03:16] INFO root fetch - processPackages [edat-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edat_utils-0.3.4.tar.gz tmp/edat_utils-0.3.5.tar.gz --markdown 20230526/e/edat-utils/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-05-26 02:03:16] INFO root fetch - processPackages [edat-utils]: executing diffoscope
+[2023-05-26 02:03:16] INFO root fetch - processPackages [edat-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edat_utils-0.3.4.tar.gz tmp/edat_utils-0.3.5.tar.gz --markdown 20230526/e/edat-utils/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-05-26 02:03:16] INFO root fetch - processPackages [dataquality]: Downloading https://files.pythonhosted.org/packages/91/1e/b93106f778087ce05e7c356ffd9a6a6062c6e62a84bf3f9d4eb655b16850/dataquality-0.8.9.tar.gz
+[2023-05-26 02:03:16] INFO root fetch - processPackages [dataquality]: executing diffoscope
+[2023-05-26 02:03:16] INFO root fetch - processPackages [dataquality]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataquality-0.8.8a0.tar.gz tmp/dataquality-0.8.9.tar.gz --markdown 20230526/d/dataquality/0.8.8a0-0.8.9/diff.md --exclude *.pyd
+[2023-05-26 02:03:17] INFO root fetch - main [MainThread]: End processing [ssg-ada-course-search]: success
+[2023-05-26 02:03:17] INFO root fetch - main [MainThread]: End processing [hades-cli]: success
+[2023-05-26 02:03:17] INFO root fetch - main [MainThread]: End processing [hades-cli]: success
+[2023-05-26 02:03:18] INFO root fetch - main [MainThread]: End processing [edat-utils]: success
+[2023-05-26 02:03:18] INFO root fetch - main [MainThread]: End processing [lancedb]: success
+[2023-05-26 02:03:18] INFO root fetch - main [MainThread]: End processing [edat-utils]: success
+[2023-05-26 02:03:18] INFO root fetch - main [MainThread]: End processing [x-transformers]: success
+[2023-05-26 02:03:19] INFO root fetch - main [MainThread]: End processing [MicroLIA]: success
+[2023-05-26 02:03:19] INFO root fetch - main [MainThread]: End processing [dataquality]: success
+[2023-05-26 02:03:19] INFO root fetch - main [MainThread]: Store serial: [18254288]
