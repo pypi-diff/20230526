@@ -8473,3 +8473,33 @@
 [2023-05-26 07:36:13] INFO root fetch - processPackages [pybi-next]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybi-next-0.4.6.tar.gz tmp/pybi-next-0.4.7.tar.gz --markdown 20230526/p/pybi-next/0.4.6-0.4.7/diff.md --exclude *.pyd
 [2023-05-26 07:36:18] INFO root fetch - main [MainThread]: End processing [pybi-next]: success
 [2023-05-26 07:36:18] INFO root fetch - main [MainThread]: Store serial: [18258261]
+[2023-05-26 07:41:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18258261]
+[2023-05-26 07:41:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-26 07:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-hr-timesheet-task-required
+[2023-05-26 07:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo11-addon-membership-extension
+[2023-05-26 07:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dspawpy
+[2023-05-26 07:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: CEEcache
+[2023-05-26 07:41:28] INFO root fetch - processPackages [odoo-addon-hr-timesheet-task-required]: New version: [16.0.1.0.0.4] Old Version: [16.0.1.0.0.3]
+[2023-05-26 07:41:28] INFO root fetch - processPackages [odoo11-addon-membership-extension]: New version: [11.0.1.1.1.99.dev2] Old Version: [11.0.1.1.1.99.dev1]
+[2023-05-26 07:41:28] INFO root fetch - processPackages [CEEcache]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-26 07:41:28] INFO root fetch - processPackages [dspawpy]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-26 07:41:28] INFO root fetch - processPackages [CEEcache]: Downloading https://files.pythonhosted.org/packages/b6/f8/c36224d51a18987fc618c9bc22361faa2a7f3f86f874ddf77491a8eaeb91/CEEcache-1.0.1.tar.gz
+[2023-05-26 07:41:28] INFO root fetch - processPackages [odoo11-addon-membership-extension]: Downloading https://files.pythonhosted.org/packages/fb/69/4957cf26db39097b418402da8f29c656431fb58a7ec2ca758359da12dcd8/odoo11_addon_membership_extension-11.0.1.1.1.99.dev1-py2.py3-none-any.whl
+[2023-05-26 07:41:28] INFO root fetch - processPackages [dspawpy]: Downloading https://files.pythonhosted.org/packages/0c/99/52acc50adb758b82b793e4aeacfeae5a9fd7917ddbe1977165ec795588b6/dspawpy-0.9.5-py3-none-any.whl
+[2023-05-26 07:41:28] INFO root fetch - processPackages [odoo-addon-hr-timesheet-task-required]: Downloading https://files.pythonhosted.org/packages/d7/14/3f6d1088f74cfede3b8595dfb4c878d339c48cc90a8e56ff3f04a7022969/odoo_addon_hr_timesheet_task_required-16.0.1.0.0.4-py3-none-any.whl
+[2023-05-26 07:41:28] INFO root fetch - processPackages [odoo-addon-hr-timesheet-task-required]: executing diffoscope
+[2023-05-26 07:41:28] INFO root fetch - processPackages [odoo-addon-hr-timesheet-task-required]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_hr_timesheet_task_required-16.0.1.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_hr_timesheet_task_required-16.0.1.0.0.4-py3-none-any.whl.zip --markdown 20230526/o/odoo-addon-hr-timesheet-task-required/16.0.1.0.0.3-16.0.1.0.0.4/diff.md --exclude *.pyd
+[2023-05-26 07:41:28] INFO root fetch - processPackages [CEEcache]: Downloading https://files.pythonhosted.org/packages/da/95/41bea181af01ce44d871ad4dbdd985f730c64c5bd2f6217c52c38a1ea945/CEEcache-1.0.2.tar.gz
+[2023-05-26 07:41:28] INFO root fetch - processPackages [dspawpy]: Downloading https://files.pythonhosted.org/packages/bd/e8/ede081c5d473451e3e36c5989e6515fa7aac2f2ea2bf4b74c6cff8e55722/dspawpy-0.9.6-py3-none-any.whl
+[2023-05-26 07:41:28] INFO root fetch - processPackages [odoo11-addon-membership-extension]: Downloading https://files.pythonhosted.org/packages/bd/df/171b663cb262268be37ab07e721c51079f084342ff634be45762774f312a/odoo11_addon_membership_extension-11.0.1.1.1.99.dev2-py2.py3-none-any.whl
+[2023-05-26 07:41:28] INFO root fetch - processPackages [dspawpy]: executing diffoscope
+[2023-05-26 07:41:28] INFO root fetch - processPackages [dspawpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dspawpy-0.9.5-py3-none-any.whl.zip tmp/dspawpy-0.9.6-py3-none-any.whl.zip --markdown 20230526/d/dspawpy/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-26 07:41:28] INFO root fetch - processPackages [odoo11-addon-membership-extension]: executing diffoscope
+[2023-05-26 07:41:28] INFO root fetch - processPackages [odoo11-addon-membership-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_membership_extension-11.0.1.1.1.99.dev1-py2.py3-none-any.whl.zip tmp/odoo11_addon_membership_extension-11.0.1.1.1.99.dev2-py2.py3-none-any.whl.zip --markdown 20230526/o/odoo11-addon-membership-extension/11.0.1.1.1.99.dev1-11.0.1.1.1.99.dev2/diff.md --exclude *.pyd
+[2023-05-26 07:41:28] INFO root fetch - processPackages [CEEcache]: executing diffoscope
+[2023-05-26 07:41:28] INFO root fetch - processPackages [CEEcache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CEEcache-1.0.1.tar.gz tmp/CEEcache-1.0.2.tar.gz --markdown 20230526/C/CEEcache/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-26 07:41:29] INFO root fetch - main [MainThread]: End processing [odoo-addon-hr-timesheet-task-required]: success
+[2023-05-26 07:41:30] INFO root fetch - main [MainThread]: End processing [CEEcache]: success
+[2023-05-26 07:41:30] INFO root fetch - main [MainThread]: End processing [dspawpy]: success
+[2023-05-26 07:41:30] INFO root fetch - main [MainThread]: End processing [odoo11-addon-membership-extension]: success
+[2023-05-26 07:41:30] INFO root fetch - main [MainThread]: Store serial: [18258269]
