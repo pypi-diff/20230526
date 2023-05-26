@@ -1935,3 +1935,30 @@
 [2023-05-26 03:07:25] INFO root fetch - main [MainThread]: End processing [steptools]: success
 [2023-05-26 03:07:26] INFO root fetch - main [MainThread]: End processing [bigquery-ml-utils]: success
 [2023-05-26 03:07:26] INFO root fetch - main [MainThread]: Store serial: [18254803]
+[2023-05-26 03:12:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18254803]
+[2023-05-26 03:12:36] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-26 03:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: honeybee-doe2
+[2023-05-26 03:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: numtoname
+[2023-05-26 03:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: revChatGPT
+[2023-05-26 03:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pepperize.cdk-organizations
+[2023-05-26 03:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fileblocks
+[2023-05-26 03:12:36] INFO root fetch - processPackages [honeybee-doe2]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-26 03:12:36] WARNING root fetch - processPackages [numtoname]: Skipping, unable to determine old version
+[2023-05-26 03:12:36] INFO root fetch - main [MainThread]: End processing [numtoname] error
+[2023-05-26 03:12:36] INFO root fetch - processPackages [revChatGPT]: New version: [5.1.3] Old Version: [5.1.2]
+[2023-05-26 03:12:36] INFO root fetch - processPackages [pepperize.cdk-organizations]: New version: [0.7.99] Old Version: [0.7.98]
+[2023-05-26 03:12:36] WARNING root fetch - processPackages [fileblocks]: Skipping, unable to determine old version
+[2023-05-26 03:12:36] INFO root fetch - main [MainThread]: End processing [fileblocks] error
+[2023-05-26 03:12:36] INFO root fetch - processPackages [pepperize.cdk-organizations]: executing diffoscope
+[2023-05-26 03:12:36] INFO root fetch - processPackages [pepperize.cdk-organizations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-organizations-0.7.98.tar.gz tmp/pepperize.cdk-organizations-0.7.99.tar.gz --markdown 20230526/p/pepperize.cdk-organizations/0.7.98-0.7.99/diff.md --exclude *.pyd
+[2023-05-26 03:12:36] INFO root fetch - processPackages [revChatGPT]: Downloading https://files.pythonhosted.org/packages/8b/2b/3319c8f257ac9ab5e8da8a6f54ce3a1eb1848d7bd92232ac373ab9daadfb/revChatGPT-5.1.2.tar.gz
+[2023-05-26 03:12:36] INFO root fetch - processPackages [honeybee-doe2]: Downloading https://files.pythonhosted.org/packages/4d/59/59b92b2471082501065a0c5052f326c6b6f6d514b2e293e5aa326921cbbf/honeybee-doe2-0.4.2.tar.gz
+[2023-05-26 03:12:36] INFO root fetch - processPackages [honeybee-doe2]: executing diffoscope
+[2023-05-26 03:12:36] INFO root fetch - processPackages [honeybee-doe2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-doe2-0.4.1.tar.gz tmp/honeybee-doe2-0.4.2.tar.gz --markdown 20230526/h/honeybee-doe2/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-26 03:12:36] INFO root fetch - processPackages [revChatGPT]: Downloading https://files.pythonhosted.org/packages/4d/2a/d8f45897057e4d7bf0e0a45f04bdfa1213e402a62c044e065ec97ebaee4c/revChatGPT-5.1.3.tar.gz
+[2023-05-26 03:12:36] INFO root fetch - processPackages [revChatGPT]: executing diffoscope
+[2023-05-26 03:12:36] INFO root fetch - processPackages [revChatGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revChatGPT-5.1.2.tar.gz tmp/revChatGPT-5.1.3.tar.gz --markdown 20230526/r/revChatGPT/5.1.2-5.1.3/diff.md --exclude *.pyd
+[2023-05-26 03:12:37] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-organizations]: success
+[2023-05-26 03:12:38] INFO root fetch - main [MainThread]: End processing [honeybee-doe2]: success
+[2023-05-26 03:12:38] INFO root fetch - main [MainThread]: End processing [revChatGPT]: success
+[2023-05-26 03:12:38] INFO root fetch - main [MainThread]: Store serial: [18254823]
