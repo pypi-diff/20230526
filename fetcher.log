@@ -13270,3 +13270,137 @@
 [2023-05-26 12:40:32] INFO root fetch - main [MainThread]: End processing [tulir-telethon]: success
 [2023-05-26 12:40:35] INFO root fetch - main [MainThread]: End processing [soakdb3]: success
 [2023-05-26 12:40:35] INFO root fetch - main [MainThread]: Store serial: [18261432]
+[2023-05-26 12:45:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18261432]
+[2023-05-26 12:45:51] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-26 12:45:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mystran-validation
+[2023-05-26 12:45:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rovio-ingest
+[2023-05-26 12:45:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-l10n-it-withholding-tax
+[2023-05-26 12:45:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cognite-power-ops
+[2023-05-26 12:45:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: questdb-connect
+[2023-05-26 12:45:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dvg-randomizer
+[2023-05-26 12:45:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PrettyPrinterProject
+[2023-05-26 12:45:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: syncany
+[2023-05-26 12:45:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: drf-simplemiddleware-logger
+[2023-05-26 12:45:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: edu-segmentation
+[2023-05-26 12:45:51] INFO root fetch - processPackages [mystran-validation]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-26 12:45:51] INFO root fetch - processPackages [questdb-connect]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-26 12:45:51] WARNING root fetch - processPackages [drf-simplemiddleware-logger]: Skipping, unable to determine old version
+[2023-05-26 12:45:51] INFO root fetch - processPackages [drf-simplemiddleware-logger]: Start processing: syncanysql
+[2023-05-26 12:45:51] INFO root fetch - main [MainThread]: End processing [drf-simplemiddleware-logger] error
+[2023-05-26 12:45:51] INFO root fetch - processPackages [rovio-ingest]: New version: [1.0.5.dev8] Old Version: [1.0.5.dev5]
+[2023-05-26 12:45:51] INFO root fetch - processPackages [odoo14-addon-l10n-it-withholding-tax]: New version: [14.0.1.1.5] Old Version: [14.0.1.1.4.dev6]
+[2023-05-26 12:45:51] WARNING root fetch - processPackages [PrettyPrinterProject]: Skipping, unable to determine old version
+[2023-05-26 12:45:51] INFO root fetch - processPackages [PrettyPrinterProject]: Start processing: league-shop-base
+[2023-05-26 12:45:51] INFO root fetch - main [MainThread]: End processing [PrettyPrinterProject] error
+[2023-05-26 12:45:51] INFO root fetch - processPackages [cognite-power-ops]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-26 12:45:51] INFO root fetch - processPackages [dvg-randomizer]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-05-26 12:45:51] INFO root fetch - processPackages [syncanysql]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-26 12:45:51] INFO root fetch - processPackages [edu-segmentation]: New version: [0.0.83] Old Version: [0.0.82]
+[2023-05-26 12:45:51] INFO root fetch - processPackages [syncany]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-26 12:45:51] INFO root fetch - processPackages [league-shop-base]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-26 12:45:51] INFO root fetch - processPackages [questdb-connect]: executing diffoscope
+[2023-05-26 12:45:51] INFO root fetch - processPackages [questdb-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/questdb-connect-1.0.5.tar.gz tmp/questdb-connect-1.0.6.tar.gz --markdown 20230526/q/questdb-connect/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-26 12:45:51] INFO root fetch - processPackages [league-shop-base]: executing diffoscope
+[2023-05-26 12:45:51] INFO root fetch - processPackages [league-shop-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/league-shop-base-1.0.8.tar.gz tmp/league-shop-base-1.0.9.tar.gz --markdown 20230526/l/league-shop-base/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-26 12:45:51] INFO root fetch - processPackages [syncanysql]: Downloading https://files.pythonhosted.org/packages/a6/75/3ca6fab1506f95245c6d29f8f37bfa42a348fcb2caf2243fdb7e9d8bb760/syncanysql-0.1.3.tar.gz
+[2023-05-26 12:45:51] INFO root fetch - processPackages [dvg-randomizer]: Downloading https://files.pythonhosted.org/packages/49/19/03408135f92b20b933b1eb42873cc5e912f8394c91fc101822260427df25/dvg-randomizer-1.4.1.tar.gz
+[2023-05-26 12:45:51] INFO root fetch - processPackages [syncany]: Downloading https://files.pythonhosted.org/packages/85/1d/e34ca990cfd2aa917c8e8cb81c7b87f2e9271ed379fbf4fa3e525b4fc3bf/syncany-0.2.8.tar.gz
+[2023-05-26 12:45:51] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/19/be/1a61791315b53d96dd5e3de7be7d7ea0234bb57d7db4bd8354524f103451/edu_segmentation-0.0.83.tar.gz
+[2023-05-26 12:45:51] INFO root fetch - processPackages [cognite-power-ops]: Downloading https://files.pythonhosted.org/packages/2b/ea/c056f5562fa0bed4321b21572bba15a2f43f6f9795d20397ee822d00d6af/cognite_power_ops-0.9.1.tar.gz
+[2023-05-26 12:45:51] INFO root fetch - processPackages [odoo14-addon-l10n-it-withholding-tax]: Downloading https://files.pythonhosted.org/packages/0c/fb/c26ff48efbd91b316dc8a22deeeded2d0e1515d1d48e56a83a4ca1f69348/odoo14_addon_l10n_it_withholding_tax-14.0.1.1.5-py3-none-any.whl
+[2023-05-26 12:45:51] INFO root fetch - processPackages [rovio-ingest]: Downloading https://files.pythonhosted.org/packages/0e/f1/aafc246d1914d7f1aef601039db9eb7bd6da19a19491669effb0da57b704/rovio-ingest-1.0.5.dev8.tar.gz
+[2023-05-26 12:45:51] INFO root fetch - processPackages [mystran-validation]: executing diffoscope
+[2023-05-26 12:45:51] INFO root fetch - processPackages [mystran-validation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mystran_validation-0.8.0.tar.gz tmp/mystran_validation-0.9.0.tar.gz --markdown 20230526/m/mystran-validation/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-26 12:45:51] INFO root fetch - processPackages [cognite-power-ops]: executing diffoscope
+[2023-05-26 12:45:51] INFO root fetch - processPackages [cognite-power-ops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cognite_power_ops-0.9.0.tar.gz tmp/cognite_power_ops-0.9.1.tar.gz --markdown 20230526/c/cognite-power-ops/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-26 12:45:51] INFO root fetch - processPackages [rovio-ingest]: executing diffoscope
+[2023-05-26 12:45:51] INFO root fetch - processPackages [rovio-ingest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rovio-ingest-1.0.5.dev5.tar.gz tmp/rovio-ingest-1.0.5.dev8.tar.gz --markdown 20230526/r/rovio-ingest/1.0.5.dev5-1.0.5.dev8/diff.md --exclude *.pyd
+[2023-05-26 12:45:51] INFO root fetch - processPackages [edu-segmentation]: executing diffoscope
+[2023-05-26 12:45:51] INFO root fetch - processPackages [edu-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edu_segmentation-0.0.82.tar.gz tmp/edu_segmentation-0.0.83.tar.gz --markdown 20230526/e/edu-segmentation/0.0.82-0.0.83/diff.md --exclude *.pyd
+[2023-05-26 12:45:51] INFO root fetch - processPackages [odoo14-addon-l10n-it-withholding-tax]: executing diffoscope
+[2023-05-26 12:45:51] INFO root fetch - processPackages [odoo14-addon-l10n-it-withholding-tax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_it_withholding_tax-14.0.1.1.4.dev6-py3-none-any.whl.zip tmp/odoo14_addon_l10n_it_withholding_tax-14.0.1.1.5-py3-none-any.whl.zip --markdown 20230526/o/odoo14-addon-l10n-it-withholding-tax/14.0.1.1.4.dev6-14.0.1.1.5/diff.md --exclude *.pyd
+[2023-05-26 12:45:51] INFO root fetch - processPackages [syncanysql]: Downloading https://files.pythonhosted.org/packages/9e/bc/c8aee5d6a4799dfb3471ad47be5508d6298adee9ee6bbdc7a787232b1f8c/syncanysql-0.1.4.tar.gz
+[2023-05-26 12:45:51] INFO root fetch - processPackages [dvg-randomizer]: executing diffoscope
+[2023-05-26 12:45:51] INFO root fetch - processPackages [dvg-randomizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dvg-randomizer-1.4.0.tar.gz tmp/dvg-randomizer-1.4.1.tar.gz --markdown 20230526/d/dvg-randomizer/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-05-26 12:45:52] INFO root fetch - processPackages [syncanysql]: executing diffoscope
+[2023-05-26 12:45:52] INFO root fetch - processPackages [syncanysql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syncanysql-0.1.3.tar.gz tmp/syncanysql-0.1.4.tar.gz --markdown 20230526/s/syncanysql/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-26 12:45:52] INFO root fetch - processPackages [syncany]: Downloading https://files.pythonhosted.org/packages/31/32/4f5212802d20baa5cd1c5d2fa432e7816bb9c2634e457d142c6a45cc455c/syncany-0.2.9.tar.gz
+[2023-05-26 12:45:52] INFO root fetch - processPackages [syncany]: executing diffoscope
+[2023-05-26 12:45:52] INFO root fetch - processPackages [syncany]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syncany-0.2.8.tar.gz tmp/syncany-0.2.9.tar.gz --markdown 20230526/s/syncany/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-26 12:45:53] INFO root fetch - processPackages [questdb-connect]: Start processing: syncanyserver
+[2023-05-26 12:45:53] INFO root fetch - main [MainThread]: End processing [questdb-connect]: success
+[2023-05-26 12:45:53] INFO root fetch - processPackages [syncanyserver]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-26 12:45:53] INFO root fetch - processPackages [league-shop-base]: Start processing: mkdocstrings
+[2023-05-26 12:45:53] INFO root fetch - main [MainThread]: End processing [league-shop-base]: success
+[2023-05-26 12:45:53] INFO root fetch - processPackages [mkdocstrings]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-26 12:45:53] INFO root fetch - processPackages [syncanyserver]: Downloading https://files.pythonhosted.org/packages/6d/85/db200b65e7baa0e4084878fc607112fb874cdf55625233d8a0afdb503296/syncanyserver-0.0.1.tar.gz
+[2023-05-26 12:45:53] INFO root fetch - processPackages [mkdocstrings]: Downloading https://files.pythonhosted.org/packages/b2/4d/7904c5e13a783aed71048718a9ecfcf5d2720aec85285198a52908fdaf07/mkdocstrings-0.9.0.tar.gz
+[2023-05-26 12:45:53] INFO root fetch - processPackages [syncanyserver]: Downloading https://files.pythonhosted.org/packages/4d/9e/e23accf6c316928abbdf682f2023d7e0d1bbe1b2e8b4ff4699badb8908b2/syncanyserver-0.0.2.tar.gz
+[2023-05-26 12:45:53] INFO root fetch - processPackages [syncanyserver]: executing diffoscope
+[2023-05-26 12:45:53] INFO root fetch - processPackages [syncanyserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syncanyserver-0.0.1.tar.gz tmp/syncanyserver-0.0.2.tar.gz --markdown 20230526/s/syncanyserver/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-26 12:45:53] INFO root fetch - processPackages [mkdocstrings]: Downloading https://files.pythonhosted.org/packages/ee/29/d819ea65169866d3fee6067c14b192756c98408b59346a6bc12b46a65d0e/mkdocstrings-0.9.1.tar.gz
+[2023-05-26 12:45:53] INFO root fetch - processPackages [mkdocstrings]: executing diffoscope
+[2023-05-26 12:45:53] INFO root fetch - processPackages [mkdocstrings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocstrings-0.9.0.tar.gz tmp/mkdocstrings-0.9.1.tar.gz --markdown 20230526/m/mkdocstrings/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-26 12:45:54] INFO root fetch - main [MainThread]: End processing [mystran-validation]: success
+[2023-05-26 12:45:54] ERROR root fetch - processPackages [rovio-ingest]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 51, in compare_details
+    describe_pyc(self.path),
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 65, in describe_pyc
+    return "\n".join(parse_pyc(f))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 81, in parse_pyc
+    code = marshal.load(f)
+           ^^^^^^^^^^^^^^^
+SystemError: ../Objects/codeobject.c:250: bad argument to internal function
+
+[2023-05-26 12:45:54] INFO root fetch - main [MainThread]: End processing [rovio-ingest] error
+[2023-05-26 12:45:54] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
+[2023-05-26 12:45:54] INFO root fetch - main [MainThread]: End processing [cognite-power-ops]: success
+[2023-05-26 12:45:54] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-it-withholding-tax]: success
+[2023-05-26 12:45:54] INFO root fetch - main [MainThread]: End processing [dvg-randomizer]: success
+[2023-05-26 12:45:55] INFO root fetch - main [MainThread]: End processing [syncany]: success
+[2023-05-26 12:45:55] INFO root fetch - main [MainThread]: End processing [syncanyserver]: success
+[2023-05-26 12:45:55] INFO root fetch - main [MainThread]: End processing [mkdocstrings]: success
+[2023-05-26 12:45:56] INFO root fetch - main [MainThread]: End processing [syncanysql]: success
+[2023-05-26 12:45:56] INFO root fetch - main [MainThread]: Store serial: [18261474]
