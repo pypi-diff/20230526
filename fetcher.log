@@ -10834,3 +10834,107 @@
 [2023-05-26 10:28:56] INFO root fetch - main [MainThread]: End processing [indecro]: success
 [2023-05-26 10:28:57] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
 [2023-05-26 10:28:57] INFO root fetch - main [MainThread]: Store serial: [18259697]
+[2023-05-26 10:34:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18259697]
+[2023-05-26 10:34:07] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-26 10:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: th2-grpc-lw-data-provider
+[2023-05-26 10:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: treevalue
+[2023-05-26 10:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: keycloak-api-manager
+[2023-05-26 10:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aiogrobid
+[2023-05-26 10:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: testgear-cli
+[2023-05-26 10:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Alpha-Rabbit
+[2023-05-26 10:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dataset-librarian
+[2023-05-26 10:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pmx-biobb
+[2023-05-26 10:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dicomindex
+[2023-05-26 10:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: python-openblas-build
+[2023-05-26 10:34:07] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: New version: [2.1.0.dev3871883101] Old Version: [2.0.0.dev5088804806]
+[2023-05-26 10:34:07] INFO root fetch - processPackages [keycloak-api-manager]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-26 10:34:07] INFO root fetch - processPackages [aiogrobid]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-26 10:34:07] INFO root fetch - processPackages [testgear-cli]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-26 10:34:07] INFO root fetch - processPackages [dataset-librarian]: New version: [0.0.0.dev1] Old Version: [0.0.0.dev0]
+[2023-05-26 10:34:07] INFO root fetch - processPackages [python-openblas-build]: New version: [0.3.23rc4] Old Version: [0.3.23rc2]
+[2023-05-26 10:34:07] INFO root fetch - processPackages [pmx-biobb]: New version: [3.0.0] Old Version: [2.0.0]
+[2023-05-26 10:34:07] INFO root fetch - processPackages [dicomindex]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-05-26 10:34:07] INFO root fetch - processPackages [Alpha-Rabbit]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-05-26 10:34:07] INFO root fetch - processPackages [treevalue]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-05-26 10:34:07] INFO root fetch - processPackages [Alpha-Rabbit]: executing diffoscope
+[2023-05-26 10:34:07] INFO root fetch - processPackages [Alpha-Rabbit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Alpha_Rabbit-1.3.8.tar.gz tmp/Alpha_Rabbit-1.3.9.tar.gz --markdown 20230526/A/Alpha-Rabbit/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-05-26 10:34:07] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: Downloading https://files.pythonhosted.org/packages/14/ed/6fa279d2e138da9cfb3be9c5ea3189abb798c40bff9af56eee971efe4486/th2_grpc_lw_data_provider-2.0.0.dev5088804806.tar.gz
+[2023-05-26 10:34:07] INFO root fetch - processPackages [keycloak-api-manager]: Downloading https://files.pythonhosted.org/packages/e6/76/f799d48d53fa9c8b742a21460af856053947f4426ae83820c2f9d03d7b18/keycloak_api_manager-0.1.2.tar.gz
+[2023-05-26 10:34:07] INFO root fetch - processPackages [dataset-librarian]: Downloading https://files.pythonhosted.org/packages/82/d4/aa826bf3893cb2cb904354f1f39e40f52dde07eca76b9e30223fcea172dc/dataset-librarian-0.0.0.dev0.tar.gz
+[2023-05-26 10:34:07] INFO root fetch - processPackages [aiogrobid]: Downloading https://files.pythonhosted.org/packages/f0/4f/8d91920facc99901f41f8086f952e74081d5365eb3581a25cbb7a2a6be4a/aiogrobid-0.1.7.tar.gz
+[2023-05-26 10:34:07] INFO root fetch - processPackages [dicomindex]: Downloading https://files.pythonhosted.org/packages/9c/b9/ff28881cc158bf4c6ad1b535146ce4690cf434559494dbe3bdc49d8db235/dicomindex-0.2.7.tar.gz
+[2023-05-26 10:34:07] INFO root fetch - processPackages [pmx-biobb]: Downloading https://files.pythonhosted.org/packages/32/7c/dd656cd2d785a7b9815e0ca54fb9bec35c258cdc058d9450726e65bc201c/pmx_biobb-2.0.0.tar.gz
+[2023-05-26 10:34:07] INFO root fetch - processPackages [treevalue]: Downloading https://files.pythonhosted.org/packages/62/6f/32275bf94fd9e2818ac7d89997ed3cb24a1b1a81f3b19259324818bc158e/treevalue-1.4.8.tar.gz
+[2023-05-26 10:34:07] INFO root fetch - processPackages [python-openblas-build]: Downloading https://files.pythonhosted.org/packages/d0/7d/80352ab8708cf4526128868596a6ecb4783e0df28dde8d767de12ee5f3a7/python_openblas_build-0.3.23rc2-py2.py3-none-win_amd64.whl
+[2023-05-26 10:34:07] INFO root fetch - processPackages [testgear-cli]: Downloading https://files.pythonhosted.org/packages/ce/3e/b29cffcbed313aa98c4c9dbaad4d74c57ea45feb8a4a975eb9c95b2d4f92/testgear-cli-0.1.2.tar.gz
+[2023-05-26 10:34:07] INFO root fetch - processPackages [aiogrobid]: executing diffoscope
+[2023-05-26 10:34:07] INFO root fetch - processPackages [aiogrobid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogrobid-0.1.6.tar.gz tmp/aiogrobid-0.1.7.tar.gz --markdown 20230526/a/aiogrobid/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-26 10:34:07] WARNING root fetch - processPackages [python-openblas-build]: Skipping package: exceeds size limit 38406929>=10485760
+[2023-05-26 10:34:07] INFO root fetch - processPackages [python-openblas-build]: Start processing: rattr
+[2023-05-26 10:34:07] INFO root fetch - main [MainThread]: End processing [python-openblas-build] error
+[2023-05-26 10:34:07] INFO root fetch - processPackages [rattr]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-26 10:34:07] INFO root fetch - processPackages [keycloak-api-manager]: Downloading https://files.pythonhosted.org/packages/27/fc/29c8f66fa43c019e9084c5823838dafc80417cdd749e321293ab776b964f/keycloak_api_manager-0.1.3.tar.gz
+[2023-05-26 10:34:07] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: executing diffoscope
+[2023-05-26 10:34:07] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/th2_grpc_lw_data_provider-2.0.0.dev5088804806.tar.gz tmp/th2_grpc_lw_data_provider-2.1.0.dev3871883101.tar.gz --markdown 20230526/t/th2-grpc-lw-data-provider/2.0.0.dev5088804806-2.1.0.dev3871883101/diff.md --exclude *.pyd
+[2023-05-26 10:34:07] INFO root fetch - processPackages [dataset-librarian]: Downloading https://files.pythonhosted.org/packages/96/c6/1847a77c29ab6f3567ea8b8f2f4e571d82e403dd324de1ccf1db9416ce63/dataset_librarian-0.0.0.dev1.tar.gz
+[2023-05-26 10:34:07] INFO root fetch - processPackages [keycloak-api-manager]: executing diffoscope
+[2023-05-26 10:34:07] INFO root fetch - processPackages [keycloak-api-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keycloak_api_manager-0.1.2.tar.gz tmp/keycloak_api_manager-0.1.3.tar.gz --markdown 20230526/k/keycloak-api-manager/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-26 10:34:08] INFO root fetch - processPackages [dicomindex]: Downloading https://files.pythonhosted.org/packages/47/5c/ce9556ca79c2a657edde24777577f57f8a0866b905d87b145b8b2ebef3ca/dicomindex-0.2.8.tar.gz
+[2023-05-26 10:34:08] INFO root fetch - processPackages [dataset-librarian]: executing diffoscope
+[2023-05-26 10:34:08] INFO root fetch - processPackages [dataset-librarian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataset-librarian-0.0.0.dev0.tar.gz tmp/dataset_librarian-0.0.0.dev1.tar.gz --markdown 20230526/d/dataset-librarian/0.0.0.dev0-0.0.0.dev1/diff.md --exclude *.pyd
+[2023-05-26 10:34:08] INFO root fetch - processPackages [testgear-cli]: Downloading https://files.pythonhosted.org/packages/99/9f/46964ee2e96dbb12680be89fedc093de4715b4a32c299ca8dbca6c50d7ea/testgear-cli-0.1.3.tar.gz
+[2023-05-26 10:34:08] INFO root fetch - processPackages [dicomindex]: executing diffoscope
+[2023-05-26 10:34:08] INFO root fetch - processPackages [dicomindex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dicomindex-0.2.7.tar.gz tmp/dicomindex-0.2.8.tar.gz --markdown 20230526/d/dicomindex/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-05-26 10:34:08] INFO root fetch - processPackages [rattr]: Downloading https://files.pythonhosted.org/packages/f0/87/a5ef9f93ca2e61d82993ebe9b560d5a9c679310e34355d0dbf41f3097703/rattr-0.1.6.tar.gz
+[2023-05-26 10:34:08] INFO root fetch - processPackages [treevalue]: Downloading https://files.pythonhosted.org/packages/b9/0b/9bc8cda8770b53143271b7953e5a63ec16ae64a840ab914d1dc3db2b3766/treevalue-1.4.9.tar.gz
+[2023-05-26 10:34:08] INFO root fetch - processPackages [testgear-cli]: executing diffoscope
+[2023-05-26 10:34:08] INFO root fetch - processPackages [testgear-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testgear-cli-0.1.2.tar.gz tmp/testgear-cli-0.1.3.tar.gz --markdown 20230526/t/testgear-cli/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-26 10:34:08] INFO root fetch - processPackages [treevalue]: executing diffoscope
+[2023-05-26 10:34:08] INFO root fetch - processPackages [treevalue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/treevalue-1.4.8.tar.gz tmp/treevalue-1.4.9.tar.gz --markdown 20230526/t/treevalue/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-05-26 10:34:08] INFO root fetch - processPackages [rattr]: executing diffoscope
+[2023-05-26 10:34:08] INFO root fetch - processPackages [rattr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rattr-0.1.5.tar.gz tmp/rattr-0.1.6.tar.gz --markdown 20230526/r/rattr/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-26 10:34:08] INFO root fetch - processPackages [pmx-biobb]: Downloading https://files.pythonhosted.org/packages/73/a2/51564515b8b81b725a8aa81b962e040e66d59ce4637be894cf02315fc403/pmx_biobb-3.0.0-cp37-cp37m-macosx_10_9_x86_64.whl
+[2023-05-26 10:34:09] INFO root fetch - processPackages [pmx-biobb]: executing diffoscope
+[2023-05-26 10:34:09] INFO root fetch - processPackages [pmx-biobb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pmx_biobb-2.0.0.tar.gz tmp/pmx_biobb-3.0.0-cp37-cp37m-macosx_10_9_x86_64.whl.zip --markdown 20230526/p/pmx-biobb/2.0.0-3.0.0/diff.md --exclude *.pyd
+[2023-05-26 10:34:09] INFO root fetch - processPackages [Alpha-Rabbit]: Start processing: edu-segmentation
+[2023-05-26 10:34:09] INFO root fetch - main [MainThread]: End processing [Alpha-Rabbit]: success
+[2023-05-26 10:34:09] INFO root fetch - processPackages [edu-segmentation]: New version: [0.0.73] Old Version: [0.0.72]
+[2023-05-26 10:34:09] INFO root fetch - processPackages [aiogrobid]: Start processing: league-shop-base
+[2023-05-26 10:34:09] INFO root fetch - main [MainThread]: End processing [aiogrobid]: success
+[2023-05-26 10:34:09] INFO root fetch - processPackages [league-shop-base]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-26 10:34:09] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/31/49/022a5c766c0868b6ebaba5d85cf696f14b252c5d25a444a3e89a5fcfc3c6/edu_segmentation-0.0.73.tar.gz
+[2023-05-26 10:34:09] INFO root fetch - processPackages [league-shop-base]: Downloading https://files.pythonhosted.org/packages/9a/36/856f05ff8f20b041ffd8a46c1c83f9f8b227d1764d27b5882c86fee7084a/league-shop-base-1.0.8.tar.gz
+[2023-05-26 10:34:09] INFO root fetch - processPackages [edu-segmentation]: executing diffoscope
+[2023-05-26 10:34:09] INFO root fetch - processPackages [edu-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edu_segmentation-0.0.72.tar.gz tmp/edu_segmentation-0.0.73.tar.gz --markdown 20230526/e/edu-segmentation/0.0.72-0.0.73/diff.md --exclude *.pyd
+[2023-05-26 10:34:09] INFO root fetch - processPackages [league-shop-base]: Downloading https://files.pythonhosted.org/packages/e2/26/1a7ca28a471c3705930fb862d3f11522557e5f6c0d324560bcea93b51906/league-shop-base-1.0.9.tar.gz
+[2023-05-26 10:34:10] INFO root fetch - processPackages [keycloak-api-manager]: Start processing: init-equation
+[2023-05-26 10:34:10] INFO root fetch - main [MainThread]: End processing [keycloak-api-manager]: success
+[2023-05-26 10:34:10] INFO root fetch - processPackages [init-equation]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-26 10:34:10] INFO root fetch - processPackages [league-shop-base]: executing diffoscope
+[2023-05-26 10:34:10] INFO root fetch - processPackages [league-shop-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/league-shop-base-1.0.8.tar.gz tmp/league-shop-base-1.0.9.tar.gz --markdown 20230526/l/league-shop-base/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-26 10:34:10] INFO root fetch - processPackages [dataset-librarian]: Start processing: miss-hit
+[2023-05-26 10:34:10] INFO root fetch - main [MainThread]: End processing [dataset-librarian]: success
+[2023-05-26 10:34:10] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: Start processing: miss-hit-core
+[2023-05-26 10:34:10] INFO root fetch - main [MainThread]: End processing [th2-grpc-lw-data-provider]: success
+[2023-05-26 10:34:10] INFO root fetch - processPackages [miss-hit]: New version: [0.9.9] Old Version: [0.9.7]
+[2023-05-26 10:34:10] INFO root fetch - processPackages [miss-hit-core]: New version: [0.9.40] Old Version: [0.9.39]
+[2023-05-26 10:34:10] INFO root fetch - processPackages [init-equation]: Downloading https://files.pythonhosted.org/packages/9e/a3/877d4e606cd69b4576a07587c9feec535cdc5eca50fcab84077a5e5e2a0d/init_equation-0.1.5.tar.gz
+[2023-05-26 10:34:10] INFO root fetch - processPackages [miss-hit-core]: Downloading https://files.pythonhosted.org/packages/dc/5d/ece708bbf2aa8eafcf2efa9583a97e8a8feb2486c215f922b62f209d88a8/miss_hit_core-0.9.40.tar.gz
+[2023-05-26 10:34:10] INFO root fetch - processPackages [miss-hit]: executing diffoscope
+[2023-05-26 10:34:10] INFO root fetch - processPackages [miss-hit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/miss_hit-0.9.7.tar.gz tmp/miss_hit-0.9.9.tar.gz --markdown 20230526/m/miss-hit/0.9.7-0.9.9/diff.md --exclude *.pyd
+[2023-05-26 10:34:10] INFO root fetch - main [MainThread]: End processing [dicomindex]: success
+[2023-05-26 10:34:10] INFO root fetch - processPackages [miss-hit-core]: executing diffoscope
+[2023-05-26 10:34:10] INFO root fetch - processPackages [miss-hit-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/miss_hit_core-0.9.39.tar.gz tmp/miss_hit_core-0.9.40.tar.gz --markdown 20230526/m/miss-hit-core/0.9.39-0.9.40/diff.md --exclude *.pyd
+[2023-05-26 10:34:10] INFO root fetch - processPackages [init-equation]: Downloading https://files.pythonhosted.org/packages/3e/a8/2834741823ab55ba1689d5e9229916dd5f30a97a2057095b0ed497f8dab6/init_equation-0.1.6.tar.gz
+[2023-05-26 10:34:10] INFO root fetch - main [MainThread]: End processing [testgear-cli]: success
+[2023-05-26 10:34:10] INFO root fetch - main [MainThread]: End processing [treevalue]: success
+[2023-05-26 10:34:10] INFO root fetch - processPackages [init-equation]: executing diffoscope
+[2023-05-26 10:34:10] INFO root fetch - processPackages [init-equation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/init_equation-0.1.5.tar.gz tmp/init_equation-0.1.6.tar.gz --markdown 20230526/i/init-equation/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-26 10:34:11] INFO root fetch - main [MainThread]: End processing [rattr]: success
+[2023-05-26 10:34:12] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
+[2023-05-26 10:34:12] INFO root fetch - main [MainThread]: End processing [league-shop-base]: success
+[2023-05-26 10:34:12] INFO root fetch - main [MainThread]: End processing [init-equation]: success
+[2023-05-26 10:34:12] INFO root fetch - main [MainThread]: End processing [miss-hit-core]: success
+[2023-05-26 10:34:12] INFO root fetch - main [MainThread]: End processing [miss-hit]: success
+[2023-05-26 10:34:14] INFO root fetch - main [MainThread]: End processing [pmx-biobb]: success
+[2023-05-26 10:34:14] INFO root fetch - main [MainThread]: Store serial: [18259771]
