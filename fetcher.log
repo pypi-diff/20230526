@@ -15102,3 +15102,81 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 14:23:20] INFO root fetch - main [MainThread]: End processing [transpector]: success
 [2023-05-26 14:23:20] INFO root fetch - main [MainThread]: End processing [collective.taxonomy]: success
 [2023-05-26 14:23:20] INFO root fetch - main [MainThread]: Store serial: [18262629]
+[2023-05-26 14:28:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18262629]
+[2023-05-26 14:28:29] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-26 14:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deep-proto
+[2023-05-26 14:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: astromulti
+[2023-05-26 14:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cybrid-api-organization-python
+[2023-05-26 14:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cybrid-api-id-python
+[2023-05-26 14:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mypackagewheel
+[2023-05-26 14:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cybrid-api-bank-python
+[2023-05-26 14:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dcm-processor
+[2023-05-26 14:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: datalad-crawler
+[2023-05-26 14:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: synchronicity
+[2023-05-26 14:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: qplay-cli
+[2023-05-26 14:28:29] INFO root fetch - processPackages [deep-proto]: New version: [0.9.dev0] Old Version: [0.8.dev0]
+[2023-05-26 14:28:29] WARNING root fetch - processPackages [mypackagewheel]: Skipping, unable to determine old version
+[2023-05-26 14:28:29] INFO root fetch - processPackages [mypackagewheel]: Start processing: queryandprocessdatautility
+[2023-05-26 14:28:29] INFO root fetch - main [MainThread]: End processing [mypackagewheel] error
+[2023-05-26 14:28:29] INFO root fetch - processPackages [astromulti]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-26 14:28:29] INFO root fetch - processPackages [qplay-cli]: New version: [1.1.12] Old Version: [1.1.11]
+[2023-05-26 14:28:29] INFO root fetch - processPackages [dcm-processor]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-26 14:28:29] INFO root fetch - processPackages [datalad-crawler]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-26 14:28:29] INFO root fetch - processPackages [synchronicity]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-05-26 14:28:29] INFO root fetch - processPackages [queryandprocessdatautility]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 14:28:29] INFO root fetch - processPackages [cybrid-api-id-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-26 14:28:30] INFO root fetch - processPackages [cybrid-api-organization-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-26 14:28:30] INFO root fetch - processPackages [cybrid-api-bank-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-26 14:28:30] INFO root fetch - processPackages [deep-proto]: Downloading https://files.pythonhosted.org/packages/2f/bc/127a713ca0b4dc55ecccd81b67cbe5a97bd1df00a49df295633f7fe31aeb/deep_proto-0.8.dev0.tar.gz
+[2023-05-26 14:28:30] INFO root fetch - processPackages [qplay-cli]: Downloading https://files.pythonhosted.org/packages/84/6f/00870aff0ae710b1a0dc3f713442bbea525cb4dfb7ccaa56ac691bfd798b/qplay_cli-1.1.11-py3-none-any.whl
+[2023-05-26 14:28:30] INFO root fetch - processPackages [queryandprocessdatautility]: executing diffoscope
+[2023-05-26 14:28:30] INFO root fetch - processPackages [queryandprocessdatautility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/queryandprocessdatautility-0.0.8-py3-none-any.whl.zip tmp/queryandprocessdatautility-0.0.9-py3-none-any.whl.zip --markdown 20230526/q/queryandprocessdatautility/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 14:28:30] INFO root fetch - processPackages [cybrid-api-organization-python]: executing diffoscope
+[2023-05-26 14:28:30] INFO root fetch - processPackages [cybrid-api-organization-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-organization-python-0.9.8.tar.gz tmp/cybrid-api-organization-python-0.9.9.tar.gz --markdown 20230526/c/cybrid-api-organization-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-26 14:28:30] INFO root fetch - processPackages [cybrid-api-id-python]: executing diffoscope
+[2023-05-26 14:28:30] INFO root fetch - processPackages [cybrid-api-id-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-id-python-0.9.8.tar.gz tmp/cybrid-api-id-python-0.9.9.tar.gz --markdown 20230526/c/cybrid-api-id-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-26 14:28:30] INFO root fetch - processPackages [synchronicity]: Downloading https://files.pythonhosted.org/packages/68/7e/66494c3b2b63933a862dc51fa0419c6e589534b57ab26f70a9e9c4134203/synchronicity-0.5.2-py3-none-any.whl
+[2023-05-26 14:28:30] INFO root fetch - processPackages [astromulti]: Downloading https://files.pythonhosted.org/packages/14/e9/343f64eb6e459273b7a084f0d1a0812f6fc1af9b735b60ba9903d61833d3/astromulti-1.0.3.tar.gz
+[2023-05-26 14:28:30] INFO root fetch - processPackages [datalad-crawler]: Downloading https://files.pythonhosted.org/packages/23/90/d7c969b60351a230f5b0fd282d810930a4a86cc17d248a018c483303606f/datalad_crawler-1.0.2.tar.gz
+[2023-05-26 14:28:30] INFO root fetch - processPackages [cybrid-api-bank-python]: executing diffoscope
+[2023-05-26 14:28:30] INFO root fetch - processPackages [cybrid-api-bank-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-bank-python-0.9.8.tar.gz tmp/cybrid-api-bank-python-0.9.9.tar.gz --markdown 20230526/c/cybrid-api-bank-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-26 14:28:30] INFO root fetch - processPackages [datalad-crawler]: executing diffoscope
+[2023-05-26 14:28:30] INFO root fetch - processPackages [datalad-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datalad_crawler-1.0.1.tar.gz tmp/datalad_crawler-1.0.2.tar.gz --markdown 20230526/d/datalad-crawler/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-26 14:28:30] INFO root fetch - processPackages [dcm-processor]: Downloading https://files.pythonhosted.org/packages/f8/80/41165d23c9cbb3b87168a00c298b0d32872203d0d7fa607bbb6c77cb0644/dcm-processor-1.1.1.tar.gz
+[2023-05-26 14:28:30] INFO root fetch - processPackages [qplay-cli]: Downloading https://files.pythonhosted.org/packages/28/2c/86dbdb26a1724b40a0b49e27bd9e6130f05d42fa2e30d33656942814ba5c/qplay_cli-1.1.12-py3-none-any.whl
+[2023-05-26 14:28:30] INFO root fetch - processPackages [deep-proto]: Downloading https://files.pythonhosted.org/packages/e1/9f/83c894e46248462252a092ae89bb5ee5d4b0a2fe030fe5809a4a2bafa074/deep_proto-0.9.dev0.tar.gz
+[2023-05-26 14:28:30] INFO root fetch - processPackages [synchronicity]: Downloading https://files.pythonhosted.org/packages/91/48/69e0034faf592cea6c5eba14c8ff0c7f526cbcca22a2e3966665e1403e1d/synchronicity-0.5.3-py3-none-any.whl
+[2023-05-26 14:28:30] INFO root fetch - processPackages [qplay-cli]: executing diffoscope
+[2023-05-26 14:28:30] INFO root fetch - processPackages [qplay-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qplay_cli-1.1.11-py3-none-any.whl.zip tmp/qplay_cli-1.1.12-py3-none-any.whl.zip --markdown 20230526/q/qplay-cli/1.1.11-1.1.12/diff.md --exclude *.pyd
+[2023-05-26 14:28:30] INFO root fetch - processPackages [dcm-processor]: executing diffoscope
+[2023-05-26 14:28:30] INFO root fetch - processPackages [dcm-processor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcm-processor-1.1.0.tar.gz tmp/dcm-processor-1.1.1.tar.gz --markdown 20230526/d/dcm-processor/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-26 14:28:30] INFO root fetch - processPackages [astromulti]: Downloading https://files.pythonhosted.org/packages/ed/46/441bb88e8cf533a3d0912bd43c8965b16f2752505f5e166aaa004695827a/astromulti-1.0.4.tar.gz
+[2023-05-26 14:28:30] INFO root fetch - processPackages [synchronicity]: executing diffoscope
+[2023-05-26 14:28:30] INFO root fetch - processPackages [synchronicity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synchronicity-0.5.2-py3-none-any.whl.zip tmp/synchronicity-0.5.3-py3-none-any.whl.zip --markdown 20230526/s/synchronicity/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-05-26 14:28:30] INFO root fetch - processPackages [astromulti]: executing diffoscope
+[2023-05-26 14:28:30] INFO root fetch - processPackages [astromulti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astromulti-1.0.3.tar.gz tmp/astromulti-1.0.4.tar.gz --markdown 20230526/a/astromulti/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-26 14:28:30] INFO root fetch - processPackages [deep-proto]: executing diffoscope
+[2023-05-26 14:28:30] INFO root fetch - processPackages [deep-proto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deep_proto-0.8.dev0.tar.gz tmp/deep_proto-0.9.dev0.tar.gz --markdown 20230526/d/deep-proto/0.8.dev0-0.9.dev0/diff.md --exclude *.pyd
+[2023-05-26 14:28:31] INFO root fetch - processPackages [queryandprocessdatautility]: Start processing: abst
+[2023-05-26 14:28:31] INFO root fetch - main [MainThread]: End processing [queryandprocessdatautility]: success
+[2023-05-26 14:28:31] INFO root fetch - processPackages [cybrid-api-organization-python]: Start processing: logrich
+[2023-05-26 14:28:31] INFO root fetch - main [MainThread]: End processing [cybrid-api-organization-python]: success
+[2023-05-26 14:28:31] INFO root fetch - processPackages [logrich]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-26 14:28:32] INFO root fetch - processPackages [abst]: New version: [1.9.6] Old Version: [1.9.5]
+[2023-05-26 14:28:32] INFO root fetch - processPackages [logrich]: executing diffoscope
+[2023-05-26 14:28:32] INFO root fetch - processPackages [logrich]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logrich-0.7.0.tar.gz tmp/logrich-0.7.1.tar.gz --markdown 20230526/l/logrich/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-26 14:28:32] INFO root fetch - processPackages [abst]: Downloading https://files.pythonhosted.org/packages/87/1a/fb6ce1b495e1ca393b3ba3e0b75022536f6b4b9720af8da306c285286632/abst-1.9.5.tar.gz
+[2023-05-26 14:28:32] INFO root fetch - processPackages [abst]: Downloading https://files.pythonhosted.org/packages/42/4a/4fb0f8a57d6c28b489e84545322bf82f0770971307fe3f567998f685943e/abst-1.9.6.tar.gz
+[2023-05-26 14:28:32] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
+[2023-05-26 14:28:32] INFO root fetch - processPackages [abst]: executing diffoscope
+[2023-05-26 14:28:32] INFO root fetch - processPackages [abst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abst-1.9.5.tar.gz tmp/abst-1.9.6.tar.gz --markdown 20230526/a/abst/1.9.5-1.9.6/diff.md --exclude *.pyd
+[2023-05-26 14:28:33] INFO root fetch - main [MainThread]: End processing [datalad-crawler]: success
+[2023-05-26 14:28:33] INFO root fetch - main [MainThread]: End processing [qplay-cli]: success
+[2023-05-26 14:28:33] INFO root fetch - main [MainThread]: End processing [deep-proto]: success
+[2023-05-26 14:28:33] INFO root fetch - main [MainThread]: End processing [synchronicity]: success
+[2023-05-26 14:28:33] INFO root fetch - main [MainThread]: End processing [astromulti]: success
+[2023-05-26 14:28:33] INFO root fetch - main [MainThread]: End processing [logrich]: success
+[2023-05-26 14:28:33] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
+[2023-05-26 14:28:34] INFO root fetch - main [MainThread]: End processing [abst]: success
+[2023-05-26 14:28:36] INFO root fetch - main [MainThread]: End processing [dcm-processor]: success
+[2023-05-26 14:28:36] INFO root fetch - main [MainThread]: Store serial: [18262680]
