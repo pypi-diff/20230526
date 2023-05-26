@@ -7069,3 +7069,20 @@
 [2023-05-26 06:04:05] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-es-aeat-sii-oca]: success
 [2023-05-26 06:04:05] INFO root fetch - main [MainThread]: End processing [odoo8-addon-l10n-ch-import-cresus]: success
 [2023-05-26 06:04:05] INFO root fetch - main [MainThread]: Store serial: [18257483]
+[2023-05-26 06:09:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18257483]
+[2023-05-26 06:09:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-26 06:09:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qcore
+[2023-05-26 06:09:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: exergenics-etl
+[2023-05-26 06:09:14] INFO root fetch - processPackages [exergenics-etl]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-26 06:09:14] INFO root fetch - processPackages [qcore]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-26 06:09:14] INFO root fetch - processPackages [exergenics-etl]: Downloading https://files.pythonhosted.org/packages/bb/08/022534e575761569a3c3ed114c29c24dd32eec72b205ad902ea583c50b84/exergenics-etl-1.0.3.tar.gz
+[2023-05-26 06:09:14] INFO root fetch - processPackages [qcore]: Downloading https://files.pythonhosted.org/packages/cf/e5/f2dcfb1ab230fec40275a6b1bf8a28a74b84fd392383f673356812de1ddb/qcore-1.8.0.tar.gz
+[2023-05-26 06:09:14] INFO root fetch - processPackages [exergenics-etl]: Downloading https://files.pythonhosted.org/packages/f8/47/09de42125d0ed60f7b9afba78bc9586729959148adc7d309ab31ce9dcc69/exergenics-etl-1.0.4.tar.gz
+[2023-05-26 06:09:14] INFO root fetch - processPackages [qcore]: Downloading https://files.pythonhosted.org/packages/35/14/51bf5d7ef2144494a578f1c47782ef596b673e5ba016c458dc7066cccbb3/qcore-1.9.0.tar.gz
+[2023-05-26 06:09:14] INFO root fetch - processPackages [exergenics-etl]: executing diffoscope
+[2023-05-26 06:09:14] INFO root fetch - processPackages [exergenics-etl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exergenics-etl-1.0.3.tar.gz tmp/exergenics-etl-1.0.4.tar.gz --markdown 20230526/e/exergenics-etl/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-26 06:09:14] INFO root fetch - processPackages [qcore]: executing diffoscope
+[2023-05-26 06:09:14] INFO root fetch - processPackages [qcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qcore-1.8.0.tar.gz tmp/qcore-1.9.0.tar.gz --markdown 20230526/q/qcore/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-26 06:09:16] INFO root fetch - main [MainThread]: End processing [exergenics-etl]: success
+[2023-05-26 06:09:16] INFO root fetch - main [MainThread]: End processing [qcore]: success
+[2023-05-26 06:09:16] INFO root fetch - main [MainThread]: Store serial: [18257543]
