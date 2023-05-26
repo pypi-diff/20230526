@@ -13213,3 +13213,60 @@
 [2023-05-26 12:35:15] INFO root fetch - main [MainThread]: End processing [alibabacloud-dingtalk]: success
 [2023-05-26 12:35:17] INFO root fetch - main [MainThread]: End processing [pmx-biobb]: success
 [2023-05-26 12:35:17] INFO root fetch - main [MainThread]: Store serial: [18261365]
+[2023-05-26 12:40:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18261365]
+[2023-05-26 12:40:27] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-26 12:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlserver-sklearn
+[2023-05-26 12:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlserver-lightgbm
+[2023-05-26 12:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mlserver-alibi-explain
+[2023-05-26 12:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dipex
+[2023-05-26 12:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: drf-simplemiddleware
+[2023-05-26 12:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lycium
+[2023-05-26 12:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tulir-telethon
+[2023-05-26 12:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: soakdb3
+[2023-05-26 12:40:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: league-shop-base
+[2023-05-26 12:40:27] INFO root fetch - processPackages [mlserver-alibi-explain]: New version: [1.4.0.dev2] Old Version: [1.3.3rc1]
+[2023-05-26 12:40:27] INFO root fetch - processPackages [mlserver-sklearn]: New version: [1.4.0.dev2] Old Version: [1.3.3rc1]
+[2023-05-26 12:40:27] INFO root fetch - processPackages [tulir-telethon]: New version: [1.29.0a1] Old Version: [1.28.0a9]
+[2023-05-26 12:40:27] WARNING root fetch - processPackages [drf-simplemiddleware]: Skipping, unable to determine old version
+[2023-05-26 12:40:27] INFO root fetch - main [MainThread]: End processing [drf-simplemiddleware] error
+[2023-05-26 12:40:27] INFO root fetch - processPackages [mlserver-lightgbm]: New version: [1.4.0.dev2] Old Version: [1.3.3rc1]
+[2023-05-26 12:40:27] INFO root fetch - processPackages [lycium]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-26 12:40:27] INFO root fetch - processPackages [dipex]: New version: [4.9.2] Old Version: [4.9.1]
+[2023-05-26 12:40:27] INFO root fetch - processPackages [league-shop-base]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-26 12:40:27] INFO root fetch - processPackages [soakdb3]: New version: [1.7.0] Old Version: [1.6.0]
+[2023-05-26 12:40:27] INFO root fetch - processPackages [mlserver-alibi-explain]: Downloading https://files.pythonhosted.org/packages/a0/b8/9db8976d341563cb8de6a0a460c109b4d4c0604c6144e5a7c2cf47666dd7/mlserver-alibi-explain-1.3.3rc1.tar.gz
+[2023-05-26 12:40:27] INFO root fetch - processPackages [league-shop-base]: executing diffoscope
+[2023-05-26 12:40:27] INFO root fetch - processPackages [league-shop-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/league-shop-base-1.0.8.tar.gz tmp/league-shop-base-1.0.9.tar.gz --markdown 20230526/l/league-shop-base/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-26 12:40:27] INFO root fetch - processPackages [mlserver-sklearn]: Downloading https://files.pythonhosted.org/packages/8e/5b/ceb50d86b6ac7fce610740c916dcd9dca52bac4c8444d47016b575cc5b10/mlserver-sklearn-1.3.3rc1.tar.gz
+[2023-05-26 12:40:27] INFO root fetch - processPackages [tulir-telethon]: Downloading https://files.pythonhosted.org/packages/99/2e/9de3637a26675576ab84f12fafc0108666b8ec2f9150a49a1cc22c3311bf/tulir-telethon-1.28.0a9.tar.gz
+[2023-05-26 12:40:27] INFO root fetch - processPackages [mlserver-lightgbm]: Downloading https://files.pythonhosted.org/packages/87/69/ef3e3f200bd698b0bb9beb6633fad611577826bf4f72e5d95f40510000d1/mlserver-lightgbm-1.3.3rc1.tar.gz
+[2023-05-26 12:40:27] INFO root fetch - processPackages [lycium]: Downloading https://files.pythonhosted.org/packages/94/8f/0552d44de0c20e5aa24418db22afdd3e7f771f403269a0a8cd2ba5d97706/lycium-0.2.8.tar.gz
+[2023-05-26 12:40:27] INFO root fetch - processPackages [dipex]: executing diffoscope
+[2023-05-26 12:40:27] INFO root fetch - processPackages [dipex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dipex-4.9.1.tar.gz tmp/dipex-4.9.2.tar.gz --markdown 20230526/d/dipex/4.9.1-4.9.2/diff.md --exclude *.pyd
+[2023-05-26 12:40:27] INFO root fetch - processPackages [soakdb3]: Downloading https://files.pythonhosted.org/packages/d4/75/f13656b0261cca89b47829da5344cce4386da03bca1a67ff923794eaed23/soakdb3-1.7.0.tar.gz
+[2023-05-26 12:40:27] INFO root fetch - processPackages [mlserver-alibi-explain]: Downloading https://files.pythonhosted.org/packages/4c/ff/8fee52bea3e7c1e8ae468fcbc17d72675b3e31f4c766303a884ef0a13022/mlserver-alibi-explain-1.4.0.dev2.tar.gz
+[2023-05-26 12:40:27] INFO root fetch - processPackages [tulir-telethon]: Downloading https://files.pythonhosted.org/packages/9f/4c/2da3d540287de542d835d9c06413e4501874cb0eea73d34353dbbccc199e/tulir-telethon-1.29.0a1.tar.gz
+[2023-05-26 12:40:27] INFO root fetch - processPackages [mlserver-sklearn]: Downloading https://files.pythonhosted.org/packages/a9/1f/259c6b8407fa04124af450e06afbcdf10587f4feada8aba9f8fd1415f8f7/mlserver-sklearn-1.4.0.dev2.tar.gz
+[2023-05-26 12:40:27] INFO root fetch - processPackages [mlserver-alibi-explain]: executing diffoscope
+[2023-05-26 12:40:27] INFO root fetch - processPackages [mlserver-alibi-explain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-alibi-explain-1.3.3rc1.tar.gz tmp/mlserver-alibi-explain-1.4.0.dev2.tar.gz --markdown 20230526/m/mlserver-alibi-explain/1.3.3rc1-1.4.0.dev2/diff.md --exclude *.pyd
+[2023-05-26 12:40:27] INFO root fetch - processPackages [mlserver-lightgbm]: Downloading https://files.pythonhosted.org/packages/45/33/3f2748f79aa1b4bef981eec337edc621a424474f69062004e620da744793/mlserver-lightgbm-1.4.0.dev2.tar.gz
+[2023-05-26 12:40:27] INFO root fetch - processPackages [lycium]: Downloading https://files.pythonhosted.org/packages/42/21/5b80c108e4e3506f584fad9953e4863711abf8e98021cc0b023986010d60/lycium-0.2.9.tar.gz
+[2023-05-26 12:40:27] INFO root fetch - processPackages [mlserver-sklearn]: executing diffoscope
+[2023-05-26 12:40:27] INFO root fetch - processPackages [tulir-telethon]: executing diffoscope
+[2023-05-26 12:40:27] INFO root fetch - processPackages [mlserver-sklearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-sklearn-1.3.3rc1.tar.gz tmp/mlserver-sklearn-1.4.0.dev2.tar.gz --markdown 20230526/m/mlserver-sklearn/1.3.3rc1-1.4.0.dev2/diff.md --exclude *.pyd
+[2023-05-26 12:40:27] INFO root fetch - processPackages [tulir-telethon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tulir-telethon-1.28.0a9.tar.gz tmp/tulir-telethon-1.29.0a1.tar.gz --markdown 20230526/t/tulir-telethon/1.28.0a9-1.29.0a1/diff.md --exclude *.pyd
+[2023-05-26 12:40:27] INFO root fetch - processPackages [mlserver-lightgbm]: executing diffoscope
+[2023-05-26 12:40:27] INFO root fetch - processPackages [mlserver-lightgbm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-lightgbm-1.3.3rc1.tar.gz tmp/mlserver-lightgbm-1.4.0.dev2.tar.gz --markdown 20230526/m/mlserver-lightgbm/1.3.3rc1-1.4.0.dev2/diff.md --exclude *.pyd
+[2023-05-26 12:40:27] INFO root fetch - processPackages [lycium]: executing diffoscope
+[2023-05-26 12:40:27] INFO root fetch - processPackages [lycium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lycium-0.2.8.tar.gz tmp/lycium-0.2.9.tar.gz --markdown 20230526/l/lycium/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-26 12:40:28] INFO root fetch - processPackages [soakdb3]: executing diffoscope
+[2023-05-26 12:40:28] INFO root fetch - processPackages [soakdb3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soakdb3-1.6.0.tar.gz tmp/soakdb3-1.7.0.tar.gz --markdown 20230526/s/soakdb3/1.6.0-1.7.0/diff.md --exclude *.pyd
+[2023-05-26 12:40:28] INFO root fetch - main [MainThread]: End processing [league-shop-base]: success
+[2023-05-26 12:40:29] INFO root fetch - main [MainThread]: End processing [mlserver-sklearn]: success
+[2023-05-26 12:40:29] INFO root fetch - main [MainThread]: End processing [mlserver-alibi-explain]: success
+[2023-05-26 12:40:29] INFO root fetch - main [MainThread]: End processing [mlserver-lightgbm]: success
+[2023-05-26 12:40:30] INFO root fetch - main [MainThread]: End processing [dipex]: success
+[2023-05-26 12:40:30] INFO root fetch - main [MainThread]: End processing [lycium]: success
+[2023-05-26 12:40:32] INFO root fetch - main [MainThread]: End processing [tulir-telethon]: success
+[2023-05-26 12:40:35] INFO root fetch - main [MainThread]: End processing [soakdb3]: success
+[2023-05-26 12:40:35] INFO root fetch - main [MainThread]: Store serial: [18261432]
