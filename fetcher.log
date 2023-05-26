@@ -1757,3 +1757,46 @@
 [2023-05-26 02:46:06] INFO root fetch - main [MainThread]: End processing [bdfrx]: success
 [2023-05-26 02:46:15] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2023-05-26 02:46:15] INFO root fetch - main [MainThread]: Store serial: [18254671]
+[2023-05-26 02:51:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18254671]
+[2023-05-26 02:51:24] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-26 02:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: projen
+[2023-05-26 02:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: disfluency-constituency-parser
+[2023-05-26 02:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kubric-nightly
+[2023-05-26 02:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: as400
+[2023-05-26 02:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: inventree-wireviz-plugin
+[2023-05-26 02:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-databrew-cicd
+[2023-05-26 02:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sceptre
+[2023-05-26 02:51:24] INFO root fetch - processPackages [inventree-wireviz-plugin]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-26 02:51:24] INFO root fetch - processPackages [disfluency-constituency-parser]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 02:51:24] INFO root fetch - processPackages [sceptre]: New version: [4.2.0] Old Version: [4.1.0]
+[2023-05-26 02:51:24] INFO root fetch - processPackages [as400]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-26 02:51:24] INFO root fetch - processPackages [cdk-databrew-cicd]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-26 02:51:24] INFO root fetch - processPackages [kubric-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-26 02:51:24] INFO root fetch - processPackages [projen]: New version: [0.71.9] Old Version: [0.71.8]
+[2023-05-26 02:51:24] INFO root fetch - processPackages [inventree-wireviz-plugin]: Downloading https://files.pythonhosted.org/packages/da/b6/0c1b395fa619c85d0b43387a29bdfc95292cddb97dc0ec94044dd86a316a/inventree-wireviz-plugin-0.1.0.tar.gz
+[2023-05-26 02:51:24] INFO root fetch - processPackages [cdk-databrew-cicd]: executing diffoscope
+[2023-05-26 02:51:24] INFO root fetch - processPackages [cdk-databrew-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_databrew_cicd-2.0.98.tar.gz tmp/cdk_databrew_cicd-2.0.99.tar.gz --markdown 20230526/c/cdk-databrew-cicd/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-26 02:51:24] INFO root fetch - processPackages [kubric-nightly]: executing diffoscope
+[2023-05-26 02:51:24] INFO root fetch - processPackages [kubric-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kubric-nightly-2023.5.8.tar.gz tmp/kubric-nightly-2023.5.9.tar.gz --markdown 20230526/k/kubric-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-26 02:51:24] INFO root fetch - processPackages [sceptre]: Downloading https://files.pythonhosted.org/packages/ce/1b/64be41a3accf8e6a319e70609cfb7931bb9959b586f9b4c059a90b13cbf5/sceptre-4.1.0.tar.gz
+[2023-05-26 02:51:24] INFO root fetch - processPackages [as400]: Downloading https://files.pythonhosted.org/packages/b2/a0/79ce614b87e072ecd31d14b8cfa75352ca867ddcb5e35147e072d52e19c4/as400-1.0.2.tar.gz
+[2023-05-26 02:51:24] INFO root fetch - processPackages [as400]: executing diffoscope
+[2023-05-26 02:51:24] INFO root fetch - processPackages [as400]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/as400-1.0.1.tar.gz tmp/as400-1.0.2.tar.gz --markdown 20230526/a/as400/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-26 02:51:24] INFO root fetch - processPackages [disfluency-constituency-parser]: executing diffoscope
+[2023-05-26 02:51:24] INFO root fetch - processPackages [disfluency-constituency-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/disfluency_constituency_parser-0.0.8-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/disfluency_constituency_parser-0.0.9-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230526/d/disfluency-constituency-parser/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 02:51:25] INFO root fetch - processPackages [sceptre]: Downloading https://files.pythonhosted.org/packages/1e/67/9b11178fe2eac3920a87b1be50e769ad93d96412d83fa8b5d453a0be994c/sceptre-4.2.0.tar.gz
+[2023-05-26 02:51:25] INFO root fetch - processPackages [sceptre]: executing diffoscope
+[2023-05-26 02:51:25] INFO root fetch - processPackages [sceptre]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sceptre-4.1.0.tar.gz tmp/sceptre-4.2.0.tar.gz --markdown 20230526/s/sceptre/4.1.0-4.2.0/diff.md --exclude *.pyd
+[2023-05-26 02:51:25] INFO root fetch - processPackages [projen]: executing diffoscope
+[2023-05-26 02:51:25] INFO root fetch - processPackages [projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projen-0.71.8.tar.gz tmp/projen-0.71.9.tar.gz --markdown 20230526/p/projen/0.71.8-0.71.9/diff.md --exclude *.pyd
+[2023-05-26 02:51:25] INFO root fetch - processPackages [inventree-wireviz-plugin]: Downloading https://files.pythonhosted.org/packages/19/bd/4e3573000473bac8c7a004d6eb7319aef480c71962214006bc8facd98252/inventree-wireviz-plugin-0.2.0.tar.gz
+[2023-05-26 02:51:25] INFO root fetch - processPackages [inventree-wireviz-plugin]: executing diffoscope
+[2023-05-26 02:51:25] INFO root fetch - processPackages [inventree-wireviz-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inventree-wireviz-plugin-0.1.0.tar.gz tmp/inventree-wireviz-plugin-0.2.0.tar.gz --markdown 20230526/i/inventree-wireviz-plugin/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-26 02:51:26] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
+[2023-05-26 02:51:26] INFO root fetch - main [MainThread]: End processing [as400]: success
+[2023-05-26 02:51:26] INFO root fetch - main [MainThread]: End processing [kubric-nightly]: success
+[2023-05-26 02:51:26] INFO root fetch - main [MainThread]: End processing [inventree-wireviz-plugin]: success
+[2023-05-26 02:51:27] INFO root fetch - main [MainThread]: End processing [sceptre]: success
+[2023-05-26 02:51:29] INFO root fetch - main [MainThread]: End processing [disfluency-constituency-parser]: success
+[2023-05-26 02:51:29] INFO root fetch - main [MainThread]: End processing [projen]: success
+[2023-05-26 02:51:29] INFO root fetch - main [MainThread]: Store serial: [18254692]
