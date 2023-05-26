@@ -1626,3 +1626,48 @@
 [2023-05-26 02:30:27] INFO root fetch - main [MainThread]: End processing [cdk8s-redis]: success
 [2023-05-26 02:30:29] INFO root fetch - main [MainThread]: End processing [cdktf-proxmox]: success
 [2023-05-26 02:30:29] INFO root fetch - main [MainThread]: Store serial: [18254609]
+[2023-05-26 02:35:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18254609]
+[2023-05-26 02:35:38] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-26 02:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iceberg-tools
+[2023-05-26 02:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aeppl-nightly
+[2023-05-26 02:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: everdrop-aws-cdk-constructs
+[2023-05-26 02:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gesture-control-api
+[2023-05-26 02:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yambs
+[2023-05-26 02:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdklabs.cdk-enterprise-iac
+[2023-05-26 02:35:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: EdgeGPT
+[2023-05-26 02:35:38] INFO root fetch - processPackages [gesture-control-api]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-26 02:35:38] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.4.dev20230525] Old Version: [0.1.4.dev20230524]
+[2023-05-26 02:35:38] INFO root fetch - processPackages [iceberg-tools]: New version: [0.0.2rc2] Old Version: [0.0.2rc1]
+[2023-05-26 02:35:38] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 02:35:38] INFO root fetch - processPackages [yambs]: New version: [1.7.1] Old Version: [1.6.0]
+[2023-05-26 02:35:38] INFO root fetch - processPackages [EdgeGPT]: New version: [0.6.4] Old Version: [0.6.3]
+[2023-05-26 02:35:38] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 02:35:38] INFO root fetch - processPackages [gesture-control-api]: Downloading https://files.pythonhosted.org/packages/c6/df/3f81668bf698189cf58e1024e6993594540e6d4c331e2326641aadf36ce2/gesture-control-api-0.0.2.tar.gz
+[2023-05-26 02:35:38] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: executing diffoscope
+[2023-05-26 02:35:38] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/everdrop-aws-cdk-constructs-0.0.8.tar.gz tmp/everdrop-aws-cdk-constructs-0.0.9.tar.gz --markdown 20230526/e/everdrop-aws-cdk-constructs/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 02:35:38] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: executing diffoscope
+[2023-05-26 02:35:38] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz --markdown 20230526/c/cdklabs.cdk-enterprise-iac/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 02:35:38] INFO root fetch - processPackages [iceberg-tools]: Downloading https://files.pythonhosted.org/packages/7f/aa/f2733d940932883fc6ed10ed4b00fb2d6540b4caebf1a00c9730a16faa0e/iceberg_tools-0.0.2rc1.tar.gz
+[2023-05-26 02:35:38] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/ab/9b/f755c8e1f114aa50e6e2dfc479147c8f9f630057ca2fd4f2083d9adfc084/aeppl-nightly-0.1.4.dev20230525.tar.gz
+[2023-05-26 02:35:38] INFO root fetch - processPackages [EdgeGPT]: Downloading https://files.pythonhosted.org/packages/a3/2d/85e96e6133e7ad215978e6f9291e8922a6051c932297dd440ee39f32bb36/EdgeGPT-0.6.4.tar.gz
+[2023-05-26 02:35:38] INFO root fetch - processPackages [yambs]: Downloading https://files.pythonhosted.org/packages/3d/08/239d330d5dd48c4faafd26ed25b5e180e25dcf69bc4a4aedee88b2235695/yambs-1.7.1.tar.gz
+[2023-05-26 02:35:38] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2023-05-26 02:35:38] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl-nightly-0.1.4.dev20230524.tar.gz tmp/aeppl-nightly-0.1.4.dev20230525.tar.gz --markdown 20230526/a/aeppl-nightly/0.1.4.dev20230524-0.1.4.dev20230525/diff.md --exclude *.pyd
+[2023-05-26 02:35:38] INFO root fetch - processPackages [EdgeGPT]: executing diffoscope
+[2023-05-26 02:35:38] INFO root fetch - processPackages [EdgeGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EdgeGPT-0.6.3.tar.gz tmp/EdgeGPT-0.6.4.tar.gz --markdown 20230526/E/EdgeGPT/0.6.3-0.6.4/diff.md --exclude *.pyd
+[2023-05-26 02:35:38] INFO root fetch - processPackages [iceberg-tools]: Downloading https://files.pythonhosted.org/packages/ff/98/08de68813bc6ccb4db6b7786323fe8840f17866d1c66f1abc08bb5015158/iceberg_tools-0.0.2rc2.tar.gz
+[2023-05-26 02:35:38] INFO root fetch - processPackages [yambs]: executing diffoscope
+[2023-05-26 02:35:38] INFO root fetch - processPackages [yambs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yambs-1.6.0.tar.gz tmp/yambs-1.7.1.tar.gz --markdown 20230526/y/yambs/1.6.0-1.7.1/diff.md --exclude *.pyd
+[2023-05-26 02:35:38] INFO root fetch - processPackages [gesture-control-api]: Downloading https://files.pythonhosted.org/packages/04/cd/e76764701d03b0cdaf08b0f667d7fc99328380d8d370a96645a529ccdc3b/gesture-control-api-0.0.3.tar.gz
+[2023-05-26 02:35:38] INFO root fetch - processPackages [iceberg-tools]: executing diffoscope
+[2023-05-26 02:35:38] INFO root fetch - processPackages [iceberg-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iceberg_tools-0.0.2rc1.tar.gz tmp/iceberg_tools-0.0.2rc2.tar.gz --markdown 20230526/i/iceberg-tools/0.0.2rc1-0.0.2rc2/diff.md --exclude *.pyd
+[2023-05-26 02:35:38] INFO root fetch - processPackages [gesture-control-api]: executing diffoscope
+[2023-05-26 02:35:38] INFO root fetch - processPackages [gesture-control-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gesture-control-api-0.0.2.tar.gz tmp/gesture-control-api-0.0.3.tar.gz --markdown 20230526/g/gesture-control-api/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-26 02:35:39] INFO root fetch - main [MainThread]: End processing [everdrop-aws-cdk-constructs]: success
+[2023-05-26 02:35:40] INFO root fetch - main [MainThread]: End processing [EdgeGPT]: success
+[2023-05-26 02:35:40] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
+[2023-05-26 02:35:40] INFO root fetch - main [MainThread]: End processing [yambs]: success
+[2023-05-26 02:35:40] INFO root fetch - main [MainThread]: End processing [gesture-control-api]: success
+[2023-05-26 02:35:40] INFO root fetch - main [MainThread]: End processing [iceberg-tools]: success
+[2023-05-26 02:35:41] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2023-05-26 02:35:41] INFO root fetch - main [MainThread]: Store serial: [18254630]
