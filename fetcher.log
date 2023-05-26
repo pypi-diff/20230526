@@ -1154,3 +1154,100 @@
 [2023-05-26 02:03:19] INFO root fetch - main [MainThread]: End processing [MicroLIA]: success
 [2023-05-26 02:03:19] INFO root fetch - main [MainThread]: End processing [dataquality]: success
 [2023-05-26 02:03:19] INFO root fetch - main [MainThread]: Store serial: [18254288]
+[2023-05-26 02:08:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18254288]
+[2023-05-26 02:08:27] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-26 02:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coretex
+[2023-05-26 02:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchdatasets-nightly
+[2023-05-26 02:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mct-nightly
+[2023-05-26 02:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: marquedown
+[2023-05-26 02:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gesture-control-api
+[2023-05-26 02:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: humanloop
+[2023-05-26 02:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: jaxkern-nightly
+[2023-05-26 02:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sas7bdat-converter-cli
+[2023-05-26 02:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: impala-shell
+[2023-05-26 02:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: simpler-sockets
+[2023-05-26 02:08:27] INFO root fetch - processPackages [coretex]: New version: [1.0.0] Old Version: [0.0.9]
+[2023-05-26 02:08:27] INFO root fetch - processPackages [marquedown]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-26 02:08:27] WARNING root fetch - processPackages [gesture-control-api]: Skipping, unable to determine old version
+[2023-05-26 02:08:27] INFO root fetch - processPackages [gesture-control-api]: Start processing: gbwhere
+[2023-05-26 02:08:27] INFO root fetch - main [MainThread]: End processing [gesture-control-api] error
+[2023-05-26 02:08:27] INFO root fetch - processPackages [humanloop]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-05-26 02:08:27] INFO root fetch - processPackages [sas7bdat-converter-cli]: New version: [1.0.0] Old Version: [0.2.0]
+[2023-05-26 02:08:27] INFO root fetch - processPackages [impala-shell]: New version: [4.3.0a3] Old Version: [4.3.0a2]
+[2023-05-26 02:08:27] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2023-05-26 02:08:27] WARNING root fetch - processPackages [simpler-sockets]: Skipping, unable to determine old version
+[2023-05-26 02:08:27] INFO root fetch - processPackages [simpler-sockets]: Start processing: pydeps
+[2023-05-26 02:08:27] INFO root fetch - main [MainThread]: End processing [simpler-sockets] error
+[2023-05-26 02:08:27] INFO root fetch - processPackages [torchdatasets-nightly]: New version: [1684973014] Old Version: [1684886595]
+[2023-05-26 02:08:27] INFO root fetch - processPackages [gbwhere]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-26 02:08:27] INFO root fetch - processPackages [mct-nightly]: New version: [1.8.0.9052023.post348] Old Version: [1.8.0.9042023.post411]
+[2023-05-26 02:08:27] INFO root fetch - processPackages [pydeps]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-26 02:08:27] INFO root fetch - processPackages [humanloop]: executing diffoscope
+[2023-05-26 02:08:27] INFO root fetch - processPackages [humanloop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/humanloop-0.4.2.tar.gz tmp/humanloop-0.4.3.tar.gz --markdown 20230526/h/humanloop/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-05-26 02:08:27] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2023-05-26 02:08:27] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-1.8.0.9042023.post411.tar.gz tmp/mct-nightly-1.8.0.9052023.post348.tar.gz --markdown 20230526/m/mct-nightly/1.8.0.9042023.post411-1.8.0.9052023.post348/diff.md --exclude *.pyd
+[2023-05-26 02:08:28] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2023-05-26 02:08:28] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20230526/j/jaxkern-nightly/0.dev20221221-0.dev20221222/diff.md --exclude *.pyd
+[2023-05-26 02:08:28] INFO root fetch - processPackages [marquedown]: Downloading https://files.pythonhosted.org/packages/21/0d/0ed5b43d3f97c4030a4f7846a94ff360d1c5947ea4cd058875d726f88c47/marquedown-0.8.0.tar.gz
+[2023-05-26 02:08:28] INFO root fetch - processPackages [sas7bdat-converter-cli]: Downloading https://files.pythonhosted.org/packages/48/5f/409276e7920d9c63bd1d9bd9f3cf36d5b028e59c21485f1200909eef721b/sas7bdat_converter_cli-0.2.0.tar.gz
+[2023-05-26 02:08:28] INFO root fetch - processPackages [impala-shell]: Downloading https://files.pythonhosted.org/packages/be/25/caee612da5c3263ca329db21f11ba0fbfd5f701b5137580e6429a04914bb/impala_shell-4.3.0a2.tar.gz
+[2023-05-26 02:08:28] INFO root fetch - processPackages [gbwhere]: Downloading https://files.pythonhosted.org/packages/0d/cc/a6d6f626a67588096534be8c19c97a535ad49a4014529a1e582d1e52d626/gbwhere-0.1.2.tar.gz
+[2023-05-26 02:08:28] INFO root fetch - processPackages [torchdatasets-nightly]: executing diffoscope
+[2023-05-26 02:08:28] INFO root fetch - processPackages [torchdatasets-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchdatasets-nightly-1684886595.tar.gz tmp/torchdatasets-nightly-1684973014.tar.gz --markdown 20230526/t/torchdatasets-nightly/1684886595-1684973014/diff.md --exclude *.pyd
+[2023-05-26 02:08:28] INFO root fetch - processPackages [coretex]: Downloading https://files.pythonhosted.org/packages/ae/29/ec114ad403763c71802411e5da1bdadf93a5d74c29552a8cdb28f69ade17/coretex-1.0.0.tar.gz
+[2023-05-26 02:08:28] INFO root fetch - processPackages [gbwhere]: executing diffoscope
+[2023-05-26 02:08:28] INFO root fetch - processPackages [gbwhere]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gbwhere-0.1.1.tar.gz tmp/gbwhere-0.1.2.tar.gz --markdown 20230526/g/gbwhere/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-26 02:08:28] INFO root fetch - processPackages [marquedown]: Downloading https://files.pythonhosted.org/packages/45/4a/29405f471013f4158109f911b7e1c04d9b0b14f4a677fcfd37fa4e5bb7a3/marquedown-0.9.0.tar.gz
+[2023-05-26 02:08:28] INFO root fetch - processPackages [coretex]: executing diffoscope
+[2023-05-26 02:08:28] INFO root fetch - processPackages [coretex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coretex-0.0.9.tar.gz tmp/coretex-1.0.0.tar.gz --markdown 20230526/c/coretex/0.0.9-1.0.0/diff.md --exclude *.pyd
+[2023-05-26 02:08:28] INFO root fetch - processPackages [pydeps]: executing diffoscope
+[2023-05-26 02:08:28] INFO root fetch - processPackages [pydeps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydeps-1.9.8.tar.gz tmp/pydeps-1.9.9.tar.gz --markdown 20230526/p/pydeps/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-26 02:08:28] INFO root fetch - processPackages [marquedown]: executing diffoscope
+[2023-05-26 02:08:28] INFO root fetch - processPackages [marquedown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marquedown-0.8.0.tar.gz tmp/marquedown-0.9.0.tar.gz --markdown 20230526/m/marquedown/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-26 02:08:28] INFO root fetch - processPackages [sas7bdat-converter-cli]: Downloading https://files.pythonhosted.org/packages/df/4d/fcd0a606fba728255fa64bbb8e4b7c11382dc202129d527095eaf7aaa7e2/sas7bdat_converter_cli-1.0.0.tar.gz
+[2023-05-26 02:08:28] INFO root fetch - processPackages [impala-shell]: Downloading https://files.pythonhosted.org/packages/2a/e9/9c2829cd38d119cae2d75471185faec854ec07f94fc6956ea636a37302ca/impala_shell-4.3.0a3.tar.gz
+[2023-05-26 02:08:28] INFO root fetch - processPackages [sas7bdat-converter-cli]: executing diffoscope
+[2023-05-26 02:08:28] INFO root fetch - processPackages [sas7bdat-converter-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sas7bdat_converter_cli-0.2.0.tar.gz tmp/sas7bdat_converter_cli-1.0.0.tar.gz --markdown 20230526/s/sas7bdat-converter-cli/0.2.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-26 02:08:28] INFO root fetch - processPackages [impala-shell]: executing diffoscope
+[2023-05-26 02:08:28] INFO root fetch - processPackages [impala-shell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/impala_shell-4.3.0a2.tar.gz tmp/impala_shell-4.3.0a3.tar.gz --markdown 20230526/i/impala-shell/4.3.0a2-4.3.0a3/diff.md --exclude *.pyd
+[2023-05-26 02:08:29] INFO root fetch - processPackages [jaxkern-nightly]: Start processing: jaxutils-nightly
+[2023-05-26 02:08:29] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2023-05-26 02:08:29] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20230525] Old Version: [0.0.8.dev20230524]
+[2023-05-26 02:08:29] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/67/3b/10e04b46d20de6a05dc010b4bcf1021e4528ce195e687cfda7c318e16cd1/jaxutils-nightly-0.0.8.dev20230525.tar.gz
+[2023-05-26 02:08:30] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2023-05-26 02:08:30] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20230524.tar.gz tmp/jaxutils-nightly-0.0.8.dev20230525.tar.gz --markdown 20230526/j/jaxutils-nightly/0.0.8.dev20230524-0.0.8.dev20230525/diff.md --exclude *.pyd
+[2023-05-26 02:08:30] INFO root fetch - processPackages [gbwhere]: Start processing: hades-cli
+[2023-05-26 02:08:30] INFO root fetch - main [MainThread]: End processing [gbwhere]: success
+[2023-05-26 02:08:30] INFO root fetch - processPackages [hades-cli]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 02:08:30] INFO root fetch - processPackages [hades-cli]: executing diffoscope
+[2023-05-26 02:08:30] INFO root fetch - processPackages [hades-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hades-cli-0.0.8.tar.gz tmp/hades-cli-0.0.9.tar.gz --markdown 20230526/h/hades-cli/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 02:08:30] INFO root fetch - processPackages [sas7bdat-converter-cli]: Start processing: torchlayers-nightly
+[2023-05-26 02:08:30] INFO root fetch - main [MainThread]: End processing [sas7bdat-converter-cli]: success
+[2023-05-26 02:08:30] INFO root fetch - processPackages [torchlayers-nightly]: New version: [1684973248] Old Version: [1684886820]
+[2023-05-26 02:08:30] INFO root fetch - processPackages [torchlayers-nightly]: Downloading https://files.pythonhosted.org/packages/f0/3d/c511f95c2ea3cce0bf9dac6a8038d90a469eabe93f2b0c5581dd6552d903/torchlayers-nightly-1684973248.tar.gz
+[2023-05-26 02:08:30] INFO root fetch - processPackages [pydeps]: Start processing: llsd
+[2023-05-26 02:08:30] INFO root fetch - main [MainThread]: End processing [pydeps]: success
+[2023-05-26 02:08:30] INFO root fetch - processPackages [torchdatasets-nightly]: Start processing: simpler-sockets
+[2023-05-26 02:08:30] INFO root fetch - main [MainThread]: End processing [torchdatasets-nightly]: success
+[2023-05-26 02:08:30] INFO root fetch - main [MainThread]: End processing [coretex]: success
+[2023-05-26 02:08:30] INFO root fetch - processPackages [torchlayers-nightly]: executing diffoscope
+[2023-05-26 02:08:30] INFO root fetch - processPackages [torchlayers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchlayers-nightly-1684886820.tar.gz tmp/torchlayers-nightly-1684973248.tar.gz --markdown 20230526/t/torchlayers-nightly/1684886820-1684973248/diff.md --exclude *.pyd
+[2023-05-26 02:08:31] INFO root fetch - main [MainThread]: End processing [marquedown]: success
+[2023-05-26 02:08:31] INFO root fetch - processPackages [simpler-sockets]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-26 02:08:31] INFO root fetch - processPackages [llsd]: New version: [1.2.2.dev3] Old Version: [1.2.2.dev1]
+[2023-05-26 02:08:31] INFO root fetch - processPackages [simpler-sockets]: Downloading https://files.pythonhosted.org/packages/6e/77/4cc02723c53b7e4cb647c799b4e1a2057a287c85cc1d1f88e053ddcc9d98/simpler_sockets-0.0.1.tar.gz
+[2023-05-26 02:08:31] INFO root fetch - processPackages [llsd]: Downloading https://files.pythonhosted.org/packages/cf/68/3aaea47dba2aeb8ee44fb736d570dfaf9ecec88a9a9bb727436d2def7519/llsd-1.2.2.dev3.tar.gz
+[2023-05-26 02:08:31] INFO root fetch - processPackages [llsd]: executing diffoscope
+[2023-05-26 02:08:31] INFO root fetch - processPackages [llsd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llsd-1.2.2.dev1.tar.gz tmp/llsd-1.2.2.dev3.tar.gz --markdown 20230526/l/llsd/1.2.2.dev1-1.2.2.dev3/diff.md --exclude *.pyd
+[2023-05-26 02:08:31] INFO root fetch - processPackages [simpler-sockets]: Downloading https://files.pythonhosted.org/packages/25/d5/cb62f2dbc083297621bb51c4eeab8ac8fcddc435ef30415bd946051665a0/simpler_sockets-0.0.2.tar.gz
+[2023-05-26 02:08:31] INFO root fetch - processPackages [simpler-sockets]: executing diffoscope
+[2023-05-26 02:08:31] INFO root fetch - processPackages [simpler-sockets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simpler_sockets-0.0.1.tar.gz tmp/simpler_sockets-0.0.2.tar.gz --markdown 20230526/s/simpler-sockets/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-26 02:08:31] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2023-05-26 02:08:32] INFO root fetch - main [MainThread]: End processing [hades-cli]: success
+[2023-05-26 02:08:32] INFO root fetch - main [MainThread]: End processing [torchlayers-nightly]: success
+[2023-05-26 02:08:33] INFO root fetch - main [MainThread]: End processing [simpler-sockets]: success
+[2023-05-26 02:08:33] INFO root fetch - main [MainThread]: End processing [impala-shell]: success
+[2023-05-26 02:08:33] INFO root fetch - main [MainThread]: End processing [llsd]: success
+[2023-05-26 02:08:33] INFO root fetch - main [MainThread]: End processing [humanloop]: success
+[2023-05-26 02:08:35] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2023-05-26 02:08:35] INFO root fetch - main [MainThread]: Store serial: [18254382]
