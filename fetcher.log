@@ -12007,3 +12007,79 @@
 [2023-05-26 11:29:31] INFO root fetch - main [MainThread]: End processing [swh.lister]: success
 [2023-05-26 11:29:33] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-05-26 11:29:33] INFO root fetch - main [MainThread]: Store serial: [18260489]
+[2023-05-26 11:34:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18260489]
+[2023-05-26 11:34:45] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-26 11:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arkindex-export
+[2023-05-26 11:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: veetility
+[2023-05-26 11:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PrSpiders
+[2023-05-26 11:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kfish
+[2023-05-26 11:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sliger
+[2023-05-26 11:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wait-for-docker
+[2023-05-26 11:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: configzen
+[2023-05-26 11:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: edu-segmentation
+[2023-05-26 11:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nlu-tmp
+[2023-05-26 11:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dinohub-seedwork-be
+[2023-05-26 11:34:45] INFO root fetch - processPackages [arkindex-export]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-26 11:34:45] INFO root fetch - processPackages [configzen]: New version: [0.1.39] Old Version: [0.1.38]
+[2023-05-26 11:34:45] INFO root fetch - processPackages [veetility]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 11:34:45] INFO root fetch - processPackages [PrSpiders]: New version: [0.5.2.3] Old Version: [0.5.2.2]
+[2023-05-26 11:34:45] INFO root fetch - processPackages [dinohub-seedwork-be]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 11:34:45] INFO root fetch - processPackages [edu-segmentation]: New version: [0.0.79] Old Version: [0.0.78]
+[2023-05-26 11:34:45] WARNING root fetch - processPackages [sliger]: Skipping, unable to determine old version
+[2023-05-26 11:34:45] INFO root fetch - processPackages [wait-for-docker]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-05-26 11:34:45] INFO root fetch - processPackages [sliger]: Start processing: japanmap
+[2023-05-26 11:34:45] INFO root fetch - main [MainThread]: End processing [sliger] error
+[2023-05-26 11:34:45] INFO root fetch - processPackages [nlu-tmp]: New version: [4.5.0rc5] Old Version: [4.3.0rc5]
+[2023-05-26 11:34:45] INFO root fetch - processPackages [kfish]: New version: [99.0.202305260931] Old Version: [99.0.202305260853]
+[2023-05-26 11:34:45] INFO root fetch - processPackages [japanmap]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-26 11:34:45] INFO root fetch - processPackages [dinohub-seedwork-be]: executing diffoscope
+[2023-05-26 11:34:45] INFO root fetch - processPackages [dinohub-seedwork-be]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dinohub_seedwork_be-0.1.8.tar.gz tmp/dinohub_seedwork_be-0.1.9.tar.gz --markdown 20230526/d/dinohub-seedwork-be/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 11:34:45] INFO root fetch - processPackages [nlu-tmp]: Downloading https://files.pythonhosted.org/packages/ad/92/366b87ca7201e7c08d72c1167adad3dfdd381c1ec4cb134873c51ca8f104/nlu_tmp-4.3.0rc5.tar.gz
+[2023-05-26 11:34:45] INFO root fetch - processPackages [arkindex-export]: Downloading https://files.pythonhosted.org/packages/a2/37/d0a599f8190a4cee5aceb78502b8e81401901aa982a33a6be7cfdcbbf074/arkindex_export-0.1.2-py3-none-any.whl
+[2023-05-26 11:34:45] INFO root fetch - processPackages [PrSpiders]: Downloading https://files.pythonhosted.org/packages/5c/0a/44cd5fa36150141efbb15bc843911384f28b9fcddb92509b0bdf4b5cc69b/PrSpiders-0.5.2.2.tar.gz
+[2023-05-26 11:34:45] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/0f/6c/ecff91a40fdf5c59d868e474ec3016311243680370da76cec2f921bf44ed/kfish-99.0.202305260931-py3-none-any.whl
+[2023-05-26 11:34:45] INFO root fetch - processPackages [wait-for-docker]: Downloading https://files.pythonhosted.org/packages/58/46/fbe1741d24873bee525c4d9d07932d2f0c648e27c155ec47d17dfad8353d/wait_for_docker-0.3.0.tar.gz
+[2023-05-26 11:34:45] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/5a/6a/1b3a651bc133b0cb2d6c28e7eebc0b09ec2eb2718017e04e6e0c079c8114/edu_segmentation-0.0.79.tar.gz
+[2023-05-26 11:34:45] INFO root fetch - processPackages [japanmap]: Downloading https://files.pythonhosted.org/packages/7e/51/9bb5121a1939fb045bb3167d4fcf7fe30ab0e74b4f1bb580f26d9fd7e9ea/japanmap-0.2.0.tar.gz
+[2023-05-26 11:34:45] INFO root fetch - processPackages [wait-for-docker]: executing diffoscope
+[2023-05-26 11:34:45] INFO root fetch - processPackages [wait-for-docker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wait_for_docker-0.2.2.tar.gz tmp/wait_for_docker-0.3.0.tar.gz --markdown 20230526/w/wait-for-docker/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-05-26 11:34:45] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-05-26 11:34:45] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202305260853-py3-none-any.whl.zip tmp/kfish-99.0.202305260931-py3-none-any.whl.zip --markdown 20230526/k/kfish/99.0.202305260853-99.0.202305260931/diff.md --exclude *.pyd
+[2023-05-26 11:34:45] INFO root fetch - processPackages [edu-segmentation]: executing diffoscope
+[2023-05-26 11:34:45] INFO root fetch - processPackages [edu-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edu_segmentation-0.0.78.tar.gz tmp/edu_segmentation-0.0.79.tar.gz --markdown 20230526/e/edu-segmentation/0.0.78-0.0.79/diff.md --exclude *.pyd
+[2023-05-26 11:34:46] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/85/24/0c29107e345f08fcbb7b291d3549a1c72bb60d7a0ffce501ad839553b364/configzen-0.1.39.tar.gz
+[2023-05-26 11:34:46] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-26 11:34:46] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.38.tar.gz tmp/configzen-0.1.39.tar.gz --markdown 20230526/c/configzen/0.1.38-0.1.39/diff.md --exclude *.pyd
+[2023-05-26 11:34:46] INFO root fetch - processPackages [veetility]: executing diffoscope
+[2023-05-26 11:34:46] INFO root fetch - processPackages [veetility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/veetility-0.1.8.tar.gz tmp/veetility-0.1.9.tar.gz --markdown 20230526/v/veetility/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 11:34:46] INFO root fetch - processPackages [PrSpiders]: Downloading https://files.pythonhosted.org/packages/1c/62/1c5dc9a67ee2cafe42cc37376a50b82951b4e9f9c468b52c84047fafb1da/PrSpiders-0.5.2.3.tar.gz
+[2023-05-26 11:34:46] INFO root fetch - processPackages [japanmap]: Downloading https://files.pythonhosted.org/packages/d7/68/2af6df2a50ad074cd6d2f7d762124b2fa80e81171b98166370677695fe86/japanmap-0.3.0-py3-none-any.whl
+[2023-05-26 11:34:46] INFO root fetch - processPackages [PrSpiders]: executing diffoscope
+[2023-05-26 11:34:46] INFO root fetch - processPackages [PrSpiders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PrSpiders-0.5.2.2.tar.gz tmp/PrSpiders-0.5.2.3.tar.gz --markdown 20230526/P/PrSpiders/0.5.2.2-0.5.2.3/diff.md --exclude *.pyd
+[2023-05-26 11:34:46] INFO root fetch - processPackages [japanmap]: executing diffoscope
+[2023-05-26 11:34:46] INFO root fetch - processPackages [japanmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/japanmap-0.2.0.tar.gz tmp/japanmap-0.3.0-py3-none-any.whl.zip --markdown 20230526/j/japanmap/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-26 11:34:46] INFO root fetch - processPackages [arkindex-export]: Downloading https://files.pythonhosted.org/packages/9e/00/89678df66ae6cfe12e11923587c5c7eb496642ece750d692ed34a55f5ac8/arkindex_export-0.1.3-py3-none-any.whl
+[2023-05-26 11:34:46] INFO root fetch - processPackages [nlu-tmp]: executing diffoscope
+[2023-05-26 11:34:46] INFO root fetch - processPackages [nlu-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlu_tmp-4.3.0rc5.tar.gz tmp/nlu_tmp-4.5.0rc5.tar.gz --markdown 20230526/n/nlu-tmp/4.3.0rc5-4.5.0rc5/diff.md --exclude *.pyd
+[2023-05-26 11:34:46] INFO root fetch - processPackages [arkindex-export]: executing diffoscope
+[2023-05-26 11:34:46] INFO root fetch - processPackages [arkindex-export]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkindex_export-0.1.2-py3-none-any.whl.zip tmp/arkindex_export-0.1.3-py3-none-any.whl.zip --markdown 20230526/a/arkindex-export/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-26 11:34:47] INFO root fetch - processPackages [wait-for-docker]: Start processing: UEVaultManager
+[2023-05-26 11:34:47] INFO root fetch - main [MainThread]: End processing [wait-for-docker]: success
+[2023-05-26 11:34:47] INFO root fetch - processPackages [UEVaultManager]: New version: [1.5.3] Old Version: [1.5.2]
+[2023-05-26 11:34:47] INFO root fetch - processPackages [UEVaultManager]: Downloading https://files.pythonhosted.org/packages/b1/12/d0ae2fa45f4ca211ba177152414e216e1c160e7d80bc1c2bd8b53f27cd44/UEVaultManager-1.5.3.tar.gz
+[2023-05-26 11:34:47] INFO root fetch - processPackages [UEVaultManager]: executing diffoscope
+[2023-05-26 11:34:47] INFO root fetch - processPackages [UEVaultManager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UEVaultManager-1.5.2.tar.gz tmp/UEVaultManager-1.5.3.tar.gz --markdown 20230526/U/UEVaultManager/1.5.2-1.5.3/diff.md --exclude *.pyd
+[2023-05-26 11:34:47] INFO root fetch - processPackages [dinohub-seedwork-be]: Start processing: aliyun-python-sdk-asapi
+[2023-05-26 11:34:47] INFO root fetch - main [MainThread]: End processing [dinohub-seedwork-be]: success
+[2023-05-26 11:34:48] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-05-26 11:34:48] WARNING root fetch - processPackages [aliyun-python-sdk-asapi]: Skipping, unable to determine old version
+[2023-05-26 11:34:48] INFO root fetch - main [MainThread]: End processing [aliyun-python-sdk-asapi] error
+[2023-05-26 11:34:48] INFO root fetch - main [MainThread]: End processing [veetility]: success
+[2023-05-26 11:34:48] INFO root fetch - main [MainThread]: End processing [japanmap]: success
+[2023-05-26 11:34:48] INFO root fetch - main [MainThread]: End processing [PrSpiders]: success
+[2023-05-26 11:34:48] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-26 11:34:48] INFO root fetch - main [MainThread]: End processing [arkindex-export]: success
+[2023-05-26 11:34:49] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
+[2023-05-26 11:34:50] INFO root fetch - main [MainThread]: End processing [UEVaultManager]: success
+[2023-05-26 11:34:52] INFO root fetch - main [MainThread]: End processing [nlu-tmp]: success
+[2023-05-26 11:34:52] INFO root fetch - main [MainThread]: Store serial: [18260531]
