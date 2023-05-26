@@ -18738,3 +18738,103 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 17:39:00] INFO root fetch - main [MainThread]: End processing [evaics]: success
 [2023-05-26 17:41:02] INFO root fetch - main [MainThread]: End processing [cognite-neat]: success
 [2023-05-26 17:41:02] INFO root fetch - main [MainThread]: Store serial: [18264793]
+[2023-05-26 17:46:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18264793]
+[2023-05-26 17:46:12] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-26 17:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: policyuniverse
+[2023-05-26 17:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: optlang
+[2023-05-26 17:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: maboss
+[2023-05-26 17:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyHP3325A
+[2023-05-26 17:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hypothesis
+[2023-05-26 17:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: inox
+[2023-05-26 17:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: napari-brainways
+[2023-05-26 17:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyquil
+[2023-05-26 17:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: PyHP3478A
+[2023-05-26 17:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: upgini
+[2023-05-26 17:46:12] INFO root fetch - processPackages [maboss]: New version: [0.8.5] Old Version: [0.8.4]
+[2023-05-26 17:46:12] INFO root fetch - processPackages [PyHP3325A]: New version: [0.3] Old Version: [0.2]
+[2023-05-26 17:46:12] WARNING root fetch - processPackages [inox]: Skipping, unable to determine old version
+[2023-05-26 17:46:12] INFO root fetch - processPackages [inox]: Start processing: xdsl
+[2023-05-26 17:46:12] INFO root fetch - main [MainThread]: End processing [inox] error
+[2023-05-26 17:46:12] INFO root fetch - processPackages [napari-brainways]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-26 17:46:12] INFO root fetch - processPackages [optlang]: New version: [v0.2.1] Old Version: [1.7.0]
+[2023-05-26 17:46:12] INFO root fetch - processPackages [PyHP3478A]: New version: [0.5] Old Version: [0.4]
+[2023-05-26 17:46:12] INFO root fetch - processPackages [policyuniverse]: New version: [1.5.1.20230526] Old Version: [1.5.1.20230523]
+[2023-05-26 17:46:12] INFO root fetch - processPackages [pyquil]: New version: [4.0.0rc9] Old Version: [4.0.0rc8]
+[2023-05-26 17:46:12] INFO root fetch - processPackages [upgini]: New version: [1.1.99] Old Version: [1.1.98]
+[2023-05-26 17:46:12] INFO root fetch - processPackages [xdsl]: New version: [0.9.1] Old Version: [0.9]
+[2023-05-26 17:46:12] INFO root fetch - processPackages [hypothesis]: New version: [6.9.2] Old Version: [6.9.1]
+[2023-05-26 17:46:12] INFO root fetch - processPackages [optlang]: Downloading https://files.pythonhosted.org/packages/6e/41/28e7373ff0b1c26c3d52cc82b9bfddf562a1dca864ecaee9c45a1fa6b7b4/optlang-1.7.0.tar.gz
+[2023-05-26 17:46:12] INFO root fetch - processPackages [policyuniverse]: Downloading https://files.pythonhosted.org/packages/ab/96/72e00b9c5af9da48998f3ed0cac7639d4f76d505e638253705496f88fbb2/policyuniverse-1.5.1.20230523.tar.gz
+[2023-05-26 17:46:12] INFO root fetch - processPackages [maboss]: Downloading https://files.pythonhosted.org/packages/ad/5e/42659dd79c09119ab0460059613e6975003d30ccdb7a5aff3ac3070209d3/maboss-0.8.4.tar.gz
+[2023-05-26 17:46:12] INFO root fetch - processPackages [PyHP3325A]: Downloading https://files.pythonhosted.org/packages/9f/13/992083a8cdb413932fbfd7b504ef8d86090f080abe27de6de4ab79bf5895/PyHP3325A-0.2.tar.gz
+[2023-05-26 17:46:12] INFO root fetch - processPackages [upgini]: executing diffoscope
+[2023-05-26 17:46:12] INFO root fetch - processPackages [upgini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upgini-1.1.98.tar.gz tmp/upgini-1.1.99.tar.gz --markdown 20230526/u/upgini/1.1.98-1.1.99/diff.md --exclude *.pyd
+[2023-05-26 17:46:12] INFO root fetch - processPackages [xdsl]: Downloading https://files.pythonhosted.org/packages/23/a4/9c3968d2188784c8158b990c96e67790ee40a3a3091eb156dbc96aef844f/xdsl-0.9.tar.gz
+[2023-05-26 17:46:12] INFO root fetch - processPackages [napari-brainways]: Downloading https://files.pythonhosted.org/packages/13/c7/3ef47bc360536a52e65436defc99c5c91cf3c395a8d154e2356d9bb9a355/napari_brainways-0.1.3.tar.gz
+[2023-05-26 17:46:13] INFO root fetch - processPackages [PyHP3478A]: Downloading https://files.pythonhosted.org/packages/96/94/e33ce1e7013a57b3c8179094b170d90ef17450e9f6f11a00389c526fcf18/PyHP3478A-0.5.tar.gz
+[2023-05-26 17:46:13] INFO root fetch - processPackages [pyquil]: executing diffoscope
+[2023-05-26 17:46:13] INFO root fetch - processPackages [pyquil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyquil-4.0.0rc8.tar.gz tmp/pyquil-4.0.0rc9.tar.gz --markdown 20230526/p/pyquil/4.0.0rc8-4.0.0rc9/diff.md --exclude *.pyd
+[2023-05-26 17:46:13] INFO root fetch - processPackages [PyHP3325A]: Downloading https://files.pythonhosted.org/packages/75/e5/d2272f22e59acff0811b22750e96b0a12b9b0397c45f58b7556900bee995/PyHP3325A-0.3.tar.gz
+[2023-05-26 17:46:13] INFO root fetch - processPackages [policyuniverse]: Downloading https://files.pythonhosted.org/packages/9c/e2/86945ceef2ce77a557ea9699e24e52c269afbd3e6f39db1934706ee85628/policyuniverse-1.5.1.20230526.tar.gz
+[2023-05-26 17:46:13] INFO root fetch - processPackages [PyHP3478A]: executing diffoscope
+[2023-05-26 17:46:13] INFO root fetch - processPackages [PyHP3478A]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyHP3478A-0.4.tar.gz tmp/PyHP3478A-0.5.tar.gz --markdown 20230526/P/PyHP3478A/0.4-0.5/diff.md --exclude *.pyd
+[2023-05-26 17:46:13] INFO root fetch - processPackages [maboss]: Downloading https://files.pythonhosted.org/packages/af/ad/b3a94cd8995902e5a9c1220cd41dfbc62b5139b41d6efe47f241a0e65176/maboss-0.8.5.tar.gz
+[2023-05-26 17:46:13] INFO root fetch - processPackages [hypothesis]: executing diffoscope
+[2023-05-26 17:46:13] INFO root fetch - processPackages [hypothesis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypothesis-6.9.1.tar.gz tmp/hypothesis-6.9.2.tar.gz --markdown 20230526/h/hypothesis/6.9.1-6.9.2/diff.md --exclude *.pyd
+[2023-05-26 17:46:13] INFO root fetch - processPackages [PyHP3325A]: executing diffoscope
+[2023-05-26 17:46:13] INFO root fetch - processPackages [PyHP3325A]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyHP3325A-0.2.tar.gz tmp/PyHP3325A-0.3.tar.gz --markdown 20230526/P/PyHP3325A/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-26 17:46:13] INFO root fetch - processPackages [optlang]: Downloading https://files.pythonhosted.org/packages/e5/ca/ded41c9af572736a7720200034a455594fc2778defd988c4b2eca99a0b40/optlang-v0.2.1.tar.gz
+[2023-05-26 17:46:13] INFO root fetch - processPackages [policyuniverse]: executing diffoscope
+[2023-05-26 17:46:13] INFO root fetch - processPackages [policyuniverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyuniverse-1.5.1.20230523.tar.gz tmp/policyuniverse-1.5.1.20230526.tar.gz --markdown 20230526/p/policyuniverse/1.5.1.20230523-1.5.1.20230526/diff.md --exclude *.pyd
+[2023-05-26 17:46:13] INFO root fetch - processPackages [napari-brainways]: executing diffoscope
+[2023-05-26 17:46:13] INFO root fetch - processPackages [napari-brainways]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari_brainways-0.1.2.tar.gz tmp/napari_brainways-0.1.3.tar.gz --markdown 20230526/n/napari-brainways/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-26 17:46:13] INFO root fetch - processPackages [maboss]: executing diffoscope
+[2023-05-26 17:46:13] INFO root fetch - processPackages [maboss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maboss-0.8.4.tar.gz tmp/maboss-0.8.5.tar.gz --markdown 20230526/m/maboss/0.8.4-0.8.5/diff.md --exclude *.pyd
+[2023-05-26 17:46:13] INFO root fetch - processPackages [optlang]: executing diffoscope
+[2023-05-26 17:46:13] INFO root fetch - processPackages [optlang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optlang-1.7.0.tar.gz tmp/optlang-v0.2.1.tar.gz --markdown 20230526/o/optlang/1.7.0-v0.2.1/diff.md --exclude *.pyd
+[2023-05-26 17:46:13] INFO root fetch - processPackages [xdsl]: Downloading https://files.pythonhosted.org/packages/8f/4d/b8bd14cd7b1fc624df754867bdd7761fc461787dd1167b703c2174b483be/xdsl-0.9.1.tar.gz
+[2023-05-26 17:46:13] INFO root fetch - processPackages [xdsl]: executing diffoscope
+[2023-05-26 17:46:13] INFO root fetch - processPackages [xdsl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xdsl-0.9.tar.gz tmp/xdsl-0.9.1.tar.gz --markdown 20230526/x/xdsl/0.9-0.9.1/diff.md --exclude *.pyd
+[2023-05-26 17:46:14] INFO root fetch - processPackages [PyHP3478A]: Start processing: dl-fib-py
+[2023-05-26 17:46:14] INFO root fetch - main [MainThread]: End processing [PyHP3478A]: success
+[2023-05-26 17:46:14] INFO root fetch - processPackages [dl-fib-py]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-26 17:46:14] INFO root fetch - processPackages [dl-fib-py]: Downloading https://files.pythonhosted.org/packages/43/63/6ec6748cd74b46eff8bab38b596d3f35193864488b634e23deefe97239bc/dl_fib_py-0.0.3.tar.gz
+[2023-05-26 17:46:15] INFO root fetch - processPackages [dl-fib-py]: Downloading https://files.pythonhosted.org/packages/c1/58/ecf4b5b8daa6a48158ef83f58571a3dc52a4db63f0ed7c9081e721562042/dl_fib_py-0.0.4.tar.gz
+[2023-05-26 17:46:15] INFO root fetch - processPackages [PyHP3325A]: Start processing: pyriksdagen
+[2023-05-26 17:46:15] INFO root fetch - main [MainThread]: End processing [PyHP3325A]: success
+[2023-05-26 17:46:15] INFO root fetch - processPackages [pyriksdagen]: New version: [0.9.0] Old Version: [0.8.2rc4]
+[2023-05-26 17:46:15] INFO root fetch - processPackages [pyquil]: Start processing: langchain
+[2023-05-26 17:46:15] INFO root fetch - main [MainThread]: End processing [pyquil]: success
+[2023-05-26 17:46:15] INFO root fetch - processPackages [dl-fib-py]: executing diffoscope
+[2023-05-26 17:46:15] INFO root fetch - processPackages [dl-fib-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dl_fib_py-0.0.3.tar.gz tmp/dl_fib_py-0.0.4.tar.gz --markdown 20230526/d/dl-fib-py/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-26 17:46:15] INFO root fetch - processPackages [langchain]: New version: [0.0.99rc0] Old Version: [0.0.99]
+[2023-05-26 17:46:15] INFO root fetch - processPackages [pyriksdagen]: Downloading https://files.pythonhosted.org/packages/6f/35/cf1bb77787a5fe426f4807a58196c8ebfe96ae7ffd923c2e85a32f73f4cb/pyriksdagen-0.8.2rc4.tar.gz
+[2023-05-26 17:46:15] INFO root fetch - processPackages [pyriksdagen]: Downloading https://files.pythonhosted.org/packages/36/01/f30e8551cfcb48d303cc083c024da9e01ac4f65c2471bce9e587a6733c13/pyriksdagen-0.9.0.tar.gz
+[2023-05-26 17:46:15] INFO root fetch - processPackages [hypothesis]: Start processing: bemserver-core
+[2023-05-26 17:46:15] INFO root fetch - main [MainThread]: End processing [hypothesis]: success
+[2023-05-26 17:46:15] INFO root fetch - processPackages [bemserver-core]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-26 17:46:15] INFO root fetch - processPackages [pyriksdagen]: executing diffoscope
+[2023-05-26 17:46:15] INFO root fetch - processPackages [pyriksdagen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyriksdagen-0.8.2rc4.tar.gz tmp/pyriksdagen-0.9.0.tar.gz --markdown 20230526/p/pyriksdagen/0.8.2rc4-0.9.0/diff.md --exclude *.pyd
+[2023-05-26 17:46:15] INFO root fetch - processPackages [langchain]: executing diffoscope
+[2023-05-26 17:46:15] INFO root fetch - processPackages [langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain-0.0.99.tar.gz tmp/langchain-0.0.99rc0.tar.gz --markdown 20230526/l/langchain/0.0.99-0.0.99rc0/diff.md --exclude *.pyd
+[2023-05-26 17:46:15] INFO root fetch - processPackages [bemserver-core]: executing diffoscope
+[2023-05-26 17:46:15] INFO root fetch - processPackages [bemserver-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bemserver-core-0.9.0.tar.gz tmp/bemserver-core-0.9.1.tar.gz --markdown 20230526/b/bemserver-core/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-26 17:46:16] INFO root fetch - processPackages [optlang]: Start processing: dcss-api
+[2023-05-26 17:46:16] INFO root fetch - main [MainThread]: End processing [optlang]: success
+[2023-05-26 17:46:16] WARNING root fetch - processPackages [dcss-api]: Skipping, unable to determine old version
+[2023-05-26 17:46:16] INFO root fetch - processPackages [dcss-api]: Start processing: elgin
+[2023-05-26 17:46:16] INFO root fetch - main [MainThread]: End processing [dcss-api] error
+[2023-05-26 17:46:16] INFO root fetch - main [MainThread]: End processing [maboss]: success
+[2023-05-26 17:46:16] INFO root fetch - processPackages [elgin]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 17:46:16] INFO root fetch - main [MainThread]: End processing [napari-brainways]: success
+[2023-05-26 17:46:16] INFO root fetch - processPackages [elgin]: executing diffoscope
+[2023-05-26 17:46:16] INFO root fetch - processPackages [elgin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elgin-0.1.8.tar.gz tmp/elgin-0.1.9.tar.gz --markdown 20230526/e/elgin/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 17:46:16] INFO root fetch - main [MainThread]: End processing [xdsl]: success
+[2023-05-26 17:46:16] INFO root fetch - main [MainThread]: End processing [upgini]: success
+[2023-05-26 17:46:17] INFO root fetch - main [MainThread]: End processing [dl-fib-py]: success
+[2023-05-26 17:46:18] INFO root fetch - main [MainThread]: End processing [pyriksdagen]: success
+[2023-05-26 17:46:18] INFO root fetch - main [MainThread]: End processing [bemserver-core]: success
+[2023-05-26 17:46:18] INFO root fetch - main [MainThread]: End processing [elgin]: success
+[2023-05-26 17:46:18] INFO root fetch - main [MainThread]: End processing [policyuniverse]: success
+[2023-05-26 17:46:21] INFO root fetch - main [MainThread]: End processing [langchain]: success
+[2023-05-26 17:46:21] INFO root fetch - main [MainThread]: Store serial: [18264851]
