@@ -13081,3 +13081,135 @@
 [2023-05-26 12:29:56] INFO root fetch - main [MainThread]: End processing [divent]: success
 [2023-05-26 12:29:57] INFO root fetch - main [MainThread]: End processing [nlu-tmp]: success
 [2023-05-26 12:29:57] INFO root fetch - main [MainThread]: Store serial: [18261269]
+[2023-05-26 12:35:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18261269]
+[2023-05-26 12:35:06] INFO root fetch - main [MainThread]: Found 22 changed packages
+[2023-05-26 12:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clouding-server-manager
+[2023-05-26 12:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: neo4j-driver
+[2023-05-26 12:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: neo4j
+[2023-05-26 12:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ucampurestorage
+[2023-05-26 12:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: imio.webspellchecker
+[2023-05-26 12:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dvg-randomizer
+[2023-05-26 12:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ioc-engine
+[2023-05-26 12:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: xspf-lib
+[2023-05-26 12:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pubsub-pull-ce-subscriber
+[2023-05-26 12:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pdocr-rpc
+[2023-05-26 12:35:07] INFO root fetch - processPackages [dvg-randomizer]: New version: [1.4.0] Old Version: [1.3.3]
+[2023-05-26 12:35:07] WARNING root fetch - processPackages [imio.webspellchecker]: Skipping, unable to determine old version
+[2023-05-26 12:35:07] INFO root fetch - processPackages [imio.webspellchecker]: Start processing: peakventures
+[2023-05-26 12:35:07] INFO root fetch - main [MainThread]: End processing [imio.webspellchecker] error
+[2023-05-26 12:35:07] INFO root fetch - processPackages [clouding-server-manager]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-26 12:35:07] WARNING root fetch - processPackages [ioc-engine]: Skipping, unable to determine old version
+[2023-05-26 12:35:07] INFO root fetch - processPackages [ioc-engine]: Start processing: xw-utils
+[2023-05-26 12:35:07] INFO root fetch - main [MainThread]: End processing [ioc-engine] error
+[2023-05-26 12:35:07] INFO root fetch - processPackages [xspf-lib]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-26 12:35:07] INFO root fetch - processPackages [neo4j]: New version: [5.9.0] Old Version: [5.8.1]
+[2023-05-26 12:35:07] WARNING root fetch - processPackages [pubsub-pull-ce-subscriber]: Skipping, unable to determine old version
+[2023-05-26 12:35:07] INFO root fetch - processPackages [neo4j-driver]: New version: [5.9.0] Old Version: [5.8.1]
+[2023-05-26 12:35:07] INFO root fetch - processPackages [pdocr-rpc]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-26 12:35:07] INFO root fetch - processPackages [ucampurestorage]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-26 12:35:07] INFO root fetch - processPackages [pubsub-pull-ce-subscriber]: Start processing: pyhamsys
+[2023-05-26 12:35:07] INFO root fetch - main [MainThread]: End processing [pubsub-pull-ce-subscriber] error
+[2023-05-26 12:35:07] INFO root fetch - processPackages [peakventures]: New version: [1.1.0] Old Version: [1.0.5]
+[2023-05-26 12:35:07] INFO root fetch - processPackages [xw-utils]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-26 12:35:07] INFO root fetch - processPackages [pyhamsys]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-26 12:35:07] INFO root fetch - processPackages [clouding-server-manager]: Downloading https://files.pythonhosted.org/packages/99/16/3e3b20cfdf8d1ec4ed53add80ef28757555ff4b9b2bb07be8b50097627d2/clouding_server_manager-1.0.1.tar.gz
+[2023-05-26 12:35:07] INFO root fetch - processPackages [dvg-randomizer]: Downloading https://files.pythonhosted.org/packages/5c/d8/01cd34f7bc7fdb6bda87b2127e2de5ee041d46f5d5d774f4e79647b1c580/dvg-randomizer-1.3.3.tar.gz
+[2023-05-26 12:35:07] INFO root fetch - processPackages [xspf-lib]: Downloading https://files.pythonhosted.org/packages/78/eb/90c96d2a94bc52297d66477d6d476b1559b306eba4b0ee557a41cadcf9c7/xspf_lib-0.3.4.tar.gz
+[2023-05-26 12:35:07] INFO root fetch - processPackages [ucampurestorage]: Downloading https://files.pythonhosted.org/packages/72/2a/ec963b6ceba1b6ff2e14c199b61b54c6961bc811e9346bfbc3d234bc9de1/ucampurestorage-1.1.2.tar.gz
+[2023-05-26 12:35:07] INFO root fetch - processPackages [pyhamsys]: Downloading https://files.pythonhosted.org/packages/89/1d/b990f607f354577a9f3a3b2b9ebb29c9ee20d1c1045427fada54aa62b4db/pyhamsys-0.0.5.tar.gz
+[2023-05-26 12:35:07] INFO root fetch - processPackages [pdocr-rpc]: Downloading https://files.pythonhosted.org/packages/d0/32/38de855555f1b3a062c22119b233985ec821bafa9df5a196acf336a9ed79/pdocr-rpc-1.0.0.tar.gz
+[2023-05-26 12:35:07] INFO root fetch - processPackages [peakventures]: Downloading https://files.pythonhosted.org/packages/cb/16/f0ddb90c06a354f52ad35acf85b80af7c48ff18885aced5522ad7082f687/peakventures-1.0.5.tar.gz
+[2023-05-26 12:35:07] INFO root fetch - processPackages [xspf-lib]: executing diffoscope
+[2023-05-26 12:35:07] INFO root fetch - processPackages [xspf-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xspf_lib-0.3.3.tar.gz tmp/xspf_lib-0.3.4.tar.gz --markdown 20230526/x/xspf-lib/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-26 12:35:07] INFO root fetch - processPackages [clouding-server-manager]: executing diffoscope
+[2023-05-26 12:35:07] INFO root fetch - processPackages [clouding-server-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clouding_server_manager-1.0.0.tar.gz tmp/clouding_server_manager-1.0.1.tar.gz --markdown 20230526/c/clouding-server-manager/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-26 12:35:07] INFO root fetch - processPackages [neo4j]: Downloading https://files.pythonhosted.org/packages/e9/b7/faa4628ea379f9e43772ca4448356a35e58ce44306a91117f2892487e187/neo4j-5.9.0.tar.gz
+[2023-05-26 12:35:07] INFO root fetch - processPackages [pyhamsys]: executing diffoscope
+[2023-05-26 12:35:07] INFO root fetch - processPackages [pyhamsys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhamsys-0.0.4.tar.gz tmp/pyhamsys-0.0.5.tar.gz --markdown 20230526/p/pyhamsys/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-26 12:35:07] INFO root fetch - processPackages [neo4j-driver]: Downloading https://files.pythonhosted.org/packages/c9/1e/14751507bec61648b83204fc90b3840d616876294276092a7ebf4dd51a59/neo4j-driver-5.9.0.tar.gz
+[2023-05-26 12:35:07] INFO root fetch - processPackages [pdocr-rpc]: Downloading https://files.pythonhosted.org/packages/83/68/59183724b772698087ac1f1232e9554b67e86c4968fcef42ab3e06e9bb0e/pdocr-rpc-1.0.1.tar.gz
+[2023-05-26 12:35:07] INFO root fetch - processPackages [neo4j]: executing diffoscope
+[2023-05-26 12:35:07] INFO root fetch - processPackages [neo4j]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neo4j-5.8.1.tar.gz tmp/neo4j-5.9.0.tar.gz --markdown 20230526/n/neo4j/5.8.1-5.9.0/diff.md --exclude *.pyd
+[2023-05-26 12:35:07] INFO root fetch - processPackages [xw-utils]: executing diffoscope
+[2023-05-26 12:35:07] INFO root fetch - processPackages [xw-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xw_utils-1.0.8-cp39-cp39-win_amd64.whl.zip tmp/xw_utils-1.0.9-cp39-cp39-win_amd64.whl.zip --markdown 20230526/x/xw-utils/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-26 12:35:07] INFO root fetch - processPackages [neo4j-driver]: executing diffoscope
+[2023-05-26 12:35:07] INFO root fetch - processPackages [neo4j-driver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neo4j-driver-5.8.1.tar.gz tmp/neo4j-driver-5.9.0.tar.gz --markdown 20230526/n/neo4j-driver/5.8.1-5.9.0/diff.md --exclude *.pyd
+[2023-05-26 12:35:07] INFO root fetch - processPackages [peakventures]: Downloading https://files.pythonhosted.org/packages/b3/a7/f0c0d3af43b49c98f221672d3110480881a7cbfe0e0da6f69dc021a4fdb1/peakventures-1.1.0.tar.gz
+[2023-05-26 12:35:07] INFO root fetch - processPackages [dvg-randomizer]: Downloading https://files.pythonhosted.org/packages/89/82/2d06de4719f41d08d93c518c7a585dbb2be4ba74eee7aa8e45a934b1ba77/dvg-randomizer-1.4.0.tar.gz
+[2023-05-26 12:35:07] INFO root fetch - processPackages [pdocr-rpc]: executing diffoscope
+[2023-05-26 12:35:07] INFO root fetch - processPackages [pdocr-rpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdocr-rpc-1.0.0.tar.gz tmp/pdocr-rpc-1.0.1.tar.gz --markdown 20230526/p/pdocr-rpc/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-26 12:35:07] INFO root fetch - processPackages [dvg-randomizer]: executing diffoscope
+[2023-05-26 12:35:07] INFO root fetch - processPackages [dvg-randomizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dvg-randomizer-1.3.3.tar.gz tmp/dvg-randomizer-1.4.0.tar.gz --markdown 20230526/d/dvg-randomizer/1.3.3-1.4.0/diff.md --exclude *.pyd
+[2023-05-26 12:35:07] INFO root fetch - processPackages [peakventures]: executing diffoscope
+[2023-05-26 12:35:07] INFO root fetch - processPackages [peakventures]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peakventures-1.0.5.tar.gz tmp/peakventures-1.1.0.tar.gz --markdown 20230526/p/peakventures/1.0.5-1.1.0/diff.md --exclude *.pyd
+[2023-05-26 12:35:08] INFO root fetch - processPackages [ucampurestorage]: executing diffoscope
+[2023-05-26 12:35:08] INFO root fetch - processPackages [ucampurestorage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ucampurestorage-1.1.1.tar.gz tmp/ucampurestorage-1.1.2.tar.gz --markdown 20230526/u/ucampurestorage/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-26 12:35:09] INFO root fetch - processPackages [clouding-server-manager]: Start processing: alibabacloud-dingtalk
+[2023-05-26 12:35:09] INFO root fetch - main [MainThread]: End processing [clouding-server-manager]: success
+[2023-05-26 12:35:09] INFO root fetch - processPackages [xspf-lib]: Start processing: racetrack-client
+[2023-05-26 12:35:09] INFO root fetch - main [MainThread]: End processing [xspf-lib]: success
+[2023-05-26 12:35:09] INFO root fetch - processPackages [pyhamsys]: Start processing: pmx-biobb
+[2023-05-26 12:35:09] INFO root fetch - main [MainThread]: End processing [pyhamsys]: success
+[2023-05-26 12:35:09] INFO root fetch - processPackages [alibabacloud-dingtalk]: New version: [2.0.17] Old Version: [2.0.16]
+[2023-05-26 12:35:09] INFO root fetch - processPackages [pmx-biobb]: New version: [3.0.2] Old Version: [3.0.1]
+[2023-05-26 12:35:09] INFO root fetch - processPackages [racetrack-client]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-05-26 12:35:09] INFO root fetch - processPackages [pmx-biobb]: executing diffoscope
+[2023-05-26 12:35:09] INFO root fetch - processPackages [pmx-biobb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pmx_biobb-3.0.1.tar.gz tmp/pmx_biobb-3.0.2.tar.gz --markdown 20230526/p/pmx-biobb/3.0.1-3.0.2/diff.md --exclude *.pyd
+[2023-05-26 12:35:09] INFO root fetch - processPackages [alibabacloud-dingtalk]: Downloading https://files.pythonhosted.org/packages/c8/a0/b23e86cee505adc83a571149b922866ca334ef46fcab6f5ad835ea7a03d6/alibabacloud_dingtalk-2.0.17.tar.gz
+[2023-05-26 12:35:09] INFO root fetch - processPackages [xw-utils]: Start processing: mlserver
+[2023-05-26 12:35:09] INFO root fetch - main [MainThread]: End processing [xw-utils]: success
+[2023-05-26 12:35:09] INFO root fetch - processPackages [racetrack-client]: executing diffoscope
+[2023-05-26 12:35:09] INFO root fetch - processPackages [racetrack-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/racetrack-client-2.9.0.tar.gz tmp/racetrack-client-2.9.1.tar.gz --markdown 20230526/r/racetrack-client/2.9.0-2.9.1/diff.md --exclude *.pyd
+[2023-05-26 12:35:09] INFO root fetch - processPackages [mlserver]: New version: [1.4.0.dev2] Old Version: [1.3.3rc1]
+[2023-05-26 12:35:10] INFO root fetch - processPackages [mlserver]: Downloading https://files.pythonhosted.org/packages/3e/6a/3ae1b289fa537e2e723861b955ca12e3405c94c57eeefd87cd2e0ba394a8/mlserver-1.3.3rc1.tar.gz
+[2023-05-26 12:35:10] INFO root fetch - processPackages [alibabacloud-dingtalk]: executing diffoscope
+[2023-05-26 12:35:10] INFO root fetch - processPackages [alibabacloud-dingtalk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_dingtalk-2.0.16.tar.gz tmp/alibabacloud_dingtalk-2.0.17.tar.gz --markdown 20230526/a/alibabacloud-dingtalk/2.0.16-2.0.17/diff.md --exclude *.pyd
+[2023-05-26 12:35:10] INFO root fetch - processPackages [dvg-randomizer]: Start processing: mlserver-alibi-detect
+[2023-05-26 12:35:10] INFO root fetch - main [MainThread]: End processing [dvg-randomizer]: success
+[2023-05-26 12:35:10] INFO root fetch - processPackages [pdocr-rpc]: Start processing: mlserver-mllib
+[2023-05-26 12:35:10] INFO root fetch - main [MainThread]: End processing [pdocr-rpc]: success
+[2023-05-26 12:35:10] INFO root fetch - processPackages [neo4j]: Start processing: mlserver-huggingface
+[2023-05-26 12:35:10] INFO root fetch - main [MainThread]: End processing [neo4j]: success
+[2023-05-26 12:35:10] INFO root fetch - processPackages [peakventures]: Start processing: mlserver-mlflow
+[2023-05-26 12:35:10] INFO root fetch - main [MainThread]: End processing [peakventures]: success
+[2023-05-26 12:35:10] INFO root fetch - processPackages [mlserver]: Downloading https://files.pythonhosted.org/packages/5d/e9/3e344dce4950484ad82639f03f62c93f144f135e8d5e5f9af13e64b531a4/mlserver-1.4.0.dev2.tar.gz
+[2023-05-26 12:35:10] INFO root fetch - processPackages [mlserver-alibi-detect]: New version: [1.4.0.dev2] Old Version: [1.3.3rc1]
+[2023-05-26 12:35:10] INFO root fetch - processPackages [mlserver-mllib]: New version: [1.4.0.dev2] Old Version: [1.3.3rc1]
+[2023-05-26 12:35:10] INFO root fetch - processPackages [mlserver-mlflow]: New version: [1.4.0.dev2] Old Version: [1.3.3rc1]
+[2023-05-26 12:35:10] INFO root fetch - processPackages [mlserver]: executing diffoscope
+[2023-05-26 12:35:10] INFO root fetch - processPackages [mlserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-1.3.3rc1.tar.gz tmp/mlserver-1.4.0.dev2.tar.gz --markdown 20230526/m/mlserver/1.3.3rc1-1.4.0.dev2/diff.md --exclude *.pyd
+[2023-05-26 12:35:10] INFO root fetch - processPackages [mlserver-huggingface]: New version: [1.4.0.dev2] Old Version: [1.3.3rc1]
+[2023-05-26 12:35:10] INFO root fetch - processPackages [mlserver-alibi-detect]: Downloading https://files.pythonhosted.org/packages/9c/f6/47e514712a6ac388dc06c63a445cc44307685ae7523f62598afa4d900951/mlserver-alibi-detect-1.3.3rc1.tar.gz
+[2023-05-26 12:35:10] INFO root fetch - processPackages [mlserver-mllib]: Downloading https://files.pythonhosted.org/packages/a7/3a/61a44475e5b4689d6d541da93fa926c59671bf6fa0d10fc751b639686b11/mlserver-mllib-1.3.3rc1.tar.gz
+[2023-05-26 12:35:10] INFO root fetch - processPackages [mlserver-mlflow]: Downloading https://files.pythonhosted.org/packages/c0/35/3c7f9d3b579d187d8a1ed6d2bbba31c679ff0c4cd16a299283787c00ecad/mlserver-mlflow-1.3.3rc1.tar.gz
+[2023-05-26 12:35:10] INFO root fetch - processPackages [mlserver-huggingface]: Downloading https://files.pythonhosted.org/packages/ef/82/c9fa8428038a55ee0ff6f90ca5afa9e227d7ea7e84aa21de379fc95e6336/mlserver-huggingface-1.3.3rc1.tar.gz
+[2023-05-26 12:35:11] INFO root fetch - processPackages [mlserver-alibi-detect]: Downloading https://files.pythonhosted.org/packages/1e/9b/d8de9dd6f90d71c11ff42051fb1c8ea4f84b45d6f1568c2847cbef247ac6/mlserver-alibi-detect-1.4.0.dev2.tar.gz
+[2023-05-26 12:35:11] INFO root fetch - processPackages [mlserver-mllib]: Downloading https://files.pythonhosted.org/packages/58/bb/f4a9f4208e47476294a4fe6e1e997c99d4884bae6544ba565f968ebcd0b4/mlserver-mllib-1.4.0.dev2.tar.gz
+[2023-05-26 12:35:11] INFO root fetch - processPackages [mlserver-mlflow]: Downloading https://files.pythonhosted.org/packages/30/19/1aaf2cad4df35702cdb9d097b2df2c2b58d1cbfb9df3c6f3e39b559a2264/mlserver-mlflow-1.4.0.dev2.tar.gz
+[2023-05-26 12:35:11] INFO root fetch - processPackages [mlserver-alibi-detect]: executing diffoscope
+[2023-05-26 12:35:11] INFO root fetch - processPackages [mlserver-alibi-detect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-alibi-detect-1.3.3rc1.tar.gz tmp/mlserver-alibi-detect-1.4.0.dev2.tar.gz --markdown 20230526/m/mlserver-alibi-detect/1.3.3rc1-1.4.0.dev2/diff.md --exclude *.pyd
+[2023-05-26 12:35:11] INFO root fetch - processPackages [mlserver-mllib]: executing diffoscope
+[2023-05-26 12:35:11] INFO root fetch - processPackages [mlserver-mllib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-mllib-1.3.3rc1.tar.gz tmp/mlserver-mllib-1.4.0.dev2.tar.gz --markdown 20230526/m/mlserver-mllib/1.3.3rc1-1.4.0.dev2/diff.md --exclude *.pyd
+[2023-05-26 12:35:11] INFO root fetch - processPackages [mlserver-huggingface]: Downloading https://files.pythonhosted.org/packages/f0/83/2735b6f081605f7c92fa3d85a4716cadd7b0eb1a50a71cdf6ec89daf1698/mlserver-huggingface-1.4.0.dev2.tar.gz
+[2023-05-26 12:35:11] INFO root fetch - processPackages [mlserver-mlflow]: executing diffoscope
+[2023-05-26 12:35:11] INFO root fetch - processPackages [mlserver-mlflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-mlflow-1.3.3rc1.tar.gz tmp/mlserver-mlflow-1.4.0.dev2.tar.gz --markdown 20230526/m/mlserver-mlflow/1.3.3rc1-1.4.0.dev2/diff.md --exclude *.pyd
+[2023-05-26 12:35:11] INFO root fetch - processPackages [mlserver-huggingface]: executing diffoscope
+[2023-05-26 12:35:11] INFO root fetch - processPackages [mlserver-huggingface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-huggingface-1.3.3rc1.tar.gz tmp/mlserver-huggingface-1.4.0.dev2.tar.gz --markdown 20230526/m/mlserver-huggingface/1.3.3rc1-1.4.0.dev2/diff.md --exclude *.pyd
+[2023-05-26 12:35:13] INFO root fetch - processPackages [racetrack-client]: Start processing: mlserver-xgboost
+[2023-05-26 12:35:13] INFO root fetch - main [MainThread]: End processing [racetrack-client]: success
+[2023-05-26 12:35:13] INFO root fetch - processPackages [mlserver-xgboost]: New version: [1.4.0.dev2] Old Version: [1.3.3rc1]
+[2023-05-26 12:35:13] INFO root fetch - processPackages [mlserver-xgboost]: Downloading https://files.pythonhosted.org/packages/b1/09/68f151c42880e62c80dbdb4046de33c2a245d7c132cb47d856c97b0f8c9c/mlserver-xgboost-1.3.3rc1.tar.gz
+[2023-05-26 12:35:13] INFO root fetch - main [MainThread]: End processing [neo4j-driver]: success
+[2023-05-26 12:35:13] INFO root fetch - processPackages [mlserver-xgboost]: Downloading https://files.pythonhosted.org/packages/a9/4e/d37fe531858b5a0b361eadf69589e29ca81641b6d2581ebfb3010d756d63/mlserver-xgboost-1.4.0.dev2.tar.gz
+[2023-05-26 12:35:13] INFO root fetch - processPackages [mlserver-xgboost]: executing diffoscope
+[2023-05-26 12:35:13] INFO root fetch - processPackages [mlserver-xgboost]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-xgboost-1.3.3rc1.tar.gz tmp/mlserver-xgboost-1.4.0.dev2.tar.gz --markdown 20230526/m/mlserver-xgboost/1.3.3rc1-1.4.0.dev2/diff.md --exclude *.pyd
+[2023-05-26 12:35:13] INFO root fetch - main [MainThread]: End processing [mlserver-mllib]: success
+[2023-05-26 12:35:13] INFO root fetch - main [MainThread]: End processing [mlserver]: success
+[2023-05-26 12:35:13] INFO root fetch - main [MainThread]: End processing [mlserver-alibi-detect]: success
+[2023-05-26 12:35:13] INFO root fetch - main [MainThread]: End processing [mlserver-mlflow]: success
+[2023-05-26 12:35:14] INFO root fetch - main [MainThread]: End processing [mlserver-huggingface]: success
+[2023-05-26 12:35:14] INFO root fetch - main [MainThread]: End processing [ucampurestorage]: success
+[2023-05-26 12:35:15] INFO root fetch - main [MainThread]: End processing [mlserver-xgboost]: success
+[2023-05-26 12:35:15] INFO root fetch - main [MainThread]: End processing [alibabacloud-dingtalk]: success
+[2023-05-26 12:35:17] INFO root fetch - main [MainThread]: End processing [pmx-biobb]: success
+[2023-05-26 12:35:17] INFO root fetch - main [MainThread]: Store serial: [18261365]
