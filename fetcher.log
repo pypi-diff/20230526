@@ -4058,3 +4058,39 @@
 [2023-05-26 03:48:00] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
 [2023-05-26 03:48:01] INFO root fetch - main [MainThread]: End processing [as400]: success
 [2023-05-26 03:48:01] INFO root fetch - main [MainThread]: Store serial: [18256044]
+[2023-05-26 03:53:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18256044]
+[2023-05-26 03:53:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-26 03:53:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yins-music
+[2023-05-26 03:53:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wnutils
+[2023-05-26 03:53:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deskaone-sdk-scrypt-2023
+[2023-05-26 03:53:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: uwsift
+[2023-05-26 03:53:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tmasque
+[2023-05-26 03:53:12] INFO root fetch - processPackages [yins-music]: New version: [0.0.7.dev1] Old Version: [0.0.6]
+[2023-05-26 03:53:12] INFO root fetch - processPackages [wnutils]: New version: [2.7.2] Old Version: [2.7.1]
+[2023-05-26 03:53:12] INFO root fetch - processPackages [deskaone-sdk-scrypt-2023]: New version: [1.1.7] Old Version: [1.1.6]
+[2023-05-26 03:53:12] INFO root fetch - processPackages [tmasque]: New version: [0.8.4] Old Version: [0.8.3]
+[2023-05-26 03:53:12] INFO root fetch - processPackages [uwsift]: New version: [2.0.0b0] Old Version: [1.2.3]
+[2023-05-26 03:53:12] INFO root fetch - processPackages [wnutils]: Downloading https://files.pythonhosted.org/packages/07/7b/8649c10a3b1924628a5d6df236432f06ac1f7dee41f43d702330f19f0dca/wnutils-2.7.1.tar.gz
+[2023-05-26 03:53:12] INFO root fetch - processPackages [uwsift]: Downloading https://files.pythonhosted.org/packages/ce/e5/d93a69b6eb166b988065d25f1c3bf291567a6c9932482e9ad3ddcc0bea16/uwsift-1.2.3.tar.gz
+[2023-05-26 03:53:12] INFO root fetch - processPackages [tmasque]: Downloading https://files.pythonhosted.org/packages/53/4c/1fc564a21ba9a690deadbd0e3876643ff82c72fd59a16c948e6ee7c4de65/tmasque-0.8.3.tar.gz
+[2023-05-26 03:53:12] INFO root fetch - processPackages [yins-music]: Downloading https://files.pythonhosted.org/packages/98/28/8d9989ae9e0a1271b1d07bca29d16848cbf751a9259c6a941bdac32a3c0d/yins-music-0.0.7.dev1.tar.gz
+[2023-05-26 03:53:12] INFO root fetch - processPackages [wnutils]: Downloading https://files.pythonhosted.org/packages/e5/74/9e18838f63051a5955bc173c051cf3d9e2f257676a230a7d0f35d4123e35/wnutils-2.7.2.tar.gz
+[2023-05-26 03:53:12] INFO root fetch - processPackages [deskaone-sdk-scrypt-2023]: Downloading https://files.pythonhosted.org/packages/6a/d1/634af53779e69127e7f48314b8f63e37bbfbdf9bd6825b4ede102eda9007/deskaone_sdk_scrypt_2023-1.1.7.tar.gz
+[2023-05-26 03:53:12] INFO root fetch - processPackages [yins-music]: executing diffoscope
+[2023-05-26 03:53:12] INFO root fetch - processPackages [yins-music]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yins-music-0.0.6.tar.gz tmp/yins-music-0.0.7.dev1.tar.gz --markdown 20230526/y/yins-music/0.0.6-0.0.7.dev1/diff.md --exclude *.pyd
+[2023-05-26 03:53:12] INFO root fetch - processPackages [wnutils]: executing diffoscope
+[2023-05-26 03:53:12] INFO root fetch - processPackages [wnutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wnutils-2.7.1.tar.gz tmp/wnutils-2.7.2.tar.gz --markdown 20230526/w/wnutils/2.7.1-2.7.2/diff.md --exclude *.pyd
+[2023-05-26 03:53:12] INFO root fetch - processPackages [tmasque]: Downloading https://files.pythonhosted.org/packages/6b/4c/063ccda4b98341a15188136441f547264188ef6866d9fc710326ffc356d9/tmasque-0.8.4.tar.gz
+[2023-05-26 03:53:12] INFO root fetch - processPackages [deskaone-sdk-scrypt-2023]: executing diffoscope
+[2023-05-26 03:53:12] INFO root fetch - processPackages [deskaone-sdk-scrypt-2023]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deskaone_sdk_scrypt_2023-1.1.6.tar.gz tmp/deskaone_sdk_scrypt_2023-1.1.7.tar.gz --markdown 20230526/d/deskaone-sdk-scrypt-2023/1.1.6-1.1.7/diff.md --exclude *.pyd
+[2023-05-26 03:53:13] INFO root fetch - processPackages [tmasque]: executing diffoscope
+[2023-05-26 03:53:13] INFO root fetch - processPackages [tmasque]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmasque-0.8.3.tar.gz tmp/tmasque-0.8.4.tar.gz --markdown 20230526/t/tmasque/0.8.3-0.8.4/diff.md --exclude *.pyd
+[2023-05-26 03:53:13] INFO root fetch - processPackages [uwsift]: Downloading https://files.pythonhosted.org/packages/54/01/937fbe44567633c39cf1f18b739f8232380db5a13b6eb025762f50d07528/uwsift-2.0.0b0.tar.gz
+[2023-05-26 03:53:13] INFO root fetch - main [MainThread]: End processing [yins-music]: success
+[2023-05-26 03:53:14] INFO root fetch - main [MainThread]: End processing [deskaone-sdk-scrypt-2023]: success
+[2023-05-26 03:53:14] INFO root fetch - main [MainThread]: End processing [wnutils]: success
+[2023-05-26 03:53:14] INFO root fetch - main [MainThread]: End processing [tmasque]: success
+[2023-05-26 03:53:14] INFO root fetch - processPackages [uwsift]: executing diffoscope
+[2023-05-26 03:53:14] INFO root fetch - processPackages [uwsift]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uwsift-1.2.3.tar.gz tmp/uwsift-2.0.0b0.tar.gz --markdown 20230526/u/uwsift/1.2.3-2.0.0b0/diff.md --exclude *.pyd
+[2023-05-26 03:53:21] INFO root fetch - main [MainThread]: End processing [uwsift]: success
+[2023-05-26 03:53:21] INFO root fetch - main [MainThread]: Store serial: [18256075]
