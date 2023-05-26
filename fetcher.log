@@ -17512,3 +17512,93 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 16:23:44] INFO root fetch - main [MainThread]: End processing [c65faucet]: success
 [2023-05-26 16:24:28] INFO root fetch - main [MainThread]: End processing [sirepo-bluesky]: success
 [2023-05-26 16:24:28] INFO root fetch - main [MainThread]: Store serial: [18264084]
+[2023-05-26 16:29:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18264084]
+[2023-05-26 16:29:37] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-26 16:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: indico-plugins
+[2023-05-26 16:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mono-dense-keras
+[2023-05-26 16:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rigi
+[2023-05-26 16:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: numerous.sdk
+[2023-05-26 16:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-sky
+[2023-05-26 16:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wheeel
+[2023-05-26 16:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: graham-client
+[2023-05-26 16:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tir-framework
+[2023-05-26 16:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: rege
+[2023-05-26 16:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: slot-machine-serializers
+[2023-05-26 16:29:37] INFO root fetch - processPackages [mono-dense-keras]: New version: [0.0.6rc1] Old Version: [0.0.6rc0]
+[2023-05-26 16:29:37] WARNING root fetch - processPackages [rigi]: Skipping, unable to determine old version
+[2023-05-26 16:29:37] INFO root fetch - processPackages [rigi]: Start processing: anonupload
+[2023-05-26 16:29:37] INFO root fetch - main [MainThread]: End processing [rigi] error
+[2023-05-26 16:29:37] INFO root fetch - processPackages [indico-plugins]: New version: [3.2.1] Old Version: [3.2]
+[2023-05-26 16:29:37] INFO root fetch - processPackages [graham-client]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-26 16:29:37] INFO root fetch - processPackages [numerous.sdk]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-26 16:29:37] INFO root fetch - processPackages [nonebot-plugin-sky]: New version: [2.2.8] Old Version: [2.2.7]
+[2023-05-26 16:29:37] INFO root fetch - processPackages [slot-machine-serializers]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-26 16:29:37] WARNING root fetch - processPackages [rege]: Skipping, unable to determine old version
+[2023-05-26 16:29:37] INFO root fetch - processPackages [rege]: Start processing: time-series-test
+[2023-05-26 16:29:37] INFO root fetch - main [MainThread]: End processing [rege] error
+[2023-05-26 16:29:37] WARNING root fetch - processPackages [wheeel]: Skipping, unable to determine old version
+[2023-05-26 16:29:37] INFO root fetch - processPackages [anonupload]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-05-26 16:29:37] INFO root fetch - processPackages [wheeel]: Start processing: mono-dense-keras
+[2023-05-26 16:29:37] INFO root fetch - main [MainThread]: End processing [wheeel] error
+[2023-05-26 16:29:37] INFO root fetch - processPackages [tir-framework]: New version: [1.20.5] Old Version: [1.20.4]
+[2023-05-26 16:29:38] INFO root fetch - processPackages [time-series-test]: New version: [0.9.2] Old Version: [0.7.2]
+[2023-05-26 16:29:38] INFO root fetch - processPackages [mono-dense-keras]: New version: [0.0.6rc1] Old Version: [0.0.6rc0]
+[2023-05-26 16:29:38] INFO root fetch - processPackages [numerous.sdk]: executing diffoscope
+[2023-05-26 16:29:38] INFO root fetch - processPackages [numerous.sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numerous.sdk-0.8.0.tar.gz tmp/numerous.sdk-0.9.0.tar.gz --markdown 20230526/n/numerous.sdk/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-26 16:29:38] INFO root fetch - processPackages [mono-dense-keras]: Downloading https://files.pythonhosted.org/packages/a5/8d/f5db31fed65b98e2e06d9856849302a11a38ca42ba018b24c66a9fca7a43/mono-dense-keras-0.0.6rc0.tar.gz
+[2023-05-26 16:29:38] INFO root fetch - processPackages [mono-dense-keras]: Downloading https://files.pythonhosted.org/packages/a5/8d/f5db31fed65b98e2e06d9856849302a11a38ca42ba018b24c66a9fca7a43/mono-dense-keras-0.0.6rc0.tar.gz
+[2023-05-26 16:29:38] INFO root fetch - processPackages [indico-plugins]: Downloading https://files.pythonhosted.org/packages/dd/69/89de1de455734a99a8569598adaebd43d89b81df5a3ed846ba4be05ffc6c/indico_plugins-3.2-py3-none-any.whl
+[2023-05-26 16:29:38] INFO root fetch - processPackages [graham-client]: Downloading https://files.pythonhosted.org/packages/09/cf/2e7f26f9506736cf52307a9918fc7b03a296d7458c58e941bb3a5a476a1f/graham_client-0.0.3-py3.10.egg
+[2023-05-26 16:29:38] INFO root fetch - processPackages [slot-machine-serializers]: Downloading https://files.pythonhosted.org/packages/51/c6/72d958bc532b5cbab07aff7efbd9d87228d6a2f8fdd5bb448cbb99a80a50/slot_machine_serializers-0.3.0.tar.gz
+[2023-05-26 16:29:38] INFO root fetch - processPackages [tir-framework]: Downloading https://files.pythonhosted.org/packages/d9/f1/ebfe1c6d016495cbef4739cc6fc563cd37e405eebb225fddb59c49e8cb67/tir_framework-1.20.4.tar.gz
+[2023-05-26 16:29:38] INFO root fetch - processPackages [time-series-test]: Downloading https://files.pythonhosted.org/packages/bf/1e/bb5d590400dde06fc2df63ba96c1d7e7cb7d861d9100f8069c6cf6165cc7/time_series_test-0.7.2.tar.gz
+[2023-05-26 16:29:38] INFO root fetch - processPackages [nonebot-plugin-sky]: Downloading https://files.pythonhosted.org/packages/0d/bd/70496e11fdaa457f260ccb36846202df16e75e4f40c9b2bdb58406ab8047/nonebot-plugin-sky-2.2.7.tar.gz
+[2023-05-26 16:29:38] INFO root fetch - processPackages [graham-client]: executing diffoscope
+[2023-05-26 16:29:38] INFO root fetch - processPackages [graham-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graham_client-0.0.2-py3.10.egg tmp/graham_client-0.0.3-py3.10.egg --markdown 20230526/g/graham-client/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-26 16:29:38] INFO root fetch - processPackages [anonupload]: Downloading https://files.pythonhosted.org/packages/cf/7b/063aed4118f6319f5b889974ab218d9aff4c0a27b5413dddeaea9b60286b/anonupload-1.1.6-py3-none-any.whl
+[2023-05-26 16:29:38] WARNING root fetch - processPackages [tir-framework]: Skipping package: exceeds size limit 15882210>=10485760
+[2023-05-26 16:29:38] INFO root fetch - processPackages [tir-framework]: Start processing: nunchaku
+[2023-05-26 16:29:38] INFO root fetch - main [MainThread]: End processing [tir-framework] error
+[2023-05-26 16:29:38] INFO root fetch - processPackages [nunchaku]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-26 16:29:38] INFO root fetch - processPackages [indico-plugins]: Downloading https://files.pythonhosted.org/packages/e9/74/7a8ce98df139033c06e5756d85892bfa6bf092a5964c0bee6b5c0b135c01/indico_plugins-3.2.1-py3-none-any.whl
+[2023-05-26 16:29:38] INFO root fetch - processPackages [anonupload]: executing diffoscope
+[2023-05-26 16:29:38] INFO root fetch - processPackages [anonupload]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anonupload-1.1.5-py3-none-any.whl.zip tmp/anonupload-1.1.6-py3-none-any.whl.zip --markdown 20230526/a/anonupload/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-05-26 16:29:38] INFO root fetch - processPackages [mono-dense-keras]: Downloading https://files.pythonhosted.org/packages/bf/2a/fa2b7fe048794cc8ffd423eace55df3ec38226eb86436452924fb75dffb4/mono-dense-keras-0.0.6rc1.tar.gz
+[2023-05-26 16:29:38] INFO root fetch - processPackages [mono-dense-keras]: Downloading https://files.pythonhosted.org/packages/bf/2a/fa2b7fe048794cc8ffd423eace55df3ec38226eb86436452924fb75dffb4/mono-dense-keras-0.0.6rc1.tar.gz
+[2023-05-26 16:29:38] INFO root fetch - processPackages [indico-plugins]: executing diffoscope
+[2023-05-26 16:29:38] INFO root fetch - processPackages [indico-plugins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indico_plugins-3.2-py3-none-any.whl.zip tmp/indico_plugins-3.2.1-py3-none-any.whl.zip --markdown 20230526/i/indico-plugins/3.2-3.2.1/diff.md --exclude *.pyd
+[2023-05-26 16:29:38] INFO root fetch - processPackages [slot-machine-serializers]: Downloading https://files.pythonhosted.org/packages/dd/da/632583e04996eebf1a10ce925acfc777cbf53079668f63f44acaf161b878/slot_machine_serializers-0.4.0.tar.gz
+[2023-05-26 16:29:38] INFO root fetch - processPackages [nunchaku]: Downloading https://files.pythonhosted.org/packages/89/f9/0d457f52e7312f50884bba65c472eb79a9f40093f57a2d1d7dbb80644c45/nunchaku-0.8.0.tar.gz
+[2023-05-26 16:29:38] INFO root fetch - processPackages [time-series-test]: Downloading https://files.pythonhosted.org/packages/05/ab/c760440235539580048941b39e21e15e9ca9774e41debe8baaa3e696dcf0/time_series_test-0.9.2.tar.gz
+[2023-05-26 16:29:38] INFO root fetch - processPackages [mono-dense-keras]: executing diffoscope
+[2023-05-26 16:29:38] INFO root fetch - processPackages [mono-dense-keras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mono-dense-keras-0.0.6rc0.tar.gz tmp/mono-dense-keras-0.0.6rc1.tar.gz --markdown 20230526/m/mono-dense-keras/0.0.6rc0-0.0.6rc1/diff.md --exclude *.pyd
+[2023-05-26 16:29:38] INFO root fetch - processPackages [slot-machine-serializers]: executing diffoscope
+[2023-05-26 16:29:38] INFO root fetch - processPackages [slot-machine-serializers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slot_machine_serializers-0.3.0.tar.gz tmp/slot_machine_serializers-0.4.0.tar.gz --markdown 20230526/s/slot-machine-serializers/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-26 16:29:38] INFO root fetch - processPackages [mono-dense-keras]: executing diffoscope
+[2023-05-26 16:29:38] INFO root fetch - processPackages [mono-dense-keras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mono-dense-keras-0.0.6rc0.tar.gz tmp/mono-dense-keras-0.0.6rc1.tar.gz --markdown 20230526/m/mono-dense-keras/0.0.6rc0-0.0.6rc1/diff.md --exclude *.pyd
+[2023-05-26 16:29:38] INFO root fetch - processPackages [nonebot-plugin-sky]: Downloading https://files.pythonhosted.org/packages/e3/07/40c74067ba6dda4632c21140410f33fb336e4eea5ba25a68ced06568e07d/nonebot-plugin-sky-2.2.8.tar.gz
+[2023-05-26 16:29:38] INFO root fetch - processPackages [time-series-test]: executing diffoscope
+[2023-05-26 16:29:38] INFO root fetch - processPackages [time-series-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/time_series_test-0.7.2.tar.gz tmp/time_series_test-0.9.2.tar.gz --markdown 20230526/t/time-series-test/0.7.2-0.9.2/diff.md --exclude *.pyd
+[2023-05-26 16:29:38] INFO root fetch - processPackages [nonebot-plugin-sky]: executing diffoscope
+[2023-05-26 16:29:38] INFO root fetch - processPackages [nonebot-plugin-sky]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-sky-2.2.7.tar.gz tmp/nonebot-plugin-sky-2.2.8.tar.gz --markdown 20230526/n/nonebot-plugin-sky/2.2.7-2.2.8/diff.md --exclude *.pyd
+[2023-05-26 16:29:38] INFO root fetch - processPackages [nunchaku]: Downloading https://files.pythonhosted.org/packages/47/fd/ee1b9ab8e0926d89375c4d1fd31e401e579194cec021026c7f29618c4623/nunchaku-0.9.0.tar.gz
+[2023-05-26 16:29:39] INFO root fetch - processPackages [nunchaku]: executing diffoscope
+[2023-05-26 16:29:39] INFO root fetch - processPackages [nunchaku]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nunchaku-0.8.0.tar.gz tmp/nunchaku-0.9.0.tar.gz --markdown 20230526/n/nunchaku/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-26 16:29:39] INFO root fetch - processPackages [numerous.sdk]: Start processing: spreadsheet-migrator
+[2023-05-26 16:29:39] INFO root fetch - main [MainThread]: End processing [numerous.sdk]: success
+[2023-05-26 16:29:39] INFO root fetch - processPackages [spreadsheet-migrator]: New version: [0.2] Old Version: [0.1]
+[2023-05-26 16:29:39] INFO root fetch - processPackages [spreadsheet-migrator]: Downloading https://files.pythonhosted.org/packages/8d/20/51c0fd58632d5f50bb54100a49f104763ade633f2558f9ba0dcc5f8dc68e/spreadsheet-migrator-0.1.tar.gz
+[2023-05-26 16:29:40] INFO root fetch - main [MainThread]: End processing [anonupload]: success
+[2023-05-26 16:29:40] INFO root fetch - processPackages [spreadsheet-migrator]: Downloading https://files.pythonhosted.org/packages/66/e6/cb9449c48031e89153c58aff5677fd322a91269120c5736874b5bc9006fb/spreadsheet-migrator-0.2.tar.gz
+[2023-05-26 16:29:40] INFO root fetch - main [MainThread]: End processing [graham-client]: success
+[2023-05-26 16:29:40] INFO root fetch - processPackages [spreadsheet-migrator]: executing diffoscope
+[2023-05-26 16:29:40] INFO root fetch - processPackages [spreadsheet-migrator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spreadsheet-migrator-0.1.tar.gz tmp/spreadsheet-migrator-0.2.tar.gz --markdown 20230526/s/spreadsheet-migrator/0.1-0.2/diff.md --exclude *.pyd
+[2023-05-26 16:29:41] INFO root fetch - main [MainThread]: End processing [slot-machine-serializers]: success
+[2023-05-26 16:29:41] INFO root fetch - main [MainThread]: End processing [time-series-test]: success
+[2023-05-26 16:29:41] INFO root fetch - main [MainThread]: End processing [mono-dense-keras]: success
+[2023-05-26 16:29:41] INFO root fetch - main [MainThread]: End processing [indico-plugins]: success
+[2023-05-26 16:29:41] INFO root fetch - main [MainThread]: End processing [mono-dense-keras]: success
+[2023-05-26 16:29:41] INFO root fetch - main [MainThread]: End processing [nunchaku]: success
+[2023-05-26 16:29:42] INFO root fetch - main [MainThread]: End processing [spreadsheet-migrator]: success
+[2023-05-26 16:29:43] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-sky]: success
+[2023-05-26 16:29:43] INFO root fetch - main [MainThread]: Store serial: [18264133]
