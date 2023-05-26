@@ -1850,3 +1850,51 @@
 [2023-05-26 02:56:40] INFO root fetch - main [MainThread]: End processing [hiperwalk]: success
 [2023-05-26 02:56:59] INFO root fetch - main [MainThread]: End processing [bioversions]: success
 [2023-05-26 02:56:59] INFO root fetch - main [MainThread]: Store serial: [18254714]
+[2023-05-26 03:02:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18254714]
+[2023-05-26 03:02:08] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-26 03:02:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: acryl-datahub
+[2023-05-26 03:02:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aemcmc-nightly
+[2023-05-26 03:02:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: acryl-datahub-airflow-plugin
+[2023-05-26 03:02:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: osqp
+[2023-05-26 03:02:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-emrserverless-with-delta-lake
+[2023-05-26 03:02:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyagrum-nightly
+[2023-05-26 03:02:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: miresta
+[2023-05-26 03:02:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdk-lambda-layer-curl
+[2023-05-26 03:02:08] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: New version: [0.9.6rc1] Old Version: [0.9.6rc0]
+[2023-05-26 03:02:08] INFO root fetch - processPackages [miresta]: New version: [0.5] Old Version: [0.3]
+[2023-05-26 03:02:08] INFO root fetch - processPackages [osqp]: New version: [0.6.3] Old Version: [0.6.2.post9]
+[2023-05-26 03:02:08] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-26 03:02:08] INFO root fetch - processPackages [acryl-datahub]: New version: [0.9.6rc1] Old Version: [0.9.6rc0]
+[2023-05-26 03:02:08] INFO root fetch - processPackages [aemcmc-nightly]: New version: [0.0.8.dev20230526] Old Version: [0.0.8.dev20230525]
+[2023-05-26 03:02:08] INFO root fetch - processPackages [osqp]: Downloading https://files.pythonhosted.org/packages/3a/50/e15039ce9d1916022f6214067922d98200712023e0e5873f2cbb9f1c2fa4/osqp-0.6.2.post9.tar.gz
+[2023-05-26 03:02:08] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-26 03:02:08] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: executing diffoscope
+[2023-05-26 03:02:08] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_emrserverless_with_delta_lake-2.0.98.tar.gz tmp/cdk_emrserverless_with_delta_lake-2.0.99.tar.gz --markdown 20230526/c/cdk-emrserverless-with-delta-lake/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-26 03:02:08] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: executing diffoscope
+[2023-05-26 03:02:08] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acryl-datahub-airflow-plugin-0.9.6rc0.tar.gz tmp/acryl-datahub-airflow-plugin-0.9.6rc1.tar.gz --markdown 20230526/a/acryl-datahub-airflow-plugin/0.9.6rc0-0.9.6rc1/diff.md --exclude *.pyd
+[2023-05-26 03:02:08] INFO root fetch - processPackages [acryl-datahub]: executing diffoscope
+[2023-05-26 03:02:08] INFO root fetch - processPackages [acryl-datahub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acryl-datahub-0.9.6rc0.tar.gz tmp/acryl-datahub-0.9.6rc1.tar.gz --markdown 20230526/a/acryl-datahub/0.9.6rc0-0.9.6rc1/diff.md --exclude *.pyd
+[2023-05-26 03:02:08] INFO root fetch - processPackages [aemcmc-nightly]: Downloading https://files.pythonhosted.org/packages/8c/42/9bce14c7b70156cba1e3d09786adcffbba4da349e2cc4d908111e0fbb539/aemcmc-nightly-0.0.8.dev20230525.tar.gz
+[2023-05-26 03:02:08] INFO root fetch - processPackages [miresta]: Downloading https://files.pythonhosted.org/packages/dd/3e/b58e28d62f75529106f5926751a695ca8e3610abe2095e6b6b95e810ff77/miresta-0.5.tar.gz
+[2023-05-26 03:02:08] INFO root fetch - processPackages [pyagrum-nightly]: New version: [1.8.1.dev202305251684934970] Old Version: [1.8.0.9.dev202305241684867312]
+[2023-05-26 03:02:08] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-05-26 03:02:08] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230526/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-26 03:02:08] INFO root fetch - processPackages [osqp]: Downloading https://files.pythonhosted.org/packages/f8/ce/951a029a1d783025242c4ee6a42f14d37c58fc6cba104c1be5c1fc6ecfee/osqp-0.6.3.tar.gz
+[2023-05-26 03:02:09] INFO root fetch - processPackages [miresta]: executing diffoscope
+[2023-05-26 03:02:09] INFO root fetch - processPackages [miresta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/miresta-0.3.tar.gz tmp/miresta-0.5.tar.gz --markdown 20230526/m/miresta/0.3-0.5/diff.md --exclude *.pyd
+[2023-05-26 03:02:09] INFO root fetch - processPackages [pyagrum-nightly]: executing diffoscope
+[2023-05-26 03:02:09] INFO root fetch - processPackages [pyagrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.8.0.9.dev202305241684867312-cp39-cp39-win_amd64.whl.zip tmp/pyAgrum_nightly-1.8.1.dev202305251684934970-cp39-cp39-win_amd64.whl.zip --markdown 20230526/p/pyagrum-nightly/1.8.0.9.dev202305241684867312-1.8.1.dev202305251684934970/diff.md --exclude *.pyd
+[2023-05-26 03:02:09] INFO root fetch - processPackages [osqp]: executing diffoscope
+[2023-05-26 03:02:09] INFO root fetch - processPackages [osqp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osqp-0.6.2.post9.tar.gz tmp/osqp-0.6.3.tar.gz --markdown 20230526/o/osqp/0.6.2.post9-0.6.3/diff.md --exclude *.pyd
+[2023-05-26 03:02:09] INFO root fetch - processPackages [aemcmc-nightly]: Downloading https://files.pythonhosted.org/packages/7d/96/16ba470ac834b7e16fc52367a3f107353457105d8bb0f4c4ef19a5f2c87b/aemcmc-nightly-0.0.8.dev20230526.tar.gz
+[2023-05-26 03:02:09] INFO root fetch - processPackages [aemcmc-nightly]: executing diffoscope
+[2023-05-26 03:02:09] INFO root fetch - processPackages [aemcmc-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aemcmc-nightly-0.0.8.dev20230525.tar.gz tmp/aemcmc-nightly-0.0.8.dev20230526.tar.gz --markdown 20230526/a/aemcmc-nightly/0.0.8.dev20230525-0.0.8.dev20230526/diff.md --exclude *.pyd
+[2023-05-26 03:02:10] INFO root fetch - main [MainThread]: End processing [acryl-datahub-airflow-plugin]: success
+[2023-05-26 03:02:10] INFO root fetch - main [MainThread]: End processing [cdk-emrserverless-with-delta-lake]: success
+[2023-05-26 03:02:10] INFO root fetch - main [MainThread]: End processing [miresta]: success
+[2023-05-26 03:02:11] INFO root fetch - main [MainThread]: End processing [pyagrum-nightly]: success
+[2023-05-26 03:02:11] INFO root fetch - main [MainThread]: End processing [aemcmc-nightly]: success
+[2023-05-26 03:02:12] INFO root fetch - main [MainThread]: End processing [osqp]: success
+[2023-05-26 03:02:13] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2023-05-26 03:02:14] INFO root fetch - main [MainThread]: End processing [acryl-datahub]: success
+[2023-05-26 03:02:14] INFO root fetch - main [MainThread]: Store serial: [18254768]
