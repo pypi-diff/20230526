@@ -9735,3 +9735,141 @@
 [2023-05-26 09:17:39] INFO root fetch - main [MainThread]: End processing [cloudnetpy-qc]: success
 [2023-05-26 09:18:26] INFO root fetch - main [MainThread]: End processing [pulumi-signalfx]: success
 [2023-05-26 09:18:26] INFO root fetch - main [MainThread]: Store serial: [18258970]
+[2023-05-26 09:23:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18258970]
+[2023-05-26 09:23:35] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-05-26 09:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scrollingtext
+[2023-05-26 09:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-sonarqube-pro-api
+[2023-05-26 09:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: faceid-dev
+[2023-05-26 09:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dls-servbase
+[2023-05-26 09:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fetchify
+[2023-05-26 09:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: GraphCASE
+[2023-05-26 09:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: jupyterlab-training
+[2023-05-26 09:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vid2info
+[2023-05-26 09:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: anitya
+[2023-05-26 09:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cigsegy
+[2023-05-26 09:23:35] WARNING root fetch - processPackages [python-sonarqube-pro-api]: Skipping, unable to determine old version
+[2023-05-26 09:23:35] INFO root fetch - processPackages [python-sonarqube-pro-api]: Start processing: character-encoding-utils
+[2023-05-26 09:23:35] INFO root fetch - main [MainThread]: End processing [python-sonarqube-pro-api] error
+[2023-05-26 09:23:35] INFO root fetch - processPackages [dls-servbase]: New version: [1.4.0] Old Version: [1.3.2]
+[2023-05-26 09:23:35] INFO root fetch - processPackages [faceid-dev]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-26 09:23:35] INFO root fetch - processPackages [scrollingtext]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-26 09:23:35] INFO root fetch - processPackages [character-encoding-utils]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-26 09:23:35] INFO root fetch - processPackages [fetchify]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-05-26 09:23:35] INFO root fetch - processPackages [jupyterlab-training]: New version: [0.4.0] Old Version: [0.3.4]
+[2023-05-26 09:23:35] INFO root fetch - processPackages [cigsegy]: New version: [1.1.1] Old Version: [1.0.1]
+[2023-05-26 09:23:35] INFO root fetch - processPackages [vid2info]: New version: [1.99] Old Version: [1.98]
+[2023-05-26 09:23:35] INFO root fetch - processPackages [anitya]: New version: [1.8.1] Old Version: [1.8.0]
+[2023-05-26 09:23:35] INFO root fetch - processPackages [GraphCASE]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-26 09:23:35] INFO root fetch - processPackages [vid2info]: executing diffoscope
+[2023-05-26 09:23:35] INFO root fetch - processPackages [vid2info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vid2info-1.98.tar.gz tmp/vid2info-1.99.tar.gz --markdown 20230526/v/vid2info/1.98-1.99/diff.md --exclude *.pyd
+[2023-05-26 09:23:35] INFO root fetch - processPackages [jupyterlab-training]: Downloading https://files.pythonhosted.org/packages/ba/76/935b4bdf8812b2abeee78af47b8d3c21b539ef84f03572927bfd85bae3ff/jupyterlab-training-0.4.0.tar.gz
+[2023-05-26 09:23:35] INFO root fetch - processPackages [jupyterlab-training]: executing diffoscope
+[2023-05-26 09:23:35] INFO root fetch - processPackages [jupyterlab-training]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterlab_training-0.3.4-py3-none-any.whl.zip tmp/jupyterlab-training-0.4.0.tar.gz --markdown 20230526/j/jupyterlab-training/0.3.4-0.4.0/diff.md --exclude *.pyd
+[2023-05-26 09:23:35] INFO root fetch - processPackages [anitya]: Downloading https://files.pythonhosted.org/packages/76/1d/276db6245105f42bcc4b768de0cb382fc275f28b4efc3e935041c60e2b60/anitya-1.8.0.tar.gz
+[2023-05-26 09:23:35] INFO root fetch - processPackages [GraphCASE]: Downloading https://files.pythonhosted.org/packages/46/42/a34d8608716f258dc8319cf99dcc1ae34c0ef43dc8812478b026ae6b163f/GraphCASE-0.0.3.tar.gz
+[2023-05-26 09:23:35] INFO root fetch - processPackages [fetchify]: Downloading https://files.pythonhosted.org/packages/03/f9/5a7865665c0e5c95586f036957330a13d7040c11525d4b0ac863bfdfa323/fetchify-1.1.5.tar.gz
+[2023-05-26 09:23:35] INFO root fetch - processPackages [faceid-dev]: Downloading https://files.pythonhosted.org/packages/96/e7/28335a67cbb9dcafe4c2921480fb48abfcae3db9cf39dd70015112b06775/faceid-dev-0.0.4.tar.gz
+[2023-05-26 09:23:35] INFO root fetch - processPackages [scrollingtext]: Downloading https://files.pythonhosted.org/packages/a1/9a/9e4535dca69a248ab8f4f8a1e0991bb5036fd64ff305ee8e26afa299fc9d/scrollingtext-0.0.3.tar.gz
+[2023-05-26 09:23:35] INFO root fetch - processPackages [cigsegy]: Downloading https://files.pythonhosted.org/packages/35/f2/f0063e2b811a5bc8a3a0a47b8157cb581364232ab8ef5aef63e20a365937/cigsegy-1.1.1-cp39-cp39-macosx_13_0_arm64.whl
+[2023-05-26 09:23:35] INFO root fetch - processPackages [fetchify]: executing diffoscope
+[2023-05-26 09:23:35] INFO root fetch - processPackages [fetchify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fetchify-1.1.4.tar.gz tmp/fetchify-1.1.5.tar.gz --markdown 20230526/f/fetchify/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-05-26 09:23:35] INFO root fetch - processPackages [character-encoding-utils]: Downloading https://files.pythonhosted.org/packages/2d/6c/0246bc279efa140a72d4b15d975bf3eca9a71c5eae292fee6e027d075a0c/character-encoding-utils-0.0.4.tar.gz
+[2023-05-26 09:23:35] INFO root fetch - processPackages [faceid-dev]: executing diffoscope
+[2023-05-26 09:23:35] INFO root fetch - processPackages [faceid-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faceid_dev-0.0.3-cp38-cp38-macosx_10_15_x86_64.whl.zip tmp/faceid-dev-0.0.4.tar.gz --markdown 20230526/f/faceid-dev/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-26 09:23:35] INFO root fetch - processPackages [scrollingtext]: executing diffoscope
+[2023-05-26 09:23:35] INFO root fetch - processPackages [dls-servbase]: Downloading https://files.pythonhosted.org/packages/6a/e4/4228d7e569f21071f3ddb5361912021341f90dc6130091d4d7eca89853e8/dls-servbase-1.4.0.tar.gz
+[2023-05-26 09:23:35] INFO root fetch - processPackages [scrollingtext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrollingtext-0.0.2-py3-none-any.whl.zip tmp/scrollingtext-0.0.3.tar.gz --markdown 20230526/s/scrollingtext/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-26 09:23:35] INFO root fetch - processPackages [cigsegy]: executing diffoscope
+[2023-05-26 09:23:35] INFO root fetch - processPackages [cigsegy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cigsegy-1.0.1.tar.gz tmp/cigsegy-1.1.1-cp39-cp39-macosx_13_0_arm64.whl.zip --markdown 20230526/c/cigsegy/1.0.1-1.1.1/diff.md --exclude *.pyd
+[2023-05-26 09:23:35] INFO root fetch - processPackages [character-encoding-utils]: executing diffoscope
+[2023-05-26 09:23:35] INFO root fetch - processPackages [character-encoding-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/character-encoding-utils-0.0.3.tar.gz tmp/character-encoding-utils-0.0.4.tar.gz --markdown 20230526/c/character-encoding-utils/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-26 09:23:36] INFO root fetch - processPackages [dls-servbase]: executing diffoscope
+[2023-05-26 09:23:36] INFO root fetch - processPackages [dls-servbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dls-servbase-1.3.2.tar.gz tmp/dls-servbase-1.4.0.tar.gz --markdown 20230526/d/dls-servbase/1.3.2-1.4.0/diff.md --exclude *.pyd
+[2023-05-26 09:23:36] INFO root fetch - processPackages [GraphCASE]: Downloading https://files.pythonhosted.org/packages/9e/24/a07b9da3b34ee47203c19c7deb483973746da92acae97565b53fb0a81ac7/GraphCASE-0.0.4.tar.gz
+[2023-05-26 09:23:36] INFO root fetch - processPackages [GraphCASE]: executing diffoscope
+[2023-05-26 09:23:36] INFO root fetch - processPackages [GraphCASE]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GraphCASE-0.0.3.tar.gz tmp/GraphCASE-0.0.4.tar.gz --markdown 20230526/G/GraphCASE/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-26 09:23:37] INFO root fetch - processPackages [anitya]: Downloading https://files.pythonhosted.org/packages/a8/7a/b7a58d9be0ccd355fc66544f35aefa0aad9472fda6f58267cfb69fc48059/anitya-1.8.1.tar.gz
+[2023-05-26 09:23:37] INFO root fetch - processPackages [anitya]: executing diffoscope
+[2023-05-26 09:23:37] INFO root fetch - processPackages [anitya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anitya-1.8.0.tar.gz tmp/anitya-1.8.1.tar.gz --markdown 20230526/a/anitya/1.8.0-1.8.1/diff.md --exclude *.pyd
+[2023-05-26 09:23:37] INFO root fetch - processPackages [fetchify]: Start processing: faker-cli
+[2023-05-26 09:23:37] INFO root fetch - main [MainThread]: End processing [fetchify]: success
+[2023-05-26 09:23:37] INFO root fetch - processPackages [faker-cli]: New version: [0.1.0] Old Version: [0.0.5]
+[2023-05-26 09:23:37] INFO root fetch - processPackages [faceid-dev]: Start processing: home-assistant-frontend
+[2023-05-26 09:23:37] INFO root fetch - main [MainThread]: End processing [faceid-dev]: success
+[2023-05-26 09:23:38] INFO root fetch - processPackages [home-assistant-frontend]: New version: [20230526.0] Old Version: [20230503.3]
+[2023-05-26 09:23:38] INFO root fetch - processPackages [faker-cli]: Downloading https://files.pythonhosted.org/packages/65/e0/7580a64ddb0ec03109c7211851b2bcfe76f9e4fe79c9472c288a42422b10/faker_cli-0.1.0.tar.gz
+[2023-05-26 09:23:38] INFO root fetch - processPackages [scrollingtext]: Start processing: pepperize.cdk-apigateway-swagger-ui
+[2023-05-26 09:23:38] INFO root fetch - main [MainThread]: End processing [scrollingtext]: success
+[2023-05-26 09:23:38] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: New version: [0.0.99] Old Version: [0.0.97]
+[2023-05-26 09:23:38] INFO root fetch - processPackages [faker-cli]: executing diffoscope
+[2023-05-26 09:23:38] INFO root fetch - processPackages [faker-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faker_cli-0.0.5.tar.gz tmp/faker_cli-0.1.0.tar.gz --markdown 20230526/f/faker-cli/0.0.5-0.1.0/diff.md --exclude *.pyd
+[2023-05-26 09:23:38] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: executing diffoscope
+[2023-05-26 09:23:38] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-apigateway-swagger-ui-0.0.97.tar.gz tmp/pepperize.cdk-apigateway-swagger-ui-0.0.99.tar.gz --markdown 20230526/p/pepperize.cdk-apigateway-swagger-ui/0.0.97-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 09:23:38] INFO root fetch - processPackages [home-assistant-frontend]: Downloading https://files.pythonhosted.org/packages/02/be/4905305c371e59b5620e72f3f2123fa35761a9b92214bef992ff3a6039ce/home_assistant_frontend-20230503.3-py3-none-any.whl
+[2023-05-26 09:23:38] WARNING root fetch - processPackages [home-assistant-frontend]: Skipping package: exceeds size limit 52551096>=10485760
+[2023-05-26 09:23:38] INFO root fetch - processPackages [home-assistant-frontend]: Start processing: innerverz
+[2023-05-26 09:23:38] INFO root fetch - main [MainThread]: End processing [home-assistant-frontend] error
+[2023-05-26 09:23:38] INFO root fetch - processPackages [innerverz]: New version: [0.0.15] Old Version: [0.0.14]
+[2023-05-26 09:23:38] INFO root fetch - processPackages [innerverz]: Downloading https://files.pythonhosted.org/packages/67/f5/a1097f1de3757b85a260b3038c68f2a2862f65e08f25113aee62f9609255/innerverz-0.0.15.tar.gz
+[2023-05-26 09:23:38] INFO root fetch - processPackages [innerverz]: executing diffoscope
+[2023-05-26 09:23:38] INFO root fetch - processPackages [innerverz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/innerverz-0.0.14.tar.gz tmp/innerverz-0.0.15.tar.gz --markdown 20230526/i/innerverz/0.0.14-0.0.15/diff.md --exclude *.pyd
+[2023-05-26 09:23:38] INFO root fetch - processPackages [GraphCASE]: Start processing: pulumi-splunk
+[2023-05-26 09:23:38] INFO root fetch - main [MainThread]: End processing [GraphCASE]: success
+[2023-05-26 09:23:38] INFO root fetch - processPackages [pulumi-splunk]: New version: [1.3.0a1685084245] Old Version: [1.3.0a1684788643]
+[2023-05-26 09:23:38] INFO root fetch - processPackages [character-encoding-utils]: Start processing: invenio-workflows-tugraz
+[2023-05-26 09:23:38] INFO root fetch - main [MainThread]: End processing [character-encoding-utils]: success
+[2023-05-26 09:23:38] INFO root fetch - processPackages [invenio-workflows-tugraz]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-05-26 09:23:38] INFO root fetch - processPackages [jupyterlab-training]: Start processing: pulumi-equinix-metal
+[2023-05-26 09:23:38] INFO root fetch - main [MainThread]: End processing [jupyterlab-training]: success
+[2023-05-26 09:23:38] INFO root fetch - processPackages [pulumi-equinix-metal]: New version: [3.3.0a1685084022] Old Version: [3.3.0a1684388257]
+[2023-05-26 09:23:38] INFO root fetch - processPackages [invenio-workflows-tugraz]: Downloading https://files.pythonhosted.org/packages/05/c4/807aa8366c6a2c9c8cbb273619023fb7b12143e08afce6edf3120e9df78c/invenio-workflows-tugraz-0.2.0.tar.gz
+[2023-05-26 09:23:38] INFO root fetch - processPackages [invenio-workflows-tugraz]: executing diffoscope
+[2023-05-26 09:23:38] INFO root fetch - processPackages [invenio-workflows-tugraz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invenio-workflows-tugraz-0.1.9.tar.gz tmp/invenio-workflows-tugraz-0.2.0.tar.gz --markdown 20230526/i/invenio-workflows-tugraz/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-05-26 09:23:38] INFO root fetch - processPackages [pulumi-equinix-metal]: Downloading https://files.pythonhosted.org/packages/26/cd/b67233878558dcc5fe1cb8015165dc957cd4d60b4a53bfd2f524c31076b2/pulumi_equinix_metal-3.3.0a1685084022.tar.gz
+[2023-05-26 09:23:39] INFO root fetch - processPackages [vid2info]: Start processing: johnsnowlabs-for-databricks-tmp
+[2023-05-26 09:23:39] INFO root fetch - main [MainThread]: End processing [vid2info]: success
+[2023-05-26 09:23:39] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: New version: [4.4.9] Old Version: [4.4.8]
+[2023-05-26 09:23:39] INFO root fetch - processPackages [pulumi-splunk]: Downloading https://files.pythonhosted.org/packages/b9/25/c47ac3a0523d7e1c84a10f122570f91ed327658fcb500f85373727344229/pulumi_splunk-1.3.0a1685084245.tar.gz
+[2023-05-26 09:23:39] INFO root fetch - processPackages [pulumi-equinix-metal]: executing diffoscope
+[2023-05-26 09:23:39] INFO root fetch - processPackages [pulumi-equinix-metal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_equinix_metal-3.3.0a1684388257.tar.gz tmp/pulumi_equinix_metal-3.3.0a1685084022.tar.gz --markdown 20230526/p/pulumi-equinix-metal/3.3.0a1684388257-3.3.0a1685084022/diff.md --exclude *.pyd
+[2023-05-26 09:23:39] INFO root fetch - processPackages [pulumi-splunk]: executing diffoscope
+[2023-05-26 09:23:39] INFO root fetch - processPackages [pulumi-splunk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_splunk-1.3.0a1684788643.tar.gz tmp/pulumi_splunk-1.3.0a1685084245.tar.gz --markdown 20230526/p/pulumi-splunk/1.3.0a1684788643-1.3.0a1685084245/diff.md --exclude *.pyd
+[2023-05-26 09:23:39] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: Downloading https://files.pythonhosted.org/packages/07/e1/9596a1c35830f54e9826512e793eef7f10fa4c089d82abcffb56996d8888/johnsnowlabs_for_databricks_tmp-4.4.8.tar.gz
+[2023-05-26 09:23:39] INFO root fetch - processPackages [cigsegy]: Start processing: paketmutfak
+[2023-05-26 09:23:39] INFO root fetch - main [MainThread]: End processing [cigsegy]: success
+[2023-05-26 09:23:39] INFO root fetch - processPackages [paketmutfak]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-26 09:23:39] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: Downloading https://files.pythonhosted.org/packages/60/29/e43f163d59c16035f1a8cc7abce85c6d4dc7a05b11d37389bbc1038fa0c2/johnsnowlabs_for_databricks_tmp-4.4.9.tar.gz
+[2023-05-26 09:23:39] INFO root fetch - processPackages [paketmutfak]: executing diffoscope
+[2023-05-26 09:23:39] INFO root fetch - processPackages [paketmutfak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paketmutfak-1.1.8.tar.gz tmp/paketmutfak-1.1.9.tar.gz --markdown 20230526/p/paketmutfak/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-26 09:23:39] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: executing diffoscope
+[2023-05-26 09:23:39] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/johnsnowlabs_for_databricks_tmp-4.4.8.tar.gz tmp/johnsnowlabs_for_databricks_tmp-4.4.9.tar.gz --markdown 20230526/j/johnsnowlabs-for-databricks-tmp/4.4.8-4.4.9/diff.md --exclude *.pyd
+[2023-05-26 09:23:40] INFO root fetch - processPackages [faker-cli]: Start processing: py-gf-auto-doc
+[2023-05-26 09:23:40] INFO root fetch - main [MainThread]: End processing [faker-cli]: success
+[2023-05-26 09:23:40] INFO root fetch - processPackages [py-gf-auto-doc]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-26 09:23:40] INFO root fetch - processPackages [dls-servbase]: Start processing: searvey
+[2023-05-26 09:23:40] INFO root fetch - main [MainThread]: End processing [dls-servbase]: success
+[2023-05-26 09:23:40] INFO root fetch - processPackages [searvey]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-26 09:23:40] INFO root fetch - processPackages [py-gf-auto-doc]: Downloading https://files.pythonhosted.org/packages/4d/12/5130c75ad3df33b7aef0ab21c281df1f59d46cdb8881faf42a96375bd60c/py_gf_auto_doc-0.1.0.tar.gz
+[2023-05-26 09:23:40] INFO root fetch - processPackages [searvey]: Downloading https://files.pythonhosted.org/packages/9a/42/1c69790d6f6bd942a63a5dae876e6d3979157b5afe230f87222ca9582477/searvey-0.3.2-py3-none-any.whl
+[2023-05-26 09:23:40] INFO root fetch - processPackages [py-gf-auto-doc]: Downloading https://files.pythonhosted.org/packages/5d/96/59bd802eb9ba12e3da13f3838a4c34a999a45886f74ea6d0e99a0757d1c9/py_gf_auto_doc-0.1.1.tar.gz
+[2023-05-26 09:23:40] INFO root fetch - processPackages [py-gf-auto-doc]: executing diffoscope
+[2023-05-26 09:23:40] INFO root fetch - processPackages [py-gf-auto-doc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_gf_auto_doc-0.1.0.tar.gz tmp/py_gf_auto_doc-0.1.1.tar.gz --markdown 20230526/p/py-gf-auto-doc/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-26 09:23:41] INFO root fetch - processPackages [searvey]: Downloading https://files.pythonhosted.org/packages/8a/6e/979f3ef7f875c8c0f2b7daf56c2f45dc76e5d5f65f91cc782421a32444eb/searvey-0.3.3-py3-none-any.whl
+[2023-05-26 09:23:41] INFO root fetch - processPackages [searvey]: executing diffoscope
+[2023-05-26 09:23:41] INFO root fetch - processPackages [searvey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searvey-0.3.2-py3-none-any.whl.zip tmp/searvey-0.3.3-py3-none-any.whl.zip --markdown 20230526/s/searvey/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-26 09:23:41] INFO root fetch - processPackages [innerverz]: Start processing: camminapy
+[2023-05-26 09:23:41] INFO root fetch - main [MainThread]: End processing [innerverz]: success
+[2023-05-26 09:23:41] INFO root fetch - processPackages [camminapy]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-26 09:23:41] INFO root fetch - processPackages [camminapy]: executing diffoscope
+[2023-05-26 09:23:41] INFO root fetch - processPackages [camminapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/camminapy-0.9.8.tar.gz tmp/camminapy-0.9.9.tar.gz --markdown 20230526/c/camminapy/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-26 09:23:41] INFO root fetch - main [MainThread]: End processing [pulumi-splunk]: success
+[2023-05-26 09:23:41] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-apigateway-swagger-ui]: success
+[2023-05-26 09:23:42] INFO root fetch - main [MainThread]: End processing [invenio-workflows-tugraz]: success
+[2023-05-26 09:23:42] INFO root fetch - main [MainThread]: End processing [paketmutfak]: success
+[2023-05-26 09:23:42] INFO root fetch - main [MainThread]: End processing [johnsnowlabs-for-databricks-tmp]: success
+[2023-05-26 09:23:42] INFO root fetch - main [MainThread]: End processing [py-gf-auto-doc]: success
+[2023-05-26 09:23:43] INFO root fetch - main [MainThread]: End processing [pulumi-equinix-metal]: success
+[2023-05-26 09:23:43] INFO root fetch - main [MainThread]: End processing [searvey]: success
+[2023-05-26 09:23:43] INFO root fetch - main [MainThread]: End processing [camminapy]: success
+[2023-05-26 09:24:20] INFO root fetch - main [MainThread]: End processing [anitya]: success
+[2023-05-26 09:24:20] INFO root fetch - main [MainThread]: Store serial: [18259037]
