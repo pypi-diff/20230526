@@ -16494,3 +16494,116 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 15:41:20] INFO root fetch - main [MainThread]: End processing [jsmetrics]: success
 [2023-05-26 15:41:34] INFO root fetch - main [MainThread]: End processing [py-pure-client]: success
 [2023-05-26 15:41:34] INFO root fetch - main [MainThread]: Store serial: [18263524]
+[2023-05-26 15:46:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18263524]
+[2023-05-26 15:46:44] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-26 15:46:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: efemarai
+[2023-05-26 15:46:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dl2050utils
+[2023-05-26 15:46:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flexmeasures-client
+[2023-05-26 15:46:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pycognito
+[2023-05-26 15:46:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mmif-python
+[2023-05-26 15:46:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyowletapi
+[2023-05-26 15:46:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: femagtools
+[2023-05-26 15:46:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bagbag
+[2023-05-26 15:46:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: matchmakereft
+[2023-05-26 15:46:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: fbgemm-gpu-nightly
+[2023-05-26 15:46:44] INFO root fetch - processPackages [dl2050utils]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-05-26 15:46:44] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping, unable to determine old version
+[2023-05-26 15:46:44] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Start processing: ovos-plugin-manager
+[2023-05-26 15:46:44] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2023-05-26 15:46:44] INFO root fetch - processPackages [flexmeasures-client]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-26 15:46:44] INFO root fetch - processPackages [mmif-python]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-26 15:46:44] INFO root fetch - processPackages [matchmakereft]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-05-26 15:46:44] INFO root fetch - processPackages [pyowletapi]: New version: [2023.5.9] Old Version: [2023.5.7]
+[2023-05-26 15:46:44] INFO root fetch - processPackages [efemarai]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-05-26 15:46:44] INFO root fetch - processPackages [pycognito]: New version: [2023.5.0] Old Version: [2022.8.0]
+[2023-05-26 15:46:44] INFO root fetch - processPackages [bagbag]: New version: [0.59.8] Old Version: [0.59.7]
+[2023-05-26 15:46:44] INFO root fetch - processPackages [ovos-plugin-manager]: New version: [0.0.9] Old Version: [0.0.8a3]
+[2023-05-26 15:46:44] INFO root fetch - processPackages [femagtools]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-26 15:46:44] INFO root fetch - processPackages [dl2050utils]: Downloading https://files.pythonhosted.org/packages/c2/11/20896420a2b6842cdae9b98b4642b86f62277734141db689849e79713875/dl2050utils-1.0.98.tar.gz
+[2023-05-26 15:46:44] INFO root fetch - processPackages [bagbag]: executing diffoscope
+[2023-05-26 15:46:44] INFO root fetch - processPackages [bagbag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bagbag-0.59.7.tar.gz tmp/bagbag-0.59.8.tar.gz --markdown 20230526/b/bagbag/0.59.7-0.59.8/diff.md --exclude *.pyd
+[2023-05-26 15:46:44] INFO root fetch - processPackages [mmif-python]: Downloading https://files.pythonhosted.org/packages/06/57/4af865ada51078617d9e1f7f63c8df749982cda31ec71054cb5cc5ccee53/mmif-python-1.0.1.tar.gz
+[2023-05-26 15:46:44] INFO root fetch - processPackages [matchmakereft]: Downloading https://files.pythonhosted.org/packages/1f/25/7a951e771d153dc51ee7d46b0970dc863fa15444de41efaaf795b6546098/matchmakereft-1.0.2.tar.gz
+[2023-05-26 15:46:44] INFO root fetch - processPackages [efemarai]: Downloading https://files.pythonhosted.org/packages/46/d1/405a5286d94588551182c89199e6638efe66630079617a37ab5181d4499d/efemarai-0.3.5.tar.gz
+[2023-05-26 15:46:44] INFO root fetch - processPackages [flexmeasures-client]: Downloading https://files.pythonhosted.org/packages/51/ac/ca061e394a41871e16836ed9a641c66b68639dd5a494e7fc4a374ec22845/flexmeasures-client-0.1.0.tar.gz
+[2023-05-26 15:46:44] INFO root fetch - processPackages [pycognito]: Downloading https://files.pythonhosted.org/packages/b3/d6/e14a55e0f77fb1d9a30c0cc626afb599dc6968dbff8d4ed882f4bc6bba42/pycognito-2022.8.0.tar.gz
+[2023-05-26 15:46:44] INFO root fetch - processPackages [mmif-python]: executing diffoscope
+[2023-05-26 15:46:44] INFO root fetch - processPackages [mmif-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmif-python-1.0.0.tar.gz tmp/mmif-python-1.0.1.tar.gz --markdown 20230526/m/mmif-python/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-26 15:46:44] INFO root fetch - processPackages [femagtools]: Downloading https://files.pythonhosted.org/packages/77/58/409510955e3c2a8ed14223551cc53c91f0c896a60c3ff0f701d038356121/femagtools-1.2.9.tar.gz
+[2023-05-26 15:46:44] INFO root fetch - processPackages [pyowletapi]: executing diffoscope
+[2023-05-26 15:46:44] INFO root fetch - processPackages [pyowletapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyowletapi-2023.5.7.tar.gz tmp/pyowletapi-2023.5.9.tar.gz --markdown 20230526/p/pyowletapi/2023.5.7-2023.5.9/diff.md --exclude *.pyd
+[2023-05-26 15:46:44] INFO root fetch - processPackages [pycognito]: Downloading https://files.pythonhosted.org/packages/2e/3f/680674a3c85008d755661f5e8f7d6d769d944a068e9aafad45bef122c967/pycognito-2023.5.0.tar.gz
+[2023-05-26 15:46:45] INFO root fetch - processPackages [flexmeasures-client]: Downloading https://files.pythonhosted.org/packages/d1/ba/b48f3cac98d77a5d8d07fb378578fb900d35b4d79b8dd59f1bb4af3ae95e/flexmeasures-client-0.1.1.tar.gz
+[2023-05-26 15:46:45] INFO root fetch - processPackages [flexmeasures-client]: executing diffoscope
+[2023-05-26 15:46:45] INFO root fetch - processPackages [flexmeasures-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flexmeasures-client-0.1.0.tar.gz tmp/flexmeasures-client-0.1.1.tar.gz --markdown 20230526/f/flexmeasures-client/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-26 15:46:45] INFO root fetch - processPackages [efemarai]: Downloading https://files.pythonhosted.org/packages/8c/fe/2fd71bcb62cde2c3d122b9f1bb3bf57d071f3887cd33f228f5a70b626191/efemarai-0.3.6-py3-none-any.whl
+[2023-05-26 15:46:45] INFO root fetch - processPackages [matchmakereft]: Downloading https://files.pythonhosted.org/packages/1c/44/f652e8a9e1bdfee5205237195e8b6c862de450c9a8d20ddc5c95148c7aac/matchmakereft-1.1.0-py2.py3-none-any.whl
+[2023-05-26 15:46:45] INFO root fetch - processPackages [ovos-plugin-manager]: executing diffoscope
+[2023-05-26 15:46:45] INFO root fetch - processPackages [ovos-plugin-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_plugin_manager-0.0.8a3-py3-none-any.whl.zip tmp/ovos_plugin_manager-0.0.9-py3-none-any.whl.zip --markdown 20230526/o/ovos-plugin-manager/0.0.8a3-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 15:46:45] INFO root fetch - processPackages [femagtools]: executing diffoscope
+[2023-05-26 15:46:45] INFO root fetch - processPackages [femagtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/femagtools-1.2.8.tar.gz tmp/femagtools-1.2.9.tar.gz --markdown 20230526/f/femagtools/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-26 15:46:45] INFO root fetch - processPackages [pycognito]: executing diffoscope
+[2023-05-26 15:46:45] INFO root fetch - processPackages [pycognito]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycognito-2022.8.0.tar.gz tmp/pycognito-2023.5.0.tar.gz --markdown 20230526/p/pycognito/2022.8.0-2023.5.0/diff.md --exclude *.pyd
+[2023-05-26 15:46:45] INFO root fetch - processPackages [efemarai]: executing diffoscope
+[2023-05-26 15:46:45] INFO root fetch - processPackages [efemarai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/efemarai-0.3.5.tar.gz tmp/efemarai-0.3.6-py3-none-any.whl.zip --markdown 20230526/e/efemarai/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-05-26 15:46:45] INFO root fetch - processPackages [dl2050utils]: Downloading https://files.pythonhosted.org/packages/c9/17/6752cfb2e56bf2902e5a751d8b67ff3c1642fb0d69b3207b81fb5c311ea5/dl2050utils-1.0.99.tar.gz
+[2023-05-26 15:46:45] INFO root fetch - processPackages [matchmakereft]: executing diffoscope
+[2023-05-26 15:46:45] INFO root fetch - processPackages [matchmakereft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matchmakereft-1.0.2.tar.gz tmp/matchmakereft-1.1.0-py2.py3-none-any.whl.zip --markdown 20230526/m/matchmakereft/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-05-26 15:46:45] INFO root fetch - processPackages [dl2050utils]: executing diffoscope
+[2023-05-26 15:46:45] INFO root fetch - processPackages [dl2050utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dl2050utils-1.0.98.tar.gz tmp/dl2050utils-1.0.99.tar.gz --markdown 20230526/d/dl2050utils/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-05-26 15:46:46] INFO root fetch - processPackages [mmif-python]: Start processing: PyVolSuggester
+[2023-05-26 15:46:46] INFO root fetch - main [MainThread]: End processing [mmif-python]: success
+[2023-05-26 15:46:46] INFO root fetch - processPackages [PyVolSuggester]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-26 15:46:46] INFO root fetch - processPackages [PyVolSuggester]: Downloading https://files.pythonhosted.org/packages/a2/5e/921998de46b58a848a4adfe57cb272cf45946c1c22d349d81759c5c32056/pyvolsuggester-0.0.1.tar.gz
+[2023-05-26 15:46:46] INFO root fetch - processPackages [flexmeasures-client]: Start processing: graphsignal
+[2023-05-26 15:46:46] INFO root fetch - main [MainThread]: End processing [flexmeasures-client]: success
+[2023-05-26 15:46:47] INFO root fetch - processPackages [graphsignal]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-26 15:46:47] INFO root fetch - processPackages [PyVolSuggester]: Downloading https://files.pythonhosted.org/packages/c7/cf/41adb2d4e8bc221c793d96b334da9d36591b362d663e055fdbd79a60de4a/pyvolsuggester-0.0.2.tar.gz
+[2023-05-26 15:46:47] INFO root fetch - processPackages [PyVolSuggester]: executing diffoscope
+[2023-05-26 15:46:47] INFO root fetch - processPackages [PyVolSuggester]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvolsuggester-0.0.1.tar.gz tmp/pyvolsuggester-0.0.2.tar.gz --markdown 20230526/P/PyVolSuggester/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-26 15:46:47] INFO root fetch - processPackages [ovos-plugin-manager]: Start processing: mazemdp
+[2023-05-26 15:46:47] INFO root fetch - main [MainThread]: End processing [ovos-plugin-manager]: success
+[2023-05-26 15:46:47] INFO root fetch - processPackages [graphsignal]: executing diffoscope
+[2023-05-26 15:46:47] INFO root fetch - processPackages [graphsignal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphsignal-0.9.4.tar.gz tmp/graphsignal-0.9.5.tar.gz --markdown 20230526/g/graphsignal/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-26 15:46:47] INFO root fetch - processPackages [mazemdp]: New version: [0.8.0] Old Version: [0.7.3]
+[2023-05-26 15:46:47] INFO root fetch - processPackages [pyowletapi]: Start processing: dataclasses-avroschema
+[2023-05-26 15:46:47] INFO root fetch - main [MainThread]: End processing [pyowletapi]: success
+[2023-05-26 15:46:47] INFO root fetch - processPackages [dataclasses-avroschema]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-26 15:46:47] INFO root fetch - processPackages [pycognito]: Start processing: ipyaladin
+[2023-05-26 15:46:47] INFO root fetch - main [MainThread]: End processing [pycognito]: success
+[2023-05-26 15:46:47] INFO root fetch - processPackages [dataclasses-avroschema]: executing diffoscope
+[2023-05-26 15:46:47] INFO root fetch - processPackages [dataclasses-avroschema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataclasses-avroschema-0.8.0.tar.gz tmp/dataclasses-avroschema-0.9.0.tar.gz --markdown 20230526/d/dataclasses-avroschema/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-26 15:46:47] INFO root fetch - processPackages [ipyaladin]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-26 15:46:47] INFO root fetch - processPackages [mazemdp]: Downloading https://files.pythonhosted.org/packages/73/c6/ecda982ceaa816f5f244ba4d8cc8cdbb01423fe2c742db7531a39dcf92dc/mazemdp-0.7.3.tar.gz
+[2023-05-26 15:46:47] INFO root fetch - processPackages [ipyaladin]: Downloading https://files.pythonhosted.org/packages/a8/2a/43cde709a81b4b0925550f717b4b57d85adf3a174f1380722d467cd7b4cd/ipyaladin-0.2.1.tar.gz
+[2023-05-26 15:46:47] INFO root fetch - processPackages [bagbag]: Start processing: mazemdp
+[2023-05-26 15:46:47] INFO root fetch - main [MainThread]: End processing [bagbag]: success
+[2023-05-26 15:46:47] INFO root fetch - processPackages [mazemdp]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-05-26 15:46:48] INFO root fetch - processPackages [mazemdp]: Downloading https://files.pythonhosted.org/packages/a0/ad/ea5b8889efd4e9c9f0f2bed8b1f2ee9ac341a5064032e84c89645eb41a58/mazemdp-0.8.0.tar.gz
+[2023-05-26 15:46:48] INFO root fetch - processPackages [mazemdp]: Downloading https://files.pythonhosted.org/packages/a0/ad/ea5b8889efd4e9c9f0f2bed8b1f2ee9ac341a5064032e84c89645eb41a58/mazemdp-0.8.0.tar.gz
+[2023-05-26 15:46:48] INFO root fetch - processPackages [mazemdp]: executing diffoscope
+[2023-05-26 15:46:48] INFO root fetch - processPackages [mazemdp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mazemdp-0.7.3.tar.gz tmp/mazemdp-0.8.0.tar.gz --markdown 20230526/m/mazemdp/0.7.3-0.8.0/diff.md --exclude *.pyd
+[2023-05-26 15:46:48] INFO root fetch - processPackages [ipyaladin]: Downloading https://files.pythonhosted.org/packages/a5/c4/0497a7e89840eafc1a81e825615fef2ad5eb68b365c58787fb4b208f8398/ipyaladin-0.2.2.tar.gz
+[2023-05-26 15:46:48] INFO root fetch - processPackages [mazemdp]: Downloading https://files.pythonhosted.org/packages/d9/1b/2b346569893cc4181839d5fa4f9d906b1ced0b1376356d4906a4df3bf42b/mazemdp-0.8.1.tar.gz
+[2023-05-26 15:46:48] INFO root fetch - processPackages [ipyaladin]: executing diffoscope
+[2023-05-26 15:46:48] INFO root fetch - processPackages [ipyaladin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyaladin-0.2.1.tar.gz tmp/ipyaladin-0.2.2.tar.gz --markdown 20230526/i/ipyaladin/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-26 15:46:48] INFO root fetch - processPackages [efemarai]: Start processing: python-llm
+[2023-05-26 15:46:48] INFO root fetch - main [MainThread]: End processing [efemarai]: success
+[2023-05-26 15:46:48] INFO root fetch - main [MainThread]: End processing [dl2050utils]: success
+[2023-05-26 15:46:48] INFO root fetch - processPackages [mazemdp]: executing diffoscope
+[2023-05-26 15:46:48] INFO root fetch - processPackages [mazemdp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mazemdp-0.8.0.tar.gz tmp/mazemdp-0.8.1.tar.gz --markdown 20230526/m/mazemdp/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-05-26 15:46:48] INFO root fetch - main [MainThread]: End processing [femagtools]: success
+[2023-05-26 15:46:48] INFO root fetch - processPackages [python-llm]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-05-26 15:46:48] INFO root fetch - processPackages [python-llm]: Downloading https://files.pythonhosted.org/packages/79/f4/a2e3fc54a6833b29fc7196deefba5c1edfa750841d6f7fc022097335f3af/python-llm-0.1.9.tar.gz
+[2023-05-26 15:46:49] INFO root fetch - processPackages [python-llm]: Downloading https://files.pythonhosted.org/packages/24/f0/0381c058f196fc5a9b2dd3f8bba4f90f984385cf02f4e54affb3135c7f14/python-llm-0.2.0.tar.gz
+[2023-05-26 15:46:49] INFO root fetch - processPackages [python-llm]: executing diffoscope
+[2023-05-26 15:46:49] INFO root fetch - processPackages [python-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-llm-0.1.9.tar.gz tmp/python-llm-0.2.0.tar.gz --markdown 20230526/p/python-llm/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-05-26 15:46:49] INFO root fetch - main [MainThread]: End processing [PyVolSuggester]: success
+[2023-05-26 15:46:50] INFO root fetch - main [MainThread]: End processing [matchmakereft]: success
+[2023-05-26 15:46:50] INFO root fetch - main [MainThread]: End processing [dataclasses-avroschema]: success
+[2023-05-26 15:46:50] INFO root fetch - main [MainThread]: End processing [graphsignal]: success
+[2023-05-26 15:46:50] INFO root fetch - main [MainThread]: End processing [mazemdp]: success
+[2023-05-26 15:46:50] INFO root fetch - main [MainThread]: End processing [mazemdp]: success
+[2023-05-26 15:46:50] INFO root fetch - main [MainThread]: End processing [python-llm]: success
+[2023-05-26 15:46:53] INFO root fetch - main [MainThread]: End processing [ipyaladin]: success
+[2023-05-26 15:46:53] INFO root fetch - main [MainThread]: Store serial: [18263573]
