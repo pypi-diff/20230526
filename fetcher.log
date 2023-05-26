@@ -12541,3 +12541,81 @@
 [2023-05-26 11:57:02] INFO root fetch - main [MainThread]: End processing [pyhtml2md]: success
 [2023-05-26 11:57:07] INFO root fetch - main [MainThread]: End processing [nlu-tmp]: success
 [2023-05-26 11:57:07] INFO root fetch - main [MainThread]: Store serial: [18260838]
+[2023-05-26 12:02:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18260838]
+[2023-05-26 12:02:16] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-26 12:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xw-utils
+[2023-05-26 12:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: clouding-server-manager
+[2023-05-26 12:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hydesign
+[2023-05-26 12:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: banana-cli
+[2023-05-26 12:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kthbuild
+[2023-05-26 12:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tagging-module
+[2023-05-26 12:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pdocr-rpc
+[2023-05-26 12:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pdocr-rpc
+[2023-05-26 12:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: finflo
+[2023-05-26 12:02:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pmx-biobb
+[2023-05-26 12:02:16] INFO root fetch - processPackages [hydesign]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-26 12:02:16] WARNING root fetch - processPackages [pdocr-rpc]: Skipping, unable to determine old version
+[2023-05-26 12:02:16] INFO root fetch - processPackages [pdocr-rpc]: Start processing: bike
+[2023-05-26 12:02:16] INFO root fetch - main [MainThread]: End processing [pdocr-rpc] error
+[2023-05-26 12:02:16] INFO root fetch - processPackages [banana-cli]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 12:02:16] INFO root fetch - processPackages [tagging-module]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-26 12:02:16] WARNING root fetch - processPackages [clouding-server-manager]: Skipping, unable to determine old version
+[2023-05-26 12:02:16] INFO root fetch - processPackages [clouding-server-manager]: Start processing: quarchpy
+[2023-05-26 12:02:16] INFO root fetch - main [MainThread]: End processing [clouding-server-manager] error
+[2023-05-26 12:02:16] INFO root fetch - processPackages [xw-utils]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-26 12:02:16] WARNING root fetch - processPackages [pdocr-rpc]: Skipping, unable to determine old version
+[2023-05-26 12:02:16] INFO root fetch - processPackages [pmx-biobb]: New version: [3.0.2] Old Version: [3.0.1]
+[2023-05-26 12:02:16] INFO root fetch - processPackages [pdocr-rpc]: Start processing: spiritlong
+[2023-05-26 12:02:16] INFO root fetch - main [MainThread]: End processing [pdocr-rpc] error
+[2023-05-26 12:02:16] INFO root fetch - processPackages [bike]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-26 12:02:16] INFO root fetch - processPackages [kthbuild]: New version: [2.9.0] Old Version: [2.8.1]
+[2023-05-26 12:02:16] INFO root fetch - processPackages [finflo]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-26 12:02:16] INFO root fetch - processPackages [quarchpy]: New version: [2.1.9.dev3] Old Version: [2.1.9.dev2]
+[2023-05-26 12:02:17] INFO root fetch - processPackages [spiritlong]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 12:02:17] INFO root fetch - processPackages [hydesign]: Downloading https://files.pythonhosted.org/packages/7d/f4/609c669032e570cac912ecd7435aaa22bfd4a386373b7c4dc72b8ddc4982/hydesign-1.1.1.tar.gz
+[2023-05-26 12:02:17] INFO root fetch - processPackages [banana-cli]: Downloading https://files.pythonhosted.org/packages/00/ad/6ae2bf8ce8aa40285d265a13089f661843a71f624c0a8cc9f22ce3e354ac/banana_cli-0.0.8.tar.gz
+[2023-05-26 12:02:17] INFO root fetch - processPackages [tagging-module]: Downloading https://files.pythonhosted.org/packages/6f/e1/c2bbf209404eacdb34feead2b85d22d64aa21cfa494ccacaad1ca2d8b262/tagging_module-0.0.6.tar.gz
+[2023-05-26 12:02:17] INFO root fetch - processPackages [kthbuild]: Downloading https://files.pythonhosted.org/packages/39/ad/705a2071c118b593bd06dba0782d88f25b9727383da12f6a0070e80acaf0/kthbuild-2.8.1.tar.gz
+[2023-05-26 12:02:17] INFO root fetch - processPackages [pmx-biobb]: Downloading https://files.pythonhosted.org/packages/8a/0b/e7b469ecf2b337e713cafe136f826f79709c9940a4d3a1eb00a669657af0/pmx_biobb-3.0.2.tar.gz
+[2023-05-26 12:02:17] INFO root fetch - processPackages [quarchpy]: Downloading https://files.pythonhosted.org/packages/4c/58/57c71932b71449bc466e74bd8478a30bedf723227a6aa33c2934896c2345/quarchpy-2.1.9.dev2-py2.py3-none-any.whl
+[2023-05-26 12:02:17] INFO root fetch - processPackages [tagging-module]: executing diffoscope
+[2023-05-26 12:02:17] INFO root fetch - processPackages [tagging-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tagging_module-0.0.5.tar.gz tmp/tagging_module-0.0.6.tar.gz --markdown 20230526/t/tagging-module/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-26 12:02:17] INFO root fetch - processPackages [spiritlong]: Downloading https://files.pythonhosted.org/packages/5e/d8/143d2ed94f71c39fb927d0d25ed1317ebd1a296f2a08fe7afc6bbe7a3421/spiritlong-0.0.8.tar.gz
+[2023-05-26 12:02:17] INFO root fetch - processPackages [pmx-biobb]: executing diffoscope
+[2023-05-26 12:02:17] INFO root fetch - processPackages [pmx-biobb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pmx_biobb-3.0.1.tar.gz tmp/pmx_biobb-3.0.2.tar.gz --markdown 20230526/p/pmx-biobb/3.0.1-3.0.2/diff.md --exclude *.pyd
+[2023-05-26 12:02:17] WARNING root fetch - processPackages [quarchpy]: Skipping package: exceeds size limit 34469980>=10485760
+[2023-05-26 12:02:17] INFO root fetch - processPackages [quarchpy]: Start processing: recon-lw
+[2023-05-26 12:02:17] INFO root fetch - main [MainThread]: End processing [quarchpy] error
+[2023-05-26 12:02:17] INFO root fetch - processPackages [bike]: Downloading https://files.pythonhosted.org/packages/04/44/04163f3e0fdf9671ac121e5231b69c0a97f1d4181ef38dd17128706d667c/bike-0.3.1.tar.gz
+[2023-05-26 12:02:17] INFO root fetch - processPackages [recon-lw]: New version: [2.0.0.dev5088623779] Old Version: [2.0.0.dev5082955800]
+[2023-05-26 12:02:17] INFO root fetch - processPackages [kthbuild]: Downloading https://files.pythonhosted.org/packages/a2/3d/34f95d4f4d1d4a349131266e3bee206a7cb8b704d83a3a189b153876cf04/kthbuild-2.9.0.tar.gz
+[2023-05-26 12:02:17] INFO root fetch - processPackages [bike]: executing diffoscope
+[2023-05-26 12:02:17] INFO root fetch - processPackages [bike]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bike-0.3.0.tar.gz tmp/bike-0.3.1.tar.gz --markdown 20230526/b/bike/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-26 12:02:17] INFO root fetch - processPackages [xw-utils]: Downloading https://files.pythonhosted.org/packages/83/1f/866660569301b9d9d645f2b7de1eb5dfbeb24c1e5a749d7e4b2cd36dcdc6/xw_utils-1.0.9-cp39-cp39-win_amd64.whl
+[2023-05-26 12:02:17] WARNING root fetch - processPackages [hydesign]: Skipping package: exceeds size limit 17595083>=10485760
+[2023-05-26 12:02:17] INFO root fetch - main [MainThread]: End processing [hydesign] error
+[2023-05-26 12:02:17] INFO root fetch - processPackages [banana-cli]: Downloading https://files.pythonhosted.org/packages/61/59/7d25272c764e7a553e5b66faa1e244d945e96fc1ed40b69f048ebb5fa80c/banana_cli-0.0.9.tar.gz
+[2023-05-26 12:02:17] INFO root fetch - processPackages [finflo]: executing diffoscope
+[2023-05-26 12:02:17] INFO root fetch - processPackages [finflo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finflo-2.0.8.tar.gz tmp/finflo-2.0.9.tar.gz --markdown 20230526/f/finflo/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-26 12:02:17] INFO root fetch - processPackages [kthbuild]: executing diffoscope
+[2023-05-26 12:02:17] INFO root fetch - processPackages [kthbuild]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kthbuild-2.8.1.tar.gz tmp/kthbuild-2.9.0.tar.gz --markdown 20230526/k/kthbuild/2.8.1-2.9.0/diff.md --exclude *.pyd
+[2023-05-26 12:02:17] INFO root fetch - processPackages [banana-cli]: executing diffoscope
+[2023-05-26 12:02:17] INFO root fetch - processPackages [banana-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/banana_cli-0.0.8.tar.gz tmp/banana_cli-0.0.9.tar.gz --markdown 20230526/b/banana-cli/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 12:02:17] INFO root fetch - processPackages [xw-utils]: executing diffoscope
+[2023-05-26 12:02:17] INFO root fetch - processPackages [xw-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xw_utils-1.0.8-cp39-cp39-win_amd64.whl.zip tmp/xw_utils-1.0.9-cp39-cp39-win_amd64.whl.zip --markdown 20230526/x/xw-utils/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-26 12:02:17] INFO root fetch - processPackages [spiritlong]: Downloading https://files.pythonhosted.org/packages/69/03/0a73ef95ca97480a75a1e73ef622a4e6470aede2a9778b93c73b0020bd62/spiritlong-0.0.9.tar.gz
+[2023-05-26 12:02:17] INFO root fetch - processPackages [spiritlong]: executing diffoscope
+[2023-05-26 12:02:17] INFO root fetch - processPackages [spiritlong]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiritlong-0.0.8.tar.gz tmp/spiritlong-0.0.9.tar.gz --markdown 20230526/s/spiritlong/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 12:02:17] INFO root fetch - processPackages [recon-lw]: Downloading https://files.pythonhosted.org/packages/cd/d5/75919003bfbb69ad807fc2898c1f51f3cccda8a935da4ba9dd13327eda1f/recon_lw-2.0.0.dev5088623779.tar.gz
+[2023-05-26 12:02:17] INFO root fetch - processPackages [recon-lw]: executing diffoscope
+[2023-05-26 12:02:17] INFO root fetch - processPackages [recon-lw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recon_lw-2.0.0.dev5082955800.tar.gz tmp/recon_lw-2.0.0.dev5088623779.tar.gz --markdown 20230526/r/recon-lw/2.0.0.dev5082955800-2.0.0.dev5088623779/diff.md --exclude *.pyd
+[2023-05-26 12:02:18] INFO root fetch - main [MainThread]: End processing [tagging-module]: success
+[2023-05-26 12:02:19] INFO root fetch - main [MainThread]: End processing [banana-cli]: success
+[2023-05-26 12:02:19] INFO root fetch - main [MainThread]: End processing [kthbuild]: success
+[2023-05-26 12:02:19] INFO root fetch - main [MainThread]: End processing [bike]: success
+[2023-05-26 12:02:20] INFO root fetch - main [MainThread]: End processing [xw-utils]: success
+[2023-05-26 12:02:20] INFO root fetch - main [MainThread]: End processing [finflo]: success
+[2023-05-26 12:02:20] INFO root fetch - main [MainThread]: End processing [recon-lw]: success
+[2023-05-26 12:02:20] INFO root fetch - main [MainThread]: End processing [spiritlong]: success
+[2023-05-26 12:02:24] INFO root fetch - main [MainThread]: End processing [pmx-biobb]: success
+[2023-05-26 12:02:24] INFO root fetch - main [MainThread]: Store serial: [18260960]
