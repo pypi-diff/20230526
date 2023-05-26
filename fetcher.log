@@ -14841,3 +14841,91 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 14:07:24] INFO root fetch - main [MainThread]: End processing [resotoui]: success
 [2023-05-26 14:07:27] INFO root fetch - main [MainThread]: End processing [cg]: success
 [2023-05-26 14:07:27] INFO root fetch - main [MainThread]: Store serial: [18262434]
+[2023-05-26 14:12:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18262434]
+[2023-05-26 14:12:43] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-26 14:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alkira-sdk
+[2023-05-26 14:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: news-crawlers
+[2023-05-26 14:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lifeguard-rabbitmq
+[2023-05-26 14:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: equipment
+[2023-05-26 14:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: questdb-connect
+[2023-05-26 14:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: arraylib-solve
+[2023-05-26 14:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyflipper
+[2023-05-26 14:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: johnsnowlabs-tmp
+[2023-05-26 14:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: solnlib
+[2023-05-26 14:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: idoit-scaleup
+[2023-05-26 14:12:43] INFO root fetch - processPackages [arraylib-solve]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-26 14:12:43] INFO root fetch - processPackages [pyflipper]: New version: [0.18] Old Version: [0.17]
+[2023-05-26 14:12:43] INFO root fetch - processPackages [news-crawlers]: New version: [3.5.0] Old Version: [3.4.3]
+[2023-05-26 14:12:43] INFO root fetch - processPackages [questdb-connect]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-26 14:12:43] INFO root fetch - processPackages [johnsnowlabs-tmp]: New version: [4.4.8] Old Version: [4.4.7]
+[2023-05-26 14:12:43] INFO root fetch - processPackages [idoit-scaleup]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 14:12:43] WARNING root fetch - processPackages [alkira-sdk]: Skipping, unable to determine old version
+[2023-05-26 14:12:43] INFO root fetch - processPackages [alkira-sdk]: Start processing: tkintertools-dev
+[2023-05-26 14:12:43] INFO root fetch - main [MainThread]: End processing [alkira-sdk] error
+[2023-05-26 14:12:43] INFO root fetch - processPackages [equipment]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 14:12:43] INFO root fetch - processPackages [solnlib]: New version: [4.9.1] Old Version: [4.9.0]
+[2023-05-26 14:12:43] INFO root fetch - processPackages [lifeguard-rabbitmq]: New version: [1.0.0] Old Version: [0.0.4]
+[2023-05-26 14:12:43] INFO root fetch - processPackages [tkintertools-dev]: New version: [2.6.2] Old Version: [2.6.1]
+[2023-05-26 14:12:43] INFO root fetch - processPackages [questdb-connect]: executing diffoscope
+[2023-05-26 14:12:43] INFO root fetch - processPackages [johnsnowlabs-tmp]: executing diffoscope
+[2023-05-26 14:12:43] INFO root fetch - processPackages [questdb-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/questdb-connect-1.0.5.tar.gz tmp/questdb-connect-1.0.6.tar.gz --markdown 20230526/q/questdb-connect/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-26 14:12:43] INFO root fetch - processPackages [johnsnowlabs-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/johnsnowlabs_tmp-4.4.7.tar.gz tmp/johnsnowlabs_tmp-4.4.8.tar.gz --markdown 20230526/j/johnsnowlabs-tmp/4.4.7-4.4.8/diff.md --exclude *.pyd
+[2023-05-26 14:12:43] INFO root fetch - processPackages [arraylib-solve]: Downloading https://files.pythonhosted.org/packages/54/a8/3ce0db62e41731b9c9bc19b0b253b6db4486b7a766443276c20c5d0f00d5/arraylib_solve-0.8.0.tar.gz
+[2023-05-26 14:12:43] INFO root fetch - processPackages [news-crawlers]: Downloading https://files.pythonhosted.org/packages/48/ed/48d748d3569fb9bc3338430557cbe9b9e5eee7a937738b38b42904d2acf9/news_crawlers-3.5.0.tar.gz
+[2023-05-26 14:12:43] INFO root fetch - processPackages [idoit-scaleup]: Downloading https://files.pythonhosted.org/packages/aa/db/56136685357cacb1d2a673f1f65e4a81347d515be7e1fa512a6ff6caa961/idoit_scaleup-0.0.8.tar.gz
+[2023-05-26 14:12:43] INFO root fetch - processPackages [solnlib]: Downloading https://files.pythonhosted.org/packages/09/5e/4b2da3eabe135b9bda6b815bccb4a0286569b148beff1b87cf5adc740cb6/solnlib-4.9.0.tar.gz
+[2023-05-26 14:12:43] INFO root fetch - processPackages [lifeguard-rabbitmq]: Downloading https://files.pythonhosted.org/packages/e2/86/ed5b49e956e833b45faa2baa94fb3ab12e84de8373ca01b081eaa14daa94/lifeguard-rabbitmq-0.0.4.tar.gz
+[2023-05-26 14:12:43] INFO root fetch - processPackages [pyflipper]: Downloading https://files.pythonhosted.org/packages/94/f3/8689fc9e42f00bfb286930d12e27127f1cdd0ed3cfbaf420f9deff55a67c/pyflipper-0.17.tar.gz
+[2023-05-26 14:12:43] INFO root fetch - processPackages [equipment]: Downloading https://files.pythonhosted.org/packages/ae/e5/b64b4d21bfd43bfb6810da0068cbc3c099df038624d2c955d36a4058909c/equipment-0.0.8.tar.gz
+[2023-05-26 14:12:43] INFO root fetch - processPackages [news-crawlers]: executing diffoscope
+[2023-05-26 14:12:43] INFO root fetch - processPackages [news-crawlers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/news_crawlers-3.4.3.tar.gz tmp/news_crawlers-3.5.0.tar.gz --markdown 20230526/n/news-crawlers/3.4.3-3.5.0/diff.md --exclude *.pyd
+[2023-05-26 14:12:43] INFO root fetch - processPackages [idoit-scaleup]: Downloading https://files.pythonhosted.org/packages/9e/ef/04ce41ee1a70ac4263bdf5473d84e4fa65e810f2dc22dc397c3d4cbd0607/idoit_scaleup-0.0.9.tar.gz
+[2023-05-26 14:12:43] INFO root fetch - processPackages [lifeguard-rabbitmq]: Downloading https://files.pythonhosted.org/packages/8b/e7/9b67c359cdfef2f3ee65c7e46290b7aded4e7cbed3b2ca6d6539e1639919/lifeguard-rabbitmq-1.0.0.tar.gz
+[2023-05-26 14:12:43] INFO root fetch - processPackages [tkintertools-dev]: Downloading https://files.pythonhosted.org/packages/c2/aa/0b4d41529f9e38133ba8fd0d91d371c7db4b9f5ab1d75a6c512176e5a231/tkintertools-dev-2.6.2.tar.gz
+[2023-05-26 14:12:43] INFO root fetch - processPackages [solnlib]: Downloading https://files.pythonhosted.org/packages/2f/48/d2e8649b9f027eb9964a00a732049ee289aa413ee4953d14760c63926ba7/solnlib-4.9.1.tar.gz
+[2023-05-26 14:12:43] INFO root fetch - processPackages [lifeguard-rabbitmq]: executing diffoscope
+[2023-05-26 14:12:43] INFO root fetch - processPackages [lifeguard-rabbitmq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifeguard-rabbitmq-0.0.4.tar.gz tmp/lifeguard-rabbitmq-1.0.0.tar.gz --markdown 20230526/l/lifeguard-rabbitmq/0.0.4-1.0.0/diff.md --exclude *.pyd
+[2023-05-26 14:12:43] INFO root fetch - processPackages [equipment]: Downloading https://files.pythonhosted.org/packages/b8/d7/81fcc0f65723fcb3864fc38efe6c82608353b58b42f3870fc7429e350c3f/equipment-0.0.9.tar.gz
+[2023-05-26 14:12:43] INFO root fetch - processPackages [pyflipper]: Downloading https://files.pythonhosted.org/packages/9c/3c/bac47fc70c9b74ad32e8eb11da478de270f861373812ba88e5ccabf05555/pyflipper-0.18.tar.gz
+[2023-05-26 14:12:43] INFO root fetch - processPackages [solnlib]: executing diffoscope
+[2023-05-26 14:12:43] INFO root fetch - processPackages [solnlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solnlib-4.9.0.tar.gz tmp/solnlib-4.9.1.tar.gz --markdown 20230526/s/solnlib/4.9.0-4.9.1/diff.md --exclude *.pyd
+[2023-05-26 14:12:43] INFO root fetch - processPackages [arraylib-solve]: Downloading https://files.pythonhosted.org/packages/99/da/01f7df718ea448ff62fb19424a662d999214580ce453370bbadaf861d9bf/arraylib_solve-0.9.0.tar.gz
+[2023-05-26 14:12:43] INFO root fetch - processPackages [idoit-scaleup]: executing diffoscope
+[2023-05-26 14:12:43] INFO root fetch - processPackages [idoit-scaleup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idoit_scaleup-0.0.8.tar.gz tmp/idoit_scaleup-0.0.9.tar.gz --markdown 20230526/i/idoit-scaleup/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 14:12:43] INFO root fetch - processPackages [tkintertools-dev]: executing diffoscope
+[2023-05-26 14:12:43] INFO root fetch - processPackages [tkintertools-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkintertools_dev-2.6.1.tar.gz tmp/tkintertools-dev-2.6.2.tar.gz --markdown 20230526/t/tkintertools-dev/2.6.1-2.6.2/diff.md --exclude *.pyd
+[2023-05-26 14:12:43] INFO root fetch - processPackages [equipment]: executing diffoscope
+[2023-05-26 14:12:43] INFO root fetch - processPackages [equipment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/equipment-0.0.8.tar.gz tmp/equipment-0.0.9.tar.gz --markdown 20230526/e/equipment/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 14:12:43] INFO root fetch - processPackages [pyflipper]: executing diffoscope
+[2023-05-26 14:12:43] INFO root fetch - processPackages [pyflipper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyflipper-0.17.tar.gz tmp/pyflipper-0.18.tar.gz --markdown 20230526/p/pyflipper/0.17-0.18/diff.md --exclude *.pyd
+[2023-05-26 14:12:43] INFO root fetch - processPackages [arraylib-solve]: executing diffoscope
+[2023-05-26 14:12:43] INFO root fetch - processPackages [arraylib-solve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arraylib_solve-0.8.0.tar.gz tmp/arraylib_solve-0.9.0.tar.gz --markdown 20230526/a/arraylib-solve/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-26 14:12:45] INFO root fetch - processPackages [questdb-connect]: Start processing: pepperize.cdk-ssm-parameters-cross-region
+[2023-05-26 14:12:45] INFO root fetch - main [MainThread]: End processing [questdb-connect]: success
+[2023-05-26 14:12:45] INFO root fetch - processPackages [pepperize.cdk-ssm-parameters-cross-region]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 14:12:45] INFO root fetch - processPackages [johnsnowlabs-tmp]: Start processing: act4e-mcdp
+[2023-05-26 14:12:45] INFO root fetch - main [MainThread]: End processing [johnsnowlabs-tmp]: success
+[2023-05-26 14:12:45] INFO root fetch - processPackages [news-crawlers]: Start processing: splunk-add-on-ucc-framework
+[2023-05-26 14:12:45] INFO root fetch - main [MainThread]: End processing [news-crawlers]: success
+[2023-05-26 14:12:45] WARNING root fetch - processPackages [act4e-mcdp]: Skipping, unable to determine old version
+[2023-05-26 14:12:45] INFO root fetch - processPackages [act4e-mcdp]: Start processing: trading-utils-test
+[2023-05-26 14:12:45] INFO root fetch - main [MainThread]: End processing [act4e-mcdp] error
+[2023-05-26 14:12:45] INFO root fetch - processPackages [splunk-add-on-ucc-framework]: New version: [6.0.0b2] Old Version: [6.0.0b1]
+[2023-05-26 14:12:45] INFO root fetch - processPackages [trading-utils-test]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-26 14:12:45] INFO root fetch - processPackages [trading-utils-test]: executing diffoscope
+[2023-05-26 14:12:45] INFO root fetch - processPackages [trading-utils-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trading_utils_test-0.0.1.tar.gz tmp/trading_utils_test-0.0.2.tar.gz --markdown 20230526/t/trading-utils-test/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-26 14:12:45] INFO root fetch - processPackages [splunk-add-on-ucc-framework]: executing diffoscope
+[2023-05-26 14:12:45] INFO root fetch - processPackages [splunk-add-on-ucc-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splunk_add_on_ucc_framework-6.0.0b1.tar.gz tmp/splunk_add_on_ucc_framework-6.0.0b2.tar.gz --markdown 20230526/s/splunk-add-on-ucc-framework/6.0.0b1-6.0.0b2/diff.md --exclude *.pyd
+[2023-05-26 14:12:45] INFO root fetch - processPackages [pepperize.cdk-ssm-parameters-cross-region]: executing diffoscope
+[2023-05-26 14:12:45] INFO root fetch - processPackages [pepperize.cdk-ssm-parameters-cross-region]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ssm-parameters-cross-region-0.0.98.tar.gz tmp/pepperize.cdk-ssm-parameters-cross-region-0.0.99.tar.gz --markdown 20230526/p/pepperize.cdk-ssm-parameters-cross-region/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 14:12:46] INFO root fetch - main [MainThread]: End processing [lifeguard-rabbitmq]: success
+[2023-05-26 14:12:46] INFO root fetch - main [MainThread]: End processing [solnlib]: success
+[2023-05-26 14:12:46] INFO root fetch - main [MainThread]: End processing [tkintertools-dev]: success
+[2023-05-26 14:12:46] INFO root fetch - main [MainThread]: End processing [pyflipper]: success
+[2023-05-26 14:12:46] INFO root fetch - main [MainThread]: End processing [idoit-scaleup]: success
+[2023-05-26 14:12:46] INFO root fetch - main [MainThread]: End processing [arraylib-solve]: success
+[2023-05-26 14:12:46] INFO root fetch - main [MainThread]: End processing [equipment]: success
+[2023-05-26 14:12:47] INFO root fetch - main [MainThread]: End processing [trading-utils-test]: success
+[2023-05-26 14:12:48] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-ssm-parameters-cross-region]: success
+[2023-05-26 14:12:48] INFO root fetch - main [MainThread]: End processing [splunk-add-on-ucc-framework]: success
+[2023-05-26 14:12:48] INFO root fetch - main [MainThread]: Store serial: [18262488]
