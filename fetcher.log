@@ -16134,3 +16134,182 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 15:25:14] INFO root fetch - main [MainThread]: End processing [CUQIpy]: success
 [2023-05-26 15:25:23] INFO root fetch - main [MainThread]: End processing [pyaedt]: success
 [2023-05-26 15:25:23] INFO root fetch - main [MainThread]: Store serial: [18263318]
+[2023-05-26 15:30:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18263318]
+[2023-05-26 15:30:32] INFO root fetch - main [MainThread]: Found 31 changed packages
+[2023-05-26 15:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gardener-cicd-base
+[2023-05-26 15:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: packagetestbancolombia
+[2023-05-26 15:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gardener-cicd-cli
+[2023-05-26 15:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gardener-cicd-dso
+[2023-05-26 15:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gardener-cicd-libs
+[2023-05-26 15:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gardener-cicd-whd
+[2023-05-26 15:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gardener-oci
+[2023-05-26 15:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ogscm
+[2023-05-26 15:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: trojai-sdk
+[2023-05-26 15:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: metaphor-connectors
+[2023-05-26 15:30:32] INFO root fetch - processPackages [packagetestbancolombia]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-26 15:30:32] INFO root fetch - processPackages [trojai-sdk]: New version: [0.2.3.6] Old Version: [0.2.3.4]
+[2023-05-26 15:30:32] INFO root fetch - processPackages [gardener-cicd-dso]: New version: [1.2065.0] Old Version: [1.2064.0]
+[2023-05-26 15:30:32] INFO root fetch - processPackages [ogscm]: New version: [2.4.8] Old Version: [2.4.7]
+[2023-05-26 15:30:32] INFO root fetch - processPackages [gardener-cicd-whd]: New version: [1.2065.0] Old Version: [1.2064.0]
+[2023-05-26 15:30:32] INFO root fetch - processPackages [gardener-cicd-base]: New version: [1.2065.0] Old Version: [1.2064.0]
+[2023-05-26 15:30:32] INFO root fetch - processPackages [metaphor-connectors]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-26 15:30:32] INFO root fetch - processPackages [gardener-cicd-cli]: New version: [1.2065.0] Old Version: [1.2064.0]
+[2023-05-26 15:30:33] INFO root fetch - processPackages [gardener-cicd-libs]: New version: [1.2065.0] Old Version: [1.2064.0]
+[2023-05-26 15:30:33] INFO root fetch - processPackages [gardener-oci]: New version: [1.999.0] Old Version: [1.998.0]
+[2023-05-26 15:30:33] INFO root fetch - processPackages [metaphor-connectors]: executing diffoscope
+[2023-05-26 15:30:33] INFO root fetch - processPackages [trojai-sdk]: Downloading https://files.pythonhosted.org/packages/cf/43/95b098feee2eaa08de5ebc950a96cc232ee00ca6fd306ddea080ccbdfafd/trojai-sdk-0.2.3.4.tar.gz
+[2023-05-26 15:30:33] INFO root fetch - processPackages [metaphor-connectors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaphor-connectors-0.9.3.tar.gz tmp/metaphor-connectors-0.9.4.tar.gz --markdown 20230526/m/metaphor-connectors/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-26 15:30:33] INFO root fetch - processPackages [packagetestbancolombia]: Downloading https://files.pythonhosted.org/packages/cd/75/18ad59878dee7124a3da5d49bed0152bacb65ce5fc947de928b84f1d4b52/packagetestbancolombia-1.0.0.tar.gz
+[2023-05-26 15:30:33] INFO root fetch - processPackages [gardener-oci]: executing diffoscope
+[2023-05-26 15:30:33] INFO root fetch - processPackages [gardener-oci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-oci-1.998.0.tar.gz tmp/gardener-oci-1.999.0.tar.gz --markdown 20230526/g/gardener-oci/1.998.0-1.999.0/diff.md --exclude *.pyd
+[2023-05-26 15:30:33] INFO root fetch - processPackages [gardener-cicd-cli]: Downloading https://files.pythonhosted.org/packages/5a/8e/9a7162595df4ec51de7087fc683d38ad00c54b3e8540b68b89973678ea34/gardener-cicd-cli-1.2065.0.tar.gz
+[2023-05-26 15:30:33] INFO root fetch - processPackages [gardener-cicd-base]: Downloading https://files.pythonhosted.org/packages/a1/61/57d4cbfe4c58bd99dbd5d6ad11371e8ed1978e11b9a8ab15c947488950d2/gardener-cicd-base-1.2065.0.tar.gz
+[2023-05-26 15:30:33] INFO root fetch - processPackages [gardener-cicd-whd]: Downloading https://files.pythonhosted.org/packages/fb/ed/9fcab8e7c81b2037f8533fad513527d0ca429a1311183aed692ab607a6fc/gardener-cicd-whd-1.2065.0.tar.gz
+[2023-05-26 15:30:33] INFO root fetch - processPackages [ogscm]: Downloading https://files.pythonhosted.org/packages/53/56/7cee3027248869be7e3563f2c406dde92c13ff8c61619cc1cbd6f76c1744/ogscm-2.4.8.tar.gz
+[2023-05-26 15:30:33] INFO root fetch - processPackages [gardener-cicd-libs]: Downloading https://files.pythonhosted.org/packages/ad/63/095c84712d7e11f4f50554829028b554802fcab0bc4425c84c8a645e7b20/gardener-cicd-libs-1.2065.0.tar.gz
+[2023-05-26 15:30:33] INFO root fetch - processPackages [gardener-cicd-dso]: Downloading https://files.pythonhosted.org/packages/d3/e9/0d0ffaf47a753a0ce6bfbd456c471c3cc26b2eb8d94a690354467c45fd10/gardener-cicd-dso-1.2065.0.tar.gz
+[2023-05-26 15:30:33] INFO root fetch - processPackages [trojai-sdk]: Downloading https://files.pythonhosted.org/packages/59/7c/e4de6614c524e28a19886fe42a23176bced44800a4c4dba658332f07f061/trojai-sdk-0.2.3.6.tar.gz
+[2023-05-26 15:30:33] INFO root fetch - processPackages [gardener-cicd-cli]: executing diffoscope
+[2023-05-26 15:30:33] INFO root fetch - processPackages [gardener-cicd-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-cli-1.2064.0.tar.gz tmp/gardener-cicd-cli-1.2065.0.tar.gz --markdown 20230526/g/gardener-cicd-cli/1.2064.0-1.2065.0/diff.md --exclude *.pyd
+[2023-05-26 15:30:33] INFO root fetch - processPackages [gardener-cicd-base]: executing diffoscope
+[2023-05-26 15:30:33] INFO root fetch - processPackages [gardener-cicd-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-base-1.2064.0.tar.gz tmp/gardener-cicd-base-1.2065.0.tar.gz --markdown 20230526/g/gardener-cicd-base/1.2064.0-1.2065.0/diff.md --exclude *.pyd
+[2023-05-26 15:30:33] INFO root fetch - processPackages [gardener-cicd-whd]: executing diffoscope
+[2023-05-26 15:30:33] INFO root fetch - processPackages [gardener-cicd-whd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-whd-1.2064.0.tar.gz tmp/gardener-cicd-whd-1.2065.0.tar.gz --markdown 20230526/g/gardener-cicd-whd/1.2064.0-1.2065.0/diff.md --exclude *.pyd
+[2023-05-26 15:30:33] INFO root fetch - processPackages [trojai-sdk]: executing diffoscope
+[2023-05-26 15:30:33] INFO root fetch - processPackages [trojai-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trojai-sdk-0.2.3.4.tar.gz tmp/trojai-sdk-0.2.3.6.tar.gz --markdown 20230526/t/trojai-sdk/0.2.3.4-0.2.3.6/diff.md --exclude *.pyd
+[2023-05-26 15:30:33] INFO root fetch - processPackages [packagetestbancolombia]: Downloading https://files.pythonhosted.org/packages/f1/dc/078d221eef32fb9dbed6eb637e3b01168d00444f5cdbf89b62c8ce6355ee/packagetestbancolombia-1.0.1.tar.gz
+[2023-05-26 15:30:33] INFO root fetch - processPackages [ogscm]: executing diffoscope
+[2023-05-26 15:30:33] INFO root fetch - processPackages [ogscm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ogscm-2.4.7.tar.gz tmp/ogscm-2.4.8.tar.gz --markdown 20230526/o/ogscm/2.4.7-2.4.8/diff.md --exclude *.pyd
+[2023-05-26 15:30:33] INFO root fetch - processPackages [gardener-cicd-dso]: executing diffoscope
+[2023-05-26 15:30:33] INFO root fetch - processPackages [gardener-cicd-dso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-dso-1.2064.0.tar.gz tmp/gardener-cicd-dso-1.2065.0.tar.gz --markdown 20230526/g/gardener-cicd-dso/1.2064.0-1.2065.0/diff.md --exclude *.pyd
+[2023-05-26 15:30:33] INFO root fetch - processPackages [packagetestbancolombia]: executing diffoscope
+[2023-05-26 15:30:33] INFO root fetch - processPackages [packagetestbancolombia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/packagetestbancolombia-1.0.0.tar.gz tmp/packagetestbancolombia-1.0.1.tar.gz --markdown 20230526/p/packagetestbancolombia/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-26 15:30:33] INFO root fetch - processPackages [gardener-cicd-libs]: executing diffoscope
+[2023-05-26 15:30:33] INFO root fetch - processPackages [gardener-cicd-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-libs-1.2064.0.tar.gz tmp/gardener-cicd-libs-1.2065.0.tar.gz --markdown 20230526/g/gardener-cicd-libs/1.2064.0-1.2065.0/diff.md --exclude *.pyd
+[2023-05-26 15:30:34] INFO root fetch - processPackages [gardener-oci]: Start processing: epyk
+[2023-05-26 15:30:34] INFO root fetch - main [MainThread]: End processing [gardener-oci]: success
+[2023-05-26 15:30:34] INFO root fetch - processPackages [epyk]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-26 15:30:35] INFO root fetch - processPackages [epyk]: executing diffoscope
+[2023-05-26 15:30:35] INFO root fetch - processPackages [epyk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epyk-1.9.8-py3-none-any.whl.zip tmp/epyk-1.9.9-py3-none-any.whl.zip --markdown 20230526/e/epyk/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-26 15:30:35] INFO root fetch - processPackages [gardener-cicd-cli]: Start processing: tgwrap
+[2023-05-26 15:30:35] INFO root fetch - main [MainThread]: End processing [gardener-cicd-cli]: success
+[2023-05-26 15:30:35] INFO root fetch - processPackages [tgwrap]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-26 15:30:35] INFO root fetch - processPackages [tgwrap]: Downloading https://files.pythonhosted.org/packages/f8/91/d440550f1f038d7f6e417165c2d1d53399cb0ffbedb0e267550258ec11dc/tgwrap-0.6.1.tar.gz
+[2023-05-26 15:30:35] INFO root fetch - processPackages [gardener-cicd-dso]: Start processing: alkira
+[2023-05-26 15:30:35] INFO root fetch - main [MainThread]: End processing [gardener-cicd-dso]: success
+[2023-05-26 15:30:35] WARNING root fetch - processPackages [alkira]: Skipping, unable to determine old version
+[2023-05-26 15:30:35] INFO root fetch - processPackages [alkira]: Start processing: supervisely
+[2023-05-26 15:30:35] INFO root fetch - main [MainThread]: End processing [alkira] error
+[2023-05-26 15:30:35] INFO root fetch - processPackages [supervisely]: New version: [6.9.2] Old Version: [6.9.1]
+[2023-05-26 15:30:35] INFO root fetch - processPackages [tgwrap]: executing diffoscope
+[2023-05-26 15:30:35] INFO root fetch - processPackages [tgwrap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tgwrap-0.6.0.tar.gz tmp/tgwrap-0.6.1.tar.gz --markdown 20230526/t/tgwrap/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-26 15:30:35] INFO root fetch - processPackages [supervisely]: executing diffoscope
+[2023-05-26 15:30:35] INFO root fetch - processPackages [supervisely]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supervisely-6.9.1.tar.gz tmp/supervisely-6.9.2.tar.gz --markdown 20230526/s/supervisely/6.9.1-6.9.2/diff.md --exclude *.pyd
+[2023-05-26 15:30:36] INFO root fetch - processPackages [gardener-cicd-base]: Start processing: ddadevops
+[2023-05-26 15:30:36] INFO root fetch - main [MainThread]: End processing [gardener-cicd-base]: success
+[2023-05-26 15:30:36] INFO root fetch - processPackages [ddadevops]: New version: [4.0.0.dev9] Old Version: [4.0.0.dev8]
+[2023-05-26 15:30:36] INFO root fetch - processPackages [gardener-cicd-whd]: Start processing: CUQIpy
+[2023-05-26 15:30:36] INFO root fetch - main [MainThread]: End processing [gardener-cicd-whd]: success
+[2023-05-26 15:30:36] INFO root fetch - processPackages [CUQIpy]: New version: [0.3.0.post0.dev7] Old Version: [0.3.0.post0.dev5]
+[2023-05-26 15:30:36] INFO root fetch - processPackages [ddadevops]: executing diffoscope
+[2023-05-26 15:30:36] INFO root fetch - processPackages [ddadevops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddadevops-4.0.0.dev8.tar.gz tmp/ddadevops-4.0.0.dev9.tar.gz --markdown 20230526/d/ddadevops/4.0.0.dev8-4.0.0.dev9/diff.md --exclude *.pyd
+[2023-05-26 15:30:36] INFO root fetch - processPackages [CUQIpy]: executing diffoscope
+[2023-05-26 15:30:36] INFO root fetch - processPackages [CUQIpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CUQIpy-0.3.0.post0.dev5.tar.gz tmp/CUQIpy-0.3.0.post0.dev7.tar.gz --markdown 20230526/C/CUQIpy/0.3.0.post0.dev5-0.3.0.post0.dev7/diff.md --exclude *.pyd
+[2023-05-26 15:30:36] INFO root fetch - processPackages [packagetestbancolombia]: Start processing: akerbp.mlops
+[2023-05-26 15:30:36] INFO root fetch - main [MainThread]: End processing [packagetestbancolombia]: success
+[2023-05-26 15:30:36] INFO root fetch - processPackages [akerbp.mlops]: New version: [3.1.2a4] Old Version: [3.1.2a3]
+[2023-05-26 15:30:36] INFO root fetch - processPackages [trojai-sdk]: Start processing: fixtures
+[2023-05-26 15:30:36] INFO root fetch - main [MainThread]: End processing [trojai-sdk]: success
+[2023-05-26 15:30:36] INFO root fetch - processPackages [fixtures]: New version: [4.1.0] Old Version: [4.0.1]
+[2023-05-26 15:30:36] INFO root fetch - processPackages [metaphor-connectors]: Start processing: saic-ismart-client
+[2023-05-26 15:30:36] INFO root fetch - main [MainThread]: End processing [metaphor-connectors]: success
+[2023-05-26 15:30:36] INFO root fetch - processPackages [ogscm]: Start processing: aish
+[2023-05-26 15:30:36] INFO root fetch - main [MainThread]: End processing [ogscm]: success
+[2023-05-26 15:30:36] INFO root fetch - processPackages [saic-ismart-client]: New version: [1.2.6] Old Version: [1.2.5]
+[2023-05-26 15:30:36] INFO root fetch - processPackages [aish]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-26 15:30:36] INFO root fetch - processPackages [akerbp.mlops]: Downloading https://files.pythonhosted.org/packages/15/78/e44f7dc837aa64d9cd4119ca003536f850fe599876ae64f469dff7e6b947/akerbp.mlops-3.1.2a4.tar.gz
+[2023-05-26 15:30:36] INFO root fetch - processPackages [fixtures]: Downloading https://files.pythonhosted.org/packages/3c/3d/f106b3278ba50067e9cd397f836d33d141aa790853152dbb3512aaee19f3/fixtures-4.0.1.tar.gz
+[2023-05-26 15:30:36] INFO root fetch - processPackages [saic-ismart-client]: Downloading https://files.pythonhosted.org/packages/4c/a7/a960291f885d30f5cef2b6c2c2b5fa1afe0e8241b3aed3b3f6a2dd509104/saic_ismart_client-1.2.5.tar.gz
+[2023-05-26 15:30:36] INFO root fetch - processPackages [aish]: Downloading https://files.pythonhosted.org/packages/d8/72/8025fc95324512d8da3c05943d65e37a2004b95bb0833e1c37d2b8be8bee/aish-0.1.8.tar.gz
+[2023-05-26 15:30:36] INFO root fetch - processPackages [akerbp.mlops]: executing diffoscope
+[2023-05-26 15:30:36] INFO root fetch - processPackages [akerbp.mlops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akerbp.mlops-3.1.2a3.tar.gz tmp/akerbp.mlops-3.1.2a4.tar.gz --markdown 20230526/a/akerbp.mlops/3.1.2a3-3.1.2a4/diff.md --exclude *.pyd
+[2023-05-26 15:30:36] INFO root fetch - processPackages [fixtures]: Downloading https://files.pythonhosted.org/packages/5e/4c/3c3faee9f554d753ee428bef3a5e8176995cffbf0b5ad3f1d6c272ab2148/fixtures-4.1.0.tar.gz
+[2023-05-26 15:30:36] INFO root fetch - processPackages [saic-ismart-client]: Downloading https://files.pythonhosted.org/packages/83/58/46390559d59247a29765a46776f29036a959804ebb07152b688999b426a5/saic_ismart_client-1.2.6.tar.gz
+[2023-05-26 15:30:36] INFO root fetch - processPackages [aish]: executing diffoscope
+[2023-05-26 15:30:36] INFO root fetch - processPackages [aish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aish-0.1.7.tar.gz tmp/aish-0.1.8.tar.gz --markdown 20230526/a/aish/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-26 15:30:37] INFO root fetch - processPackages [fixtures]: executing diffoscope
+[2023-05-26 15:30:37] INFO root fetch - processPackages [fixtures]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fixtures-4.0.1.tar.gz tmp/fixtures-4.1.0.tar.gz --markdown 20230526/f/fixtures/4.0.1-4.1.0/diff.md --exclude *.pyd
+[2023-05-26 15:30:37] INFO root fetch - processPackages [saic-ismart-client]: executing diffoscope
+[2023-05-26 15:30:37] INFO root fetch - processPackages [saic-ismart-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/saic_ismart_client-1.2.5.tar.gz tmp/saic_ismart_client-1.2.6.tar.gz --markdown 20230526/s/saic-ismart-client/1.2.5-1.2.6/diff.md --exclude *.pyd
+[2023-05-26 15:30:37] INFO root fetch - processPackages [gardener-cicd-libs]: Start processing: fresnote
+[2023-05-26 15:30:37] INFO root fetch - main [MainThread]: End processing [gardener-cicd-libs]: success
+[2023-05-26 15:30:37] INFO root fetch - processPackages [fresnote]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-05-26 15:30:38] INFO root fetch - processPackages [fresnote]: Downloading https://files.pythonhosted.org/packages/10/24/43413a6ddf0137e5d8847ef540684696b5f5eced90a337e6f08fbfb7c9f6/fresnote-0.0.1.tar.gz
+[2023-05-26 15:30:38] INFO root fetch - processPackages [fresnote]: Downloading https://files.pythonhosted.org/packages/f7/52/1792c06d87ae53cc731d14e17f3b7399901b63eef7659d1e92e96e1818b7/fresnote-0.1.0.tar.gz
+[2023-05-26 15:30:38] INFO root fetch - processPackages [fresnote]: executing diffoscope
+[2023-05-26 15:30:38] INFO root fetch - processPackages [fresnote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fresnote-0.0.1.tar.gz tmp/fresnote-0.1.0.tar.gz --markdown 20230526/f/fresnote/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2023-05-26 15:30:38] INFO root fetch - processPackages [tgwrap]: Start processing: hcai-nova-server-nightly
+[2023-05-26 15:30:38] INFO root fetch - main [MainThread]: End processing [tgwrap]: success
+[2023-05-26 15:30:38] INFO root fetch - processPackages [hcai-nova-server-nightly]: New version: [0.1.7.dev202305261329] Old Version: [0.1.7.dev202305251001]
+[2023-05-26 15:30:38] INFO root fetch - processPackages [hcai-nova-server-nightly]: Downloading https://files.pythonhosted.org/packages/d3/39/c442afc1d5e904693746c2ab0c332a5e585e58cbe3a3a4bd46d1925fddb9/hcai-nova-server-nightly-0.1.7.dev202305251001.tar.gz
+[2023-05-26 15:30:38] INFO root fetch - processPackages [ddadevops]: Start processing: cybrid-api-organization-python
+[2023-05-26 15:30:38] INFO root fetch - main [MainThread]: End processing [ddadevops]: success
+[2023-05-26 15:30:38] INFO root fetch - processPackages [cybrid-api-organization-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-26 15:30:39] INFO root fetch - processPackages [cybrid-api-organization-python]: executing diffoscope
+[2023-05-26 15:30:39] INFO root fetch - processPackages [cybrid-api-organization-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-organization-python-0.9.8.tar.gz tmp/cybrid-api-organization-python-0.9.9.tar.gz --markdown 20230526/c/cybrid-api-organization-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-26 15:30:39] INFO root fetch - processPackages [hcai-nova-server-nightly]: Downloading https://files.pythonhosted.org/packages/22/a1/e8f5ceb084547e874d17e47a0db8cf2ca141f448d2b32543ebc03fe2771f/hcai-nova-server-nightly-0.1.7.dev202305261329.tar.gz
+[2023-05-26 15:30:39] INFO root fetch - processPackages [hcai-nova-server-nightly]: executing diffoscope
+[2023-05-26 15:30:39] INFO root fetch - processPackages [hcai-nova-server-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcai-nova-server-nightly-0.1.7.dev202305251001.tar.gz tmp/hcai-nova-server-nightly-0.1.7.dev202305261329.tar.gz --markdown 20230526/h/hcai-nova-server-nightly/0.1.7.dev202305251001-0.1.7.dev202305261329/diff.md --exclude *.pyd
+[2023-05-26 15:30:39] INFO root fetch - processPackages [CUQIpy]: Start processing: CUQIpy
+[2023-05-26 15:30:39] INFO root fetch - main [MainThread]: End processing [CUQIpy]: success
+[2023-05-26 15:30:39] INFO root fetch - processPackages [CUQIpy]: New version: [0.3.0.post0.dev7] Old Version: [0.3.0.post0.dev5]
+[2023-05-26 15:30:39] INFO root fetch - processPackages [akerbp.mlops]: Start processing: hcai-datasets-nightly
+[2023-05-26 15:30:39] INFO root fetch - main [MainThread]: End processing [akerbp.mlops]: success
+[2023-05-26 15:30:39] INFO root fetch - processPackages [CUQIpy]: executing diffoscope
+[2023-05-26 15:30:39] INFO root fetch - processPackages [CUQIpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CUQIpy-0.3.0.post0.dev5.tar.gz tmp/CUQIpy-0.3.0.post0.dev7.tar.gz --markdown 20230526/C/CUQIpy/0.3.0.post0.dev5-0.3.0.post0.dev7/diff.md --exclude *.pyd
+[2023-05-26 15:30:39] INFO root fetch - processPackages [hcai-datasets-nightly]: New version: [0.1.9.dev202305261329] Old Version: [0.1.9.dev202305251000]
+[2023-05-26 15:30:39] INFO root fetch - processPackages [hcai-datasets-nightly]: Downloading https://files.pythonhosted.org/packages/3a/a8/9719983c8a807232b5164531b33a097cc9fe1f0813ce4ac8c4c87f435f34/hcai-datasets-nightly-0.1.9.dev202305251000.tar.gz
+[2023-05-26 15:30:40] INFO root fetch - processPackages [saic-ismart-client]: Start processing: dbt-toolkit
+[2023-05-26 15:30:40] INFO root fetch - main [MainThread]: End processing [saic-ismart-client]: success
+[2023-05-26 15:30:40] INFO root fetch - processPackages [fresnote]: Start processing: honeybee-ph
+[2023-05-26 15:30:40] INFO root fetch - main [MainThread]: End processing [fresnote]: success
+[2023-05-26 15:30:40] WARNING root fetch - processPackages [dbt-toolkit]: Skipping, unable to determine old version
+[2023-05-26 15:30:40] INFO root fetch - processPackages [dbt-toolkit]: Start processing: cybrid-api-id-python
+[2023-05-26 15:30:40] INFO root fetch - main [MainThread]: End processing [dbt-toolkit] error
+[2023-05-26 15:30:40] INFO root fetch - processPackages [honeybee-ph]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-26 15:30:40] INFO root fetch - processPackages [aish]: Start processing: deformation-inversion-layer
+[2023-05-26 15:30:40] INFO root fetch - main [MainThread]: End processing [aish]: success
+[2023-05-26 15:30:40] INFO root fetch - processPackages [cybrid-api-id-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-26 15:30:40] INFO root fetch - processPackages [supervisely]: Start processing: elgin
+[2023-05-26 15:30:40] INFO root fetch - main [MainThread]: End processing [supervisely]: success
+[2023-05-26 15:30:40] INFO root fetch - processPackages [deformation-inversion-layer]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-26 15:30:40] INFO root fetch - processPackages [hcai-datasets-nightly]: Downloading https://files.pythonhosted.org/packages/59/56/e2a8dbed24c300b56e8748febb4a4a2aacf981bc066fe035c62443628839/hcai-datasets-nightly-0.1.9.dev202305261329.tar.gz
+[2023-05-26 15:30:40] INFO root fetch - processPackages [elgin]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 15:30:40] INFO root fetch - processPackages [honeybee-ph]: executing diffoscope
+[2023-05-26 15:30:40] INFO root fetch - processPackages [honeybee-ph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-ph-1.9.0.tar.gz tmp/honeybee-ph-1.9.1.tar.gz --markdown 20230526/h/honeybee-ph/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-26 15:30:40] INFO root fetch - processPackages [elgin]: executing diffoscope
+[2023-05-26 15:30:40] INFO root fetch - processPackages [elgin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elgin-0.1.8.tar.gz tmp/elgin-0.1.9.tar.gz --markdown 20230526/e/elgin/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 15:30:40] INFO root fetch - processPackages [cybrid-api-id-python]: executing diffoscope
+[2023-05-26 15:30:40] INFO root fetch - processPackages [cybrid-api-id-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-id-python-0.9.8.tar.gz tmp/cybrid-api-id-python-0.9.9.tar.gz --markdown 20230526/c/cybrid-api-id-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-26 15:30:40] INFO root fetch - processPackages [deformation-inversion-layer]: Downloading https://files.pythonhosted.org/packages/61/e5/63e5171253e7b2e264d6630285442e193883851f628ba2602ffeb8a2f0ce/deformation-inversion-layer-1.0.0.tar.gz
+[2023-05-26 15:30:40] INFO root fetch - processPackages [hcai-datasets-nightly]: executing diffoscope
+[2023-05-26 15:30:40] INFO root fetch - processPackages [hcai-datasets-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcai-datasets-nightly-0.1.9.dev202305251000.tar.gz tmp/hcai-datasets-nightly-0.1.9.dev202305261329.tar.gz --markdown 20230526/h/hcai-datasets-nightly/0.1.9.dev202305251000-0.1.9.dev202305261329/diff.md --exclude *.pyd
+[2023-05-26 15:30:40] INFO root fetch - processPackages [deformation-inversion-layer]: Downloading https://files.pythonhosted.org/packages/25/f8/09ca8718a8ec33282b99e4b3373af711400130097dae3040ecdb95239848/deformation-inversion-layer-1.0.1.tar.gz
+[2023-05-26 15:30:40] INFO root fetch - processPackages [deformation-inversion-layer]: executing diffoscope
+[2023-05-26 15:30:40] INFO root fetch - processPackages [deformation-inversion-layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deformation-inversion-layer-1.0.0.tar.gz tmp/deformation-inversion-layer-1.0.1.tar.gz --markdown 20230526/d/deformation-inversion-layer/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-26 15:30:41] INFO root fetch - processPackages [fixtures]: Start processing: cybrid-api-bank-python
+[2023-05-26 15:30:41] INFO root fetch - main [MainThread]: End processing [fixtures]: success
+[2023-05-26 15:30:41] INFO root fetch - processPackages [cybrid-api-bank-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-26 15:30:41] INFO root fetch - processPackages [cybrid-api-bank-python]: executing diffoscope
+[2023-05-26 15:30:41] INFO root fetch - processPackages [cybrid-api-bank-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-bank-python-0.9.8.tar.gz tmp/cybrid-api-bank-python-0.9.9.tar.gz --markdown 20230526/c/cybrid-api-bank-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-26 15:30:41] INFO root fetch - main [MainThread]: End processing [hcai-nova-server-nightly]: success
+[2023-05-26 15:30:42] INFO root fetch - main [MainThread]: End processing [cybrid-api-organization-python]: success
+[2023-05-26 15:30:42] INFO root fetch - main [MainThread]: End processing [CUQIpy]: success
+[2023-05-26 15:30:42] INFO root fetch - main [MainThread]: End processing [elgin]: success
+[2023-05-26 15:30:43] INFO root fetch - main [MainThread]: End processing [deformation-inversion-layer]: success
+[2023-05-26 15:30:43] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
+[2023-05-26 15:30:43] INFO root fetch - main [MainThread]: End processing [honeybee-ph]: success
+[2023-05-26 15:30:44] INFO root fetch - main [MainThread]: End processing [hcai-datasets-nightly]: success
+[2023-05-26 15:30:44] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
+[2023-05-26 15:30:45] INFO root fetch - main [MainThread]: End processing [epyk]: success
+[2023-05-26 15:30:45] INFO root fetch - main [MainThread]: Store serial: [18263436]
