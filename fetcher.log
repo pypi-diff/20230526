@@ -15647,3 +15647,117 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 14:57:40] INFO root fetch - main [MainThread]: End processing [spotPython]: success
 [2023-05-26 14:57:56] INFO root fetch - main [MainThread]: End processing [testrail-api-reporter]: success
 [2023-05-26 14:57:56] INFO root fetch - main [MainThread]: Store serial: [18262967]
+[2023-05-26 15:03:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18262967]
+[2023-05-26 15:03:07] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-05-26 15:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qtest-reporter
+[2023-05-26 15:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypreql
+[2023-05-26 15:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qesdk
+[2023-05-26 15:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: st4sd-runtime-core
+[2023-05-26 15:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flxtrd
+[2023-05-26 15:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sql-face
+[2023-05-26 15:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: akshare
+[2023-05-26 15:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: testrail-api-reporter
+[2023-05-26 15:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: deformation-inversion-layer
+[2023-05-26 15:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: edat-utils
+[2023-05-26 15:03:07] INFO root fetch - processPackages [pypreql]: New version: [0.0.1rc9] Old Version: [0.0.1rc8]
+[2023-05-26 15:03:07] INFO root fetch - processPackages [qtest-reporter]: New version: [0.0.9] Old Version: [0.0.10]
+[2023-05-26 15:03:07] INFO root fetch - processPackages [qesdk]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-26 15:03:07] INFO root fetch - processPackages [st4sd-runtime-core]: New version: [2.0.0a9.dev8] Old Version: [2.0.0a9.dev7]
+[2023-05-26 15:03:07] INFO root fetch - processPackages [testrail-api-reporter]: New version: [1.3.2] Old Version: [1.3.0]
+[2023-05-26 15:03:07] WARNING root fetch - processPackages [deformation-inversion-layer]: Skipping, unable to determine old version
+[2023-05-26 15:03:07] INFO root fetch - processPackages [flxtrd]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-26 15:03:07] INFO root fetch - processPackages [deformation-inversion-layer]: Start processing: xemc3
+[2023-05-26 15:03:07] INFO root fetch - main [MainThread]: End processing [deformation-inversion-layer] error
+[2023-05-26 15:03:07] INFO root fetch - processPackages [edat-utils]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-26 15:03:07] INFO root fetch - processPackages [sql-face]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 15:03:07] INFO root fetch - processPackages [xemc3]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-26 15:03:07] INFO root fetch - processPackages [akshare]: New version: [1.9.97] Old Version: [1.9.96]
+[2023-05-26 15:03:08] INFO root fetch - processPackages [qtest-reporter]: Downloading https://files.pythonhosted.org/packages/ec/e8/c9178b3f86f4bcd77d9902a8ffcf3772a8c1edb949280ff8ce748060958e/qtest_reporter-0.0.10.tar.gz
+[2023-05-26 15:03:08] INFO root fetch - processPackages [flxtrd]: Downloading https://files.pythonhosted.org/packages/f4/87/c9b2605dd3908ef973c79fc1dcc38adca8e6b4b6c226991c6b23611629f2/flxtrd-0.0.3.tar.gz
+[2023-05-26 15:03:08] INFO root fetch - processPackages [testrail-api-reporter]: Downloading https://files.pythonhosted.org/packages/16/bc/c689adc4a07ee288de5ad82161ab1303d6adc093b978d3c2f2598cce0e71/testrail_api_reporter-1.3.2.tar.gz
+[2023-05-26 15:03:08] INFO root fetch - processPackages [edat-utils]: Downloading https://files.pythonhosted.org/packages/56/e7/716d970d76b25cb3a3c4114cee0ed36849fa32fba1502551386bc686481c/edat_utils-0.4.2.tar.gz
+[2023-05-26 15:03:08] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/38/6b/2b9b3958124fae7439f97e1c28ce5302ff6e21de32b2c695d2f009d46d15/akshare-1.9.97.tar.gz
+[2023-05-26 15:03:08] INFO root fetch - processPackages [xemc3]: Downloading https://files.pythonhosted.org/packages/8e/28/4ff3c0a1452910d28084a0a84553994c5c7eb728c8508c676dba6864b4ed/xemc3-0.2.4.tar.gz
+[2023-05-26 15:03:08] INFO root fetch - processPackages [edat-utils]: executing diffoscope
+[2023-05-26 15:03:08] INFO root fetch - processPackages [edat-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edat_utils-0.4.1.tar.gz tmp/edat_utils-0.4.2.tar.gz --markdown 20230526/e/edat-utils/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-26 15:03:08] INFO root fetch - processPackages [qtest-reporter]: executing diffoscope
+[2023-05-26 15:03:08] INFO root fetch - processPackages [qtest-reporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtest_reporter-0.0.10.tar.gz tmp/qtest_reporter-0.0.9.tar.gz --markdown 20230526/q/qtest-reporter/0.0.10-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 15:03:08] INFO root fetch - processPackages [pypreql]: executing diffoscope
+[2023-05-26 15:03:08] INFO root fetch - processPackages [pypreql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypreql-0.0.1rc8.tar.gz tmp/pypreql-0.0.1rc9.tar.gz --markdown 20230526/p/pypreql/0.0.1rc8-0.0.1rc9/diff.md --exclude *.pyd
+[2023-05-26 15:03:08] INFO root fetch - processPackages [qesdk]: Downloading https://files.pythonhosted.org/packages/aa/16/e2ef3c5709aedf66b1fa81cfe323ceb194a27826737af46f74de4f02780c/qesdk-0.1.6.tar.gz
+[2023-05-26 15:03:08] INFO root fetch - processPackages [st4sd-runtime-core]: executing diffoscope
+[2023-05-26 15:03:08] INFO root fetch - processPackages [st4sd-runtime-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/st4sd-runtime-core-2.0.0a9.dev7.tar.gz tmp/st4sd-runtime-core-2.0.0a9.dev8.tar.gz --markdown 20230526/s/st4sd-runtime-core/2.0.0a9.dev7-2.0.0a9.dev8/diff.md --exclude *.pyd
+[2023-05-26 15:03:08] INFO root fetch - processPackages [testrail-api-reporter]: executing diffoscope
+[2023-05-26 15:03:08] INFO root fetch - processPackages [testrail-api-reporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testrail_api_reporter-1.3.0.tar.gz tmp/testrail_api_reporter-1.3.2.tar.gz --markdown 20230526/t/testrail-api-reporter/1.3.0-1.3.2/diff.md --exclude *.pyd
+[2023-05-26 15:03:08] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2023-05-26 15:03:08] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.96.tar.gz tmp/akshare-1.9.97.tar.gz --markdown 20230526/a/akshare/1.9.96-1.9.97/diff.md --exclude *.pyd
+[2023-05-26 15:03:08] INFO root fetch - processPackages [sql-face]: executing diffoscope
+[2023-05-26 15:03:08] INFO root fetch - processPackages [sql-face]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sql-face-0.1.8.tar.gz tmp/sql-face-0.1.9.tar.gz --markdown 20230526/s/sql-face/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 15:03:08] INFO root fetch - processPackages [flxtrd]: Downloading https://files.pythonhosted.org/packages/20/95/6549b133fec7a722f77fdd8c509b9683af3aa97671e698b83aa8429f7825/flxtrd-0.0.4.tar.gz
+[2023-05-26 15:03:08] INFO root fetch - processPackages [qesdk]: executing diffoscope
+[2023-05-26 15:03:08] INFO root fetch - processPackages [qesdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qesdk-0.1.5.tar.gz tmp/qesdk-0.1.6.tar.gz --markdown 20230526/q/qesdk/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-26 15:03:08] INFO root fetch - processPackages [flxtrd]: executing diffoscope
+[2023-05-26 15:03:08] INFO root fetch - processPackages [flxtrd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flxtrd-0.0.3.tar.gz tmp/flxtrd-0.0.4.tar.gz --markdown 20230526/f/flxtrd/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-26 15:03:08] INFO root fetch - processPackages [xemc3]: Downloading https://files.pythonhosted.org/packages/eb/9f/49c13776448b95d06f9bdab8e5b2e9a4f31ac2375e078efbb1d7a3e9a420/xemc3-0.2.5.tar.gz
+[2023-05-26 15:03:08] INFO root fetch - processPackages [xemc3]: executing diffoscope
+[2023-05-26 15:03:08] INFO root fetch - processPackages [xemc3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xemc3-0.2.4.tar.gz tmp/xemc3-0.2.5.tar.gz --markdown 20230526/x/xemc3/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-26 15:03:10] INFO root fetch - processPackages [qtest-reporter]: Start processing: polyglot-piranha
+[2023-05-26 15:03:10] INFO root fetch - main [MainThread]: End processing [qtest-reporter]: success
+[2023-05-26 15:03:10] INFO root fetch - processPackages [polyglot-piranha]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-26 15:03:10] INFO root fetch - processPackages [edat-utils]: Start processing: fs-s3fs-forked
+[2023-05-26 15:03:10] INFO root fetch - main [MainThread]: End processing [edat-utils]: success
+[2023-05-26 15:03:10] WARNING root fetch - processPackages [fs-s3fs-forked]: Skipping, unable to determine old version
+[2023-05-26 15:03:10] INFO root fetch - processPackages [fs-s3fs-forked]: Start processing: airunner
+[2023-05-26 15:03:10] INFO root fetch - main [MainThread]: End processing [fs-s3fs-forked] error
+[2023-05-26 15:03:10] INFO root fetch - processPackages [airunner]: New version: [1.9.5] Old Version: [1.9.4]
+[2023-05-26 15:03:10] INFO root fetch - processPackages [airunner]: executing diffoscope
+[2023-05-26 15:03:10] INFO root fetch - processPackages [airunner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airunner-1.9.4.tar.gz tmp/airunner-1.9.5.tar.gz --markdown 20230526/a/airunner/1.9.4-1.9.5/diff.md --exclude *.pyd
+[2023-05-26 15:03:10] INFO root fetch - processPackages [polyglot-piranha]: Downloading https://files.pythonhosted.org/packages/55/25/0d531562b47bc4334f279bc5994d2ae59f07816964accdd5c0bec70fd320/polyglot_piranha-0.3.3.tar.gz
+[2023-05-26 15:03:10] INFO root fetch - processPackages [pypreql]: Start processing: dbt-toolkit
+[2023-05-26 15:03:10] INFO root fetch - main [MainThread]: End processing [pypreql]: success
+[2023-05-26 15:03:10] WARNING root fetch - processPackages [dbt-toolkit]: Skipping, unable to determine old version
+[2023-05-26 15:03:10] INFO root fetch - processPackages [dbt-toolkit]: Start processing: servicefoundry
+[2023-05-26 15:03:10] INFO root fetch - main [MainThread]: End processing [dbt-toolkit] error
+[2023-05-26 15:03:10] INFO root fetch - processPackages [servicefoundry]: New version: [0.9.1rc1] Old Version: [0.9.0]
+[2023-05-26 15:03:10] INFO root fetch - processPackages [polyglot-piranha]: Downloading https://files.pythonhosted.org/packages/22/2e/bb20ed2d4a130202ef189828dbaa5e6356d416afc1f9ed6ae64b3c6e4424/polyglot_piranha-0.3.4.tar.gz
+[2023-05-26 15:03:10] INFO root fetch - processPackages [servicefoundry]: Downloading https://files.pythonhosted.org/packages/20/8b/538fe2b90a77578057865775903d9dcd5cb3633dba59817359071701c68f/servicefoundry-0.9.0.tar.gz
+[2023-05-26 15:03:10] INFO root fetch - processPackages [sql-face]: Start processing: gerador-posts
+[2023-05-26 15:03:10] INFO root fetch - main [MainThread]: End processing [sql-face]: success
+[2023-05-26 15:03:10] INFO root fetch - processPackages [polyglot-piranha]: executing diffoscope
+[2023-05-26 15:03:10] INFO root fetch - processPackages [polyglot-piranha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polyglot_piranha-0.3.3.tar.gz tmp/polyglot_piranha-0.3.4.tar.gz --markdown 20230526/p/polyglot-piranha/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-26 15:03:10] INFO root fetch - processPackages [gerador-posts]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-26 15:03:11] INFO root fetch - processPackages [gerador-posts]: executing diffoscope
+[2023-05-26 15:03:11] INFO root fetch - processPackages [gerador-posts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gerador_posts-0.1.0.tar.gz tmp/gerador_posts-0.1.1.tar.gz --markdown 20230526/g/gerador-posts/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-26 15:03:11] INFO root fetch - processPackages [servicefoundry]: Downloading https://files.pythonhosted.org/packages/8c/48/b5596f4ef6263af192445d66be344449c337b5d9f68cdea2012d6db0aa67/servicefoundry-0.9.1rc1.tar.gz
+[2023-05-26 15:03:11] INFO root fetch - processPackages [qesdk]: Start processing: fbgemm-gpu-nightly-cpu
+[2023-05-26 15:03:11] INFO root fetch - main [MainThread]: End processing [qesdk]: success
+[2023-05-26 15:03:11] INFO root fetch - processPackages [servicefoundry]: executing diffoscope
+[2023-05-26 15:03:11] INFO root fetch - processPackages [servicefoundry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/servicefoundry-0.9.0.tar.gz tmp/servicefoundry-0.9.1rc1.tar.gz --markdown 20230526/s/servicefoundry/0.9.0-0.9.1rc1/diff.md --exclude *.pyd
+[2023-05-26 15:03:11] INFO root fetch - processPackages [flxtrd]: Start processing: th2-grpc-lw-data-provider
+[2023-05-26 15:03:11] INFO root fetch - main [MainThread]: End processing [flxtrd]: success
+[2023-05-26 15:03:11] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: New version: [2.1.0.dev3871883101] Old Version: [2.0.0.dev5088804806]
+[2023-05-26 15:03:11] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2023.5.26] Old Version: [2023.5.25]
+[2023-05-26 15:03:11] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/70/46/585e3b196fc207b517a2b0f25ba0ecdd2b60d7d6aa1b98e9b0246353efdc/fbgemm_gpu_nightly_cpu-2023.5.25-cp39-cp39-manylinux1_x86_64.whl
+[2023-05-26 15:03:11] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: executing diffoscope
+[2023-05-26 15:03:11] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/th2_grpc_lw_data_provider-2.0.0.dev5088804806.tar.gz tmp/th2_grpc_lw_data_provider-2.1.0.dev3871883101.tar.gz --markdown 20230526/t/th2-grpc-lw-data-provider/2.0.0.dev5088804806-2.1.0.dev3871883101/diff.md --exclude *.pyd
+[2023-05-26 15:03:11] INFO root fetch - processPackages [st4sd-runtime-core]: Start processing: torch-utilities
+[2023-05-26 15:03:11] INFO root fetch - main [MainThread]: End processing [st4sd-runtime-core]: success
+[2023-05-26 15:03:11] INFO root fetch - main [MainThread]: End processing [xemc3]: success
+[2023-05-26 15:03:11] INFO root fetch - processPackages [torch-utilities]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-26 15:03:12] INFO root fetch - processPackages [torch-utilities]: Downloading https://files.pythonhosted.org/packages/15/82/8ad5b74bf71b9a72f90ebef3443ae52d10f22329df3abdec2bb00825d927/torch_utilities-1.0.4.tar.gz
+[2023-05-26 15:03:12] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/6f/04/714ab4789f1ecbf35fae1e1162894a0541cd3f2dd5fce1c223cf1a252df4/fbgemm_gpu_nightly_cpu-2023.5.26-cp311-cp311-manylinux1_x86_64.whl
+[2023-05-26 15:03:12] INFO root fetch - main [MainThread]: End processing [airunner]: success
+[2023-05-26 15:03:12] INFO root fetch - processPackages [torch-utilities]: Downloading https://files.pythonhosted.org/packages/d8/23/005ce17e5d481d9a57c8b60be151426f8ab91c52c5e3b75e05d624b6da3a/torch_utilities-1.0.5.tar.gz
+[2023-05-26 15:03:12] INFO root fetch - processPackages [torch-utilities]: executing diffoscope
+[2023-05-26 15:03:12] INFO root fetch - processPackages [torch-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_utilities-1.0.4.tar.gz tmp/torch_utilities-1.0.5.tar.gz --markdown 20230526/t/torch-utilities/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-26 15:03:12] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2023-05-26 15:03:12] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2023.5.25-cp39-cp39-manylinux1_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2023.5.26-cp311-cp311-manylinux1_x86_64.whl.zip --markdown 20230526/f/fbgemm-gpu-nightly-cpu/2023.5.25-2023.5.26/diff.md --exclude *.pyd
+[2023-05-26 15:03:13] INFO root fetch - main [MainThread]: End processing [gerador-posts]: success
+[2023-05-26 15:03:13] INFO root fetch - main [MainThread]: End processing [servicefoundry]: success
+[2023-05-26 15:03:14] INFO root fetch - main [MainThread]: End processing [th2-grpc-lw-data-provider]: success
+[2023-05-26 15:03:14] INFO root fetch - main [MainThread]: End processing [polyglot-piranha]: success
+[2023-05-26 15:03:14] INFO root fetch - main [MainThread]: End processing [torch-utilities]: success
+[2023-05-26 15:03:18] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2023-05-26 15:03:44] INFO root fetch - main [MainThread]: End processing [testrail-api-reporter]: success
+[2023-05-26 15:04:02] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2023-05-26 15:04:02] INFO root fetch - main [MainThread]: Store serial: [18263040]
