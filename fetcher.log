@@ -15326,3 +15326,112 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 14:39:50] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
 [2023-05-26 14:40:09] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
 [2023-05-26 14:40:09] INFO root fetch - main [MainThread]: Store serial: [18262792]
+[2023-05-26 14:45:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18262792]
+[2023-05-26 14:45:21] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-26 14:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autonity
+[2023-05-26 14:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dhint
+[2023-05-26 14:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: act4e-mcdp
+[2023-05-26 14:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: freeGPT
+[2023-05-26 14:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: elgin
+[2023-05-26 14:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: splunktaucclib
+[2023-05-26 14:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pulp-container
+[2023-05-26 14:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: evosegment
+[2023-05-26 14:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pulp-container-client
+[2023-05-26 14:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: activitystreampython
+[2023-05-26 14:45:21] INFO root fetch - processPackages [act4e-mcdp]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-05-26 14:45:21] INFO root fetch - processPackages [autonity]: New version: [1.0.0] Old Version: [0.2.dev3]
+[2023-05-26 14:45:21] INFO root fetch - processPackages [elgin]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-26 14:45:21] INFO root fetch - processPackages [freeGPT]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-26 14:45:21] INFO root fetch - processPackages [dhint]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-26 14:45:21] INFO root fetch - processPackages [splunktaucclib]: New version: [6.0.9] Old Version: [6.0.8]
+[2023-05-26 14:45:21] INFO root fetch - processPackages [evosegment]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-26 14:45:21] WARNING root fetch - processPackages [activitystreampython]: Skipping, unable to determine old version
+[2023-05-26 14:45:21] INFO root fetch - processPackages [activitystreampython]: Start processing: zack-math
+[2023-05-26 14:45:21] INFO root fetch - main [MainThread]: End processing [activitystreampython] error
+[2023-05-26 14:45:21] INFO root fetch - processPackages [pulp-container]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-05-26 14:45:21] INFO root fetch - processPackages [pulp-container-client]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-05-26 14:45:21] WARNING root fetch - processPackages [zack-math]: Skipping, unable to determine old version
+[2023-05-26 14:45:21] INFO root fetch - processPackages [zack-math]: Start processing: deformation-inversion-layer
+[2023-05-26 14:45:21] INFO root fetch - main [MainThread]: End processing [zack-math] error
+[2023-05-26 14:45:21] WARNING root fetch - processPackages [deformation-inversion-layer]: Skipping, unable to determine old version
+[2023-05-26 14:45:21] INFO root fetch - processPackages [deformation-inversion-layer]: Start processing: edat-utils
+[2023-05-26 14:45:21] INFO root fetch - main [MainThread]: End processing [deformation-inversion-layer] error
+[2023-05-26 14:45:21] INFO root fetch - processPackages [edat-utils]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-26 14:45:21] INFO root fetch - processPackages [evosegment]: Downloading https://files.pythonhosted.org/packages/15/c7/bc48157c9bf7462dac930c31370be56c50bf4643e82a6f602dd75a9a77a8/evosegment-0.0.1.tar.gz
+[2023-05-26 14:45:21] INFO root fetch - processPackages [autonity]: Downloading https://files.pythonhosted.org/packages/af/7e/f86ac11854195a4266e509ba7e84625b320d8909f2e805aa9f0c9868d158/autonity-0.2.dev3-py3-none-any.whl
+[2023-05-26 14:45:21] INFO root fetch - processPackages [elgin]: Downloading https://files.pythonhosted.org/packages/ef/1c/8b1aac9bba4687bd52e165757226733152d1b9733e56d123cd734d071543/elgin-0.1.6-py3-none-any.whl
+[2023-05-26 14:45:21] INFO root fetch - processPackages [pulp-container-client]: Downloading https://files.pythonhosted.org/packages/e9/01/a3daad08d76d51b9e0347223055817e98861ea9bf1c8cf02987348bb3357/pulp_container-client-2.9.8.tar.gz
+[2023-05-26 14:45:21] INFO root fetch - processPackages [pulp-container]: Downloading https://files.pythonhosted.org/packages/57/4c/de95a198cf3ae576fad5962898a4437820d9482a608240abc66d5bebe2c1/pulp-container-2.9.8.tar.gz
+[2023-05-26 14:45:21] INFO root fetch - processPackages [act4e-mcdp]: Downloading https://files.pythonhosted.org/packages/c5/c3/0ff27cdd79988f93bad04e569ea861b9dfabb039b96ada0bbac99cda8ca6/act4e_mcdp-0.3.7-py3-none-any.whl
+[2023-05-26 14:45:21] INFO root fetch - processPackages [edat-utils]: Downloading https://files.pythonhosted.org/packages/83/78/1043982ebe44de84f8d151f9a15a49dd2be391d963cb4bfcc7f68efee3d5/edat_utils-0.4.1.tar.gz
+[2023-05-26 14:45:21] INFO root fetch - processPackages [freeGPT]: Downloading https://files.pythonhosted.org/packages/87/ef/5e4e089714dc8bca03ba8b6ddac10ba37f6d89c54a407b93bbb0317fc7e9/freeGPT-1.1.1.tar.gz
+[2023-05-26 14:45:21] INFO root fetch - processPackages [dhint]: Downloading https://files.pythonhosted.org/packages/ce/93/bd5791e52fb557d71c716b6a87158d223854bb2951c5529accc12df0ce9a/dhint-0.0.4.tar.gz
+[2023-05-26 14:45:21] INFO root fetch - processPackages [splunktaucclib]: Downloading https://files.pythonhosted.org/packages/bf/06/2b983b91d85164bd80310654c33959cca6b198cf18891a5353b1e667dabb/splunktaucclib-6.0.9.tar.gz
+[2023-05-26 14:45:21] INFO root fetch - processPackages [edat-utils]: executing diffoscope
+[2023-05-26 14:45:21] INFO root fetch - processPackages [edat-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edat_utils-0.4.0.tar.gz tmp/edat_utils-0.4.1.tar.gz --markdown 20230526/e/edat-utils/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-26 14:45:22] INFO root fetch - processPackages [autonity]: Downloading https://files.pythonhosted.org/packages/74/c1/7cc8c3ba072f115536677880a0ac66df7b70caad4cf919ba2cb48419d1fd/autonity-1.0.0-py3-none-any.whl
+[2023-05-26 14:45:22] INFO root fetch - processPackages [dhint]: executing diffoscope
+[2023-05-26 14:45:22] INFO root fetch - processPackages [dhint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dhint-0.0.3.tar.gz tmp/dhint-0.0.4.tar.gz --markdown 20230526/d/dhint/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-26 14:45:22] INFO root fetch - processPackages [act4e-mcdp]: executing diffoscope
+[2023-05-26 14:45:22] INFO root fetch - processPackages [act4e-mcdp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/act4e_mcdp-0.3.6-py3-none-any.whl.zip tmp/act4e_mcdp-0.3.7-py3-none-any.whl.zip --markdown 20230526/a/act4e-mcdp/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-05-26 14:45:22] INFO root fetch - processPackages [elgin]: Downloading https://files.pythonhosted.org/packages/05/d5/6e5e1e844cc15717f7bc7c143d07d9c62306f0e7c85b314fcbd338d094f3/elgin-0.1.7.tar.gz
+[2023-05-26 14:45:22] INFO root fetch - processPackages [splunktaucclib]: executing diffoscope
+[2023-05-26 14:45:22] INFO root fetch - processPackages [splunktaucclib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splunktaucclib-6.0.8.tar.gz tmp/splunktaucclib-6.0.9.tar.gz --markdown 20230526/s/splunktaucclib/6.0.8-6.0.9/diff.md --exclude *.pyd
+[2023-05-26 14:45:22] INFO root fetch - processPackages [freeGPT]: executing diffoscope
+[2023-05-26 14:45:22] INFO root fetch - processPackages [freeGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freeGPT-1.1.0.tar.gz tmp/freeGPT-1.1.1.tar.gz --markdown 20230526/f/freeGPT/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-26 14:45:22] INFO root fetch - processPackages [autonity]: executing diffoscope
+[2023-05-26 14:45:22] INFO root fetch - processPackages [autonity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autonity-0.2.dev3-py3-none-any.whl.zip tmp/autonity-1.0.0-py3-none-any.whl.zip --markdown 20230526/a/autonity/0.2.dev3-1.0.0/diff.md --exclude *.pyd
+[2023-05-26 14:45:22] INFO root fetch - processPackages [pulp-container-client]: Downloading https://files.pythonhosted.org/packages/fb/1f/d65523f406ba6275db9e0fdb44160109d2c5b1ac2db48bec3fd97cb5ccc3/pulp_container-client-2.9.9.tar.gz
+[2023-05-26 14:45:22] INFO root fetch - processPackages [pulp-container]: Downloading https://files.pythonhosted.org/packages/d4/6d/3386b11359dfd542f3fd8f302eb8bb09777dfbd1caff886578e05374938f/pulp-container-2.9.9.tar.gz
+[2023-05-26 14:45:22] INFO root fetch - processPackages [elgin]: executing diffoscope
+[2023-05-26 14:45:22] INFO root fetch - processPackages [elgin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elgin-0.1.6-py3-none-any.whl.zip tmp/elgin-0.1.7.tar.gz --markdown 20230526/e/elgin/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-26 14:45:22] INFO root fetch - processPackages [pulp-container-client]: executing diffoscope
+[2023-05-26 14:45:22] INFO root fetch - processPackages [pulp-container-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulp_container-client-2.9.8.tar.gz tmp/pulp_container-client-2.9.9.tar.gz --markdown 20230526/p/pulp-container-client/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-05-26 14:45:22] INFO root fetch - processPackages [pulp-container]: executing diffoscope
+[2023-05-26 14:45:22] INFO root fetch - processPackages [pulp-container]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulp-container-2.9.8.tar.gz tmp/pulp-container-2.9.9.tar.gz --markdown 20230526/p/pulp-container/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-05-26 14:45:22] INFO root fetch - processPackages [evosegment]: Downloading https://files.pythonhosted.org/packages/da/81/5c8ae7eed8e6aaf4d0b40d944339faa521638b064226d5aeeef111007477/evosegment-0.0.2.tar.gz
+[2023-05-26 14:45:22] INFO root fetch - processPackages [evosegment]: executing diffoscope
+[2023-05-26 14:45:22] INFO root fetch - processPackages [evosegment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evosegment-0.0.1.tar.gz tmp/evosegment-0.0.2.tar.gz --markdown 20230526/e/evosegment/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-26 14:45:23] INFO root fetch - processPackages [edat-utils]: Start processing: activitystreampython
+[2023-05-26 14:45:23] INFO root fetch - main [MainThread]: End processing [edat-utils]: success
+[2023-05-26 14:45:23] INFO root fetch - processPackages [activitystreampython]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-26 14:45:23] INFO root fetch - processPackages [dhint]: Start processing: useis
+[2023-05-26 14:45:23] INFO root fetch - main [MainThread]: End processing [dhint]: success
+[2023-05-26 14:45:23] INFO root fetch - processPackages [activitystreampython]: Downloading https://files.pythonhosted.org/packages/32/88/28bba6c4cd45fe5437dee07c5cab68e9e22a45a15c917e9eabd273737daa/activitystreampython-0.1.0.tar.gz
+[2023-05-26 14:45:23] INFO root fetch - processPackages [useis]: New version: [1.1.0] Old Version: [1.0.4]
+[2023-05-26 14:45:24] INFO root fetch - processPackages [useis]: Downloading https://files.pythonhosted.org/packages/25/8f/908b13b322cce77d5b8a21e6b4997e743a6cea180577000398103a2f37fb/useis-1.0.4.tar.gz
+[2023-05-26 14:45:24] INFO root fetch - processPackages [activitystreampython]: Downloading https://files.pythonhosted.org/packages/00/73/e34d7de31ea68a1652ff5515d291058aabf0cc4993b4de769b0de12a4089/activitystreampython-0.1.1.tar.gz
+[2023-05-26 14:45:24] INFO root fetch - processPackages [activitystreampython]: executing diffoscope
+[2023-05-26 14:45:24] INFO root fetch - processPackages [activitystreampython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/activitystreampython-0.1.0.tar.gz tmp/activitystreampython-0.1.1.tar.gz --markdown 20230526/a/activitystreampython/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-26 14:45:24] INFO root fetch - processPackages [useis]: Downloading https://files.pythonhosted.org/packages/0c/f8/de75dce2f9ba5ed65c5cc03cd177f3c078c7c4cdd64f6863450079f291a2/useis-1.1.0.tar.gz
+[2023-05-26 14:45:24] INFO root fetch - processPackages [useis]: executing diffoscope
+[2023-05-26 14:45:24] INFO root fetch - processPackages [useis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/useis-1.0.4.tar.gz tmp/useis-1.1.0.tar.gz --markdown 20230526/u/useis/1.0.4-1.1.0/diff.md --exclude *.pyd
+[2023-05-26 14:45:24] INFO root fetch - processPackages [act4e-mcdp]: Start processing: pickled-carrots
+[2023-05-26 14:45:24] INFO root fetch - main [MainThread]: End processing [act4e-mcdp]: success
+[2023-05-26 14:45:24] INFO root fetch - processPackages [freeGPT]: Start processing: qesdk
+[2023-05-26 14:45:24] INFO root fetch - main [MainThread]: End processing [freeGPT]: success
+[2023-05-26 14:45:24] INFO root fetch - processPackages [splunktaucclib]: Start processing: uquake
+[2023-05-26 14:45:24] INFO root fetch - main [MainThread]: End processing [splunktaucclib]: success
+[2023-05-26 14:45:24] INFO root fetch - processPackages [pickled-carrots]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-05-26 14:45:24] INFO root fetch - processPackages [uquake]: New version: [1.4.0] Old Version: [1.3.8]
+[2023-05-26 14:45:24] INFO root fetch - main [MainThread]: End processing [elgin]: success
+[2023-05-26 14:45:24] INFO root fetch - processPackages [qesdk]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-26 14:45:24] INFO root fetch - processPackages [uquake]: executing diffoscope
+[2023-05-26 14:45:24] INFO root fetch - processPackages [uquake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uquake-1.3.8.tar.gz tmp/uquake-1.4.0.tar.gz --markdown 20230526/u/uquake/1.3.8-1.4.0/diff.md --exclude *.pyd
+[2023-05-26 14:45:24] INFO root fetch - processPackages [pickled-carrots]: Downloading https://files.pythonhosted.org/packages/bc/dd/1741019b073c2a7a340b93f87b5341bbabfd78263ee9d5875438a138485b/pickled_carrots-0.3.0.tar.gz
+[2023-05-26 14:45:24] INFO root fetch - processPackages [qesdk]: Downloading https://files.pythonhosted.org/packages/0c/75/28c451d5094932f6eb2accf128412f274267af6bbafd1d734a747ce2a88f/qesdk-0.1.4.tar.gz
+[2023-05-26 14:45:24] INFO root fetch - processPackages [pickled-carrots]: executing diffoscope
+[2023-05-26 14:45:24] INFO root fetch - processPackages [pickled-carrots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pickled_carrots-0.2.1.tar.gz tmp/pickled_carrots-0.3.0.tar.gz --markdown 20230526/p/pickled-carrots/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-05-26 14:45:25] INFO root fetch - main [MainThread]: End processing [autonity]: success
+[2023-05-26 14:45:25] INFO root fetch - processPackages [qesdk]: Downloading https://files.pythonhosted.org/packages/a5/f6/3945d743e05b920581afae659bcdbcc20c567b17c3d7e0ada2dda2a7c650/qesdk-0.1.5.tar.gz
+[2023-05-26 14:45:25] INFO root fetch - processPackages [qesdk]: executing diffoscope
+[2023-05-26 14:45:25] INFO root fetch - processPackages [qesdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qesdk-0.1.4.tar.gz tmp/qesdk-0.1.5.tar.gz --markdown 20230526/q/qesdk/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-26 14:45:25] INFO root fetch - main [MainThread]: End processing [pulp-container]: success
+[2023-05-26 14:45:25] INFO root fetch - main [MainThread]: End processing [pulp-container-client]: success
+[2023-05-26 14:45:26] INFO root fetch - main [MainThread]: End processing [evosegment]: success
+[2023-05-26 14:45:27] INFO root fetch - main [MainThread]: End processing [pickled-carrots]: success
+[2023-05-26 14:45:27] INFO root fetch - main [MainThread]: End processing [qesdk]: success
+[2023-05-26 14:45:28] INFO root fetch - main [MainThread]: End processing [useis]: success
+[2023-05-26 14:45:29] INFO root fetch - main [MainThread]: End processing [uquake]: success
+[2023-05-26 14:46:13] INFO root fetch - main [MainThread]: End processing [activitystreampython]: success
+[2023-05-26 14:46:13] INFO root fetch - main [MainThread]: Store serial: [18262852]
