@@ -6336,3 +6336,112 @@
 [2023-05-26 05:00:11] INFO root fetch - main [MainThread]: End processing [tccli-intl-en]: success
 [2023-05-26 05:00:11] INFO root fetch - main [MainThread]: End processing [datumaro]: success
 [2023-05-26 05:00:11] INFO root fetch - main [MainThread]: Store serial: [18257142]
+[2023-05-26 05:05:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18257142]
+[2023-05-26 05:05:20] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-26 05:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tencentcloud-sdk-python-intl-en
+[2023-05-26 05:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo11-addon-crm-phone
+[2023-05-26 05:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo11-addon-asterisk-click2dial
+[2023-05-26 05:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tldrwl
+[2023-05-26 05:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo11-addon-base-phone
+[2023-05-26 05:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ardilla
+[2023-05-26 05:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dhint
+[2023-05-26 05:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: splatnet3-scraper
+[2023-05-26 05:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: odoo9-addon-contract
+[2023-05-26 05:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: odoo11-addon-contract-variable-quantity
+[2023-05-26 05:05:20] INFO root fetch - processPackages [odoo11-addon-asterisk-click2dial]: New version: [11.0.1.0.0.99.dev8] Old Version: [11.0.1.0.0.99.dev7]
+[2023-05-26 05:05:20] INFO root fetch - processPackages [dhint]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-26 05:05:20] INFO root fetch - processPackages [odoo9-addon-contract]: New version: [9.0.1.3.0.99.dev9] Old Version: [9.0.1.3.0.99.dev8]
+[2023-05-26 05:05:20] INFO root fetch - processPackages [odoo11-addon-base-phone]: New version: [11.0.1.0.0.99.dev9] Old Version: [11.0.1.0.0.99.dev8]
+[2023-05-26 05:05:20] INFO root fetch - processPackages [splatnet3-scraper]: New version: [0.8.0] Old Version: [0.7.5]
+[2023-05-26 05:05:20] INFO root fetch - processPackages [ardilla]: New version: [0.2.1b0] Old Version: [0.2.0b0]
+[2023-05-26 05:05:20] INFO root fetch - processPackages [odoo11-addon-contract-variable-quantity]: New version: [11.0.1.3.0.99.dev9] Old Version: [11.0.1.3.0.99.dev8]
+[2023-05-26 05:05:20] INFO root fetch - processPackages [tldrwl]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-26 05:05:20] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: New version: [3.0.99] Old Version: [3.0.98]
+[2023-05-26 05:05:20] INFO root fetch - processPackages [odoo11-addon-crm-phone]: New version: [11.0.1.0.0.99.dev9] Old Version: [11.0.1.0.0.99.dev8]
+[2023-05-26 05:05:20] INFO root fetch - processPackages [tldrwl]: Downloading https://files.pythonhosted.org/packages/85/02/ceda5407864b1c4520a33f6d816cc9354600c7be57c0dd2d558a5accd28f/tldrwl-1.0.0.tar.gz
+[2023-05-26 05:05:20] INFO root fetch - processPackages [odoo11-addon-base-phone]: Downloading https://files.pythonhosted.org/packages/4e/bf/ddffe84bd05bf0839af9816df1207b6520cbb3991b201647e836b80ca205/odoo11_addon_base_phone-11.0.1.0.0.99.dev8-py2.py3-none-any.whl
+[2023-05-26 05:05:20] INFO root fetch - processPackages [odoo11-addon-asterisk-click2dial]: Downloading https://files.pythonhosted.org/packages/d5/05/6898fc16cec539dec7fb72451127cac23f5a991ce2b6f5731c8ee9ddf805/odoo11_addon_asterisk_click2dial-11.0.1.0.0.99.dev7-py2.py3-none-any.whl
+[2023-05-26 05:05:20] INFO root fetch - processPackages [odoo11-addon-contract-variable-quantity]: Downloading https://files.pythonhosted.org/packages/7b/c3/4b5ecf5107c62af2620e77e1b93e6f4c6e8c737bc07fd26c950b84ce7b81/odoo11_addon_contract_variable_quantity-11.0.1.3.0.99.dev8-py2.py3-none-any.whl
+[2023-05-26 05:05:20] INFO root fetch - processPackages [ardilla]: Downloading https://files.pythonhosted.org/packages/62/5a/4158c25ebf20a143502c0d5a3624f34150198adcbe7ae02a9bcc85ae76b7/ardilla-0.2.1b0.tar.gz
+[2023-05-26 05:05:20] INFO root fetch - processPackages [dhint]: Downloading https://files.pythonhosted.org/packages/c4/7a/be801ebc9589602040a527c1fc09a4f00f96081d624d79a3e60b75cf9a97/dhint-0.0.3.tar.gz
+[2023-05-26 05:05:20] INFO root fetch - processPackages [splatnet3-scraper]: Downloading https://files.pythonhosted.org/packages/50/43/2a36dad07048cba237eca2cf2d040bccdb1811763983d681f943804c36b7/splatnet3_scraper-0.7.5.tar.gz
+[2023-05-26 05:05:20] INFO root fetch - processPackages [odoo9-addon-contract]: Downloading https://files.pythonhosted.org/packages/ec/64/fc634a46661f5b5e865bbd36b36ecd88a7dbf7c549bf67b47b8eaee000d7/odoo9_addon_contract-9.0.1.3.0.99.dev8-py2-none-any.whl
+[2023-05-26 05:05:20] INFO root fetch - processPackages [odoo11-addon-crm-phone]: Downloading https://files.pythonhosted.org/packages/81/31/064727b01d457615189549ff909537ad95a56dc3d713d3f5d1c555f07516/odoo11_addon_crm_phone-11.0.1.0.0.99.dev8-py2.py3-none-any.whl
+[2023-05-26 05:05:20] INFO root fetch - processPackages [dhint]: executing diffoscope
+[2023-05-26 05:05:20] INFO root fetch - processPackages [dhint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dhint-0.0.2.tar.gz tmp/dhint-0.0.3.tar.gz --markdown 20230526/d/dhint/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-26 05:05:20] INFO root fetch - processPackages [ardilla]: executing diffoscope
+[2023-05-26 05:05:20] INFO root fetch - processPackages [ardilla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ardilla-0.2.0b0.tar.gz tmp/ardilla-0.2.1b0.tar.gz --markdown 20230526/a/ardilla/0.2.0b0-0.2.1b0/diff.md --exclude *.pyd
+[2023-05-26 05:05:20] INFO root fetch - processPackages [tldrwl]: Downloading https://files.pythonhosted.org/packages/be/b5/728ee012ed5830b96ccab171f4ff7c57beb9f0e79c7b8e70c5f7ca4ebe5f/tldrwl-1.0.1.tar.gz
+[2023-05-26 05:05:20] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: executing diffoscope
+[2023-05-26 05:05:20] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-intl-en-3.0.98.tar.gz tmp/tencentcloud-sdk-python-intl-en-3.0.99.tar.gz --markdown 20230526/t/tencentcloud-sdk-python-intl-en/3.0.98-3.0.99/diff.md --exclude *.pyd
+[2023-05-26 05:05:20] INFO root fetch - processPackages [tldrwl]: executing diffoscope
+[2023-05-26 05:05:20] INFO root fetch - processPackages [tldrwl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tldrwl-1.0.0.tar.gz tmp/tldrwl-1.0.1.tar.gz --markdown 20230526/t/tldrwl/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-26 05:05:20] INFO root fetch - processPackages [splatnet3-scraper]: Downloading https://files.pythonhosted.org/packages/2c/64/6647c0cbe838b81c0610c8ac513f28655d1820d8d1a7b8d8670526e3af7a/splatnet3_scraper-0.8.0.tar.gz
+[2023-05-26 05:05:20] INFO root fetch - processPackages [splatnet3-scraper]: executing diffoscope
+[2023-05-26 05:05:20] INFO root fetch - processPackages [splatnet3-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splatnet3_scraper-0.7.5.tar.gz tmp/splatnet3_scraper-0.8.0.tar.gz --markdown 20230526/s/splatnet3-scraper/0.7.5-0.8.0/diff.md --exclude *.pyd
+[2023-05-26 05:05:21] INFO root fetch - processPackages [odoo11-addon-asterisk-click2dial]: Downloading https://files.pythonhosted.org/packages/ca/9f/fc497ff5ab1750a611feaebebb611fe29493d16ae64188a349d9430fdb81/odoo11_addon_asterisk_click2dial-11.0.1.0.0.99.dev8-py2.py3-none-any.whl
+[2023-05-26 05:05:21] INFO root fetch - processPackages [odoo11-addon-contract-variable-quantity]: Downloading https://files.pythonhosted.org/packages/ce/44/40ba2133e00f77e8484d617a47f745065c94f9f48acbac636f665787d6cc/odoo11_addon_contract_variable_quantity-11.0.1.3.0.99.dev9-py2.py3-none-any.whl
+[2023-05-26 05:05:21] INFO root fetch - processPackages [odoo11-addon-base-phone]: Downloading https://files.pythonhosted.org/packages/6b/a0/8e5ea5468e5652e520e0e1aafaa8df8c9bdeff66229cfc01b2e6e659f654/odoo11_addon_base_phone-11.0.1.0.0.99.dev9-py2.py3-none-any.whl
+[2023-05-26 05:05:21] INFO root fetch - processPackages [odoo9-addon-contract]: Downloading https://files.pythonhosted.org/packages/1a/40/036bba745ad7b0e7fb04762bdfbdd8782232f13615c9550cc94bf1841a91/odoo9_addon_contract-9.0.1.3.0.99.dev9-py2-none-any.whl
+[2023-05-26 05:05:21] INFO root fetch - processPackages [odoo11-addon-contract-variable-quantity]: executing diffoscope
+[2023-05-26 05:05:21] INFO root fetch - processPackages [odoo11-addon-contract-variable-quantity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_contract_variable_quantity-11.0.1.3.0.99.dev8-py2.py3-none-any.whl.zip tmp/odoo11_addon_contract_variable_quantity-11.0.1.3.0.99.dev9-py2.py3-none-any.whl.zip --markdown 20230526/o/odoo11-addon-contract-variable-quantity/11.0.1.3.0.99.dev8-11.0.1.3.0.99.dev9/diff.md --exclude *.pyd
+[2023-05-26 05:05:21] INFO root fetch - processPackages [odoo11-addon-base-phone]: executing diffoscope
+[2023-05-26 05:05:21] INFO root fetch - processPackages [odoo11-addon-base-phone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_base_phone-11.0.1.0.0.99.dev8-py2.py3-none-any.whl.zip tmp/odoo11_addon_base_phone-11.0.1.0.0.99.dev9-py2.py3-none-any.whl.zip --markdown 20230526/o/odoo11-addon-base-phone/11.0.1.0.0.99.dev8-11.0.1.0.0.99.dev9/diff.md --exclude *.pyd
+[2023-05-26 05:05:21] INFO root fetch - processPackages [odoo11-addon-crm-phone]: Downloading https://files.pythonhosted.org/packages/d2/ea/86b28a049ee979597e9ed9306f7e9889654b004f1d5500a11e421e2d58a0/odoo11_addon_crm_phone-11.0.1.0.0.99.dev9-py2.py3-none-any.whl
+[2023-05-26 05:05:21] INFO root fetch - processPackages [odoo11-addon-asterisk-click2dial]: executing diffoscope
+[2023-05-26 05:05:21] INFO root fetch - processPackages [odoo11-addon-asterisk-click2dial]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_asterisk_click2dial-11.0.1.0.0.99.dev7-py2.py3-none-any.whl.zip tmp/odoo11_addon_asterisk_click2dial-11.0.1.0.0.99.dev8-py2.py3-none-any.whl.zip --markdown 20230526/o/odoo11-addon-asterisk-click2dial/11.0.1.0.0.99.dev7-11.0.1.0.0.99.dev8/diff.md --exclude *.pyd
+[2023-05-26 05:05:21] INFO root fetch - processPackages [odoo11-addon-crm-phone]: executing diffoscope
+[2023-05-26 05:05:21] INFO root fetch - processPackages [odoo11-addon-crm-phone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_crm_phone-11.0.1.0.0.99.dev8-py2.py3-none-any.whl.zip tmp/odoo11_addon_crm_phone-11.0.1.0.0.99.dev9-py2.py3-none-any.whl.zip --markdown 20230526/o/odoo11-addon-crm-phone/11.0.1.0.0.99.dev8-11.0.1.0.0.99.dev9/diff.md --exclude *.pyd
+[2023-05-26 05:05:21] INFO root fetch - processPackages [odoo9-addon-contract]: executing diffoscope
+[2023-05-26 05:05:21] INFO root fetch - processPackages [odoo9-addon-contract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo9_addon_contract-9.0.1.3.0.99.dev8-py2-none-any.whl.zip tmp/odoo9_addon_contract-9.0.1.3.0.99.dev9-py2-none-any.whl.zip --markdown 20230526/o/odoo9-addon-contract/9.0.1.3.0.99.dev8-9.0.1.3.0.99.dev9/diff.md --exclude *.pyd
+[2023-05-26 05:05:22] INFO root fetch - processPackages [dhint]: Start processing: odoo11-addon-contract
+[2023-05-26 05:05:22] INFO root fetch - main [MainThread]: End processing [dhint]: success
+[2023-05-26 05:05:22] INFO root fetch - processPackages [odoo11-addon-contract]: New version: [11.0.4.1.0.99.dev9] Old Version: [11.0.4.1.0.99.dev8]
+[2023-05-26 05:05:22] INFO root fetch - processPackages [odoo11-addon-contract]: Downloading https://files.pythonhosted.org/packages/11/92/1bafb7c96794b11c4b473c2320f8fed746501935091bcea6799e926d240f/odoo11_addon_contract-11.0.4.1.0.99.dev8-py2.py3-none-any.whl
+[2023-05-26 05:05:22] INFO root fetch - processPackages [ardilla]: Start processing: azure-mgmt-kubernetesconfiguration
+[2023-05-26 05:05:22] INFO root fetch - main [MainThread]: End processing [ardilla]: success
+[2023-05-26 05:05:22] INFO root fetch - processPackages [azure-mgmt-kubernetesconfiguration]: New version: [3.0.0b1] Old Version: [3.0.0]
+[2023-05-26 05:05:22] INFO root fetch - processPackages [tldrwl]: Start processing: odoo14-addon-contract
+[2023-05-26 05:05:22] INFO root fetch - main [MainThread]: End processing [tldrwl]: success
+[2023-05-26 05:05:22] INFO root fetch - processPackages [odoo14-addon-contract]: New version: [14.0.2.9.6.dev2] Old Version: [14.0.2.9.5.dev2]
+[2023-05-26 05:05:22] INFO root fetch - processPackages [odoo14-addon-contract]: executing diffoscope
+[2023-05-26 05:05:22] INFO root fetch - processPackages [odoo14-addon-contract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_contract-14.0.2.9.5.dev2-py3-none-any.whl.zip tmp/odoo14_addon_contract-14.0.2.9.6.dev2-py3-none-any.whl.zip --markdown 20230526/o/odoo14-addon-contract/14.0.2.9.5.dev2-14.0.2.9.6.dev2/diff.md --exclude *.pyd
+[2023-05-26 05:05:23] INFO root fetch - processPackages [azure-mgmt-kubernetesconfiguration]: Downloading https://files.pythonhosted.org/packages/60/21/40789e594a8f6f4be97ea86fbf08afe928264bc8af0e3eeb4463cb51eb92/azure-mgmt-kubernetesconfiguration-3.0.0.zip
+[2023-05-26 05:05:23] INFO root fetch - processPackages [odoo11-addon-contract]: Downloading https://files.pythonhosted.org/packages/7e/67/b9f1d9096255ebb7f587a7af28ac16c637809b08c36b35009075fc92b9d2/odoo11_addon_contract-11.0.4.1.0.99.dev9-py2.py3-none-any.whl
+[2023-05-26 05:05:23] INFO root fetch - processPackages [odoo11-addon-contract]: executing diffoscope
+[2023-05-26 05:05:23] INFO root fetch - processPackages [odoo11-addon-contract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_contract-11.0.4.1.0.99.dev8-py2.py3-none-any.whl.zip tmp/odoo11_addon_contract-11.0.4.1.0.99.dev9-py2.py3-none-any.whl.zip --markdown 20230526/o/odoo11-addon-contract/11.0.4.1.0.99.dev8-11.0.4.1.0.99.dev9/diff.md --exclude *.pyd
+[2023-05-26 05:05:23] INFO root fetch - processPackages [azure-mgmt-kubernetesconfiguration]: Downloading https://files.pythonhosted.org/packages/03/7c/212cce999e848e7df0b3ee381c7c228b38a1463b26f9a17c018d1246676b/azure-mgmt-kubernetesconfiguration-3.0.0b1.zip
+[2023-05-26 05:05:23] INFO root fetch - processPackages [odoo11-addon-contract-variable-quantity]: Start processing: MagpiEM
+[2023-05-26 05:05:23] INFO root fetch - main [MainThread]: End processing [odoo11-addon-contract-variable-quantity]: success
+[2023-05-26 05:05:23] INFO root fetch - processPackages [MagpiEM]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-26 05:05:23] INFO root fetch - processPackages [azure-mgmt-kubernetesconfiguration]: executing diffoscope
+[2023-05-26 05:05:23] INFO root fetch - processPackages [azure-mgmt-kubernetesconfiguration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure-mgmt-kubernetesconfiguration-3.0.0.zip tmp/azure-mgmt-kubernetesconfiguration-3.0.0b1.zip --markdown 20230526/a/azure-mgmt-kubernetesconfiguration/3.0.0-3.0.0b1/diff.md --exclude *.pyd
+[2023-05-26 05:05:23] INFO root fetch - processPackages [odoo11-addon-base-phone]: Start processing: psims
+[2023-05-26 05:05:23] INFO root fetch - main [MainThread]: End processing [odoo11-addon-base-phone]: success
+[2023-05-26 05:05:23] INFO root fetch - processPackages [psims]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-05-26 05:05:23] INFO root fetch - processPackages [splatnet3-scraper]: Start processing: odoo11-addon-account-financial-risk
+[2023-05-26 05:05:23] INFO root fetch - main [MainThread]: End processing [splatnet3-scraper]: success
+[2023-05-26 05:05:23] INFO root fetch - processPackages [odoo11-addon-account-financial-risk]: New version: [11.0.3.1.0.99.dev4] Old Version: [11.0.3.1.0.99.dev3]
+[2023-05-26 05:05:23] INFO root fetch - processPackages [psims]: Downloading https://files.pythonhosted.org/packages/20/cb/dcfe05da20f8af92093b0bf2c2335f806500d789bbb03c8622722e7a252c/psims-1.2.4.tar.gz
+[2023-05-26 05:05:24] WARNING root fetch - processPackages [psims]: Skipping package: exceeds size limit 14670464>=10485760
+[2023-05-26 05:05:24] INFO root fetch - processPackages [psims]: Start processing: odoo14-addon-account-invoice-overdue-reminder
+[2023-05-26 05:05:24] INFO root fetch - processPackages [MagpiEM]: executing diffoscope
+[2023-05-26 05:05:24] INFO root fetch - main [MainThread]: End processing [psims] error
+[2023-05-26 05:05:24] INFO root fetch - processPackages [MagpiEM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MagpiEM-0.2.8-py3.10.egg tmp/MagpiEM-0.2.9-py3.10.egg --markdown 20230526/M/MagpiEM/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-26 05:05:24] INFO root fetch - processPackages [odoo14-addon-account-invoice-overdue-reminder]: New version: [14.0.1.4.1.dev6] Old Version: [14.0.1.4.1.dev4]
+[2023-05-26 05:05:24] INFO root fetch - processPackages [odoo14-addon-account-invoice-overdue-reminder]: executing diffoscope
+[2023-05-26 05:05:24] INFO root fetch - processPackages [odoo14-addon-account-invoice-overdue-reminder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_account_invoice_overdue_reminder-14.0.1.4.1.dev4-py3-none-any.whl.zip tmp/odoo14_addon_account_invoice_overdue_reminder-14.0.1.4.1.dev6-py3-none-any.whl.zip --markdown 20230526/o/odoo14-addon-account-invoice-overdue-reminder/14.0.1.4.1.dev4-14.0.1.4.1.dev6/diff.md --exclude *.pyd
+[2023-05-26 05:05:24] INFO root fetch - processPackages [odoo11-addon-account-financial-risk]: Downloading https://files.pythonhosted.org/packages/87/4f/f08fa1cfd128ea02e0b8e22d374a5d65b8fc4934b32f4443d05d698c06a0/odoo11_addon_account_financial_risk-11.0.3.1.0.99.dev4-py2.py3-none-any.whl
+[2023-05-26 05:05:24] INFO root fetch - main [MainThread]: End processing [odoo11-addon-asterisk-click2dial]: success
+[2023-05-26 05:05:24] INFO root fetch - main [MainThread]: End processing [odoo11-addon-crm-phone]: success
+[2023-05-26 05:05:24] INFO root fetch - processPackages [odoo11-addon-account-financial-risk]: executing diffoscope
+[2023-05-26 05:05:24] INFO root fetch - processPackages [odoo11-addon-account-financial-risk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_account_financial_risk-11.0.3.1.0.99.dev3-py2.py3-none-any.whl.zip tmp/odoo11_addon_account_financial_risk-11.0.3.1.0.99.dev4-py2.py3-none-any.whl.zip --markdown 20230526/o/odoo11-addon-account-financial-risk/11.0.3.1.0.99.dev3-11.0.3.1.0.99.dev4/diff.md --exclude *.pyd
+[2023-05-26 05:05:24] INFO root fetch - main [MainThread]: End processing [odoo9-addon-contract]: success
+[2023-05-26 05:05:25] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-intl-en]: success
+[2023-05-26 05:05:25] INFO root fetch - main [MainThread]: End processing [odoo14-addon-contract]: success
+[2023-05-26 05:05:26] INFO root fetch - main [MainThread]: End processing [odoo11-addon-contract]: success
+[2023-05-26 05:05:26] INFO root fetch - main [MainThread]: End processing [MagpiEM]: success
+[2023-05-26 05:05:26] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-invoice-overdue-reminder]: success
+[2023-05-26 05:05:26] INFO root fetch - main [MainThread]: End processing [odoo11-addon-account-financial-risk]: success
+[2023-05-26 05:05:33] INFO root fetch - main [MainThread]: End processing [azure-mgmt-kubernetesconfiguration]: success
+[2023-05-26 05:05:33] INFO root fetch - main [MainThread]: Store serial: [18257184]
