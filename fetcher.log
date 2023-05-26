@@ -6914,3 +6914,79 @@
 [2023-05-26 05:47:41] INFO root fetch - main [MainThread]: End processing [odoo8-addon-l10n-it-reverse-charge]: success
 [2023-05-26 05:48:27] INFO root fetch - main [MainThread]: End processing [odoo8-addon-l10n-it-base]: success
 [2023-05-26 05:48:27] INFO root fetch - main [MainThread]: Store serial: [18257409]
+[2023-05-26 05:53:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18257409]
+[2023-05-26 05:53:36] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-26 05:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo8-addon-l10n-it-fiscalcode
+[2023-05-26 05:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: innerverz-package
+[2023-05-26 05:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo11-addon-l10n-it-central-journal
+[2023-05-26 05:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: data-spec-validator
+[2023-05-26 05:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sourcery-nightly
+[2023-05-26 05:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: FunID
+[2023-05-26 05:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Pandora-Cloud
+[2023-05-26 05:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: stocktracer
+[2023-05-26 05:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: imessagedb
+[2023-05-26 05:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: binsync
+[2023-05-26 05:53:36] INFO root fetch - processPackages [sourcery-nightly]: New version: [1.3.1b9] Old Version: [1.3.1b8]
+[2023-05-26 05:53:36] WARNING root fetch - processPackages [innerverz-package]: Skipping, unable to determine old version
+[2023-05-26 05:53:36] INFO root fetch - processPackages [innerverz-package]: Start processing: sciform
+[2023-05-26 05:53:36] INFO root fetch - main [MainThread]: End processing [innerverz-package] error
+[2023-05-26 05:53:36] INFO root fetch - processPackages [data-spec-validator]: New version: [3.2.0] Old Version: [3.1.0]
+[2023-05-26 05:53:36] INFO root fetch - processPackages [Pandora-Cloud]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-26 05:53:36] INFO root fetch - processPackages [odoo11-addon-l10n-it-central-journal]: New version: [11.0.1.1.1.99.dev2] Old Version: [11.0.1.1.1.99.dev1]
+[2023-05-26 05:53:36] INFO root fetch - processPackages [FunID]: New version: [0.3.8.2] Old Version: [0.3.8.1]
+[2023-05-26 05:53:36] INFO root fetch - processPackages [odoo8-addon-l10n-it-fiscalcode]: New version: [8.0.0.1.2.99.dev2] Old Version: [8.0.0.1.2.99.dev1]
+[2023-05-26 05:53:36] INFO root fetch - processPackages [imessagedb]: New version: [1.4.0] Old Version: [1.3.4]
+[2023-05-26 05:53:36] INFO root fetch - processPackages [stocktracer]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-26 05:53:36] INFO root fetch - processPackages [binsync]: New version: [3.9.0] Old Version: [3.6.0]
+[2023-05-26 05:53:36] WARNING root fetch - processPackages [sciform]: Skipping, unable to determine old version
+[2023-05-26 05:53:36] INFO root fetch - processPackages [sciform]: Start processing: at-fetch-data
+[2023-05-26 05:53:36] INFO root fetch - main [MainThread]: End processing [sciform] error
+[2023-05-26 05:53:36] INFO root fetch - processPackages [at-fetch-data]: New version: [1.0.4] Old Version: [1.0.2]
+[2023-05-26 05:53:36] INFO root fetch - processPackages [sourcery-nightly]: Downloading https://files.pythonhosted.org/packages/29/18/ad9b7cf71f4ed9e14c12d1e096d050d07b94bd4dfb90329e967254028ab4/sourcery_nightly-1.3.1b8-py2.py3-none-win_amd64.whl
+[2023-05-26 05:53:36] WARNING root fetch - processPackages [sourcery-nightly]: Skipping package: exceeds size limit 58876457>=10485760
+[2023-05-26 05:53:36] INFO root fetch - processPackages [sourcery-nightly]: Start processing: adds
+[2023-05-26 05:53:36] INFO root fetch - main [MainThread]: End processing [sourcery-nightly] error
+[2023-05-26 05:53:36] INFO root fetch - processPackages [FunID]: Downloading https://files.pythonhosted.org/packages/42/29/96fc938318a3c5b62670cb0efc021fea7f8257e825f9bc62aad02087bde5/FunID-0.3.8.1.tar.gz
+[2023-05-26 05:53:36] INFO root fetch - processPackages [imessagedb]: Downloading https://files.pythonhosted.org/packages/af/69/0fa1ff2b9ed7c845f25187f5a09566f80369363fa936e65f7cd20033f2e1/imessagedb-1.4.0.tar.gz
+[2023-05-26 05:53:36] INFO root fetch - processPackages [Pandora-Cloud]: Downloading https://files.pythonhosted.org/packages/70/6a/c6fdd477368e85b6cd2ef1923bc776b0ad0cf492ad67955861ce6c495f5b/Pandora-Cloud-0.3.1.tar.gz
+[2023-05-26 05:53:36] WARNING root fetch - processPackages [FunID]: Skipping package: exceeds size limit 51449945>=10485760
+[2023-05-26 05:53:36] INFO root fetch - main [MainThread]: End processing [FunID] error
+[2023-05-26 05:53:36] INFO root fetch - processPackages [odoo11-addon-l10n-it-central-journal]: Downloading https://files.pythonhosted.org/packages/05/6d/8f35366d19c8874ef5837c3a6f48622d5829b1eac4cce9a6ac5884da1715/odoo11_addon_l10n_it_central_journal-11.0.1.1.1.99.dev1-py2.py3-none-any.whl
+[2023-05-26 05:53:36] INFO root fetch - processPackages [at-fetch-data]: Downloading https://files.pythonhosted.org/packages/94/d8/3e0f6fabfea4474632a855e499ea40e281b039c9e556b8245f96ca0af816/at-fetch-data-1.0.2.tar.gz
+[2023-05-26 05:53:36] INFO root fetch - processPackages [odoo8-addon-l10n-it-fiscalcode]: Downloading https://files.pythonhosted.org/packages/46/d1/3db419a9c5d52c1a1c78c254f2282dfd4497582634785da968b5101322d2/odoo8_addon_l10n_it_fiscalcode-8.0.0.1.2.99.dev1-py2-none-any.whl
+[2023-05-26 05:53:36] INFO root fetch - processPackages [binsync]: Downloading https://files.pythonhosted.org/packages/41/ed/6955625418feda88463248efd6f96d8d07c9b8583ff33b756d7990f45186/binsync-3.6.0.tar.gz
+[2023-05-26 05:53:36] INFO root fetch - processPackages [stocktracer]: Downloading https://files.pythonhosted.org/packages/cc/f0/aee6620ac33bd7dfe1fdbb171b078a13d14b8c17aa0efc3e621749ea088c/stocktracer-0.2.0.tar.gz
+[2023-05-26 05:53:36] WARNING root fetch - processPackages [adds]: Skipping, unable to determine old version
+[2023-05-26 05:53:36] INFO root fetch - main [MainThread]: End processing [adds] error
+[2023-05-26 05:53:36] INFO root fetch - processPackages [imessagedb]: executing diffoscope
+[2023-05-26 05:53:36] INFO root fetch - processPackages [imessagedb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imessagedb-1.3.4.tar.gz tmp/imessagedb-1.4.0.tar.gz --markdown 20230526/i/imessagedb/1.3.4-1.4.0/diff.md --exclude *.pyd
+[2023-05-26 05:53:36] INFO root fetch - processPackages [data-spec-validator]: Downloading https://files.pythonhosted.org/packages/4a/83/06267e4120a55e7944ef4f6d6ce9aaa28b6a72be93b4f1485e8df7dbf335/data-spec-validator-3.2.0.tar.gz
+[2023-05-26 05:53:36] INFO root fetch - processPackages [data-spec-validator]: executing diffoscope
+[2023-05-26 05:53:36] INFO root fetch - processPackages [data-spec-validator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data-spec-validator-3.1.0.tar.gz tmp/data-spec-validator-3.2.0.tar.gz --markdown 20230526/d/data-spec-validator/3.1.0-3.2.0/diff.md --exclude *.pyd
+[2023-05-26 05:53:36] INFO root fetch - processPackages [at-fetch-data]: Downloading https://files.pythonhosted.org/packages/43/d0/1edd0ab0f4bd307ad5f379c8b13f6703b49209b07408567689d9d035bc54/at-fetch-data-1.0.4.tar.gz
+[2023-05-26 05:53:36] INFO root fetch - processPackages [odoo11-addon-l10n-it-central-journal]: Downloading https://files.pythonhosted.org/packages/ed/45/3f86a6be412efeb022bab1654cce9428ba9456b563ac05cf41b1fe97fa91/odoo11_addon_l10n_it_central_journal-11.0.1.1.1.99.dev2-py2.py3-none-any.whl
+[2023-05-26 05:53:36] INFO root fetch - processPackages [stocktracer]: Downloading https://files.pythonhosted.org/packages/b5/a9/c2881e78b8d0ae6c3eaedfd69a61411383c79233d85e02ec44afb0c3fe9d/stocktracer-0.3.0.tar.gz
+[2023-05-26 05:53:36] INFO root fetch - processPackages [binsync]: Downloading https://files.pythonhosted.org/packages/b6/86/bbec3dc5ab126a930960864b284c79d2c6cf4dea64e63b280ff2f2ecc9a8/binsync-3.9.0.tar.gz
+[2023-05-26 05:53:36] INFO root fetch - processPackages [at-fetch-data]: executing diffoscope
+[2023-05-26 05:53:36] INFO root fetch - processPackages [at-fetch-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/at-fetch-data-1.0.2.tar.gz tmp/at-fetch-data-1.0.4.tar.gz --markdown 20230526/a/at-fetch-data/1.0.2-1.0.4/diff.md --exclude *.pyd
+[2023-05-26 05:53:36] INFO root fetch - processPackages [odoo8-addon-l10n-it-fiscalcode]: Downloading https://files.pythonhosted.org/packages/7d/7c/be58e1bc4b631b140e16f15f10ca024ec054ddfb0f7f0437b3faa50834bb/odoo8_addon_l10n_it_fiscalcode-8.0.0.1.2.99.dev2-py2-none-any.whl
+[2023-05-26 05:53:36] INFO root fetch - processPackages [odoo11-addon-l10n-it-central-journal]: executing diffoscope
+[2023-05-26 05:53:36] INFO root fetch - processPackages [odoo11-addon-l10n-it-central-journal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_l10n_it_central_journal-11.0.1.1.1.99.dev1-py2.py3-none-any.whl.zip tmp/odoo11_addon_l10n_it_central_journal-11.0.1.1.1.99.dev2-py2.py3-none-any.whl.zip --markdown 20230526/o/odoo11-addon-l10n-it-central-journal/11.0.1.1.1.99.dev1-11.0.1.1.1.99.dev2/diff.md --exclude *.pyd
+[2023-05-26 05:53:36] INFO root fetch - processPackages [Pandora-Cloud]: Downloading https://files.pythonhosted.org/packages/88/a8/79293ca416411f1d54290bbd784500f586b17fd48882fba5f65b3d3bae45/Pandora-Cloud-0.3.2.tar.gz
+[2023-05-26 05:53:36] INFO root fetch - processPackages [stocktracer]: executing diffoscope
+[2023-05-26 05:53:36] INFO root fetch - processPackages [stocktracer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stocktracer-0.2.0.tar.gz tmp/stocktracer-0.3.0.tar.gz --markdown 20230526/s/stocktracer/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-26 05:53:36] INFO root fetch - processPackages [binsync]: executing diffoscope
+[2023-05-26 05:53:36] INFO root fetch - processPackages [binsync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binsync-3.6.0.tar.gz tmp/binsync-3.9.0.tar.gz --markdown 20230526/b/binsync/3.6.0-3.9.0/diff.md --exclude *.pyd
+[2023-05-26 05:53:36] INFO root fetch - processPackages [odoo8-addon-l10n-it-fiscalcode]: executing diffoscope
+[2023-05-26 05:53:36] INFO root fetch - processPackages [odoo8-addon-l10n-it-fiscalcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo8_addon_l10n_it_fiscalcode-8.0.0.1.2.99.dev1-py2-none-any.whl.zip tmp/odoo8_addon_l10n_it_fiscalcode-8.0.0.1.2.99.dev2-py2-none-any.whl.zip --markdown 20230526/o/odoo8-addon-l10n-it-fiscalcode/8.0.0.1.2.99.dev1-8.0.0.1.2.99.dev2/diff.md --exclude *.pyd
+[2023-05-26 05:53:37] INFO root fetch - processPackages [Pandora-Cloud]: executing diffoscope
+[2023-05-26 05:53:37] INFO root fetch - processPackages [Pandora-Cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pandora-Cloud-0.3.1.tar.gz tmp/Pandora-Cloud-0.3.2.tar.gz --markdown 20230526/P/Pandora-Cloud/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-26 05:53:37] INFO root fetch - main [MainThread]: End processing [imessagedb]: success
+[2023-05-26 05:53:38] INFO root fetch - main [MainThread]: End processing [at-fetch-data]: success
+[2023-05-26 05:53:38] INFO root fetch - main [MainThread]: End processing [data-spec-validator]: success
+[2023-05-26 05:53:38] INFO root fetch - main [MainThread]: End processing [odoo8-addon-l10n-it-fiscalcode]: success
+[2023-05-26 05:53:38] INFO root fetch - main [MainThread]: End processing [odoo11-addon-l10n-it-central-journal]: success
+[2023-05-26 05:53:39] INFO root fetch - main [MainThread]: End processing [stocktracer]: success
+[2023-05-26 05:53:40] INFO root fetch - main [MainThread]: End processing [Pandora-Cloud]: success
+[2023-05-26 05:53:40] INFO root fetch - main [MainThread]: End processing [binsync]: success
+[2023-05-26 05:53:40] INFO root fetch - main [MainThread]: Store serial: [18257452]
