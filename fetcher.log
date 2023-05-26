@@ -10018,3 +10018,72 @@
 [2023-05-26 09:29:42] INFO root fetch - main [MainThread]: End processing [johnsnowlabs-for-databricks-tmp]: success
 [2023-05-26 09:29:56] INFO root fetch - main [MainThread]: End processing [cg]: success
 [2023-05-26 09:29:56] INFO root fetch - main [MainThread]: Store serial: [18259160]
+[2023-05-26 09:35:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18259160]
+[2023-05-26 09:35:06] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-26 09:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vortex-api
+[2023-05-26 09:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-sumologic
+[2023-05-26 09:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ttsmms
+[2023-05-26 09:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-openstack
+[2023-05-26 09:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cq23
+[2023-05-26 09:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-venafi
+[2023-05-26 09:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: linkedinpdfextractor
+[2023-05-26 09:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: monobit
+[2023-05-26 09:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: p10k-edit
+[2023-05-26 09:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pulumi-vsphere
+[2023-05-26 09:35:06] INFO root fetch - processPackages [p10k-edit]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-26 09:35:06] INFO root fetch - processPackages [ttsmms]: New version: [0.6] Old Version: [0.5]
+[2023-05-26 09:35:06] INFO root fetch - processPackages [vortex-api]: New version: [1.0.6.dev1] Old Version: [1.0.5]
+[2023-05-26 09:35:06] INFO root fetch - processPackages [pulumi-sumologic]: New version: [0.9.1a1663799436] Old Version: [0.9.0]
+[2023-05-26 09:35:06] INFO root fetch - processPackages [cq23]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-05-26 09:35:06] INFO root fetch - processPackages [linkedinpdfextractor]: New version: [1.2.7] Old Version: [1.2.6]
+[2023-05-26 09:35:06] INFO root fetch - processPackages [pulumi-venafi]: New version: [1.6.0a1685084945] Old Version: [1.6.0a1684391394]
+[2023-05-26 09:35:06] INFO root fetch - processPackages [monobit]: New version: [0.41.0] Old Version: [0.40.4]
+[2023-05-26 09:35:06] INFO root fetch - processPackages [pulumi-vsphere]: New version: [4.6.0a1685085049] Old Version: [4.5.0a1684947541]
+[2023-05-26 09:35:06] INFO root fetch - processPackages [pulumi-openstack]: New version: [3.9.0a1659603007] Old Version: [3.9.0a1654086724]
+[2023-05-26 09:35:06] INFO root fetch - processPackages [pulumi-sumologic]: executing diffoscope
+[2023-05-26 09:35:06] INFO root fetch - processPackages [pulumi-sumologic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_sumologic-0.9.0.tar.gz tmp/pulumi_sumologic-0.9.1a1663799436.tar.gz --markdown 20230526/p/pulumi-sumologic/0.9.0-0.9.1a1663799436/diff.md --exclude *.pyd
+[2023-05-26 09:35:06] INFO root fetch - processPackages [cq23]: Downloading https://files.pythonhosted.org/packages/43/18/2942bb517714c4b8145ee6ec55ed86560ae5aaf221b43ca195eb827b199d/cq23-1.2.0.tar.gz
+[2023-05-26 09:35:06] INFO root fetch - processPackages [ttsmms]: Downloading https://files.pythonhosted.org/packages/45/fe/aef6850f68c40a3ea83da79b11120c88524261e34520813d3078a49f2087/ttsmms-0.5.tar.gz
+[2023-05-26 09:35:06] INFO root fetch - processPackages [linkedinpdfextractor]: Downloading https://files.pythonhosted.org/packages/01/f0/580b593cd7824d0101a7a42979ae47dd38312bf0a75725fdc2790f61b973/linkedinpdfextractor-1.2.7.tar.gz
+[2023-05-26 09:35:06] INFO root fetch - processPackages [vortex-api]: Downloading https://files.pythonhosted.org/packages/df/f3/90a9a5397f0d5eb52e6840818f2bd2827a0d88fd862ef8d29f2fdd03af9c/vortex_api-1.0.5.tar.gz
+[2023-05-26 09:35:06] INFO root fetch - processPackages [p10k-edit]: executing diffoscope
+[2023-05-26 09:35:06] INFO root fetch - processPackages [p10k-edit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p10k-edit-0.0.7.tar.gz tmp/p10k-edit-0.0.8.tar.gz --markdown 20230526/p/p10k-edit/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-26 09:35:06] INFO root fetch - processPackages [monobit]: Downloading https://files.pythonhosted.org/packages/10/8b/33615fa367bf8e01deeb63a64b860847f39896502ae6d2cc5fdb7b0d9e09/monobit-0.40.4.tar.gz
+[2023-05-26 09:35:06] INFO root fetch - processPackages [linkedinpdfextractor]: executing diffoscope
+[2023-05-26 09:35:06] INFO root fetch - processPackages [linkedinpdfextractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linkedinpdfextractor-1.2.6.tar.gz tmp/linkedinpdfextractor-1.2.7.tar.gz --markdown 20230526/l/linkedinpdfextractor/1.2.6-1.2.7/diff.md --exclude *.pyd
+[2023-05-26 09:35:06] INFO root fetch - processPackages [pulumi-vsphere]: Downloading https://files.pythonhosted.org/packages/b2/91/978740f4f469b8a0b1bf98177f89cfcbc2fc572fa57208863502b7eff213/pulumi_vsphere-4.6.0a1685085049.tar.gz
+[2023-05-26 09:35:06] INFO root fetch - processPackages [cq23]: Downloading https://files.pythonhosted.org/packages/ca/8f/39b0bf249da78df92ff093d64e7bab313a36a08575038934fc3fad5ee892/cq23-1.3.0.tar.gz
+[2023-05-26 09:35:07] INFO root fetch - processPackages [pulumi-venafi]: Downloading https://files.pythonhosted.org/packages/94/ac/830300ca334dcc5b5b4a33c4e76b2850f8da76816a42b6e37a55eb123a79/pulumi_venafi-1.6.0a1685084945.tar.gz
+[2023-05-26 09:35:07] INFO root fetch - processPackages [cq23]: executing diffoscope
+[2023-05-26 09:35:07] INFO root fetch - processPackages [cq23]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cq23-1.2.0.tar.gz tmp/cq23-1.3.0.tar.gz --markdown 20230526/c/cq23/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-05-26 09:35:07] INFO root fetch - processPackages [ttsmms]: Downloading https://files.pythonhosted.org/packages/58/cb/96eb28ad5e39a4f99ea3e4aaecb316a02ef5cdb14c95821e0c22cf81e523/ttsmms-0.6.tar.gz
+[2023-05-26 09:35:07] INFO root fetch - processPackages [pulumi-openstack]: executing diffoscope
+[2023-05-26 09:35:07] INFO root fetch - processPackages [pulumi-openstack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_openstack-3.9.0a1654086724.tar.gz tmp/pulumi_openstack-3.9.0a1659603007.tar.gz --markdown 20230526/p/pulumi-openstack/3.9.0a1654086724-3.9.0a1659603007/diff.md --exclude *.pyd
+[2023-05-26 09:35:07] INFO root fetch - processPackages [vortex-api]: Downloading https://files.pythonhosted.org/packages/5f/10/28d0f42d5fe464e94dee5d52da4a458bba949d3767f267f4583353c3c5e1/vortex_api-1.0.6.dev1.tar.gz
+[2023-05-26 09:35:07] INFO root fetch - processPackages [pulumi-vsphere]: executing diffoscope
+[2023-05-26 09:35:07] INFO root fetch - processPackages [pulumi-vsphere]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_vsphere-4.5.0a1684947541.tar.gz tmp/pulumi_vsphere-4.6.0a1685085049.tar.gz --markdown 20230526/p/pulumi-vsphere/4.5.0a1684947541-4.6.0a1685085049/diff.md --exclude *.pyd
+[2023-05-26 09:35:07] INFO root fetch - processPackages [pulumi-venafi]: executing diffoscope
+[2023-05-26 09:35:07] INFO root fetch - processPackages [pulumi-venafi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_venafi-1.6.0a1684391394.tar.gz tmp/pulumi_venafi-1.6.0a1685084945.tar.gz --markdown 20230526/p/pulumi-venafi/1.6.0a1684391394-1.6.0a1685084945/diff.md --exclude *.pyd
+[2023-05-26 09:35:07] INFO root fetch - processPackages [ttsmms]: executing diffoscope
+[2023-05-26 09:35:07] INFO root fetch - processPackages [ttsmms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ttsmms-0.5.tar.gz tmp/ttsmms-0.6.tar.gz --markdown 20230526/t/ttsmms/0.5-0.6/diff.md --exclude *.pyd
+[2023-05-26 09:35:07] INFO root fetch - processPackages [vortex-api]: executing diffoscope
+[2023-05-26 09:35:07] INFO root fetch - processPackages [vortex-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vortex_api-1.0.5.tar.gz tmp/vortex_api-1.0.6.dev1.tar.gz --markdown 20230526/v/vortex-api/1.0.5-1.0.6.dev1/diff.md --exclude *.pyd
+[2023-05-26 09:35:07] INFO root fetch - processPackages [monobit]: Downloading https://files.pythonhosted.org/packages/72/ce/8d5dbf3c996840feb1db0ae28d9782c80f52c7cb43da38b61033038ea392/monobit-0.41.0.tar.gz
+[2023-05-26 09:35:07] INFO root fetch - processPackages [monobit]: executing diffoscope
+[2023-05-26 09:35:07] INFO root fetch - processPackages [monobit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monobit-0.40.4.tar.gz tmp/monobit-0.41.0.tar.gz --markdown 20230526/m/monobit/0.40.4-0.41.0/diff.md --exclude *.pyd
+[2023-05-26 09:35:08] INFO root fetch - processPackages [p10k-edit]: Start processing: jupyterlab-training
+[2023-05-26 09:35:08] INFO root fetch - main [MainThread]: End processing [p10k-edit]: success
+[2023-05-26 09:35:08] INFO root fetch - processPackages [jupyterlab-training]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-26 09:35:08] INFO root fetch - main [MainThread]: End processing [cq23]: success
+[2023-05-26 09:35:09] INFO root fetch - processPackages [jupyterlab-training]: executing diffoscope
+[2023-05-26 09:35:09] INFO root fetch - processPackages [jupyterlab-training]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterlab-training-0.4.0.tar.gz tmp/jupyterlab-training-0.4.1.tar.gz --markdown 20230526/j/jupyterlab-training/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-26 09:35:09] INFO root fetch - main [MainThread]: End processing [linkedinpdfextractor]: success
+[2023-05-26 09:35:09] INFO root fetch - main [MainThread]: End processing [ttsmms]: success
+[2023-05-26 09:35:09] INFO root fetch - main [MainThread]: End processing [vortex-api]: success
+[2023-05-26 09:35:09] INFO root fetch - main [MainThread]: End processing [pulumi-venafi]: success
+[2023-05-26 09:35:09] INFO root fetch - main [MainThread]: End processing [pulumi-vsphere]: success
+[2023-05-26 09:35:10] INFO root fetch - main [MainThread]: End processing [pulumi-sumologic]: success
+[2023-05-26 09:35:10] INFO root fetch - main [MainThread]: End processing [jupyterlab-training]: success
+[2023-05-26 09:35:13] INFO root fetch - main [MainThread]: End processing [pulumi-openstack]: success
+[2023-05-26 09:35:14] INFO root fetch - main [MainThread]: End processing [monobit]: success
+[2023-05-26 09:35:14] INFO root fetch - main [MainThread]: Store serial: [18259217]
