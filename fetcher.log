@@ -18838,3 +18838,144 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 17:46:18] INFO root fetch - main [MainThread]: End processing [policyuniverse]: success
 [2023-05-26 17:46:21] INFO root fetch - main [MainThread]: End processing [langchain]: success
 [2023-05-26 17:46:21] INFO root fetch - main [MainThread]: Store serial: [18264851]
+[2023-05-26 17:51:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18264851]
+[2023-05-26 17:51:30] INFO root fetch - main [MainThread]: Found 25 changed packages
+[2023-05-26 17:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: elgin
+[2023-05-26 17:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: everything2text4prompt
+[2023-05-26 17:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: everything2text4prompt
+[2023-05-26 17:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: everything2text4prompt
+[2023-05-26 17:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: webscrapbook
+[2023-05-26 17:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: openthaigpt
+[2023-05-26 17:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: matchutils
+[2023-05-26 17:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sysnet-taxonomy
+[2023-05-26 17:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: flask-fs2
+[2023-05-26 17:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: flowchain
+[2023-05-26 17:51:30] INFO root fetch - processPackages [everything2text4prompt]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-26 17:51:30] WARNING root fetch - processPackages [matchutils]: Skipping, unable to determine old version
+[2023-05-26 17:51:30] INFO root fetch - processPackages [matchutils]: Start processing: smartlogger
+[2023-05-26 17:51:30] INFO root fetch - main [MainThread]: End processing [matchutils] error
+[2023-05-26 17:51:30] INFO root fetch - processPackages [sysnet-taxonomy]: New version: [1.0.0.1] Old Version: [1.0.0]
+[2023-05-26 17:51:30] INFO root fetch - processPackages [openthaigpt]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-26 17:51:30] INFO root fetch - processPackages [flowchain]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-26 17:51:30] INFO root fetch - processPackages [elgin]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 17:51:30] INFO root fetch - processPackages [flask-fs2]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-05-26 17:51:30] INFO root fetch - processPackages [webscrapbook]: New version: [2.0.0b9] Old Version: [2.0.0b8]
+[2023-05-26 17:51:30] INFO root fetch - processPackages [everything2text4prompt]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-26 17:51:30] INFO root fetch - processPackages [everything2text4prompt]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-26 17:51:30] INFO root fetch - processPackages [smartlogger]: New version: [0.0.1.dev9] Old Version: [0.0.1.dev8]
+[2023-05-26 17:51:31] INFO root fetch - processPackages [elgin]: executing diffoscope
+[2023-05-26 17:51:31] INFO root fetch - processPackages [elgin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elgin-0.1.8.tar.gz tmp/elgin-0.1.9.tar.gz --markdown 20230526/e/elgin/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 17:51:31] INFO root fetch - processPackages [everything2text4prompt]: Downloading https://files.pythonhosted.org/packages/aa/3c/1d8d0215e5c265e90d66ca1d4701525858b3c283b430854cd80f8b6dee8e/everything2text4prompt-0.0.5.tar.gz
+[2023-05-26 17:51:31] INFO root fetch - processPackages [flask-fs2]: executing diffoscope
+[2023-05-26 17:51:31] INFO root fetch - processPackages [flask-fs2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_fs2-0.7.8-py2.py3-none-any.whl.zip tmp/flask_fs2-0.7.9-py2.py3-none-any.whl.zip --markdown 20230526/f/flask-fs2/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2023-05-26 17:51:31] INFO root fetch - processPackages [everything2text4prompt]: Downloading https://files.pythonhosted.org/packages/aa/3c/1d8d0215e5c265e90d66ca1d4701525858b3c283b430854cd80f8b6dee8e/everything2text4prompt-0.0.5.tar.gz
+[2023-05-26 17:51:31] INFO root fetch - processPackages [everything2text4prompt]: Downloading https://files.pythonhosted.org/packages/aa/3c/1d8d0215e5c265e90d66ca1d4701525858b3c283b430854cd80f8b6dee8e/everything2text4prompt-0.0.5.tar.gz
+[2023-05-26 17:51:31] INFO root fetch - processPackages [smartlogger]: executing diffoscope
+[2023-05-26 17:51:31] INFO root fetch - processPackages [smartlogger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartlogger-0.0.1.dev8.tar.gz tmp/smartlogger-0.0.1.dev9.tar.gz --markdown 20230526/s/smartlogger/0.0.1.dev8-0.0.1.dev9/diff.md --exclude *.pyd
+[2023-05-26 17:51:31] INFO root fetch - processPackages [sysnet-taxonomy]: Downloading https://files.pythonhosted.org/packages/e7/d4/faac35823ff7a957d0395ff1daa1bfa1be90d85c545f8183348e45a27710/sysnet-taxonomy-1.0.0.tar.gz
+[2023-05-26 17:51:31] INFO root fetch - processPackages [openthaigpt]: Downloading https://files.pythonhosted.org/packages/44/41/648396c234be81e2578c3266d0ef690ff2372d1622b271e379a6719de1cc/openthaigpt-0.1.0.tar.gz
+[2023-05-26 17:51:31] INFO root fetch - processPackages [flowchain]: Downloading https://files.pythonhosted.org/packages/c0/84/0b0fa3a71aae88822658a68619e56ca6c3f5f16b7e6903eed00a22de8b52/flowchain-0.0.3.tar.gz
+[2023-05-26 17:51:31] INFO root fetch - processPackages [flowchain]: executing diffoscope
+[2023-05-26 17:51:31] INFO root fetch - processPackages [flowchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowchain-0.0.2.tar.gz tmp/flowchain-0.0.3.tar.gz --markdown 20230526/f/flowchain/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-26 17:51:31] INFO root fetch - processPackages [everything2text4prompt]: Downloading https://files.pythonhosted.org/packages/f6/29/15f7c1f77eed1065d9e946d33cdbed5e49f80466af0b42a54c59b2a8c4c5/everything2text4prompt-0.0.6.tar.gz
+[2023-05-26 17:51:31] INFO root fetch - processPackages [everything2text4prompt]: Downloading https://files.pythonhosted.org/packages/f6/29/15f7c1f77eed1065d9e946d33cdbed5e49f80466af0b42a54c59b2a8c4c5/everything2text4prompt-0.0.6.tar.gz
+[2023-05-26 17:51:31] INFO root fetch - processPackages [everything2text4prompt]: Downloading https://files.pythonhosted.org/packages/f6/29/15f7c1f77eed1065d9e946d33cdbed5e49f80466af0b42a54c59b2a8c4c5/everything2text4prompt-0.0.6.tar.gz
+[2023-05-26 17:51:31] INFO root fetch - processPackages [webscrapbook]: executing diffoscope
+[2023-05-26 17:51:31] INFO root fetch - processPackages [webscrapbook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webscrapbook-2.0.0b8.tar.gz tmp/webscrapbook-2.0.0b9.tar.gz --markdown 20230526/w/webscrapbook/2.0.0b8-2.0.0b9/diff.md --exclude *.pyd
+[2023-05-26 17:51:31] INFO root fetch - processPackages [sysnet-taxonomy]: Downloading https://files.pythonhosted.org/packages/2a/72/7bbaf4747519e993c61b0a9a2e5e3e4fe4b522e4a3d5536a6831214f12a5/sysnet-taxonomy-1.0.0.1.tar.gz
+[2023-05-26 17:51:31] INFO root fetch - processPackages [openthaigpt]: Downloading https://files.pythonhosted.org/packages/4a/71/9aa6ea50470c6e5154cc736a2b65f4a488b21c3f59d890543f3ce3b4357b/openthaigpt-0.1.1.tar.gz
+[2023-05-26 17:51:31] INFO root fetch - processPackages [everything2text4prompt]: executing diffoscope
+[2023-05-26 17:51:31] INFO root fetch - processPackages [everything2text4prompt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/everything2text4prompt-0.0.5.tar.gz tmp/everything2text4prompt-0.0.6.tar.gz --markdown 20230526/e/everything2text4prompt/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-26 17:51:31] INFO root fetch - processPackages [everything2text4prompt]: executing diffoscope
+[2023-05-26 17:51:31] INFO root fetch - processPackages [everything2text4prompt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/everything2text4prompt-0.0.5.tar.gz tmp/everything2text4prompt-0.0.6.tar.gz --markdown 20230526/e/everything2text4prompt/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-26 17:51:31] INFO root fetch - processPackages [everything2text4prompt]: executing diffoscope
+[2023-05-26 17:51:31] INFO root fetch - processPackages [everything2text4prompt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/everything2text4prompt-0.0.5.tar.gz tmp/everything2text4prompt-0.0.6.tar.gz --markdown 20230526/e/everything2text4prompt/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-26 17:51:31] INFO root fetch - processPackages [sysnet-taxonomy]: executing diffoscope
+[2023-05-26 17:51:31] INFO root fetch - processPackages [sysnet-taxonomy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sysnet-taxonomy-1.0.0.tar.gz tmp/sysnet-taxonomy-1.0.0.1.tar.gz --markdown 20230526/s/sysnet-taxonomy/1.0.0-1.0.0.1/diff.md --exclude *.pyd
+[2023-05-26 17:51:31] INFO root fetch - processPackages [openthaigpt]: executing diffoscope
+[2023-05-26 17:51:31] INFO root fetch - processPackages [openthaigpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openthaigpt-0.1.0.tar.gz tmp/openthaigpt-0.1.1.tar.gz --markdown 20230526/o/openthaigpt/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-26 17:51:32] INFO root fetch - processPackages [flask-fs2]: Start processing: apgmx
+[2023-05-26 17:51:32] INFO root fetch - main [MainThread]: End processing [flask-fs2]: success
+[2023-05-26 17:51:33] WARNING root fetch - processPackages [apgmx]: Skipping, unable to determine old version
+[2023-05-26 17:51:33] INFO root fetch - processPackages [apgmx]: Start processing: cybrid-api-organization-python
+[2023-05-26 17:51:33] INFO root fetch - main [MainThread]: End processing [apgmx] error
+[2023-05-26 17:51:33] INFO root fetch - processPackages [elgin]: Start processing: cybrid-api-id-python
+[2023-05-26 17:51:33] INFO root fetch - main [MainThread]: End processing [elgin]: success
+[2023-05-26 17:51:33] INFO root fetch - processPackages [cybrid-api-organization-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-26 17:51:33] INFO root fetch - processPackages [smartlogger]: Start processing: cybrid-api-bank-python
+[2023-05-26 17:51:33] INFO root fetch - main [MainThread]: End processing [smartlogger]: success
+[2023-05-26 17:51:33] INFO root fetch - processPackages [cybrid-api-id-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-26 17:51:33] INFO root fetch - processPackages [cybrid-api-bank-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-26 17:51:33] INFO root fetch - processPackages [cybrid-api-organization-python]: executing diffoscope
+[2023-05-26 17:51:33] INFO root fetch - processPackages [cybrid-api-organization-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-organization-python-0.9.8.tar.gz tmp/cybrid-api-organization-python-0.9.9.tar.gz --markdown 20230526/c/cybrid-api-organization-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-26 17:51:33] INFO root fetch - processPackages [cybrid-api-id-python]: executing diffoscope
+[2023-05-26 17:51:33] INFO root fetch - processPackages [cybrid-api-id-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-id-python-0.9.8.tar.gz tmp/cybrid-api-id-python-0.9.9.tar.gz --markdown 20230526/c/cybrid-api-id-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-26 17:51:33] INFO root fetch - processPackages [cybrid-api-bank-python]: executing diffoscope
+[2023-05-26 17:51:33] INFO root fetch - processPackages [cybrid-api-bank-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-bank-python-0.9.8.tar.gz tmp/cybrid-api-bank-python-0.9.9.tar.gz --markdown 20230526/c/cybrid-api-bank-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-26 17:51:33] INFO root fetch - processPackages [everything2text4prompt]: Start processing: bbrl
+[2023-05-26 17:51:33] INFO root fetch - main [MainThread]: End processing [everything2text4prompt]: success
+[2023-05-26 17:51:33] INFO root fetch - processPackages [bbrl]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 17:51:33] INFO root fetch - processPackages [flowchain]: Start processing: qolmat
+[2023-05-26 17:51:33] INFO root fetch - main [MainThread]: End processing [flowchain]: success
+[2023-05-26 17:51:33] INFO root fetch - processPackages [qolmat]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 17:51:33] INFO root fetch - processPackages [everything2text4prompt]: Start processing: shasta
+[2023-05-26 17:51:33] INFO root fetch - main [MainThread]: End processing [everything2text4prompt]: success
+[2023-05-26 17:51:33] WARNING root fetch - processPackages [shasta]: Skipping, unable to determine old version
+[2023-05-26 17:51:33] INFO root fetch - processPackages [shasta]: Start processing: python-nomad
+[2023-05-26 17:51:33] INFO root fetch - main [MainThread]: End processing [shasta] error
+[2023-05-26 17:51:33] INFO root fetch - processPackages [openthaigpt]: Start processing: quart-mongo
+[2023-05-26 17:51:33] INFO root fetch - main [MainThread]: End processing [openthaigpt]: success
+[2023-05-26 17:51:34] INFO root fetch - processPackages [python-nomad]: New version: [2.0.0] Old Version: [1.5.0]
+[2023-05-26 17:51:34] INFO root fetch - processPackages [everything2text4prompt]: Start processing: zou
+[2023-05-26 17:51:34] INFO root fetch - main [MainThread]: End processing [everything2text4prompt]: success
+[2023-05-26 17:51:34] WARNING root fetch - processPackages [quart-mongo]: Skipping, unable to determine old version
+[2023-05-26 17:51:34] INFO root fetch - processPackages [quart-mongo]: Start processing: text2story
+[2023-05-26 17:51:34] INFO root fetch - main [MainThread]: End processing [quart-mongo] error
+[2023-05-26 17:51:34] INFO root fetch - processPackages [bbrl]: Downloading https://files.pythonhosted.org/packages/d7/e8/97d4e9c8c3e237255308ae545cb43a8d28b7e30c6aaf1032c434d4587efd/bbrl-0.1.8.tar.gz
+[2023-05-26 17:51:34] INFO root fetch - processPackages [qolmat]: Downloading https://files.pythonhosted.org/packages/6b/cf/657810586d361502615a0adafa940b3e4886e4a7ed8945786c5c4c6fbf21/qolmat-0.0.8.tar.gz
+[2023-05-26 17:51:34] INFO root fetch - processPackages [zou]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-26 17:51:34] INFO root fetch - processPackages [text2story]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-26 17:51:34] INFO root fetch - processPackages [python-nomad]: Downloading https://files.pythonhosted.org/packages/0b/12/307d20605a147beca2a141a24bc455a2ab12bdf274ab4d3c6fd61ba7a260/python-nomad-1.5.0.tar.gz
+[2023-05-26 17:51:34] WARNING root fetch - processPackages [bbrl]: Skipping package: exceeds size limit 95850648>=10485760
+[2023-05-26 17:51:34] INFO root fetch - processPackages [bbrl]: Start processing: watch-bot
+[2023-05-26 17:51:34] INFO root fetch - main [MainThread]: End processing [bbrl] error
+[2023-05-26 17:51:34] INFO root fetch - processPackages [text2story]: executing diffoscope
+[2023-05-26 17:51:34] INFO root fetch - processPackages [text2story]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text2story-1.2.8.tar.gz tmp/text2story-1.2.9.tar.gz --markdown 20230526/t/text2story/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-26 17:51:34] INFO root fetch - processPackages [watch-bot]: New version: [0.1.0] Old Version: [0.0.2]
+[2023-05-26 17:51:34] INFO root fetch - processPackages [qolmat]: Downloading https://files.pythonhosted.org/packages/c3/db/084559a5ab560f96dcdcb3226aba5e6de52b499620b850f716719ffaa801/qolmat-0.0.9.tar.gz
+[2023-05-26 17:51:34] INFO root fetch - processPackages [python-nomad]: Downloading https://files.pythonhosted.org/packages/fc/0a/cf0a862eb20c4bc40f88185a62f51d0befc594a25e7ec5d150b746a95f87/python-nomad-2.0.0.tar.gz
+[2023-05-26 17:51:34] INFO root fetch - processPackages [qolmat]: executing diffoscope
+[2023-05-26 17:51:34] INFO root fetch - processPackages [qolmat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qolmat-0.0.8.tar.gz tmp/qolmat-0.0.9.tar.gz --markdown 20230526/q/qolmat/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 17:51:34] INFO root fetch - processPackages [webscrapbook]: Start processing: melon-translate
+[2023-05-26 17:51:34] INFO root fetch - main [MainThread]: End processing [webscrapbook]: success
+[2023-05-26 17:51:34] INFO root fetch - processPackages [zou]: executing diffoscope
+[2023-05-26 17:51:34] INFO root fetch - processPackages [zou]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zou-0.9.8-py2.py3-none-any.whl.zip tmp/zou-0.9.9-py2.py3-none-any.whl.zip --markdown 20230526/z/zou/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-26 17:51:34] INFO root fetch - processPackages [watch-bot]: Downloading https://files.pythonhosted.org/packages/90/2e/78bfc8e910e2bdf22b1fc37114d2b59d2e0a605c88a6dfe6ed5ea8aca1ad/watch-bot-0.0.2.tar.gz
+[2023-05-26 17:51:34] INFO root fetch - processPackages [python-nomad]: executing diffoscope
+[2023-05-26 17:51:34] INFO root fetch - processPackages [python-nomad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-nomad-1.5.0.tar.gz tmp/python-nomad-2.0.0.tar.gz --markdown 20230526/p/python-nomad/1.5.0-2.0.0/diff.md --exclude *.pyd
+[2023-05-26 17:51:34] INFO root fetch - processPackages [melon-translate]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-26 17:51:34] INFO root fetch - processPackages [sysnet-taxonomy]: Start processing: adafruit-circuitpython-rsa
+[2023-05-26 17:51:34] INFO root fetch - main [MainThread]: End processing [sysnet-taxonomy]: success
+[2023-05-26 17:51:34] INFO root fetch - processPackages [melon-translate]: Downloading https://files.pythonhosted.org/packages/9e/cc/3d89d2471cdb3ff942123f108ce1b819d7316951000a2102d7b4e29f566b/melon_translate-0.9.3.tar.gz
+[2023-05-26 17:51:35] INFO root fetch - processPackages [watch-bot]: Downloading https://files.pythonhosted.org/packages/c5/4c/6efebdf5999effc0cf86daf44ea2f26c66bcd89da40b6f80f8b904951dd3/watch-bot-0.1.0.tar.gz
+[2023-05-26 17:51:35] INFO root fetch - processPackages [adafruit-circuitpython-rsa]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-26 17:51:35] INFO root fetch - processPackages [watch-bot]: executing diffoscope
+[2023-05-26 17:51:35] INFO root fetch - processPackages [watch-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watch-bot-0.0.2.tar.gz tmp/watch-bot-0.1.0.tar.gz --markdown 20230526/w/watch-bot/0.0.2-0.1.0/diff.md --exclude *.pyd
+[2023-05-26 17:51:35] INFO root fetch - processPackages [adafruit-circuitpython-rsa]: Downloading https://files.pythonhosted.org/packages/bb/66/4f2d86e81c31c061711bc474763f3e0ba4f0336e3293bc3d31814a549e66/adafruit-circuitpython-rsa-1.2.8.tar.gz
+[2023-05-26 17:51:35] INFO root fetch - processPackages [melon-translate]: Downloading https://files.pythonhosted.org/packages/99/60/57469d69aee6ce37fc5e45b2cce9342abccbd970d8c556e49fa195076399/melon_translate-0.9.4.tar.gz
+[2023-05-26 17:51:35] INFO root fetch - processPackages [adafruit-circuitpython-rsa]: Downloading https://files.pythonhosted.org/packages/32/1c/75f76b4d99edaad29544698f3453d31674558693228d2a2e2af7bc103956/adafruit-circuitpython-rsa-1.2.9.tar.gz
+[2023-05-26 17:51:35] INFO root fetch - processPackages [melon-translate]: executing diffoscope
+[2023-05-26 17:51:35] INFO root fetch - processPackages [melon-translate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/melon_translate-0.9.3.tar.gz tmp/melon_translate-0.9.4.tar.gz --markdown 20230526/m/melon-translate/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-26 17:51:35] INFO root fetch - processPackages [adafruit-circuitpython-rsa]: executing diffoscope
+[2023-05-26 17:51:35] INFO root fetch - processPackages [adafruit-circuitpython-rsa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adafruit-circuitpython-rsa-1.2.8.tar.gz tmp/adafruit-circuitpython-rsa-1.2.9.tar.gz --markdown 20230526/a/adafruit-circuitpython-rsa/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-26 17:51:36] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
+[2023-05-26 17:51:37] INFO root fetch - main [MainThread]: End processing [qolmat]: success
+[2023-05-26 17:51:37] INFO root fetch - main [MainThread]: End processing [text2story]: success
+[2023-05-26 17:51:37] INFO root fetch - main [MainThread]: End processing [cybrid-api-organization-python]: success
+[2023-05-26 17:51:37] INFO root fetch - main [MainThread]: End processing [python-nomad]: success
+[2023-05-26 17:51:37] INFO root fetch - main [MainThread]: End processing [watch-bot]: success
+[2023-05-26 17:51:37] INFO root fetch - main [MainThread]: End processing [melon-translate]: success
+[2023-05-26 17:51:37] INFO root fetch - main [MainThread]: End processing [zou]: success
+[2023-05-26 17:51:38] INFO root fetch - main [MainThread]: End processing [adafruit-circuitpython-rsa]: success
+[2023-05-26 17:51:38] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
+[2023-05-26 17:51:38] INFO root fetch - main [MainThread]: Store serial: [18264974]
