@@ -10938,3 +10938,184 @@
 [2023-05-26 10:34:12] INFO root fetch - main [MainThread]: End processing [miss-hit]: success
 [2023-05-26 10:34:14] INFO root fetch - main [MainThread]: End processing [pmx-biobb]: success
 [2023-05-26 10:34:14] INFO root fetch - main [MainThread]: Store serial: [18259771]
+[2023-05-26 10:39:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18259771]
+[2023-05-26 10:39:24] INFO root fetch - main [MainThread]: Found 30 changed packages
+[2023-05-26 10:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: localstack-core
+[2023-05-26 10:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nvfuser-cu121
+[2023-05-26 10:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: keycloak-api-manager
+[2023-05-26 10:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dune-harmonizer
+[2023-05-26 10:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vgd-counterfactuals
+[2023-05-26 10:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ert
+[2023-05-26 10:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gardener-cicd-base
+[2023-05-26 10:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gardener-cicd-cli
+[2023-05-26 10:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: gardener-cicd-dso
+[2023-05-26 10:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: gardener-cicd-libs
+[2023-05-26 10:39:24] INFO root fetch - processPackages [vgd-counterfactuals]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-26 10:39:24] INFO root fetch - processPackages [nvfuser-cu121]: New version: [0.0.9.dev20230515] Old Version: [0.0.9.dev20230514]
+[2023-05-26 10:39:24] INFO root fetch - processPackages [dune-harmonizer]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-26 10:39:24] INFO root fetch - processPackages [keycloak-api-manager]: New version: [1.0.0] Old Version: [0.1.3]
+[2023-05-26 10:39:24] INFO root fetch - processPackages [localstack-core]: New version: [2.1.1.dev20230526083416] Old Version: [2.1.1.dev20230525193023]
+[2023-05-26 10:39:24] INFO root fetch - processPackages [gardener-cicd-libs]: New version: [1.2064.0] Old Version: [1.2063.0]
+[2023-05-26 10:39:24] INFO root fetch - processPackages [gardener-cicd-cli]: New version: [1.2064.0] Old Version: [1.2063.0]
+[2023-05-26 10:39:24] INFO root fetch - processPackages [gardener-cicd-base]: New version: [1.2064.0] Old Version: [1.2063.0]
+[2023-05-26 10:39:24] INFO root fetch - processPackages [gardener-cicd-dso]: New version: [1.2064.0] Old Version: [1.2063.0]
+[2023-05-26 10:39:24] INFO root fetch - processPackages [ert]: New version: [5.0.0rc2] Old Version: [5.0.0rc1]
+[2023-05-26 10:39:24] INFO root fetch - processPackages [nvfuser-cu121]: executing diffoscope
+[2023-05-26 10:39:24] INFO root fetch - processPackages [nvfuser-cu121]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu121-0.0.9.dev20230514-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/nvfuser_cu121-0.0.9.dev20230515-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230526/n/nvfuser-cu121/0.0.9.dev20230514-0.0.9.dev20230515/diff.md --exclude *.pyd
+[2023-05-26 10:39:24] INFO root fetch - processPackages [gardener-cicd-libs]: Downloading https://files.pythonhosted.org/packages/2b/a9/f7c42b413482fbb1bdd27a0c1fdca6c0d3b9c0ad190ad2ceca5ff1c41d48/gardener-cicd-libs-1.2063.0.tar.gz
+[2023-05-26 10:39:24] INFO root fetch - processPackages [gardener-cicd-cli]: Downloading https://files.pythonhosted.org/packages/49/e4/98b184e690d240b51c308a11af8f7e04036011ed1203879945f7e0a1254b/gardener-cicd-cli-1.2063.0.tar.gz
+[2023-05-26 10:39:24] INFO root fetch - processPackages [dune-harmonizer]: executing diffoscope
+[2023-05-26 10:39:24] INFO root fetch - processPackages [dune-harmonizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_harmonizer-0.8.0.tar.gz tmp/dune_harmonizer-0.9.0.tar.gz --markdown 20230526/d/dune-harmonizer/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-26 10:39:24] INFO root fetch - processPackages [gardener-cicd-base]: Downloading https://files.pythonhosted.org/packages/16/55/f0196e8aecc032d48157999db3aa86cfc4a80899768449248393199a73bb/gardener-cicd-base-1.2063.0.tar.gz
+[2023-05-26 10:39:25] INFO root fetch - processPackages [keycloak-api-manager]: Downloading https://files.pythonhosted.org/packages/4d/36/171a932ce5ffd53123718b91ed713e5411fcfb84e191983434d0cd04139e/keycloak_api_manager-1.0.0.tar.gz
+[2023-05-26 10:39:25] INFO root fetch - processPackages [ert]: Downloading https://files.pythonhosted.org/packages/a8/5b/c8981b6a7b01ef7e953aaa7eb9d5347c6357732d33ad8e74b8f3f9858fbc/ert-5.0.0rc2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-26 10:39:25] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/66/11/89c61c1d0d6cb1e11fdc0161d6c5ad0f74d0c4f8d4d52342a2244c056e03/localstack-core-2.1.1.dev20230526083416.tar.gz
+[2023-05-26 10:39:25] INFO root fetch - processPackages [gardener-cicd-dso]: Downloading https://files.pythonhosted.org/packages/28/2f/ac0a615e110ba4c78d1b820863945e8cd54a6b341781190b5a96b6a898d3/gardener-cicd-dso-1.2063.0.tar.gz
+[2023-05-26 10:39:25] INFO root fetch - processPackages [vgd-counterfactuals]: Downloading https://files.pythonhosted.org/packages/7b/3e/6eba5d1dbf61ed901f5458c40f7b78abb7e99943d6a5fae7ddadc04758cb/vgd_counterfactuals-0.1.5.tar.gz
+[2023-05-26 10:39:25] INFO root fetch - processPackages [vgd-counterfactuals]: executing diffoscope
+[2023-05-26 10:39:25] INFO root fetch - processPackages [vgd-counterfactuals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vgd_counterfactuals-0.1.4.tar.gz tmp/vgd_counterfactuals-0.1.5.tar.gz --markdown 20230526/v/vgd-counterfactuals/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-26 10:39:25] INFO root fetch - processPackages [gardener-cicd-cli]: Downloading https://files.pythonhosted.org/packages/a4/8a/b2304b64c2229c7034ee8e4b1d07b889cbef820b833c4ffa51d43e1d87b0/gardener-cicd-cli-1.2064.0.tar.gz
+[2023-05-26 10:39:25] INFO root fetch - processPackages [keycloak-api-manager]: executing diffoscope
+[2023-05-26 10:39:25] INFO root fetch - processPackages [keycloak-api-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keycloak_api_manager-0.1.3.tar.gz tmp/keycloak_api_manager-1.0.0.tar.gz --markdown 20230526/k/keycloak-api-manager/0.1.3-1.0.0/diff.md --exclude *.pyd
+[2023-05-26 10:39:25] INFO root fetch - processPackages [gardener-cicd-base]: Downloading https://files.pythonhosted.org/packages/b3/78/17d5059351e5b74558e269ae0b5c1ea34445c04f1a66ef766397099f8947/gardener-cicd-base-1.2064.0.tar.gz
+[2023-05-26 10:39:25] INFO root fetch - processPackages [gardener-cicd-libs]: Downloading https://files.pythonhosted.org/packages/72/94/6ef159b2a335d931587b934ccf0b29af20ce137652844aa654572703a961/gardener-cicd-libs-1.2064.0.tar.gz
+[2023-05-26 10:39:25] INFO root fetch - processPackages [gardener-cicd-cli]: executing diffoscope
+[2023-05-26 10:39:25] INFO root fetch - processPackages [gardener-cicd-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-cli-1.2063.0.tar.gz tmp/gardener-cicd-cli-1.2064.0.tar.gz --markdown 20230526/g/gardener-cicd-cli/1.2063.0-1.2064.0/diff.md --exclude *.pyd
+[2023-05-26 10:39:25] INFO root fetch - processPackages [gardener-cicd-base]: executing diffoscope
+[2023-05-26 10:39:25] INFO root fetch - processPackages [gardener-cicd-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-base-1.2063.0.tar.gz tmp/gardener-cicd-base-1.2064.0.tar.gz --markdown 20230526/g/gardener-cicd-base/1.2063.0-1.2064.0/diff.md --exclude *.pyd
+[2023-05-26 10:39:25] INFO root fetch - processPackages [gardener-cicd-libs]: executing diffoscope
+[2023-05-26 10:39:25] INFO root fetch - processPackages [gardener-cicd-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-libs-1.2063.0.tar.gz tmp/gardener-cicd-libs-1.2064.0.tar.gz --markdown 20230526/g/gardener-cicd-libs/1.2063.0-1.2064.0/diff.md --exclude *.pyd
+[2023-05-26 10:39:25] INFO root fetch - processPackages [gardener-cicd-dso]: Downloading https://files.pythonhosted.org/packages/91/b0/342c9eaabc9a5d111a1923b31d46761356165606862d3b19abb9d20f50ea/gardener-cicd-dso-1.2064.0.tar.gz
+[2023-05-26 10:39:25] INFO root fetch - processPackages [gardener-cicd-dso]: executing diffoscope
+[2023-05-26 10:39:25] INFO root fetch - processPackages [gardener-cicd-dso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-dso-1.2063.0.tar.gz tmp/gardener-cicd-dso-1.2064.0.tar.gz --markdown 20230526/g/gardener-cicd-dso/1.2063.0-1.2064.0/diff.md --exclude *.pyd
+[2023-05-26 10:39:25] INFO root fetch - processPackages [localstack-core]: executing diffoscope
+[2023-05-26 10:39:25] INFO root fetch - processPackages [localstack-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localstack-core-2.1.1.dev20230525193023.tar.gz tmp/localstack-core-2.1.1.dev20230526083416.tar.gz --markdown 20230526/l/localstack-core/2.1.1.dev20230525193023-2.1.1.dev20230526083416/diff.md --exclude *.pyd
+[2023-05-26 10:39:25] INFO root fetch - processPackages [ert]: executing diffoscope
+[2023-05-26 10:39:25] INFO root fetch - processPackages [ert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ert-5.0.0rc1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/ert-5.0.0rc2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230526/e/ert/5.0.0rc1-5.0.0rc2/diff.md --exclude *.pyd
+[2023-05-26 10:39:26] INFO root fetch - processPackages [dune-harmonizer]: Start processing: gardener-cicd-whd
+[2023-05-26 10:39:26] INFO root fetch - main [MainThread]: End processing [dune-harmonizer]: success
+[2023-05-26 10:39:26] INFO root fetch - processPackages [gardener-cicd-whd]: New version: [1.2064.0] Old Version: [1.2063.0]
+[2023-05-26 10:39:26] INFO root fetch - processPackages [gardener-cicd-whd]: Downloading https://files.pythonhosted.org/packages/57/ab/5d773ec56f22d72b05e0490f987fb6a9ae8eec5333f398c8aaff3bb845e1/gardener-cicd-whd-1.2063.0.tar.gz
+[2023-05-26 10:39:26] INFO root fetch - processPackages [gardener-cicd-whd]: Downloading https://files.pythonhosted.org/packages/49/55/395199059120e8700f5edc3d7e7d0387e8950848dca40c5cacae731d5cb8/gardener-cicd-whd-1.2064.0.tar.gz
+[2023-05-26 10:39:26] INFO root fetch - processPackages [gardener-cicd-whd]: executing diffoscope
+[2023-05-26 10:39:26] INFO root fetch - processPackages [gardener-cicd-whd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-whd-1.2063.0.tar.gz tmp/gardener-cicd-whd-1.2064.0.tar.gz --markdown 20230526/g/gardener-cicd-whd/1.2063.0-1.2064.0/diff.md --exclude *.pyd
+[2023-05-26 10:39:27] INFO root fetch - processPackages [keycloak-api-manager]: Start processing: gardener-oci
+[2023-05-26 10:39:27] INFO root fetch - main [MainThread]: End processing [keycloak-api-manager]: success
+[2023-05-26 10:39:27] INFO root fetch - processPackages [gardener-oci]: New version: [1.999.0] Old Version: [1.998.0]
+[2023-05-26 10:39:27] INFO root fetch - processPackages [nvfuser-cu121]: Start processing: Colorman
+[2023-05-26 10:39:27] INFO root fetch - main [MainThread]: End processing [nvfuser-cu121]: success
+[2023-05-26 10:39:27] WARNING root fetch - processPackages [Colorman]: Skipping, unable to determine old version
+[2023-05-26 10:39:27] INFO root fetch - processPackages [Colorman]: Start processing: seven-cloudapp-frame
+[2023-05-26 10:39:27] INFO root fetch - main [MainThread]: End processing [Colorman] error
+[2023-05-26 10:39:27] INFO root fetch - processPackages [seven-cloudapp-frame]: New version: [1.0.9.9] Old Version: [1.0.9.8]
+[2023-05-26 10:39:27] INFO root fetch - processPackages [gardener-oci]: executing diffoscope
+[2023-05-26 10:39:27] INFO root fetch - processPackages [gardener-oci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-oci-1.998.0.tar.gz tmp/gardener-oci-1.999.0.tar.gz --markdown 20230526/g/gardener-oci/1.998.0-1.999.0/diff.md --exclude *.pyd
+[2023-05-26 10:39:27] INFO root fetch - processPackages [seven-cloudapp-frame]: executing diffoscope
+[2023-05-26 10:39:27] INFO root fetch - processPackages [seven-cloudapp-frame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seven_cloudapp_frame-1.0.9.8.tar.gz tmp/seven_cloudapp_frame-1.0.9.9.tar.gz --markdown 20230526/s/seven-cloudapp-frame/1.0.9.8-1.0.9.9/diff.md --exclude *.pyd
+[2023-05-26 10:39:28] INFO root fetch - processPackages [gardener-cicd-cli]: Start processing: testit-adapter-nose
+[2023-05-26 10:39:28] INFO root fetch - main [MainThread]: End processing [gardener-cicd-cli]: success
+[2023-05-26 10:39:28] INFO root fetch - processPackages [testit-adapter-nose]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-05-26 10:39:28] INFO root fetch - processPackages [gardener-cicd-base]: Start processing: testit-python-commons
+[2023-05-26 10:39:28] INFO root fetch - main [MainThread]: End processing [gardener-cicd-base]: success
+[2023-05-26 10:39:28] INFO root fetch - processPackages [testit-python-commons]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-05-26 10:39:28] INFO root fetch - processPackages [gardener-cicd-dso]: Start processing: testit-adapter-robotframework
+[2023-05-26 10:39:28] INFO root fetch - main [MainThread]: End processing [gardener-cicd-dso]: success
+[2023-05-26 10:39:28] INFO root fetch - processPackages [testit-adapter-robotframework]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-05-26 10:39:28] INFO root fetch - processPackages [testit-adapter-nose]: Downloading https://files.pythonhosted.org/packages/75/3e/aaf8b7d2d666c03260b8e750c40f6afb829aea5be1ab21cc6e06ea902978/testit-adapter-nose-2.1.8.tar.gz
+[2023-05-26 10:39:28] INFO root fetch - processPackages [testit-python-commons]: Downloading https://files.pythonhosted.org/packages/70/3e/c7b8e8ee87b41633ec58668976ea9060c2db0fa9779d9f83ee5e366d0f3a/testit-python-commons-2.1.8.tar.gz
+[2023-05-26 10:39:28] INFO root fetch - processPackages [testit-adapter-robotframework]: Downloading https://files.pythonhosted.org/packages/fd/e7/403e9826ce99ec895d09b1d8f19c017f7c787c7df4a336517f91bb668252/testit-adapter-robotframework-2.1.8.tar.gz
+[2023-05-26 10:39:28] INFO root fetch - processPackages [testit-adapter-nose]: Downloading https://files.pythonhosted.org/packages/c6/07/f3f2439c6215cafe3b3e9213a5b9ec0430ee4575963b89d2a5e92beb16d0/testit-adapter-nose-2.1.9.tar.gz
+[2023-05-26 10:39:28] INFO root fetch - processPackages [testit-adapter-nose]: executing diffoscope
+[2023-05-26 10:39:28] INFO root fetch - processPackages [testit-adapter-nose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testit-adapter-nose-2.1.8.tar.gz tmp/testit-adapter-nose-2.1.9.tar.gz --markdown 20230526/t/testit-adapter-nose/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-05-26 10:39:28] INFO root fetch - processPackages [testit-python-commons]: Downloading https://files.pythonhosted.org/packages/cd/5c/777ad7b41ee4e1bdd774a7ca0283d345b03e02b6568fcfd30483842924db/testit-python-commons-2.1.9.tar.gz
+[2023-05-26 10:39:28] INFO root fetch - processPackages [testit-python-commons]: executing diffoscope
+[2023-05-26 10:39:28] INFO root fetch - processPackages [testit-python-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testit-python-commons-2.1.8.tar.gz tmp/testit-python-commons-2.1.9.tar.gz --markdown 20230526/t/testit-python-commons/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-05-26 10:39:28] INFO root fetch - processPackages [testit-adapter-robotframework]: Downloading https://files.pythonhosted.org/packages/f6/b2/8d4a8e2f3856be41ae5aeee244b96adea7086c88acc26d777d84b52edbba/testit-adapter-robotframework-2.1.9.tar.gz
+[2023-05-26 10:39:28] INFO root fetch - processPackages [testit-adapter-robotframework]: executing diffoscope
+[2023-05-26 10:39:28] INFO root fetch - processPackages [testit-adapter-robotframework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testit-adapter-robotframework-2.1.8.tar.gz tmp/testit-adapter-robotframework-2.1.9.tar.gz --markdown 20230526/t/testit-adapter-robotframework/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-05-26 10:39:28] INFO root fetch - processPackages [gardener-cicd-whd]: Start processing: birentechci
+[2023-05-26 10:39:28] INFO root fetch - main [MainThread]: End processing [gardener-cicd-whd]: success
+[2023-05-26 10:39:28] INFO root fetch - processPackages [birentechci]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 10:39:28] INFO root fetch - processPackages [gardener-cicd-libs]: Start processing: testit-adapter-behave
+[2023-05-26 10:39:28] INFO root fetch - main [MainThread]: End processing [gardener-cicd-libs]: success
+[2023-05-26 10:39:29] INFO root fetch - processPackages [testit-adapter-behave]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-05-26 10:39:29] INFO root fetch - processPackages [vgd-counterfactuals]: Start processing: ssind
+[2023-05-26 10:39:29] INFO root fetch - main [MainThread]: End processing [vgd-counterfactuals]: success
+[2023-05-26 10:39:29] INFO root fetch - processPackages [ssind]: New version: [0.1.3b1] Old Version: [0.1.3]
+[2023-05-26 10:39:29] INFO root fetch - processPackages [testit-adapter-behave]: Downloading https://files.pythonhosted.org/packages/26/83/d6e753f5a7bcd3fa4d9db78484d0b4bbe7c3b6da7b4aa5d2a03f723a1ab6/testit-adapter-behave-2.1.8.tar.gz
+[2023-05-26 10:39:29] INFO root fetch - processPackages [birentechci]: executing diffoscope
+[2023-05-26 10:39:29] INFO root fetch - processPackages [birentechci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/birentechci-0.0.8.tar.gz tmp/birentechci-0.0.9.tar.gz --markdown 20230526/b/birentechci/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 10:39:29] INFO root fetch - processPackages [ssind]: Downloading https://files.pythonhosted.org/packages/df/b8/9af3bf44516a6c5e65560f281e2b53bf298475572b170151e72ff4909358/ssind-0.1.3.tar.gz
+[2023-05-26 10:39:29] INFO root fetch - processPackages [testit-adapter-behave]: Downloading https://files.pythonhosted.org/packages/1a/cf/6b8df8721c624059dc849e3d3c637c6dbdb9b895e8991db7af21fa683738/testit-adapter-behave-2.1.9.tar.gz
+[2023-05-26 10:39:29] INFO root fetch - processPackages [testit-adapter-behave]: executing diffoscope
+[2023-05-26 10:39:29] INFO root fetch - processPackages [testit-adapter-behave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testit-adapter-behave-2.1.8.tar.gz tmp/testit-adapter-behave-2.1.9.tar.gz --markdown 20230526/t/testit-adapter-behave/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-05-26 10:39:29] INFO root fetch - processPackages [gardener-oci]: Start processing: testit-adapter-pytest
+[2023-05-26 10:39:29] INFO root fetch - main [MainThread]: End processing [gardener-oci]: success
+[2023-05-26 10:39:29] INFO root fetch - processPackages [testit-adapter-pytest]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-05-26 10:39:29] INFO root fetch - processPackages [ssind]: Downloading https://files.pythonhosted.org/packages/5c/ed/2aedb33ee0b2b60a9b796cb4d292dcbe85bef307df2024a49715964d3c7d/ssind-0.1.3b1.tar.gz
+[2023-05-26 10:39:29] INFO root fetch - processPackages [ssind]: executing diffoscope
+[2023-05-26 10:39:29] INFO root fetch - processPackages [ssind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssind-0.1.3.tar.gz tmp/ssind-0.1.3b1.tar.gz --markdown 20230526/s/ssind/0.1.3-0.1.3b1/diff.md --exclude *.pyd
+[2023-05-26 10:39:29] INFO root fetch - processPackages [testit-adapter-pytest]: Downloading https://files.pythonhosted.org/packages/cf/5f/ecb43e327b3230bdcdef0f85f14b557bf1b29ce5b1238c284ead11ebf97f/testit-adapter-pytest-2.1.8.tar.gz
+[2023-05-26 10:39:29] INFO root fetch - processPackages [testit-adapter-pytest]: Downloading https://files.pythonhosted.org/packages/c0/6d/c8ec77570274fc0aa1dc16a9e9d9cfa9863f49c70625552b844a64c8bd1c/testit-adapter-pytest-2.1.9.tar.gz
+[2023-05-26 10:39:29] INFO root fetch - processPackages [testit-adapter-pytest]: executing diffoscope
+[2023-05-26 10:39:29] INFO root fetch - processPackages [testit-adapter-pytest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testit-adapter-pytest-2.1.8.tar.gz tmp/testit-adapter-pytest-2.1.9.tar.gz --markdown 20230526/t/testit-adapter-pytest/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-05-26 10:39:30] INFO root fetch - processPackages [seven-cloudapp-frame]: Start processing: ortoolpy
+[2023-05-26 10:39:30] INFO root fetch - main [MainThread]: End processing [seven-cloudapp-frame]: success
+[2023-05-26 10:39:30] INFO root fetch - processPackages [ortoolpy]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-26 10:39:30] INFO root fetch - processPackages [testit-adapter-nose]: Start processing: acryl-datahub
+[2023-05-26 10:39:30] INFO root fetch - main [MainThread]: End processing [testit-adapter-nose]: success
+[2023-05-26 10:39:30] INFO root fetch - processPackages [acryl-datahub]: New version: [0.9.6rc1] Old Version: [0.9.6rc0]
+[2023-05-26 10:39:30] INFO root fetch - processPackages [acryl-datahub]: executing diffoscope
+[2023-05-26 10:39:30] INFO root fetch - processPackages [acryl-datahub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acryl-datahub-0.9.6rc0.tar.gz tmp/acryl-datahub-0.9.6rc1.tar.gz --markdown 20230526/a/acryl-datahub/0.9.6rc0-0.9.6rc1/diff.md --exclude *.pyd
+[2023-05-26 10:39:30] INFO root fetch - processPackages [ortoolpy]: Downloading https://files.pythonhosted.org/packages/f0/0b/6d75dd80c976f131cab3cf7feebdde2488dbef79e694aab4fffe2585a6c8/ortoolpy-0.6.0-py3-none-any.whl
+[2023-05-26 10:39:31] INFO root fetch - processPackages [ortoolpy]: Downloading https://files.pythonhosted.org/packages/83/69/57fe38c9e5e6be9907c04a0e89121553f6eb383a70a34536dfb8eedb35c4/ortoolpy-0.6.1-py3-none-any.whl
+[2023-05-26 10:39:31] INFO root fetch - processPackages [ortoolpy]: executing diffoscope
+[2023-05-26 10:39:31] INFO root fetch - processPackages [ortoolpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ortoolpy-0.6.0-py3-none-any.whl.zip tmp/ortoolpy-0.6.1-py3-none-any.whl.zip --markdown 20230526/o/ortoolpy/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-26 10:39:31] INFO root fetch - processPackages [testit-python-commons]: Start processing: eventiq
+[2023-05-26 10:39:31] INFO root fetch - main [MainThread]: End processing [testit-python-commons]: success
+[2023-05-26 10:39:31] INFO root fetch - processPackages [testit-adapter-robotframework]: Start processing: acryl-datahub-airflow-plugin
+[2023-05-26 10:39:31] INFO root fetch - main [MainThread]: End processing [testit-adapter-robotframework]: success
+[2023-05-26 10:39:31] INFO root fetch - processPackages [eventiq]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 10:39:31] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: New version: [0.9.6rc1] Old Version: [0.9.6rc0]
+[2023-05-26 10:39:31] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: executing diffoscope
+[2023-05-26 10:39:31] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acryl-datahub-airflow-plugin-0.9.6rc0.tar.gz tmp/acryl-datahub-airflow-plugin-0.9.6rc1.tar.gz --markdown 20230526/a/acryl-datahub-airflow-plugin/0.9.6rc0-0.9.6rc1/diff.md --exclude *.pyd
+[2023-05-26 10:39:31] INFO root fetch - processPackages [eventiq]: executing diffoscope
+[2023-05-26 10:39:31] INFO root fetch - processPackages [eventiq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eventiq-0.1.8.tar.gz tmp/eventiq-0.1.9.tar.gz --markdown 20230526/e/eventiq/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 10:39:31] INFO root fetch - processPackages [birentechci]: Start processing: tf-estimator-nightly
+[2023-05-26 10:39:31] INFO root fetch - main [MainThread]: End processing [birentechci]: success
+[2023-05-26 10:39:31] INFO root fetch - processPackages [ssind]: Start processing: dql-alpha
+[2023-05-26 10:39:31] INFO root fetch - main [MainThread]: End processing [ssind]: success
+[2023-05-26 10:39:31] INFO root fetch - processPackages [tf-estimator-nightly]: New version: [2.9.0.dev2022033108] Old Version: [2.9.0.dev2022033008]
+[2023-05-26 10:39:31] INFO root fetch - processPackages [dql-alpha]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-26 10:39:31] INFO root fetch - processPackages [testit-adapter-behave]: Start processing: web-payments-connector
+[2023-05-26 10:39:31] INFO root fetch - main [MainThread]: End processing [testit-adapter-behave]: success
+[2023-05-26 10:39:31] INFO root fetch - processPackages [tf-estimator-nightly]: executing diffoscope
+[2023-05-26 10:39:31] INFO root fetch - processPackages [tf-estimator-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_estimator_nightly-2.9.0.dev2022033008-py2.py3-none-any.whl.zip tmp/tf_estimator_nightly-2.9.0.dev2022033108-py2.py3-none-any.whl.zip --markdown 20230526/t/tf-estimator-nightly/2.9.0.dev2022033008-2.9.0.dev2022033108/diff.md --exclude *.pyd
+[2023-05-26 10:39:31] INFO root fetch - processPackages [web-payments-connector]: New version: [3.1.0] Old Version: [3.0.1]
+[2023-05-26 10:39:32] INFO root fetch - processPackages [web-payments-connector]: Downloading https://files.pythonhosted.org/packages/74/de/1219bb2684bf852a721c9915d4e7bc7ef66c94deeba675dba9e658696656/web-payments-connector-3.0.1.tar.gz
+[2023-05-26 10:39:32] INFO root fetch - processPackages [testit-adapter-pytest]: Start processing: mmagic
+[2023-05-26 10:39:32] INFO root fetch - main [MainThread]: End processing [testit-adapter-pytest]: success
+[2023-05-26 10:39:32] INFO root fetch - processPackages [dql-alpha]: executing diffoscope
+[2023-05-26 10:39:32] INFO root fetch - processPackages [dql-alpha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dql-alpha-0.8.0.tar.gz tmp/dql-alpha-0.9.0.tar.gz --markdown 20230526/d/dql-alpha/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-26 10:39:32] INFO root fetch - processPackages [mmagic]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-26 10:39:32] INFO root fetch - processPackages [web-payments-connector]: Downloading https://files.pythonhosted.org/packages/aa/a7/cbe5067bc3e77926d8a951fdbbfd3ca946146e8486a835a91073506fcfff/web_payments_connector-3.1.0.tar.gz
+[2023-05-26 10:39:32] INFO root fetch - processPackages [mmagic]: Downloading https://files.pythonhosted.org/packages/55/11/46e4ddfcaccda319d1977e57bae191d8b1d0b62fb14edae20a05cae014d5/mmagic-1.0.0.tar.gz
+[2023-05-26 10:39:32] INFO root fetch - processPackages [web-payments-connector]: executing diffoscope
+[2023-05-26 10:39:32] INFO root fetch - processPackages [web-payments-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/web-payments-connector-3.0.1.tar.gz tmp/web_payments_connector-3.1.0.tar.gz --markdown 20230526/w/web-payments-connector/3.0.1-3.1.0/diff.md --exclude *.pyd
+[2023-05-26 10:39:32] INFO root fetch - processPackages [mmagic]: Downloading https://files.pythonhosted.org/packages/d1/85/13a88f4bfc92297f5ff65fa053c62b8a048a613e17b7b6aebb34803e7f60/mmagic-1.0.1.tar.gz
+[2023-05-26 10:39:32] INFO root fetch - processPackages [mmagic]: executing diffoscope
+[2023-05-26 10:39:32] INFO root fetch - processPackages [mmagic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmagic-1.0.0.tar.gz tmp/mmagic-1.0.1.tar.gz --markdown 20230526/m/mmagic/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-26 10:39:33] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: Start processing: imvdb
+[2023-05-26 10:39:33] INFO root fetch - main [MainThread]: End processing [acryl-datahub-airflow-plugin]: success
+[2023-05-26 10:39:33] INFO root fetch - main [MainThread]: End processing [ortoolpy]: success
+[2023-05-26 10:39:33] WARNING root fetch - processPackages [imvdb]: Skipping, unable to determine old version
+[2023-05-26 10:39:33] INFO root fetch - main [MainThread]: End processing [imvdb] error
+[2023-05-26 10:39:34] INFO root fetch - main [MainThread]: End processing [eventiq]: success
+[2023-05-26 10:39:34] INFO root fetch - main [MainThread]: End processing [web-payments-connector]: success
+[2023-05-26 10:39:35] INFO root fetch - main [MainThread]: End processing [dql-alpha]: success
+[2023-05-26 10:39:35] INFO root fetch - main [MainThread]: End processing [tf-estimator-nightly]: success
+[2023-05-26 10:39:35] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
+[2023-05-26 10:39:38] INFO root fetch - main [MainThread]: End processing [acryl-datahub]: success
+[2023-05-26 10:39:40] INFO root fetch - main [MainThread]: End processing [ert]: success
+[2023-05-26 10:39:44] INFO root fetch - main [MainThread]: End processing [mmagic]: success
+[2023-05-26 10:39:44] INFO root fetch - main [MainThread]: Store serial: [18259862]
