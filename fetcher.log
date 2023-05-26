@@ -13987,3 +13987,74 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 13:25:00] INFO root fetch - main [MainThread]: End processing [snoopy-bv]: success
 [2023-05-26 13:25:00] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
 [2023-05-26 13:25:00] INFO root fetch - main [MainThread]: Store serial: [18261881]
+[2023-05-26 13:30:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18261881]
+[2023-05-26 13:30:10] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-26 13:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PySide6-Addons
+[2023-05-26 13:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchrl-nightly
+[2023-05-26 13:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torchserve-nightly
+[2023-05-26 13:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torch-model-archiver-nightly
+[2023-05-26 13:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torch-workflow-archiver-nightly
+[2023-05-26 13:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pollination-two-phase-daylight-coefficient
+[2023-05-26 13:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: idun-guardian-client
+[2023-05-26 13:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: torchx-nightly
+[2023-05-26 13:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tarn
+[2023-05-26 13:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: torchrec-nightly
+[2023-05-26 13:30:10] INFO root fetch - processPackages [PySide6-Addons]: New version: [6.5.1] Old Version: [6.5.0]
+[2023-05-26 13:30:10] INFO root fetch - processPackages [pollination-two-phase-daylight-coefficient]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-26 13:30:10] INFO root fetch - processPackages [tarn]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-26 13:30:10] INFO root fetch - processPackages [idun-guardian-client]: New version: [1.1b17] Old Version: [1.1.4]
+[2023-05-26 13:30:10] INFO root fetch - processPackages [torchserve-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-26 13:30:10] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-26 13:30:10] INFO root fetch - processPackages [torchrec-nightly]: New version: [2023.5.8] Old Version: [2023.5.7]
+[2023-05-26 13:30:10] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-26 13:30:10] INFO root fetch - processPackages [torchx-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-26 13:30:10] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/84/1f/9485a72320b2c7f49d6a9304acfbc2bd5fe71c25e0e7a3844ce81a1ed180/torchserve_nightly-2023.5.8-py3-none-any.whl
+[2023-05-26 13:30:10] INFO root fetch - processPackages [torchrl-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-26 13:30:10] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 23716791>=10485760
+[2023-05-26 13:30:10] INFO root fetch - processPackages [torchserve-nightly]: Start processing: lifeguard
+[2023-05-26 13:30:10] INFO root fetch - main [MainThread]: End processing [torchserve-nightly] error
+[2023-05-26 13:30:10] INFO root fetch - processPackages [torchrec-nightly]: executing diffoscope
+[2023-05-26 13:30:10] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2023-05-26 13:30:10] INFO root fetch - processPackages [torchrec-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrec_nightly-2023.5.7-py39-none-any.whl.zip tmp/torchrec_nightly-2023.5.8-py39-none-any.whl.zip --markdown 20230526/t/torchrec-nightly/2023.5.7-2023.5.8/diff.md --exclude *.pyd
+[2023-05-26 13:30:10] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2023.5.8-py3-none-any.whl.zip tmp/torchx_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230526/t/torchx-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-26 13:30:10] INFO root fetch - processPackages [PySide6-Addons]: Downloading https://files.pythonhosted.org/packages/d3/76/2693cbfb76509d3b0d9935310bcf9bdf727bd1b8fb8886534d18293ebca5/PySide6_Addons-6.5.0-pp39-pypy39_pp73-win_amd64.whl
+[2023-05-26 13:30:10] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2023-05-26 13:30:10] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2023.5.8-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230526/t/torch-workflow-archiver-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-26 13:30:10] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2023-05-26 13:30:10] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2023.5.8-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230526/t/torch-model-archiver-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-26 13:30:10] INFO root fetch - processPackages [idun-guardian-client]: Downloading https://files.pythonhosted.org/packages/d1/2b/b21f6b52711b12108e718761be9b577a493191b59e032348ac67e3516e4e/idun_guardian_client-1.1.4.tar.gz
+[2023-05-26 13:30:10] INFO root fetch - processPackages [lifeguard]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-26 13:30:10] INFO root fetch - processPackages [tarn]: Downloading https://files.pythonhosted.org/packages/4f/25/1b07474e056b8438116f8e1ae727b4408b43343f8da8be6eb5f8b80396c4/tarn-0.5.0.tar.gz
+[2023-05-26 13:30:10] INFO root fetch - processPackages [lifeguard]: executing diffoscope
+[2023-05-26 13:30:10] INFO root fetch - processPackages [lifeguard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifeguard-1.0.0.tar.gz tmp/lifeguard-1.0.1.tar.gz --markdown 20230526/l/lifeguard/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-26 13:30:10] WARNING root fetch - processPackages [PySide6-Addons]: Skipping package: exceeds size limit 108456542>=10485760
+[2023-05-26 13:30:10] INFO root fetch - processPackages [PySide6-Addons]: Start processing: aviral-third-try
+[2023-05-26 13:30:10] INFO root fetch - main [MainThread]: End processing [PySide6-Addons] error
+[2023-05-26 13:30:10] INFO root fetch - processPackages [pollination-two-phase-daylight-coefficient]: Downloading https://files.pythonhosted.org/packages/a1/60/1fc3feb1abe3289638fd982d9a5590fd8505b0fbf9fd5440ad2959f70a10/pollination-two-phase-daylight-coefficient-1.1.1.tar.gz
+[2023-05-26 13:30:10] INFO root fetch - processPackages [idun-guardian-client]: executing diffoscope
+[2023-05-26 13:30:10] INFO root fetch - processPackages [idun-guardian-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idun_guardian_client-1.1.4.tar.gz tmp/idun_guardian_client-1.1b17.tar.gz --markdown 20230526/i/idun-guardian-client/1.1.4-1.1b17/diff.md --exclude *.pyd
+[2023-05-26 13:30:10] WARNING root fetch - processPackages [aviral-third-try]: Skipping, unable to determine old version
+[2023-05-26 13:30:10] INFO root fetch - processPackages [aviral-third-try]: Start processing: python-mop
+[2023-05-26 13:30:10] INFO root fetch - main [MainThread]: End processing [aviral-third-try] error
+[2023-05-26 13:30:10] INFO root fetch - processPackages [tarn]: Downloading https://files.pythonhosted.org/packages/f4/ac/cf53118be648539e66c6c00ef39045fefa6ebad96384c523e09cd42dd21f/tarn-0.5.1.tar.gz
+[2023-05-26 13:30:10] INFO root fetch - processPackages [pollination-two-phase-daylight-coefficient]: executing diffoscope
+[2023-05-26 13:30:10] INFO root fetch - processPackages [pollination-two-phase-daylight-coefficient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pollination-two-phase-daylight-coefficient-1.1.0.tar.gz tmp/pollination-two-phase-daylight-coefficient-1.1.1.tar.gz --markdown 20230526/p/pollination-two-phase-daylight-coefficient/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-26 13:30:10] INFO root fetch - processPackages [tarn]: executing diffoscope
+[2023-05-26 13:30:10] INFO root fetch - processPackages [tarn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tarn-0.5.0.tar.gz tmp/tarn-0.5.1.tar.gz --markdown 20230526/t/tarn/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-26 13:30:10] WARNING root fetch - processPackages [python-mop]: Skipping, unable to determine old version
+[2023-05-26 13:30:10] INFO root fetch - processPackages [python-mop]: Start processing: vinayakkhadye-foo
+[2023-05-26 13:30:10] INFO root fetch - main [MainThread]: End processing [python-mop] error
+[2023-05-26 13:30:10] INFO root fetch - processPackages [torchrl-nightly]: executing diffoscope
+[2023-05-26 13:30:10] INFO root fetch - processPackages [torchrl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrl_nightly-2023.5.8-cp39-cp39-win_amd64.whl.zip tmp/torchrl_nightly-2023.5.9-cp39-cp39-win_amd64.whl.zip --markdown 20230526/t/torchrl-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-26 13:30:10] WARNING root fetch - processPackages [vinayakkhadye-foo]: Skipping, unable to determine old version
+[2023-05-26 13:30:10] INFO root fetch - main [MainThread]: End processing [vinayakkhadye-foo] error
+[2023-05-26 13:30:12] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
+[2023-05-26 13:30:12] INFO root fetch - main [MainThread]: End processing [torch-model-archiver-nightly]: success
+[2023-05-26 13:30:12] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2023-05-26 13:30:12] INFO root fetch - main [MainThread]: End processing [pollination-two-phase-daylight-coefficient]: success
+[2023-05-26 13:30:12] INFO root fetch - main [MainThread]: End processing [lifeguard]: success
+[2023-05-26 13:30:13] INFO root fetch - main [MainThread]: End processing [idun-guardian-client]: success
+[2023-05-26 13:30:13] INFO root fetch - main [MainThread]: End processing [torchrec-nightly]: success
+[2023-05-26 13:30:13] INFO root fetch - main [MainThread]: End processing [tarn]: success
+[2023-05-26 13:30:13] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
+[2023-05-26 13:30:13] INFO root fetch - main [MainThread]: Store serial: [18261939]
