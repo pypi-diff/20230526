@@ -13404,3 +13404,120 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 12:45:55] INFO root fetch - main [MainThread]: End processing [mkdocstrings]: success
 [2023-05-26 12:45:56] INFO root fetch - main [MainThread]: End processing [syncanysql]: success
 [2023-05-26 12:45:56] INFO root fetch - main [MainThread]: Store serial: [18261474]
+[2023-05-26 12:51:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18261474]
+[2023-05-26 12:51:05] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-05-26 12:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ioc-engine
+[2023-05-26 12:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tcod-ecs
+[2023-05-26 12:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mikro
+[2023-05-26 12:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: crawler-commons
+[2023-05-26 12:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: async-dramatiq
+[2023-05-26 12:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: qoa4ml
+[2023-05-26 12:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gm
+[2023-05-26 12:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: league-shop-base
+[2023-05-26 12:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dvg-randomizer
+[2023-05-26 12:51:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: peakventures
+[2023-05-26 12:51:05] INFO root fetch - processPackages [ioc-engine]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-26 12:51:05] INFO root fetch - processPackages [tcod-ecs]: New version: [2.0.0] Old Version: [1.2.0]
+[2023-05-26 12:51:05] INFO root fetch - processPackages [crawler-commons]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 12:51:05] INFO root fetch - processPackages [qoa4ml]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 12:51:05] INFO root fetch - processPackages [async-dramatiq]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-26 12:51:05] INFO root fetch - processPackages [dvg-randomizer]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-05-26 12:51:05] INFO root fetch - processPackages [league-shop-base]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-26 12:51:05] INFO root fetch - processPackages [gm]: New version: [3.0.155] Old Version: [3.0.154]
+[2023-05-26 12:51:05] INFO root fetch - processPackages [mikro]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-26 12:51:05] WARNING root fetch - processPackages [peakventures]: Skipping, unable to determine old version
+[2023-05-26 12:51:05] INFO root fetch - processPackages [peakventures]: Start processing: rudderclient
+[2023-05-26 12:51:05] INFO root fetch - main [MainThread]: End processing [peakventures] error
+[2023-05-26 12:51:05] INFO root fetch - processPackages [rudderclient]: New version: [1.4.3] Old Version: [1.4.2]
+[2023-05-26 12:51:05] INFO root fetch - processPackages [league-shop-base]: executing diffoscope
+[2023-05-26 12:51:05] INFO root fetch - processPackages [league-shop-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/league-shop-base-1.0.8.tar.gz tmp/league-shop-base-1.0.9.tar.gz --markdown 20230526/l/league-shop-base/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-26 12:51:05] INFO root fetch - processPackages [mikro]: executing diffoscope
+[2023-05-26 12:51:05] INFO root fetch - processPackages [mikro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mikro-0.3.8.tar.gz tmp/mikro-0.3.9.tar.gz --markdown 20230526/m/mikro/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-26 12:51:05] INFO root fetch - processPackages [ioc-engine]: Downloading https://files.pythonhosted.org/packages/3d/0f/5281c844b78fa36f93dc1cac00f297e8830667d80ffb9f0c7b72fa7862f0/ioc_engine-0.0.1.tar.gz
+[2023-05-26 12:51:05] INFO root fetch - processPackages [dvg-randomizer]: Downloading https://files.pythonhosted.org/packages/43/2d/1a7428fc010c0dfb5805806e6805d664fb588e6fa936fff3895adf5f8208/dvg-randomizer-1.4.2.tar.gz
+[2023-05-26 12:51:05] INFO root fetch - processPackages [tcod-ecs]: Downloading https://files.pythonhosted.org/packages/00/88/f21fd283b981baebbe3386f53d183d5c6bee75a9d54949555c236ae77556/tcod-ecs-1.2.0.tar.gz
+[2023-05-26 12:51:05] INFO root fetch - processPackages [gm]: Downloading https://files.pythonhosted.org/packages/41/3d/bacbfa88fffacce1007df67dd2426f608370be88406a864361de02f1666a/gm-3.0.154-cp39-cp39-win_amd64.whl
+[2023-05-26 12:51:05] INFO root fetch - processPackages [qoa4ml]: executing diffoscope
+[2023-05-26 12:51:05] INFO root fetch - processPackages [qoa4ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qoa4ml-0.0.8.tar.gz tmp/qoa4ml-0.0.9.tar.gz --markdown 20230526/q/qoa4ml/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 12:51:05] INFO root fetch - processPackages [dvg-randomizer]: executing diffoscope
+[2023-05-26 12:51:05] INFO root fetch - processPackages [dvg-randomizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dvg-randomizer-1.4.1.tar.gz tmp/dvg-randomizer-1.4.2.tar.gz --markdown 20230526/d/dvg-randomizer/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-05-26 12:51:05] ERROR root fetch - processPackages [rudderclient]: Unable to fetch info: No such project/version 'rudderclient' 1.4.3
+[2023-05-26 12:51:05] INFO root fetch - processPackages [rudderclient]: Start processing: mapel
+[2023-05-26 12:51:05] INFO root fetch - main [MainThread]: End processing [rudderclient] error
+[2023-05-26 12:51:05] INFO root fetch - processPackages [mapel]: New version: [2.0.4] Old Version: [2.0.3.dev7]
+[2023-05-26 12:51:05] INFO root fetch - processPackages [crawler-commons]: Downloading https://files.pythonhosted.org/packages/2d/53/7939e5ae570216f0e01d8177aeb1bdac12c7dfa6ac9c215299c04c86a0b3/crawler_commons-0.0.8.tar.gz
+[2023-05-26 12:51:05] INFO root fetch - processPackages [ioc-engine]: Downloading https://files.pythonhosted.org/packages/42/58/14fe1363160b5681b75b2044f40a6a677e292422130bd80d37c0cef83510/ioc_engine-0.0.2-py3.8.egg
+[2023-05-26 12:51:05] INFO root fetch - processPackages [async-dramatiq]: Downloading https://files.pythonhosted.org/packages/a6/91/d62e1a857b8de124d6bd7d6636425da30a07c20dc3b82c40842bba34606c/async_dramatiq-0.1.5.tar.gz
+[2023-05-26 12:51:05] INFO root fetch - processPackages [ioc-engine]: executing diffoscope
+[2023-05-26 12:51:05] INFO root fetch - processPackages [ioc-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ioc_engine-0.0.1.tar.gz tmp/ioc_engine-0.0.2-py3.8.egg --markdown 20230526/i/ioc-engine/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-26 12:51:05] INFO root fetch - processPackages [tcod-ecs]: Downloading https://files.pythonhosted.org/packages/fc/f0/47934a48ffa4fc7815a9a69223da815c2ddf3b4738ef6c0c21ba4174e465/tcod_ecs-2.0.0.tar.gz
+[2023-05-26 12:51:05] INFO root fetch - processPackages [tcod-ecs]: executing diffoscope
+[2023-05-26 12:51:05] INFO root fetch - processPackages [tcod-ecs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcod-ecs-1.2.0.tar.gz tmp/tcod_ecs-2.0.0.tar.gz --markdown 20230526/t/tcod-ecs/1.2.0-2.0.0/diff.md --exclude *.pyd
+[2023-05-26 12:51:05] INFO root fetch - processPackages [async-dramatiq]: executing diffoscope
+[2023-05-26 12:51:05] INFO root fetch - processPackages [async-dramatiq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_dramatiq-0.1.4.tar.gz tmp/async_dramatiq-0.1.5.tar.gz --markdown 20230526/a/async-dramatiq/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-26 12:51:06] INFO root fetch - processPackages [mapel]: Downloading https://files.pythonhosted.org/packages/1a/05/acc5ea285d73d61787368bc23ff7f874fbf4c97eceaf2b9911e50d63e287/mapel-2.0.4.tar.gz
+[2023-05-26 12:51:06] INFO root fetch - processPackages [crawler-commons]: Downloading https://files.pythonhosted.org/packages/17/64/0de4dc4cd35a5e4bad7d4eb298d80b0a4c024c3ce105050b75c06d9668d1/crawler_commons-0.0.9.tar.gz
+[2023-05-26 12:51:06] INFO root fetch - processPackages [mapel]: executing diffoscope
+[2023-05-26 12:51:06] INFO root fetch - processPackages [mapel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mapel-2.0.3.dev7.tar.gz tmp/mapel-2.0.4.tar.gz --markdown 20230526/m/mapel/2.0.3.dev7-2.0.4/diff.md --exclude *.pyd
+[2023-05-26 12:51:06] INFO root fetch - processPackages [crawler-commons]: executing diffoscope
+[2023-05-26 12:51:06] INFO root fetch - processPackages [crawler-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crawler_commons-0.0.8.tar.gz tmp/crawler_commons-0.0.9.tar.gz --markdown 20230526/c/crawler-commons/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 12:51:07] INFO root fetch - processPackages [qoa4ml]: Start processing: mapel-core
+[2023-05-26 12:51:07] INFO root fetch - main [MainThread]: End processing [qoa4ml]: success
+[2023-05-26 12:51:07] INFO root fetch - processPackages [mapel-core]: New version: [2.0.4] Old Version: [2.0.3.dev7]
+[2023-05-26 12:51:07] INFO root fetch - processPackages [mikro]: Start processing: mapel-elections
+[2023-05-26 12:51:07] INFO root fetch - main [MainThread]: End processing [mikro]: success
+[2023-05-26 12:51:07] INFO root fetch - processPackages [mapel-elections]: New version: [2.0.4] Old Version: [2.0.3.dev7]
+[2023-05-26 12:51:07] INFO root fetch - processPackages [mapel-core]: Downloading https://files.pythonhosted.org/packages/83/26/adc67f650215f722a403e3f19e9eab8acf619c3d05b7446ee62c7cfd75e8/mapel-core-2.0.4.tar.gz
+[2023-05-26 12:51:07] INFO root fetch - processPackages [mapel-elections]: Downloading https://files.pythonhosted.org/packages/bb/18/9fb8bfc3436107e41ce5ca5f95190f59ed9e30a6d01df9a6a586e0dae445/mapel-elections-2.0.4.tar.gz
+[2023-05-26 12:51:07] INFO root fetch - processPackages [mapel-core]: executing diffoscope
+[2023-05-26 12:51:07] INFO root fetch - processPackages [mapel-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mapel-core-2.0.3.dev7.tar.gz tmp/mapel-core-2.0.4.tar.gz --markdown 20230526/m/mapel-core/2.0.3.dev7-2.0.4/diff.md --exclude *.pyd
+[2023-05-26 12:51:07] INFO root fetch - processPackages [mapel-elections]: executing diffoscope
+[2023-05-26 12:51:07] INFO root fetch - processPackages [mapel-elections]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mapel-elections-2.0.3.dev7.tar.gz tmp/mapel-elections-2.0.4.tar.gz --markdown 20230526/m/mapel-elections/2.0.3.dev7-2.0.4/diff.md --exclude *.pyd
+[2023-05-26 12:51:07] INFO root fetch - processPackages [dvg-randomizer]: Start processing: pollination-annual-daylight-en17037
+[2023-05-26 12:51:07] INFO root fetch - main [MainThread]: End processing [dvg-randomizer]: success
+[2023-05-26 12:51:07] INFO root fetch - processPackages [pollination-annual-daylight-en17037]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-26 12:51:07] INFO root fetch - processPackages [ioc-engine]: Start processing: apkupload
+[2023-05-26 12:51:07] INFO root fetch - main [MainThread]: End processing [ioc-engine]: success
+[2023-05-26 12:51:07] INFO root fetch - processPackages [league-shop-base]: Start processing: mapel-marriages
+[2023-05-26 12:51:07] INFO root fetch - main [MainThread]: End processing [league-shop-base]: success
+[2023-05-26 12:51:08] INFO root fetch - processPackages [apkupload]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 12:51:08] INFO root fetch - processPackages [mapel-marriages]: New version: [2.0.4] Old Version: [2.0.3.dev7]
+[2023-05-26 12:51:08] INFO root fetch - processPackages [pollination-annual-daylight-en17037]: Downloading https://files.pythonhosted.org/packages/c7/15/d7eed270491e4b138cf3a7eabed708380ed16b7f31d265134f3f9fa52c19/pollination-annual-daylight-en17037-0.1.6.tar.gz
+[2023-05-26 12:51:08] INFO root fetch - processPackages [gm]: Downloading https://files.pythonhosted.org/packages/71/bd/7debd4cf3e1f5fbf1216b39b76e51cac3b369a83fbb0ed0e7f0b31373b65/gm-3.0.155-cp39-cp39-win_amd64.whl
+[2023-05-26 12:51:08] INFO root fetch - processPackages [apkupload]: Downloading https://files.pythonhosted.org/packages/f3/3e/984e4e4534d0c27e20d45f4779859178c3cf8aa20e9c0490146a574e4b36/apkupload-0.0.8.tar.gz
+[2023-05-26 12:51:08] INFO root fetch - processPackages [gm]: executing diffoscope
+[2023-05-26 12:51:08] INFO root fetch - processPackages [gm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gm-3.0.154-cp39-cp39-win_amd64.whl.zip tmp/gm-3.0.155-cp39-cp39-win_amd64.whl.zip --markdown 20230526/g/gm/3.0.154-3.0.155/diff.md --exclude *.pyd
+[2023-05-26 12:51:08] INFO root fetch - processPackages [pollination-annual-daylight-en17037]: Downloading https://files.pythonhosted.org/packages/1e/b2/28fccbb80b75c0fc92dde0a6940d7fa7f5349d2e3da4eae431f4463d31b5/pollination-annual-daylight-en17037-0.1.7.tar.gz
+[2023-05-26 12:51:08] INFO root fetch - processPackages [mapel-marriages]: Downloading https://files.pythonhosted.org/packages/f3/62/a75cf040e83c6cd4f7e2041619f1798e557768f5b105b7748b6773dba708/mapel-marriages-2.0.4.tar.gz
+[2023-05-26 12:51:08] INFO root fetch - processPackages [async-dramatiq]: Start processing: napari-brainways
+[2023-05-26 12:51:08] INFO root fetch - main [MainThread]: End processing [async-dramatiq]: success
+[2023-05-26 12:51:08] INFO root fetch - processPackages [mapel]: Start processing: mapel-roommates
+[2023-05-26 12:51:08] INFO root fetch - main [MainThread]: End processing [mapel]: success
+[2023-05-26 12:51:08] INFO root fetch - processPackages [pollination-annual-daylight-en17037]: executing diffoscope
+[2023-05-26 12:51:08] INFO root fetch - processPackages [pollination-annual-daylight-en17037]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pollination-annual-daylight-en17037-0.1.6.tar.gz tmp/pollination-annual-daylight-en17037-0.1.7.tar.gz --markdown 20230526/p/pollination-annual-daylight-en17037/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-26 12:51:08] INFO root fetch - processPackages [tcod-ecs]: Start processing: edu-segmentation
+[2023-05-26 12:51:08] INFO root fetch - main [MainThread]: End processing [tcod-ecs]: success
+[2023-05-26 12:51:08] INFO root fetch - processPackages [apkupload]: Downloading https://files.pythonhosted.org/packages/87/9b/a974a2525820122b9cf7b10393807c1d229710eeab1a1df41253bfd88008/apkupload-0.0.9.tar.gz
+[2023-05-26 12:51:08] INFO root fetch - processPackages [edu-segmentation]: New version: [0.0.83] Old Version: [0.0.82]
+[2023-05-26 12:51:08] INFO root fetch - processPackages [apkupload]: executing diffoscope
+[2023-05-26 12:51:08] INFO root fetch - processPackages [apkupload]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apkupload-0.0.8.tar.gz tmp/apkupload-0.0.9.tar.gz --markdown 20230526/a/apkupload/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 12:51:08] INFO root fetch - processPackages [mapel-marriages]: executing diffoscope
+[2023-05-26 12:51:08] INFO root fetch - processPackages [mapel-marriages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mapel-marriages-2.0.3.dev7.tar.gz tmp/mapel-marriages-2.0.4.tar.gz --markdown 20230526/m/mapel-marriages/2.0.3.dev7-2.0.4/diff.md --exclude *.pyd
+[2023-05-26 12:51:08] WARNING root fetch - processPackages [napari-brainways]: Skipping, unable to determine old version
+[2023-05-26 12:51:08] INFO root fetch - main [MainThread]: End processing [napari-brainways] error
+[2023-05-26 12:51:08] INFO root fetch - processPackages [mapel-roommates]: New version: [2.0.4] Old Version: [2.0.3.dev7]
+[2023-05-26 12:51:08] INFO root fetch - processPackages [edu-segmentation]: executing diffoscope
+[2023-05-26 12:51:08] INFO root fetch - processPackages [edu-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edu_segmentation-0.0.82.tar.gz tmp/edu_segmentation-0.0.83.tar.gz --markdown 20230526/e/edu-segmentation/0.0.82-0.0.83/diff.md --exclude *.pyd
+[2023-05-26 12:51:08] INFO root fetch - main [MainThread]: End processing [crawler-commons]: success
+[2023-05-26 12:51:08] INFO root fetch - processPackages [mapel-roommates]: Downloading https://files.pythonhosted.org/packages/f4/57/e03f2a96a49415a341d5fd0dfb3d818da81185634f393888184b0e3cb880/mapel-roommates-2.0.4.tar.gz
+[2023-05-26 12:51:09] INFO root fetch - processPackages [mapel-roommates]: executing diffoscope
+[2023-05-26 12:51:09] INFO root fetch - processPackages [mapel-roommates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mapel-roommates-2.0.3.dev7.tar.gz tmp/mapel-roommates-2.0.4.tar.gz --markdown 20230526/m/mapel-roommates/2.0.3.dev7-2.0.4/diff.md --exclude *.pyd
+[2023-05-26 12:51:10] INFO root fetch - main [MainThread]: End processing [mapel-core]: success
+[2023-05-26 12:51:10] INFO root fetch - main [MainThread]: End processing [mapel-elections]: success
+[2023-05-26 12:51:10] INFO root fetch - main [MainThread]: End processing [pollination-annual-daylight-en17037]: success
+[2023-05-26 12:51:11] INFO root fetch - main [MainThread]: End processing [mapel-marriages]: success
+[2023-05-26 12:51:11] INFO root fetch - main [MainThread]: End processing [apkupload]: success
+[2023-05-26 12:51:11] INFO root fetch - main [MainThread]: End processing [mapel-roommates]: success
+[2023-05-26 12:51:12] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
+[2023-05-26 12:51:44] INFO root fetch - main [MainThread]: End processing [gm]: success
+[2023-05-26 12:51:44] INFO root fetch - main [MainThread]: Store serial: [18261606]
