@@ -7835,3 +7835,69 @@
 [2023-05-26 07:01:44] INFO root fetch - main [MainThread]: End processing [odoo11-addon-sale-order-type]: success
 [2023-05-26 07:01:45] INFO root fetch - main [MainThread]: End processing [lifetimefitting]: success
 [2023-05-26 07:01:45] INFO root fetch - main [MainThread]: Store serial: [18258009]
+[2023-05-26 07:06:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18258009]
+[2023-05-26 07:06:54] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-26 07:06:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FTSF
+[2023-05-26 07:06:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dask-cuda
+[2023-05-26 07:06:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: salesea
+[2023-05-26 07:06:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sanic-security
+[2023-05-26 07:06:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rapid-pe
+[2023-05-26 07:06:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo11-addon-password-security
+[2023-05-26 07:06:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cve-py
+[2023-05-26 07:06:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo11-addon-auth-brute-force
+[2023-05-26 07:06:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: odoo11-addon-keychain
+[2023-05-26 07:06:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: odoo11-addon-auth-totp
+[2023-05-26 07:06:54] WARNING root fetch - processPackages [FTSF]: Skipping, unable to determine old version
+[2023-05-26 07:06:54] INFO root fetch - processPackages [FTSF]: Start processing: multi-model-server
+[2023-05-26 07:06:54] INFO root fetch - main [MainThread]: End processing [FTSF] error
+[2023-05-26 07:06:54] WARNING root fetch - processPackages [salesea]: Skipping, unable to determine old version
+[2023-05-26 07:06:54] WARNING root fetch - processPackages [cve-py]: Skipping, unable to determine old version
+[2023-05-26 07:06:54] INFO root fetch - main [MainThread]: End processing [salesea] error
+[2023-05-26 07:06:54] INFO root fetch - main [MainThread]: End processing [cve-py] error
+[2023-05-26 07:06:54] INFO root fetch - processPackages [sanic-security]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-26 07:06:54] INFO root fetch - processPackages [odoo11-addon-auth-totp]: New version: [11.0.1.1.0.99.dev4] Old Version: [11.0.1.1.0.99.dev3]
+[2023-05-26 07:06:54] INFO root fetch - processPackages [odoo11-addon-auth-brute-force]: New version: [11.0.1.2.0.99.dev9] Old Version: [11.0.1.2.0.99.dev14]
+[2023-05-26 07:06:54] INFO root fetch - processPackages [odoo11-addon-password-security]: New version: [11.0.1.2.0.99.dev6] Old Version: [11.0.1.2.0.99.dev5]
+[2023-05-26 07:06:54] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.1.dev20230526] Old Version: [0.1.1.dev20230525]
+[2023-05-26 07:06:54] INFO root fetch - processPackages [odoo11-addon-keychain]: New version: [11.0.3.0.0.99.dev6] Old Version: [11.0.3.0.0.99.dev5]
+[2023-05-26 07:06:54] INFO root fetch - processPackages [dask-cuda]: New version: [23.8.0a230525] Old Version: [23.6.0a230526]
+[2023-05-26 07:06:54] INFO root fetch - processPackages [multi-model-server]: New version: [1.1.8b20230526] Old Version: [1.1.8b20230525]
+[2023-05-26 07:06:54] INFO root fetch - processPackages [odoo11-addon-auth-totp]: Downloading https://files.pythonhosted.org/packages/8f/7e/733eae36a3a64645619be50bb3718a3419277f7560ca5c696565d5a57117/odoo11_addon_auth_totp-11.0.1.1.0.99.dev3-py2.py3-none-any.whl
+[2023-05-26 07:06:54] INFO root fetch - processPackages [odoo11-addon-auth-brute-force]: Downloading https://files.pythonhosted.org/packages/0f/3f/6d77895aad2ea1506a13fbd1c0241d1bcfe25bbd5862d4e2a8a7ebf5943c/odoo11_addon_auth_brute_force-11.0.1.2.0.99.dev14-py2.py3-none-any.whl
+[2023-05-26 07:06:54] INFO root fetch - processPackages [odoo11-addon-password-security]: Downloading https://files.pythonhosted.org/packages/1b/1f/44a99503135e8cf4f1807e63465ffe3ab567bd92b10e3418d9725027b2a5/odoo11_addon_password_security-11.0.1.2.0.99.dev5-py2.py3-none-any.whl
+[2023-05-26 07:06:54] INFO root fetch - processPackages [odoo11-addon-keychain]: Downloading https://files.pythonhosted.org/packages/76/aa/d5b08ab1b5bbab8608d8b1c66752d08f716579a85089c57e9b18f22edaa9/odoo11_addon_keychain-11.0.3.0.0.99.dev5-py2.py3-none-any.whl
+[2023-05-26 07:06:54] INFO root fetch - processPackages [dask-cuda]: Downloading https://files.pythonhosted.org/packages/96/1f/e2d6f82518b59bd75665865d8a0fec617f43fc3fcdc770d91f6905aba1b3/dask-cuda-23.6.0a230526.tar.gz
+[2023-05-26 07:06:54] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/e4/91/152b180cd782e7f3395c008c8f3fba9c9e2f7b9cf75c94edf4184efc7170/rapid_pe-0.1.1.dev20230525.tar.gz
+[2023-05-26 07:06:54] INFO root fetch - processPackages [multi-model-server]: Downloading https://files.pythonhosted.org/packages/83/c9/8e5b73bd98101f996e65f6f985fd8c5fdb5dcbd3cdfdfcc211daf4e28035/multi_model_server-1.1.8b20230525-py2.py3-none-any.whl
+[2023-05-26 07:06:54] INFO root fetch - processPackages [odoo11-addon-password-security]: Downloading https://files.pythonhosted.org/packages/9c/6b/567d2437a184f55ae6b417f8b55073881456da2d5799cf9328d6c9fdb75a/odoo11_addon_password_security-11.0.1.2.0.99.dev6-py2.py3-none-any.whl
+[2023-05-26 07:06:54] INFO root fetch - processPackages [sanic-security]: executing diffoscope
+[2023-05-26 07:06:54] INFO root fetch - processPackages [sanic-security]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sanic-security-1.9.8.tar.gz tmp/sanic-security-1.9.9.tar.gz --markdown 20230526/s/sanic-security/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-26 07:06:54] INFO root fetch - processPackages [odoo11-addon-auth-brute-force]: Downloading https://files.pythonhosted.org/packages/bb/bb/37ea41077186ca89ca39344ebbf8a64ba51ec78f19ac22a4b0393f9992e7/odoo11_addon_auth_brute_force-11.0.1.2.0.99.dev9-py2.py3-none-any.whl
+[2023-05-26 07:06:55] INFO root fetch - processPackages [dask-cuda]: Downloading https://files.pythonhosted.org/packages/b9/78/f53b1828068a0b9605eae7c2b3f195f7f88f2f6bc33cf004e6115cbeed26/dask-cuda-23.8.0a230525.tar.gz
+[2023-05-26 07:06:55] INFO root fetch - processPackages [odoo11-addon-auth-totp]: Downloading https://files.pythonhosted.org/packages/2c/21/06f67d78fc6c1e9749087abe6f171d4df5a24c10a2440247068b91cf96b3/odoo11_addon_auth_totp-11.0.1.1.0.99.dev4-py2.py3-none-any.whl
+[2023-05-26 07:06:55] INFO root fetch - processPackages [odoo11-addon-password-security]: executing diffoscope
+[2023-05-26 07:06:55] INFO root fetch - processPackages [odoo11-addon-password-security]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_password_security-11.0.1.2.0.99.dev5-py2.py3-none-any.whl.zip tmp/odoo11_addon_password_security-11.0.1.2.0.99.dev6-py2.py3-none-any.whl.zip --markdown 20230526/o/odoo11-addon-password-security/11.0.1.2.0.99.dev5-11.0.1.2.0.99.dev6/diff.md --exclude *.pyd
+[2023-05-26 07:06:55] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/4b/5f/62ad9e05d7482187a81fc73205e9d54b58209fb7f73f2e83458c2688c441/rapid_pe-0.1.1.dev20230526.tar.gz
+[2023-05-26 07:06:55] INFO root fetch - processPackages [odoo11-addon-auth-brute-force]: executing diffoscope
+[2023-05-26 07:06:55] INFO root fetch - processPackages [odoo11-addon-auth-brute-force]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_auth_brute_force-11.0.1.2.0.99.dev14-py2.py3-none-any.whl.zip tmp/odoo11_addon_auth_brute_force-11.0.1.2.0.99.dev9-py2.py3-none-any.whl.zip --markdown 20230526/o/odoo11-addon-auth-brute-force/11.0.1.2.0.99.dev14-11.0.1.2.0.99.dev9/diff.md --exclude *.pyd
+[2023-05-26 07:06:55] INFO root fetch - processPackages [dask-cuda]: executing diffoscope
+[2023-05-26 07:06:55] INFO root fetch - processPackages [dask-cuda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dask-cuda-23.6.0a230526.tar.gz tmp/dask-cuda-23.8.0a230525.tar.gz --markdown 20230526/d/dask-cuda/23.6.0a230526-23.8.0a230525/diff.md --exclude *.pyd
+[2023-05-26 07:06:55] INFO root fetch - processPackages [multi-model-server]: Downloading https://files.pythonhosted.org/packages/4a/13/ee9f0ed1b88607f3ec07928e428cc5d56d82f0484aac1c9116707a023b82/multi_model_server-1.1.8b20230526-py2.py3-none-any.whl
+[2023-05-26 07:06:55] INFO root fetch - processPackages [odoo11-addon-auth-totp]: executing diffoscope
+[2023-05-26 07:06:55] INFO root fetch - processPackages [odoo11-addon-auth-totp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_auth_totp-11.0.1.1.0.99.dev3-py2.py3-none-any.whl.zip tmp/odoo11_addon_auth_totp-11.0.1.1.0.99.dev4-py2.py3-none-any.whl.zip --markdown 20230526/o/odoo11-addon-auth-totp/11.0.1.1.0.99.dev3-11.0.1.1.0.99.dev4/diff.md --exclude *.pyd
+[2023-05-26 07:06:55] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2023-05-26 07:06:55] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.1.dev20230525.tar.gz tmp/rapid_pe-0.1.1.dev20230526.tar.gz --markdown 20230526/r/rapid-pe/0.1.1.dev20230525-0.1.1.dev20230526/diff.md --exclude *.pyd
+[2023-05-26 07:06:55] INFO root fetch - processPackages [odoo11-addon-keychain]: Downloading https://files.pythonhosted.org/packages/20/3b/cc780e603bd8ae3c5199bb1c0edc0584199009dab0bc7f57fd57fcbd0258/odoo11_addon_keychain-11.0.3.0.0.99.dev6-py2.py3-none-any.whl
+[2023-05-26 07:06:55] INFO root fetch - processPackages [odoo11-addon-keychain]: executing diffoscope
+[2023-05-26 07:06:55] INFO root fetch - processPackages [odoo11-addon-keychain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_keychain-11.0.3.0.0.99.dev5-py2.py3-none-any.whl.zip tmp/odoo11_addon_keychain-11.0.3.0.0.99.dev6-py2.py3-none-any.whl.zip --markdown 20230526/o/odoo11-addon-keychain/11.0.3.0.0.99.dev5-11.0.3.0.0.99.dev6/diff.md --exclude *.pyd
+[2023-05-26 07:06:56] INFO root fetch - processPackages [multi-model-server]: executing diffoscope
+[2023-05-26 07:06:56] INFO root fetch - processPackages [multi-model-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi_model_server-1.1.8b20230525-py2.py3-none-any.whl.zip tmp/multi_model_server-1.1.8b20230526-py2.py3-none-any.whl.zip --markdown 20230526/m/multi-model-server/1.1.8b20230525-1.1.8b20230526/diff.md --exclude *.pyd
+[2023-05-26 07:06:56] INFO root fetch - main [MainThread]: End processing [sanic-security]: success
+[2023-05-26 07:06:57] INFO root fetch - main [MainThread]: End processing [odoo11-addon-password-security]: success
+[2023-05-26 07:06:57] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2023-05-26 07:06:57] INFO root fetch - main [MainThread]: End processing [odoo11-addon-auth-totp]: success
+[2023-05-26 07:06:57] INFO root fetch - main [MainThread]: End processing [odoo11-addon-auth-brute-force]: success
+[2023-05-26 07:06:57] INFO root fetch - main [MainThread]: End processing [odoo11-addon-keychain]: success
+[2023-05-26 07:06:58] INFO root fetch - main [MainThread]: End processing [dask-cuda]: success
+[2023-05-26 07:09:47] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
+[2023-05-26 07:09:47] INFO root fetch - main [MainThread]: Store serial: [18258043]
