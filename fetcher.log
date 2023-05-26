@@ -12305,3 +12305,135 @@
 [2023-05-26 11:45:37] INFO root fetch - main [MainThread]: End processing [sarus-data-spec-public]: success
 [2023-05-26 11:45:56] INFO root fetch - main [MainThread]: End processing [deepdataspace]: success
 [2023-05-26 11:45:56] INFO root fetch - main [MainThread]: Store serial: [18260681]
+[2023-05-26 11:51:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18260681]
+[2023-05-26 11:51:06] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-05-26 11:51:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-preprocessors
+[2023-05-26 11:51:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: birentechci
+[2023-05-26 11:51:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datamarket
+[2023-05-26 11:51:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pywss
+[2023-05-26 11:51:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: troncos
+[2023-05-26 11:51:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: async-dramatiq
+[2023-05-26 11:51:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nlu-tmp
+[2023-05-26 11:51:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: xspf-lib
+[2023-05-26 11:51:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: imvdb
+[2023-05-26 11:51:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: johnsnowlabs-for-databricks-tmp
+[2023-05-26 11:51:06] INFO root fetch - processPackages [async-dramatiq]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-26 11:51:06] INFO root fetch - processPackages [pywss]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 11:51:06] INFO root fetch - processPackages [data-preprocessors]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-26 11:51:06] INFO root fetch - processPackages [birentechci]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 11:51:06] WARNING root fetch - processPackages [imvdb]: Skipping, unable to determine old version
+[2023-05-26 11:51:06] INFO root fetch - processPackages [imvdb]: Start processing: extr
+[2023-05-26 11:51:06] INFO root fetch - main [MainThread]: End processing [imvdb] error
+[2023-05-26 11:51:06] INFO root fetch - processPackages [nlu-tmp]: New version: [4.5.0rc5] Old Version: [4.3.0rc6]
+[2023-05-26 11:51:06] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: New version: [4.4.9] Old Version: [4.4.8]
+[2023-05-26 11:51:06] INFO root fetch - processPackages [troncos]: New version: [4.0.0b6] Old Version: [4.0.0b5]
+[2023-05-26 11:51:06] INFO root fetch - processPackages [datamarket]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-26 11:51:06] INFO root fetch - processPackages [xspf-lib]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-26 11:51:06] INFO root fetch - processPackages [extr]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 11:51:06] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: executing diffoscope
+[2023-05-26 11:51:06] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/johnsnowlabs_for_databricks_tmp-4.4.8.tar.gz tmp/johnsnowlabs_for_databricks_tmp-4.4.9.tar.gz --markdown 20230526/j/johnsnowlabs-for-databricks-tmp/4.4.8-4.4.9/diff.md --exclude *.pyd
+[2023-05-26 11:51:06] INFO root fetch - processPackages [birentechci]: executing diffoscope
+[2023-05-26 11:51:06] INFO root fetch - processPackages [birentechci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/birentechci-0.0.8.tar.gz tmp/birentechci-0.0.9.tar.gz --markdown 20230526/b/birentechci/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 11:51:06] INFO root fetch - processPackages [nlu-tmp]: Downloading https://files.pythonhosted.org/packages/2c/5a/65f5692bc9fbb4696cae592ae5093fd78205cee66d0e2e198364d44bedc3/nlu_tmp-4.3.0rc6.tar.gz
+[2023-05-26 11:51:06] INFO root fetch - processPackages [async-dramatiq]: Downloading https://files.pythonhosted.org/packages/b5/91/b98ca424960f47d5151729eae238ac657195b7eab6b2b1ad801556e7c725/async_dramatiq-0.1.3.tar.gz
+[2023-05-26 11:51:06] INFO root fetch - processPackages [datamarket]: Downloading https://files.pythonhosted.org/packages/81/55/d1192eeb964831e46c3af50e720cc5a8d7cbabe8fa5500390e3c71de0d44/datamarket-0.3.3.tar.gz
+[2023-05-26 11:51:06] INFO root fetch - processPackages [xspf-lib]: Downloading https://files.pythonhosted.org/packages/f5/c5/0e9b9b0b769f798c1fde80b704066a66991b9542b407f0b665470788769e/xspf_lib-0.3.2.tar.gz
+[2023-05-26 11:51:06] INFO root fetch - processPackages [troncos]: Downloading https://files.pythonhosted.org/packages/a2/ff/af24d29a5fd973042240676c438dcf28a9e1b747b4122a4ae0d293c8cea8/troncos-4.0.0b6.tar.gz
+[2023-05-26 11:51:07] INFO root fetch - processPackages [async-dramatiq]: executing diffoscope
+[2023-05-26 11:51:07] INFO root fetch - processPackages [async-dramatiq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_dramatiq-0.1.2.tar.gz tmp/async_dramatiq-0.1.3.tar.gz --markdown 20230526/a/async-dramatiq/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-26 11:51:07] INFO root fetch - processPackages [data-preprocessors]: executing diffoscope
+[2023-05-26 11:51:07] INFO root fetch - processPackages [data-preprocessors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data-preprocessors-0.8.0.tar.gz tmp/data-preprocessors-0.9.0.tar.gz --markdown 20230526/d/data-preprocessors/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-26 11:51:07] INFO root fetch - processPackages [pywss]: executing diffoscope
+[2023-05-26 11:51:07] INFO root fetch - processPackages [pywss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywss-0.1.8.tar.gz tmp/pywss-0.1.9.tar.gz --markdown 20230526/p/pywss/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 11:51:07] INFO root fetch - processPackages [extr]: executing diffoscope
+[2023-05-26 11:51:07] INFO root fetch - processPackages [extr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extr-0.0.8.tar.gz tmp/extr-0.0.9.tar.gz --markdown 20230526/e/extr/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 11:51:07] INFO root fetch - processPackages [troncos]: executing diffoscope
+[2023-05-26 11:51:07] INFO root fetch - processPackages [troncos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/troncos-4.0.0b5.tar.gz tmp/troncos-4.0.0b6.tar.gz --markdown 20230526/t/troncos/4.0.0b5-4.0.0b6/diff.md --exclude *.pyd
+[2023-05-26 11:51:07] INFO root fetch - processPackages [datamarket]: Downloading https://files.pythonhosted.org/packages/05/4d/71815652e3d5d16d30171df16dcfb5b6ea94f9a442fb94077353356bb312/datamarket-0.3.4.tar.gz
+[2023-05-26 11:51:07] INFO root fetch - processPackages [xspf-lib]: Downloading https://files.pythonhosted.org/packages/e1/3b/893bae40c7ce24167892820f2687e9c99e682ae2e8f3b0ce78b0546afa5a/xspf_lib-0.3.3.tar.gz
+[2023-05-26 11:51:07] INFO root fetch - processPackages [nlu-tmp]: executing diffoscope
+[2023-05-26 11:51:07] INFO root fetch - processPackages [nlu-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlu_tmp-4.3.0rc6.tar.gz tmp/nlu_tmp-4.5.0rc5.tar.gz --markdown 20230526/n/nlu-tmp/4.3.0rc6-4.5.0rc5/diff.md --exclude *.pyd
+[2023-05-26 11:51:07] INFO root fetch - processPackages [xspf-lib]: executing diffoscope
+[2023-05-26 11:51:07] INFO root fetch - processPackages [xspf-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xspf_lib-0.3.2.tar.gz tmp/xspf_lib-0.3.3.tar.gz --markdown 20230526/x/xspf-lib/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-26 11:51:07] INFO root fetch - processPackages [datamarket]: executing diffoscope
+[2023-05-26 11:51:07] INFO root fetch - processPackages [datamarket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datamarket-0.3.3.tar.gz tmp/datamarket-0.3.4.tar.gz --markdown 20230526/d/datamarket/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-26 11:51:08] INFO root fetch - processPackages [birentechci]: Start processing: odoo-addon-contract-sale
+[2023-05-26 11:51:08] INFO root fetch - main [MainThread]: End processing [birentechci]: success
+[2023-05-26 11:51:08] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: Start processing: dls-normsql
+[2023-05-26 11:51:08] INFO root fetch - main [MainThread]: End processing [johnsnowlabs-for-databricks-tmp]: success
+[2023-05-26 11:51:08] INFO root fetch - processPackages [async-dramatiq]: Start processing: controlnet-aux
+[2023-05-26 11:51:08] INFO root fetch - main [MainThread]: End processing [async-dramatiq]: success
+[2023-05-26 11:51:08] INFO root fetch - processPackages [odoo-addon-contract-sale]: New version: [16.0.1.0.0.2] Old Version: [15.0.1.1.0]
+[2023-05-26 11:51:08] INFO root fetch - processPackages [dls-normsql]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-26 11:51:08] INFO root fetch - processPackages [controlnet-aux]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-26 11:51:09] INFO root fetch - processPackages [odoo-addon-contract-sale]: Downloading https://files.pythonhosted.org/packages/b8/2f/60089e177b09ffe18e74a3d15066dea62d5750cf2b45699ee6674fff3077/odoo_addon_contract_sale-15.0.1.1.0-py3-none-any.whl
+[2023-05-26 11:51:09] INFO root fetch - processPackages [dls-normsql]: Downloading https://files.pythonhosted.org/packages/eb/82/dd4670341f37f4227244821a14cda1048fc2c7b5fb67dcefdedc71652c67/dls-normsql-2.0.1.tar.gz
+[2023-05-26 11:51:09] INFO root fetch - processPackages [dls-normsql]: executing diffoscope
+[2023-05-26 11:51:09] INFO root fetch - processPackages [dls-normsql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dls-normsql-2.0.0.tar.gz tmp/dls-normsql-2.0.1.tar.gz --markdown 20230526/d/dls-normsql/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-26 11:51:09] INFO root fetch - processPackages [controlnet-aux]: Downloading https://files.pythonhosted.org/packages/da/2b/b41dc01aeccc24104a5f9aeeab324dad5d3571ebd4f0a5d926629cd2f81b/controlnet_aux-0.0.5.tar.gz
+[2023-05-26 11:51:09] INFO root fetch - processPackages [odoo-addon-contract-sale]: Downloading https://files.pythonhosted.org/packages/98/60/01b6893a9715f65d9c4d65542072ce040746639f85f5d1c8eb03fe7bbf02/odoo_addon_contract_sale-16.0.1.0.0.2-py3-none-any.whl
+[2023-05-26 11:51:09] INFO root fetch - processPackages [odoo-addon-contract-sale]: executing diffoscope
+[2023-05-26 11:51:09] INFO root fetch - processPackages [odoo-addon-contract-sale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_contract_sale-15.0.1.1.0-py3-none-any.whl.zip tmp/odoo_addon_contract_sale-16.0.1.0.0.2-py3-none-any.whl.zip --markdown 20230526/o/odoo-addon-contract-sale/15.0.1.1.0-16.0.1.0.0.2/diff.md --exclude *.pyd
+[2023-05-26 11:51:09] INFO root fetch - processPackages [controlnet-aux]: executing diffoscope
+[2023-05-26 11:51:09] INFO root fetch - processPackages [controlnet-aux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/controlnet_aux-0.0.4.tar.gz tmp/controlnet_aux-0.0.5.tar.gz --markdown 20230526/c/controlnet-aux/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-26 11:51:09] INFO root fetch - processPackages [pywss]: Start processing: docarray
+[2023-05-26 11:51:09] INFO root fetch - main [MainThread]: End processing [pywss]: success
+[2023-05-26 11:51:09] INFO root fetch - processPackages [data-preprocessors]: Start processing: django-microsoft-authentication
+[2023-05-26 11:51:09] INFO root fetch - main [MainThread]: End processing [data-preprocessors]: success
+[2023-05-26 11:51:09] INFO root fetch - processPackages [extr]: Start processing: extr-ds
+[2023-05-26 11:51:09] INFO root fetch - main [MainThread]: End processing [extr]: success
+[2023-05-26 11:51:09] INFO root fetch - processPackages [django-microsoft-authentication]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-26 11:51:09] INFO root fetch - processPackages [extr-ds]: New version: [0.0.9] Old Version: [0.0.81]
+[2023-05-26 11:51:09] INFO root fetch - processPackages [docarray]: New version: [0.9.9.dev5] Old Version: [0.9.9.dev4]
+[2023-05-26 11:51:09] INFO root fetch - processPackages [troncos]: Start processing: otx
+[2023-05-26 11:51:09] INFO root fetch - main [MainThread]: End processing [troncos]: success
+[2023-05-26 11:51:09] INFO root fetch - processPackages [otx]: New version: [1.3.0rc1] Old Version: [1.3.0]
+[2023-05-26 11:51:09] INFO root fetch - processPackages [extr-ds]: executing diffoscope
+[2023-05-26 11:51:09] INFO root fetch - processPackages [extr-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extr-ds-0.0.81.tar.gz tmp/extr-ds-0.0.9.tar.gz --markdown 20230526/e/extr-ds/0.0.81-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 11:51:09] INFO root fetch - processPackages [otx]: executing diffoscope
+[2023-05-26 11:51:09] INFO root fetch - processPackages [otx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otx-1.3.0.tar.gz tmp/otx-1.3.0rc1.tar.gz --markdown 20230526/o/otx/1.3.0-1.3.0rc1/diff.md --exclude *.pyd
+[2023-05-26 11:51:09] INFO root fetch - processPackages [django-microsoft-authentication]: Downloading https://files.pythonhosted.org/packages/00/30/af464ea54233a1c3e0cd86b37a1874e7f59d8a469236039b48e770cc23fe/django-microsoft-authentication-0.1.5.tar.gz
+[2023-05-26 11:51:10] INFO root fetch - processPackages [docarray]: executing diffoscope
+[2023-05-26 11:51:10] INFO root fetch - processPackages [docarray]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docarray-0.9.9.dev4.tar.gz tmp/docarray-0.9.9.dev5.tar.gz --markdown 20230526/d/docarray/0.9.9.dev4-0.9.9.dev5/diff.md --exclude *.pyd
+[2023-05-26 11:51:10] INFO root fetch - processPackages [datamarket]: Start processing: configzen
+[2023-05-26 11:51:10] INFO root fetch - main [MainThread]: End processing [datamarket]: success
+[2023-05-26 11:51:10] INFO root fetch - processPackages [configzen]: New version: [0.1.39] Old Version: [0.1.38]
+[2023-05-26 11:51:10] INFO root fetch - processPackages [django-microsoft-authentication]: Downloading https://files.pythonhosted.org/packages/c4/dc/1da64da7c8263babe36f42183166e77677f4d0c629f5ac892f64bb23be1e/django-microsoft-authentication-0.1.6.tar.gz
+[2023-05-26 11:51:10] INFO root fetch - processPackages [xspf-lib]: Start processing: data-preprocessors
+[2023-05-26 11:51:10] INFO root fetch - main [MainThread]: End processing [xspf-lib]: success
+[2023-05-26 11:51:10] INFO root fetch - processPackages [data-preprocessors]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-26 11:51:10] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-26 11:51:10] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.38.tar.gz tmp/configzen-0.1.39.tar.gz --markdown 20230526/c/configzen/0.1.38-0.1.39/diff.md --exclude *.pyd
+[2023-05-26 11:51:10] INFO root fetch - processPackages [django-microsoft-authentication]: executing diffoscope
+[2023-05-26 11:51:10] INFO root fetch - processPackages [django-microsoft-authentication]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-microsoft-authentication-0.1.5.tar.gz tmp/django-microsoft-authentication-0.1.6.tar.gz --markdown 20230526/d/django-microsoft-authentication/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-26 11:51:10] INFO root fetch - processPackages [data-preprocessors]: executing diffoscope
+[2023-05-26 11:51:10] INFO root fetch - processPackages [data-preprocessors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data-preprocessors-0.8.0.tar.gz tmp/data-preprocessors-0.9.0.tar.gz --markdown 20230526/d/data-preprocessors/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-26 11:51:11] INFO root fetch - processPackages [odoo-addon-contract-sale]: Start processing: akerbp.mlops
+[2023-05-26 11:51:11] INFO root fetch - main [MainThread]: End processing [odoo-addon-contract-sale]: success
+[2023-05-26 11:51:12] INFO root fetch - processPackages [akerbp.mlops]: New version: [3.1.2a1] Old Version: [3.1.2a0]
+[2023-05-26 11:51:12] INFO root fetch - processPackages [akerbp.mlops]: executing diffoscope
+[2023-05-26 11:51:12] INFO root fetch - processPackages [akerbp.mlops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akerbp.mlops-3.1.2a0.tar.gz tmp/akerbp.mlops-3.1.2a1.tar.gz --markdown 20230526/a/akerbp.mlops/3.1.2a0-3.1.2a1/diff.md --exclude *.pyd
+[2023-05-26 11:51:12] INFO root fetch - processPackages [dls-normsql]: Start processing: edu-segmentation
+[2023-05-26 11:51:12] INFO root fetch - main [MainThread]: End processing [dls-normsql]: success
+[2023-05-26 11:51:12] INFO root fetch - processPackages [edu-segmentation]: New version: [0.0.80] Old Version: [0.0.79]
+[2023-05-26 11:51:12] INFO root fetch - processPackages [extr-ds]: Start processing: specfile
+[2023-05-26 11:51:12] INFO root fetch - main [MainThread]: End processing [extr-ds]: success
+[2023-05-26 11:51:12] INFO root fetch - processPackages [specfile]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-26 11:51:12] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/5e/f3/c1c024b74990b63bca695cab5c106b886f54fa0506d9d346ee16cce562b4/edu_segmentation-0.0.80.tar.gz
+[2023-05-26 11:51:12] INFO root fetch - processPackages [specfile]: Downloading https://files.pythonhosted.org/packages/34/62/20eddcbef126e85431dc3242ff709176eaaa67d3d3a70ff2f8afeafe4479/specfile-0.9.0.tar.gz
+[2023-05-26 11:51:12] INFO root fetch - processPackages [edu-segmentation]: executing diffoscope
+[2023-05-26 11:51:12] INFO root fetch - processPackages [edu-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edu_segmentation-0.0.79.tar.gz tmp/edu_segmentation-0.0.80.tar.gz --markdown 20230526/e/edu-segmentation/0.0.79-0.0.80/diff.md --exclude *.pyd
+[2023-05-26 11:51:12] INFO root fetch - main [MainThread]: End processing [data-preprocessors]: success
+[2023-05-26 11:51:12] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-26 11:51:13] INFO root fetch - processPackages [specfile]: Downloading https://files.pythonhosted.org/packages/98/58/5da46f58f41bce3602175cc9a4b5e90820385801d225c063e6e9ba50bc97/specfile-0.9.1.tar.gz
+[2023-05-26 11:51:13] INFO root fetch - processPackages [specfile]: executing diffoscope
+[2023-05-26 11:51:13] INFO root fetch - processPackages [specfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/specfile-0.9.0.tar.gz tmp/specfile-0.9.1.tar.gz --markdown 20230526/s/specfile/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-26 11:51:13] INFO root fetch - main [MainThread]: End processing [django-microsoft-authentication]: success
+[2023-05-26 11:51:13] INFO root fetch - main [MainThread]: End processing [controlnet-aux]: success
+[2023-05-26 11:51:14] INFO root fetch - main [MainThread]: End processing [akerbp.mlops]: success
+[2023-05-26 11:51:14] INFO root fetch - main [MainThread]: End processing [nlu-tmp]: success
+[2023-05-26 11:51:14] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
+[2023-05-26 11:51:15] INFO root fetch - main [MainThread]: End processing [specfile]: success
+[2023-05-26 11:51:15] INFO root fetch - main [MainThread]: End processing [docarray]: success
+[2023-05-26 11:51:48] INFO root fetch - main [MainThread]: End processing [otx]: success
+[2023-05-26 11:51:48] INFO root fetch - main [MainThread]: Store serial: [18260769]
