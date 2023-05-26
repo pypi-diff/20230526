@@ -8538,3 +8538,106 @@
 [2023-05-26 07:46:42] INFO root fetch - main [MainThread]: End processing [swibots]: success
 [2023-05-26 07:46:42] INFO root fetch - main [MainThread]: End processing [aliyun-python-sdk-dcdn]: success
 [2023-05-26 07:46:42] INFO root fetch - main [MainThread]: Store serial: [18258284]
+[2023-05-26 07:51:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18258284]
+[2023-05-26 07:51:50] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-26 07:51:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: embedbase-client
+[2023-05-26 07:51:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alibabacloud-dcdn20180115-py2
+[2023-05-26 07:51:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alibabacloud-dcdn20180115
+[2023-05-26 07:51:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: empyric
+[2023-05-26 07:51:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo10-addon-website-form-recaptcha
+[2023-05-26 07:51:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nlu-tmp
+[2023-05-26 07:51:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo10-addon-website-blog-category
+[2023-05-26 07:51:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ftsf
+[2023-05-26 07:51:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: validmind
+[2023-05-26 07:51:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: canvas-pilot
+[2023-05-26 07:51:50] INFO root fetch - processPackages [embedbase-client]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-26 07:51:50] INFO root fetch - processPackages [alibabacloud-dcdn20180115-py2]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-26 07:51:50] INFO root fetch - processPackages [odoo10-addon-website-blog-category]: New version: [10.0.1.0.0.99.dev7] Old Version: [10.0.1.0.0.99.dev6]
+[2023-05-26 07:51:50] INFO root fetch - processPackages [empyric]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-26 07:51:50] INFO root fetch - processPackages [ftsf]: New version: [0.0.1.2] Old Version: [0.0.1.1]
+[2023-05-26 07:51:50] INFO root fetch - processPackages [odoo10-addon-website-form-recaptcha]: New version: [10.0.1.0.1.99.dev3] Old Version: [10.0.1.0.1.99.dev2]
+[2023-05-26 07:51:50] INFO root fetch - processPackages [canvas-pilot]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-26 07:51:50] INFO root fetch - processPackages [validmind]: New version: [1.9.7] Old Version: [1.9.6]
+[2023-05-26 07:51:50] INFO root fetch - processPackages [alibabacloud-dcdn20180115]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-26 07:51:50] INFO root fetch - processPackages [nlu-tmp]: New version: [4.5.0rc5] Old Version: [4.3.0rc3]
+[2023-05-26 07:51:51] INFO root fetch - processPackages [odoo10-addon-website-blog-category]: Downloading https://files.pythonhosted.org/packages/dc/b9/55e65e420f07e43fef02db806d22492265a7dcc152749dbcdc1327ae1359/odoo10_addon_website_blog_category-10.0.1.0.0.99.dev6-py2-none-any.whl
+[2023-05-26 07:51:51] INFO root fetch - processPackages [nlu-tmp]: Downloading https://files.pythonhosted.org/packages/ae/d6/92b821adbe087c0bb2090428e174f309a64d3b903e22af5e0feeb02b03bd/nlu_tmp-4.3.0rc3.tar.gz
+[2023-05-26 07:51:51] INFO root fetch - processPackages [odoo10-addon-website-form-recaptcha]: Downloading https://files.pythonhosted.org/packages/1f/6f/fd4a6e132c7ebc746c65d573b0bd42027f165af86217de04ebd1287abd24/odoo10_addon_website_form_recaptcha-10.0.1.0.1.99.dev2-py2-none-any.whl
+[2023-05-26 07:51:51] INFO root fetch - processPackages [ftsf]: Downloading https://files.pythonhosted.org/packages/3c/43/1c88c3e348351daa77be8bd9eed6fe46e1fa0bb1d718ece351d7121e3001/ftsf-0.0.1.2.tar.gz
+[2023-05-26 07:51:51] INFO root fetch - processPackages [empyric]: Downloading https://files.pythonhosted.org/packages/21/b6/d510adf415ec1bc3f75ccdaaa28c5b875c55a0e63853337fde90b2dc722c/empyric-0.1-py3.9.egg
+[2023-05-26 07:51:51] INFO root fetch - processPackages [canvas-pilot]: Downloading https://files.pythonhosted.org/packages/5c/e7/f143b134b37e1e809afa203d2490e849f225bc1e449b4cdbb7a5e69e4777/canvas-pilot-0.1.3.tar.gz
+[2023-05-26 07:51:51] INFO root fetch - processPackages [embedbase-client]: Downloading https://files.pythonhosted.org/packages/e2/c5/01928743c6d742654309f12a3c8bbaa61f9fb8a2e4af252311eede9d7d15/embedbase_client-0.1.6.tar.gz
+[2023-05-26 07:51:51] INFO root fetch - processPackages [alibabacloud-dcdn20180115-py2]: Downloading https://files.pythonhosted.org/packages/7b/3b/d2e5e5872bff482675c6c8fb178b95174b8780c80e367084d17a3bc9ccb1/alibabacloud_dcdn20180115_py2-1.1.9.tar.gz
+[2023-05-26 07:51:51] INFO root fetch - processPackages [embedbase-client]: executing diffoscope
+[2023-05-26 07:51:51] INFO root fetch - processPackages [embedbase-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedbase_client-0.1.5.tar.gz tmp/embedbase_client-0.1.6.tar.gz --markdown 20230526/e/embedbase-client/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-26 07:51:51] INFO root fetch - processPackages [canvas-pilot]: executing diffoscope
+[2023-05-26 07:51:51] INFO root fetch - processPackages [canvas-pilot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canvas-pilot-0.1.2.tar.gz tmp/canvas-pilot-0.1.3.tar.gz --markdown 20230526/c/canvas-pilot/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-26 07:51:51] INFO root fetch - processPackages [alibabacloud-dcdn20180115]: Downloading https://files.pythonhosted.org/packages/25/a0/92e29300ed677fe50a0f0ce94c85630438f1d94f4fd30b950a9a0b4c2777/alibabacloud_dcdn20180115-1.1.9.tar.gz
+[2023-05-26 07:51:51] INFO root fetch - processPackages [ftsf]: executing diffoscope
+[2023-05-26 07:51:51] INFO root fetch - processPackages [odoo10-addon-website-blog-category]: Downloading https://files.pythonhosted.org/packages/f3/28/c7bcc5c0857dea07ddeb403d615751d4d458790474b80a29c06a82296e0b/odoo10_addon_website_blog_category-10.0.1.0.0.99.dev7-py2-none-any.whl
+[2023-05-26 07:51:51] INFO root fetch - processPackages [ftsf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FTSF-0.0.1.1.tar.gz tmp/ftsf-0.0.1.2.tar.gz --markdown 20230526/f/ftsf/0.0.1.1-0.0.1.2/diff.md --exclude *.pyd
+[2023-05-26 07:51:51] INFO root fetch - processPackages [validmind]: executing diffoscope
+[2023-05-26 07:51:51] INFO root fetch - processPackages [validmind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/validmind-1.9.6.tar.gz tmp/validmind-1.9.7.tar.gz --markdown 20230526/v/validmind/1.9.6-1.9.7/diff.md --exclude *.pyd
+[2023-05-26 07:51:51] INFO root fetch - processPackages [alibabacloud-dcdn20180115-py2]: executing diffoscope
+[2023-05-26 07:51:51] INFO root fetch - processPackages [alibabacloud-dcdn20180115-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_dcdn20180115_py2-1.1.8.tar.gz tmp/alibabacloud_dcdn20180115_py2-1.1.9.tar.gz --markdown 20230526/a/alibabacloud-dcdn20180115-py2/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-26 07:51:51] INFO root fetch - processPackages [alibabacloud-dcdn20180115]: executing diffoscope
+[2023-05-26 07:51:51] INFO root fetch - processPackages [alibabacloud-dcdn20180115]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_dcdn20180115-1.1.8.tar.gz tmp/alibabacloud_dcdn20180115-1.1.9.tar.gz --markdown 20230526/a/alibabacloud-dcdn20180115/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-26 07:51:51] INFO root fetch - processPackages [odoo10-addon-website-form-recaptcha]: Downloading https://files.pythonhosted.org/packages/75/f9/bc523bc2848a43bb65fde6c0a4140e801181cc9668d78e6ac3cc126a7da8/odoo10_addon_website_form_recaptcha-10.0.1.0.1.99.dev3-py2-none-any.whl
+[2023-05-26 07:51:51] INFO root fetch - processPackages [empyric]: Downloading https://files.pythonhosted.org/packages/ad/59/6ec9cf6d6ce0768f6da48d1b48b80d1d6763ffb7a1d9454adc05e9a7a8a0/empyric-0.1.1.tar.gz
+[2023-05-26 07:51:51] INFO root fetch - processPackages [odoo10-addon-website-blog-category]: executing diffoscope
+[2023-05-26 07:51:51] INFO root fetch - processPackages [odoo10-addon-website-blog-category]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo10_addon_website_blog_category-10.0.1.0.0.99.dev6-py2-none-any.whl.zip tmp/odoo10_addon_website_blog_category-10.0.1.0.0.99.dev7-py2-none-any.whl.zip --markdown 20230526/o/odoo10-addon-website-blog-category/10.0.1.0.0.99.dev6-10.0.1.0.0.99.dev7/diff.md --exclude *.pyd
+[2023-05-26 07:51:51] INFO root fetch - processPackages [odoo10-addon-website-form-recaptcha]: executing diffoscope
+[2023-05-26 07:51:51] INFO root fetch - processPackages [odoo10-addon-website-form-recaptcha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo10_addon_website_form_recaptcha-10.0.1.0.1.99.dev2-py2-none-any.whl.zip tmp/odoo10_addon_website_form_recaptcha-10.0.1.0.1.99.dev3-py2-none-any.whl.zip --markdown 20230526/o/odoo10-addon-website-form-recaptcha/10.0.1.0.1.99.dev2-10.0.1.0.1.99.dev3/diff.md --exclude *.pyd
+[2023-05-26 07:51:51] INFO root fetch - processPackages [empyric]: executing diffoscope
+[2023-05-26 07:51:51] INFO root fetch - processPackages [empyric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/empyric-0.1-py3.9.egg tmp/empyric-0.1.1.tar.gz --markdown 20230526/e/empyric/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-26 07:51:51] INFO root fetch - processPackages [nlu-tmp]: executing diffoscope
+[2023-05-26 07:51:51] INFO root fetch - processPackages [nlu-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlu_tmp-4.3.0rc3.tar.gz tmp/nlu_tmp-4.5.0rc5.tar.gz --markdown 20230526/n/nlu-tmp/4.3.0rc3-4.5.0rc5/diff.md --exclude *.pyd
+[2023-05-26 07:51:52] INFO root fetch - processPackages [canvas-pilot]: Start processing: salesea
+[2023-05-26 07:51:52] INFO root fetch - main [MainThread]: End processing [canvas-pilot]: success
+[2023-05-26 07:51:52] WARNING root fetch - processPackages [salesea]: Skipping, unable to determine old version
+[2023-05-26 07:51:52] INFO root fetch - processPackages [salesea]: Start processing: pulumi-cloudinit
+[2023-05-26 07:51:52] INFO root fetch - main [MainThread]: End processing [salesea] error
+[2023-05-26 07:51:52] INFO root fetch - processPackages [pulumi-cloudinit]: New version: [1.4.0a1685078469] Old Version: [1.4.0a1684387211]
+[2023-05-26 07:51:53] INFO root fetch - processPackages [pulumi-cloudinit]: Downloading https://files.pythonhosted.org/packages/d0/4d/65bd5f01a1a11793a0ad777f8c0195968f3db1f5ca9c64281672a64a5c4c/pulumi_cloudinit-1.4.0a1685078469.tar.gz
+[2023-05-26 07:51:53] INFO root fetch - processPackages [embedbase-client]: Start processing: pulumi-auth0
+[2023-05-26 07:51:53] INFO root fetch - main [MainThread]: End processing [embedbase-client]: success
+[2023-05-26 07:51:53] INFO root fetch - processPackages [pulumi-cloudinit]: executing diffoscope
+[2023-05-26 07:51:53] INFO root fetch - processPackages [pulumi-cloudinit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_cloudinit-1.4.0a1684387211.tar.gz tmp/pulumi_cloudinit-1.4.0a1685078469.tar.gz --markdown 20230526/p/pulumi-cloudinit/1.4.0a1684387211-1.4.0a1685078469/diff.md --exclude *.pyd
+[2023-05-26 07:51:53] INFO root fetch - processPackages [pulumi-auth0]: New version: [2.9.0a1653604814] Old Version: [2.9.0a1651588791]
+[2023-05-26 07:51:53] INFO root fetch - processPackages [alibabacloud-dcdn20180115-py2]: Start processing: aws-bastion-cli
+[2023-05-26 07:51:53] INFO root fetch - main [MainThread]: End processing [alibabacloud-dcdn20180115-py2]: success
+[2023-05-26 07:51:53] INFO root fetch - processPackages [aws-bastion-cli]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-26 07:51:53] INFO root fetch - processPackages [pulumi-auth0]: executing diffoscope
+[2023-05-26 07:51:53] INFO root fetch - processPackages [pulumi-auth0]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_auth0-2.9.0a1651588791.tar.gz tmp/pulumi_auth0-2.9.0a1653604814.tar.gz --markdown 20230526/p/pulumi-auth0/2.9.0a1651588791-2.9.0a1653604814/diff.md --exclude *.pyd
+[2023-05-26 07:51:53] INFO root fetch - processPackages [ftsf]: Start processing: xw-utils
+[2023-05-26 07:51:53] INFO root fetch - main [MainThread]: End processing [ftsf]: success
+[2023-05-26 07:51:53] INFO root fetch - processPackages [xw-utils]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-26 07:51:53] INFO root fetch - processPackages [aws-bastion-cli]: Downloading https://files.pythonhosted.org/packages/08/aa/b874970982bb36f1db96ea7412987fc7b150913e457dc25a264f2ed44de9/aws-bastion-cli-0.3.2.tar.gz
+[2023-05-26 07:51:53] INFO root fetch - processPackages [aws-bastion-cli]: executing diffoscope
+[2023-05-26 07:51:53] INFO root fetch - processPackages [aws-bastion-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-bastion-cli-0.3.1.tar.gz tmp/aws-bastion-cli-0.3.2.tar.gz --markdown 20230526/a/aws-bastion-cli/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-26 07:51:54] INFO root fetch - processPackages [xw-utils]: Downloading https://files.pythonhosted.org/packages/d1/89/4c267eef302d61c7b1ad8f51090ae8aa19fe5a2d2e09e67d7dd4500f0cfa/xw_utils-1.0.5-cp39-cp39-win_amd64.whl
+[2023-05-26 07:51:54] INFO root fetch - processPackages [validmind]: Start processing: empyric
+[2023-05-26 07:51:54] INFO root fetch - main [MainThread]: End processing [validmind]: success
+[2023-05-26 07:51:54] INFO root fetch - processPackages [empyric]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-26 07:51:54] INFO root fetch - processPackages [empyric]: Start processing: pulumi-artifactory
+[2023-05-26 07:51:54] INFO root fetch - main [MainThread]: End processing [empyric]: success
+[2023-05-26 07:51:54] INFO root fetch - processPackages [xw-utils]: executing diffoscope
+[2023-05-26 07:51:54] INFO root fetch - processPackages [xw-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xw_utils-1.0.4-cp39-cp39-win_amd64.whl.zip tmp/xw_utils-1.0.5-cp39-cp39-win_amd64.whl.zip --markdown 20230526/x/xw-utils/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-26 07:51:54] INFO root fetch - main [MainThread]: End processing [odoo10-addon-website-form-recaptcha]: success
+[2023-05-26 07:51:54] INFO root fetch - processPackages [empyric]: Downloading https://files.pythonhosted.org/packages/5f/ac/d5f674649bf5f78aed7da7edda3771998728434a1eca70bdddfcde1573fa/empyric-0.2.0.tar.gz
+[2023-05-26 07:51:54] INFO root fetch - processPackages [pulumi-artifactory]: New version: [3.6.0a1685078359] Old Version: [3.6.0a1684869165]
+[2023-05-26 07:51:54] INFO root fetch - main [MainThread]: End processing [odoo10-addon-website-blog-category]: success
+[2023-05-26 07:51:54] INFO root fetch - processPackages [empyric]: executing diffoscope
+[2023-05-26 07:51:54] INFO root fetch - processPackages [empyric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/empyric-0.1.1.tar.gz tmp/empyric-0.2.0.tar.gz --markdown 20230526/e/empyric/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-26 07:51:54] INFO root fetch - processPackages [pulumi-artifactory]: Downloading https://files.pythonhosted.org/packages/c5/3a/8df864eb75b58567168c010e506fbe44734bb42ffd659e848ff113c10eed/pulumi_artifactory-3.6.0a1685078359.tar.gz
+[2023-05-26 07:51:55] INFO root fetch - processPackages [pulumi-artifactory]: executing diffoscope
+[2023-05-26 07:51:55] INFO root fetch - processPackages [pulumi-artifactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_artifactory-3.6.0a1684869165.tar.gz tmp/pulumi_artifactory-3.6.0a1685078359.tar.gz --markdown 20230526/p/pulumi-artifactory/3.6.0a1684869165-3.6.0a1685078359/diff.md --exclude *.pyd
+[2023-05-26 07:51:55] INFO root fetch - main [MainThread]: End processing [pulumi-cloudinit]: success
+[2023-05-26 07:51:56] INFO root fetch - main [MainThread]: End processing [xw-utils]: success
+[2023-05-26 07:51:56] INFO root fetch - main [MainThread]: End processing [aws-bastion-cli]: success
+[2023-05-26 07:51:56] INFO root fetch - main [MainThread]: End processing [pulumi-auth0]: success
+[2023-05-26 07:51:56] INFO root fetch - main [MainThread]: End processing [alibabacloud-dcdn20180115]: success
+[2023-05-26 07:51:57] INFO root fetch - main [MainThread]: End processing [empyric]: success
+[2023-05-26 07:51:58] INFO root fetch - main [MainThread]: End processing [nlu-tmp]: success
+[2023-05-26 07:51:59] INFO root fetch - main [MainThread]: End processing [pulumi-artifactory]: success
+[2023-05-26 07:51:59] INFO root fetch - main [MainThread]: Store serial: [18258339]
