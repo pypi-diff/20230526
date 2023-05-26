@@ -10452,3 +10452,53 @@
 [2023-05-26 09:57:00] INFO root fetch - main [MainThread]: End processing [ChatLLM]: success
 [2023-05-26 09:57:34] INFO root fetch - main [MainThread]: End processing [otx]: success
 [2023-05-26 09:57:34] INFO root fetch - main [MainThread]: Store serial: [18259483]
+[2023-05-26 10:02:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18259483]
+[2023-05-26 10:02:44] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-26 10:02:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: async-dramatiq
+[2023-05-26 10:02:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rppt
+[2023-05-26 10:02:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vortex-api
+[2023-05-26 10:02:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aiopioneer
+[2023-05-26 10:02:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: textbsr
+[2023-05-26 10:02:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cognite-transformations-cli
+[2023-05-26 10:02:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kn-flatten-json
+[2023-05-26 10:02:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: loqusdb
+[2023-05-26 10:02:44] WARNING root fetch - processPackages [async-dramatiq]: Skipping, unable to determine old version
+[2023-05-26 10:02:44] INFO root fetch - main [MainThread]: End processing [async-dramatiq] error
+[2023-05-26 10:02:44] INFO root fetch - processPackages [vortex-api]: New version: [1.0.6.dev2] Old Version: [1.0.6.dev1]
+[2023-05-26 10:02:44] INFO root fetch - processPackages [rppt]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-26 10:02:44] INFO root fetch - processPackages [kn-flatten-json]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-26 10:02:44] INFO root fetch - processPackages [textbsr]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 10:02:44] INFO root fetch - processPackages [aiopioneer]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-05-26 10:02:44] INFO root fetch - processPackages [cognite-transformations-cli]: New version: [2.3.8] Old Version: [2.3.7]
+[2023-05-26 10:02:44] INFO root fetch - processPackages [textbsr]: executing diffoscope
+[2023-05-26 10:02:44] INFO root fetch - processPackages [textbsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textbsr-0.0.8.tar.gz tmp/textbsr-0.0.9.tar.gz --markdown 20230526/t/textbsr/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 10:02:44] INFO root fetch - processPackages [rppt]: Downloading https://files.pythonhosted.org/packages/69/94/86bb1307f88fd82cd8b5e9d9b8cdbc3aed4b7ae8022fa7c3a39dfb1158f5/rppt-1.1.1.tar.gz
+[2023-05-26 10:02:45] INFO root fetch - processPackages [aiopioneer]: Downloading https://files.pythonhosted.org/packages/12/87/b5f7a3a8191f99277ec69a25a935c1a8a9d7dac525028a40a425bb3426f2/aiopioneer-0.4.2.tar.gz
+[2023-05-26 10:02:45] INFO root fetch - processPackages [vortex-api]: Downloading https://files.pythonhosted.org/packages/95/d1/5b2322ed2f8c84b7196c75cc3e05f62d4aee162885dc44815478bd272e85/vortex_api-1.0.6.dev2.tar.gz
+[2023-05-26 10:02:45] INFO root fetch - processPackages [loqusdb]: New version: [2.7.0] Old Version: [2.6.9]
+[2023-05-26 10:02:45] INFO root fetch - processPackages [kn-flatten-json]: Downloading https://files.pythonhosted.org/packages/90/38/e9a5fdb5ac37f6833afcc4752df08a427f74d897e14cd39c375c8ec69d14/kn_flatten_json-0.0.8.tar.gz
+[2023-05-26 10:02:45] INFO root fetch - processPackages [kn-flatten-json]: executing diffoscope
+[2023-05-26 10:02:45] INFO root fetch - processPackages [kn-flatten-json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kn_flatten_json-0.0.7.tar.gz tmp/kn_flatten_json-0.0.8.tar.gz --markdown 20230526/k/kn-flatten-json/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-26 10:02:45] INFO root fetch - processPackages [rppt]: Downloading https://files.pythonhosted.org/packages/81/69/4b4c041868ca1deeef23a1fb97485e41d8f04e12f94c45e0cd5789773a99/rppt-1.1.2.tar.gz
+[2023-05-26 10:02:45] INFO root fetch - processPackages [vortex-api]: executing diffoscope
+[2023-05-26 10:02:45] INFO root fetch - processPackages [vortex-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vortex_api-1.0.6.dev1.tar.gz tmp/vortex_api-1.0.6.dev2.tar.gz --markdown 20230526/v/vortex-api/1.0.6.dev1-1.0.6.dev2/diff.md --exclude *.pyd
+[2023-05-26 10:02:45] INFO root fetch - processPackages [cognite-transformations-cli]: Downloading https://files.pythonhosted.org/packages/53/f9/0fb0e93e0809cac4f9599d71512bb3dbb54a59a928f2062fd4e52bf1f40f/cognite_transformations_cli-2.3.8.tar.gz
+[2023-05-26 10:02:45] INFO root fetch - processPackages [rppt]: executing diffoscope
+[2023-05-26 10:02:45] INFO root fetch - processPackages [rppt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rppt-1.1.1.tar.gz tmp/rppt-1.1.2.tar.gz --markdown 20230526/r/rppt/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-26 10:02:45] INFO root fetch - processPackages [aiopioneer]: Downloading https://files.pythonhosted.org/packages/44/55/faf1834351fec1966043fd139e8d0cdf38bbf8771d0ce28bc20925ed1199/aiopioneer-0.4.3.tar.gz
+[2023-05-26 10:02:45] INFO root fetch - processPackages [loqusdb]: Downloading https://files.pythonhosted.org/packages/2a/8e/588de7aead49ab2c22271cb4372c1f079a1c4690ed89198b6df7878afd13/loqusdb-2.6.9.tar.gz
+[2023-05-26 10:02:45] INFO root fetch - processPackages [cognite-transformations-cli]: executing diffoscope
+[2023-05-26 10:02:45] INFO root fetch - processPackages [cognite-transformations-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cognite_transformations_cli-2.3.7.tar.gz tmp/cognite_transformations_cli-2.3.8.tar.gz --markdown 20230526/c/cognite-transformations-cli/2.3.7-2.3.8/diff.md --exclude *.pyd
+[2023-05-26 10:02:45] INFO root fetch - processPackages [aiopioneer]: executing diffoscope
+[2023-05-26 10:02:45] INFO root fetch - processPackages [aiopioneer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiopioneer-0.4.2.tar.gz tmp/aiopioneer-0.4.3.tar.gz --markdown 20230526/a/aiopioneer/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-05-26 10:02:45] INFO root fetch - processPackages [loqusdb]: Downloading https://files.pythonhosted.org/packages/dd/2d/f2aa2a2093020d14757f971050017a2b8cf100db91f94129c712321883f9/loqusdb-2.7.0.tar.gz
+[2023-05-26 10:02:45] INFO root fetch - processPackages [loqusdb]: executing diffoscope
+[2023-05-26 10:02:45] INFO root fetch - processPackages [loqusdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loqusdb-2.6.9.tar.gz tmp/loqusdb-2.7.0.tar.gz --markdown 20230526/l/loqusdb/2.6.9-2.7.0/diff.md --exclude *.pyd
+[2023-05-26 10:02:46] INFO root fetch - main [MainThread]: End processing [textbsr]: success
+[2023-05-26 10:02:46] INFO root fetch - main [MainThread]: End processing [kn-flatten-json]: success
+[2023-05-26 10:02:46] INFO root fetch - main [MainThread]: End processing [vortex-api]: success
+[2023-05-26 10:02:47] INFO root fetch - main [MainThread]: End processing [rppt]: success
+[2023-05-26 10:02:47] INFO root fetch - main [MainThread]: End processing [cognite-transformations-cli]: success
+[2023-05-26 10:02:47] INFO root fetch - main [MainThread]: End processing [aiopioneer]: success
+[2023-05-26 10:02:48] INFO root fetch - main [MainThread]: End processing [loqusdb]: success
+[2023-05-26 10:02:48] INFO root fetch - main [MainThread]: Store serial: [18259538]
