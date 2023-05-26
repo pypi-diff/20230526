@@ -12083,3 +12083,117 @@
 [2023-05-26 11:34:50] INFO root fetch - main [MainThread]: End processing [UEVaultManager]: success
 [2023-05-26 11:34:52] INFO root fetch - main [MainThread]: End processing [nlu-tmp]: success
 [2023-05-26 11:34:52] INFO root fetch - main [MainThread]: Store serial: [18260531]
+[2023-05-26 11:39:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18260531]
+[2023-05-26 11:40:02] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-05-26 11:40:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: johnsnowlabs-for-databricks-tmp
+[2023-05-26 11:40:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kcli
+[2023-05-26 11:40:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mautrix-telegram
+[2023-05-26 11:40:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fp-NGFW-SMC-python-monitoring
+[2023-05-26 11:40:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: async-dramatiq
+[2023-05-26 11:40:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: alembic-postgresql-enum
+[2023-05-26 11:40:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pickled-carrots
+[2023-05-26 11:40:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: characterai
+[2023-05-26 11:40:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: paketmutfak
+[2023-05-26 11:40:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: johnsnowlabs-for-databricks-tmp
+[2023-05-26 11:40:02] INFO root fetch - processPackages [async-dramatiq]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-26 11:40:02] INFO root fetch - processPackages [mautrix-telegram]: New version: [0.9.0rc3] Old Version: [0.9.0rc2]
+[2023-05-26 11:40:02] INFO root fetch - processPackages [alembic-postgresql-enum]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-26 11:40:02] INFO root fetch - processPackages [pickled-carrots]: New version: [0.2.0] Old Version: [0.1.7]
+[2023-05-26 11:40:02] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: New version: [4.4.9] Old Version: [4.4.8]
+[2023-05-26 11:40:02] INFO root fetch - processPackages [characterai]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-26 11:40:02] INFO root fetch - processPackages [paketmutfak]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-26 11:40:02] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: New version: [4.4.9] Old Version: [4.4.8]
+[2023-05-26 11:40:02] INFO root fetch - processPackages [fp-NGFW-SMC-python-monitoring]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-05-26 11:40:02] INFO root fetch - processPackages [kcli]: New version: [99.0.202305260935] Old Version: [99.0.202305260929]
+[2023-05-26 11:40:02] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: executing diffoscope
+[2023-05-26 11:40:02] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/johnsnowlabs_for_databricks_tmp-4.4.8.tar.gz tmp/johnsnowlabs_for_databricks_tmp-4.4.9.tar.gz --markdown 20230526/j/johnsnowlabs-for-databricks-tmp/4.4.8-4.4.9/diff.md --exclude *.pyd
+[2023-05-26 11:40:02] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: executing diffoscope
+[2023-05-26 11:40:02] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/johnsnowlabs_for_databricks_tmp-4.4.8.tar.gz tmp/johnsnowlabs_for_databricks_tmp-4.4.9.tar.gz --markdown 20230526/j/johnsnowlabs-for-databricks-tmp/4.4.8-4.4.9/diff.md --exclude *.pyd
+[2023-05-26 11:40:02] INFO root fetch - processPackages [paketmutfak]: executing diffoscope
+[2023-05-26 11:40:02] INFO root fetch - processPackages [paketmutfak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paketmutfak-1.1.8.tar.gz tmp/paketmutfak-1.1.9.tar.gz --markdown 20230526/p/paketmutfak/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-26 11:40:02] INFO root fetch - processPackages [async-dramatiq]: Downloading https://files.pythonhosted.org/packages/44/22/5e86a99d67434d6e9c457dcd60a9e8d191621554b27ccec59618f67ded3b/async_dramatiq-0.1.2.tar.gz
+[2023-05-26 11:40:02] INFO root fetch - processPackages [mautrix-telegram]: Downloading https://files.pythonhosted.org/packages/6e/a2/1af0a8916deb995aa0d3adb0dd4f7117d6440494ee78dfe88b30162f2477/mautrix-telegram-0.9.0rc2.tar.gz
+[2023-05-26 11:40:02] INFO root fetch - processPackages [pickled-carrots]: Downloading https://files.pythonhosted.org/packages/03/8c/05e4786c25fbb430ef1b6450d61a6d00a79dc63089e29c9ebadfe4e46a0e/pickled_carrots-0.1.7.tar.gz
+[2023-05-26 11:40:02] INFO root fetch - processPackages [async-dramatiq]: executing diffoscope
+[2023-05-26 11:40:02] INFO root fetch - processPackages [async-dramatiq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_dramatiq-0.1.1.tar.gz tmp/async_dramatiq-0.1.2.tar.gz --markdown 20230526/a/async-dramatiq/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-26 11:40:02] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/13/6c/4b835c1fb1b71f51e742da03fe00ae0542399e97095cc027be9b650b72f9/kcli-99.0.202305260929-py3-none-any.whl
+[2023-05-26 11:40:02] INFO root fetch - processPackages [fp-NGFW-SMC-python-monitoring]: Downloading https://files.pythonhosted.org/packages/97/84/be5cde3f69f5dc570a2c4178a3d437a622d97508ae7fd4fef95a594aafda/fp-NGFW-SMC-python-monitoring-1.4.0.tar.gz
+[2023-05-26 11:40:02] INFO root fetch - processPackages [alembic-postgresql-enum]: Downloading https://files.pythonhosted.org/packages/65/98/48785c4694f7e5189c7f7bc08ce1c90235b07858e1e3b0e53540670a4397/alembic_postgresql_enum-0.1.2.tar.gz
+[2023-05-26 11:40:02] INFO root fetch - processPackages [characterai]: Downloading https://files.pythonhosted.org/packages/c0/93/70665bc526435135403b2e167aa6d68e71b028cfbd788b82678daa348a8e/characterai-0.5.1.tar.gz
+[2023-05-26 11:40:02] INFO root fetch - processPackages [alembic-postgresql-enum]: executing diffoscope
+[2023-05-26 11:40:02] INFO root fetch - processPackages [alembic-postgresql-enum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alembic_postgresql_enum-0.1.1.tar.gz tmp/alembic_postgresql_enum-0.1.2.tar.gz --markdown 20230526/a/alembic-postgresql-enum/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-26 11:40:02] INFO root fetch - processPackages [characterai]: executing diffoscope
+[2023-05-26 11:40:02] INFO root fetch - processPackages [characterai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/characterai-0.5.0.tar.gz tmp/characterai-0.5.1.tar.gz --markdown 20230526/c/characterai/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-26 11:40:02] INFO root fetch - processPackages [pickled-carrots]: Downloading https://files.pythonhosted.org/packages/cd/f2/cb03038b5cd36a3766b1b86f312765886784c3dbcb0936519e49ee0e030f/pickled_carrots-0.2.0.tar.gz
+[2023-05-26 11:40:02] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/b4/cd/a1b51d0ed55917c27ae960fd87052a1807f88ff20c3ece678e0a91d1c16a/kcli-99.0.202305260935-py3-none-any.whl
+[2023-05-26 11:40:02] INFO root fetch - processPackages [mautrix-telegram]: Downloading https://files.pythonhosted.org/packages/83/1a/6cf0606f6ee0929a71f6084557c571c59f75663154375faf0d30121a7176/mautrix-telegram-0.9.0rc3.tar.gz
+[2023-05-26 11:40:02] INFO root fetch - processPackages [pickled-carrots]: executing diffoscope
+[2023-05-26 11:40:02] INFO root fetch - processPackages [pickled-carrots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pickled_carrots-0.1.7.tar.gz tmp/pickled_carrots-0.2.0.tar.gz --markdown 20230526/p/pickled-carrots/0.1.7-0.2.0/diff.md --exclude *.pyd
+[2023-05-26 11:40:03] INFO root fetch - processPackages [mautrix-telegram]: executing diffoscope
+[2023-05-26 11:40:03] INFO root fetch - processPackages [mautrix-telegram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mautrix-telegram-0.9.0rc2.tar.gz tmp/mautrix-telegram-0.9.0rc3.tar.gz --markdown 20230526/m/mautrix-telegram/0.9.0rc2-0.9.0rc3/diff.md --exclude *.pyd
+[2023-05-26 11:40:03] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-05-26 11:40:03] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202305260929-py3-none-any.whl.zip tmp/kcli-99.0.202305260935-py3-none-any.whl.zip --markdown 20230526/k/kcli/99.0.202305260929-99.0.202305260935/diff.md --exclude *.pyd
+[2023-05-26 11:40:03] INFO root fetch - processPackages [fp-NGFW-SMC-python-monitoring]: Downloading https://files.pythonhosted.org/packages/f5/42/8ce06a94aa8bfd154b0e896db600fbf91e69f87240e7a69dc1e271c0a363/fp-NGFW-SMC-python-monitoring-1.4.1.tar.gz
+[2023-05-26 11:40:03] INFO root fetch - processPackages [fp-NGFW-SMC-python-monitoring]: executing diffoscope
+[2023-05-26 11:40:03] INFO root fetch - processPackages [fp-NGFW-SMC-python-monitoring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fp-NGFW-SMC-python-monitoring-1.4.0.tar.gz tmp/fp-NGFW-SMC-python-monitoring-1.4.1.tar.gz --markdown 20230526/f/fp-NGFW-SMC-python-monitoring/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-05-26 11:40:03] INFO root fetch - processPackages [paketmutfak]: Start processing: housing-package
+[2023-05-26 11:40:03] INFO root fetch - main [MainThread]: End processing [paketmutfak]: success
+[2023-05-26 11:40:03] WARNING root fetch - processPackages [housing-package]: Skipping, unable to determine old version
+[2023-05-26 11:40:03] INFO root fetch - processPackages [housing-package]: Start processing: nowcasting-datamodel
+[2023-05-26 11:40:03] INFO root fetch - main [MainThread]: End processing [housing-package] error
+[2023-05-26 11:40:03] INFO root fetch - processPackages [nowcasting-datamodel]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-05-26 11:40:04] INFO root fetch - processPackages [nowcasting-datamodel]: executing diffoscope
+[2023-05-26 11:40:04] INFO root fetch - processPackages [nowcasting-datamodel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nowcasting_datamodel-1.3.8.tar.gz tmp/nowcasting_datamodel-1.3.9.tar.gz --markdown 20230526/n/nowcasting-datamodel/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-05-26 11:40:04] INFO root fetch - processPackages [async-dramatiq]: Start processing: kfish
+[2023-05-26 11:40:04] INFO root fetch - main [MainThread]: End processing [async-dramatiq]: success
+[2023-05-26 11:40:04] INFO root fetch - processPackages [kfish]: New version: [99.0.202305260937] Old Version: [99.0.202305260931]
+[2023-05-26 11:40:04] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/2e/41/8b74b83dddae580c7fd09c5e67b5d5dd0bf65508a72ef652efc19b25285c/kfish-99.0.202305260937-py3-none-any.whl
+[2023-05-26 11:40:04] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-05-26 11:40:04] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202305260931-py3-none-any.whl.zip tmp/kfish-99.0.202305260937-py3-none-any.whl.zip --markdown 20230526/k/kfish/99.0.202305260931-99.0.202305260937/diff.md --exclude *.pyd
+[2023-05-26 11:40:04] INFO root fetch - processPackages [alembic-postgresql-enum]: Start processing: dev-gpt
+[2023-05-26 11:40:04] INFO root fetch - main [MainThread]: End processing [alembic-postgresql-enum]: success
+[2023-05-26 11:40:04] INFO root fetch - processPackages [dev-gpt]: New version: [0.18.42.dev8] Old Version: [0.18.42.dev5]
+[2023-05-26 11:40:04] INFO root fetch - processPackages [characterai]: Start processing: ccxt
+[2023-05-26 11:40:04] INFO root fetch - main [MainThread]: End processing [characterai]: success
+[2023-05-26 11:40:04] INFO root fetch - processPackages [ccxt]: New version: [3.1.9] Old Version: [3.1.8]
+[2023-05-26 11:40:05] INFO root fetch - processPackages [dev-gpt]: executing diffoscope
+[2023-05-26 11:40:05] INFO root fetch - processPackages [dev-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dev-gpt-0.18.42.dev5.tar.gz tmp/dev-gpt-0.18.42.dev8.tar.gz --markdown 20230526/d/dev-gpt/0.18.42.dev5-0.18.42.dev8/diff.md --exclude *.pyd
+[2023-05-26 11:40:05] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/c8/8c/0f6049cfe62c7345061ebc4bc204d5b43328f61a0dea4dba781a9cb6d23c/ccxt-3.1.8.tar.gz
+[2023-05-26 11:40:05] INFO root fetch - processPackages [pickled-carrots]: Start processing: cg
+[2023-05-26 11:40:05] INFO root fetch - main [MainThread]: End processing [pickled-carrots]: success
+[2023-05-26 11:40:05] INFO root fetch - processPackages [cg]: New version: [32.2.1] Old Version: [32.2.0]
+[2023-05-26 11:40:05] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: Start processing: keycloak-api-manager
+[2023-05-26 11:40:05] INFO root fetch - main [MainThread]: End processing [johnsnowlabs-for-databricks-tmp]: success
+[2023-05-26 11:40:05] INFO root fetch - processPackages [cg]: executing diffoscope
+[2023-05-26 11:40:05] INFO root fetch - processPackages [cg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cg-32.2.0.tar.gz tmp/cg-32.2.1.tar.gz --markdown 20230526/c/cg/32.2.0-32.2.1/diff.md --exclude *.pyd
+[2023-05-26 11:40:05] INFO root fetch - processPackages [keycloak-api-manager]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-26 11:40:05] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/da/20/697a7c246ccda48f1db7fabcef3d2ae5b059eb38ab11d028ed79393e0d46/ccxt-3.1.9.tar.gz
+[2023-05-26 11:40:05] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2023-05-26 11:40:05] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-3.1.8.tar.gz tmp/ccxt-3.1.9.tar.gz --markdown 20230526/c/ccxt/3.1.8-3.1.9/diff.md --exclude *.pyd
+[2023-05-26 11:40:05] INFO root fetch - processPackages [keycloak-api-manager]: Downloading https://files.pythonhosted.org/packages/6a/db/457f0b631624d2f200a4793e05087930957aa389ed1e5304568af18e97e9/keycloak_api_manager-1.0.1.tar.gz
+[2023-05-26 11:40:05] INFO root fetch - processPackages [keycloak-api-manager]: executing diffoscope
+[2023-05-26 11:40:05] INFO root fetch - processPackages [keycloak-api-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keycloak_api_manager-1.0.0.tar.gz tmp/keycloak_api_manager-1.0.1.tar.gz --markdown 20230526/k/keycloak-api-manager/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-26 11:40:05] INFO root fetch - processPackages [mautrix-telegram]: Start processing: kcli
+[2023-05-26 11:40:05] INFO root fetch - main [MainThread]: End processing [mautrix-telegram]: success
+[2023-05-26 11:40:05] INFO root fetch - processPackages [kcli]: New version: [99.0.202305260939] Old Version: [99.0.202305260935]
+[2023-05-26 11:40:06] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/bf/d1/a0e446be0a49f40d5488b1003f7abcd88da2f5a839aa3e453e7072dc323c/kcli-99.0.202305260939-py3-none-any.whl
+[2023-05-26 11:40:06] INFO root fetch - processPackages [fp-NGFW-SMC-python-monitoring]: Start processing: range-digit
+[2023-05-26 11:40:06] INFO root fetch - main [MainThread]: End processing [fp-NGFW-SMC-python-monitoring]: success
+[2023-05-26 11:40:06] INFO root fetch - main [MainThread]: End processing [johnsnowlabs-for-databricks-tmp]: success
+[2023-05-26 11:40:06] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-05-26 11:40:06] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202305260935-py3-none-any.whl.zip tmp/kcli-99.0.202305260939-py3-none-any.whl.zip --markdown 20230526/k/kcli/99.0.202305260935-99.0.202305260939/diff.md --exclude *.pyd
+[2023-05-26 11:40:06] INFO root fetch - processPackages [range-digit]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-05-26 11:40:06] INFO root fetch - processPackages [range-digit]: Downloading https://files.pythonhosted.org/packages/0f/ff/7580f7a377e48a7f9700ac889ebf41ec37e858641c18988a3c2e4c08c6e3/range_digit-0.0.4-py3-none-any.whl
+[2023-05-26 11:40:06] INFO root fetch - processPackages [range-digit]: Downloading https://files.pythonhosted.org/packages/c4/f4/6cdeb2422725e4d2534e1b271a1c1442337e0a206c0536925a644bf97bca/range_digit-0.1.0-py3-none-any.whl
+[2023-05-26 11:40:07] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-05-26 11:40:07] INFO root fetch - processPackages [range-digit]: executing diffoscope
+[2023-05-26 11:40:07] INFO root fetch - processPackages [range-digit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/range_digit-0.0.4-py3-none-any.whl.zip tmp/range_digit-0.1.0-py3-none-any.whl.zip --markdown 20230526/r/range-digit/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-05-26 11:40:07] INFO root fetch - main [MainThread]: End processing [dev-gpt]: success
+[2023-05-26 11:40:07] INFO root fetch - main [MainThread]: End processing [nowcasting-datamodel]: success
+[2023-05-26 11:40:08] INFO root fetch - main [MainThread]: End processing [keycloak-api-manager]: success
+[2023-05-26 11:40:08] INFO root fetch - main [MainThread]: End processing [range-digit]: success
+[2023-05-26 11:40:11] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-05-26 11:40:14] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-05-26 11:40:16] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2023-05-26 11:40:18] INFO root fetch - main [MainThread]: End processing [cg]: success
+[2023-05-26 11:40:18] INFO root fetch - main [MainThread]: Store serial: [18260592]
