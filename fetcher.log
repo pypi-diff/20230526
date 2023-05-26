@@ -9350,3 +9350,66 @@
 [2023-05-26 08:51:00] INFO root fetch - main [MainThread]: End processing [RobertCommonIO]: success
 [2023-05-26 08:51:00] INFO root fetch - main [MainThread]: End processing [pulumi-nomad]: success
 [2023-05-26 08:51:00] INFO root fetch - main [MainThread]: Store serial: [18258787]
+[2023-05-26 08:56:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18258787]
+[2023-05-26 08:56:09] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-26 08:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: csv-embeddings-creator
+[2023-05-26 08:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zenml
+[2023-05-26 08:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: langchain-wenxin
+[2023-05-26 08:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: manbuqingsheng
+[2023-05-26 08:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tagging-module
+[2023-05-26 08:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: joltml
+[2023-05-26 08:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cfgpie
+[2023-05-26 08:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: shlep
+[2023-05-26 08:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cognite-sdk
+[2023-05-26 08:56:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cast-vue
+[2023-05-26 08:56:09] WARNING root fetch - processPackages [manbuqingsheng]: Skipping, unable to determine old version
+[2023-05-26 08:56:09] INFO root fetch - main [MainThread]: End processing [manbuqingsheng] error
+[2023-05-26 08:56:09] INFO root fetch - processPackages [langchain-wenxin]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-26 08:56:09] INFO root fetch - processPackages [tagging-module]: New version: [0.0.2] Old Version: [0.0.1.1]
+[2023-05-26 08:56:09] INFO root fetch - processPackages [csv-embeddings-creator]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-26 08:56:09] INFO root fetch - processPackages [joltml]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-26 08:56:09] INFO root fetch - processPackages [shlep]: New version: [1.2.0] Old Version: [1.1.1]
+[2023-05-26 08:56:09] INFO root fetch - processPackages [cfgpie]: New version: [3.0.1] Old Version: [3.0.0]
+[2023-05-26 08:56:09] INFO root fetch - processPackages [zenml]: New version: [0.9.0] Old Version: [0.8.1rc0]
+[2023-05-26 08:56:09] INFO root fetch - processPackages [cognite-sdk]: New version: [6.2.1] Old Version: [6.2.0]
+[2023-05-26 08:56:09] INFO root fetch - processPackages [shlep]: Downloading https://files.pythonhosted.org/packages/d4/88/da63bb4c2e303a2a2e8d902226295b7e7bdae51f48221375f3c7bd15495a/shlep-1.2.0.tar.gz
+[2023-05-26 08:56:09] INFO root fetch - processPackages [tagging-module]: Downloading https://files.pythonhosted.org/packages/58/99/6f3909f93a4d4aae5461b7072247a21e0fd553b2b5a37f9aed925cbe6221/tagging_module-0.0.2.tar.gz
+[2023-05-26 08:56:09] INFO root fetch - processPackages [langchain-wenxin]: Downloading https://files.pythonhosted.org/packages/61/f3/20e3005882549f8cde1ed256ef90f6aaaea6691664b49d147aeba4aec19a/langchain_wenxin-0.3.0.tar.gz
+[2023-05-26 08:56:09] INFO root fetch - processPackages [cognite-sdk]: Downloading https://files.pythonhosted.org/packages/82/55/a21491a9b9bc810e88cdab94534725335cfa4aa669874545b5ad586a6167/cognite_sdk-6.2.1.tar.gz
+[2023-05-26 08:56:09] INFO root fetch - processPackages [zenml]: Downloading https://files.pythonhosted.org/packages/a4/ba/9dd131570801a06d93e9cd4378d1f0d8501cf5e70ba8de510e199e4d3cc5/zenml-0.8.1rc0.tar.gz
+[2023-05-26 08:56:09] INFO root fetch - processPackages [cast-vue]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-26 08:56:09] INFO root fetch - processPackages [joltml]: Downloading https://files.pythonhosted.org/packages/07/06/449def226cf4b906fcb768976bd7e480a5a735be6dff5a1db1119fd6c186/joltml-0.1.0.tar.gz
+[2023-05-26 08:56:09] INFO root fetch - processPackages [tagging-module]: executing diffoscope
+[2023-05-26 08:56:09] INFO root fetch - processPackages [tagging-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tagging_module-0.0.1.1-py3-none-any.whl.zip tmp/tagging_module-0.0.2.tar.gz --markdown 20230526/t/tagging-module/0.0.1.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-26 08:56:09] INFO root fetch - processPackages [csv-embeddings-creator]: Downloading https://files.pythonhosted.org/packages/d3/d2/0d460427a64e6d589c04778faf925af45f1df7a7d6fd52b06da702cd85d9/csv-embeddings-creator-1.0.9.tar.gz
+[2023-05-26 08:56:09] INFO root fetch - processPackages [langchain-wenxin]: executing diffoscope
+[2023-05-26 08:56:09] INFO root fetch - processPackages [langchain-wenxin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_wenxin-0.2.0.tar.gz tmp/langchain_wenxin-0.3.0.tar.gz --markdown 20230526/l/langchain-wenxin/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-26 08:56:09] INFO root fetch - processPackages [shlep]: executing diffoscope
+[2023-05-26 08:56:09] INFO root fetch - processPackages [shlep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shlep-1.1.1.tar.gz tmp/shlep-1.2.0.tar.gz --markdown 20230526/s/shlep/1.1.1-1.2.0/diff.md --exclude *.pyd
+[2023-05-26 08:56:09] INFO root fetch - processPackages [cast-vue]: Downloading https://files.pythonhosted.org/packages/01/32/77fde332e30c6becb53e3062ce734a9ef5d30e62b56ab3e82183153d2f7a/cast-vue-0.0.2.tar.gz
+[2023-05-26 08:56:09] INFO root fetch - processPackages [cognite-sdk]: executing diffoscope
+[2023-05-26 08:56:09] INFO root fetch - processPackages [cognite-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cognite_sdk-6.2.0.tar.gz tmp/cognite_sdk-6.2.1.tar.gz --markdown 20230526/c/cognite-sdk/6.2.0-6.2.1/diff.md --exclude *.pyd
+[2023-05-26 08:56:09] INFO root fetch - processPackages [csv-embeddings-creator]: executing diffoscope
+[2023-05-26 08:56:09] INFO root fetch - processPackages [csv-embeddings-creator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csv-embeddings-creator-1.0.8.tar.gz tmp/csv-embeddings-creator-1.0.9.tar.gz --markdown 20230526/c/csv-embeddings-creator/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-26 08:56:09] INFO root fetch - processPackages [joltml]: Downloading https://files.pythonhosted.org/packages/a5/f8/ce7d27f90d13d0425389a355ff64fa085fd158d0dcefb1bda3d018ce9efb/joltml-0.1.1.tar.gz
+[2023-05-26 08:56:10] INFO root fetch - processPackages [joltml]: executing diffoscope
+[2023-05-26 08:56:10] INFO root fetch - processPackages [joltml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joltml-0.1.0.tar.gz tmp/joltml-0.1.1.tar.gz --markdown 20230526/j/joltml/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-26 08:56:10] INFO root fetch - processPackages [cast-vue]: Downloading https://files.pythonhosted.org/packages/9b/b3/620c7c52c1a6785355e604e30e8c8ab435112f70b24e94d8c638b81243b7/cast-vue-0.0.3.tar.gz
+[2023-05-26 08:56:10] INFO root fetch - processPackages [cfgpie]: Downloading https://files.pythonhosted.org/packages/b6/01/b26eef22f64603851de501394db55088df309fe51d61f6c1f7ec5e3de96c/cfgpie-3.0.1.tar.gz
+[2023-05-26 08:56:10] INFO root fetch - processPackages [zenml]: Downloading https://files.pythonhosted.org/packages/2c/42/78e070bea92d65044e034f70260230101d041ea1f99d781d2f29f7c995c5/zenml-0.9.0.tar.gz
+[2023-05-26 08:56:10] INFO root fetch - processPackages [cfgpie]: executing diffoscope
+[2023-05-26 08:56:10] INFO root fetch - processPackages [cfgpie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cfgpie-3.0.0.tar.gz tmp/cfgpie-3.0.1.tar.gz --markdown 20230526/c/cfgpie/3.0.0-3.0.1/diff.md --exclude *.pyd
+[2023-05-26 08:56:10] INFO root fetch - processPackages [cast-vue]: executing diffoscope
+[2023-05-26 08:56:10] INFO root fetch - processPackages [cast-vue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cast-vue-0.0.2.tar.gz tmp/cast-vue-0.0.3.tar.gz --markdown 20230526/c/cast-vue/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-26 08:56:10] INFO root fetch - processPackages [zenml]: executing diffoscope
+[2023-05-26 08:56:10] INFO root fetch - processPackages [zenml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenml-0.8.1rc0.tar.gz tmp/zenml-0.9.0.tar.gz --markdown 20230526/z/zenml/0.8.1rc0-0.9.0/diff.md --exclude *.pyd
+[2023-05-26 08:56:11] INFO root fetch - main [MainThread]: End processing [langchain-wenxin]: success
+[2023-05-26 08:56:11] INFO root fetch - main [MainThread]: End processing [tagging-module]: success
+[2023-05-26 08:56:11] INFO root fetch - main [MainThread]: End processing [shlep]: success
+[2023-05-26 08:56:11] INFO root fetch - main [MainThread]: End processing [csv-embeddings-creator]: success
+[2023-05-26 08:56:11] INFO root fetch - main [MainThread]: End processing [joltml]: success
+[2023-05-26 08:56:12] INFO root fetch - main [MainThread]: End processing [cfgpie]: success
+[2023-05-26 08:56:13] INFO root fetch - main [MainThread]: End processing [cognite-sdk]: success
+[2023-05-26 08:56:13] INFO root fetch - main [MainThread]: End processing [cast-vue]: success
+[2023-05-26 08:56:18] INFO root fetch - main [MainThread]: End processing [zenml]: success
+[2023-05-26 08:56:18] INFO root fetch - main [MainThread]: Store serial: [18258818]
