@@ -10714,3 +10714,37 @@
 [2023-05-26 10:18:30] INFO root fetch - main [MainThread]: End processing [mltlk]: success
 [2023-05-26 10:18:31] INFO root fetch - main [MainThread]: End processing [cherwell-pydantic-api]: success
 [2023-05-26 10:18:31] INFO root fetch - main [MainThread]: Store serial: [18259643]
+[2023-05-26 10:23:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18259643]
+[2023-05-26 10:23:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-26 10:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rfrx
+[2023-05-26 10:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: biobb-flexdyn
+[2023-05-26 10:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: radtract
+[2023-05-26 10:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: simple_openid_connect
+[2023-05-26 10:23:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: innerverz
+[2023-05-26 10:23:40] INFO root fetch - processPackages [biobb-flexdyn]: New version: [4.0.2] Old Version: [4.0.1]
+[2023-05-26 10:23:40] INFO root fetch - processPackages [innerverz]: New version: [0.0.16] Old Version: [0.0.15]
+[2023-05-26 10:23:40] INFO root fetch - processPackages [simple_openid_connect]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-26 10:23:40] INFO root fetch - processPackages [rfrx]: New version: [2.0.0] Old Version: [1.1.0]
+[2023-05-26 10:23:40] INFO root fetch - processPackages [radtract]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-26 10:23:40] INFO root fetch - processPackages [innerverz]: executing diffoscope
+[2023-05-26 10:23:40] INFO root fetch - processPackages [innerverz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/innerverz-0.0.15.tar.gz tmp/innerverz-0.0.16.tar.gz --markdown 20230526/i/innerverz/0.0.15-0.0.16/diff.md --exclude *.pyd
+[2023-05-26 10:23:40] INFO root fetch - processPackages [biobb-flexdyn]: Downloading https://files.pythonhosted.org/packages/ea/02/0faf4addb48ce218c232d174ab2303e1f9ecb90a44d69bd7bf2ee6a57e80/biobb_flexdyn-4.0.1.tar.gz
+[2023-05-26 10:23:40] INFO root fetch - processPackages [radtract]: Downloading https://files.pythonhosted.org/packages/4a/67/64a0be3533702df37bb1633398cb5df2c24307e6f30bbd191a59b4fd6475/radtract-0.1.3.tar.gz
+[2023-05-26 10:23:40] INFO root fetch - processPackages [simple_openid_connect]: Downloading https://files.pythonhosted.org/packages/ca/7d/02351f2163fd7ac910903a0050762be0fbf80eb15f4066e19af84271a6cc/simple_openid_connect-0.2.4.tar.gz
+[2023-05-26 10:23:40] INFO root fetch - processPackages [rfrx]: Downloading https://files.pythonhosted.org/packages/f4/95/076e401a23996dd202f5661820f58e25722300ec6e2d64aa6cc393b0a82b/rfrx-2.0.0.tar.gz
+[2023-05-26 10:23:40] INFO root fetch - processPackages [rfrx]: executing diffoscope
+[2023-05-26 10:23:40] INFO root fetch - processPackages [rfrx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rfrx-1.1.0.tar.gz tmp/rfrx-2.0.0.tar.gz --markdown 20230526/r/rfrx/1.1.0-2.0.0/diff.md --exclude *.pyd
+[2023-05-26 10:23:40] INFO root fetch - processPackages [simple_openid_connect]: executing diffoscope
+[2023-05-26 10:23:40] INFO root fetch - processPackages [simple_openid_connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_openid_connect-0.2.3.tar.gz tmp/simple_openid_connect-0.2.4.tar.gz --markdown 20230526/s/simple_openid_connect/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-26 10:23:40] INFO root fetch - processPackages [radtract]: Downloading https://files.pythonhosted.org/packages/20/f3/e51991ccb22a930e6940962616db50656e367ca2a94f15742b71673d87bd/radtract-0.1.4.tar.gz
+[2023-05-26 10:23:40] INFO root fetch - processPackages [biobb-flexdyn]: Downloading https://files.pythonhosted.org/packages/06/d1/39d265336d4c24f3fc517190a4eb30961afafd62fa97fcb3dd13ff1bbe15/biobb_flexdyn-4.0.2.tar.gz
+[2023-05-26 10:23:41] INFO root fetch - processPackages [biobb-flexdyn]: executing diffoscope
+[2023-05-26 10:23:41] INFO root fetch - processPackages [biobb-flexdyn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biobb_flexdyn-4.0.1.tar.gz tmp/biobb_flexdyn-4.0.2.tar.gz --markdown 20230526/b/biobb-flexdyn/4.0.1-4.0.2/diff.md --exclude *.pyd
+[2023-05-26 10:23:41] INFO root fetch - processPackages [radtract]: executing diffoscope
+[2023-05-26 10:23:41] INFO root fetch - processPackages [radtract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/radtract-0.1.3.tar.gz tmp/radtract-0.1.4.tar.gz --markdown 20230526/r/radtract/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-26 10:23:42] INFO root fetch - main [MainThread]: End processing [rfrx]: success
+[2023-05-26 10:23:42] INFO root fetch - main [MainThread]: End processing [innerverz]: success
+[2023-05-26 10:23:42] INFO root fetch - main [MainThread]: End processing [radtract]: success
+[2023-05-26 10:23:42] INFO root fetch - main [MainThread]: End processing [simple_openid_connect]: success
+[2023-05-26 10:23:42] INFO root fetch - main [MainThread]: End processing [biobb-flexdyn]: success
+[2023-05-26 10:23:42] INFO root fetch - main [MainThread]: Store serial: [18259656]
