@@ -11813,3 +11813,92 @@
 [2023-05-26 11:18:26] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
 [2023-05-26 11:18:26] INFO root fetch - main [MainThread]: End processing [nxsrecselector]: success
 [2023-05-26 11:18:26] INFO root fetch - main [MainThread]: Store serial: [18260364]
+[2023-05-26 11:23:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18260364]
+[2023-05-26 11:23:35] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-26 11:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: configzen
+[2023-05-26 11:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bosch-alarm-mode2
+[2023-05-26 11:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: click-migrator
+[2023-05-26 11:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lusid-sdk
+[2023-05-26 11:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nacos-client-py
+[2023-05-26 11:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spanishconjugator
+[2023-05-26 11:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lusid-sdk-preview
+[2023-05-26 11:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: spanishconjugator
+[2023-05-26 11:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pycontent-type
+[2023-05-26 11:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: my_second_upload_project
+[2023-05-26 11:23:35] WARNING root fetch - processPackages [click-migrator]: Skipping, unable to determine old version
+[2023-05-26 11:23:35] INFO root fetch - processPackages [click-migrator]: Start processing: tbp-nightly
+[2023-05-26 11:23:35] INFO root fetch - main [MainThread]: End processing [click-migrator] error
+[2023-05-26 11:23:35] INFO root fetch - processPackages [configzen]: New version: [0.1.38] Old Version: [0.1.37]
+[2023-05-26 11:23:35] INFO root fetch - processPackages [bosch-alarm-mode2]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-26 11:23:35] WARNING root fetch - processPackages [my_second_upload_project]: Skipping, unable to determine old version
+[2023-05-26 11:23:35] INFO root fetch - processPackages [my_second_upload_project]: Start processing: alembic-postgresql-enum
+[2023-05-26 11:23:35] INFO root fetch - main [MainThread]: End processing [my_second_upload_project] error
+[2023-05-26 11:23:35] INFO root fetch - processPackages [nacos-client-py]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 11:23:35] INFO root fetch - processPackages [pycontent-type]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-26 11:23:36] INFO root fetch - processPackages [tbp-nightly]: New version: [2.9.0a20221130] Old Version: [2.9.0a20221129]
+[2023-05-26 11:23:36] INFO root fetch - processPackages [lusid-sdk]: New version: [1.0.98] Old Version: [1.0.91]
+[2023-05-26 11:23:36] WARNING root fetch - processPackages [alembic-postgresql-enum]: Skipping, unable to determine old version
+[2023-05-26 11:23:36] INFO root fetch - processPackages [alembic-postgresql-enum]: Start processing: dinohub-seedwork-be
+[2023-05-26 11:23:36] INFO root fetch - main [MainThread]: End processing [alembic-postgresql-enum] error
+[2023-05-26 11:23:36] INFO root fetch - processPackages [bosch-alarm-mode2]: executing diffoscope
+[2023-05-26 11:23:36] INFO root fetch - processPackages [bosch-alarm-mode2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bosch_alarm_mode2-0.3.8.tar.gz tmp/bosch_alarm_mode2-0.3.9.tar.gz --markdown 20230526/b/bosch-alarm-mode2/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-26 11:23:36] INFO root fetch - processPackages [dinohub-seedwork-be]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 11:23:36] INFO root fetch - processPackages [tbp-nightly]: executing diffoscope
+[2023-05-26 11:23:36] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20230526/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/diff.md --exclude *.pyd
+[2023-05-26 11:23:36] INFO root fetch - processPackages [lusid-sdk-preview]: New version: [1.0.98] Old Version: [1.0.91]
+[2023-05-26 11:23:36] INFO root fetch - processPackages [pycontent-type]: Downloading https://files.pythonhosted.org/packages/1c/91/6c84aca65c933654c9e9cf22d6d88e023c5825286575271667db659dac6d/pycontent_type-1.0.0.tar.gz
+[2023-05-26 11:23:36] INFO root fetch - processPackages [nacos-client-py]: Downloading https://files.pythonhosted.org/packages/c2/84/d99603f2a7ae0b7e1cec14b0ca03860abb6769cbd00921481d6938a39465/nacos-client-py-0.0.8.tar.gz
+[2023-05-26 11:23:36] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-26 11:23:36] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-26 11:23:36] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/61/cb/73e8d2a4efd508856af3a1186b636967a6d69c10c5b388a11de4f00c7481/configzen-0.1.38.tar.gz
+[2023-05-26 11:23:36] INFO root fetch - processPackages [dinohub-seedwork-be]: executing diffoscope
+[2023-05-26 11:23:36] INFO root fetch - processPackages [dinohub-seedwork-be]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dinohub_seedwork_be-0.1.8.tar.gz tmp/dinohub_seedwork_be-0.1.9.tar.gz --markdown 20230526/d/dinohub-seedwork-be/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 11:23:36] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-26 11:23:36] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-26 11:23:36] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230526/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-26 11:23:36] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230526/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-26 11:23:36] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-26 11:23:36] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.37.tar.gz tmp/configzen-0.1.38.tar.gz --markdown 20230526/c/configzen/0.1.37-0.1.38/diff.md --exclude *.pyd
+[2023-05-26 11:23:36] INFO root fetch - processPackages [lusid-sdk]: executing diffoscope
+[2023-05-26 11:23:36] INFO root fetch - processPackages [lusid-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-sdk-1.0.91.tar.gz tmp/lusid-sdk-1.0.98.tar.gz --markdown 20230526/l/lusid-sdk/1.0.91-1.0.98/diff.md --exclude *.pyd
+[2023-05-26 11:23:36] INFO root fetch - processPackages [pycontent-type]: Downloading https://files.pythonhosted.org/packages/d1/89/d3857db81a2177564f6817182ce8fd1231b407b9b9511547251073ef941b/pycontent_type-1.1.0.tar.gz
+[2023-05-26 11:23:36] INFO root fetch - processPackages [lusid-sdk-preview]: executing diffoscope
+[2023-05-26 11:23:36] INFO root fetch - processPackages [lusid-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-sdk-preview-1.0.91.tar.gz tmp/lusid-sdk-preview-1.0.98.tar.gz --markdown 20230526/l/lusid-sdk-preview/1.0.91-1.0.98/diff.md --exclude *.pyd
+[2023-05-26 11:23:36] INFO root fetch - processPackages [nacos-client-py]: Downloading https://files.pythonhosted.org/packages/07/70/325daef7d1f987eef87c8a15e19b40c178b45098e258a97ebd2e23280562/nacos-client-py-0.0.9.tar.gz
+[2023-05-26 11:23:36] INFO root fetch - processPackages [nacos-client-py]: executing diffoscope
+[2023-05-26 11:23:36] INFO root fetch - processPackages [nacos-client-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nacos-client-py-0.0.8.tar.gz tmp/nacos-client-py-0.0.9.tar.gz --markdown 20230526/n/nacos-client-py/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 11:23:36] INFO root fetch - processPackages [pycontent-type]: executing diffoscope
+[2023-05-26 11:23:36] INFO root fetch - processPackages [pycontent-type]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycontent_type-1.0.0.tar.gz tmp/pycontent_type-1.1.0.tar.gz --markdown 20230526/p/pycontent-type/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-26 11:23:37] INFO root fetch - processPackages [bosch-alarm-mode2]: Start processing: wait-for-docker
+[2023-05-26 11:23:37] INFO root fetch - main [MainThread]: End processing [bosch-alarm-mode2]: success
+[2023-05-26 11:23:37] INFO root fetch - processPackages [wait-for-docker]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-26 11:23:37] INFO root fetch - processPackages [wait-for-docker]: Downloading https://files.pythonhosted.org/packages/41/ad/d80fda98effb01f7ec3ec5b63283ced189f3c8363d8c3f8f32fb1b949ac3/wait-for-docker-0.2.1.tar.gz
+[2023-05-26 11:23:38] INFO root fetch - processPackages [wait-for-docker]: Downloading https://files.pythonhosted.org/packages/c8/fc/0a6de3535ac90d864b9fa55f10f785a6b886660953344f99e1dec55c2884/wait_for_docker-0.2.2.tar.gz
+[2023-05-26 11:23:38] INFO root fetch - processPackages [wait-for-docker]: executing diffoscope
+[2023-05-26 11:23:38] INFO root fetch - processPackages [wait-for-docker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wait-for-docker-0.2.1.tar.gz tmp/wait_for_docker-0.2.2.tar.gz --markdown 20230526/w/wait-for-docker/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-26 11:23:38] INFO root fetch - processPackages [spanishconjugator]: Start processing: vbarongdatools001
+[2023-05-26 11:23:38] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-26 11:23:38] WARNING root fetch - processPackages [vbarongdatools001]: Skipping, unable to determine old version
+[2023-05-26 11:23:38] INFO root fetch - processPackages [vbarongdatools001]: Start processing: cdktf
+[2023-05-26 11:23:38] INFO root fetch - main [MainThread]: End processing [vbarongdatools001] error
+[2023-05-26 11:23:38] INFO root fetch - processPackages [cdktf]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-26 11:23:38] INFO root fetch - processPackages [cdktf]: executing diffoscope
+[2023-05-26 11:23:38] INFO root fetch - processPackages [cdktf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-0.9.3.tar.gz tmp/cdktf-0.9.4.tar.gz --markdown 20230526/c/cdktf/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-26 11:23:38] INFO root fetch - processPackages [dinohub-seedwork-be]: Start processing: pyemerald
+[2023-05-26 11:23:38] INFO root fetch - main [MainThread]: End processing [dinohub-seedwork-be]: success
+[2023-05-26 11:23:38] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-26 11:23:39] INFO root fetch - processPackages [pyemerald]: New version: [0.4.0] Old Version: [0.3.2]
+[2023-05-26 11:23:39] INFO root fetch - processPackages [pyemerald]: Downloading https://files.pythonhosted.org/packages/4d/2e/0f6b91e95f5cd96af1d224d5a51a9965c3d833405e9067531dc70d2905ff/pyemerald-0.3.2.tar.gz
+[2023-05-26 11:23:39] INFO root fetch - processPackages [pyemerald]: Downloading https://files.pythonhosted.org/packages/31/df/a35f5d3d0c7e261f80c0dab0ce48d0a4e46d7e747ead00ba774011032dba/pyemerald-0.4.0.tar.gz
+[2023-05-26 11:23:39] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-26 11:23:39] INFO root fetch - main [MainThread]: End processing [nacos-client-py]: success
+[2023-05-26 11:23:39] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
+[2023-05-26 11:23:39] INFO root fetch - processPackages [pyemerald]: executing diffoscope
+[2023-05-26 11:23:39] INFO root fetch - processPackages [pyemerald]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyemerald-0.3.2.tar.gz tmp/pyemerald-0.4.0.tar.gz --markdown 20230526/p/pyemerald/0.3.2-0.4.0/diff.md --exclude *.pyd
+[2023-05-26 11:23:40] INFO root fetch - main [MainThread]: End processing [pycontent-type]: success
+[2023-05-26 11:23:40] INFO root fetch - main [MainThread]: End processing [wait-for-docker]: success
+[2023-05-26 11:23:41] INFO root fetch - main [MainThread]: End processing [cdktf]: success
+[2023-05-26 11:23:41] INFO root fetch - main [MainThread]: End processing [pyemerald]: success
+[2023-05-26 11:23:56] INFO root fetch - main [MainThread]: End processing [lusid-sdk]: success
+[2023-05-26 11:24:12] INFO root fetch - main [MainThread]: End processing [lusid-sdk-preview]: success
+[2023-05-26 11:24:12] INFO root fetch - main [MainThread]: Store serial: [18260427]
