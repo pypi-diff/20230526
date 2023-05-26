@@ -11119,3 +11119,66 @@
 [2023-05-26 10:39:40] INFO root fetch - main [MainThread]: End processing [ert]: success
 [2023-05-26 10:39:44] INFO root fetch - main [MainThread]: End processing [mmagic]: success
 [2023-05-26 10:39:44] INFO root fetch - main [MainThread]: Store serial: [18259862]
+[2023-05-26 10:44:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18259862]
+[2023-05-26 10:44:54] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-26 10:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tff-nightly
+[2023-05-26 10:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: troncos
+[2023-05-26 10:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: invenio-communities
+[2023-05-26 10:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: edu-segmentation
+[2023-05-26 10:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pydozer-log
+[2023-05-26 10:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cini
+[2023-05-26 10:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: th2-data-services
+[2023-05-26 10:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tfp-nightly
+[2023-05-26 10:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: peakventures
+[2023-05-26 10:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyriksprot
+[2023-05-26 10:44:54] INFO root fetch - processPackages [cini]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-26 10:44:54] INFO root fetch - processPackages [edu-segmentation]: New version: [0.0.74] Old Version: [0.0.73]
+[2023-05-26 10:44:54] INFO root fetch - processPackages [troncos]: New version: [4.0.0b5] Old Version: [4.0.0b4]
+[2023-05-26 10:44:54] INFO root fetch - processPackages [invenio-communities]: New version: [6.6.0] Old Version: [6.5.0]
+[2023-05-26 10:44:54] INFO root fetch - processPackages [pydozer-log]: New version: [0.1.23] Old Version: [0.1.22]
+[2023-05-26 10:44:54] INFO root fetch - processPackages [th2-data-services]: New version: [2.0.0.dev5088926286] Old Version: [2.0.0.dev5077390732]
+[2023-05-26 10:44:54] INFO root fetch - processPackages [tff-nightly]: New version: [0.0.1.dev20230525] Old Version: [0.0.1.dev20230524]
+[2023-05-26 10:44:54] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2023-05-26 10:44:55] WARNING root fetch - processPackages [peakventures]: Skipping, unable to determine old version
+[2023-05-26 10:44:55] INFO root fetch - main [MainThread]: End processing [peakventures] error
+[2023-05-26 10:44:55] INFO root fetch - processPackages [tff-nightly]: executing diffoscope
+[2023-05-26 10:44:55] INFO root fetch - processPackages [tff-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tff_nightly-0.0.1.dev20230524-py2.py3-none-any.whl.zip tmp/tff_nightly-0.0.1.dev20230525-py2.py3-none-any.whl.zip --markdown 20230526/t/tff-nightly/0.0.1.dev20230524-0.0.1.dev20230525/diff.md --exclude *.pyd
+[2023-05-26 10:44:55] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2023-05-26 10:44:55] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20230526/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/diff.md --exclude *.pyd
+[2023-05-26 10:44:55] INFO root fetch - processPackages [pyriksprot]: New version: [2023.4.5] Old Version: [2023.4.4]
+[2023-05-26 10:44:55] INFO root fetch - processPackages [cini]: Downloading https://files.pythonhosted.org/packages/bd/ac/ae2834640b3fb72a7f3bb37e12498abc3dae6ce0c9e051b942a747fabd81/cini-0.4.0.tar.gz
+[2023-05-26 10:44:55] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/b8/92/c7838b9724c2b499cc3b55d5c0c5a642e27a8e6aa17d252c6bf51785b6eb/edu_segmentation-0.0.74.tar.gz
+[2023-05-26 10:44:55] INFO root fetch - processPackages [invenio-communities]: Downloading https://files.pythonhosted.org/packages/27/fb/148805367e2430af9cec95e2fd9143f5a831295cbf744357db43e99d4661/invenio-communities-6.5.0.tar.gz
+[2023-05-26 10:44:55] INFO root fetch - processPackages [th2-data-services]: Downloading https://files.pythonhosted.org/packages/3f/7f/830a8717de0aa8ed41127adc2d5ac5db708c1aaa4b8c4292d3bdca4c390e/th2_data_services-2.0.0.dev5077390732.tar.gz
+[2023-05-26 10:44:55] INFO root fetch - processPackages [troncos]: Downloading https://files.pythonhosted.org/packages/99/6e/0af1b171aa4ad2d21eb01d0ba4fbe1d22afa487e3cfda4ac5d74f8ce9aae/troncos-4.0.0b4.tar.gz
+[2023-05-26 10:44:55] INFO root fetch - processPackages [pyriksprot]: Downloading https://files.pythonhosted.org/packages/6f/7e/fdbae0bd8bf8194a1d57fc80773afc3be14d960b597ec8e4afe8dc2a1de1/pyriksprot-2023.4.4.tar.gz
+[2023-05-26 10:44:55] INFO root fetch - processPackages [edu-segmentation]: executing diffoscope
+[2023-05-26 10:44:55] INFO root fetch - processPackages [edu-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edu_segmentation-0.0.73.tar.gz tmp/edu_segmentation-0.0.74.tar.gz --markdown 20230526/e/edu-segmentation/0.0.73-0.0.74/diff.md --exclude *.pyd
+[2023-05-26 10:44:55] INFO root fetch - processPackages [invenio-communities]: Downloading https://files.pythonhosted.org/packages/0a/cd/29081584f733b733a663faef1e4d812b48e0e92d59f3593fd2becd66b89a/invenio-communities-6.6.0.tar.gz
+[2023-05-26 10:44:55] INFO root fetch - processPackages [pydozer-log]: Downloading https://files.pythonhosted.org/packages/eb/3c/bc8ac15cfbadab8fb38bd98037be689a5f85823ee02c4dabe7af9d2740a8/pydozer_log-0.1.23-pp39-pypy39_pp73-manylinux_2_34_s390x.whl
+[2023-05-26 10:44:55] INFO root fetch - processPackages [cini]: Downloading https://files.pythonhosted.org/packages/4e/b4/565d2c6c2a553b5e67bc3fda245ecccc257b3ff1344e2f03fc576d3de21d/cini-0.5.0.tar.gz
+[2023-05-26 10:44:55] INFO root fetch - processPackages [cini]: executing diffoscope
+[2023-05-26 10:44:55] INFO root fetch - processPackages [cini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cini-0.4.0.tar.gz tmp/cini-0.5.0.tar.gz --markdown 20230526/c/cini/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-26 10:44:55] INFO root fetch - processPackages [th2-data-services]: Downloading https://files.pythonhosted.org/packages/68/69/9d0f5d8d166703b7987b5992e40475c0bd90f838a533c9847be9b6e4f118/th2_data_services-2.0.0.dev5088926286.tar.gz
+[2023-05-26 10:44:55] INFO root fetch - processPackages [troncos]: Downloading https://files.pythonhosted.org/packages/8e/0f/3258f2ad8becdfbb361832804e17b0a15e1c1455258c035d001cf468fdc5/troncos-4.0.0b5.tar.gz
+[2023-05-26 10:44:55] INFO root fetch - processPackages [th2-data-services]: executing diffoscope
+[2023-05-26 10:44:55] INFO root fetch - processPackages [th2-data-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/th2_data_services-2.0.0.dev5077390732.tar.gz tmp/th2_data_services-2.0.0.dev5088926286.tar.gz --markdown 20230526/t/th2-data-services/2.0.0.dev5077390732-2.0.0.dev5088926286/diff.md --exclude *.pyd
+[2023-05-26 10:44:55] INFO root fetch - processPackages [invenio-communities]: executing diffoscope
+[2023-05-26 10:44:55] INFO root fetch - processPackages [invenio-communities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invenio-communities-6.5.0.tar.gz tmp/invenio-communities-6.6.0.tar.gz --markdown 20230526/i/invenio-communities/6.5.0-6.6.0/diff.md --exclude *.pyd
+[2023-05-26 10:44:55] INFO root fetch - processPackages [troncos]: executing diffoscope
+[2023-05-26 10:44:55] INFO root fetch - processPackages [troncos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/troncos-4.0.0b4.tar.gz tmp/troncos-4.0.0b5.tar.gz --markdown 20230526/t/troncos/4.0.0b4-4.0.0b5/diff.md --exclude *.pyd
+[2023-05-26 10:44:55] INFO root fetch - processPackages [pyriksprot]: Downloading https://files.pythonhosted.org/packages/fb/2d/33820b080bd2ee12e9a18d5a3ab57fcaa4bbca5e3e5a7fd0e3d69a073efb/pyriksprot-2023.4.5.tar.gz
+[2023-05-26 10:44:55] INFO root fetch - processPackages [pydozer-log]: executing diffoscope
+[2023-05-26 10:44:55] INFO root fetch - processPackages [pydozer-log]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydozer_log-0.1.22-pp39-pypy39_pp73-manylinux_2_34_s390x.whl.zip tmp/pydozer_log-0.1.23-pp39-pypy39_pp73-manylinux_2_34_s390x.whl.zip --markdown 20230526/p/pydozer-log/0.1.22-0.1.23/diff.md --exclude *.pyd
+[2023-05-26 10:44:55] INFO root fetch - processPackages [pyriksprot]: executing diffoscope
+[2023-05-26 10:44:55] INFO root fetch - processPackages [pyriksprot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyriksprot-2023.4.4.tar.gz tmp/pyriksprot-2023.4.5.tar.gz --markdown 20230526/p/pyriksprot/2023.4.4-2023.4.5/diff.md --exclude *.pyd
+[2023-05-26 10:44:57] INFO root fetch - main [MainThread]: End processing [cini]: success
+[2023-05-26 10:44:57] INFO root fetch - main [MainThread]: End processing [th2-data-services]: success
+[2023-05-26 10:44:57] INFO root fetch - main [MainThread]: End processing [troncos]: success
+[2023-05-26 10:44:58] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
+[2023-05-26 10:44:58] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
+[2023-05-26 10:45:00] INFO root fetch - main [MainThread]: End processing [pyriksprot]: success
+[2023-05-26 10:45:03] INFO root fetch - main [MainThread]: End processing [invenio-communities]: success
+[2023-05-26 10:45:07] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2023-05-26 10:45:21] INFO root fetch - main [MainThread]: End processing [pydozer-log]: success
+[2023-05-26 10:45:21] INFO root fetch - main [MainThread]: Store serial: [18259937]
