@@ -8672,3 +8672,43 @@
 [2023-05-26 07:57:11] INFO root fetch - main [MainThread]: End processing [splight-cli]: success
 [2023-05-26 07:57:11] INFO root fetch - main [MainThread]: End processing [alibabacloud-ros-tran]: success
 [2023-05-26 07:57:11] INFO root fetch - main [MainThread]: Store serial: [18258383]
+[2023-05-26 08:02:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18258383]
+[2023-05-26 08:02:20] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-26 08:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: savant-rs
+[2023-05-26 08:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vss-tools
+[2023-05-26 08:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: structout
+[2023-05-26 08:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: markdown-toc-segments
+[2023-05-26 08:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: coconut-develop
+[2023-05-26 08:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PHX
+[2023-05-26 08:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: binance-futures-connector
+[2023-05-26 08:02:20] WARNING root fetch - processPackages [markdown-toc-segments]: Skipping, unable to determine old version
+[2023-05-26 08:02:20] INFO root fetch - main [MainThread]: End processing [markdown-toc-segments] error
+[2023-05-26 08:02:20] INFO root fetch - processPackages [savant-rs]: New version: [0.1.9] Old Version: [0.1.7]
+[2023-05-26 08:02:20] INFO root fetch - processPackages [structout]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 08:02:20] INFO root fetch - processPackages [vss-tools]: New version: [4.1.dev5] Old Version: [4.0rc2]
+[2023-05-26 08:02:20] INFO root fetch - processPackages [PHX]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-05-26 08:02:20] INFO root fetch - processPackages [coconut-develop]: New version: [3.0.1.post0.dev7] Old Version: [3.0.1.post0.dev6]
+[2023-05-26 08:02:20] INFO root fetch - processPackages [binance-futures-connector]: New version: [4.0.0rc2] Old Version: [4.0.0rc1]
+[2023-05-26 08:02:20] INFO root fetch - processPackages [structout]: Downloading https://files.pythonhosted.org/packages/a0/e9/df403c4db56790afea644b9804d91cfb7179f8b1ebc645cbd408335a4917/structout-0.1.8.tar.gz
+[2023-05-26 08:02:20] INFO root fetch - processPackages [coconut-develop]: Downloading https://files.pythonhosted.org/packages/61/04/4f7162a1fa9b605a0d07a3919a58eb9e79ffcdb5e4abac53ce96c5c63aa9/coconut-develop-3.0.1.post0.dev7.tar.gz
+[2023-05-26 08:02:20] INFO root fetch - processPackages [savant-rs]: executing diffoscope
+[2023-05-26 08:02:20] INFO root fetch - processPackages [savant-rs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/savant_rs-0.1.7.tar.gz tmp/savant_rs-0.1.9.tar.gz --markdown 20230526/s/savant-rs/0.1.7-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 08:02:20] INFO root fetch - processPackages [PHX]: executing diffoscope
+[2023-05-26 08:02:20] INFO root fetch - processPackages [PHX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PHX-1.8.1.tar.gz tmp/PHX-1.9.0.tar.gz --markdown 20230526/P/PHX/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-05-26 08:02:21] INFO root fetch - processPackages [coconut-develop]: executing diffoscope
+[2023-05-26 08:02:21] INFO root fetch - processPackages [coconut-develop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coconut-develop-3.0.1.post0.dev6.tar.gz tmp/coconut-develop-3.0.1.post0.dev7.tar.gz --markdown 20230526/c/coconut-develop/3.0.1.post0.dev6-3.0.1.post0.dev7/diff.md --exclude *.pyd
+[2023-05-26 08:02:21] INFO root fetch - processPackages [vss-tools]: executing diffoscope
+[2023-05-26 08:02:21] INFO root fetch - processPackages [vss-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vss-tools-4.0rc2.tar.gz tmp/vss-tools-4.1.dev5.tar.gz --markdown 20230526/v/vss-tools/4.0rc2-4.1.dev5/diff.md --exclude *.pyd
+[2023-05-26 08:02:21] INFO root fetch - processPackages [binance-futures-connector]: Downloading https://files.pythonhosted.org/packages/58/d4/4b300afc620d9a7de97cdaac8cfc0665706b4c7de6a247b5e30348c84ade/binance-futures-connector-4.0.0rc2.tar.gz
+[2023-05-26 08:02:21] INFO root fetch - processPackages [binance-futures-connector]: executing diffoscope
+[2023-05-26 08:02:21] INFO root fetch - processPackages [binance-futures-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binance-futures-connector-4.0.0rc1.tar.gz tmp/binance-futures-connector-4.0.0rc2.tar.gz --markdown 20230526/b/binance-futures-connector/4.0.0rc1-4.0.0rc2/diff.md --exclude *.pyd
+[2023-05-26 08:02:21] INFO root fetch - processPackages [structout]: Downloading https://files.pythonhosted.org/packages/c2/20/061eeddc415dd766ab965643666cf8bd0b491ec7843e3b9649b6bd41532a/structout-0.1.9.tar.gz
+[2023-05-26 08:02:21] INFO root fetch - processPackages [structout]: executing diffoscope
+[2023-05-26 08:02:21] INFO root fetch - processPackages [structout]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/structout-0.1.8.tar.gz tmp/structout-0.1.9.tar.gz --markdown 20230526/s/structout/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 08:02:22] INFO root fetch - main [MainThread]: End processing [vss-tools]: success
+[2023-05-26 08:02:23] INFO root fetch - main [MainThread]: End processing [structout]: success
+[2023-05-26 08:02:23] INFO root fetch - main [MainThread]: End processing [binance-futures-connector]: success
+[2023-05-26 08:02:23] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
+[2023-05-26 08:02:23] INFO root fetch - main [MainThread]: End processing [savant-rs]: success
+[2023-05-26 08:02:23] INFO root fetch - main [MainThread]: End processing [PHX]: success
+[2023-05-26 08:02:23] INFO root fetch - main [MainThread]: Store serial: [18258418]
