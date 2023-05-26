@@ -13916,3 +13916,74 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 13:19:35] INFO root fetch - main [MainThread]: End processing [geotribu]: success
 [2023-05-26 13:19:47] INFO root fetch - main [MainThread]: End processing [earthkit-data]: success
 [2023-05-26 13:19:47] INFO root fetch - main [MainThread]: Store serial: [18261838]
+[2023-05-26 13:24:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18261838]
+[2023-05-26 13:24:56] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-26 13:24:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: johnsnowlabs-for-databricks-tmp
+[2023-05-26 13:24:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: snoopy-bv
+[2023-05-26 13:24:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: opencanary-fork
+[2023-05-26 13:24:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: linkedinpdfextractor
+[2023-05-26 13:24:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: qontract-development-cli
+[2023-05-26 13:24:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gimodules
+[2023-05-26 13:24:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ds20kdb-avt
+[2023-05-26 13:24:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cf-deploy
+[2023-05-26 13:24:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tb-nightly
+[2023-05-26 13:24:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tensordict-nightly
+[2023-05-26 13:24:56] WARNING root fetch - processPackages [ds20kdb-avt]: Skipping, unable to determine old version
+[2023-05-26 13:24:56] INFO root fetch - processPackages [ds20kdb-avt]: Start processing: torchtnt-nightly
+[2023-05-26 13:24:56] INFO root fetch - main [MainThread]: End processing [ds20kdb-avt] error
+[2023-05-26 13:24:56] INFO root fetch - processPackages [gimodules]: New version: [0.0.99] Old Version: [0.0.97]
+[2023-05-26 13:24:56] INFO root fetch - processPackages [cf-deploy]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 13:24:56] INFO root fetch - processPackages [snoopy-bv]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-26 13:24:56] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: New version: [4.4.9] Old Version: [4.4.8]
+[2023-05-26 13:24:56] INFO root fetch - processPackages [linkedinpdfextractor]: New version: [1.2.8] Old Version: [1.2.7]
+[2023-05-26 13:24:56] INFO root fetch - processPackages [qontract-development-cli]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-26 13:24:56] WARNING root fetch - processPackages [opencanary-fork]: Skipping, unable to determine old version
+[2023-05-26 13:24:56] INFO root fetch - processPackages [opencanary-fork]: Start processing: crawler-commons
+[2023-05-26 13:24:56] INFO root fetch - main [MainThread]: End processing [opencanary-fork] error
+[2023-05-26 13:24:56] INFO root fetch - processPackages [tensordict-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-26 13:24:56] INFO root fetch - processPackages [crawler-commons]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 13:24:56] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2023-05-26 13:24:56] INFO root fetch - processPackages [cf-deploy]: executing diffoscope
+[2023-05-26 13:24:56] INFO root fetch - processPackages [cf-deploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cf_deploy-0.1.8.tar.gz tmp/cf_deploy-0.1.9.tar.gz --markdown 20230526/c/cf-deploy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 13:24:56] INFO root fetch - processPackages [torchtnt-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-26 13:24:56] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: executing diffoscope
+[2023-05-26 13:24:56] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/johnsnowlabs_for_databricks_tmp-4.4.8.tar.gz tmp/johnsnowlabs_for_databricks_tmp-4.4.9.tar.gz --markdown 20230526/j/johnsnowlabs-for-databricks-tmp/4.4.8-4.4.9/diff.md --exclude *.pyd
+[2023-05-26 13:24:56] INFO root fetch - processPackages [tensordict-nightly]: executing diffoscope
+[2023-05-26 13:24:56] INFO root fetch - processPackages [tensordict-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensordict_nightly-2023.5.8-py39-none-any.whl.zip tmp/tensordict_nightly-2023.5.9-py39-none-any.whl.zip --markdown 20230526/t/tensordict-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-26 13:24:56] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2023-05-26 13:24:56] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20230526/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/diff.md --exclude *.pyd
+[2023-05-26 13:24:56] INFO root fetch - processPackages [crawler-commons]: executing diffoscope
+[2023-05-26 13:24:56] INFO root fetch - processPackages [crawler-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crawler_commons-0.0.8.tar.gz tmp/crawler_commons-0.0.9.tar.gz --markdown 20230526/c/crawler-commons/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 13:24:56] INFO root fetch - processPackages [snoopy-bv]: Downloading https://files.pythonhosted.org/packages/94/a0/887cd7e8803264567c5826e23a432134661f9331199bd07f29b2c0852a73/snoopy_bv-2.0.1-cp39-cp39-win_amd64.whl
+[2023-05-26 13:24:56] INFO root fetch - processPackages [gimodules]: Downloading https://files.pythonhosted.org/packages/ed/35/0761d3e04fa1ebef31fb5c055b02b195139aa161276eddc1d94673406480/gimodules-0.0.97.tar.gz
+[2023-05-26 13:24:56] INFO root fetch - processPackages [linkedinpdfextractor]: Downloading https://files.pythonhosted.org/packages/aa/eb/560a510aa2f1d44cb1d284931ed4d778cd4763321e131c2317780ab0f599/linkedinpdfextractor-1.2.8.tar.gz
+[2023-05-26 13:24:56] INFO root fetch - processPackages [torchtnt-nightly]: executing diffoscope
+[2023-05-26 13:24:56] INFO root fetch - processPackages [torchtnt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchtnt-nightly-2023.5.8.tar.gz tmp/torchtnt-nightly-2023.5.9.tar.gz --markdown 20230526/t/torchtnt-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-26 13:24:56] INFO root fetch - processPackages [qontract-development-cli]: Downloading https://files.pythonhosted.org/packages/4d/84/65a1f000e3fb4ab56a106e097a02fab33e39918f43d537bd2fdd3a4085e1/qontract_development_cli-0.8.1.tar.gz
+[2023-05-26 13:24:56] INFO root fetch - processPackages [linkedinpdfextractor]: executing diffoscope
+[2023-05-26 13:24:56] INFO root fetch - processPackages [linkedinpdfextractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linkedinpdfextractor-1.2.7.tar.gz tmp/linkedinpdfextractor-1.2.8.tar.gz --markdown 20230526/l/linkedinpdfextractor/1.2.7-1.2.8/diff.md --exclude *.pyd
+[2023-05-26 13:24:57] INFO root fetch - processPackages [gimodules]: Downloading https://files.pythonhosted.org/packages/7b/ab/694c8b08e28d70232478b3c8cc613034b454e2acab750fd92cc36a396963/gimodules-0.0.99.tar.gz
+[2023-05-26 13:24:57] INFO root fetch - processPackages [gimodules]: executing diffoscope
+[2023-05-26 13:24:57] INFO root fetch - processPackages [gimodules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gimodules-0.0.97.tar.gz tmp/gimodules-0.0.99.tar.gz --markdown 20230526/g/gimodules/0.0.97-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 13:24:57] INFO root fetch - processPackages [qontract-development-cli]: Downloading https://files.pythonhosted.org/packages/7a/59/8f3e14541da4cbaada05a9b68948b677057a6d05e31d5d48cf737ffc94b9/qontract_development_cli-0.9.0.tar.gz
+[2023-05-26 13:24:57] INFO root fetch - processPackages [qontract-development-cli]: executing diffoscope
+[2023-05-26 13:24:57] INFO root fetch - processPackages [qontract-development-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_development_cli-0.8.1.tar.gz tmp/qontract_development_cli-0.9.0.tar.gz --markdown 20230526/q/qontract-development-cli/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-26 13:24:57] INFO root fetch - processPackages [snoopy-bv]: Downloading https://files.pythonhosted.org/packages/5c/67/bf004fa4548a0a8a2544b0874f79260811b3eda832b92ff748bd2638038d/snoopy_bv-2.0.2-cp311-cp311-win_amd64.whl
+[2023-05-26 13:24:57] ERROR root fetch - processPackages [linkedinpdfextractor]: Diffoscope failed: Error: error creating container storage: the container name "epic_zhukovsky" is already in use by "77fcf6ab0faa5149bd8b3ce1ba0a4d0f7709819724deeb3033707a8a13e6b398". You have to remove that container to be able to reuse that name.: that name is already in use
+
+[2023-05-26 13:24:57] INFO root fetch - processPackages [linkedinpdfextractor]: Start processing: backlabel
+[2023-05-26 13:24:57] INFO root fetch - main [MainThread]: End processing [linkedinpdfextractor] error
+[2023-05-26 13:24:57] WARNING root fetch - processPackages [backlabel]: Skipping, unable to determine old version
+[2023-05-26 13:24:57] INFO root fetch - main [MainThread]: End processing [backlabel] error
+[2023-05-26 13:24:57] INFO root fetch - processPackages [snoopy-bv]: executing diffoscope
+[2023-05-26 13:24:57] INFO root fetch - processPackages [snoopy-bv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snoopy_bv-2.0.1-cp39-cp39-win_amd64.whl.zip tmp/snoopy_bv-2.0.2-cp311-cp311-win_amd64.whl.zip --markdown 20230526/s/snoopy-bv/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-05-26 13:24:58] INFO root fetch - main [MainThread]: End processing [johnsnowlabs-for-databricks-tmp]: success
+[2023-05-26 13:24:58] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
+[2023-05-26 13:24:58] INFO root fetch - main [MainThread]: End processing [cf-deploy]: success
+[2023-05-26 13:24:59] INFO root fetch - main [MainThread]: End processing [crawler-commons]: success
+[2023-05-26 13:24:59] INFO root fetch - main [MainThread]: End processing [torchtnt-nightly]: success
+[2023-05-26 13:24:59] INFO root fetch - main [MainThread]: End processing [gimodules]: success
+[2023-05-26 13:24:59] INFO root fetch - main [MainThread]: End processing [qontract-development-cli]: success
+[2023-05-26 13:25:00] INFO root fetch - main [MainThread]: End processing [snoopy-bv]: success
+[2023-05-26 13:25:00] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2023-05-26 13:25:00] INFO root fetch - main [MainThread]: Store serial: [18261881]
