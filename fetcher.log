@@ -6877,3 +6877,40 @@
 [2023-05-26 05:42:22] INFO root fetch - main [MainThread]: End processing [azure-mgmt-costmanagement]: success
 [2023-05-26 05:42:28] INFO root fetch - main [MainThread]: End processing [azure-mgmt-databox]: success
 [2023-05-26 05:42:28] INFO root fetch - main [MainThread]: Store serial: [18257389]
+[2023-05-26 05:47:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18257389]
+[2023-05-26 05:47:37] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-26 05:47:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cython-bbox-og
+[2023-05-26 05:47:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alive-progress
+[2023-05-26 05:47:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Files.com
+[2023-05-26 05:47:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo9-addon-l10n-it-ddt
+[2023-05-26 05:47:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo8-addon-l10n-it-base
+[2023-05-26 05:47:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo8-addon-l10n-it-reverse-charge
+[2023-05-26 05:47:37] INFO root fetch - processPackages [odoo9-addon-l10n-it-ddt]: New version: [9.0.1.0.0.99.dev43] Old Version: [9.0.1.0.0.99.dev42]
+[2023-05-26 05:47:37] WARNING root fetch - processPackages [cython-bbox-og]: Skipping, unable to determine old version
+[2023-05-26 05:47:37] INFO root fetch - main [MainThread]: End processing [cython-bbox-og] error
+[2023-05-26 05:47:37] INFO root fetch - processPackages [alive-progress]: New version: [3.1.3] Old Version: [3.1.2]
+[2023-05-26 05:47:37] INFO root fetch - processPackages [odoo8-addon-l10n-it-base]: New version: [8.0.0.1.0.99.dev9] Old Version: [8.0.0.1.0.99.dev8]
+[2023-05-26 05:47:37] INFO root fetch - processPackages [Files.com]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-05-26 05:47:37] INFO root fetch - processPackages [odoo8-addon-l10n-it-reverse-charge]: New version: [8.0.2.0.1.99.dev3] Old Version: [8.0.2.0.1.99.dev2]
+[2023-05-26 05:47:37] INFO root fetch - processPackages [odoo9-addon-l10n-it-ddt]: executing diffoscope
+[2023-05-26 05:47:37] INFO root fetch - processPackages [odoo9-addon-l10n-it-ddt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo9_addon_l10n_it_ddt-9.0.1.0.0.99.dev42-py2-none-any.whl.zip tmp/odoo9_addon_l10n_it_ddt-9.0.1.0.0.99.dev43-py2-none-any.whl.zip --markdown 20230526/o/odoo9-addon-l10n-it-ddt/9.0.1.0.0.99.dev42-9.0.1.0.0.99.dev43/diff.md --exclude *.pyd
+[2023-05-26 05:47:37] INFO root fetch - processPackages [alive-progress]: Downloading https://files.pythonhosted.org/packages/78/ae/6578d3b5e01f034e8099ea268272a922ac36093651229c4777648d6da6ab/alive-progress-3.1.2.tar.gz
+[2023-05-26 05:47:38] INFO root fetch - processPackages [odoo8-addon-l10n-it-base]: Downloading https://files.pythonhosted.org/packages/ff/dd/64be5f6407fc7d17d8132fec6b562606363301c90ef656bee161426bcfb9/odoo8_addon_l10n_it_base-8.0.0.1.0.99.dev8-py2-none-any.whl
+[2023-05-26 05:47:38] INFO root fetch - processPackages [odoo8-addon-l10n-it-reverse-charge]: Downloading https://files.pythonhosted.org/packages/21/f9/66f1ddf89bf8e0c8693ec25688ed915cea84e4cc8140ed45c1fa0d0abd36/odoo8_addon_l10n_it_reverse_charge-8.0.2.0.1.99.dev2-py2-none-any.whl
+[2023-05-26 05:47:38] INFO root fetch - processPackages [Files.com]: executing diffoscope
+[2023-05-26 05:47:38] INFO root fetch - processPackages [Files.com]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Files.com-1.0.98.tar.gz tmp/Files.com-1.0.99.tar.gz --markdown 20230526/F/Files.com/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-05-26 05:47:38] INFO root fetch - processPackages [alive-progress]: Downloading https://files.pythonhosted.org/packages/52/32/b91a15e744db73491d3ee7a8b1b8dee67da81f047dab47a5b10d6034d9bf/alive-progress-3.1.3.tar.gz
+[2023-05-26 05:47:38] INFO root fetch - processPackages [alive-progress]: executing diffoscope
+[2023-05-26 05:47:38] INFO root fetch - processPackages [alive-progress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alive-progress-3.1.2.tar.gz tmp/alive-progress-3.1.3.tar.gz --markdown 20230526/a/alive-progress/3.1.2-3.1.3/diff.md --exclude *.pyd
+[2023-05-26 05:47:38] INFO root fetch - processPackages [odoo8-addon-l10n-it-base]: Downloading https://files.pythonhosted.org/packages/17/fe/d8f42dd382cdcbc4f3bc387ea9e455c87000dccfe316aa34e1fb1780e680/odoo8_addon_l10n_it_base-8.0.0.1.0.99.dev9-py2-none-any.whl
+[2023-05-26 05:47:38] INFO root fetch - processPackages [odoo8-addon-l10n-it-base]: executing diffoscope
+[2023-05-26 05:47:38] INFO root fetch - processPackages [odoo8-addon-l10n-it-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo8_addon_l10n_it_base-8.0.0.1.0.99.dev8-py2-none-any.whl.zip tmp/odoo8_addon_l10n_it_base-8.0.0.1.0.99.dev9-py2-none-any.whl.zip --markdown 20230526/o/odoo8-addon-l10n-it-base/8.0.0.1.0.99.dev8-8.0.0.1.0.99.dev9/diff.md --exclude *.pyd
+[2023-05-26 05:47:38] INFO root fetch - processPackages [odoo8-addon-l10n-it-reverse-charge]: Downloading https://files.pythonhosted.org/packages/43/40/511f9ce74b342eb0b67546327dc76cbf7ce553adeaf7adafd55c71457cb4/odoo8_addon_l10n_it_reverse_charge-8.0.2.0.1.99.dev3-py2-none-any.whl
+[2023-05-26 05:47:39] INFO root fetch - main [MainThread]: End processing [odoo9-addon-l10n-it-ddt]: success
+[2023-05-26 05:47:39] INFO root fetch - main [MainThread]: End processing [Files.com]: success
+[2023-05-26 05:47:39] INFO root fetch - main [MainThread]: End processing [alive-progress]: success
+[2023-05-26 05:47:39] INFO root fetch - processPackages [odoo8-addon-l10n-it-reverse-charge]: executing diffoscope
+[2023-05-26 05:47:39] INFO root fetch - processPackages [odoo8-addon-l10n-it-reverse-charge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo8_addon_l10n_it_reverse_charge-8.0.2.0.1.99.dev2-py2-none-any.whl.zip tmp/odoo8_addon_l10n_it_reverse_charge-8.0.2.0.1.99.dev3-py2-none-any.whl.zip --markdown 20230526/o/odoo8-addon-l10n-it-reverse-charge/8.0.2.0.1.99.dev2-8.0.2.0.1.99.dev3/diff.md --exclude *.pyd
+[2023-05-26 05:47:41] INFO root fetch - main [MainThread]: End processing [odoo8-addon-l10n-it-reverse-charge]: success
+[2023-05-26 05:48:27] INFO root fetch - main [MainThread]: End processing [odoo8-addon-l10n-it-base]: success
+[2023-05-26 05:48:27] INFO root fetch - main [MainThread]: Store serial: [18257409]
