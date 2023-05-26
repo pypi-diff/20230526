@@ -9635,3 +9635,103 @@
 [2023-05-26 09:12:23] INFO root fetch - main [MainThread]: End processing [countess]: success
 [2023-05-26 09:12:23] INFO root fetch - main [MainThread]: End processing [pulumi-pagerduty]: success
 [2023-05-26 09:12:23] INFO root fetch - main [MainThread]: Store serial: [18258920]
+[2023-05-26 09:17:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18258920]
+[2023-05-26 09:17:32] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-26 09:17:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trino
+[2023-05-26 09:17:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-slack
+[2023-05-26 09:17:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dask-ms
+[2023-05-26 09:17:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tagging-module
+[2023-05-26 09:17:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pepperize.cdk-terraform-state-backend
+[2023-05-26 09:17:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: remotemanager
+[2023-05-26 09:17:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rppt
+[2023-05-26 09:17:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pepperize.cdk-apigateway-swagger-ui
+[2023-05-26 09:17:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tf-hub-nightly
+[2023-05-26 09:17:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: faceid-dev
+[2023-05-26 09:17:32] INFO root fetch - processPackages [trino]: New version: [0.325.0] Old Version: [0.324.0]
+[2023-05-26 09:17:32] INFO root fetch - processPackages [dask-ms]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-26 09:17:32] INFO root fetch - processPackages [tagging-module]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-26 09:17:32] INFO root fetch - processPackages [faceid-dev]: New version: [0.0.3] Old Version: [0.0.1]
+[2023-05-26 09:17:32] INFO root fetch - processPackages [pulumi-slack]: New version: [0.4.3a1685083795] Old Version: [0.4.3a1684390601]
+[2023-05-26 09:17:32] WARNING root fetch - processPackages [rppt]: Skipping, unable to determine old version
+[2023-05-26 09:17:32] INFO root fetch - processPackages [remotemanager]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-26 09:17:32] INFO root fetch - processPackages [rppt]: Start processing: cloudnetpy-qc
+[2023-05-26 09:17:32] INFO root fetch - main [MainThread]: End processing [rppt] error
+[2023-05-26 09:17:32] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: New version: [0.0.99] Old Version: [0.0.97]
+[2023-05-26 09:17:32] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-26 09:17:32] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2023-05-26 09:17:32] INFO root fetch - processPackages [cloudnetpy-qc]: New version: [1.9.5] Old Version: [1.9.4]
+[2023-05-26 09:17:33] INFO root fetch - processPackages [trino]: Downloading https://files.pythonhosted.org/packages/c3/67/364f77af842cafdd7ffae8c01c23d0c55251a91951f0098d28d97573fdb3/trino-0.324.0.tar.gz
+[2023-05-26 09:17:33] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: executing diffoscope
+[2023-05-26 09:17:33] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-terraform-state-backend-0.1.98.tar.gz tmp/pepperize.cdk-terraform-state-backend-0.1.99.tar.gz --markdown 20230526/p/pepperize.cdk-terraform-state-backend/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-26 09:17:33] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2023-05-26 09:17:33] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20230526/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/diff.md --exclude *.pyd
+[2023-05-26 09:17:33] INFO root fetch - processPackages [faceid-dev]: Downloading https://files.pythonhosted.org/packages/8e/44/38ad81e6bc3c9ef842e8bdd6d31211a138a6b73ca85ff78a89b66a6684a9/faceid-dev-0.0.1.tar.gz
+[2023-05-26 09:17:33] INFO root fetch - processPackages [dask-ms]: Downloading https://files.pythonhosted.org/packages/86/cc/e8ed2076227b5a0163d0ebc43594bb7b3ce15524a73920ad78989387d436/dask-ms-0.2.8.tar.gz
+[2023-05-26 09:17:33] INFO root fetch - processPackages [remotemanager]: Downloading https://files.pythonhosted.org/packages/0a/55/adc1a7002b113cc4de268bfdb6f698f439b31e235ec51b1fe624bd268ea3/remotemanager-0.6.0.tar.gz
+[2023-05-26 09:17:33] INFO root fetch - processPackages [tagging-module]: Downloading https://files.pythonhosted.org/packages/5d/1a/598258dd305b8ffe5ab7ac659ee579b18b8eb4ade3a0553e0f01fefa7eb0/tagging_module-0.0.5.tar.gz
+[2023-05-26 09:17:33] INFO root fetch - processPackages [tagging-module]: executing diffoscope
+[2023-05-26 09:17:33] INFO root fetch - processPackages [tagging-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tagging_module-0.0.4.tar.gz tmp/tagging_module-0.0.5.tar.gz --markdown 20230526/t/tagging-module/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-26 09:17:33] INFO root fetch - processPackages [pulumi-slack]: Downloading https://files.pythonhosted.org/packages/08/c0/4fc63fe582e1b3e1e01892e4cc5c244aaa2eb801756865cd828e41baa858/pulumi_slack-0.4.3a1685083795.tar.gz
+[2023-05-26 09:17:33] INFO root fetch - processPackages [faceid-dev]: Downloading https://files.pythonhosted.org/packages/65/86/f91a04e1e4412ff07f0471d11ad0046d0700ac4c02349731a39338402052/faceid_dev-0.0.3-cp38-cp38-macosx_10_15_x86_64.whl
+[2023-05-26 09:17:33] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: executing diffoscope
+[2023-05-26 09:17:33] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-apigateway-swagger-ui-0.0.97.tar.gz tmp/pepperize.cdk-apigateway-swagger-ui-0.0.99.tar.gz --markdown 20230526/p/pepperize.cdk-apigateway-swagger-ui/0.0.97-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 09:17:33] INFO root fetch - processPackages [trino]: Downloading https://files.pythonhosted.org/packages/76/44/fa4f4199a9c5757f77b618c58608a061626d17e3bad9163821c00752fbc1/trino-0.325.0.tar.gz
+[2023-05-26 09:17:33] INFO root fetch - processPackages [remotemanager]: Downloading https://files.pythonhosted.org/packages/b7/76/dc44e7b28fdf898201f49473bc26b081fd8b4e17280da4b69b5e0f7faded/remotemanager-0.6.1.tar.gz
+[2023-05-26 09:17:33] INFO root fetch - processPackages [pulumi-slack]: executing diffoscope
+[2023-05-26 09:17:33] INFO root fetch - processPackages [pulumi-slack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_slack-0.4.3a1684390601.tar.gz tmp/pulumi_slack-0.4.3a1685083795.tar.gz --markdown 20230526/p/pulumi-slack/0.4.3a1684390601-0.4.3a1685083795/diff.md --exclude *.pyd
+[2023-05-26 09:17:33] INFO root fetch - processPackages [cloudnetpy-qc]: executing diffoscope
+[2023-05-26 09:17:33] INFO root fetch - processPackages [cloudnetpy-qc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudnetpy_qc-1.9.4.tar.gz tmp/cloudnetpy_qc-1.9.5.tar.gz --markdown 20230526/c/cloudnetpy-qc/1.9.4-1.9.5/diff.md --exclude *.pyd
+[2023-05-26 09:17:33] INFO root fetch - processPackages [trino]: executing diffoscope
+[2023-05-26 09:17:33] INFO root fetch - processPackages [trino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trino-0.324.0.tar.gz tmp/trino-0.325.0.tar.gz --markdown 20230526/t/trino/0.324.0-0.325.0/diff.md --exclude *.pyd
+[2023-05-26 09:17:33] INFO root fetch - processPackages [faceid-dev]: executing diffoscope
+[2023-05-26 09:17:33] INFO root fetch - processPackages [faceid-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faceid-dev-0.0.1.tar.gz tmp/faceid_dev-0.0.3-cp38-cp38-macosx_10_15_x86_64.whl.zip --markdown 20230526/f/faceid-dev/0.0.1-0.0.3/diff.md --exclude *.pyd
+[2023-05-26 09:17:33] INFO root fetch - processPackages [remotemanager]: executing diffoscope
+[2023-05-26 09:17:33] INFO root fetch - processPackages [remotemanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remotemanager-0.6.0.tar.gz tmp/remotemanager-0.6.1.tar.gz --markdown 20230526/r/remotemanager/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-26 09:17:33] INFO root fetch - processPackages [dask-ms]: Downloading https://files.pythonhosted.org/packages/2f/f5/b9eb094d522500314f616b412c76703ab5e407d475273beae3e891ac51e7/dask-ms-0.2.9.tar.gz
+[2023-05-26 09:17:33] INFO root fetch - processPackages [dask-ms]: executing diffoscope
+[2023-05-26 09:17:33] INFO root fetch - processPackages [dask-ms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dask-ms-0.2.8.tar.gz tmp/dask-ms-0.2.9.tar.gz --markdown 20230526/d/dask-ms/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-26 09:17:34] INFO root fetch - processPackages [tf-hub-nightly]: Start processing: textbsr
+[2023-05-26 09:17:34] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2023-05-26 09:17:34] INFO root fetch - processPackages [textbsr]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 09:17:34] INFO root fetch - processPackages [textbsr]: executing diffoscope
+[2023-05-26 09:17:34] INFO root fetch - processPackages [textbsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textbsr-0.0.8.tar.gz tmp/textbsr-0.0.9.tar.gz --markdown 20230526/t/textbsr/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 09:17:35] INFO root fetch - processPackages [tagging-module]: Start processing: tmart
+[2023-05-26 09:17:35] INFO root fetch - main [MainThread]: End processing [tagging-module]: success
+[2023-05-26 09:17:35] INFO root fetch - processPackages [tmart]: New version: [1.3.6] Old Version: [1.3.5]
+[2023-05-26 09:17:35] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: Start processing: pulumi-civo
+[2023-05-26 09:17:35] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-terraform-state-backend]: success
+[2023-05-26 09:17:35] INFO root fetch - processPackages [pulumi-civo]: New version: [2.4.0a1685078476] Old Version: [2.4.0a1684387209]
+[2023-05-26 09:17:35] INFO root fetch - processPackages [tmart]: Downloading https://files.pythonhosted.org/packages/59/50/0d73171387e5556076d3305a9eddc6e1460f687d1e5fd4949ea1b63c4e58/tmart-1.3.5.tar.gz
+[2023-05-26 09:17:35] INFO root fetch - processPackages [pulumi-civo]: Downloading https://files.pythonhosted.org/packages/6a/c9/1d5b1607d8cbc0212472e12834ca5f242264f1605c4f59a2a667645ff573/pulumi_civo-2.4.0a1685078476.tar.gz
+[2023-05-26 09:17:35] INFO root fetch - processPackages [pulumi-civo]: executing diffoscope
+[2023-05-26 09:17:35] INFO root fetch - processPackages [pulumi-civo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_civo-2.4.0a1684387209.tar.gz tmp/pulumi_civo-2.4.0a1685078476.tar.gz --markdown 20230526/p/pulumi-civo/2.4.0a1684387209-2.4.0a1685078476/diff.md --exclude *.pyd
+[2023-05-26 09:17:35] INFO root fetch - processPackages [faceid-dev]: Start processing: centerline-width
+[2023-05-26 09:17:35] INFO root fetch - main [MainThread]: End processing [faceid-dev]: success
+[2023-05-26 09:17:35] INFO root fetch - processPackages [centerline-width]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-26 09:17:35] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: Start processing: pulumi-signalfx
+[2023-05-26 09:17:35] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-apigateway-swagger-ui]: success
+[2023-05-26 09:17:35] INFO root fetch - processPackages [tmart]: Downloading https://files.pythonhosted.org/packages/ca/93/7d99f369df82d0e43c104eafb13bec0f7c0328725588cca2b13fb2cde2e3/tmart-1.3.6.tar.gz
+[2023-05-26 09:17:35] INFO root fetch - processPackages [pulumi-signalfx]: New version: [5.9.0a1678179334] Old Version: [5.9.0a1678129624]
+[2023-05-26 09:17:35] INFO root fetch - processPackages [trino]: Start processing: pulumi-azuread
+[2023-05-26 09:17:35] INFO root fetch - main [MainThread]: End processing [trino]: success
+[2023-05-26 09:17:35] INFO root fetch - processPackages [pulumi-azuread]: New version: [5.9.0a1637590268] Old Version: [5.9.0]
+[2023-05-26 09:17:35] INFO root fetch - processPackages [tmart]: executing diffoscope
+[2023-05-26 09:17:35] INFO root fetch - processPackages [tmart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmart-1.3.5.tar.gz tmp/tmart-1.3.6.tar.gz --markdown 20230526/t/tmart/1.3.5-1.3.6/diff.md --exclude *.pyd
+[2023-05-26 09:17:35] INFO root fetch - main [MainThread]: End processing [pulumi-slack]: success
+[2023-05-26 09:17:36] INFO root fetch - processPackages [centerline-width]: Downloading https://files.pythonhosted.org/packages/1f/f7/cfb20720dcfc5c16a62d89f80c40af3eb465c86914284f25a67c0b8b8f9f/centerline-width-0.2.3.tar.gz
+[2023-05-26 09:17:36] INFO root fetch - processPackages [pulumi-signalfx]: executing diffoscope
+[2023-05-26 09:17:36] INFO root fetch - processPackages [pulumi-signalfx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_signalfx-5.9.0a1678129624.tar.gz tmp/pulumi_signalfx-5.9.0a1678179334.tar.gz --markdown 20230526/p/pulumi-signalfx/5.9.0a1678129624-5.9.0a1678179334/diff.md --exclude *.pyd
+[2023-05-26 09:17:36] INFO root fetch - processPackages [pulumi-azuread]: executing diffoscope
+[2023-05-26 09:17:36] INFO root fetch - main [MainThread]: End processing [remotemanager]: success
+[2023-05-26 09:17:36] INFO root fetch - processPackages [pulumi-azuread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_azuread-5.9.0.tar.gz tmp/pulumi_azuread-5.9.0a1637590268.tar.gz --markdown 20230526/p/pulumi-azuread/5.9.0-5.9.0a1637590268/diff.md --exclude *.pyd
+[2023-05-26 09:17:36] INFO root fetch - processPackages [centerline-width]: executing diffoscope
+[2023-05-26 09:17:36] INFO root fetch - processPackages [centerline-width]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/centerline-width-0.2.2.tar.gz tmp/centerline-width-0.2.3.tar.gz --markdown 20230526/c/centerline-width/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-26 09:17:36] INFO root fetch - main [MainThread]: End processing [dask-ms]: success
+[2023-05-26 09:17:36] INFO root fetch - main [MainThread]: End processing [textbsr]: success
+[2023-05-26 09:17:37] INFO root fetch - main [MainThread]: End processing [pulumi-civo]: success
+[2023-05-26 09:17:38] INFO root fetch - main [MainThread]: End processing [centerline-width]: success
+[2023-05-26 09:17:38] INFO root fetch - main [MainThread]: End processing [tmart]: success
+[2023-05-26 09:17:38] INFO root fetch - main [MainThread]: End processing [pulumi-azuread]: success
+[2023-05-26 09:17:39] INFO root fetch - main [MainThread]: End processing [cloudnetpy-qc]: success
+[2023-05-26 09:18:26] INFO root fetch - main [MainThread]: End processing [pulumi-signalfx]: success
+[2023-05-26 09:18:26] INFO root fetch - main [MainThread]: Store serial: [18258970]
