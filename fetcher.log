@@ -14167,3 +14167,108 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 13:35:29] INFO root fetch - main [MainThread]: End processing [resqpy]: success
 [2023-05-26 13:35:29] INFO root fetch - main [MainThread]: End processing [conan-server]: success
 [2023-05-26 13:35:29] INFO root fetch - main [MainThread]: Store serial: [18262010]
+[2023-05-26 13:40:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18262010]
+[2023-05-26 13:40:39] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-05-26 13:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-gem
+[2023-05-26 13:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keystem
+[2023-05-26 13:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: graham-client
+[2023-05-26 13:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ranx
+[2023-05-26 13:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bosch-alarm-mode2
+[2023-05-26 13:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: news-crawlers
+[2023-05-26 13:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: calcleaner
+[2023-05-26 13:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: edu-segmentation
+[2023-05-26 13:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ortoolpy
+[2023-05-26 13:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: prefect-postgres-sensors
+[2023-05-26 13:40:39] INFO root fetch - processPackages [graham-client]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-26 13:40:39] INFO root fetch - processPackages [django-gem]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-26 13:40:39] INFO root fetch - processPackages [ranx]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-26 13:40:39] INFO root fetch - processPackages [prefect-postgres-sensors]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-26 13:40:39] INFO root fetch - processPackages [calcleaner]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-26 13:40:39] INFO root fetch - processPackages [keystem]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-26 13:40:39] INFO root fetch - processPackages [news-crawlers]: New version: [3.4.3] Old Version: [3.4.2]
+[2023-05-26 13:40:39] INFO root fetch - processPackages [edu-segmentation]: New version: [0.0.87] Old Version: [0.0.86]
+[2023-05-26 13:40:39] INFO root fetch - processPackages [ortoolpy]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-05-26 13:40:39] INFO root fetch - processPackages [bosch-alarm-mode2]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-26 13:40:39] INFO root fetch - processPackages [bosch-alarm-mode2]: executing diffoscope
+[2023-05-26 13:40:39] INFO root fetch - processPackages [bosch-alarm-mode2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bosch_alarm_mode2-0.3.8.tar.gz tmp/bosch_alarm_mode2-0.3.9.tar.gz --markdown 20230526/b/bosch-alarm-mode2/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-26 13:40:39] INFO root fetch - processPackages [news-crawlers]: Downloading https://files.pythonhosted.org/packages/7a/62/845940718d63c438123a7ef17d09cc80065e0bcb58883dfb12100eb0be60/news_crawlers-3.4.2.tar.gz
+[2023-05-26 13:40:39] INFO root fetch - processPackages [graham-client]: Downloading https://files.pythonhosted.org/packages/c9/13/b9509e931bc58de83ec1a0dc40ec7803b82433532bca4c2d3ca07b822fcd/graham_client-0.0.1-py3.10.egg
+[2023-05-26 13:40:39] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/38/4b/e693f98b9dc6672d5fe845a908d350044e3d147c00fdb2d4e60e9389a6de/edu_segmentation-0.0.86.tar.gz
+[2023-05-26 13:40:39] INFO root fetch - processPackages [ortoolpy]: Downloading https://files.pythonhosted.org/packages/1c/f5/13afa3fee706742f676054a782aa913fe545d99a4377ba76749b58207306/ortoolpy-0.6.2-py3-none-any.whl
+[2023-05-26 13:40:39] INFO root fetch - processPackages [django-gem]: Downloading https://files.pythonhosted.org/packages/04/3e/c57be64d166c4b4f34580d0f652ad84a45860755f67decd068e8e939fe6a/django_gem-1.0.2.tar.gz
+[2023-05-26 13:40:39] INFO root fetch - processPackages [prefect-postgres-sensors]: Downloading https://files.pythonhosted.org/packages/48/cb/1f80e6eb722d64842ec214242adbec987f6f705d00cda11280a494caa9c4/prefect_postgres_sensors-0.3.0.tar.gz
+[2023-05-26 13:40:39] INFO root fetch - processPackages [keystem]: Downloading https://files.pythonhosted.org/packages/6c/cd/7adf43f5b7c9b22d54b9ac3ae05228de30dd9225fa31b790e6215a5086c3/keystem-1.0.3.tar.gz
+[2023-05-26 13:40:39] INFO root fetch - processPackages [ortoolpy]: executing diffoscope
+[2023-05-26 13:40:39] INFO root fetch - processPackages [ortoolpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ortoolpy-0.6.1-py3-none-any.whl.zip tmp/ortoolpy-0.6.2-py3-none-any.whl.zip --markdown 20230526/o/ortoolpy/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-05-26 13:40:39] INFO root fetch - processPackages [ranx]: executing diffoscope
+[2023-05-26 13:40:39] INFO root fetch - processPackages [ranx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ranx-0.3.8.tar.gz tmp/ranx-0.3.9.tar.gz --markdown 20230526/r/ranx/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-26 13:40:39] INFO root fetch - processPackages [prefect-postgres-sensors]: executing diffoscope
+[2023-05-26 13:40:39] INFO root fetch - processPackages [prefect-postgres-sensors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prefect_postgres_sensors-0.2.0.tar.gz tmp/prefect_postgres_sensors-0.3.0.tar.gz --markdown 20230526/p/prefect-postgres-sensors/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-26 13:40:39] INFO root fetch - processPackages [django-gem]: executing diffoscope
+[2023-05-26 13:40:39] INFO root fetch - processPackages [django-gem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_gem-1.0.1.tar.gz tmp/django_gem-1.0.2.tar.gz --markdown 20230526/d/django-gem/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-26 13:40:39] INFO root fetch - processPackages [calcleaner]: Downloading https://files.pythonhosted.org/packages/19/ef/3b1e11ccf528ade9dee2f9b2798f2b90deaefe8f99640c724d6943511b18/calcleaner-1.1.3.tar.gz
+[2023-05-26 13:40:39] INFO root fetch - processPackages [news-crawlers]: Downloading https://files.pythonhosted.org/packages/30/f2/c16205a245153dbcfaf35355faae4cf26a5b2c52c5e9594337d46f5f7a3b/news_crawlers-3.4.3.tar.gz
+[2023-05-26 13:40:39] INFO root fetch - processPackages [graham-client]: Downloading https://files.pythonhosted.org/packages/b2/c2/8bbae9f2bb1a5792fe95aba2b64438c1b6a68ddf62fd8f2e8dba1665193f/graham_client-0.0.2-py3.10.egg
+[2023-05-26 13:40:39] INFO root fetch - processPackages [edu-segmentation]: Downloading https://files.pythonhosted.org/packages/e2/16/677a0a8d9ca1282597d53313082116d1eb8f41566e9771a706667e138da4/edu_segmentation-0.0.87.tar.gz
+[2023-05-26 13:40:39] INFO root fetch - processPackages [calcleaner]: executing diffoscope
+[2023-05-26 13:40:39] INFO root fetch - processPackages [calcleaner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calcleaner-1.1.2.tar.gz tmp/calcleaner-1.1.3.tar.gz --markdown 20230526/c/calcleaner/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-26 13:40:39] INFO root fetch - processPackages [keystem]: executing diffoscope
+[2023-05-26 13:40:39] INFO root fetch - processPackages [keystem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keystem-1.0.2.tar.gz tmp/keystem-1.0.3.tar.gz --markdown 20230526/k/keystem/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-26 13:40:39] INFO root fetch - processPackages [news-crawlers]: executing diffoscope
+[2023-05-26 13:40:39] INFO root fetch - processPackages [news-crawlers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/news_crawlers-3.4.2.tar.gz tmp/news_crawlers-3.4.3.tar.gz --markdown 20230526/n/news-crawlers/3.4.2-3.4.3/diff.md --exclude *.pyd
+[2023-05-26 13:40:40] INFO root fetch - processPackages [graham-client]: executing diffoscope
+[2023-05-26 13:40:40] INFO root fetch - processPackages [graham-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graham_client-0.0.1-py3.10.egg tmp/graham_client-0.0.2-py3.10.egg --markdown 20230526/g/graham-client/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-26 13:40:40] INFO root fetch - processPackages [edu-segmentation]: executing diffoscope
+[2023-05-26 13:40:40] INFO root fetch - processPackages [edu-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edu_segmentation-0.0.86.tar.gz tmp/edu_segmentation-0.0.87.tar.gz --markdown 20230526/e/edu-segmentation/0.0.86-0.0.87/diff.md --exclude *.pyd
+[2023-05-26 13:40:40] INFO root fetch - processPackages [bosch-alarm-mode2]: Start processing: pyre-check-nightly
+[2023-05-26 13:40:40] INFO root fetch - main [MainThread]: End processing [bosch-alarm-mode2]: success
+[2023-05-26 13:40:40] INFO root fetch - processPackages [pyre-check-nightly]: New version: [0.0.101685099516] Old Version: [0.0.101685013128]
+[2023-05-26 13:40:41] INFO root fetch - processPackages [pyre-check-nightly]: Downloading https://files.pythonhosted.org/packages/b5/7d/1875a49b121619885bdbb69ffc685a35c6e708cf5713e5957d7b1c704c9e/pyre_check_nightly-0.0.101685013128-py3-none-manylinux1_x86_64.whl
+[2023-05-26 13:40:41] WARNING root fetch - processPackages [pyre-check-nightly]: Skipping package: exceeds size limit 45871316>=10485760
+[2023-05-26 13:40:41] INFO root fetch - processPackages [pyre-check-nightly]: Start processing: evosegment
+[2023-05-26 13:40:41] INFO root fetch - main [MainThread]: End processing [pyre-check-nightly] error
+[2023-05-26 13:40:41] WARNING root fetch - processPackages [evosegment]: Skipping, unable to determine old version
+[2023-05-26 13:40:41] INFO root fetch - processPackages [evosegment]: Start processing: pollination-annual-daylight-en17037
+[2023-05-26 13:40:41] INFO root fetch - main [MainThread]: End processing [evosegment] error
+[2023-05-26 13:40:41] INFO root fetch - processPackages [pollination-annual-daylight-en17037]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 13:40:41] INFO root fetch - processPackages [ortoolpy]: Start processing: aviral-fifth-try
+[2023-05-26 13:40:41] INFO root fetch - main [MainThread]: End processing [ortoolpy]: success
+[2023-05-26 13:40:41] INFO root fetch - processPackages [pollination-annual-daylight-en17037]: Downloading https://files.pythonhosted.org/packages/2b/c3/db1666bd3d480bda2d5be5b35738e7fe2b45b54b7794c3d8e874a6fcfbf4/pollination-annual-daylight-en17037-0.1.9.tar.gz
+[2023-05-26 13:40:41] WARNING root fetch - processPackages [aviral-fifth-try]: Skipping, unable to determine old version
+[2023-05-26 13:40:41] INFO root fetch - processPackages [aviral-fifth-try]: Start processing: PySide6-Essentials
+[2023-05-26 13:40:41] INFO root fetch - main [MainThread]: End processing [aviral-fifth-try] error
+[2023-05-26 13:40:41] INFO root fetch - processPackages [PySide6-Essentials]: New version: [6.5.1] Old Version: [6.5.0]
+[2023-05-26 13:40:41] INFO root fetch - processPackages [pollination-annual-daylight-en17037]: executing diffoscope
+[2023-05-26 13:40:41] INFO root fetch - processPackages [pollination-annual-daylight-en17037]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pollination-annual-daylight-en17037-0.1.8.tar.gz tmp/pollination-annual-daylight-en17037-0.1.9.tar.gz --markdown 20230526/p/pollination-annual-daylight-en17037/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 13:40:41] INFO root fetch - processPackages [PySide6-Essentials]: Downloading https://files.pythonhosted.org/packages/f9/e6/484a6552033dd01ee62a2acd2f8a2269ee43dd5d7ebafa9178abe7507754/PySide6_Essentials-6.5.0-pp39-pypy39_pp73-win_amd64.whl
+[2023-05-26 13:40:41] WARNING root fetch - processPackages [PySide6-Essentials]: Skipping package: exceeds size limit 65410355>=10485760
+[2023-05-26 13:40:41] INFO root fetch - processPackages [PySide6-Essentials]: Start processing: bosch-alarm-mode2
+[2023-05-26 13:40:41] INFO root fetch - main [MainThread]: End processing [PySide6-Essentials] error
+[2023-05-26 13:40:41] INFO root fetch - processPackages [bosch-alarm-mode2]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-26 13:40:41] INFO root fetch - processPackages [prefect-postgres-sensors]: Start processing: aviral-sixth-try
+[2023-05-26 13:40:41] INFO root fetch - main [MainThread]: End processing [prefect-postgres-sensors]: success
+[2023-05-26 13:40:41] WARNING root fetch - processPackages [aviral-sixth-try]: Skipping, unable to determine old version
+[2023-05-26 13:40:41] INFO root fetch - processPackages [aviral-sixth-try]: Start processing: aish
+[2023-05-26 13:40:41] INFO root fetch - main [MainThread]: End processing [aviral-sixth-try] error
+[2023-05-26 13:40:41] INFO root fetch - processPackages [bosch-alarm-mode2]: executing diffoscope
+[2023-05-26 13:40:41] INFO root fetch - processPackages [bosch-alarm-mode2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bosch_alarm_mode2-0.3.8.tar.gz tmp/bosch_alarm_mode2-0.3.9.tar.gz --markdown 20230526/b/bosch-alarm-mode2/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-26 13:40:41] INFO root fetch - processPackages [calcleaner]: Start processing: edu-segmentation
+[2023-05-26 13:40:41] INFO root fetch - main [MainThread]: End processing [calcleaner]: success
+[2023-05-26 13:40:42] INFO root fetch - processPackages [aish]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-26 13:40:42] INFO root fetch - processPackages [edu-segmentation]: New version: [0.0.87] Old Version: [0.0.86]
+[2023-05-26 13:40:42] INFO root fetch - processPackages [edu-segmentation]: executing diffoscope
+[2023-05-26 13:40:42] INFO root fetch - processPackages [edu-segmentation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edu_segmentation-0.0.86.tar.gz tmp/edu_segmentation-0.0.87.tar.gz --markdown 20230526/e/edu-segmentation/0.0.86-0.0.87/diff.md --exclude *.pyd
+[2023-05-26 13:40:42] INFO root fetch - processPackages [aish]: Downloading https://files.pythonhosted.org/packages/06/63/73a347951ab6325591c751b568fbc0a53e338e76e9700a5ad3528f0cfe6b/aish-0.1.7.tar.gz
+[2023-05-26 13:40:42] INFO root fetch - processPackages [aish]: executing diffoscope
+[2023-05-26 13:40:42] INFO root fetch - processPackages [aish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aish-0.1.6.tar.gz tmp/aish-0.1.7.tar.gz --markdown 20230526/a/aish/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-26 13:40:42] INFO root fetch - main [MainThread]: End processing [django-gem]: success
+[2023-05-26 13:40:42] INFO root fetch - main [MainThread]: End processing [keystem]: success
+[2023-05-26 13:40:42] INFO root fetch - main [MainThread]: End processing [news-crawlers]: success
+[2023-05-26 13:40:42] INFO root fetch - main [MainThread]: End processing [graham-client]: success
+[2023-05-26 13:40:43] INFO root fetch - main [MainThread]: End processing [ranx]: success
+[2023-05-26 13:40:43] INFO root fetch - main [MainThread]: End processing [pollination-annual-daylight-en17037]: success
+[2023-05-26 13:40:44] INFO root fetch - main [MainThread]: End processing [bosch-alarm-mode2]: success
+[2023-05-26 13:40:44] INFO root fetch - main [MainThread]: End processing [aish]: success
+[2023-05-26 13:40:44] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
+[2023-05-26 13:40:44] INFO root fetch - main [MainThread]: End processing [edu-segmentation]: success
+[2023-05-26 13:40:44] INFO root fetch - main [MainThread]: Store serial: [18262098]
