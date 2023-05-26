@@ -6595,3 +6595,45 @@
 [2023-05-26 05:16:00] INFO root fetch - main [MainThread]: End processing [odoo10-addon-product-template-multi-link]: success
 [2023-05-26 05:16:00] INFO root fetch - main [MainThread]: End processing [accesser]: success
 [2023-05-26 05:16:00] INFO root fetch - main [MainThread]: Store serial: [18257239]
+[2023-05-26 05:21:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18257239]
+[2023-05-26 05:21:11] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-26 05:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hagrid
+[2023-05-26 05:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vcarhilclient
+[2023-05-26 05:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyrsm
+[2023-05-26 05:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdktf-cdktf-provider-spotinst
+[2023-05-26 05:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: my-provider
+[2023-05-26 05:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo14-addon-edi-oca
+[2023-05-26 05:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo13-addons-oca-edi
+[2023-05-26 05:21:11] INFO root fetch - processPackages [vcarhilclient]: New version: [1.0.526] Old Version: [1.0.523]
+[2023-05-26 05:21:11] INFO root fetch - processPackages [hagrid]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-26 05:21:11] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: New version: [7.0.6] Old Version: [7.0.5]
+[2023-05-26 05:21:11] INFO root fetch - processPackages [odoo13-addons-oca-edi]: New version: [13.0.20230525.0] Old Version: [13.0.20230223.0]
+[2023-05-26 05:21:11] WARNING root fetch - processPackages [my-provider]: Skipping, unable to determine old version
+[2023-05-26 05:21:11] INFO root fetch - processPackages [pyrsm]: New version: [0.8.4.1] Old Version: [0.8.4]
+[2023-05-26 05:21:11] INFO root fetch - main [MainThread]: End processing [my-provider] error
+[2023-05-26 05:21:11] INFO root fetch - processPackages [odoo14-addon-edi-oca]: New version: [14.0.1.9.2] Old Version: [14.0.1.9.1.dev1]
+[2023-05-26 05:21:11] INFO root fetch - processPackages [odoo13-addons-oca-edi]: Downloading https://files.pythonhosted.org/packages/bf/04/b7d26523f6ce086970e27743eb46300cf80984b691d93f8f868980046046/odoo13_addons_oca_edi-13.0.20230223.0-py3-none-any.whl
+[2023-05-26 05:21:11] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: Downloading https://files.pythonhosted.org/packages/9c/b4/9874eaaa8df7eda8a8104e4617f9032d34d6fbab8b75ccbb86cf0f5ab606/cdktf-cdktf-provider-spotinst-7.0.5.tar.gz
+[2023-05-26 05:21:11] INFO root fetch - processPackages [vcarhilclient]: Downloading https://files.pythonhosted.org/packages/f3/4b/30481242b3a244485bebdade1cde7c204bff229cd70c74b1e213b7376d13/vcarhilclient-1.0.526.tar.gz
+[2023-05-26 05:21:11] INFO root fetch - processPackages [odoo14-addon-edi-oca]: executing diffoscope
+[2023-05-26 05:21:11] INFO root fetch - processPackages [odoo14-addon-edi-oca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_edi_oca-14.0.1.9.1.dev1-py3-none-any.whl.zip tmp/odoo14_addon_edi_oca-14.0.1.9.2-py3-none-any.whl.zip --markdown 20230526/o/odoo14-addon-edi-oca/14.0.1.9.1.dev1-14.0.1.9.2/diff.md --exclude *.pyd
+[2023-05-26 05:21:12] INFO root fetch - processPackages [vcarhilclient]: executing diffoscope
+[2023-05-26 05:21:12] INFO root fetch - processPackages [vcarhilclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vcarhilclient-1.0.523.tar.gz tmp/vcarhilclient-1.0.526.tar.gz --markdown 20230526/v/vcarhilclient/1.0.523-1.0.526/diff.md --exclude *.pyd
+[2023-05-26 05:21:12] INFO root fetch - processPackages [odoo13-addons-oca-edi]: Downloading https://files.pythonhosted.org/packages/1d/a0/34c98bf1420696be1e36ab2b6b0b626dd9d78eb14b2475429bac9ad2aaa5/odoo13_addons_oca_edi-13.0.20230525.0-py3-none-any.whl
+[2023-05-26 05:21:12] INFO root fetch - processPackages [hagrid]: executing diffoscope
+[2023-05-26 05:21:12] INFO root fetch - processPackages [hagrid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hagrid-0.3.8.tar.gz tmp/hagrid-0.3.9.tar.gz --markdown 20230526/h/hagrid/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-26 05:21:12] INFO root fetch - processPackages [odoo13-addons-oca-edi]: executing diffoscope
+[2023-05-26 05:21:12] INFO root fetch - processPackages [odoo13-addons-oca-edi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addons_oca_edi-13.0.20230223.0-py3-none-any.whl.zip tmp/odoo13_addons_oca_edi-13.0.20230525.0-py3-none-any.whl.zip --markdown 20230526/o/odoo13-addons-oca-edi/13.0.20230223.0-13.0.20230525.0/diff.md --exclude *.pyd
+[2023-05-26 05:21:12] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: Downloading https://files.pythonhosted.org/packages/92/77/b2d16884eea4b2a9fe18612f054f2ab6e824679650aef6cfcc9fcd8d29e5/cdktf-cdktf-provider-spotinst-7.0.6.tar.gz
+[2023-05-26 05:21:12] INFO root fetch - processPackages [pyrsm]: Downloading https://files.pythonhosted.org/packages/46/4d/1f8f3102621aab53f5ce75d994a669143f00042142ba483ae54c67b3c597/pyrsm-0.8.4.1.tar.gz
+[2023-05-26 05:21:12] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: executing diffoscope
+[2023-05-26 05:21:12] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-spotinst-7.0.5.tar.gz tmp/cdktf-cdktf-provider-spotinst-7.0.6.tar.gz --markdown 20230526/c/cdktf-cdktf-provider-spotinst/7.0.5-7.0.6/diff.md --exclude *.pyd
+[2023-05-26 05:21:12] INFO root fetch - processPackages [pyrsm]: executing diffoscope
+[2023-05-26 05:21:12] INFO root fetch - processPackages [pyrsm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrsm-0.8.4.tar.gz tmp/pyrsm-0.8.4.1.tar.gz --markdown 20230526/p/pyrsm/0.8.4-0.8.4.1/diff.md --exclude *.pyd
+[2023-05-26 05:21:13] INFO root fetch - main [MainThread]: End processing [odoo14-addon-edi-oca]: success
+[2023-05-26 05:21:13] INFO root fetch - main [MainThread]: End processing [odoo13-addons-oca-edi]: success
+[2023-05-26 05:21:14] INFO root fetch - main [MainThread]: End processing [vcarhilclient]: success
+[2023-05-26 05:21:14] INFO root fetch - main [MainThread]: End processing [pyrsm]: success
+[2023-05-26 05:21:14] INFO root fetch - main [MainThread]: End processing [hagrid]: success
+[2023-05-26 05:21:18] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-spotinst]: success
+[2023-05-26 05:21:18] INFO root fetch - main [MainThread]: Store serial: [18257260]
