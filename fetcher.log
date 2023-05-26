@@ -15860,3 +15860,70 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 15:09:26] INFO root fetch - main [MainThread]: End processing [ovos-skill-date-time]: success
 [2023-05-26 15:09:27] INFO root fetch - main [MainThread]: End processing [fitsio]: success
 [2023-05-26 15:09:27] INFO root fetch - main [MainThread]: Store serial: [18263170]
+[2023-05-26 15:14:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18263170]
+[2023-05-26 15:14:38] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-26 15:14:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-product-import
+[2023-05-26 15:14:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pickled-carrots
+[2023-05-26 15:14:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pgfinder
+[2023-05-26 15:14:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pepperize.cdk-route53-health-check
+[2023-05-26 15:14:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fino2py
+[2023-05-26 15:14:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nbdev-pandas
+[2023-05-26 15:14:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo14-addon-shopfloor
+[2023-05-26 15:14:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: akerbp.mlops
+[2023-05-26 15:14:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: charactr-api-sdk
+[2023-05-26 15:14:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nbdev-pytorch
+[2023-05-26 15:14:38] INFO root fetch - processPackages [odoo14-addon-product-import]: New version: [14.0.1.1.1] Old Version: [14.0.1.1.0]
+[2023-05-26 15:14:38] INFO root fetch - processPackages [pgfinder]: New version: [0.0.3a3] Old Version: [0.0.3a2]
+[2023-05-26 15:14:38] INFO root fetch - processPackages [fino2py]: New version: [0.1.0.1] Old Version: [0.1.0]
+[2023-05-26 15:14:38] INFO root fetch - processPackages [pickled-carrots]: New version: [1.0.0] Old Version: [0.3.0]
+[2023-05-26 15:14:38] INFO root fetch - processPackages [charactr-api-sdk]: New version: [1.1.3] Old Version: [1.1.1]
+[2023-05-26 15:14:38] INFO root fetch - processPackages [odoo14-addon-shopfloor]: New version: [14.0.2.9.3.dev1] Old Version: [14.0.2.9.2]
+[2023-05-26 15:14:38] INFO root fetch - processPackages [akerbp.mlops]: New version: [3.1.2a3] Old Version: [3.1.2a2]
+[2023-05-26 15:14:39] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 15:14:39] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 15:14:39] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 15:14:39] INFO root fetch - processPackages [pgfinder]: Downloading https://files.pythonhosted.org/packages/f4/b1/227aec2c7fd10e5d68f58d34abebaca556c3f821a5c729b2eaaa15037188/pgfinder-0.0.3a2.tar.gz
+[2023-05-26 15:14:39] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-05-26 15:14:39] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230526/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 15:14:39] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-05-26 15:14:39] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230526/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 15:14:39] INFO root fetch - processPackages [fino2py]: Downloading https://files.pythonhosted.org/packages/5e/55/e963fb9d156f3d96f64b7a7c826f34062002c7291f1746ed70a4a935384f/fino2py-0.1.0.tar.gz
+[2023-05-26 15:14:39] INFO root fetch - processPackages [odoo14-addon-product-import]: Downloading https://files.pythonhosted.org/packages/6b/58/bbd16c211d4cae4ca9aa57180b532acb33dbdd3a2a20141626d4fd1657c9/odoo14_addon_product_import-14.0.1.1.0-py3-none-any.whl
+[2023-05-26 15:14:39] INFO root fetch - processPackages [charactr-api-sdk]: Downloading https://files.pythonhosted.org/packages/09/82/fb05dc5671b8126bcb3e92457a604254c18464213c0c554b52873fb7bbe4/charactr_api_sdk-1.1.1.tar.gz
+[2023-05-26 15:14:39] INFO root fetch - processPackages [akerbp.mlops]: Downloading https://files.pythonhosted.org/packages/f9/62/4191ba8c9940872cefdd22a2735406ce24181030dbe41caf4072e40d78c9/akerbp.mlops-3.1.2a2.tar.gz
+[2023-05-26 15:14:39] WARNING root fetch - processPackages [pgfinder]: Skipping package: exceeds size limit 18122735>=10485760
+[2023-05-26 15:14:39] INFO root fetch - processPackages [pgfinder]: Start processing: arraylib-solve
+[2023-05-26 15:14:39] INFO root fetch - main [MainThread]: End processing [pgfinder] error
+[2023-05-26 15:14:39] INFO root fetch - processPackages [pickled-carrots]: Downloading https://files.pythonhosted.org/packages/58/43/c6aef958c368bae014dd152ddf6146f89038ce89b6c1d2e7f4dd8e1e6c98/pickled_carrots-1.0.0.tar.gz
+[2023-05-26 15:14:39] INFO root fetch - processPackages [arraylib-solve]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-26 15:14:39] INFO root fetch - processPackages [pickled-carrots]: executing diffoscope
+[2023-05-26 15:14:39] INFO root fetch - processPackages [pickled-carrots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pickled_carrots-0.3.0.tar.gz tmp/pickled_carrots-1.0.0.tar.gz --markdown 20230526/p/pickled-carrots/0.3.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-26 15:14:39] INFO root fetch - processPackages [fino2py]: Downloading https://files.pythonhosted.org/packages/58/10/9ab00c7b64425b01597c94a0c83ffda735b4f8c161c038ecd64ba1d97d41/fino2py-0.1.0.1.tar.gz
+[2023-05-26 15:14:39] INFO root fetch - processPackages [odoo14-addon-shopfloor]: executing diffoscope
+[2023-05-26 15:14:39] INFO root fetch - processPackages [odoo14-addon-shopfloor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_shopfloor-14.0.2.9.2-py3-none-any.whl.zip tmp/odoo14_addon_shopfloor-14.0.2.9.3.dev1-py3-none-any.whl.zip --markdown 20230526/o/odoo14-addon-shopfloor/14.0.2.9.2-14.0.2.9.3.dev1/diff.md --exclude *.pyd
+[2023-05-26 15:14:39] INFO root fetch - processPackages [charactr-api-sdk]: Downloading https://files.pythonhosted.org/packages/1b/f0/d8bb116845333484262d4bafd30a6ea6725872b5695d7ed711b834b5952b/charactr_api_sdk-1.1.3.tar.gz
+[2023-05-26 15:14:39] INFO root fetch - processPackages [arraylib-solve]: executing diffoscope
+[2023-05-26 15:14:39] INFO root fetch - processPackages [arraylib-solve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arraylib_solve-0.8.0.tar.gz tmp/arraylib_solve-0.9.0.tar.gz --markdown 20230526/a/arraylib-solve/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-26 15:14:39] INFO root fetch - processPackages [fino2py]: executing diffoscope
+[2023-05-26 15:14:39] INFO root fetch - processPackages [fino2py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fino2py-0.1.0.tar.gz tmp/fino2py-0.1.0.1.tar.gz --markdown 20230526/f/fino2py/0.1.0-0.1.0.1/diff.md --exclude *.pyd
+[2023-05-26 15:14:39] INFO root fetch - processPackages [odoo14-addon-product-import]: Downloading https://files.pythonhosted.org/packages/d8/d4/4513fb81f4095b057a5b6bf3222b91348c99861989acb5c8dcfc6897fd21/odoo14_addon_product_import-14.0.1.1.1-py3-none-any.whl
+[2023-05-26 15:14:39] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: executing diffoscope
+[2023-05-26 15:14:39] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-route53-health-check-0.0.98.tar.gz tmp/pepperize.cdk-route53-health-check-0.0.99.tar.gz --markdown 20230526/p/pepperize.cdk-route53-health-check/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 15:14:39] INFO root fetch - processPackages [odoo14-addon-product-import]: executing diffoscope
+[2023-05-26 15:14:39] INFO root fetch - processPackages [odoo14-addon-product-import]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_product_import-14.0.1.1.0-py3-none-any.whl.zip tmp/odoo14_addon_product_import-14.0.1.1.1-py3-none-any.whl.zip --markdown 20230526/o/odoo14-addon-product-import/14.0.1.1.0-14.0.1.1.1/diff.md --exclude *.pyd
+[2023-05-26 15:14:39] INFO root fetch - processPackages [akerbp.mlops]: Downloading https://files.pythonhosted.org/packages/6e/41/7c3f677dc16a975e6758f5af9b8e5e62efafee290bbd9c5870a36497c2e9/akerbp.mlops-3.1.2a3.tar.gz
+[2023-05-26 15:14:39] INFO root fetch - processPackages [charactr-api-sdk]: executing diffoscope
+[2023-05-26 15:14:39] INFO root fetch - processPackages [charactr-api-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/charactr_api_sdk-1.1.1.tar.gz tmp/charactr_api_sdk-1.1.3.tar.gz --markdown 20230526/c/charactr-api-sdk/1.1.1-1.1.3/diff.md --exclude *.pyd
+[2023-05-26 15:14:39] INFO root fetch - processPackages [akerbp.mlops]: executing diffoscope
+[2023-05-26 15:14:39] INFO root fetch - processPackages [akerbp.mlops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akerbp.mlops-3.1.2a2.tar.gz tmp/akerbp.mlops-3.1.2a3.tar.gz --markdown 20230526/a/akerbp.mlops/3.1.2a2-3.1.2a3/diff.md --exclude *.pyd
+[2023-05-26 15:14:40] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
+[2023-05-26 15:14:41] INFO root fetch - main [MainThread]: End processing [pickled-carrots]: success
+[2023-05-26 15:14:41] INFO root fetch - main [MainThread]: End processing [arraylib-solve]: success
+[2023-05-26 15:14:41] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-05-26 15:14:41] INFO root fetch - main [MainThread]: End processing [fino2py]: success
+[2023-05-26 15:14:41] INFO root fetch - main [MainThread]: End processing [odoo14-addon-product-import]: success
+[2023-05-26 15:14:42] INFO root fetch - main [MainThread]: End processing [charactr-api-sdk]: success
+[2023-05-26 15:14:42] INFO root fetch - main [MainThread]: End processing [akerbp.mlops]: success
+[2023-05-26 15:14:42] INFO root fetch - main [MainThread]: End processing [odoo14-addon-shopfloor]: success
+[2023-05-26 15:14:42] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-route53-health-check]: success
+[2023-05-26 15:14:42] INFO root fetch - main [MainThread]: Store serial: [18263200]
