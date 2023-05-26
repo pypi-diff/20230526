@@ -22281,3 +22281,44 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 19:11:05] INFO root fetch - main [MainThread]: End processing [tlcpack-sphinx-addon]: success
 [2023-05-26 19:11:05] INFO root fetch - main [MainThread]: End processing [arch]: success
 [2023-05-26 19:11:05] INFO root fetch - main [MainThread]: Store serial: [18266804]
+[2023-05-26 19:16:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18266804]
+[2023-05-26 19:16:14] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-26 19:16:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arch
+[2023-05-26 19:16:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-community-maps
+[2023-05-26 19:16:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pipeline-reader
+[2023-05-26 19:16:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: depthai-pipeline-graph
+[2023-05-26 19:16:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: arraylib-solve
+[2023-05-26 19:16:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: polymesh
+[2023-05-26 19:16:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: domjudge-utility
+[2023-05-26 19:16:14] INFO root fetch - processPackages [odoo14-addon-community-maps]: New version: [14.0.0.1.3] Old Version: [14.0.0.1.2]
+[2023-05-26 19:16:14] INFO root fetch - processPackages [arch]: New version: [6.1.0] Old Version: [6.0.1]
+[2023-05-26 19:16:14] INFO root fetch - processPackages [pipeline-reader]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-26 19:16:14] INFO root fetch - processPackages [arraylib-solve]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-26 19:16:14] WARNING root fetch - processPackages [depthai-pipeline-graph]: Skipping, unable to determine old version
+[2023-05-26 19:16:14] INFO root fetch - main [MainThread]: End processing [depthai-pipeline-graph] error
+[2023-05-26 19:16:14] INFO root fetch - processPackages [domjudge-utility]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-26 19:16:14] INFO root fetch - processPackages [polymesh]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 19:16:14] INFO root fetch - processPackages [arch]: executing diffoscope
+[2023-05-26 19:16:14] INFO root fetch - processPackages [arch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arch-6.0.1.tar.gz tmp/arch-6.1.0-cp39-cp39-win_amd64.whl.zip --markdown 20230526/a/arch/6.0.1-6.1.0/diff.md --exclude *.pyd
+[2023-05-26 19:16:14] INFO root fetch - processPackages [arraylib-solve]: executing diffoscope
+[2023-05-26 19:16:14] INFO root fetch - processPackages [arraylib-solve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arraylib_solve-0.8.0.tar.gz tmp/arraylib_solve-0.9.0.tar.gz --markdown 20230526/a/arraylib-solve/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-26 19:16:14] INFO root fetch - processPackages [pipeline-reader]: Downloading https://files.pythonhosted.org/packages/9c/59/cef682e5b5e3d98585519238e246155127bb56c96249a01f8a2abac69609/pipeline-reader-0.0.4.tar.gz
+[2023-05-26 19:16:14] INFO root fetch - processPackages [odoo14-addon-community-maps]: Downloading https://files.pythonhosted.org/packages/64/4a/92321a36ee588c1e8c1cf94ffd6211a4500fbf6be28cd6ab6b6e1fd6737b/odoo14_addon_community_maps-14.0.0.1.2-py3-none-any.whl
+[2023-05-26 19:16:15] INFO root fetch - processPackages [domjudge-utility]: Downloading https://files.pythonhosted.org/packages/55/7c/403d3d1d4ce0cf6f276a92c0bf0d03bc0c5f86dc51145ced3ff3d79d6004/domjudge_utility-0.0.8.tar.gz
+[2023-05-26 19:16:15] INFO root fetch - processPackages [pipeline-reader]: Downloading https://files.pythonhosted.org/packages/ae/40/35f1e0092cc7a14747154ff0960e590cfebe79979e24ccc93c5a597c666c/pipeline-reader-0.0.5.tar.gz
+[2023-05-26 19:16:15] INFO root fetch - processPackages [polymesh]: executing diffoscope
+[2023-05-26 19:16:15] INFO root fetch - processPackages [polymesh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polymesh-0.0.8.tar.gz tmp/polymesh-0.0.9.tar.gz --markdown 20230526/p/polymesh/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 19:16:15] INFO root fetch - processPackages [odoo14-addon-community-maps]: Downloading https://files.pythonhosted.org/packages/e2/3f/3d5726dd1e146485d11c325ba33bacb61dd67c7f02156d633c8c6c2b0d4b/odoo14_addon_community_maps-14.0.0.1.3-py3-none-any.whl
+[2023-05-26 19:16:15] INFO root fetch - processPackages [pipeline-reader]: executing diffoscope
+[2023-05-26 19:16:15] INFO root fetch - processPackages [pipeline-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipeline-reader-0.0.4.tar.gz tmp/pipeline-reader-0.0.5.tar.gz --markdown 20230526/p/pipeline-reader/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-26 19:16:15] INFO root fetch - processPackages [domjudge-utility]: executing diffoscope
+[2023-05-26 19:16:15] INFO root fetch - processPackages [domjudge-utility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domjudge_utility-0.0.7.tar.gz tmp/domjudge_utility-0.0.8.tar.gz --markdown 20230526/d/domjudge-utility/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-26 19:16:15] INFO root fetch - processPackages [odoo14-addon-community-maps]: executing diffoscope
+[2023-05-26 19:16:15] INFO root fetch - processPackages [odoo14-addon-community-maps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_community_maps-14.0.0.1.2-py3-none-any.whl.zip tmp/odoo14_addon_community_maps-14.0.0.1.3-py3-none-any.whl.zip --markdown 20230526/o/odoo14-addon-community-maps/14.0.0.1.2-14.0.0.1.3/diff.md --exclude *.pyd
+[2023-05-26 19:16:16] INFO root fetch - main [MainThread]: End processing [arraylib-solve]: success
+[2023-05-26 19:16:16] INFO root fetch - main [MainThread]: End processing [arch]: success
+[2023-05-26 19:16:17] INFO root fetch - main [MainThread]: End processing [domjudge-utility]: success
+[2023-05-26 19:16:17] INFO root fetch - main [MainThread]: End processing [pipeline-reader]: success
+[2023-05-26 19:16:17] INFO root fetch - main [MainThread]: End processing [polymesh]: success
+[2023-05-26 19:16:17] INFO root fetch - main [MainThread]: End processing [odoo14-addon-community-maps]: success
+[2023-05-26 19:16:17] INFO root fetch - main [MainThread]: Store serial: [18266839]
