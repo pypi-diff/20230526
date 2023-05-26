@@ -17804,3 +17804,61 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 16:40:25] INFO root fetch - main [MainThread]: End processing [datadog-checks-base]: success
 [2023-05-26 16:40:30] INFO root fetch - main [MainThread]: End processing [indico-plugin-vc-zoom]: success
 [2023-05-26 16:40:30] INFO root fetch - main [MainThread]: Store serial: [18264230]
+[2023-05-26 16:45:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18264230]
+[2023-05-26 16:45:39] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-26 16:45:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: integerbook
+[2023-05-26 16:45:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hiyobot
+[2023-05-26 16:45:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: elevation-Kyrgyzstan
+[2023-05-26 16:45:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ddadevops
+[2023-05-26 16:45:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: anywidget
+[2023-05-26 16:45:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: text2story
+[2023-05-26 16:45:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: open-autonomy
+[2023-05-26 16:45:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: open-aea-test-autonomy
+[2023-05-26 16:45:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: fastcoref
+[2023-05-26 16:45:39] INFO root fetch - processPackages [hiyobot]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-26 16:45:39] INFO root fetch - processPackages [open-autonomy]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-26 16:45:39] INFO root fetch - processPackages [elevation-Kyrgyzstan]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-26 16:45:39] INFO root fetch - processPackages [open-aea-test-autonomy]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-26 16:45:39] INFO root fetch - processPackages [anywidget]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-26 16:45:39] INFO root fetch - processPackages [ddadevops]: New version: [4.0.0.dev9] Old Version: [4.0.0.dev8]
+[2023-05-26 16:45:39] INFO root fetch - processPackages [text2story]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-26 16:45:39] INFO root fetch - processPackages [elevation-Kyrgyzstan]: Downloading https://files.pythonhosted.org/packages/16/5f/cd1829e11023938b39e9f8bd34e5373b401b6623952bd26198de1ceb7127/elevation-Kyrgyzstan-0.1.1.tar.gz
+[2023-05-26 16:45:39] INFO root fetch - processPackages [fastcoref]: New version: [2.1.6] Old Version: [2.1.5]
+[2023-05-26 16:45:39] INFO root fetch - processPackages [integerbook]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-26 16:45:39] INFO root fetch - processPackages [ddadevops]: executing diffoscope
+[2023-05-26 16:45:39] INFO root fetch - processPackages [ddadevops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddadevops-4.0.0.dev8.tar.gz tmp/ddadevops-4.0.0.dev9.tar.gz --markdown 20230526/d/ddadevops/4.0.0.dev8-4.0.0.dev9/diff.md --exclude *.pyd
+[2023-05-26 16:45:39] WARNING root fetch - processPackages [elevation-Kyrgyzstan]: Skipping package: exceeds size limit 11658201>=10485760
+[2023-05-26 16:45:39] INFO root fetch - main [MainThread]: End processing [elevation-Kyrgyzstan] error
+[2023-05-26 16:45:39] INFO root fetch - processPackages [open-autonomy]: Downloading https://files.pythonhosted.org/packages/26/db/68ff36c112427aa8da36a891a4d5aabb3a68713130bb62425cb8bbdb402e/open-autonomy-0.9.0.tar.gz
+[2023-05-26 16:45:39] INFO root fetch - processPackages [anywidget]: Downloading https://files.pythonhosted.org/packages/43/bf/9957cb7a4bcacedf7114863a22b073cf7ba6dd2f54a208f8e41eebcbb317/anywidget-0.3.0.tar.gz
+[2023-05-26 16:45:39] INFO root fetch - processPackages [open-aea-test-autonomy]: Downloading https://files.pythonhosted.org/packages/a0/6e/9c4d67ce36ee527c11b4a9025747f46b827bb71545592e7f3c4e627c3088/open-aea-test-autonomy-0.9.0.tar.gz
+[2023-05-26 16:45:40] INFO root fetch - processPackages [fastcoref]: Downloading https://files.pythonhosted.org/packages/5a/14/122bb28258f19a569fba06d4ec93e3f3046d7344699093aab665977df807/fastcoref-2.1.5.tar.gz
+[2023-05-26 16:45:40] INFO root fetch - processPackages [hiyobot]: Downloading https://files.pythonhosted.org/packages/ec/7f/a405bcc3e6e57a2c28e9a9fb65efb1fbf6922f22af69316ecfd33359577a/hiyobot-0.2.6.tar.gz
+[2023-05-26 16:45:40] INFO root fetch - processPackages [hiyobot]: executing diffoscope
+[2023-05-26 16:45:40] INFO root fetch - processPackages [hiyobot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiyobot-0.2.5.tar.gz tmp/hiyobot-0.2.6.tar.gz --markdown 20230526/h/hiyobot/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-26 16:45:40] INFO root fetch - processPackages [integerbook]: Downloading https://files.pythonhosted.org/packages/d4/8c/19a4dbcf49eb1e5bf346bb50dcaeaf56ec14ba6953a28a1a61c357913cb9/integerbook-0.0.7.tar.gz
+[2023-05-26 16:45:40] INFO root fetch - processPackages [text2story]: executing diffoscope
+[2023-05-26 16:45:40] INFO root fetch - processPackages [text2story]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text2story-1.2.8.tar.gz tmp/text2story-1.2.9.tar.gz --markdown 20230526/t/text2story/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-26 16:45:40] INFO root fetch - processPackages [fastcoref]: Downloading https://files.pythonhosted.org/packages/5c/35/d8e3906a6887e7dfbaf1d09fc9a7c16f117064eefc139ddacf7595b0db20/fastcoref-2.1.6.tar.gz
+[2023-05-26 16:45:40] INFO root fetch - processPackages [open-aea-test-autonomy]: Downloading https://files.pythonhosted.org/packages/16/ed/042bfa918bbe47dbe3fb43f396481d4f74ef1a90ac067516913c9fc8c2b7/open-aea-test-autonomy-0.9.1.tar.gz
+[2023-05-26 16:45:40] INFO root fetch - processPackages [integerbook]: executing diffoscope
+[2023-05-26 16:45:40] INFO root fetch - processPackages [integerbook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/integerbook-0.0.6.tar.gz tmp/integerbook-0.0.7.tar.gz --markdown 20230526/i/integerbook/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-26 16:45:40] INFO root fetch - processPackages [fastcoref]: executing diffoscope
+[2023-05-26 16:45:40] INFO root fetch - processPackages [fastcoref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastcoref-2.1.5.tar.gz tmp/fastcoref-2.1.6.tar.gz --markdown 20230526/f/fastcoref/2.1.5-2.1.6/diff.md --exclude *.pyd
+[2023-05-26 16:45:40] INFO root fetch - processPackages [open-aea-test-autonomy]: executing diffoscope
+[2023-05-26 16:45:40] INFO root fetch - processPackages [open-aea-test-autonomy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open-aea-test-autonomy-0.9.0.tar.gz tmp/open-aea-test-autonomy-0.9.1.tar.gz --markdown 20230526/o/open-aea-test-autonomy/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-26 16:45:40] INFO root fetch - processPackages [open-autonomy]: Downloading https://files.pythonhosted.org/packages/d2/14/e7bb8dec5be3ae2caf12a3a77abe5eb849912ee6ab113bbb753fb27c75bf/open-autonomy-0.9.1.tar.gz
+[2023-05-26 16:45:40] INFO root fetch - processPackages [anywidget]: Downloading https://files.pythonhosted.org/packages/c3/dd/b5cefa087b1aa32012599d835d8cbcae2889fffdf7fface0303d7cf2691f/anywidget-0.3.1.tar.gz
+[2023-05-26 16:45:40] INFO root fetch - processPackages [open-autonomy]: executing diffoscope
+[2023-05-26 16:45:40] INFO root fetch - processPackages [open-autonomy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open-autonomy-0.9.0.tar.gz tmp/open-autonomy-0.9.1.tar.gz --markdown 20230526/o/open-autonomy/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-26 16:45:41] INFO root fetch - processPackages [anywidget]: executing diffoscope
+[2023-05-26 16:45:41] INFO root fetch - processPackages [anywidget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anywidget-0.3.0.tar.gz tmp/anywidget-0.3.1.tar.gz --markdown 20230526/a/anywidget/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-26 16:45:41] INFO root fetch - main [MainThread]: End processing [hiyobot]: success
+[2023-05-26 16:45:42] INFO root fetch - main [MainThread]: End processing [fastcoref]: success
+[2023-05-26 16:45:42] INFO root fetch - main [MainThread]: End processing [ddadevops]: success
+[2023-05-26 16:45:42] INFO root fetch - main [MainThread]: End processing [text2story]: success
+[2023-05-26 16:45:42] INFO root fetch - main [MainThread]: End processing [open-aea-test-autonomy]: success
+[2023-05-26 16:45:44] INFO root fetch - main [MainThread]: End processing [integerbook]: success
+[2023-05-26 16:45:45] INFO root fetch - main [MainThread]: End processing [anywidget]: success
+[2023-05-26 16:45:55] INFO root fetch - main [MainThread]: End processing [open-autonomy]: success
+[2023-05-26 16:45:55] INFO root fetch - main [MainThread]: Store serial: [18264266]
