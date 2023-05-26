@@ -8821,3 +8821,46 @@
 [2023-05-26 08:12:52] INFO root fetch - main [MainThread]: End processing [pulumi-cloudamqp]: success
 [2023-05-26 08:12:57] INFO root fetch - main [MainThread]: End processing [pipen-board]: success
 [2023-05-26 08:12:57] INFO root fetch - main [MainThread]: Store serial: [18258472]
+[2023-05-26 08:18:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18258472]
+[2023-05-26 08:18:06] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-26 08:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-cloudflare
+[2023-05-26 08:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spark-etl
+[2023-05-26 08:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jsonfmt
+[2023-05-26 08:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: serialmfg
+[2023-05-26 08:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: furiosa-models
+[2023-05-26 08:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Qsim-trapped-ions
+[2023-05-26 08:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kuto
+[2023-05-26 08:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: salesea
+[2023-05-26 08:18:06] INFO root fetch - processPackages [pulumi-cloudflare]: New version: [5.3.0a1685078774] Old Version: [5.3.0a1684866188]
+[2023-05-26 08:18:06] INFO root fetch - processPackages [jsonfmt]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-26 08:18:06] WARNING root fetch - processPackages [serialmfg]: Skipping, unable to determine old version
+[2023-05-26 08:18:06] INFO root fetch - main [MainThread]: End processing [serialmfg] error
+[2023-05-26 08:18:06] WARNING root fetch - processPackages [salesea]: Skipping, unable to determine old version
+[2023-05-26 08:18:06] INFO root fetch - main [MainThread]: End processing [salesea] error
+[2023-05-26 08:18:06] INFO root fetch - processPackages [Qsim-trapped-ions]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-26 08:18:06] INFO root fetch - processPackages [furiosa-models]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-26 08:18:06] INFO root fetch - processPackages [kuto]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 08:18:06] INFO root fetch - processPackages [spark-etl]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 08:18:06] INFO root fetch - processPackages [spark-etl]: executing diffoscope
+[2023-05-26 08:18:06] INFO root fetch - processPackages [spark-etl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spark-etl-0.0.98.tar.gz tmp/spark-etl-0.0.99.tar.gz --markdown 20230526/s/spark-etl/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 08:18:07] INFO root fetch - processPackages [Qsim-trapped-ions]: Downloading https://files.pythonhosted.org/packages/f3/57/65aa42f518da76f17d56083b5c3ab29063a81791fb8176b38bc3580ec4c9/Qsim_trapped_ions-1.0.3.tar.gz
+[2023-05-26 08:18:07] INFO root fetch - processPackages [kuto]: executing diffoscope
+[2023-05-26 08:18:07] INFO root fetch - processPackages [kuto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kuto-0.0.8-py3-none-any.whl.zip tmp/kuto-0.0.9.tar.gz --markdown 20230526/k/kuto/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 08:18:07] INFO root fetch - processPackages [jsonfmt]: Downloading https://files.pythonhosted.org/packages/6e/3e/704e4b9b073b50497c3ad3584f1d3bf05bdebc812049412511de01e93d5f/jsonfmt-0.2.2.tar.gz
+[2023-05-26 08:18:07] INFO root fetch - processPackages [furiosa-models]: Downloading https://files.pythonhosted.org/packages/80/94/5764ccdb72e23230ef98725cce0923e6dd7fd375fa36d96439f6e76a9223/furiosa-models-0.9.0.tar.gz
+[2023-05-26 08:18:07] INFO root fetch - processPackages [jsonfmt]: executing diffoscope
+[2023-05-26 08:18:07] INFO root fetch - processPackages [jsonfmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonfmt-0.2.1.tar.gz tmp/jsonfmt-0.2.2.tar.gz --markdown 20230526/j/jsonfmt/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-26 08:18:07] INFO root fetch - processPackages [pulumi-cloudflare]: Downloading https://files.pythonhosted.org/packages/b7/d7/28613e9af1a3fdab2233a2af8934c5efb8f7890dfabf0f55ebd15f04e501/pulumi_cloudflare-5.3.0a1685078774.tar.gz
+[2023-05-26 08:18:07] WARNING root fetch - processPackages [furiosa-models]: Skipping package: exceeds size limit 20113768>=10485760
+[2023-05-26 08:18:07] INFO root fetch - main [MainThread]: End processing [furiosa-models] error
+[2023-05-26 08:18:07] INFO root fetch - processPackages [Qsim-trapped-ions]: Downloading https://files.pythonhosted.org/packages/e2/ad/b656cc24e6ccdae774a78b8d493d535de77a9c45066d12d67a01c3be7450/Qsim_trapped_ions-1.0.4.tar.gz
+[2023-05-26 08:18:07] INFO root fetch - processPackages [pulumi-cloudflare]: executing diffoscope
+[2023-05-26 08:18:07] INFO root fetch - processPackages [pulumi-cloudflare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_cloudflare-5.3.0a1684866188.tar.gz tmp/pulumi_cloudflare-5.3.0a1685078774.tar.gz --markdown 20230526/p/pulumi-cloudflare/5.3.0a1684866188-5.3.0a1685078774/diff.md --exclude *.pyd
+[2023-05-26 08:18:07] INFO root fetch - processPackages [Qsim-trapped-ions]: executing diffoscope
+[2023-05-26 08:18:07] INFO root fetch - processPackages [Qsim-trapped-ions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Qsim_trapped_ions-1.0.3.tar.gz tmp/Qsim_trapped_ions-1.0.4.tar.gz --markdown 20230526/Q/Qsim-trapped-ions/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-26 08:18:08] INFO root fetch - main [MainThread]: End processing [kuto]: success
+[2023-05-26 08:18:08] INFO root fetch - main [MainThread]: End processing [jsonfmt]: success
+[2023-05-26 08:18:08] INFO root fetch - main [MainThread]: End processing [spark-etl]: success
+[2023-05-26 08:18:08] INFO root fetch - main [MainThread]: End processing [Qsim-trapped-ions]: success
+[2023-05-26 08:18:09] INFO root fetch - main [MainThread]: End processing [pulumi-cloudflare]: success
+[2023-05-26 08:18:09] INFO root fetch - main [MainThread]: Store serial: [18258496]
