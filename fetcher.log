@@ -7597,3 +7597,28 @@
 [2023-05-26 06:46:03] INFO root fetch - main [MainThread]: End processing [binsync]: success
 [2023-05-26 06:46:04] INFO root fetch - main [MainThread]: End processing [odoo10-addon-purchase-cancel-reason]: success
 [2023-05-26 06:46:04] INFO root fetch - main [MainThread]: Store serial: [18257881]
+[2023-05-26 06:51:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18257881]
+[2023-05-26 06:51:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-26 06:51:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: convcsv2json
+[2023-05-26 06:51:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-purchase-order-vendor-product
+[2023-05-26 06:51:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: binsync
+[2023-05-26 06:51:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo11-addon-printer-zpl2
+[2023-05-26 06:51:12] INFO root fetch - processPackages [binsync]: New version: [3.9.0] Old Version: [3.6.0]
+[2023-05-26 06:51:12] WARNING root fetch - processPackages [convcsv2json]: Skipping, unable to determine old version
+[2023-05-26 06:51:12] INFO root fetch - main [MainThread]: End processing [convcsv2json] error
+[2023-05-26 06:51:12] INFO root fetch - processPackages [odoo14-addon-purchase-order-vendor-product]: New version: [14.0.1.1.1.dev9] Old Version: [14.0.1.1.1.dev7]
+[2023-05-26 06:51:12] INFO root fetch - processPackages [odoo11-addon-printer-zpl2]: New version: [11.0.1.0.1.99.dev2] Old Version: [11.0.1.0.1.99.dev1]
+[2023-05-26 06:51:12] INFO root fetch - processPackages [binsync]: executing diffoscope
+[2023-05-26 06:51:12] INFO root fetch - processPackages [binsync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binsync-3.6.0.tar.gz tmp/binsync-3.9.0.tar.gz --markdown 20230526/b/binsync/3.6.0-3.9.0/diff.md --exclude *.pyd
+[2023-05-26 06:51:12] INFO root fetch - processPackages [odoo14-addon-purchase-order-vendor-product]: Downloading https://files.pythonhosted.org/packages/86/99/cce83798febc94a3c4f7fcb9dcdc4c2f7bdcdb92873856c4702bdadd48f9/odoo14_addon_purchase_order_vendor_product-14.0.1.1.1.dev7-py3-none-any.whl
+[2023-05-26 06:51:12] INFO root fetch - processPackages [odoo11-addon-printer-zpl2]: Downloading https://files.pythonhosted.org/packages/b6/09/4b8550fb81b691f2cb31f993f244e7396d9dc61b9d986ecb457a28c8b9b6/odoo11_addon_printer_zpl2-11.0.1.0.1.99.dev1-py2.py3-none-any.whl
+[2023-05-26 06:51:13] INFO root fetch - processPackages [odoo14-addon-purchase-order-vendor-product]: Downloading https://files.pythonhosted.org/packages/b1/3f/694ee7cd83e55a3c7350ba3349306ad5288cd6c3a300f6d408cae617778e/odoo14_addon_purchase_order_vendor_product-14.0.1.1.1.dev9-py3-none-any.whl
+[2023-05-26 06:51:13] INFO root fetch - processPackages [odoo14-addon-purchase-order-vendor-product]: executing diffoscope
+[2023-05-26 06:51:13] INFO root fetch - processPackages [odoo14-addon-purchase-order-vendor-product]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_purchase_order_vendor_product-14.0.1.1.1.dev7-py3-none-any.whl.zip tmp/odoo14_addon_purchase_order_vendor_product-14.0.1.1.1.dev9-py3-none-any.whl.zip --markdown 20230526/o/odoo14-addon-purchase-order-vendor-product/14.0.1.1.1.dev7-14.0.1.1.1.dev9/diff.md --exclude *.pyd
+[2023-05-26 06:51:13] INFO root fetch - processPackages [odoo11-addon-printer-zpl2]: Downloading https://files.pythonhosted.org/packages/4b/08/ebc7c3b6da4bf48ee6e3f09df336f428ea59b3883ae54928131c8acc7665/odoo11_addon_printer_zpl2-11.0.1.0.1.99.dev2-py2.py3-none-any.whl
+[2023-05-26 06:51:13] INFO root fetch - processPackages [odoo11-addon-printer-zpl2]: executing diffoscope
+[2023-05-26 06:51:13] INFO root fetch - processPackages [odoo11-addon-printer-zpl2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_printer_zpl2-11.0.1.0.1.99.dev1-py2.py3-none-any.whl.zip tmp/odoo11_addon_printer_zpl2-11.0.1.0.1.99.dev2-py2.py3-none-any.whl.zip --markdown 20230526/o/odoo11-addon-printer-zpl2/11.0.1.0.1.99.dev1-11.0.1.0.1.99.dev2/diff.md --exclude *.pyd
+[2023-05-26 06:51:14] INFO root fetch - main [MainThread]: End processing [odoo14-addon-purchase-order-vendor-product]: success
+[2023-05-26 06:51:14] INFO root fetch - main [MainThread]: End processing [binsync]: success
+[2023-05-26 06:51:14] INFO root fetch - main [MainThread]: End processing [odoo11-addon-printer-zpl2]: success
+[2023-05-26 06:51:14] INFO root fetch - main [MainThread]: Store serial: [18257907]
