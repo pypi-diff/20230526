@@ -15243,3 +15243,86 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 14:33:48] INFO root fetch - main [MainThread]: End processing [tgwrap]: success
 [2023-05-26 14:34:36] INFO root fetch - main [MainThread]: End processing [uquake]: success
 [2023-05-26 14:34:36] INFO root fetch - main [MainThread]: Store serial: [18262722]
+[2023-05-26 14:39:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18262722]
+[2023-05-26 14:39:45] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-26 14:39:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: djangocms-simple-admin-style
+[2023-05-26 14:39:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edat-utils
+[2023-05-26 14:39:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: astromulti
+[2023-05-26 14:39:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: invenio-config-tuw
+[2023-05-26 14:39:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gfs-dynamical-core
+[2023-05-26 14:39:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vortex-api
+[2023-05-26 14:39:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: flatterer
+[2023-05-26 14:39:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sharedmap
+[2023-05-26 14:39:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: djangoldp-application
+[2023-05-26 14:39:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dankware
+[2023-05-26 14:39:45] INFO root fetch - processPackages [sharedmap]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-26 14:39:45] INFO root fetch - processPackages [vortex-api]: New version: [1.0.6.dev5] Old Version: [1.0.6.dev4]
+[2023-05-26 14:39:45] INFO root fetch - processPackages [invenio-config-tuw]: New version: [2023.2.4] Old Version: [2023.2.3]
+[2023-05-26 14:39:45] INFO root fetch - processPackages [astromulti]: New version: [1.0.5] Old Version: [1.0.3]
+[2023-05-26 14:39:45] INFO root fetch - processPackages [djangoldp-application]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-26 14:39:45] INFO root fetch - processPackages [gfs-dynamical-core]: New version: [0.1.8] Old Version: [0.1.6]
+[2023-05-26 14:39:45] INFO root fetch - processPackages [edat-utils]: New version: [0.4.0] Old Version: [0.3.9]
+[2023-05-26 14:39:45] INFO root fetch - processPackages [dankware]: New version: [3.3.9] Old Version: [3.3.8]
+[2023-05-26 14:39:45] INFO root fetch - processPackages [flatterer]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-26 14:39:45] INFO root fetch - processPackages [djangocms-simple-admin-style]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-05-26 14:39:45] INFO root fetch - processPackages [invenio-config-tuw]: Downloading https://files.pythonhosted.org/packages/a2/08/5ca93d65146cb8afc066a1e295d98af003a4b6272b14f03215d033c89a9d/invenio-config-tuw-2023.2.4.tar.gz
+[2023-05-26 14:39:45] INFO root fetch - processPackages [dankware]: Downloading https://files.pythonhosted.org/packages/b6/31/91837c9d0106942944e3eec9f901a04cb847dc6d19957e7168f8c7ec5f9f/dankware-3.3.8.tar.gz
+[2023-05-26 14:39:45] INFO root fetch - processPackages [vortex-api]: Downloading https://files.pythonhosted.org/packages/1b/e7/01f3df773689b214c58d87e33cbd213ad8ae30fee141aad8b4f95b9230ae/vortex_api-1.0.6.dev5.tar.gz
+[2023-05-26 14:39:45] INFO root fetch - processPackages [flatterer]: Downloading https://files.pythonhosted.org/packages/d3/2a/d5a4ddf1990ceb94b9a42407195dbc940028327379d5d23ded060acde04f/flatterer-0.8.0.tar.gz
+[2023-05-26 14:39:45] INFO root fetch - processPackages [djangocms-simple-admin-style]: Downloading https://files.pythonhosted.org/packages/01/b9/331dd996a75f90a30ffcf2ec37fa0c6866f49763c6e7f04ff164c7d189ac/djangocms-simple-admin-style-0.4.3.tar.gz
+[2023-05-26 14:39:45] INFO root fetch - processPackages [edat-utils]: Downloading https://files.pythonhosted.org/packages/6a/c5/a43116bd7e4a361efc907b8605621f0a76d14ef40a8e391bc6ce9e1d2d20/edat_utils-0.4.0.tar.gz
+[2023-05-26 14:39:45] INFO root fetch - processPackages [astromulti]: Downloading https://files.pythonhosted.org/packages/f7/d8/52cadbc507ab3db5bc9ca187f73c7c402aa623c23efabf12b015f4affde9/astromulti-1.0.5.tar.gz
+[2023-05-26 14:39:45] INFO root fetch - processPackages [sharedmap]: Downloading https://files.pythonhosted.org/packages/f5/0b/1fa9730c809875cbb7d4eb6048ebba3e5112bc7f866ba788417528605d3f/sharedmap-1.0.6.tar.gz
+[2023-05-26 14:39:45] INFO root fetch - processPackages [gfs-dynamical-core]: Downloading https://files.pythonhosted.org/packages/27/74/e6cedf4b9d67d1f39c455316d838b4f95ffc158a1b616090a659532dda1d/gfs_dynamical_core-0.1.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-26 14:39:45] INFO root fetch - processPackages [invenio-config-tuw]: executing diffoscope
+[2023-05-26 14:39:45] INFO root fetch - processPackages [invenio-config-tuw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invenio-config-tuw-2023.2.3.tar.gz tmp/invenio-config-tuw-2023.2.4.tar.gz --markdown 20230526/i/invenio-config-tuw/2023.2.3-2023.2.4/diff.md --exclude *.pyd
+[2023-05-26 14:39:45] INFO root fetch - processPackages [edat-utils]: executing diffoscope
+[2023-05-26 14:39:45] INFO root fetch - processPackages [edat-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edat_utils-0.3.9.tar.gz tmp/edat_utils-0.4.0.tar.gz --markdown 20230526/e/edat-utils/0.3.9-0.4.0/diff.md --exclude *.pyd
+[2023-05-26 14:39:45] INFO root fetch - processPackages [djangoldp-application]: executing diffoscope
+[2023-05-26 14:39:45] INFO root fetch - processPackages [djangoldp-application]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangoldp_application-1.1.8.tar.gz tmp/djangoldp_application-1.1.9.tar.gz --markdown 20230526/d/djangoldp-application/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-26 14:39:45] INFO root fetch - processPackages [vortex-api]: executing diffoscope
+[2023-05-26 14:39:45] INFO root fetch - processPackages [vortex-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vortex_api-1.0.6.dev4.tar.gz tmp/vortex_api-1.0.6.dev5.tar.gz --markdown 20230526/v/vortex-api/1.0.6.dev4-1.0.6.dev5/diff.md --exclude *.pyd
+[2023-05-26 14:39:45] INFO root fetch - processPackages [astromulti]: executing diffoscope
+[2023-05-26 14:39:45] INFO root fetch - processPackages [astromulti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astromulti-1.0.3.tar.gz tmp/astromulti-1.0.5.tar.gz --markdown 20230526/a/astromulti/1.0.3-1.0.5/diff.md --exclude *.pyd
+[2023-05-26 14:39:45] INFO root fetch - processPackages [dankware]: Downloading https://files.pythonhosted.org/packages/18/e9/320c7bc6ff864f2294fcb86ed262c9be89b36e540cba8e028df445405aee/dankware-3.3.9.tar.gz
+[2023-05-26 14:39:45] INFO root fetch - processPackages [djangocms-simple-admin-style]: Downloading https://files.pythonhosted.org/packages/a9/5b/1f61b495bab471b23aea23cafa1861e024c3609b4d240a83a5905dbff2c8/djangocms-simple-admin-style-0.4.4.tar.gz
+[2023-05-26 14:39:45] INFO root fetch - processPackages [sharedmap]: executing diffoscope
+[2023-05-26 14:39:45] INFO root fetch - processPackages [sharedmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharedmap-1.0.5.tar.gz tmp/sharedmap-1.0.6.tar.gz --markdown 20230526/s/sharedmap/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-26 14:39:45] INFO root fetch - processPackages [flatterer]: Downloading https://files.pythonhosted.org/packages/c0/3e/1c9e5f3788d3e191160c97815960f5109318c854cd12cd43e7b8c2badc4f/flatterer-0.9.0.tar.gz
+[2023-05-26 14:39:45] INFO root fetch - processPackages [dankware]: executing diffoscope
+[2023-05-26 14:39:45] INFO root fetch - processPackages [dankware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dankware-3.3.8.tar.gz tmp/dankware-3.3.9.tar.gz --markdown 20230526/d/dankware/3.3.8-3.3.9/diff.md --exclude *.pyd
+[2023-05-26 14:39:45] INFO root fetch - processPackages [djangocms-simple-admin-style]: executing diffoscope
+[2023-05-26 14:39:45] INFO root fetch - processPackages [djangocms-simple-admin-style]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangocms-simple-admin-style-0.4.3.tar.gz tmp/djangocms-simple-admin-style-0.4.4.tar.gz --markdown 20230526/d/djangocms-simple-admin-style/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-05-26 14:39:46] INFO root fetch - processPackages [flatterer]: executing diffoscope
+[2023-05-26 14:39:46] INFO root fetch - processPackages [flatterer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatterer-0.8.0.tar.gz tmp/flatterer-0.9.0.tar.gz --markdown 20230526/f/flatterer/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-26 14:39:46] INFO root fetch - processPackages [gfs-dynamical-core]: executing diffoscope
+[2023-05-26 14:39:46] INFO root fetch - processPackages [gfs-dynamical-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gfs_dynamical_core-0.1.6-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/gfs_dynamical_core-0.1.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230526/g/gfs-dynamical-core/0.1.6-0.1.8/diff.md --exclude *.pyd
+[2023-05-26 14:39:47] INFO root fetch - processPackages [vortex-api]: Start processing: act4e-mcdp
+[2023-05-26 14:39:47] INFO root fetch - main [MainThread]: End processing [vortex-api]: success
+[2023-05-26 14:39:47] INFO root fetch - processPackages [act4e-mcdp]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-05-26 14:39:47] INFO root fetch - processPackages [djangoldp-application]: Start processing: fino2py
+[2023-05-26 14:39:47] INFO root fetch - main [MainThread]: End processing [djangoldp-application]: success
+[2023-05-26 14:39:47] INFO root fetch - processPackages [edat-utils]: Start processing: tensorcircuit-nightly
+[2023-05-26 14:39:47] INFO root fetch - main [MainThread]: End processing [edat-utils]: success
+[2023-05-26 14:39:47] INFO root fetch - processPackages [tensorcircuit-nightly]: New version: [0.9.1.dev20230525] Old Version: [0.9.1.dev20230524]
+[2023-05-26 14:39:47] WARNING root fetch - processPackages [fino2py]: Skipping, unable to determine old version
+[2023-05-26 14:39:47] INFO root fetch - processPackages [fino2py]: Start processing: alkira-sdk
+[2023-05-26 14:39:47] INFO root fetch - main [MainThread]: End processing [fino2py] error
+[2023-05-26 14:39:47] INFO root fetch - processPackages [act4e-mcdp]: Downloading https://files.pythonhosted.org/packages/fc/52/1bc8b09ed4df8cc96cb5b77fd15ce5a875cca98d5c75b8579165a2eb3352/act4e_mcdp-0.3.6-py3-none-any.whl
+[2023-05-26 14:39:47] WARNING root fetch - processPackages [alkira-sdk]: Skipping, unable to determine old version
+[2023-05-26 14:39:47] INFO root fetch - main [MainThread]: End processing [alkira-sdk] error
+[2023-05-26 14:39:48] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/12/cd/7fd5045096b1b7afb1a1f8b3b5f9a776e25c88e9fb6ef08ade1e6ef44c62/tensorcircuit-nightly-0.9.1.dev20230525.tar.gz
+[2023-05-26 14:39:48] INFO root fetch - processPackages [act4e-mcdp]: executing diffoscope
+[2023-05-26 14:39:48] INFO root fetch - processPackages [act4e-mcdp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/act4e_mcdp-0.3.5-py3-none-any.whl.zip tmp/act4e_mcdp-0.3.6-py3-none-any.whl.zip --markdown 20230526/a/act4e-mcdp/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-05-26 14:39:48] INFO root fetch - processPackages [tensorcircuit-nightly]: executing diffoscope
+[2023-05-26 14:39:48] INFO root fetch - processPackages [tensorcircuit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorcircuit-nightly-0.9.1.dev20230524.tar.gz tmp/tensorcircuit-nightly-0.9.1.dev20230525.tar.gz --markdown 20230526/t/tensorcircuit-nightly/0.9.1.dev20230524-0.9.1.dev20230525/diff.md --exclude *.pyd
+[2023-05-26 14:39:48] INFO root fetch - main [MainThread]: End processing [invenio-config-tuw]: success
+[2023-05-26 14:39:48] INFO root fetch - main [MainThread]: End processing [astromulti]: success
+[2023-05-26 14:39:48] INFO root fetch - main [MainThread]: End processing [djangocms-simple-admin-style]: success
+[2023-05-26 14:39:48] INFO root fetch - main [MainThread]: End processing [flatterer]: success
+[2023-05-26 14:39:48] INFO root fetch - main [MainThread]: End processing [sharedmap]: success
+[2023-05-26 14:39:48] INFO root fetch - main [MainThread]: End processing [dankware]: success
+[2023-05-26 14:39:49] INFO root fetch - main [MainThread]: End processing [act4e-mcdp]: success
+[2023-05-26 14:39:50] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
+[2023-05-26 14:40:09] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
+[2023-05-26 14:40:09] INFO root fetch - main [MainThread]: Store serial: [18262792]
