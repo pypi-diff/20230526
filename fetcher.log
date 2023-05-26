@@ -22097,3 +22097,119 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 19:00:29] INFO root fetch - main [MainThread]: End processing [c4m-pdk-gf180mcu]: success
 [2023-05-26 19:00:34] INFO root fetch - main [MainThread]: End processing [NEMO-CE]: success
 [2023-05-26 19:00:34] INFO root fetch - main [MainThread]: Store serial: [18266657]
+[2023-05-26 19:05:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18266657]
+[2023-05-26 19:05:45] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-26 19:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CausalPy
+[2023-05-26 19:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: omnisearch
+[2023-05-26 19:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pycvm
+[2023-05-26 19:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: calligraphy-scripting
+[2023-05-26 19:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nemollm
+[2023-05-26 19:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: omnisearch
+[2023-05-26 19:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PyScalapack
+[2023-05-26 19:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PyTAT
+[2023-05-26 19:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyx-pysite
+[2023-05-26 19:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: lazy-graph
+[2023-05-26 19:05:45] INFO root fetch - processPackages [CausalPy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 19:05:45] INFO root fetch - processPackages [pycvm]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-26 19:05:45] INFO root fetch - processPackages [omnisearch]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-26 19:05:45] INFO root fetch - processPackages [nemollm]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-26 19:05:45] WARNING root fetch - processPackages [pyx-pysite]: Skipping, unable to determine old version
+[2023-05-26 19:05:45] INFO root fetch - processPackages [pyx-pysite]: Start processing: tetragono
+[2023-05-26 19:05:45] INFO root fetch - main [MainThread]: End processing [pyx-pysite] error
+[2023-05-26 19:05:45] INFO root fetch - processPackages [omnisearch]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-26 19:05:45] INFO root fetch - processPackages [lazy-graph]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-05-26 19:05:45] INFO root fetch - processPackages [PyScalapack]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-05-26 19:05:45] INFO root fetch - processPackages [calligraphy-scripting]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-26 19:05:45] INFO root fetch - processPackages [PyTAT]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-05-26 19:05:45] INFO root fetch - processPackages [tetragono]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-05-26 19:05:45] INFO root fetch - processPackages [omnisearch]: Downloading https://files.pythonhosted.org/packages/fe/c2/10630146b41c65bd7824462314c0655f675c2baa302d5cfa250bdd39a4cc/omnisearch-0.0.5.tar.gz
+[2023-05-26 19:05:45] INFO root fetch - processPackages [omnisearch]: Downloading https://files.pythonhosted.org/packages/fe/c2/10630146b41c65bd7824462314c0655f675c2baa302d5cfa250bdd39a4cc/omnisearch-0.0.5.tar.gz
+[2023-05-26 19:05:45] INFO root fetch - processPackages [pycvm]: Downloading https://files.pythonhosted.org/packages/64/03/8aaab8c4f4bd681a5be42578393e4ae6c6c1eb1a564a9180dfb5da610378/pycvm-0.4.0.tar.gz
+[2023-05-26 19:05:45] INFO root fetch - processPackages [CausalPy]: Downloading https://files.pythonhosted.org/packages/58/a1/5ef70803ec1f2b3929956ef61756ade2bbfb64bea47c4cbfb590f34adcf1/CausalPy-0.0.8.tar.gz
+[2023-05-26 19:05:45] INFO root fetch - processPackages [calligraphy-scripting]: Downloading https://files.pythonhosted.org/packages/95/8e/af2237f3afe07deffe71d9e45e838c315b322bc101e549c14c975c92ce45/calligraphy_scripting-1.1.3.tar.gz
+[2023-05-26 19:05:45] INFO root fetch - processPackages [nemollm]: Downloading https://files.pythonhosted.org/packages/5f/8d/16687cc4047465641b83aa7b50c8516342639fdf727f8de9daa9174c7655/nemollm-0.3.0-py3-none-any.whl
+[2023-05-26 19:05:45] INFO root fetch - processPackages [lazy-graph]: Downloading https://files.pythonhosted.org/packages/2d/d8/597e70cb451b47a45546a4efca6de074a8600a87b0f63228b1324bb6c426/lazy_graph-0.3.5-py3-none-any.whl
+[2023-05-26 19:05:45] INFO root fetch - processPackages [tetragono]: Downloading https://files.pythonhosted.org/packages/42/72/e5c8860a62717119ce2f2432aeb0034c91007cd1fcfa5a28c5ddff115a49/tetragono-0.3.5-py3-none-any.whl
+[2023-05-26 19:05:45] INFO root fetch - processPackages [PyScalapack]: Downloading https://files.pythonhosted.org/packages/2c/9e/932e43910169bd7f4d61429b9cf621ebaa192aebc62b98ba7888a568ba9a/PyScalapack-0.3.5-py3-none-any.whl
+[2023-05-26 19:05:45] INFO root fetch - processPackages [PyTAT]: Downloading https://files.pythonhosted.org/packages/0e/27/66a00505b0c7ce1d597769e4d6bbb45acfdde15b9220a6681be2a8b4d963/PyTAT-0.3.5-cp39-cp39-win_amd64.whl
+[2023-05-26 19:05:45] WARNING root fetch - processPackages [PyTAT]: Skipping package: exceeds size limit 25108043>=10485760
+[2023-05-26 19:05:45] INFO root fetch - processPackages [PyTAT]: Start processing: tetraku
+[2023-05-26 19:05:45] INFO root fetch - main [MainThread]: End processing [PyTAT] error
+[2023-05-26 19:05:45] INFO root fetch - processPackages [tetraku]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-05-26 19:05:45] INFO root fetch - processPackages [omnisearch]: Downloading https://files.pythonhosted.org/packages/27/dc/d9db684ac9c462b03d902c030bb96ec8d8e1f8394a84bc1801e08405d3ce/omnisearch-0.0.6.tar.gz
+[2023-05-26 19:05:45] INFO root fetch - processPackages [omnisearch]: Downloading https://files.pythonhosted.org/packages/27/dc/d9db684ac9c462b03d902c030bb96ec8d8e1f8394a84bc1801e08405d3ce/omnisearch-0.0.6.tar.gz
+[2023-05-26 19:05:45] INFO root fetch - processPackages [calligraphy-scripting]: Downloading https://files.pythonhosted.org/packages/72/7d/c781927f92d85ba83ef25b94db6bd5e6e5fce59c67a7a88a5a9663b581c0/calligraphy_scripting-1.1.4.tar.gz
+[2023-05-26 19:05:46] INFO root fetch - processPackages [tetragono]: Downloading https://files.pythonhosted.org/packages/4a/63/b775116ff1d7ba551a985e5b3708b54ac855b2076deb3704da8b8e0227bf/tetragono-0.3.6-py3-none-any.whl
+[2023-05-26 19:05:46] INFO root fetch - processPackages [lazy-graph]: Downloading https://files.pythonhosted.org/packages/c3/05/6145bfea2e262426f6e5120b8a91e7131b7e07cdc5bea6cbcaf5a1aaa1cd/lazy_graph-0.3.6-py3-none-any.whl
+[2023-05-26 19:05:46] INFO root fetch - processPackages [PyScalapack]: Downloading https://files.pythonhosted.org/packages/25/ab/cac39e72777e5a1ba722b06f030cbc9c4729271bd02718524394d224e31d/PyScalapack-0.3.6-py3-none-any.whl
+[2023-05-26 19:05:46] INFO root fetch - processPackages [CausalPy]: Downloading https://files.pythonhosted.org/packages/ad/4e/44a6554d1516e44e7307c532ab52f046be22879de63b9fc058f788d93279/CausalPy-0.0.9.tar.gz
+[2023-05-26 19:05:46] INFO root fetch - processPackages [nemollm]: Downloading https://files.pythonhosted.org/packages/db/3e/f0db036c07e9362abad10dd50bd6784509453a993f1d7af432be0b070cc1/nemollm-0.3.1-py3-none-any.whl
+[2023-05-26 19:05:46] INFO root fetch - processPackages [tetraku]: Downloading https://files.pythonhosted.org/packages/a5/56/020abe2132594dbc78c282ccd3866b7f77c9b62e86845996fe6f203fcdad/tetraku-0.3.5-py3-none-any.whl
+[2023-05-26 19:05:46] INFO root fetch - processPackages [pycvm]: Downloading https://files.pythonhosted.org/packages/0a/1c/f3f5dd5e836a79e3b4d67b7aa62169285722cab7ab9020adb7b614f048fe/pycvm-0.4.1.tar.gz
+[2023-05-26 19:05:46] INFO root fetch - processPackages [tetragono]: executing diffoscope
+[2023-05-26 19:05:46] INFO root fetch - processPackages [tetragono]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tetragono-0.3.5-py3-none-any.whl.zip tmp/tetragono-0.3.6-py3-none-any.whl.zip --markdown 20230526/t/tetragono/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-05-26 19:05:46] INFO root fetch - processPackages [lazy-graph]: executing diffoscope
+[2023-05-26 19:05:46] INFO root fetch - processPackages [lazy-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazy_graph-0.3.5-py3-none-any.whl.zip tmp/lazy_graph-0.3.6-py3-none-any.whl.zip --markdown 20230526/l/lazy-graph/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-05-26 19:05:46] INFO root fetch - processPackages [calligraphy-scripting]: executing diffoscope
+[2023-05-26 19:05:46] INFO root fetch - processPackages [calligraphy-scripting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calligraphy_scripting-1.1.3.tar.gz tmp/calligraphy_scripting-1.1.4.tar.gz --markdown 20230526/c/calligraphy-scripting/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-26 19:05:46] INFO root fetch - processPackages [PyScalapack]: executing diffoscope
+[2023-05-26 19:05:46] INFO root fetch - processPackages [PyScalapack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyScalapack-0.3.5-py3-none-any.whl.zip tmp/PyScalapack-0.3.6-py3-none-any.whl.zip --markdown 20230526/P/PyScalapack/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-05-26 19:05:46] INFO root fetch - processPackages [omnisearch]: executing diffoscope
+[2023-05-26 19:05:46] INFO root fetch - processPackages [omnisearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omnisearch-0.0.5.tar.gz tmp/omnisearch-0.0.6.tar.gz --markdown 20230526/o/omnisearch/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-26 19:05:46] INFO root fetch - processPackages [omnisearch]: executing diffoscope
+[2023-05-26 19:05:46] INFO root fetch - processPackages [omnisearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omnisearch-0.0.5.tar.gz tmp/omnisearch-0.0.6.tar.gz --markdown 20230526/o/omnisearch/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-26 19:05:46] INFO root fetch - processPackages [nemollm]: executing diffoscope
+[2023-05-26 19:05:46] INFO root fetch - processPackages [nemollm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nemollm-0.3.0-py3-none-any.whl.zip tmp/nemollm-0.3.1-py3-none-any.whl.zip --markdown 20230526/n/nemollm/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-26 19:05:46] INFO root fetch - processPackages [pycvm]: executing diffoscope
+[2023-05-26 19:05:46] INFO root fetch - processPackages [pycvm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycvm-0.4.0.tar.gz tmp/pycvm-0.4.1.tar.gz --markdown 20230526/p/pycvm/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-26 19:05:46] INFO root fetch - processPackages [CausalPy]: executing diffoscope
+[2023-05-26 19:05:46] INFO root fetch - processPackages [CausalPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CausalPy-0.0.8.tar.gz tmp/CausalPy-0.0.9.tar.gz --markdown 20230526/C/CausalPy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 19:05:46] INFO root fetch - processPackages [tetraku]: Downloading https://files.pythonhosted.org/packages/43/a9/382c3819876ed251f0cd2d52316f365181e51e9a3023ef7abc5ebe644286/tetraku-0.3.6-py3-none-any.whl
+[2023-05-26 19:05:46] INFO root fetch - processPackages [tetraku]: executing diffoscope
+[2023-05-26 19:05:46] INFO root fetch - processPackages [tetraku]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tetraku-0.3.5-py3-none-any.whl.zip tmp/tetraku-0.3.6-py3-none-any.whl.zip --markdown 20230526/t/tetraku/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-05-26 19:05:48] INFO root fetch - processPackages [nemollm]: Start processing: tetraux
+[2023-05-26 19:05:48] INFO root fetch - main [MainThread]: End processing [nemollm]: success
+[2023-05-26 19:05:48] INFO root fetch - processPackages [tetraux]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-05-26 19:05:48] INFO root fetch - processPackages [omnisearch]: Start processing: simulai-toolkit
+[2023-05-26 19:05:48] INFO root fetch - main [MainThread]: End processing [omnisearch]: success
+[2023-05-26 19:05:48] INFO root fetch - processPackages [simulai-toolkit]: New version: [0.99.9] Old Version: [0.99.8]
+[2023-05-26 19:05:48] INFO root fetch - processPackages [PyScalapack]: Start processing: tnsp-bridge
+[2023-05-26 19:05:48] INFO root fetch - main [MainThread]: End processing [PyScalapack]: success
+[2023-05-26 19:05:48] INFO root fetch - processPackages [tnsp-bridge]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-05-26 19:05:48] INFO root fetch - processPackages [lazy-graph]: Start processing: tbd-calver-versioning
+[2023-05-26 19:05:48] INFO root fetch - main [MainThread]: End processing [lazy-graph]: success
+[2023-05-26 19:05:48] WARNING root fetch - processPackages [tbd-calver-versioning]: Skipping, unable to determine old version
+[2023-05-26 19:05:48] INFO root fetch - processPackages [tbd-calver-versioning]: Start processing: k1lib
+[2023-05-26 19:05:48] INFO root fetch - main [MainThread]: End processing [tbd-calver-versioning] error
+[2023-05-26 19:05:48] INFO root fetch - processPackages [omnisearch]: Start processing: coniferest
+[2023-05-26 19:05:48] INFO root fetch - main [MainThread]: End processing [omnisearch]: success
+[2023-05-26 19:05:48] INFO root fetch - processPackages [tetraux]: Downloading https://files.pythonhosted.org/packages/88/ee/9dfa051283cf6240fee3c8c4902e1472586a5c5db85aff80f3dd62e710d2/tetraux-0.3.5-cp39-cp39-win_amd64.whl
+[2023-05-26 19:05:48] INFO root fetch - main [MainThread]: End processing [calligraphy-scripting]: success
+[2023-05-26 19:05:48] INFO root fetch - processPackages [simulai-toolkit]: Downloading https://files.pythonhosted.org/packages/68/fd/10eb6045a48c23ed6339d03a625af9fa1fbc036a14b601cd56e6d51a9b71/simulai-toolkit-0.99.8.tar.gz
+[2023-05-26 19:05:48] INFO root fetch - processPackages [k1lib]: New version: [1.3.9.4] Old Version: [1.3.9.3]
+[2023-05-26 19:05:48] INFO root fetch - processPackages [tnsp-bridge]: Downloading https://files.pythonhosted.org/packages/70/6e/1acc53a0d015fa38b41c0a1190f49215d2f2f760b516017bc5902a8519fd/tnsp_bridge-0.3.5-py3-none-any.whl
+[2023-05-26 19:05:48] INFO root fetch - processPackages [coniferest]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-26 19:05:49] INFO root fetch - processPackages [coniferest]: Downloading https://files.pythonhosted.org/packages/7f/97/69d8515677d92a862a74857986a1cef3d0e74ecc8bcc53e1dc7dceba89fe/coniferest-0.0.6.tar.gz
+[2023-05-26 19:05:49] INFO root fetch - processPackages [simulai-toolkit]: Downloading https://files.pythonhosted.org/packages/4e/59/d10e5443ca6c8e27098c2fe36431edcce43c24db217cffe69efd19d84f86/simulai-toolkit-0.99.9.tar.gz
+[2023-05-26 19:05:49] WARNING root fetch - processPackages [coniferest]: Skipping package: exceeds size limit 19303882>=10485760
+[2023-05-26 19:05:49] INFO root fetch - main [MainThread]: End processing [coniferest] error
+[2023-05-26 19:05:49] INFO root fetch - processPackages [k1lib]: Downloading https://files.pythonhosted.org/packages/6c/28/41a12d25f492cef67eebbaf24160b50615cc212bbcaf66f8f13e0f5e0a63/k1lib-1.3.9.4-py3-none-any.whl
+[2023-05-26 19:05:49] INFO root fetch - processPackages [tnsp-bridge]: Downloading https://files.pythonhosted.org/packages/f8/d6/bf02ee262f7889635e1917cf9c125dcc851047a5641d29140bfcf147de24/tnsp_bridge-0.3.6-py3-none-any.whl
+[2023-05-26 19:05:49] INFO root fetch - processPackages [tetraux]: Downloading https://files.pythonhosted.org/packages/7c/07/39035566717ca63d3a73493eafdba55bd0b8fd119be1249cebc011aed7c3/tetraux-0.3.6-cp39-cp39-win_amd64.whl
+[2023-05-26 19:05:49] INFO root fetch - processPackages [tnsp-bridge]: executing diffoscope
+[2023-05-26 19:05:49] INFO root fetch - processPackages [tnsp-bridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tnsp_bridge-0.3.5-py3-none-any.whl.zip tmp/tnsp_bridge-0.3.6-py3-none-any.whl.zip --markdown 20230526/t/tnsp-bridge/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-05-26 19:05:49] INFO root fetch - processPackages [simulai-toolkit]: executing diffoscope
+[2023-05-26 19:05:49] INFO root fetch - processPackages [simulai-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simulai-toolkit-0.99.8.tar.gz tmp/simulai-toolkit-0.99.9.tar.gz --markdown 20230526/s/simulai-toolkit/0.99.8-0.99.9/diff.md --exclude *.pyd
+[2023-05-26 19:05:49] INFO root fetch - processPackages [tetraux]: executing diffoscope
+[2023-05-26 19:05:49] INFO root fetch - processPackages [tetraux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tetraux-0.3.5-cp39-cp39-win_amd64.whl.zip tmp/tetraux-0.3.6-cp39-cp39-win_amd64.whl.zip --markdown 20230526/t/tetraux/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-05-26 19:05:49] INFO root fetch - main [MainThread]: End processing [tetragono]: success
+[2023-05-26 19:05:49] INFO root fetch - main [MainThread]: End processing [CausalPy]: success
+[2023-05-26 19:05:49] INFO root fetch - main [MainThread]: End processing [pycvm]: success
+[2023-05-26 19:05:49] INFO root fetch - main [MainThread]: End processing [tetraku]: success
+[2023-05-26 19:05:49] INFO root fetch - processPackages [k1lib]: executing diffoscope
+[2023-05-26 19:05:49] INFO root fetch - processPackages [k1lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/k1lib-1.3.9.3-py3-none-any.whl.zip tmp/k1lib-1.3.9.4-py3-none-any.whl.zip --markdown 20230526/k/k1lib/1.3.9.3-1.3.9.4/diff.md --exclude *.pyd
+[2023-05-26 19:05:51] INFO root fetch - main [MainThread]: End processing [tnsp-bridge]: success
+[2023-05-26 19:05:51] INFO root fetch - main [MainThread]: End processing [simulai-toolkit]: success
+[2023-05-26 19:05:51] INFO root fetch - main [MainThread]: End processing [k1lib]: success
+[2023-05-26 19:05:52] INFO root fetch - main [MainThread]: End processing [tetraux]: success
+[2023-05-26 19:05:52] INFO root fetch - main [MainThread]: Store serial: [18266742]
