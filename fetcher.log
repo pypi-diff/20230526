@@ -10087,3 +10087,60 @@
 [2023-05-26 09:35:13] INFO root fetch - main [MainThread]: End processing [pulumi-openstack]: success
 [2023-05-26 09:35:14] INFO root fetch - main [MainThread]: End processing [monobit]: success
 [2023-05-26 09:35:14] INFO root fetch - main [MainThread]: Store serial: [18259217]
+[2023-05-26 09:40:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18259217]
+[2023-05-26 09:40:23] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-26 09:40:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bdffont
+[2023-05-26 09:40:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: my_first_upload_project
+[2023-05-26 09:40:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lalsuite
+[2023-05-26 09:40:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: textbsr
+[2023-05-26 09:40:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: salesea
+[2023-05-26 09:40:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kuto
+[2023-05-26 09:40:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rppt
+[2023-05-26 09:40:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: py-gf-auto-doc
+[2023-05-26 09:40:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pulumi-vault
+[2023-05-26 09:40:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: catgram
+[2023-05-26 09:40:23] INFO root fetch - processPackages [bdffont]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-26 09:40:23] WARNING root fetch - processPackages [salesea]: Skipping, unable to determine old version
+[2023-05-26 09:40:23] INFO root fetch - processPackages [salesea]: Start processing: pulumi-docker
+[2023-05-26 09:40:23] INFO root fetch - main [MainThread]: End processing [salesea] error
+[2023-05-26 09:40:23] WARNING root fetch - processPackages [my_first_upload_project]: Skipping, unable to determine old version
+[2023-05-26 09:40:23] INFO root fetch - processPackages [my_first_upload_project]: Start processing: nico-font-tool
+[2023-05-26 09:40:23] INFO root fetch - main [MainThread]: End processing [my_first_upload_project] error
+[2023-05-26 09:40:23] INFO root fetch - processPackages [textbsr]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 09:40:23] WARNING root fetch - processPackages [rppt]: Skipping, unable to determine old version
+[2023-05-26 09:40:23] INFO root fetch - processPackages [kuto]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-26 09:40:23] INFO root fetch - main [MainThread]: End processing [rppt] error
+[2023-05-26 09:40:23] WARNING root fetch - processPackages [py-gf-auto-doc]: Skipping, unable to determine old version
+[2023-05-26 09:40:23] INFO root fetch - main [MainThread]: End processing [py-gf-auto-doc] error
+[2023-05-26 09:40:23] INFO root fetch - processPackages [pulumi-docker]: New version: [4.3.0a1685034332] Old Version: [4.3.0a1684950981]
+[2023-05-26 09:40:23] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2023-05-26 09:40:23] INFO root fetch - processPackages [pulumi-vault]: New version: [5.9.0a1678382334] Old Version: [5.9.0a1678129627]
+[2023-05-26 09:40:23] WARNING root fetch - processPackages [catgram]: Skipping, unable to determine old version
+[2023-05-26 09:40:23] INFO root fetch - main [MainThread]: End processing [catgram] error
+[2023-05-26 09:40:24] INFO root fetch - processPackages [nico-font-tool]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-26 09:40:24] INFO root fetch - processPackages [kuto]: executing diffoscope
+[2023-05-26 09:40:24] INFO root fetch - processPackages [kuto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kuto-0.0.8-py3-none-any.whl.zip tmp/kuto-0.0.9.tar.gz --markdown 20230526/k/kuto/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 09:40:24] INFO root fetch - processPackages [textbsr]: executing diffoscope
+[2023-05-26 09:40:24] INFO root fetch - processPackages [textbsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textbsr-0.0.8.tar.gz tmp/textbsr-0.0.9.tar.gz --markdown 20230526/t/textbsr/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 09:40:24] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-26 09:40:24] INFO root fetch - processPackages [bdffont]: Downloading https://files.pythonhosted.org/packages/ea/6d/0ae4e32b5f5e1a3fc403095bc6293f93784554745bc594ff1ffcb45aaf5e/bdffont-0.0.7.tar.gz
+[2023-05-26 09:40:24] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2023-05-26 09:40:24] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2023-05-26 09:40:24] INFO root fetch - processPackages [bdffont]: Downloading https://files.pythonhosted.org/packages/9f/78/c824af9f0c4c22da3a7b211d6acf4fcf5cc3738dae57d6eb3d860af0f5e6/bdffont-0.0.8.tar.gz
+[2023-05-26 09:40:24] INFO root fetch - processPackages [pulumi-docker]: Downloading https://files.pythonhosted.org/packages/70/f3/e74cc1e542b0c6996cc0dac2d793f49275aca252d22524c34f69ddd15528/pulumi_docker-4.3.0a1685034332.tar.gz
+[2023-05-26 09:40:24] INFO root fetch - processPackages [pulumi-vault]: executing diffoscope
+[2023-05-26 09:40:24] INFO root fetch - processPackages [pulumi-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_vault-5.9.0a1678129627.tar.gz tmp/pulumi_vault-5.9.0a1678382334.tar.gz --markdown 20230526/p/pulumi-vault/5.9.0a1678129627-5.9.0a1678382334/diff.md --exclude *.pyd
+[2023-05-26 09:40:24] INFO root fetch - processPackages [nico-font-tool]: Downloading https://files.pythonhosted.org/packages/9c/1d/174dad6653833172ada77d45274bc79a396c3e1b91b6947ea601d074b691/nico-font-tool-0.0.4.tar.gz
+[2023-05-26 09:40:24] INFO root fetch - processPackages [bdffont]: executing diffoscope
+[2023-05-26 09:40:24] INFO root fetch - processPackages [bdffont]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bdffont-0.0.7.tar.gz tmp/bdffont-0.0.8.tar.gz --markdown 20230526/b/bdffont/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-26 09:40:24] INFO root fetch - processPackages [pulumi-docker]: executing diffoscope
+[2023-05-26 09:40:24] INFO root fetch - processPackages [pulumi-docker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_docker-4.3.0a1684950981.tar.gz tmp/pulumi_docker-4.3.0a1685034332.tar.gz --markdown 20230526/p/pulumi-docker/4.3.0a1684950981-4.3.0a1685034332/diff.md --exclude *.pyd
+[2023-05-26 09:40:24] INFO root fetch - processPackages [nico-font-tool]: executing diffoscope
+[2023-05-26 09:40:24] INFO root fetch - processPackages [nico-font-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nico-font-tool-0.0.3.tar.gz tmp/nico-font-tool-0.0.4.tar.gz --markdown 20230526/n/nico-font-tool/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-26 09:40:25] INFO root fetch - main [MainThread]: End processing [textbsr]: success
+[2023-05-26 09:40:25] INFO root fetch - main [MainThread]: End processing [kuto]: success
+[2023-05-26 09:40:25] INFO root fetch - main [MainThread]: End processing [bdffont]: success
+[2023-05-26 09:40:26] INFO root fetch - main [MainThread]: End processing [nico-font-tool]: success
+[2023-05-26 09:40:26] INFO root fetch - main [MainThread]: End processing [pulumi-docker]: success
+[2023-05-26 09:40:27] INFO root fetch - main [MainThread]: End processing [pulumi-vault]: success
+[2023-05-26 09:40:27] INFO root fetch - main [MainThread]: Store serial: [18259272]
