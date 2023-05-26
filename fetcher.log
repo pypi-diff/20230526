@@ -17179,3 +17179,128 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-26 16:04:34] INFO root fetch - main [MainThread]: End processing [itkwasm]: success
 [2023-05-26 16:07:28] INFO root fetch - main [MainThread]: End processing [stqe]: success
 [2023-05-26 16:07:28] INFO root fetch - main [MainThread]: Store serial: [18263892]
+[2023-05-26 16:12:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18263892]
+[2023-05-26 16:12:37] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-05-26 16:12:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: navalmartin-mir-aws-utils
+[2023-05-26 16:12:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: safeget
+[2023-05-26 16:12:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: graphsignal
+[2023-05-26 16:12:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SpiffWorkflow
+[2023-05-26 16:12:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: keystem
+[2023-05-26 16:12:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ssb-project-cli
+[2023-05-26 16:12:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: uquake
+[2023-05-26 16:12:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: robotframework-robosapiens
+[2023-05-26 16:12:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pickled-carrots
+[2023-05-26 16:12:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cycleops
+[2023-05-26 16:12:37] INFO root fetch - processPackages [safeget]: New version: [1.5.5] Old Version: [1.5.0]
+[2023-05-26 16:12:37] INFO root fetch - processPackages [graphsignal]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-26 16:12:37] INFO root fetch - processPackages [cycleops]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-26 16:12:37] INFO root fetch - processPackages [keystem]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-26 16:12:37] INFO root fetch - processPackages [pickled-carrots]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-26 16:12:37] INFO root fetch - processPackages [navalmartin-mir-aws-utils]: New version: [0.0.9] Old Version: [0.0.29]
+[2023-05-26 16:12:37] INFO root fetch - processPackages [ssb-project-cli]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-26 16:12:37] INFO root fetch - processPackages [SpiffWorkflow]: New version: [2.0.0rc0] Old Version: [1.2.1]
+[2023-05-26 16:12:37] INFO root fetch - processPackages [robotframework-robosapiens]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-05-26 16:12:37] INFO root fetch - processPackages [uquake]: New version: [1.4.5] Old Version: [1.4.4]
+[2023-05-26 16:12:37] INFO root fetch - processPackages [navalmartin-mir-aws-utils]: Downloading https://files.pythonhosted.org/packages/1b/85/4c00f2ca24a7419e89954cba12eb2951bcd2ae88c0823f0e6f1646646dec/navalmartin_mir_aws_utils-0.0.29.tar.gz
+[2023-05-26 16:12:37] INFO root fetch - processPackages [robotframework-robosapiens]: Downloading https://files.pythonhosted.org/packages/d2/ce/fb0d6c64b2261ea1ab46a5c1061e2b29b369c30514194e872ef75242d3ca/robotframework_robosapiens-1.1.7-py3-none-any.whl
+[2023-05-26 16:12:37] INFO root fetch - processPackages [pickled-carrots]: Downloading https://files.pythonhosted.org/packages/e9/ec/cbb16b69d2af0f963be7497c5a48a2cab101390763347f5d07a2f1ad9018/pickled_carrots-1.0.3.tar.gz
+[2023-05-26 16:12:37] INFO root fetch - processPackages [SpiffWorkflow]: Downloading https://files.pythonhosted.org/packages/6c/59/cdca090835e0026bba7e530b2990db34f2b045090dfe8308a9ed8ce9509b/SpiffWorkflow-1.2.1.tar.gz
+[2023-05-26 16:12:37] INFO root fetch - processPackages [safeget]: Downloading https://files.pythonhosted.org/packages/7e/59/98bbafc94aa7ccf16efc20cd3ce6a4ede15e04419a8b1af35c22e93f9892/safeget-1.5.0.tar.gz
+[2023-05-26 16:12:37] INFO root fetch - processPackages [cycleops]: Downloading https://files.pythonhosted.org/packages/21/49/585bc1680c9c83fcb89c90d81ae61c494090a7b090271324e3cd26a259c6/cycleops-0.2.1.tar.gz
+[2023-05-26 16:12:37] INFO root fetch - processPackages [uquake]: Downloading https://files.pythonhosted.org/packages/5c/4f/e4886ac253ad294d357c9e10be6e28841b46ca8a12a89317c36d51717665/uquake-1.4.5.tar.gz
+[2023-05-26 16:12:38] INFO root fetch - processPackages [graphsignal]: executing diffoscope
+[2023-05-26 16:12:38] INFO root fetch - processPackages [keystem]: Downloading https://files.pythonhosted.org/packages/d6/17/31b5f9b1635e40e0571c358d445f6f28e845fe45b5c7e26f6774364b5e5e/keystem-1.0.4.tar.gz
+[2023-05-26 16:12:38] INFO root fetch - processPackages [graphsignal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphsignal-0.9.4.tar.gz tmp/graphsignal-0.9.5.tar.gz --markdown 20230526/g/graphsignal/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-26 16:12:38] INFO root fetch - processPackages [uquake]: executing diffoscope
+[2023-05-26 16:12:38] INFO root fetch - processPackages [uquake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uquake-1.4.4.tar.gz tmp/uquake-1.4.5.tar.gz --markdown 20230526/u/uquake/1.4.4-1.4.5/diff.md --exclude *.pyd
+[2023-05-26 16:12:38] INFO root fetch - processPackages [pickled-carrots]: executing diffoscope
+[2023-05-26 16:12:38] INFO root fetch - processPackages [pickled-carrots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pickled_carrots-1.0.2.tar.gz tmp/pickled_carrots-1.0.3.tar.gz --markdown 20230526/p/pickled-carrots/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-26 16:12:38] INFO root fetch - processPackages [ssb-project-cli]: Downloading https://files.pythonhosted.org/packages/1b/43/9e64e5fe14b9ca68d7074038198b44e9d425b231551f738cf9b334163156/ssb_project_cli-1.1.1.tar.gz
+[2023-05-26 16:12:38] INFO root fetch - processPackages [robotframework-robosapiens]: Downloading https://files.pythonhosted.org/packages/66/fc/3accf42b191505cf5e15f1cabb076d371325a1a5da537041499525c9a830/robotframework_robosapiens-1.1.8-py3-none-any.whl
+[2023-05-26 16:12:38] INFO root fetch - processPackages [SpiffWorkflow]: Downloading https://files.pythonhosted.org/packages/b5/fa/6522d14fef0aa0afb17799b0ca70ff2ace063f6df941b8e35d07158a8b5c/SpiffWorkflow-2.0.0rc0.tar.gz
+[2023-05-26 16:12:38] INFO root fetch - processPackages [ssb-project-cli]: executing diffoscope
+[2023-05-26 16:12:38] INFO root fetch - processPackages [ssb-project-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssb_project_cli-1.1.0.tar.gz tmp/ssb_project_cli-1.1.1.tar.gz --markdown 20230526/s/ssb-project-cli/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-26 16:12:38] INFO root fetch - processPackages [cycleops]: Downloading https://files.pythonhosted.org/packages/f4/e9/99fb1d0c021d6e0edf83ea69e534c588df9d623c7a59c6cb6a750747f93a/cycleops-0.2.2.tar.gz
+[2023-05-26 16:12:38] INFO root fetch - processPackages [safeget]: Downloading https://files.pythonhosted.org/packages/37/e7/7f4096ea86728982528ed712d5b968492a88273753c0962ef868016ca5f6/safeget-1.5.5.tar.gz
+[2023-05-26 16:12:38] INFO root fetch - processPackages [robotframework-robosapiens]: executing diffoscope
+[2023-05-26 16:12:38] INFO root fetch - processPackages [robotframework-robosapiens]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotframework_robosapiens-1.1.7-py3-none-any.whl.zip tmp/robotframework_robosapiens-1.1.8-py3-none-any.whl.zip --markdown 20230526/r/robotframework-robosapiens/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-05-26 16:12:38] INFO root fetch - processPackages [keystem]: executing diffoscope
+[2023-05-26 16:12:38] INFO root fetch - processPackages [keystem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keystem-1.0.3.tar.gz tmp/keystem-1.0.4.tar.gz --markdown 20230526/k/keystem/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-26 16:12:38] INFO root fetch - processPackages [SpiffWorkflow]: executing diffoscope
+[2023-05-26 16:12:38] INFO root fetch - processPackages [SpiffWorkflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SpiffWorkflow-1.2.1.tar.gz tmp/SpiffWorkflow-2.0.0rc0.tar.gz --markdown 20230526/S/SpiffWorkflow/1.2.1-2.0.0rc0/diff.md --exclude *.pyd
+[2023-05-26 16:12:38] INFO root fetch - processPackages [navalmartin-mir-aws-utils]: Downloading https://files.pythonhosted.org/packages/de/f2/244dec2c48d5578424e8f0fb82c2f85844a0f0dbbfa4cfe21c326ba1a274/navalmartin_mir_aws_utils-0.0.9.tar.gz
+[2023-05-26 16:12:38] INFO root fetch - processPackages [safeget]: executing diffoscope
+[2023-05-26 16:12:38] INFO root fetch - processPackages [safeget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/safeget-1.5.0.tar.gz tmp/safeget-1.5.5.tar.gz --markdown 20230526/s/safeget/1.5.0-1.5.5/diff.md --exclude *.pyd
+[2023-05-26 16:12:38] INFO root fetch - processPackages [cycleops]: executing diffoscope
+[2023-05-26 16:12:38] INFO root fetch - processPackages [cycleops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cycleops-0.2.1.tar.gz tmp/cycleops-0.2.2.tar.gz --markdown 20230526/c/cycleops/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-26 16:12:38] INFO root fetch - processPackages [navalmartin-mir-aws-utils]: executing diffoscope
+[2023-05-26 16:12:38] INFO root fetch - processPackages [navalmartin-mir-aws-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/navalmartin_mir_aws_utils-0.0.29.tar.gz tmp/navalmartin_mir_aws_utils-0.0.9.tar.gz --markdown 20230526/n/navalmartin-mir-aws-utils/0.0.29-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 16:12:40] INFO root fetch - processPackages [graphsignal]: Start processing: integerbook
+[2023-05-26 16:12:40] INFO root fetch - main [MainThread]: End processing [graphsignal]: success
+[2023-05-26 16:12:40] INFO root fetch - processPackages [integerbook]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-26 16:12:40] INFO root fetch - processPackages [pickled-carrots]: Start processing: useis
+[2023-05-26 16:12:40] INFO root fetch - main [MainThread]: End processing [pickled-carrots]: success
+[2023-05-26 16:12:40] INFO root fetch - processPackages [useis]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-05-26 16:12:40] INFO root fetch - processPackages [uquake]: Start processing: elevation-Kyrgyzstan
+[2023-05-26 16:12:40] INFO root fetch - main [MainThread]: End processing [uquake]: success
+[2023-05-26 16:12:40] INFO root fetch - processPackages [elevation-Kyrgyzstan]: New version: [0.1.1] Old Version: [0.0.1]
+[2023-05-26 16:12:40] INFO root fetch - processPackages [integerbook]: Downloading https://files.pythonhosted.org/packages/88/d8/3182230bbefa7b36a0d24ee08ccda8b51018086f880cee422f63e7dc2667/integerbook-0.0.5.tar.gz
+[2023-05-26 16:12:40] INFO root fetch - processPackages [useis]: Downloading https://files.pythonhosted.org/packages/24/bb/0c9d110d223b58fa2d53ce0e50b899a421f353f8b35b57bed95541c41eb7/useis-1.1.5.tar.gz
+[2023-05-26 16:12:40] INFO root fetch - processPackages [elevation-Kyrgyzstan]: Downloading https://files.pythonhosted.org/packages/8c/b0/4e18741114e42e346f837f0d6be21c8f5ea5f409d973e3f04f4e41911618/elevation-Kyrgyzstan-0.0.1.tar.gz
+[2023-05-26 16:12:40] INFO root fetch - processPackages [useis]: executing diffoscope
+[2023-05-26 16:12:40] INFO root fetch - processPackages [useis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/useis-1.1.4.tar.gz tmp/useis-1.1.5.tar.gz --markdown 20230526/u/useis/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-05-26 16:12:40] INFO root fetch - processPackages [integerbook]: Downloading https://files.pythonhosted.org/packages/90/ea/40a1bc1ab2e7ae3f4614e68b817b05c580e35f754e8a0bb0924e8e36ed53/integerbook-0.0.6.tar.gz
+[2023-05-26 16:12:40] INFO root fetch - processPackages [elevation-Kyrgyzstan]: Downloading https://files.pythonhosted.org/packages/16/5f/cd1829e11023938b39e9f8bd34e5373b401b6623952bd26198de1ceb7127/elevation-Kyrgyzstan-0.1.1.tar.gz
+[2023-05-26 16:12:40] WARNING root fetch - processPackages [elevation-Kyrgyzstan]: Skipping package: exceeds size limit 11658201>=10485760
+[2023-05-26 16:12:40] INFO root fetch - processPackages [elevation-Kyrgyzstan]: Start processing: odoo14-addon-shopfloor-single-product-transfer
+[2023-05-26 16:12:40] INFO root fetch - main [MainThread]: End processing [elevation-Kyrgyzstan] error
+[2023-05-26 16:12:40] WARNING root fetch - processPackages [odoo14-addon-shopfloor-single-product-transfer]: Skipping, unable to determine old version
+[2023-05-26 16:12:40] INFO root fetch - processPackages [odoo14-addon-shopfloor-single-product-transfer]: Start processing: qontract-reconcile
+[2023-05-26 16:12:40] INFO root fetch - main [MainThread]: End processing [odoo14-addon-shopfloor-single-product-transfer] error
+[2023-05-26 16:12:40] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-05-26 16:12:41] INFO root fetch - processPackages [integerbook]: executing diffoscope
+[2023-05-26 16:12:41] INFO root fetch - processPackages [integerbook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/integerbook-0.0.5.tar.gz tmp/integerbook-0.0.6.tar.gz --markdown 20230526/i/integerbook/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-26 16:12:41] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-05-26 16:12:41] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230526/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-05-26 16:12:41] INFO root fetch - processPackages [safeget]: Start processing: odoo14-addon-shopfloor
+[2023-05-26 16:12:41] INFO root fetch - main [MainThread]: End processing [safeget]: success
+[2023-05-26 16:12:41] INFO root fetch - processPackages [robotframework-robosapiens]: Start processing: gfs-dynamical-core
+[2023-05-26 16:12:41] INFO root fetch - main [MainThread]: End processing [robotframework-robosapiens]: success
+[2023-05-26 16:12:41] INFO root fetch - processPackages [odoo14-addon-shopfloor]: New version: [14.0.2.9.3.dev1] Old Version: [14.0.2.9.2]
+[2023-05-26 16:12:41] INFO root fetch - processPackages [gfs-dynamical-core]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-26 16:12:41] INFO root fetch - processPackages [cycleops]: Start processing: biom3d
+[2023-05-26 16:12:41] INFO root fetch - main [MainThread]: End processing [cycleops]: success
+[2023-05-26 16:12:41] INFO root fetch - processPackages [keystem]: Start processing: emotional
+[2023-05-26 16:12:41] INFO root fetch - main [MainThread]: End processing [keystem]: success
+[2023-05-26 16:12:41] INFO root fetch - processPackages [biom3d]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-05-26 16:12:41] INFO root fetch - processPackages [odoo14-addon-shopfloor]: executing diffoscope
+[2023-05-26 16:12:41] INFO root fetch - processPackages [odoo14-addon-shopfloor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_shopfloor-14.0.2.9.2-py3-none-any.whl.zip tmp/odoo14_addon_shopfloor-14.0.2.9.3.dev1-py3-none-any.whl.zip --markdown 20230526/o/odoo14-addon-shopfloor/14.0.2.9.2-14.0.2.9.3.dev1/diff.md --exclude *.pyd
+[2023-05-26 16:12:41] WARNING root fetch - processPackages [emotional]: Skipping, unable to determine old version
+[2023-05-26 16:12:41] INFO root fetch - processPackages [emotional]: Start processing: pepperize.cdk-dynamodb-backup
+[2023-05-26 16:12:41] INFO root fetch - main [MainThread]: End processing [emotional] error
+[2023-05-26 16:12:41] INFO root fetch - processPackages [ssb-project-cli]: Start processing: griffe
+[2023-05-26 16:12:41] INFO root fetch - main [MainThread]: End processing [ssb-project-cli]: success
+[2023-05-26 16:12:41] INFO root fetch - main [MainThread]: End processing [navalmartin-mir-aws-utils]: success
+[2023-05-26 16:12:41] INFO root fetch - processPackages [pepperize.cdk-dynamodb-backup]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 16:12:41] INFO root fetch - processPackages [griffe]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-26 16:12:41] INFO root fetch - processPackages [biom3d]: Downloading https://files.pythonhosted.org/packages/4f/53/c25cedaf854e7754675041bd48cb20b71dfd8e97dd3d0b8c79f7e87b6a51/biom3d-0.0.7.tar.gz
+[2023-05-26 16:12:41] INFO root fetch - processPackages [gfs-dynamical-core]: Downloading https://files.pythonhosted.org/packages/0e/54/969a86c8ebdf4ac854a47d8845bdcb970317a8a4a0c7ba1fb04fba0d705b/gfs_dynamical_core-0.1.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-26 16:12:41] INFO root fetch - processPackages [gfs-dynamical-core]: executing diffoscope
+[2023-05-26 16:12:41] INFO root fetch - processPackages [gfs-dynamical-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gfs_dynamical_core-0.1.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/gfs_dynamical_core-0.1.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230526/g/gfs-dynamical-core/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-26 16:12:41] INFO root fetch - processPackages [biom3d]: Downloading https://files.pythonhosted.org/packages/b4/8d/1ccb9010d14d8a5e01159e7875fcc6fcdd100db65de19cfb377504cb21be/biom3d-0.0.9.tar.gz
+[2023-05-26 16:12:41] INFO root fetch - processPackages [pepperize.cdk-dynamodb-backup]: executing diffoscope
+[2023-05-26 16:12:41] INFO root fetch - processPackages [pepperize.cdk-dynamodb-backup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-dynamodb-backup-0.0.98.tar.gz tmp/pepperize.cdk-dynamodb-backup-0.0.99.tar.gz --markdown 20230526/p/pepperize.cdk-dynamodb-backup/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 16:12:41] INFO root fetch - main [MainThread]: End processing [SpiffWorkflow]: success
+[2023-05-26 16:12:41] INFO root fetch - processPackages [biom3d]: executing diffoscope
+[2023-05-26 16:12:41] INFO root fetch - processPackages [biom3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biom3d-0.0.7.tar.gz tmp/biom3d-0.0.9.tar.gz --markdown 20230526/b/biom3d/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-05-26 16:12:41] INFO root fetch - processPackages [griffe]: executing diffoscope
+[2023-05-26 16:12:41] INFO root fetch - processPackages [griffe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griffe-0.8.0.tar.gz tmp/griffe-0.9.0.tar.gz --markdown 20230526/g/griffe/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-26 16:12:43] INFO root fetch - main [MainThread]: End processing [integerbook]: success
+[2023-05-26 16:12:43] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-dynamodb-backup]: success
+[2023-05-26 16:12:44] INFO root fetch - main [MainThread]: End processing [biom3d]: success
+[2023-05-26 16:12:44] INFO root fetch - main [MainThread]: End processing [griffe]: success
+[2023-05-26 16:12:44] INFO root fetch - main [MainThread]: End processing [odoo14-addon-shopfloor]: success
+[2023-05-26 16:12:45] INFO root fetch - main [MainThread]: End processing [useis]: success
+[2023-05-26 16:12:47] INFO root fetch - main [MainThread]: End processing [qontract-reconcile]: success
+[2023-05-26 16:13:04] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
+[2023-05-26 16:13:04] INFO root fetch - main [MainThread]: Store serial: [18263958]
