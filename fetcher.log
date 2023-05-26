@@ -8926,3 +8926,95 @@
 [2023-05-26 08:23:25] INFO root fetch - main [MainThread]: End processing [pretext]: success
 [2023-05-26 08:23:43] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
 [2023-05-26 08:23:43] INFO root fetch - main [MainThread]: Store serial: [18258525]
+[2023-05-26 08:28:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18258525]
+[2023-05-26 08:28:55] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-26 08:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-github
+[2023-05-26 08:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Qsim-trapped-ions
+[2023-05-26 08:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-dnsimple
+[2023-05-26 08:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: johnsnowlabs-tmp
+[2023-05-26 08:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-confluentcloud
+[2023-05-26 08:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dprox
+[2023-05-26 08:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: invoker-terminal
+[2023-05-26 08:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fake-bpy-module-latest
+[2023-05-26 08:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pulumi-digitalocean
+[2023-05-26 08:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: spark-etl
+[2023-05-26 08:28:55] INFO root fetch - processPackages [Qsim-trapped-ions]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-26 08:28:55] INFO root fetch - processPackages [johnsnowlabs-tmp]: New version: [4.4.8] Old Version: [4.4.7]
+[2023-05-26 08:28:55] WARNING root fetch - processPackages [invoker-terminal]: Skipping, unable to determine old version
+[2023-05-26 08:28:55] INFO root fetch - processPackages [invoker-terminal]: Start processing: dprox
+[2023-05-26 08:28:55] INFO root fetch - processPackages [pulumi-dnsimple]: New version: [3.5.0a1685079154] Old Version: [3.5.0a1684387743]
+[2023-05-26 08:28:55] INFO root fetch - main [MainThread]: End processing [invoker-terminal] error
+[2023-05-26 08:28:55] INFO root fetch - processPackages [spark-etl]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-26 08:28:55] INFO root fetch - processPackages [pulumi-github]: New version: [5.9.1] Old Version: [5.9.0a1683752304]
+[2023-05-26 08:28:55] INFO root fetch - processPackages [dprox]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-26 08:28:55] INFO root fetch - processPackages [pulumi-confluentcloud]: New version: [1.9.0a1675887560] Old Version: [1.9.0]
+[2023-05-26 08:28:55] INFO root fetch - processPackages [fake-bpy-module-latest]: New version: [20230526] Old Version: [20230525]
+[2023-05-26 08:28:55] INFO root fetch - processPackages [pulumi-digitalocean]: New version: [4.9.0a1637244514] Old Version: [4.9.0]
+[2023-05-26 08:28:55] INFO root fetch - processPackages [dprox]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-26 08:28:55] INFO root fetch - processPackages [spark-etl]: executing diffoscope
+[2023-05-26 08:28:55] INFO root fetch - processPackages [spark-etl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spark-etl-0.0.98.tar.gz tmp/spark-etl-0.0.99.tar.gz --markdown 20230526/s/spark-etl/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-26 08:28:55] INFO root fetch - processPackages [dprox]: Downloading https://files.pythonhosted.org/packages/3e/e7/5bcc1e659089ddf304b0998922e6f711188d3627109fcbdb82028bf76aa2/dprox-0.1.2.tar.gz
+[2023-05-26 08:28:55] INFO root fetch - processPackages [dprox]: Downloading https://files.pythonhosted.org/packages/3e/e7/5bcc1e659089ddf304b0998922e6f711188d3627109fcbdb82028bf76aa2/dprox-0.1.2.tar.gz
+[2023-05-26 08:28:55] INFO root fetch - processPackages [Qsim-trapped-ions]: Downloading https://files.pythonhosted.org/packages/e4/01/da7ee1f354b80fc6d292895f5550eb283b2d16cb29e11a658598f3d6f2c4/Qsim_trapped_ions-1.0.5.tar.gz
+[2023-05-26 08:28:55] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/aa/f1/9d35079c0eca719bd8be33e898e25411b21dd8512745ca5ab20276359b70/fake-bpy-module-latest-20230525.tar.gz
+[2023-05-26 08:28:55] INFO root fetch - processPackages [Qsim-trapped-ions]: executing diffoscope
+[2023-05-26 08:28:55] INFO root fetch - processPackages [Qsim-trapped-ions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Qsim_trapped_ions-1.0.4.tar.gz tmp/Qsim_trapped_ions-1.0.5.tar.gz --markdown 20230526/Q/Qsim-trapped-ions/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-26 08:28:55] INFO root fetch - processPackages [johnsnowlabs-tmp]: Downloading https://files.pythonhosted.org/packages/93/c7/36389a32db55acab691a0cae8d7d2f9b6f192c65a1a14d04e86504da1f42/johnsnowlabs_tmp-4.4.8.tar.gz
+[2023-05-26 08:28:55] INFO root fetch - processPackages [pulumi-dnsimple]: Downloading https://files.pythonhosted.org/packages/a8/00/65b3973ecd9ad7c885467cb88923cf70864e7947196e6685f5efc3c6713a/pulumi_dnsimple-3.5.0a1685079154.tar.gz
+[2023-05-26 08:28:55] INFO root fetch - processPackages [johnsnowlabs-tmp]: executing diffoscope
+[2023-05-26 08:28:55] INFO root fetch - processPackages [johnsnowlabs-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/johnsnowlabs_tmp-4.4.7.tar.gz tmp/johnsnowlabs_tmp-4.4.8.tar.gz --markdown 20230526/j/johnsnowlabs-tmp/4.4.7-4.4.8/diff.md --exclude *.pyd
+[2023-05-26 08:28:55] INFO root fetch - processPackages [pulumi-github]: Downloading https://files.pythonhosted.org/packages/c9/c7/93ab5613466154b7124ec8eae861573f6b499bd2807accd6d08c5fa08291/pulumi_github-5.9.1.tar.gz
+[2023-05-26 08:28:55] INFO root fetch - processPackages [dprox]: Downloading https://files.pythonhosted.org/packages/44/ff/ba5ec947aaf6d20559607535db9376afead628b88fef553db8a3f31aac63/dprox-0.1.3.tar.gz
+[2023-05-26 08:28:55] INFO root fetch - processPackages [dprox]: Downloading https://files.pythonhosted.org/packages/44/ff/ba5ec947aaf6d20559607535db9376afead628b88fef553db8a3f31aac63/dprox-0.1.3.tar.gz
+[2023-05-26 08:28:55] INFO root fetch - processPackages [pulumi-github]: executing diffoscope
+[2023-05-26 08:28:55] INFO root fetch - processPackages [pulumi-github]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_github-5.9.0a1683752304.tar.gz tmp/pulumi_github-5.9.1.tar.gz --markdown 20230526/p/pulumi-github/5.9.0a1683752304-5.9.1/diff.md --exclude *.pyd
+[2023-05-26 08:28:55] INFO root fetch - processPackages [dprox]: executing diffoscope
+[2023-05-26 08:28:55] INFO root fetch - processPackages [dprox]: executing diffoscope
+[2023-05-26 08:28:55] INFO root fetch - processPackages [dprox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dprox-0.1.2.tar.gz tmp/dprox-0.1.3.tar.gz --markdown 20230526/d/dprox/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-26 08:28:55] INFO root fetch - processPackages [dprox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dprox-0.1.2.tar.gz tmp/dprox-0.1.3.tar.gz --markdown 20230526/d/dprox/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-26 08:28:55] INFO root fetch - processPackages [pulumi-confluentcloud]: executing diffoscope
+[2023-05-26 08:28:55] INFO root fetch - processPackages [pulumi-confluentcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_confluentcloud-1.9.0.tar.gz tmp/pulumi_confluentcloud-1.9.0a1675887560.tar.gz --markdown 20230526/p/pulumi-confluentcloud/1.9.0-1.9.0a1675887560/diff.md --exclude *.pyd
+[2023-05-26 08:28:55] INFO root fetch - processPackages [pulumi-digitalocean]: executing diffoscope
+[2023-05-26 08:28:55] INFO root fetch - processPackages [pulumi-digitalocean]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_digitalocean-4.9.0.tar.gz tmp/pulumi_digitalocean-4.9.0a1637244514.tar.gz --markdown 20230526/p/pulumi-digitalocean/4.9.0-4.9.0a1637244514/diff.md --exclude *.pyd
+[2023-05-26 08:28:55] INFO root fetch - processPackages [pulumi-dnsimple]: executing diffoscope
+[2023-05-26 08:28:55] INFO root fetch - processPackages [pulumi-dnsimple]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_dnsimple-3.5.0a1684387743.tar.gz tmp/pulumi_dnsimple-3.5.0a1685079154.tar.gz --markdown 20230526/p/pulumi-dnsimple/3.5.0a1684387743-3.5.0a1685079154/diff.md --exclude *.pyd
+[2023-05-26 08:28:55] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/ba/b9/d6d745f4827ef6926eacc4655d71486f27413c0c627ece36048e7834be3b/fake-bpy-module-latest-20230526.tar.gz
+[2023-05-26 08:28:56] INFO root fetch - processPackages [fake-bpy-module-latest]: executing diffoscope
+[2023-05-26 08:28:56] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake-bpy-module-latest-20230525.tar.gz tmp/fake-bpy-module-latest-20230526.tar.gz --markdown 20230526/f/fake-bpy-module-latest/20230525-20230526/diff.md --exclude *.pyd
+[2023-05-26 08:28:56] INFO root fetch - processPackages [spark-etl]: Start processing: dfa-identify
+[2023-05-26 08:28:56] INFO root fetch - main [MainThread]: End processing [spark-etl]: success
+[2023-05-26 08:28:56] INFO root fetch - processPackages [dfa-identify]: New version: [3.9.1] Old Version: [3.9.0]
+[2023-05-26 08:28:57] INFO root fetch - processPackages [dfa-identify]: Downloading https://files.pythonhosted.org/packages/2e/54/7a4408c7ad2d248a9fe61f78b331bce0839c3be8ba3ab548190b514a4d2f/dfa_identify-3.9.0.tar.gz
+[2023-05-26 08:28:57] INFO root fetch - processPackages [Qsim-trapped-ions]: Start processing: vmklib
+[2023-05-26 08:28:57] INFO root fetch - main [MainThread]: End processing [Qsim-trapped-ions]: success
+[2023-05-26 08:28:57] INFO root fetch - processPackages [vmklib]: New version: [1.8.2] Old Version: [1.8.1]
+[2023-05-26 08:28:57] INFO root fetch - processPackages [dfa-identify]: Downloading https://files.pythonhosted.org/packages/40/ec/355b1cfbe98e9cc560d60b5fd3835b232c0ad20f7e0046d8d39ad7012dd8/dfa_identify-3.9.1.tar.gz
+[2023-05-26 08:28:57] INFO root fetch - processPackages [dfa-identify]: executing diffoscope
+[2023-05-26 08:28:57] INFO root fetch - processPackages [vmklib]: Downloading https://files.pythonhosted.org/packages/72/f8/6f6efe814afdfd4a6a9558274f58fcd521f4e0c71ad421e40911406481aa/vmklib-1.8.1.tar.gz
+[2023-05-26 08:28:57] INFO root fetch - processPackages [dfa-identify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dfa_identify-3.9.0.tar.gz tmp/dfa_identify-3.9.1.tar.gz --markdown 20230526/d/dfa-identify/3.9.0-3.9.1/diff.md --exclude *.pyd
+[2023-05-26 08:28:57] INFO root fetch - processPackages [johnsnowlabs-tmp]: Start processing: ufomerge
+[2023-05-26 08:28:57] INFO root fetch - main [MainThread]: End processing [johnsnowlabs-tmp]: success
+[2023-05-26 08:28:57] INFO root fetch - processPackages [ufomerge]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-26 08:28:57] INFO root fetch - processPackages [vmklib]: Downloading https://files.pythonhosted.org/packages/5b/c9/6fe050d10da1f7e82530f85a892933ecad49b2509cf021bc4aba928108ad/vmklib-1.8.2.tar.gz
+[2023-05-26 08:28:57] INFO root fetch - processPackages [vmklib]: executing diffoscope
+[2023-05-26 08:28:57] INFO root fetch - processPackages [vmklib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vmklib-1.8.1.tar.gz tmp/vmklib-1.8.2.tar.gz --markdown 20230526/v/vmklib/1.8.1-1.8.2/diff.md --exclude *.pyd
+[2023-05-26 08:28:57] INFO root fetch - processPackages [ufomerge]: Downloading https://files.pythonhosted.org/packages/81/ad/f6c28dcc84db676b52588163efc4cd51da581abbb36ca47dc285d110bd9b/ufomerge-1.0.0.tar.gz
+[2023-05-26 08:28:58] INFO root fetch - processPackages [pulumi-dnsimple]: Start processing: libcnmc
+[2023-05-26 08:28:58] INFO root fetch - main [MainThread]: End processing [pulumi-dnsimple]: success
+[2023-05-26 08:28:58] INFO root fetch - processPackages [ufomerge]: Downloading https://files.pythonhosted.org/packages/46/bd/d0b50eb137e8a13297e6a4323a1808ae4d34eedf65b973a4a9d88f2c6574/ufomerge-1.1.0.tar.gz
+[2023-05-26 08:28:58] INFO root fetch - processPackages [libcnmc]: New version: [23.9.1] Old Version: [23.9.0]
+[2023-05-26 08:28:58] INFO root fetch - processPackages [ufomerge]: executing diffoscope
+[2023-05-26 08:28:58] INFO root fetch - processPackages [ufomerge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ufomerge-1.0.0.tar.gz tmp/ufomerge-1.1.0.tar.gz --markdown 20230526/u/ufomerge/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-26 08:28:58] INFO root fetch - processPackages [libcnmc]: executing diffoscope
+[2023-05-26 08:28:58] INFO root fetch - processPackages [libcnmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230526:/home/abi/fetcher/20230526:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libcnmc-23.9.0.tar.gz tmp/libcnmc-23.9.1.tar.gz --markdown 20230526/l/libcnmc/23.9.0-23.9.1/diff.md --exclude *.pyd
+[2023-05-26 08:28:58] INFO root fetch - main [MainThread]: End processing [dprox]: success
+[2023-05-26 08:28:58] INFO root fetch - main [MainThread]: End processing [pulumi-github]: success
+[2023-05-26 08:28:59] INFO root fetch - main [MainThread]: End processing [pulumi-digitalocean]: success
+[2023-05-26 08:28:59] INFO root fetch - main [MainThread]: End processing [pulumi-confluentcloud]: success
+[2023-05-26 08:28:59] INFO root fetch - main [MainThread]: End processing [dfa-identify]: success
+[2023-05-26 08:28:59] INFO root fetch - main [MainThread]: End processing [dprox]: success
+[2023-05-26 08:28:59] INFO root fetch - main [MainThread]: End processing [vmklib]: success
+[2023-05-26 08:29:00] INFO root fetch - main [MainThread]: End processing [ufomerge]: success
+[2023-05-26 08:29:00] INFO root fetch - main [MainThread]: End processing [libcnmc]: success
+[2023-05-26 08:29:04] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
+[2023-05-26 08:29:04] INFO root fetch - main [MainThread]: Store serial: [18258566]
